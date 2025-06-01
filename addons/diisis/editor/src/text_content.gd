@@ -8,7 +8,6 @@ const WORD_SEPARATORS :=  ["[", "]", "{", "}", ">", "<", ".", ",", "|", " ", "-"
 const BBCODE_TAGS := ["b", "i", "u", "s", "img", "url", "font_size", "font", "rainbow", "pulse", "wave", "tornado", "shake", "fade", "code", "char", "center", "left", "right", "color", "bgcolor", "fgcolor", "outline_size", "outline_color"]
 
 var active_actors := [] # list of character names
-var active_actors_title := ""
 
 var entered_arguments := 0
 var used_arguments := []
@@ -82,7 +81,6 @@ func deserialize(data: Dictionary):
 	if text_box.text.is_empty(): # compat
 		text_box.text = data.get("content", "")
 	active_actors = data.get("active_actors", [])
-	active_actors_title = data.get("active_actors_title", "")
 	fill_active_actors()
 
 func set_page_view(view:DiisisEditor.PageView):
@@ -367,7 +365,6 @@ func fill_active_actors():
 	active_actors.clear()
 	for v in Pages.get_speakers():
 		active_actors.append(v)
-	active_actors_title = title
 
 
 func _on_text_box_focus_entered() -> void:

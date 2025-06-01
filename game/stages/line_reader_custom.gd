@@ -20,6 +20,10 @@ signal splatter(amount:int)
 signal start_chapter_cover(pov_name:String, bottom_text, new_background, zoom, bgm)
 signal request_object_visible(object_name:String, visibility:bool)
 
+func _ready() -> void:
+	super()
+	ParserEvents.dialog_line_args_passed.connect(on_dialog_line_args_passed)
+
 func play_sfx(_name:String):
 	Sound.play_sfx(_name)
 	return false
@@ -28,12 +32,6 @@ func set_bgm(_name:String, fade_in:float):
 	Sound.play_bgm(_name, fade_in)
 	return false
 
-func set_text_style(style: String) -> bool:
-	if style == "ToBottom":
-		GameWorld.game_stage.set_text_style(GameStage.TextStyle.ToBottom)
-	elif style == "ToCharacter":
-		GameWorld.game_stage.set_text_style(GameStage.TextStyle.ToCharacter)
-	return false
 
 func black_fade(fade_in:float, hold_time:float, fade_out:float, hide_characters:bool, new_background:String, new_bgm:String):
 	var bg = new_background
@@ -193,3 +191,22 @@ func use_ui(id: float) -> bool:
 func cum(voice: String) -> bool:
 	GameWorld.game_stage.cum(voice)
 	return false
+
+func set_target_body_label(actor:String, target_id:int):
+	var vnui : Control = find_child("VNUI")
+	var window : Control = vnui.find_child("TextWindow%s"%target_id)
+	body_label = window.find_child("BodyLabel")
+
+var body_label_id_by_actor := {
+	"veil" : 1,
+	"narrator" : 1,
+	"amber" : 1,
+}
+
+
+
+func on_dialog_line_args_passed(
+	actor_name: String,
+	dialog_line_args: Dictionary):
+		set_target_body_label(actor_name, int(dialog_line_args.get("dialog-target", body_label_id_by_actor.get(actor_name))))
+	

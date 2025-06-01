@@ -95,8 +95,7 @@ var _last_raw_name := ""
 @export var actor_default_color := Color.TRANSPARENT
 var _visible_prepend_offset := 0
 
-@export_group("Mandatory References")
-@export_subgroup("Content")
+@export_group("Text References")
 ## A [Label] or [RichTextLabel] that displays a currently speaking character's name.
 @export
 var name_label: Control:
@@ -115,15 +114,6 @@ var name_label: Control:
 		if Engine.is_editor_hint():
 			update_configuration_warnings()
 ## The Control used for enumerating options when they are presented. Should be [HBoxContainer], [VBoxContainer], or [GridContainer].
-@export
-var choice_list:Control:
-	get:
-		return choice_list
-	set(value):
-		choice_list = value
-		if Engine.is_editor_hint():
-			update_configuration_warnings()
-@export_subgroup("Containers")
 ## Any [Control] that is a parent of both nodes used for; [member name_label] and [member body_label].
 @export var text_container: Control:
 	get:
@@ -141,6 +131,11 @@ var name_container: Control:
 		name_container = value
 		if Engine.is_editor_hint():
 			update_configuration_warnings()
+
+
+@export_group("Choice References", "choice_")
+## [Label] used to display the choice title. Invisible if the choice title is empty. Not setting it will result in the choice title not being shown.
+@export var choice_title_label: Label
 ## The Control holding [member choice_list].[br][br]
 ## I like setting using [code]mouse_filter[/code] [code]Stop[/code] and [b]FullRect Layout[/b].
 @export var choice_container:PanelContainer:
@@ -150,11 +145,14 @@ var name_container: Control:
 		choice_container = value
 		if Engine.is_editor_hint():
 			update_configuration_warnings()
-
-
-@export_group("Optional References")
-## [Label] used to display the choice title. Invisible if the choice title is empty. Not setting it will result in the choice title not being shown.
-@export var choice_title_label: Label
+@export
+var choice_list:Control:
+	get:
+		return choice_list
+	set(value):
+		choice_list = value
+		if Engine.is_editor_hint():
+			update_configuration_warnings()
 
 @export_group("Advanced Text Display")
 @export_subgroup("Body Label", "body_label")
@@ -492,15 +490,11 @@ func _set_dict_to_str_str_dict(target_variable: StringName, map: Dictionary):
 func _get_configuration_warnings() -> PackedStringArray:
 	var warnings = []
 	
-	if not choice_container:
-		warnings.append("Choice Container is null")
-	if not choice_list:
-		warnings.append("Choice Option Container is null")
-	elif not (
+	if not (
 			choice_list is HBoxContainer or 
 			choice_list is VBoxContainer or 
 			choice_list is GridContainer 
-			):
+			) and choice_list != null:
 			warnings.append("Choice Option Container is not HBoxContainer, VBoxContainer, or GridContainer")
 	if not body_label:
 		warnings.append("Text Content is null")
@@ -679,6 +673,7 @@ func continue_after_interrupt(read_page := -1, read_line := 0):
 func get_ui_visibilities() -> Dictionary:
 	var result := {}
 	for property in UI_PROPERTIES:
+		if not get(property): continue
 		result[property] = get(property).visible
 	return result
 
@@ -742,7 +737,8 @@ func _read_new_line(new_line: Dictionary):
 		#get(key).visible = get
 	text_container.visible = _can_text_container_be_visible()
 	_showing_text = line_type == DIISIS.LineType.Text
-	choice_container.visible = line_type == DIISIS.LineType.Choice
+	if choice_container:
+		choice_container.visible = line_type == DIISIS.LineType.Choice
 	
 	# register facts
 	var facts = _line_data.get("facts", {}).get("fact_data_by_name", {})
@@ -1150,6 +1146,14 @@ func _update_input_prompt(delta:float):
 		if prompt_unfinished:
 			prompt_unfinished.visible = false
 		return
+	
+	if show_input_prompt:
+		if not prompt_unfinished:
+			push_error("show_input_prompt is true but prompt_unfinished not set. Either disable show_input_prompt or set prompt_unfinished.")
+			return
+		if not prompt_finished:
+			push_error("show_input_prompt is true but prompt_finished not set. Either disable show_input_prompt or set prompt_finished.")
+			return
 	
 	var prompt_visible: bool
 
@@ -1686,6 +1690,13 @@ func set_actor_name(actor_key:String, actor_name:String):
 	name_map[actor_key] = actor_name
 
 func _build_choices(choices, auto_switch:bool):
+	if not choice_container:
+		push_error("Tried to build choices when choice_container is null")
+		return
+	if not choice_list:
+		push_error("Tried to build choices when choice_list is null")
+		return
+	
 	for c in choice_list.get_children():
 		c.queue_free()
 	
@@ -1808,6 +1819,8 @@ func _set_choice_title_or_warn(title: String):
 
 
 func _is_choice_presented() -> bool:
+	if (not choice_container) or (not choice_list):
+		return false
 	if virtual_choices:
 		return not _built_virtual_choices.is_empty()
 	return (not choice_list.get_children().is_empty()) and choice_container.visible

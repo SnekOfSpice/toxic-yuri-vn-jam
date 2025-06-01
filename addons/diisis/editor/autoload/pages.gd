@@ -1005,8 +1005,6 @@ func rename_dropdown_title(from:String, to:String):
 		for line : Dictionary in lines:
 			if line.get("line_type") != DIISIS.LineType.Text:
 				continue
-			if line["content"]["active_actors_title"] == from:
-				line["content"]["active_actors_title"] = to
 			var text_id : String = line.get("content", {}).get("text_id")
 			var content : String = Pages.get_text(text_id)
 			content = content.replace(str("{", from, "|"), str("{", to, "|"))

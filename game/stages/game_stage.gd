@@ -3,12 +3,6 @@ class_name GameStage
 
 @onready var characters := {}
 
-enum TextStyle {
-	ToBottom,
-	ToCharacter,
-}
-
-@export var text_style := TextStyle.ToBottom
 @export var stylebox_regular : StyleBox
 @export var stylebox_cg : StyleBox
 
@@ -22,18 +16,11 @@ var cg_position := ""
 var base_cg_offset : Vector2
 var is_name_container_visible := false
 
-@onready var text_container_custom_minimum_size : Vector2 = find_child("TextContainer1").custom_minimum_size
-@onready var rtl_custom_minimum_size : Vector2 = find_child("BodyLabel").custom_minimum_size
-
 @onready var cg_roots := [find_child("CGBottomContainer"), find_child("CGTopContainer")]
-@onready var text_start_position = find_child("TextContainer1").position
-
-var ui_id := 1
-@onready var ui_root : Control = find_child(str("TextContainer", ui_id))
 
 var callable_upon_blocker_clear:Callable
 
-@onready var camera = $Camera2D
+@onready var camera = $LineReader/Camera2D
 @onready var overlay_static = find_child("Static").get_node("ColorRect")
 @onready var overlay_fade_out = find_child("FadeOut").get_node("ColorRect")
 @onready var overlay_orgasm = find_child("Orgasm").get_node("ColorRect")
@@ -48,10 +35,8 @@ var target_mix := 0.0
 var target_static := 0.0
 
 func _ready():
-	use_ui(1)
 	find_child("StartCover").visible = true
 	ParserEvents.actor_name_changed.connect(on_actor_name_changed)
-	ParserEvents.body_label_text_changed.connect(on_body_label_text_changed)
 	ParserEvents.page_terminated.connect(go_to_main_menu)
 	ParserEvents.instruction_started.connect(on_instruction_started)
 	ParserEvents.instruction_completed.connect(on_instruction_completed)
@@ -62,8 +47,6 @@ func _ready():
 	line_reader.auto_continue = Options.auto_continue
 	line_reader.text_speed = Options.text_speed
 	line_reader.auto_continue_delay = Options.auto_continue_delay
-	
-	set_text_style(text_style)
 	
 	for character in find_child("Characters").get_children():
 		character.visible = false
@@ -174,9 +157,9 @@ func hide_ui():
 	find_child("VNUI").visible = false
 
 func set_cg(cg_name:String, fade_in_duration:float, cg_root:Control):
-	if stylebox_cg:
-		var ui1panel : PanelContainer = find_child("TextContainer1").find_child("Panel")
-		ui1panel.add_theme_stylebox_override("panel", stylebox_cg)
+	#if stylebox_cg:
+		#var ui1panel : PanelContainer = find_child("TextContainer1").find_child("Panel")
+		#ui1panel.add_theme_stylebox_override("panel", stylebox_cg)
 	
 	cg_root.modulate.a = 0.0 if cg_root.get_child_count() == 0 else 1.0
 	cg_root.visible = true
@@ -236,15 +219,6 @@ func set_cg_offset(offset:Vector2):
 	find_child("CGTopContainer").position = offset + base_cg_offset
 	find_child("CGBottomContainer").position = offset + base_cg_offset
 
-func set_text_style(style:TextStyle):
-	text_style = style
-	if text_style == TextStyle.ToBottom:
-		find_child("TextContainer1").custom_minimum_size = text_container_custom_minimum_size
-		find_child("TextContainer1").position = text_start_position
-		find_child("BodyLabel").custom_minimum_size = rtl_custom_minimum_size
-	elif text_style == TextStyle.ToCharacter:
-		find_child("TextContainer1").custom_minimum_size.x = 230
-		find_child("BodyLabel").custom_minimum_size.x = 230
 
 func hide_cg(fade_out := 0.0):
 	cg = ""
@@ -268,9 +242,9 @@ func _clear_cg():
 			Parser.function_acceded()
 			emit_insutrction_complete_on_cg_hide = false
 	
-	if stylebox_regular:
-		var ui1panel : PanelContainer = find_child("TextContainer1").find_child("Panel")
-		ui1panel.add_theme_stylebox_override("panel", stylebox_regular)
+	#if stylebox_regular:
+		#var ui1panel : PanelContainer = find_child("TextContainer1").find_child("Panel")
+		#ui1panel.add_theme_stylebox_override("panel", stylebox_regular)
 	
 
 func on_actor_name_changed(
@@ -280,40 +254,8 @@ func on_actor_name_changed(
 		actor_name = actor
 		is_name_container_visible = name_container_visible
 		return
-		
-func on_body_label_text_changed(
-	_old_text: String,
-	_new_text: String,
-	lead_time: float,
-):
-	if text_style == TextStyle.ToBottom:
-		return
-	## move to neutral position if not visible
-	## move to actor if visible
-	var center = size * 0.5
-	var actor_position:Vector2
-	
-	if is_name_container_visible:
-		if not characters.get(actor_name):
-			return
-		actor_position = characters.get(actor_name).position
-		var offset : int = sign(center.direction_to(actor_position).x) * 60
-		actor_position.x -= offset
-		if sign(offset) == 1:
-			actor_position.x -= line_reader.text_container.size.x
-		actor_position.y -= 100
-	else: # name container isn't visible
-		actor_position.x = center.x - line_reader.text_container.size.x * 0.5
-		actor_position.y = size.y - line_reader.text_container.size.y - 60
-	
-	if dialog_box_tween:
-		dialog_box_tween.kill()
-	dialog_box_tween = create_tween()
-	
-	var text_container : CenterContainer = find_child("TextContainer1")
-	text_container.position = actor_position
-	text_container.position.y += 10
-	dialog_box_tween.tween_property(text_container, "position", actor_position, lead_time).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
+
+
 
 func set_callable_upon_blocker_clear(callable:Callable):
 	callable_upon_blocker_clear = callable
@@ -329,18 +271,14 @@ func serialize() -> Dictionary:
 	result["cg"] = cg
 	result["cg_position"] = cg_position
 	result["base_cg_offset"] = base_cg_offset
-	result["text_container_position"] = find_child("TextContainer1").position
-	result["text_style"] = text_style
-	result["objects"] = $Objects.serialize()
+	result["objects"] = $LineReader/Objects.serialize()
 	
 	result["start_cover_visible"] = find_child("StartCover").visible
 	result["static"] = overlay_static.get_material().get_shader_parameter("intensity")
 	result["fade_out_lod"] = overlay_fade_out.get_material().get_shader_parameter("lod")
 	result["fade_out_mix_percentage"] = overlay_fade_out.get_material().get_shader_parameter("mix_percentage")
 	
-	result["camera"] = $Camera2D.serialize()
-	result["ui_id"] = ui_id
-	result["ui_root_visible"] = ui_root.visible
+	result["camera"] = $LineReader/Camera2D.serialize()
 	
 	return result
 
@@ -349,8 +287,8 @@ func deserialize(data:Dictionary):
 	for character : Character in find_child("Characters").get_children():
 		character.deserialize(character_data.get(character.character_name, {}))
 	
-	$Objects.deserialize(data.get("objects", {}))
-	$Camera2D.deserialize(data.get("camera", {}))
+	$LineReader/Objects.deserialize(data.get("objects", {}))
+	$LineReader/Camera2D.deserialize(data.get("camera", {}))
 	
 	var cg_name : String = data.get("cg", "")
 	if cg_name.is_empty():
@@ -366,23 +304,6 @@ func deserialize(data:Dictionary):
 	
 	find_child("StartCover").visible = data.get("start_cover_visible", false)
 	
-	set_text_style(data.get("text_style", TextStyle.ToBottom))
-	if text_style == TextStyle.ToCharacter:
-		# gets deserialized as string for some reason??
-		var fixed_position : Vector2
-		var deserialized_position = data.get("text_container_position", find_child("TextContainer1").position)
-		if deserialized_position is String:
-			deserialized_position = deserialized_position.trim_prefix("(")
-			deserialized_position = deserialized_position.trim_suffix(")")
-			var parts = deserialized_position.split(",")
-			fixed_position = Vector2(float(parts[0]), float(parts[1]))
-		elif deserialized_position is Vector2:
-			fixed_position = deserialized_position
-		else:
-			push_warning("Deserialized game_stage with something wild.")
-			return
-		find_child("TextContainer1").position = fixed_position
-	
 	target_lod = data.get("fade_out_lod", 0.0)
 	target_mix = data.get("fade_out_mix_percentage", 0.0)
 	overlay_fade_out.get_material().set_shader_parameter("lod", target_lod)
@@ -392,14 +313,12 @@ func deserialize(data:Dictionary):
 	overlay_static.get_material().set_shader_parameter("intensity", target_static)
 	overlay_static.get_material().set_shader_parameter("border_size", 1 - target_static)
 	
-	use_ui(data.get("ui_id", 1))
 	base_cg_offset = GameWorld.str_to_vec2(data.get("base_cg_offset", Vector2.ZERO))
-	ui_root.visible = data.get("ui_root_visible", true)
 
 var emit_insutrction_complete_on_cg_hide :bool
 
 func get_character(character_name:String) -> Character:
-	for child : Character in $Characters.get_children():
+	for child : Character in $LineReader/Characters.get_children():
 		if child.character_name == character_name:
 			return child
 	return null
@@ -438,32 +357,6 @@ func splatter(amount: int) -> void:
 		var sprite := preload("res://game/visuals/vfx/splatter/blood_splatter.tscn").instantiate()
 		find_child("VFXLayer").add_child(sprite)
 
-func use_ui(id:int):
-	var lr : LineReader = line_reader
-	var root_existed : bool
-	var body_label_text = lr.body_label.text
-	var current_raw_name = lr.current_raw_name
-	
-	if ui_root:
-		root_existed = true
-	else:
-		root_existed = false
-	ui_id = id
-	ui_root = find_child("TextContainer%s" % ui_id)
-	for c in find_child("VNUI").get_children():
-		if c.name.begins_with("TextContainer"):
-			c.visible = c == ui_root
-	
-	lr.body_label = ui_root.find_child("BodyLabel")
-	lr.text_container = ui_root
-	lr.name_label = ui_root.find_child("NameLabel")
-	lr.name_container = ui_root.find_child("NameContainer")
-	lr.prompt_finished = ui_root.find_child("PageFinished")
-	lr.prompt_unfinished = ui_root.find_child("PageUnfinished")
-	
-	if root_existed:
-		lr.update_name_label(current_raw_name)
-		lr.body_label.text = body_label_text
 
 func set_static(level:float):
 	target_static = level

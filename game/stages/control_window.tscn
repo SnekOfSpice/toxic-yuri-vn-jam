@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://baiq36mlxyovb"]
+
+[ext_resource type="Script" uid="uid://dibqp2og542ij" path="res://game/stages/control_window.gd" id="1_hu5tn"]
+
+[node name="ControlWindow" type="VBoxContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 27.0
+grow_horizontal = 2
+script = ExtResource("1_hu5tn")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="TitleLabel" type="RichTextLabel" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+bbcode_enabled = true
+text = "dfgdfg"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+
+[node name="CloseButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+text = "X"
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+
+[node name="ContentContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[connection signal="focus_exited" from="." to="." method="_on_focus_exited"]
