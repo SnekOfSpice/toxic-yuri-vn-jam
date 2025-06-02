@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=4 format=3 uid="uid://gee0nt5mhjku"]
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://gee0nt5mhjku"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p5fhx"]
 bg_color = Color(0.109804, 0.109804, 0.109804, 1)
@@ -24,11 +24,7 @@ expand_margin_right = 8.0
 expand_margin_bottom = 7.0
 anti_aliasing = false
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pux2m"]
-bg_color = Color(0.919066, 0.439793, 0.156677, 1)
-
 [resource]
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_p5fhx")
 Window/colors/title_color = Color(0.853916, 0.857043, 0.484737, 1)
 Window/styles/embedded_border = SubResource("StyleBoxFlat_88008")
-Window/styles/embedded_unfocused_border = SubResource("StyleBoxFlat_pux2m")

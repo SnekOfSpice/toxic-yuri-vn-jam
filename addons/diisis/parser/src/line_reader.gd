@@ -146,6 +146,7 @@ var name_container: Control:
 		if Engine.is_editor_hint():
 			update_configuration_warnings()
 @export
+## Container to which all choices get parented.
 var choice_list:Control:
 	get:
 		return choice_list
@@ -497,7 +498,7 @@ func _get_configuration_warnings() -> PackedStringArray:
 			) and choice_list != null:
 			warnings.append("Choice Option Container is not HBoxContainer, VBoxContainer, or GridContainer")
 	if not body_label:
-		warnings.append("Text Content is null")
+		warnings.append("Body Label is null")
 	if not text_container:
 		warnings.append("Text Container is null")
 	if not name_label and name_style == NameStyle.NameLabel:

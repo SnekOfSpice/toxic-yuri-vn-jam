@@ -4,7 +4,7 @@ class_name TextContent
 
 signal drop_focus()
 
-const WORD_SEPARATORS :=  ["[", "]", "{", "}", ">", "<", ".", ",", "|", " ", "-", ":", ";", "#", "*", "+", "~", "'"]
+const WORD_SEPARATORS :=  ["[", "]", "{", "}", ">", "<", ".", ",", "|", " ", ":", ";", "#", "*", "+", "~", "'"]
 const BBCODE_TAGS := ["b", "i", "u", "s", "img", "url", "font_size", "font", "rainbow", "pulse", "wave", "tornado", "shake", "fade", "code", "char", "center", "left", "right", "color", "bgcolor", "fgcolor", "outline_size", "outline_color"]
 
 var active_actors := [] # list of character names
@@ -129,7 +129,8 @@ func get_word_under_caret() -> String:
 		word = character_at_position + word
 		
 		i -= 1
-	i = start_position + 1
+	i = start_position
+	character_at_position = line[i]
 	while not (character_at_position in WORD_SEPARATORS) and i < line.length():
 		character_at_position = line[i]
 		if character_at_position in WORD_SEPARATORS:
@@ -576,7 +577,15 @@ func _on_text_box_gui_input(event: InputEvent) -> void:
 				Pages.editor.open_window_by_string("FactsPopup")
 			elif not tag.is_empty():
 				OS.shell_open("https://github.com/SnekOfSpice/dialog-editor/wiki/Line-Type:-Text#other")
-
+			
+			var word_under_caret = get_word_under_caret()
+			if word_under_caret in Pages.dropdown_titles:
+				Pages.editor.open_window_by_string("DropdownWindow")
+				return
+			for dropdown : Array in Pages.dropdowns.values():
+				if word_under_caret in dropdown:
+					Pages.editor.open_window_by_string("DropdownWindow")
+			
 
 func _on_import_ingest_from_clipboard() -> void:
 	var text : String = TextToDiisis.format_text(DisplayServer.clipboard_get())

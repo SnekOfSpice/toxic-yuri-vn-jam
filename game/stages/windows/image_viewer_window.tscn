@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://okxj0h4jwh18"]
 
 [ext_resource type="Script" uid="uid://b6di2cvpseu2i" path="res://game/stages/windows/image_viewer_window.gd" id="1_mr0yv"]
-[ext_resource type="Theme" uid="uid://gee0nt5mhjku" path="res://game/visuals/theme/game_theme.tres" id="1_v0t4c"]
+[ext_resource type="Theme" uid="uid://gee0nt5mhjku" path="res://game/visuals/theme/toxic_yuri_vn_theme.tres" id="1_v0t4c"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v0t4c"]
 content_margin_left = 8.0
@@ -14,34 +14,20 @@ border_width_top = 2
 border_width_right = 3
 border_width_bottom = 2
 
-[node name="ImageViewerWindow" type="PanelContainer"]
+[node name="ImageViewerWindow" type="PanelContainer" node_paths=PackedStringArray("header_vbox_parent")]
 offset_right = 155.0
 offset_bottom = 100.0
 theme = ExtResource("1_v0t4c")
 theme_override_styles/panel = SubResource("StyleBoxFlat_v0t4c")
 script = ExtResource("1_mr0yv")
+title = "GAZE"
+header_vbox_parent = NodePath("MarginContainer/VBoxContainer")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-
-[node name="VBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="TitleLabel" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-text = "GAZE"
-
-[node name="CloseButton" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 8
-text = "X"
 
 [node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -75,5 +61,3 @@ text_overrun_behavior = 3
 layout_mode = 2
 size_flags_horizontal = 8
 text = ".jpg  -  100%"
-
-[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/CloseButton" to="." method="close"]

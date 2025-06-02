@@ -15,10 +15,17 @@ signal start_show_cg(
 	on_top:bool)
 
 signal start_hide_cg(fade_out:float)
-signal start_rolling_credits()
-signal splatter(amount:int)
 signal start_chapter_cover(pov_name:String, bottom_text, new_background, zoom, bgm)
 signal request_object_visible(object_name:String, visibility:bool)
+
+@onready var windows : Control = find_child("Windows")
+var body_label_id_by_actor := {
+	"veil" : 1,
+	"narrator" : 1,
+	"amber" : 1,
+}
+
+@onready var camera : Camera2D = $Camera2D
 
 func _ready() -> void:
 	super()
@@ -90,11 +97,13 @@ func play_chapter_intro(pov_name: String, bottom_text: String, new_background: S
 
 
 func zoom_to(value : float, duration : float) -> bool:
-	GameWorld.camera.zoom_to(value, duration)
+	camera.zoom_to(value, duration)
 	return false
 
 func splatter_blood(amount) -> bool:
-	emit_signal("splatter", int(amount))
+	for i in int(amount):
+		var sprite := preload("res://game/visuals/vfx/splatter/blood_splatter.tscn").instantiate()
+		find_child("VFXLayer").add_child(sprite)
 	return false
 
 func set_emotion(actor_name: String, emotion_name: String) -> bool:
@@ -113,8 +122,7 @@ func show_character(character_name: String, clear_others: bool) -> bool:
 
 
 func shake_camera(strength:float) -> bool:
-	if GameWorld.camera:
-		GameWorld.camera.apply_shake(strength)
+	camera.apply_shake(strength)
 	return false
 
 
@@ -133,13 +141,11 @@ func show_letter() -> bool:
 
 
 func sway_camera(intensity : float) -> bool:
-	if GameWorld.camera:
-		GameWorld.camera.set_sway_intensity(intensity)
+	camera.set_sway_intensity(intensity)
 	return false
 
 func move_camera_to(x: float, y: float, duration: float) -> bool:
-	if GameWorld.camera:
-		GameWorld.camera.move_to(x, y, duration)
+	camera.move_to(x, y, duration)
 	return false
 
 func set_eye_progress(value: float) -> bool:
@@ -171,7 +177,7 @@ func control_camera(zoom : float, x : float, y : float, duration : float) -> boo
 	return false
 
 func roll_credits() -> bool:
-	emit_signal("start_rolling_credits")
+	find_child("RollingCredits").start()
 	return true
 
 func set_character_name(character: String, new_name: String) -> bool:
@@ -193,20 +199,22 @@ func cum(voice: String) -> bool:
 	return false
 
 func set_target_body_label(actor:String, target_id:int):
-	var vnui : Control = find_child("VNUI")
-	var window : Control = vnui.find_child("TextWindow%s"%target_id)
-	body_label = window.find_child("BodyLabel")
-
-var body_label_id_by_actor := {
-	"veil" : 1,
-	"narrator" : 1,
-	"amber" : 1,
-}
-
+	body_label_id_by_actor[actor] = target_id
+	if target_id == 0:
+		set_body_label(%DefaultTextContainer.find_child("BodyLabel"))
+	else:
+		var vnui : Control = find_child("VNUI")
+		var window : Control = vnui.find_child("ChatLogWindow%s"%target_id)
+		set_body_label(window.find_child("BodyLabel"))
 
 
 func on_dialog_line_args_passed(
 	actor_name: String,
 	dialog_line_args: Dictionary):
-		set_target_body_label(actor_name, int(dialog_line_args.get("dialog-target", body_label_id_by_actor.get(actor_name))))
+		set_target_body_label(actor_name, int(dialog_line_args.get("target", body_label_id_by_actor.get(actor_name))))
+
+func shake_windows(strength:float):
+	shake_camera(strength)
+	for window : Control in find_child("Windows").get_children():
+		window.rotation_degrees = randf_range(-0.5 * strength, 0.5 * strength)
 	

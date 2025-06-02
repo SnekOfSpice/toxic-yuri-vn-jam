@@ -581,7 +581,7 @@ visible = false
 [node name="FactsPopup" parent="Popups" instance=ExtResource("8_3kqv2")]
 visible = false
 
-[node name="DropdownPopup" parent="Popups" instance=ExtResource("9_i203b")]
+[node name="DropdownWindow" parent="Popups" instance=ExtResource("9_i203b")]
 visible = false
 transient = true
 

@@ -352,11 +352,6 @@ func _on_chapter_cover_chapter_intro_finished() -> void:
 	find_child("ChapterCover").visible = false
 
 
-func splatter(amount: int) -> void:
-	for i in amount:
-		var sprite := preload("res://game/visuals/vfx/splatter/blood_splatter.tscn").instantiate()
-		find_child("VFXLayer").add_child(sprite)
-
 
 func set_static(level:float):
 	target_static = level

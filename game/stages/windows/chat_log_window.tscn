@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://cosugqpmyex1j"]
+
+[ext_resource type="Script" uid="uid://3d66w6kp63vs" path="res://game/stages/windows/chat_log_window.gd" id="1_023oh"]
+
+[node name="ChatLogWindow" type="PanelContainer" node_paths=PackedStringArray("header_vbox_parent") groups=["chatlogwindow"]]
+offset_right = 56.0
+offset_bottom = 73.0
+script = ExtResource("1_023oh")
+title = "BARK"
+header_vbox_parent = NodePath("MarginContainer/TextContent")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="TextContent" type="VBoxContainer" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="MarginContainer/TextContent"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "owowo"
+
+[node name="BodyLabel" type="RichTextLabel" parent="MarginContainer/TextContent"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(370, 0)
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "text"
+fit_content = true
