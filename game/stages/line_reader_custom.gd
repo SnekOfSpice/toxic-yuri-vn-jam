@@ -24,6 +24,9 @@ signal request_object_visible(object_name:String, visibility:bool)
 
 func _ready() -> void:
 	super()
+	if not body_label:
+		await  get_tree().process_frame
+		set_body_label(GameWorld.game_stage.get_body_label(0))
 
 func play_sfx(_name:String):
 	Sound.play_sfx(_name)
@@ -192,6 +195,9 @@ func cum(voice: String) -> bool:
 	GameWorld.game_stage.cum(voice)
 	return false
 
+func set_all_body_targets(target_id:int):
+	for actor in GameWorld.game_stage.body_label_id_by_actor.keys():
+		GameWorld.game_stage.set_target_body_label(actor, target_id)
 
 func shake_windows(strength:float):
 	shake_camera(strength)
@@ -203,3 +209,13 @@ func show_image(image:String, viewer:=0, x_min_size := 200, y_min_size := 200, )
 		if child is ImageViewerWindow:
 			if child.id == viewer:
 				child.show_image(image, x_min_size, y_min_size)
+
+func hide_windows(window_type:String):
+	var windows = find_child("Windows").get_children()
+	for window : CustomWindow in windows:
+		if window is ChatLogWindow and window_type == "text":
+			window.close()
+		elif window is ImageViewerWindow and window_type == "image":
+			window.close()
+		if window is WaveFormWindow and window_type == "audio":
+			window.close()

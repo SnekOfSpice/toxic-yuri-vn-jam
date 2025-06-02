@@ -62,7 +62,7 @@ func _ready():
 	if callable_upon_blocker_clear:
 		callable_upon_blocker_clear.call()
 	else:
-		Parser.reset_and_start()
+		Parser.reset_and_start(6)
 	
 	await get_tree().process_frame
 	find_child("StartCover").visible = false
@@ -398,8 +398,8 @@ func set_target_body_label(actor:String, target_id:int):
 	body_label_id_by_actor[actor] = target_id
 	if target_id == 0:
 		$LineReader.set_body_label(%DefaultTextContainer.find_child("BodyLabel"))
-		var name_label = %DefaultTextContainer.find_child("NameContainer")
-		var name_container = %DefaultTextContainer.find_child("NameLabel")
+		var name_label = %DefaultTextContainer.find_child("NameLabel")
+		var name_container = %DefaultTextContainer.find_child("NameContainer")
 		$LineReader.set_name_controls(name_label, name_container)
 	else:
 		var vnui : Control = find_child("VNUI")

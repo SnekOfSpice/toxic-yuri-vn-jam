@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 0,
+		"current_page_number": 5,
 		"ingest_capitalize": false,
 		"ingest_whitespace": true,
 		"page_view": 0,
@@ -39,6 +39,11 @@
 			},
 			"get_property_from_self_or_autoload": {
 				"property": []
+			},
+			"hide_windows": {
+				"window_type": [
+					"window_types"
+				]
 			},
 			"on_dialog_line_args_passed": {
 				"actor_name": []
@@ -106,7 +111,8 @@
 		"dropdown_title_for_dialog_syntax": "character",
 		"dropdown_titles": [
 			"character",
-			"target"
+			"target",
+			"window_types"
 		],
 		"dropdowns": {
 			"character": [
@@ -126,12 +132,17 @@
 				"0",
 				"1",
 				"2"
+			],
+			"window_types": [
+				"text",
+				"image",
+				"audio"
 			]
 		},
 		"empty_strings_for_l10n": false,
 		"evaluator_modified_times": {
 			"res://game/autoloads/sound.tscn": 1742548751,
-			"res://game/stages/line_reader_custom.gd": 1747815894
+			"res://game/stages/line_reader_custom.gd": 1748895588
 		},
 		"facts": {
 			"liked amber": false
@@ -238,6 +249,9 @@
 			"hide_cg": {
 				"fade_out": 2.0
 			},
+			"hide_windows": {
+
+			},
 			"interrupt": {
 				"hide_controls": true
 			},
@@ -266,6 +280,9 @@
 
 			},
 			"set_actor_name": {
+
+			},
+			"set_all_body_targets": {
 
 			},
 			"set_background": {
@@ -345,7 +362,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854773718,
+		"id_counter": -9223372036854773646,
 		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa",
 		"locales_to_export": [
 			"de_DE",
@@ -364,7 +381,7 @@
 					{
 						"address": "0.0",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -374,7 +391,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -394,23 +411,23 @@
 						},
 						"header": [],
 						"id": "1744999497.621--9223372036854774767",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 0,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
 				"next": 1.0,
-				"number": 0,
+				"number": 0.0,
 				"page_key": "beginning",
 				"terminate": false
 			},
@@ -483,6 +500,312 @@
 					{
 						"address": "2.0",
 						"conditionals": {
+							"behavior": 0.0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0.0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1748894240.252--9223372036854773706"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1748894240.252--9223372036854773707",
+						"line_type": 0.0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0.0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 0.0,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					}
+				],
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 0.0,
+				"meta.selected": false,
+				"next": 5.0,
+				"number": 2.0,
+				"page_key": "argo does drugs out of boredom",
+				"terminate": false
+			},
+			"3": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "3.0",
+						"conditionals": {
+							"behavior": 0.0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0.0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1748894285.087--9223372036854773704"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1748894285.087--9223372036854773705",
+						"line_type": 0.0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0.0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 0.0,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					}
+				],
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 0.0,
+				"meta.selected": false,
+				"next": 5.0,
+				"number": 3.0,
+				"page_key": "argo hangs out with the gang",
+				"terminate": false
+			},
+			"4": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "4.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1748894620.756--9223372036854773695"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1748894620.756--9223372036854773696",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "4.1",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1748894330.240--9223372036854773700"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1748894330.240--9223372036854773701",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "4.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0.0,
+							"delay_before": 0.0,
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_all_body_targets(0)",
+							"meta.validation_status": "OK",
+							"name": "set_all_body_targets",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1748894545.569--9223372036854773699",
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "4.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.function_calls": [
+								"set_actor_name(vanessa, Pain)",
+								"set_actor_name(argo, Veil)"
+							],
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1748894560.579--9223372036854773697"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1748894560.579--9223372036854773698",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 3,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					}
+				],
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 7.0,
+				"number": 4,
+				"page_key": "venassa & argo mutual sh on acid",
+				"terminate": false
+			},
+			"5": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "5.0",
+						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
@@ -525,12 +848,12 @@
 				"meta.address_mode_next": 0,
 				"meta.scroll_vertical": 0,
 				"meta.selected": false,
-				"next": 3.0,
-				"number": 2,
+				"next": 6.0,
+				"number": 5,
 				"page_key": "argo has its first bathroom monologue",
 				"terminate": false
 			},
-			"3": {
+			"6": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -539,9 +862,9 @@
 				},
 				"lines": [
 					{
-						"address": "3.0",
+						"address": "6.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -551,7 +874,278 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1748894911.275--9223372036854773593"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1748894911.275--9223372036854773594",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "6.1",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1748894921.276--9223372036854773591"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1748894921.275--9223372036854773592",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "6.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0.0,
+							"delay_before": 0.0,
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_all_body_targets(0)",
+							"meta.validation_status": "OK",
+							"name": "set_all_body_targets",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1748895438.878--9223372036854773751",
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "6.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.function_calls": [
+								"hide_windows(text)"
+							],
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1748895441.112--9223372036854773749"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1748895441.112--9223372036854773750",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 3,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "6.4",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1748894926.247--9223372036854773589"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1748894926.247--9223372036854773590",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "6.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1748894946.286--9223372036854773587"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1748894946.286--9223372036854773588",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 5,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					}
+				],
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 157,
+				"meta.selected": false,
+				"next": 7.0,
+				"number": 6,
+				"page_key": "vanessa and argo sex scene",
+				"terminate": false
+			},
+			"7": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "7.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -571,23 +1165,23 @@
 						},
 						"header": [],
 						"id": "1744999499.058--9223372036854774709",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 0.0,
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 0.0,
-				"number": 3.0,
+				"number": 7,
 				"page_key": "the end",
 				"terminate": true
 			}
@@ -614,7 +1208,19 @@
 			"1744987742.697--9223372036854775760": "[]>narrator: How can you leave this place again? Well you can just terminate the page by not having it point to a page again :3 <mp>(That's the [img]res://addons/diisis/editor/visuals/theme/buttons_ui/ticked_terminate.png[/img] symbol in the top left in DIISIS)\n[]>narrator: This demo and DIISIS entirely was made by [url=https://snekofspice.itch.io/]Snek[/url].\n[]>narrator: Music by [url=https://chezmonplaisir.bandcamp.com/album/chill-for-real]Loyalty Freak Music[/url] and [url=https://lmnlrecords.bandcamp.com/track/its-not-pretty-here]Modela[/url].\n[]>narrator: <call:control_camera(1, 0,0,4)>Amber art by [url=https://x.com/_10qi]10qi[/url].\n[]>narrator: [rainbow freq=1.0 sat=0.8 val=0.8]Go out there and create![/rainbow] ",
 			"1744987742.697--9223372036854775762": "[]>narrator: There you go <3\n[]>narrator: Dear reader; This template comes with all the simple things you need to make your own visual novel. There's a guide for the setup [url=https://github.com/SnekOfSpice/dialog-editor/wiki/Using-the-visual-novel-template]here[/url]. I would recommend you still know the very basics of Godot, maybe look into how to use themes.",
 			"1747669421.946--9223372036854773668": "[]>amber:hi",
-			"1748889010.129--9223372036854773752": "[]>argo:i wanna help everyone before i fucking expire\ni have trannies die left and right at the hands of the state and themselves and I can do nothing but do drugs and tell a few of them it's gonna be ok tomorrow \nand overmorrow is darker than today\nand im just supposed to tell them things will be fine\nfuck off",
+			"1748889010.129--9223372036854773752": "[]>argo:\"wait for god As she dies besides me\"\n[]>argo:i wanna help everyone before i fucking expire\ni have trannies die left and right at the hands of the state and themselves and I can do nothing but do drugs and tell a few of them it's gonna be ok tomorrow \nand overmorrow is darker than today\nand im just supposed to tell them things will be fine\nfuck off",
+			"1748894235.248--9223372036854773708": "[]>",
+			"1748894240.252--9223372036854773706": "[]>argo:sdg",
+			"1748894285.087--9223372036854773704": "[]>vanessa:vanessa and argo get to talking and bonding over sh",
+			"1748894299.427--9223372036854773702": "[]>",
+			"1748894330.240--9223372036854773700": "[]>vanessa:I can see your true name painted on your face\n[]>narrator:shes crying\n[]>vanessa:fuck...\n[]>argo:me too.\n[]>narrator:they cup eachh others faces\n[]>vanessa:wanna speak it out together?\n[]>argo:yea...\n[]>argo{target|1}:pain<advance>\n[]>vanessa{target|2}:veil",
+			"1748894560.579--9223372036854773697": "[]>vanessa:<call:set_actor_name(vanessa, Pain)> I love you\n[]>argo:<call:set_actor_name(argo, Veil)>I love you too",
+			"1748894620.756--9223372036854773695": "[]>narrator:they do acid and cut themselves yay",
+			"1748894911.275--9223372036854773593": "[]>argo:cg of them sitting together",
+			"1748894921.276--9223372036854773591": "[]>vanessa: Isn't it cool how... when you combine our names\n[]>vanessa: You get vein\n[]>argo: Like the character trait or blood thing?\n[]>vanessa: Blood thing\n[]>vanessa: But vain also works\n[]>vanessa: And I think vane vee a an ee is also a word?\n[]>argo: Idk honestly\n[]>vanessa: Still fun\n[]>argo: And that's just that direction\n[]>vanessa: Huh?\n[]>argo: Like...\n[]>argo: Vein is first me then you, veil and pain together\n[]>argo: But...\n[]>argo: Pail...\n[]>argo: Pale!\n[]>argo: Like\n[]>argo:...\n[]>argo{target|1}: The moon<advance>\n[]>vanessa{target|2}: You",
+			"1748894926.247--9223372036854773589": "[]>narrator:It had been forever since Argo felt an emotion through someone else's lips. Kisses, sure. The physical sensation, the motion around someone ese's face. Sure. But truly feeling like there was a spark - no - a flare erupting through someoneÄs presence- that was a feeling long buried.\nand through the grindstone of past trauma, this emotion is dragged up, and before either knows it, Argo and Vanessa are feeling each other up, grabbing at one another, \n- vanessa is post op tgirl\n- argo has its dick still\n- they 69\n- nessa fingers argo, also gets mutual\n- argo eats nessa out\n- shower together SEX SCENE!!",
+			"1748894946.286--9223372036854773587": "[]>argo: so, both shipping names are valid, huh?\n[]>vanessa: what do you mean?\n[]>argo: you know. \n[]>argo: first name is the top, second the bottom\n[]>vanessa: huh\n[]>vanessa: what kinda traditionalist shit is that?\n[]>argo: I'm carabiner flagging, I'm allowed to\n[]>vanessa: pffft\n[]>argo: but yea, it was... barely a thing anymore when I got into fandom\n[]>argo: but I always liked it\n[]>argo: was kinda amusing to me.\n[]>vanessa: cute.\n[]>argo: just as you\n[]>vanessa: and you.\n[]>argo: faggot.\n[]>vanessa: you.",
+			"1748895441.112--9223372036854773749": "[]>vanessa: ...\n[]>argo: ...\n[]>argo: <call:hide_windows(text)>Why are you looking at my eyes like that\n[]>vanessa: I like the moon\n[]>argo: Me too.\n[]>vanessa: ...\n[]>argo: ...\n[]>vanessa: Now you're staring just as much\n[]>argo: ...\n[]>argo: I just really like the way the light from outside catches on you\n[]>vanessa: ...\n[]>argo: ...\n[]>vanessa: Mhm.",
 			"amber-is-happy": "[]>amber{amber-emotion|happy}: I'm really happy to hear that! <mp>I think you're cool too!"
 		},
 		"text_lead_time_other_actor": 0.0,

@@ -1,4 +1,5 @@
 extends CustomWindow
+class_name WaveFormWindow
 
 var band := 7
 

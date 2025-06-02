@@ -397,14 +397,14 @@ func key_exists(key: String) -> bool:
 func get_page_key(page_index:int) -> String:
 	return str(page_data.get(page_index, {}).get("page_key", ""))
 
-func get_page_number_by_key(key:String):
+func get_page_number_by_key(key:String) -> int:
 	for page in page_data.values():
 		if page.get("page_key") == key:
 			return page.get("number")
 	return -1
 
 func get_line_type(page_index:int, line_index:int) -> int:
-	var page = page_data.get(page_index, {})
+	var page = get_page_data(page_index)
 	var lines = page.get("lines")
 	return int(lines[line_index].get("line_type"))
 
