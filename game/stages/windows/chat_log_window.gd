@@ -13,8 +13,13 @@ func get_text_container() -> Control:
 func get_name_container() -> Control:
 	return %NameLabel
 
-func serialize():
-	pass
+func serialize() -> Dictionary:
+	var data := super.serialize()
+	data["body_label_text"] = %BodyLabel.text
+	data["name_label_text"] = %NameLabel.text
+	return data
 
 func deserialize(data:Dictionary):
-	pass
+	super.deserialize(data)
+	%BodyLabel.text = data.get("body_label_text", "")
+	%NameLabel.text = data.get("name_label_text", "")

@@ -281,10 +281,11 @@ func serialize() -> Dictionary:
 	
 	result["camera"] = $LineReader/Camera2D.serialize()
 	
-	var window_data := []
+	var window_data_by_uid := {}
 	for window : CustomWindow in windows.get_children():
-		window_data.append(window.serialize())
-	result["windows"] = window_data
+		var data := window.serialize()
+		window_data_by_uid[int(data.get("uid"))] = data
+	result["windows"] = window_data_by_uid
 	return result
 
 func deserialize(data:Dictionary):
@@ -319,6 +320,12 @@ func deserialize(data:Dictionary):
 	overlay_static.get_material().set_shader_parameter("border_size", 1 - target_static)
 	
 	base_cg_offset = GameWorld.str_to_vec2(data.get("base_cg_offset", Vector2.ZERO))
+	
+	# windows
+	var window_data : Dictionary = data.get("windows", {})
+	for window : CustomWindow in windows.get_children():
+		printt(typeof(window.uid), typeof(window_data.keys().front()))
+		window.deserialize(window_data.get(str(window.uid)))
 
 var emit_insutrction_complete_on_cg_hide :bool
 

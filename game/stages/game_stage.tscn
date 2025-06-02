@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=42 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" uid="uid://j84s4qlkmfxw" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" uid="uid://bqw08o3b22fdc" path="res://game/stages/line_reader_custom.gd" id="3_pms35"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://okxj0h4jwh18" path="res://game/stages/windows/image_viewer_window.tscn" id="7_3xf2c"]
 [ext_resource type="PackedScene" uid="uid://cosugqpmyex1j" path="res://game/stages/windows/chat_log_window.tscn" id="7_j1uqk"]
 [ext_resource type="PackedScene" uid="uid://qkegdwc8ux5o" path="res://game/stages/black_fade.tscn" id="8_50byo"]
+[ext_resource type="PackedScene" uid="uid://ern10pbw5tlc" path="res://game/stages/windows/wave_form_window.tscn" id="9_knhaa"]
 [ext_resource type="Script" uid="uid://c2vvnjn4tl6a7" path="res://game/stages/game_camera.gd" id="9_lbjue"]
 [ext_resource type="PackedScene" uid="uid://cjy7vf1xrnq5y" path="res://game/screens/chapter_cover.tscn" id="12_vf2y4"]
 [ext_resource type="PackedScene" uid="uid://biu88w163ploy" path="res://game/systems/cheats.tscn" id="13_qackq"]
@@ -239,6 +240,7 @@ offset_top = 264.0
 offset_right = 182.0
 offset_bottom = 339.0
 id = 2
+uid = 1
 
 [node name="ImageViewerWindow" parent="LineReader/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_3xf2c")]
 layout_mode = 0
@@ -246,6 +248,15 @@ offset_left = 294.0
 offset_top = 175.0
 offset_right = 449.0
 offset_bottom = 275.0
+uid = 2
+
+[node name="WaveFormWindow" parent="LineReader/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("9_knhaa")]
+layout_mode = 0
+offset_left = 889.0
+offset_top = 716.0
+offset_right = 1001.0
+offset_bottom = 752.0
+uid = 4
 
 [node name="ControlsContainer" type="VBoxContainer" parent="LineReader/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI"]
 layout_mode = 1

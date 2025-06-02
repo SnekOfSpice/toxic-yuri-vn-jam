@@ -1,13 +1,17 @@
-extends Control
+extends PanelContainer
 class_name CustomWindow
 
+## used for whatever, usually within the window group 8f image viewrs, text log, etc
 @export var id := 0
+## used for saving / loading
+@export var uid := 0
 @export var title : String
 @export var allow_close := false
 @export var header_vbox_parent : VBoxContainer
+@export var hide_on_ready := true
 
 func  _ready() -> void:
-	hide()
+	if hide_on_ready: hide()
 	var title_bar = preload("res://game/stages/windows/custom_window_title_bar.tscn").instantiate()
 	header_vbox_parent.add_child(title_bar)
 	header_vbox_parent.move_child(title_bar, 0)
@@ -23,7 +27,7 @@ var drag_offset : Vector2
 
 func on_gui_input(event: InputEvent):
 	if event is InputEventMouseButton:
-		if event.button_index == MOUSE_BUTTON_LEFT and not event.is_echo():
+		if event.button_index == MOUSE_BUTTON_RIGHT and not event.is_echo():
 			if event.pressed:
 				dragging = true
 				move_to_top()
@@ -45,16 +49,20 @@ func serialize() -> Dictionary:
 	# serialize the get_index() of these and then also use that during deserialization to preserve order
 	var data := {}
 	data["z_index"] = z_index
-	data["position"] = position
+	data["position.x"] = position.x
+	data["position.y"] = position.y
 	data["visible"] = visible
 	data["rotation_degrees"] = rotation_degrees
+	data["uid"] = uid
 	return data
 
 func deserialize(data:Dictionary):
 	z_index = data.get("z_index", z_index)
-	position = data.get("position", position)
+	position.x = data.get("position.x", position.x)
+	position.y = data.get("position.y", position.y)
 	visible = data.get("visible", visible)
 	rotation_degrees = data.get("rotation_degrees", rotation_degrees)
+	uid = data.get("uid", uid)
 
 func open():
 	show()

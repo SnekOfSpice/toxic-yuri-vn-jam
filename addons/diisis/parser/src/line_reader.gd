@@ -464,7 +464,8 @@ func deserialize(data: Dictionary):
 	
 	text_container.visible = _can_text_container_be_visible()
 	_showing_text = line_type == DIISIS.LineType.Text
-	choice_container.visible = line_type == DIISIS.LineType.Choice
+	if choice_container:
+		choice_container.visible = line_type == DIISIS.LineType.Choice
 	
 	if persist_ui_visibilities:
 		apply_ui_visibilities(data.get("ui_visibilities", {}))
