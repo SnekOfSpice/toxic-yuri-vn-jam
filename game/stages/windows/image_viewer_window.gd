@@ -17,12 +17,13 @@ func deserialize(data:Dictionary):
 	show_image(data.get("image_id", ""))
 
 
-func show_image(image:String):
+func show_image(image:String, x_min:=200, y_min:=200):
 	image_id = image
 	if image.is_empty():
 		return
 	var tex : TextureRect = find_child("TextureRect")
 	tex.texture = load("res://game/images/%s.png" % image)
+	tex.custom_minimum_size = Vector2(x_min, y_min)
 	find_child("FileNameLabel").text = image
 	move_to_top()
 

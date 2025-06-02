@@ -101,26 +101,29 @@
 		"default_address_mode_pages": 0,
 		"default_locale": "en_US",
 		"dropdown_dialog_arguments": [
-			"amber-emotion",
 			"target"
 		],
 		"dropdown_title_for_dialog_syntax": "character",
 		"dropdown_titles": [
-			"amber-emotion",
 			"character",
 			"target"
 		],
 		"dropdowns": {
-			"amber-emotion": [
-				"neutral",
-				"happy",
-				"sad"
-			],
 			"character": [
 				"narrator",
-				"amber"
+				"argo",
+				"vanessa",
+				"audrey",
+				"haley",
+				"maya",
+				"roaches",
+				"harshnoise",
+				"pain",
+				"halo",
+				"veil"
 			],
 			"target": [
+				"0",
 				"1",
 				"2"
 			]
@@ -312,7 +315,9 @@
 
 			},
 			"show_image": {
-				"viewer": 0
+				"viewer": 0,
+				"x_min_size": 200,
+				"y_min_size": 200
 			},
 			"show_letter": {
 
@@ -340,8 +345,8 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854773706,
-		"ingestion_actor_declaration": "a: amber\nn: narrator",
+		"id_counter": -9223372036854773718,
+		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa",
 		"locales_to_export": [
 			"de_DE",
 			"en_US",
@@ -375,7 +380,7 @@
 						},
 						"content": {
 							"meta.function_calls": [
-								"show_image(gas station)"
+								"show_image(gas station, 0, 200, 170)"
 							],
 							"meta.locked": false,
 							"meta.validation_status": "OK",
@@ -478,6 +483,64 @@
 					{
 						"address": "2.0",
 						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1748889010.129--9223372036854773752"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1748889010.129--9223372036854773753",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					}
+				],
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 3.0,
+				"number": 2,
+				"page_key": "argo has its first bathroom monologue",
+				"terminate": false
+			},
+			"3": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "3.0",
+						"conditionals": {
 							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
@@ -524,7 +587,7 @@
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
 				"next": 0.0,
-				"number": 2.0,
+				"number": 3.0,
 				"page_key": "the end",
 				"terminate": true
 			}
@@ -534,7 +597,7 @@
 		"show_facts_buttons": true,
 		"silly": true,
 		"text_data": {
-			"1744987729.490--9223372036854775799": "[]>narrator{target|2}: Imagine girls.<mp> getting hurt.\n[]>narrator{target|1}: A lot.\n[]>narrator:In a gas station <mp> <call:show_image(gas station)>",
+			"1744987729.490--9223372036854775799": "[]>narrator{target|1}: Imagine girls.<mp> getting hurt.\n[]>narrator{target|2}: A lot.\n[]>narrator:In a gas station <mp> <call:show_image(gas station, 0, 200, 170)>",
 			"1744987729.539--9223372036854775796": "Opinion on Amber?",
 			"1744987729.575--9223372036854775792": "",
 			"1744987729.575--9223372036854775793": "Yes I love her",
@@ -551,6 +614,7 @@
 			"1744987742.697--9223372036854775760": "[]>narrator: How can you leave this place again? Well you can just terminate the page by not having it point to a page again :3 <mp>(That's the [img]res://addons/diisis/editor/visuals/theme/buttons_ui/ticked_terminate.png[/img] symbol in the top left in DIISIS)\n[]>narrator: This demo and DIISIS entirely was made by [url=https://snekofspice.itch.io/]Snek[/url].\n[]>narrator: Music by [url=https://chezmonplaisir.bandcamp.com/album/chill-for-real]Loyalty Freak Music[/url] and [url=https://lmnlrecords.bandcamp.com/track/its-not-pretty-here]Modela[/url].\n[]>narrator: <call:control_camera(1, 0,0,4)>Amber art by [url=https://x.com/_10qi]10qi[/url].\n[]>narrator: [rainbow freq=1.0 sat=0.8 val=0.8]Go out there and create![/rainbow] ",
 			"1744987742.697--9223372036854775762": "[]>narrator: There you go <3\n[]>narrator: Dear reader; This template comes with all the simple things you need to make your own visual novel. There's a guide for the setup [url=https://github.com/SnekOfSpice/dialog-editor/wiki/Using-the-visual-novel-template]here[/url]. I would recommend you still know the very basics of Godot, maybe look into how to use themes.",
 			"1747669421.946--9223372036854773668": "[]>amber:hi",
+			"1748889010.129--9223372036854773752": "[]>argo:i wanna help everyone before i fucking expire\ni have trannies die left and right at the hands of the state and themselves and I can do nothing but do drugs and tell a few of them it's gonna be ok tomorrow \nand overmorrow is darker than today\nand im just supposed to tell them things will be fine\nfuck off",
 			"amber-is-happy": "[]>amber{amber-emotion|happy}: I'm really happy to hear that! <mp>I think you're cool too!"
 		},
 		"text_lead_time_other_actor": 0.0,

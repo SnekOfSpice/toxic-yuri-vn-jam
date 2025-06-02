@@ -761,7 +761,6 @@ func _on_setup_id_pressed(id: int) -> void:
 		6: # pages
 			open_popup($Popups.get_node("MovePagePopup"))
 
-
 #endregion
 
 

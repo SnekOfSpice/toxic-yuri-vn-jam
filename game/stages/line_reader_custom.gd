@@ -198,8 +198,8 @@ func shake_windows(strength:float):
 	for window : Control in find_child("Windows").get_children():
 		window.rotation_degrees = randf_range(-0.5 * strength, 0.5 * strength)
 	
-func show_image(image:String, viewer:=0):
+func show_image(image:String, viewer:=0, x_min_size := 200, y_min_size := 200, ):
 	for child in find_child("Windows").get_children():
 		if child is ImageViewerWindow:
 			if child.id == viewer:
-				child.show_image(image)
+				child.show_image(image, x_min_size, y_min_size)
