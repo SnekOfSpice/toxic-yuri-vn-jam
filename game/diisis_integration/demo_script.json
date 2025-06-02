@@ -88,6 +88,9 @@
 			"show_character": {
 				"character_name": []
 			},
+			"show_image": {
+				"image": []
+			},
 			"trim_trimmables": {
 				"text": []
 			},
@@ -283,6 +286,10 @@
 			"set_fade_out": {
 
 			},
+			"set_name_controls": {
+				"container": null,
+				"keep_text": true
+			},
 			"set_object_visible": {
 
 			},
@@ -333,7 +340,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854773336,
+		"id_counter": -9223372036854773706,
 		"ingestion_actor_declaration": "a: amber\nn: narrator",
 		"locales_to_export": [
 			"de_DE",
@@ -413,7 +420,7 @@
 					{
 						"address": "1.0",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -423,7 +430,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -440,23 +447,23 @@
 						},
 						"header": [],
 						"id": "1744999498.626--9223372036854774735",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 0,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
 				"next": 2.0,
-				"number": 1,
+				"number": 1.0,
 				"page_key": "audrey shoots her dick off",
 				"terminate": false
 			},
@@ -471,7 +478,7 @@
 					{
 						"address": "2.0",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -481,7 +488,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -501,23 +508,23 @@
 						},
 						"header": [],
 						"id": "1744999499.058--9223372036854774709",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 0,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
 				"next": 0.0,
-				"number": 2,
+				"number": 2.0,
 				"page_key": "the end",
 				"terminate": true
 			}

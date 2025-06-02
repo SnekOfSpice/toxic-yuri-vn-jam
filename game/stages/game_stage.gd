@@ -280,6 +280,8 @@ func serialize() -> Dictionary:
 	result["fade_out_mix_percentage"] = overlay_fade_out.get_material().get_shader_parameter("mix_percentage")
 	
 	result["camera"] = $LineReader/Camera2D.serialize()
+	result["body_label_id_by_actor"] = body_label_id_by_actor
+	result["last_body_label_target"] = last_body_label_target
 	
 	var window_data_by_uid := {}
 	for window : CustomWindow in windows.get_children():
@@ -320,12 +322,14 @@ func deserialize(data:Dictionary):
 	overlay_static.get_material().set_shader_parameter("border_size", 1 - target_static)
 	
 	base_cg_offset = GameWorld.str_to_vec2(data.get("base_cg_offset", Vector2.ZERO))
+	body_label_id_by_actor = data.get("body_label_id_by_actor", {})
 	
 	# windows
 	var window_data : Dictionary = data.get("windows", {})
 	for window : CustomWindow in windows.get_children():
 		printt(typeof(window.uid), typeof(window_data.keys().front()))
 		window.deserialize(window_data.get(str(window.uid)))
+	$LineReader.body_label = get_body_label(data.get("last_body_label_target", 0))
 
 var emit_insutrction_complete_on_cg_hide :bool
 
@@ -375,25 +379,38 @@ func set_fade_out(lod:float, mix:float):
 
 
 @onready var windows : Control = find_child("Windows")
+var last_body_label_target := 0
 var body_label_id_by_actor := {
 	"veil" : 1,
 	"narrator" : 1,
 	"amber" : 1,
 }
+func get_body_label(target_id:int):
+	if target_id == 0:
+		return%DefaultTextContainer.find_child("BodyLabel")
+	else:
+		var vnui : Control = find_child("VNUI")
+		var window : CustomWindow = vnui.find_child("ChatLogWindow%s"%target_id)
+		return window.get_body_label()
 
 func set_target_body_label(actor:String, target_id:int):
+	last_body_label_target = target_id
 	body_label_id_by_actor[actor] = target_id
 	if target_id == 0:
 		$LineReader.set_body_label(%DefaultTextContainer.find_child("BodyLabel"))
+		var name_label = %DefaultTextContainer.find_child("NameContainer")
+		var name_container = %DefaultTextContainer.find_child("NameLabel")
+		$LineReader.set_name_controls(name_label, name_container)
 	else:
 		var vnui : Control = find_child("VNUI")
-		var window : Control = vnui.find_child("ChatLogWindow%s"%target_id)
+		var window : ChatLogWindow = vnui.find_child("ChatLogWindow%s"%target_id)
 		$LineReader.set_body_label(window.find_child("BodyLabel"))
+		$LineReader.set_name_controls(window.get_name_label(), window.get_name_container())
 		window.move_to_top()
 		window.open_if_closed()
 
 
 func on_dialog_line_args_passed(
-	actor_name: String,
+	actor: String,
 	dialog_line_args: Dictionary):
-		set_target_body_label(actor_name, int(dialog_line_args.get("target", body_label_id_by_actor.get(actor_name))))
+		set_target_body_label(actor, int(dialog_line_args.get("target", body_label_id_by_actor.get(actor))))

@@ -3,6 +3,7 @@ class_name ImageViewerWindow
 
 var image_id:String
 
+
 func  _ready() -> void:
 	super()
 
@@ -24,3 +25,7 @@ func show_image(image:String):
 	tex.texture = load("res://game/images/%s.png" % image)
 	find_child("FileNameLabel").text = image
 	move_to_top()
+
+
+func _on_change_size_button_pressed() -> void:
+	pass # Replace with function body.

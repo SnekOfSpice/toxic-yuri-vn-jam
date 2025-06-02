@@ -1,4 +1,5 @@
 extends CustomWindow
+class_name ChatLogWindow
 
 func  _ready() -> void:
 	super()

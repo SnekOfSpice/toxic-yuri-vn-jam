@@ -378,7 +378,8 @@ func serialize() -> Dictionary:
 	
 	result["awaiting_inline_call"] = awaiting_inline_call
 	result["built_virtual_choices"] = _built_virtual_choices
-	result["body_label.text"] = body_label.text
+	if body_label:
+		result["body_label.text"] = body_label.text
 	result["call_strings"] = _call_strings
 	result["called_positions"] = _called_positions
 	result["chatlog_enabled"] = chatlog_enabled
@@ -539,10 +540,12 @@ func _ready() -> void:
 	
 	_remaining_auto_pause_duration = auto_pause_duration
 	
-	body_label.visible_ratio = 0
-	body_label.bbcode_enabled = true
-	body_label.text = ""
-	name_label.text = ""
+	if body_label:
+		body_label.visible_ratio = 0
+		body_label.bbcode_enabled = true
+		body_label.text = ""
+	if name_label:
+		name_label.text = ""
 	
 	if not show_input_prompt and prompt_unfinished:
 		prompt_unfinished.modulate.a = 0
@@ -681,7 +684,9 @@ func get_ui_visibilities() -> Dictionary:
 
 func apply_ui_visibilities(data:Dictionary):
 	for property in data.keys():
-		get(property).set("visible", data.get(property))
+		var prop = get(property)
+		if not prop: continue
+		prop.set("visible", data.get(property))
 
 func _on_instruction_wrapped_completed():
 	emit_signal("line_finished", line_index)
@@ -1021,6 +1026,7 @@ func _process(delta: float) -> void:
 		if _text_delay > 0:
 			_text_delay -= delta
 			return
+	
 	
 	var visible_characters_before_inline_call = body_label.visible_characters
 	if awaiting_inline_call:
@@ -1635,10 +1641,10 @@ func _set_body_label_text(text: String):
 		past_line.text = past_text
 		past_lines_container.add_child(past_line)
 
-	
-	body_label.text = text
-	body_label.visible_ratio = 0
-	body_label.visible_characters = _visible_prepend_offset
+	if body_label:
+		body_label.text = text
+		body_label.visible_ratio = 0
+		body_label.visible_characters = _visible_prepend_offset
 	_characters_visible_so_far = ""
 	_started_word_buffer = ""
 	
@@ -1662,11 +1668,19 @@ func set_body_label(new_body_label:RichTextLabel, keep_text := true):
 		return
 	var switch_text:bool = body_label != new_body_label
 	var old_text : String
-	if switch_text and keep_text:
+	if switch_text and keep_text and body_label:
 		old_text = body_label.text
 	body_label = new_body_label
 	if switch_text and keep_text:
 		body_label.text = old_text
+
+func set_name_controls(label, container:=name_container, keep_text:=true):
+	name_container = container
+	var old_text = name_label.text
+	name_label = label
+	if keep_text:
+		name_label.text = old_text
+	
 
 ## Helper function that you can use to switch [param keep_past_lines] to true and transfer all data to the [param new_label]. [param new_label] becomes [param body_label].
 func enable_keep_past_lines(container: VBoxContainer, keep_text := false, new_label:=body_label, new_name_style := name_style):
