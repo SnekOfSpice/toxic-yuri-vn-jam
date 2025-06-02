@@ -41,6 +41,7 @@ func _ready():
 	ParserEvents.instruction_started.connect(on_instruction_started)
 	ParserEvents.instruction_completed.connect(on_instruction_completed)
 	ParserEvents.read_new_line.connect(on_read_new_line)
+	ParserEvents.dialog_line_args_passed.connect(on_dialog_line_args_passed)
 	
 	GameWorld.game_stage = self
 	
@@ -280,6 +281,10 @@ func serialize() -> Dictionary:
 	
 	result["camera"] = $LineReader/Camera2D.serialize()
 	
+	var window_data := []
+	for window : CustomWindow in windows.get_children():
+		window_data.append(window.serialize())
+	result["windows"] = window_data
 	return result
 
 func deserialize(data:Dictionary):
@@ -360,3 +365,28 @@ func set_static(level:float):
 func set_fade_out(lod:float, mix:float):
 	target_lod = lod
 	target_mix = mix
+
+
+@onready var windows : Control = find_child("Windows")
+var body_label_id_by_actor := {
+	"veil" : 1,
+	"narrator" : 1,
+	"amber" : 1,
+}
+
+func set_target_body_label(actor:String, target_id:int):
+	body_label_id_by_actor[actor] = target_id
+	if target_id == 0:
+		$LineReader.set_body_label(%DefaultTextContainer.find_child("BodyLabel"))
+	else:
+		var vnui : Control = find_child("VNUI")
+		var window : Control = vnui.find_child("ChatLogWindow%s"%target_id)
+		$LineReader.set_body_label(window.find_child("BodyLabel"))
+		window.move_to_top()
+		window.open_if_closed()
+
+
+func on_dialog_line_args_passed(
+	actor_name: String,
+	dialog_line_args: Dictionary):
+		set_target_body_label(actor_name, int(dialog_line_args.get("target", body_label_id_by_actor.get(actor_name))))

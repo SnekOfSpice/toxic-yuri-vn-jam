@@ -2,6 +2,7 @@ extends CustomWindow
 
 func  _ready() -> void:
 	super()
+	close()
 
 func get_body_label() -> RichTextLabel:
 	return %BodyLabel

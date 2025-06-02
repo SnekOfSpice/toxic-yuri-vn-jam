@@ -18,18 +18,12 @@ signal start_hide_cg(fade_out:float)
 signal start_chapter_cover(pov_name:String, bottom_text, new_background, zoom, bgm)
 signal request_object_visible(object_name:String, visibility:bool)
 
-@onready var windows : Control = find_child("Windows")
-var body_label_id_by_actor := {
-	"veil" : 1,
-	"narrator" : 1,
-	"amber" : 1,
-}
+
 
 @onready var camera : Camera2D = $Camera2D
 
 func _ready() -> void:
 	super()
-	ParserEvents.dialog_line_args_passed.connect(on_dialog_line_args_passed)
 
 func play_sfx(_name:String):
 	Sound.play_sfx(_name)
@@ -198,23 +192,14 @@ func cum(voice: String) -> bool:
 	GameWorld.game_stage.cum(voice)
 	return false
 
-func set_target_body_label(actor:String, target_id:int):
-	body_label_id_by_actor[actor] = target_id
-	if target_id == 0:
-		set_body_label(%DefaultTextContainer.find_child("BodyLabel"))
-	else:
-		var vnui : Control = find_child("VNUI")
-		var window : Control = vnui.find_child("ChatLogWindow%s"%target_id)
-		set_body_label(window.find_child("BodyLabel"))
-
-
-func on_dialog_line_args_passed(
-	actor_name: String,
-	dialog_line_args: Dictionary):
-		set_target_body_label(actor_name, int(dialog_line_args.get("target", body_label_id_by_actor.get(actor_name))))
 
 func shake_windows(strength:float):
 	shake_camera(strength)
 	for window : Control in find_child("Windows").get_children():
 		window.rotation_degrees = randf_range(-0.5 * strength, 0.5 * strength)
 	
+func show_image(image:String, viewer:=0):
+	for child in find_child("Windows").get_children():
+		if child is ImageViewerWindow:
+			if child.id == viewer:
+				child.show_image(image)
