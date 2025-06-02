@@ -607,6 +607,7 @@ visible = false
 visible = false
 
 [node name="IngestionActorSetupWindow" parent="Popups" instance=ExtResource("33_378lj")]
+size = Vector2i(400, 2040)
 visible = false
 
 [node name="Camera" type="Camera2D" parent="."]

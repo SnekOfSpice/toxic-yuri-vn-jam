@@ -2161,3 +2161,14 @@ func execute(instruction_text: String) -> bool:
 	return result
 
 #endregion
+
+func get_actor_names_in_line(empty_if_not_text:=true) -> Array:
+	if empty_if_not_text:
+		if line_type != DIISIS.LineType.Text:
+			return []
+	var result := []
+	for actor in _dialog_actors:
+		if not actor in result:
+			result.append(actor)
+	return result
+	

@@ -53,13 +53,17 @@ func init() -> void:
 	ingest.init()
 	text_actions.add_separator("Prettify")
 	text_actions.add_item("Capitalize", 0)
+	text_actions.set_item_tooltip(2, Pages.TOOLTIP_CAPITALIZE)
 	text_actions.add_item("Neaten Whitespace", 1)
-	text_actions.add_separator()
-	text_actions.add_item("Set Text ID...", 4)
+	text_actions.set_item_tooltip(3, Pages.TOOLTIP_NEATEN_WHITESPACE)
+	text_actions.add_separator("Meta")
+	text_actions.add_item("Set Text ID...", 3)
+	text_actions.add_item("Lock", 5)
+	text_actions.set_item_as_checkable(6, true)
+	text_actions.set_item_checked(6, false)
 	
 	
-	text_actions.set_item_tooltip(1, Pages.TOOLTIP_CAPITALIZE)
-	text_actions.set_item_tooltip(2, Pages.TOOLTIP_NEATEN_WHITESPACE)
+	
 	
 func serialize() -> Dictionary:
 	if not text_id:
@@ -68,6 +72,7 @@ func serialize() -> Dictionary:
 	var result := {}
 	
 	result["text_id"] = text_id
+	result["meta.locked"] = is_locked()
 	result["meta.validation_status"] = get_overall_compliance()
 	if not get_function_calls().is_empty():
 		result["meta.function_calls"] = get_function_calls()
@@ -82,6 +87,9 @@ func deserialize(data: Dictionary):
 		text_box.text = data.get("content", "")
 	active_actors = data.get("active_actors", [])
 	fill_active_actors()
+	var text_actions : PopupMenu = find_child("Text Actions")
+	if text_actions.item_count > 0:
+		text_actions.set_item_checked(6, data.get("meta.locked", false))
 
 func set_page_view(view:DiisisEditor.PageView):
 	find_child("DialogSyntaxContainer").visible = view == DiisisEditor.PageView.Full
@@ -429,7 +437,11 @@ func _on_text_box_code_completion_requested() -> void:
 	
 	update_tag_hint()
 
-
+func is_locked() -> bool:
+	var text_actions : PopupMenu = find_child("Text Actions")
+	if text_actions.item_count == 0:
+		return false
+	return find_child("Text Actions").is_item_checked(6)
 func _on_text_actions_id_pressed(id: int) -> void:
 	match id:
 		0:
@@ -440,6 +452,11 @@ func _on_text_actions_id_pressed(id: int) -> void:
 			if not text_id:
 				text_id = Pages.get_new_id()
 			Pages.editor.prompt_change_text_id(text_id)
+		5:
+			var is_locked : bool = is_locked()
+			var text_actions : PopupMenu = find_child("Text Actions")
+			text_actions.set_item_checked(6, not is_locked)
+			text_box.editable = is_locked
 
 func get_overall_compliance() -> String:
 	for compliance : String in get_compliances().values():

@@ -40,6 +40,9 @@
 			"get_property_from_self_or_autoload": {
 				"property": []
 			},
+			"on_dialog_line_args_passed": {
+				"actor_name": []
+			},
 			"play_chapter_intro": {
 				"bgm": [],
 				"bottom_text": [],
@@ -69,6 +72,9 @@
 			},
 			"set_object_visible": {
 				"object_name": []
+			},
+			"set_target_body_label": {
+				"actor": []
 			},
 			"set_text_style": {
 				"style": []
@@ -208,6 +214,9 @@
 			"finish_waiting_for_instruction": {
 
 			},
+			"get_actor_names_in_line": {
+
+			},
 			"get_preferences": {
 
 			},
@@ -324,7 +333,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854773287,
+		"id_counter": -9223372036854773698,
 		"ingestion_actor_declaration": "a: amber\nn: narrator",
 		"locales_to_export": [
 			"de_DE",
@@ -358,6 +367,7 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"meta.locked": false,
 							"meta.validation_status": "OK",
 							"text_id": "1744987729.490--9223372036854775799"
 						},
@@ -540,6 +550,7 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"meta.locked": false,
 							"meta.validation_status": "OK",
 							"text_id": "amber-is-happy"
 						},
@@ -587,6 +598,7 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"meta.locked": false,
 							"meta.validation_status": "OK",
 							"text_id": "1744987729.749--9223372036854775782"
 						},
@@ -627,6 +639,7 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"meta.locked": false,
 							"meta.validation_status": "OK",
 							"text_id": "1744987729.798--9223372036854775779"
 						},
@@ -669,7 +682,7 @@
 					{
 						"address": "1.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -679,11 +692,12 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
 						"content": {
+							"meta.locked": false,
 							"meta.validation_status": "OK",
 							"text_id": "1744987741.530--9223372036854775777"
 						},
@@ -695,12 +709,12 @@
 						},
 						"header": [],
 						"id": "1744999498.626--9223372036854774735",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -709,7 +723,7 @@
 					{
 						"address": "1.1",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -719,7 +733,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -741,12 +755,12 @@
 						},
 						"header": [],
 						"id": "1744999498.627--9223372036854774732",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1.0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						},
@@ -755,7 +769,7 @@
 					{
 						"address": "1.2",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -765,7 +779,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -773,6 +787,7 @@
 							"meta.function_calls": [
 								"shake_camera(40)"
 							],
+							"meta.locked": false,
 							"meta.validation_status": "OK",
 							"text_id": "1744987741.532--9223372036854775774"
 						},
@@ -784,12 +799,12 @@
 						},
 						"header": [],
 						"id": "1744999498.628--9223372036854774728",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2.0,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
@@ -798,7 +813,7 @@
 					{
 						"address": "1.3",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -808,7 +823,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -830,12 +845,12 @@
 						},
 						"header": [],
 						"id": "1747205915.630--9223372036854773717",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3.0,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
@@ -844,7 +859,7 @@
 					{
 						"address": "1.4",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -854,11 +869,12 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
 						"content": {
+							"meta.locked": false,
 							"meta.validation_status": "OK",
 							"text_id": "1744987741.532--9223372036854775772"
 						},
@@ -870,12 +886,12 @@
 						},
 						"header": [],
 						"id": "1744999498.628--9223372036854774724",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4.0,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						},
@@ -884,7 +900,7 @@
 					{
 						"address": "1.5",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -894,7 +910,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -916,12 +932,12 @@
 						},
 						"header": [],
 						"id": "1744999498.629--9223372036854774721",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5.0,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						},
@@ -930,7 +946,7 @@
 					{
 						"address": "1.6",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -940,11 +956,12 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
 						"content": {
+							"meta.locked": false,
 							"meta.validation_status": "OK",
 							"text_id": "1744987741.534--9223372036854775769"
 						},
@@ -956,12 +973,12 @@
 						},
 						"header": [],
 						"id": "1744999498.630--9223372036854774717",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6.0,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						},
@@ -970,7 +987,7 @@
 					{
 						"address": "1.7",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -980,7 +997,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -988,6 +1005,7 @@
 							"meta.function_calls": [
 								"hide_cg(2)"
 							],
+							"meta.locked": false,
 							"meta.validation_status": "OK",
 							"text_id": "1744987741.535--9223372036854775767"
 						},
@@ -999,23 +1017,23 @@
 						},
 						"header": [],
 						"id": "1744999498.630--9223372036854774713",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7.0,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 0.0,
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 266,
 				"meta.selected": false,
 				"next": 2.0,
-				"number": 1.0,
+				"number": 1,
 				"page_key": "about instructions",
 				"terminate": false
 			},

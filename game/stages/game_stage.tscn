@@ -246,6 +246,7 @@ handle_input_locally = false
 render_target_update_mode = 4
 
 [node name="Window" type="Window" parent="LineReader/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows/SubViewportContainer/SubViewport"]
+position = Vector2i(0, 36)
 
 [node name="Sprite2D" type="Sprite2D" parent="LineReader/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows/SubViewportContainer/SubViewport"]
 position = Vector2(197, 113)

@@ -1012,6 +1012,13 @@ func _on_fd_merge_l_10n_file_selected(path: String) -> void:
 func _on_refresh_button_pressed() -> void:
 	refresh()
 
+func handle_meta(meta:Variant):
+	if str(meta).begins_with("goto-"):
+		goto_with_meta(meta)
+	if str(meta).begins_with("open-"):
+		var target_window := str(meta).trim_prefix("open-")
+		open_window_by_string(target_window)
+
 func goto_with_meta(meta:Variant):
 	if str(meta).begins_with("goto-"):
 		var target_address := str(meta).trim_prefix("goto-")
