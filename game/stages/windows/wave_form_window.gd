@@ -14,6 +14,8 @@ func get_segments() -> Array:
 	return %Segments.get_children() as Array
 
 func on_word_read(word:String):
+	if Parser.line_reader.current_raw_name in Parser.line_reader.blank_names:
+		return
 	var i := 0.0
 	var segment_count := get_segments().size()
 	var used_band = band + randi_range(-2, 2)

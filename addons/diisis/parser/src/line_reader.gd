@@ -308,6 +308,7 @@ var _remaining_prompt_delay := input_prompt_delay
 ## Serializes and deserializes the [member visibility] property of all UI nodes [LineReader] references.
 @export var persist_ui_visibilities := true
 @export_group("Assist")
+@export var warn_on_non_bool_function_return := true
 @export_tool_button("Get Map Diffs", "Popup") var get_map_diffs_action = get_map_diffs
 
 signal line_finished(line_index: int)
@@ -2175,7 +2176,8 @@ func execute(instruction_text: String) -> bool:
 		return false
 	var result = call_from_string(instruction_text)
 	if not result is bool:
-		push_warning(str("Function ", instruction_name, " in ", get_script().get_global_name(), " should return true or false."))
+		if warn_on_non_bool_function_return:
+			push_warning(str("Function ", instruction_name, " in ", get_script().get_global_name(), " should return true or false."))
 		return false
 	return result
 

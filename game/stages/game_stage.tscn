@@ -88,7 +88,6 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_line = 7
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -138,6 +137,7 @@ body_label_function_funnel = Array[String](["Style.adjust_font_size_tags"])
 choice_button_keyboard_focus = false
 input_prompt_delay = 1.29
 input_prompt_lerp_weight = 0.233
+warn_on_non_bool_function_return = false
 
 [node name="Objects" type="Node2D" parent="LineReader"]
 script = ExtResource("3_x2eff")

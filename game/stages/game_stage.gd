@@ -408,7 +408,7 @@ func get_body_label(target_id:int):
 		var window : CustomWindow = vnui.find_child("ChatLogWindow%s"%target_id)
 		return window.get_body_label()
 
-func set_target_labels(actor:String, target_id:int):
+func set_target_labels(actor:String, target_id:int, force_show:=true):
 	last_body_label_target = target_id
 	body_label_id_by_actor[actor] = target_id
 	if target_id == 0:
@@ -421,8 +421,9 @@ func set_target_labels(actor:String, target_id:int):
 		var window : ChatLogWindow = vnui.find_child("ChatLogWindow%s"%target_id)
 		$LineReader.set_body_label(window.get_body_label(), false)
 		$LineReader.set_name_controls(window.get_name_label(), window.get_name_container())
-		window.move_to_top()
-		window.open_if_closed()
+		if force_show:
+			window.move_to_top()
+			window.open_if_closed()
 
 var block_about_new_actor_handling := false
 func on_dialog_line_args_passed(

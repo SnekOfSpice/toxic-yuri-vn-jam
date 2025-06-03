@@ -11,6 +11,9 @@ signal on_direct_swap (page_number)
 func _ready() -> void:
 	find_child("DirectStartedLabel").text = ""
 
+func get_number():
+	return number
+
 func set_number(n: int):
 	if not Pages.page_data.keys().has(n):
 		return
@@ -32,7 +35,7 @@ func set_number(n: int):
 	find_child("AddressModeButton").set_mode(Pages.page_data.get(n).get("meta.address_mode_next", Pages.default_address_mode_pages))
 	find_child("AddressModeButton").visible = not terminates
 	
-	find_child("WordCountLabel").text = str(Pages.get_word_count_on_page_approx(number))
+	find_child("WordCountLabel").text = str(Pages.get_count_on_page(number).x)
 
 func get_next() -> int:
 	return next

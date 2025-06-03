@@ -1318,6 +1318,9 @@ func remove_tags(t:String) -> String:
 		var scan_index := 0
 		while scan_index < text.length():
 			if text[scan_index] == pair[0]:
+				if text.find(pair[1]) < scan_index:
+					scan_index += 1
+					continue
 				var local_scan_index := scan_index
 				var control_to_replace := ""
 				while text[local_scan_index] != pair[1]:
