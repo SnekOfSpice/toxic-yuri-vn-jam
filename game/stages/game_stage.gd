@@ -3,6 +3,10 @@ class_name GameStage
 
 @onready var characters := {}
 
+@export_group("Devmode", "devmode_")
+@export var devmode_enabled := false
+@export var devmode_start_page := 0
+@export var devmode_start_line := 0
 @export var stylebox_regular : StyleBox
 @export var stylebox_cg : StyleBox
 
@@ -62,7 +66,10 @@ func _ready():
 	if callable_upon_blocker_clear:
 		callable_upon_blocker_clear.call()
 	else:
-		Parser.reset_and_start(6)
+		if devmode_enabled:
+			Parser.reset_and_start(devmode_start_page, devmode_start_line)
+		else:
+			Parser.reset_and_start()
 	
 	await get_tree().process_frame
 	find_child("StartCover").visible = false

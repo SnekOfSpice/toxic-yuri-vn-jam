@@ -35,13 +35,14 @@ func set_audio_player_volume(volume:float):
 			audio_players.erase(player)
 			player.queue_free()
 
-func play_sfx(sfx:String):
+func play_sfx(sfx:String, random_pitch := true):
 	var player := AudioStreamPlayer.new()
 	player.stream = load(CONST.fetch("SFX", sfx))
 	player.set_bus("SFX")
 	add_child(player)
 	player.play()
-	player.pitch_scale = randf_range(0.75, 1.0 / 0.75)
+	if random_pitch:
+		player.pitch_scale = randf_range(0.75, 1.0 / 0.75)
 	player.finished.connect(player.queue_free)
 
 func play_bgm(bgm:String, fade_in:=0.0, from:=0.0):

@@ -24,7 +24,7 @@ const MUSIC_MAIN_MENU := "Modela - It's Not Pretty Here.ogg"
 
 const SFX_ROOT := "res://game/sounds/sfx/"
 const SFX_CLICK := "637345__kyles__camera-toy-single-shot-nice-stereo.ogg"
-const SFX_SHUTTER := "579878__yfjesse__marvel-s-16-camera-shutter.ogg"
+const SFX_SHUTTER := "579882__yfjesse__polaroid-one-step-camera-shutter.ogg"
 
 func fetch(type:String, key:String) -> String:
 	type = type.to_upper()

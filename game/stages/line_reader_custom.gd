@@ -219,3 +219,16 @@ func hide_windows(window_type:String):
 			window.close()
 		if window is WaveFormWindow and window_type == "audio":
 			window.close()
+
+
+const SPLASH_STRINGS := {
+	"opening" : "I fucking hate you."
+}
+func splash_text(key:String):
+	if GameWorld.game_stage.devmode_enabled:
+		print(SPLASH_STRINGS.get(key))
+		return false
+	var cover = preload("res://game/stages/text_reading_cover.tscn").instantiate()
+	find_child("VNUICanvasLayer").add_child(cover)
+	cover.read(SPLASH_STRINGS.get(key))
+	return true
