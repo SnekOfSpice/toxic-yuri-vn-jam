@@ -26,7 +26,7 @@ func _ready() -> void:
 	super()
 	if Engine.is_editor_hint():
 		return
-	camera = $Camera2D
+	camera = %Camera2D
 	if not body_label:
 		await  get_tree().process_frame
 		set_body_label(GameWorld.game_stage.get_body_label(0))

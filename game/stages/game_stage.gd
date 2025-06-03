@@ -24,7 +24,7 @@ var is_name_container_visible := false
 
 var callable_upon_blocker_clear:Callable
 
-@onready var camera = $LineReader/Camera2D
+@onready var camera = %Camera2D
 @onready var overlay_static = find_child("Static").get_node("ColorRect")
 @onready var overlay_fade_out = find_child("FadeOut").get_node("ColorRect")
 @onready var overlay_orgasm = find_child("Orgasm").get_node("ColorRect")
@@ -287,14 +287,14 @@ func serialize() -> Dictionary:
 	result["cg"] = cg
 	result["cg_position"] = cg_position
 	result["base_cg_offset"] = base_cg_offset
-	result["objects"] = $LineReader/Objects.serialize()
+	result["objects"] = %Objects.serialize()
 	
 	result["start_cover_visible"] = find_child("StartCover").visible
 	result["static"] = overlay_static.get_material().get_shader_parameter("intensity")
 	result["fade_out_lod"] = overlay_fade_out.get_material().get_shader_parameter("lod")
 	result["fade_out_mix_percentage"] = overlay_fade_out.get_material().get_shader_parameter("mix_percentage")
 	
-	result["camera"] = $LineReader/Camera2D.serialize()
+	result["camera"] = %Camera2D.serialize()
 	result["body_label_id_by_actor"] = body_label_id_by_actor
 	result["last_body_label_target"] = last_body_label_target
 	
@@ -310,8 +310,8 @@ func deserialize(data:Dictionary):
 	for character : Character in find_child("Characters").get_children():
 		character.deserialize(character_data.get(character.character_name, {}))
 	
-	$LineReader/Objects.deserialize(data.get("objects", {}))
-	$LineReader/Camera2D.deserialize(data.get("camera", {}))
+	%Objects.deserialize(data.get("objects", {}))
+	%Camera2D.deserialize(data.get("camera", {}))
 	
 	var cg_name : String = data.get("cg", "")
 	if cg_name.is_empty():
@@ -344,12 +344,12 @@ func deserialize(data:Dictionary):
 	for window : CustomWindow in windows:
 		printt(typeof(window.uid), typeof(window_data.keys().front()))
 		window.deserialize(window_data.get(str(window.uid)))
-	$LineReader.body_label = get_body_label(data.get("last_body_label_target", 0))
+	%LineReader.body_label = get_body_label(data.get("last_body_label_target", 0))
 
 var emit_insutrction_complete_on_cg_hide :bool
 
 func get_character(character_name:String) -> Character:
-	for child : Character in $LineReader/Characters.get_children():
+	for child : Character in %Characters.get_children():
 		if child.character_name == character_name:
 			return child
 	return null
@@ -412,15 +412,15 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 	last_body_label_target = target_id
 	body_label_id_by_actor[actor] = target_id
 	if target_id == 0:
-		$LineReader.set_body_label(%DefaultTextContainer.find_child("BodyLabel"), false)
+		%LineReader.set_body_label(%DefaultTextContainer.find_child("BodyLabel"), false)
 		var name_label = %DefaultTextContainer.find_child("NameLabel")
 		var name_container = %DefaultTextContainer.find_child("NameContainer")
-		$LineReader.set_name_controls(name_label, name_container)
+		%LineReader.set_name_controls(name_label, name_container)
 	else:
 		var vnui : Control = find_child("VNUI")
 		var window : ChatLogWindow = vnui.find_child("ChatLogWindow%s"%target_id)
-		$LineReader.set_body_label(window.get_body_label(), false)
-		$LineReader.set_name_controls(window.get_name_label(), window.get_name_container())
+		%LineReader.set_body_label(window.get_body_label(), false)
+		%LineReader.set_name_controls(window.get_name_label(), window.get_name_container())
 		if force_show:
 			window.move_to_top()
 			window.open_if_closed()
