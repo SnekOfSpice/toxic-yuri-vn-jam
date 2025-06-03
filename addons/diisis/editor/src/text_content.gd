@@ -51,19 +51,31 @@ func init() -> void:
 	var text_actions : PopupMenu = find_child("Text Actions")
 	text_actions.add_submenu_node_item("Ingest Line", ingest)
 	ingest.init()
+	
+	var actor_prepend = PopupMenu.new()
+	for actor in Pages.get_speakers():
+		actor_prepend.add_item(actor)
+	text_actions.add_submenu_node_item("Prepend actor in empty lines", actor_prepend)
+	actor_prepend.index_pressed.connect(on_actor_prepend_index_pressed)
+	
+	submenu_offset = text_actions.item_count
+	
 	text_actions.add_separator("Prettify")
-	text_actions.add_item("Capitalize", 0)
-	text_actions.set_item_tooltip(2, Pages.TOOLTIP_CAPITALIZE)
-	text_actions.add_item("Neaten Whitespace", 1)
-	text_actions.set_item_tooltip(3, Pages.TOOLTIP_NEATEN_WHITESPACE)
+	text_actions.add_item("Capitalize", ID_CAPITALIZE)
+	text_actions.set_item_tooltip(ID_CAPITALIZE + submenu_offset + 1, Pages.TOOLTIP_CAPITALIZE)
+	text_actions.add_item("Neaten Whitespace", ID_WHITESPACE)
+	text_actions.set_item_tooltip(ID_WHITESPACE + submenu_offset + 1, Pages.TOOLTIP_NEATEN_WHITESPACE)
 	text_actions.add_separator("Meta")
-	text_actions.add_item("Set Text ID...", 3)
-	text_actions.add_item("Lock", 5)
-	text_actions.set_item_as_checkable(6, true)
-	text_actions.set_item_checked(6, false)
+	text_actions.add_item("Set Text ID...", ID_TEXT_ID)
+	text_actions.add_item("Lock", ID_LOCK)
+	text_actions.set_item_as_checkable(ID_LOCK+submenu_offset, true)
+	text_actions.set_item_checked(ID_LOCK+submenu_offset, false)
 	
-	
-	
+const ID_CAPITALIZE := 0
+const ID_WHITESPACE := 1
+const ID_TEXT_ID := 3
+const ID_LOCK := 5
+var submenu_offset := 0
 	
 func serialize() -> Dictionary:
 	if not text_id:
@@ -89,7 +101,7 @@ func deserialize(data: Dictionary):
 	fill_active_actors()
 	var text_actions : PopupMenu = find_child("Text Actions")
 	if text_actions.item_count > 0:
-		text_actions.set_item_checked(6, data.get("meta.locked", false))
+		text_actions.set_item_checked(ID_LOCK+submenu_offset, data.get("meta.locked", false))
 
 func set_page_view(view:DiisisEditor.PageView):
 	find_child("DialogSyntaxContainer").visible = view == DiisisEditor.PageView.Full
@@ -442,21 +454,21 @@ func is_locked() -> bool:
 	var text_actions : PopupMenu = find_child("Text Actions")
 	if text_actions.item_count == 0:
 		return false
-	return find_child("Text Actions").is_item_checked(6)
+	return find_child("Text Actions").is_item_checked(ID_LOCK+submenu_offset)
 func _on_text_actions_id_pressed(id: int) -> void:
 	match id:
-		0:
+		ID_CAPITALIZE:
 			text_box.text = Pages.capitalize_sentence_beginnings(text_box.text)
-		1:
+		ID_WHITESPACE:
 			text_box.text = Pages.neaten_whitespace(text_box.text)
-		3:
+		ID_TEXT_ID:
 			if not text_id:
 				text_id = Pages.get_new_id()
 			Pages.editor.prompt_change_text_id(text_id)
-		5:
+		ID_LOCK:
 			var is_locked : bool = is_locked()
 			var text_actions : PopupMenu = find_child("Text Actions")
-			text_actions.set_item_checked(6, not is_locked)
+			text_actions.set_item_checked(ID_LOCK+submenu_offset, not is_locked)
 			text_box.editable = is_locked
 
 func get_overall_compliance() -> String:
@@ -603,3 +615,9 @@ func _on_import_ingest_from_file() -> void:
 	Pages.editor.popup_ingest_file_dialog([
 		address,
 		find_child("Ingest").build_payload()])
+
+func on_actor_prepend_index_pressed(index:int):
+	for i in text_box.get_line_count():
+		var line : String = text_box.get_line(i)
+		if not line.begins_with("[]>"):
+			text_box.set_line(i, str("[]>", Pages.get_speakers()[index], ": ", line))

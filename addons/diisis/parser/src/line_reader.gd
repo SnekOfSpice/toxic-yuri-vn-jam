@@ -307,6 +307,8 @@ var _remaining_prompt_delay := input_prompt_delay
 @export_subgroup("Misc")
 ## Serializes and deserializes the [member visibility] property of all UI nodes [LineReader] references.
 @export var persist_ui_visibilities := true
+@export_group("Assist")
+@export_tool_button("Get Map Diffs", "Popup") var get_map_diffs_action = get_map_diffs
 
 signal line_finished(line_index: int)
 signal jump_to_page(page_index: int, target_line: int)
@@ -1969,6 +1971,7 @@ func _trim_syntax_and_emit_dialog_line_args(raw_name:String) -> String:
 ## is part of [member blank_names]. [br]
 ## Uses the raw keys defined in DIISIS.
 func update_name_label(actor_name: String):
+	ParserEvents.actor_name_about_to_change.emit(actor_name)
 	_is_last_actor_name_different = actor_name != current_raw_name
 	current_raw_name = actor_name
 	
@@ -2188,3 +2191,20 @@ func get_actor_names_in_line(empty_if_not_text:=true) -> Array:
 			result.append(actor)
 	return result
 	
+func get_map_diffs():
+	var maps := [
+		"name_map",
+		"color_map",
+		"chatlog_name_map",
+		"chatlog_color_map",
+	]
+	for m1 in maps:
+		for m2 in maps:
+			if m1 == m2:
+				continue
+			var diff := []
+			for actor in get(m1).keys():
+				if not actor in get(m2).keys():
+					diff.append(actor)
+			if not diff.is_empty():
+				prints("Keys present in %s but not %s :" % [m1, m2], ", ".join(diff))

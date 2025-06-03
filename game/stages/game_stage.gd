@@ -39,8 +39,12 @@ var target_mix := 0.0
 var target_static := 0.0
 
 func _ready():
+	body_label_id_by_actor.clear()
+	for actor in line_reader.name_map.keys():
+		body_label_id_by_actor[actor] = 0
 	find_child("StartCover").visible = true
 	ParserEvents.actor_name_changed.connect(on_actor_name_changed)
+	ParserEvents.actor_name_about_to_change.connect(on_actor_name_about_to_change)
 	ParserEvents.page_terminated.connect(go_to_main_menu)
 	ParserEvents.instruction_started.connect(on_instruction_started)
 	ParserEvents.instruction_completed.connect(on_instruction_completed)
@@ -261,7 +265,11 @@ func on_actor_name_changed(
 	):
 		actor_name = actor
 		is_name_container_visible = name_container_visible
+func on_actor_name_about_to_change(actor:String):
+	if block_about_new_actor_handling:
+		block_about_new_actor_handling = false
 		return
+	set_target_labels(actor, body_label_id_by_actor.get(actor, 0))
 
 
 
@@ -291,7 +299,7 @@ func serialize() -> Dictionary:
 	result["last_body_label_target"] = last_body_label_target
 	
 	var window_data_by_uid := {}
-	for window : CustomWindow in windows.get_children():
+	for window : CustomWindow in windows:
 		var data := window.serialize()
 		window_data_by_uid[int(data.get("uid"))] = data
 	result["windows"] = window_data_by_uid
@@ -333,7 +341,7 @@ func deserialize(data:Dictionary):
 	
 	# windows
 	var window_data : Dictionary = data.get("windows", {})
-	for window : CustomWindow in windows.get_children():
+	for window : CustomWindow in windows:
 		printt(typeof(window.uid), typeof(window_data.keys().front()))
 		window.deserialize(window_data.get(str(window.uid)))
 	$LineReader.body_label = get_body_label(data.get("last_body_label_target", 0))
@@ -385,12 +393,12 @@ func set_fade_out(lod:float, mix:float):
 	target_mix = mix
 
 
-@onready var windows : Control = find_child("Windows")
+@onready var windows : Array = find_child("Windows").get_children()
 var last_body_label_target := 0
 var body_label_id_by_actor := {
-	"veil" : 1,
-	"narrator" : 1,
-	"amber" : 1,
+	"veil" : 0,
+	"narrator" : 0,
+	"amber" : 0,
 }
 func get_body_label(target_id:int):
 	if target_id == 0:
@@ -400,24 +408,29 @@ func get_body_label(target_id:int):
 		var window : CustomWindow = vnui.find_child("ChatLogWindow%s"%target_id)
 		return window.get_body_label()
 
-func set_target_body_label(actor:String, target_id:int):
+func set_target_labels(actor:String, target_id:int):
 	last_body_label_target = target_id
 	body_label_id_by_actor[actor] = target_id
 	if target_id == 0:
-		$LineReader.set_body_label(%DefaultTextContainer.find_child("BodyLabel"))
+		$LineReader.set_body_label(%DefaultTextContainer.find_child("BodyLabel"), false)
 		var name_label = %DefaultTextContainer.find_child("NameLabel")
 		var name_container = %DefaultTextContainer.find_child("NameContainer")
 		$LineReader.set_name_controls(name_label, name_container)
 	else:
 		var vnui : Control = find_child("VNUI")
 		var window : ChatLogWindow = vnui.find_child("ChatLogWindow%s"%target_id)
-		$LineReader.set_body_label(window.find_child("BodyLabel"))
+		$LineReader.set_body_label(window.get_body_label(), false)
 		$LineReader.set_name_controls(window.get_name_label(), window.get_name_container())
 		window.move_to_top()
 		window.open_if_closed()
 
-
+var block_about_new_actor_handling := false
 func on_dialog_line_args_passed(
 	actor: String,
 	dialog_line_args: Dictionary):
-		set_target_body_label(actor, int(dialog_line_args.get("target", body_label_id_by_actor.get(actor))))
+		block_about_new_actor_handling = true
+		set_target_labels(actor, int(dialog_line_args.get("target", body_label_id_by_actor.get(actor))))
+
+func hide_all_windows():
+	for window : CustomWindow in windows:
+		window.hide()

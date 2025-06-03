@@ -224,3 +224,5 @@ signal advanced()
 
 ## Emitted when [method Parser.function_acceded] is called.
 signal acceded()
+
+signal actor_name_about_to_change(actor_name:String)

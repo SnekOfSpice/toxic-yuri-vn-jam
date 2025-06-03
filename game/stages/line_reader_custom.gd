@@ -1,4 +1,4 @@
-@warning_ignore("missing_tool")
+@tool
 extends LineReader
 
 signal start_black_fade(
@@ -20,10 +20,13 @@ signal request_object_visible(object_name:String, visibility:bool)
 
 
 
-@onready var camera : Camera2D = $Camera2D
+var camera : Camera2D
 
 func _ready() -> void:
 	super()
+	if Engine.is_editor_hint():
+		return
+	camera = $Camera2D
 	if not body_label:
 		await  get_tree().process_frame
 		set_body_label(GameWorld.game_stage.get_body_label(0))
@@ -195,9 +198,9 @@ func cum(voice: String) -> bool:
 	GameWorld.game_stage.cum(voice)
 	return false
 
-func set_all_body_targets(target_id:int):
+func set_all_target_labels(target_id:int):
 	for actor in GameWorld.game_stage.body_label_id_by_actor.keys():
-		GameWorld.game_stage.set_target_body_label(actor, target_id)
+		GameWorld.game_stage.set_target_labels(actor, target_id)
 
 func shake_windows(strength:float):
 	shake_camera(strength)
@@ -214,21 +217,25 @@ func hide_windows(window_type:String):
 	var windows = find_child("Windows").get_children()
 	for window : CustomWindow in windows:
 		if window is ChatLogWindow and window_type == "text":
-			window.close()
+			window.hide()
 		elif window is ImageViewerWindow and window_type == "image":
-			window.close()
+			window.hide()
 		if window is WaveFormWindow and window_type == "audio":
-			window.close()
+			window.hide()
 
 
 const SPLASH_STRINGS := {
-	"opening" : "I fucking hate you."
+	"opening" : "I fucking hate you.",
+	"yea_right" : "Yeah.\nRight.",
 }
-func splash_text(key:String):
+func splash_text(key:String, hide_all_windows := true):
 	if GameWorld.game_stage.devmode_enabled:
 		print(SPLASH_STRINGS.get(key))
 		return false
 	var cover = preload("res://game/stages/text_reading_cover.tscn").instantiate()
 	find_child("VNUICanvasLayer").add_child(cover)
-	cover.read(SPLASH_STRINGS.get(key))
+	cover.read(SPLASH_STRINGS.get(key), hide_all_windows)
 	return true
+
+func set_target_labels(actor:String, target_id:int):
+	GameWorld.game_stage.set_target_labels(actor, target_id)

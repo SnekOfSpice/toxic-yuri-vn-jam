@@ -87,6 +87,8 @@ grow_vertical = 2
 focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
+devmode_enabled = true
+devmode_start_line = 7
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -103,8 +105,32 @@ script = ExtResource("3_pms35")
 auto_pause_duration = 0.4
 blank_names = Array[String](["narrator"])
 name_map = Dictionary[String, String]({
-"amber": "Amber"
+"argo": "Argo",
+"audrey": "Audrey",
+"haley": "Haley",
+"halo": "Halo",
+"harshnoise": "Harsh Noise",
+"leah": "Leah",
+"maya": "Maya",
+"pain": "Pain",
+"roaches": "Roaches",
+"vanessa": "Vanessa",
+"veil": "Veil",
+"xelia": "Xelia"
 })
+color_map = Dictionary[String, Color]({
+"argo": Color(0.50699, 0.652463, 0.90489, 1),
+"audrey": Color(0.944091, 0.615961, 0.649595, 1),
+"haley": Color(0.89004, 0.763656, 0.27152, 1),
+"halo": Color(0, 0, 0, 1),
+"harshnoise": Color(0.637843, 0.637843, 0.637843, 1),
+"leah": Color(0.766701, 0.855714, 0.421582, 1),
+"maya": Color(0.753419, 0.53245, 0.46177, 1),
+"roaches": Color(0.865978, 0.713557, 0.86409, 1),
+"vanessa": Color(0.87152, 0.840437, 0.875095, 1),
+"xelia": Color(0.612394, 0.862658, 0.477221, 1)
+})
+name_style = 1
 name_label = NodePath("Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/VBoxContainer/NameContainer/NameLabel")
 text_container = NodePath("Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer")
 name_container = NodePath("Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/VBoxContainer/NameContainer/NameLabel")
