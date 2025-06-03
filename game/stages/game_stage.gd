@@ -39,6 +39,7 @@ var target_mix := 0.0
 var target_static := 0.0
 
 func _ready():
+	find_child("DevModeLabel").visible = devmode_enabled
 	body_label_id_by_actor.clear()
 	for actor in line_reader.name_map.keys():
 		body_label_id_by_actor[actor] = 0

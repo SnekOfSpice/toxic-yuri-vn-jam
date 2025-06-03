@@ -414,6 +414,16 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
+[node name="DevModeLabel" type="Label" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -79.5
+offset_right = 79.5
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "DEV MODE ENABLED"
+
 [node name="DitherLayer" type="CanvasLayer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D"]
 
 [node name="Dither" type="ColorRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/DitherLayer"]
