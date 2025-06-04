@@ -1311,6 +1311,45 @@ func search_string(substr:String, case_insensitive:=false, include_tags:=false) 
 	}
 	return result
 
+
+func get_cascading_trail(start_page:int) -> Array:
+	var trail := [start_page]
+	
+	var terminate : bool = get_page_data(start_page).get("terminate", false)
+	var next : int = get_page_data(start_page).get("next")
+	while not terminate:
+		if trail.has(next):
+			push_warning("Cyclic pages %s starting from %s" % [next, start_page])
+			break
+		trail.append(next)
+		next = get_page_data(next).get("next")
+		terminate = get_page_data(next).get("terminate", false)
+	
+	return trail
+
+func stringify_page(index:int, modifiers := {}) -> String:
+	var result := "PAGE %s" % index
+	var data := get_page_data(index)
+	var i := 0
+	for line : Dictionary in data.get("lines", []):
+		#print(line)
+		result += "\nLINE %s\n" % i
+		var line_type := get_line_type(index, i)
+		match line_type:
+			DIISIS.LineType.Text:
+				result += get_text(line.get("content").get("text_id"))
+				print(get_text(line.get("content").get("text_id")))
+			DIISIS.LineType.Instruction:
+				if not modifiers.get("include_instructions", false):
+					i += 1
+					continue
+				result += line.get("content").get("meta.text")
+			DIISIS.LineType.Choice:
+				push_warning("Choice stringification not supported atm")
+		i += 1
+	result += "\n"
+	return result
+
 func remove_tags(t:String) -> String:
 	var text := t
 	var pairs = ["<>", "[]"]

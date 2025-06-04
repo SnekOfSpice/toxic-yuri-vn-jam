@@ -657,6 +657,7 @@ func open_window_by_string(window_name:String) -> Window:
 	open_popup(window, window_name in [
 		"HandlerWindow",
 		"FactsPopup",
+		"TextExportWindow",
 	])
 	return window
 
@@ -704,6 +705,8 @@ func _on_file_id_pressed(id: int) -> void:
 				),
 				"About DIISIS"
 			)
+		5:
+			open_window_by_string("TextExportWindow")
 		#8:
 			#Pages.empty_strings_for_l10n = not Pages.empty_strings_for_l10n
 			#find_child("File").set_item_checked(9, Pages.empty_strings_for_l10n)
