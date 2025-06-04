@@ -225,8 +225,9 @@ func hide_windows(window_type:String):
 
 
 const SPLASH_STRINGS := {
-	"opening" : "I fucking hate you.",
+	"opening" : "[ph]I fucking hate you.",
 	"yea_right" : "Yeah.\nRight.",
+	"post_surgery" : "[ph]Surgery happened."
 }
 func splash_text(key:String, hide_all_windows := true):
 	if GameWorld.game_stage.devmode_enabled:
