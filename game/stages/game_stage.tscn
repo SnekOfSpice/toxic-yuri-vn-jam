@@ -88,6 +88,8 @@ grow_vertical = 2
 focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
+devmode_enabled = true
+devmode_start_page = 3
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -135,6 +137,10 @@ name_label = NodePath("SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer
 text_container = NodePath("SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer")
 name_container = NodePath("SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/VBoxContainer/NameContainer/NameLabel")
 body_label_function_funnel = Array[String](["Style.adjust_font_size_tags"])
+chatlog_fuse_lines = false
+chatlog_fallback_color_map = true
+chatlog_line_prefix = null
+chatlog_line_suffix = null
 choice_button_keyboard_focus = false
 input_prompt_delay = 1.29
 input_prompt_lerp_weight = 0.233
@@ -377,6 +383,7 @@ mouse_filter = 2
 
 [node name="BlackFade" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot" instance=ExtResource("8_50byo")]
 visible = false
+z_index = 10
 layout_mode = 1
 
 [node name="ChapterCover" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot" instance=ExtResource("12_vf2y4")]

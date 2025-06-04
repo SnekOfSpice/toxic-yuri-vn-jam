@@ -218,6 +218,8 @@ var choice_list:Control:
 @export var chatlog_include_body_label_actor_prefix := false
 ## If set, the actor's suffix from [member body_label_suffix_by_actor] will also be suffixed to the chatlog.
 @export var chatlog_include_body_label_actor_suffix := false
+@export var chatlog_line_prefix := "[code]"
+@export var chatlog_line_suffix := "[/code]"
 
 @export_group("Advanced UX")
 @export_subgroup("Choices")
@@ -798,6 +800,12 @@ func _read_new_line(new_line: Dictionary):
 							body_suffix,
 							"[/color]" if chatlog_tint_full_line else "",
 							)
+						
+						line = str(
+							chatlog_line_prefix,
+							line,
+							chatlog_line_suffix,
+						)
 					_dialog_lines.append(line)
 				
 				
@@ -2210,3 +2218,19 @@ func get_map_diffs():
 					diff.append(actor)
 			if not diff.is_empty():
 				prints("Keys present in %s but not %s :" % [m1, m2], ", ".join(diff))
+
+func clear_body_label_actor_wrappers(actor:String):
+	set_body_label_prefix(actor, "")
+	set_body_label_suffix(actor, "")
+
+func set_body_label_actor_wrappers(actor:String, prefix:String, suffix:String):
+	set_body_label_prefix(actor, prefix)
+	set_body_label_suffix(actor, suffix)
+
+func set_body_label_prefix(actor:String, prefix:String):
+	body_label_prefix_by_actor[actor] = prefix
+func set_body_label_suffix(actor:String, suffix:String):
+	body_label_prefix_by_actor[actor] = suffix
+
+func set_chatlog_enabled(value:bool):
+	chatlog_enabled = value

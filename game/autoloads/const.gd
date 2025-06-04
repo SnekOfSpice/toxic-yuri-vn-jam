@@ -23,6 +23,7 @@ const MUSIC_DRUNK_DRIVING := "Paradise_Found.mp3"
 const MUSIC_GAS_STATION := "Paradise_Found.mp3"
 const MUSIC_INTRO := "Paradise_Found.mp3"
 const MUSIC_MAIN_MENU := "Modela - It's Not Pretty Here.ogg"
+const MUSIC_MEETING_AGAIN := "Paradise_Found.mp3"
 
 const SFX_ROOT := "res://game/sounds/sfx/"
 const SFX_CLICK := "637345__kyles__camera-toy-single-shot-nice-stereo.ogg"

@@ -198,9 +198,9 @@ func cum(voice: String) -> bool:
 	GameWorld.game_stage.cum(voice)
 	return false
 
-func set_all_target_labels(target_id:int):
-	for actor in GameWorld.game_stage.body_label_id_by_actor.keys():
-		GameWorld.game_stage.set_target_labels(actor, target_id)
+func set_all_target_labels(target_id:int, force_show := true):
+	for actor in GameWorld.game_stage.target_label_id_by_actor.keys():
+		GameWorld.game_stage.set_target_labels(actor, target_id, force_show)
 
 func shake_windows(strength:float):
 	shake_camera(strength)
@@ -239,3 +239,6 @@ func splash_text(key:String, hide_all_windows := true):
 
 func set_target_labels(actor:String, target_id:int, force_show:=true):
 	GameWorld.game_stage.set_target_labels(actor, target_id, force_show)
+
+func hide_all_windows():
+	GameWorld.game_stage.hide_all_windows()
