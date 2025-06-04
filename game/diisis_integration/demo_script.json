@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 2,
+		"current_page_number": 0,
 		"ingest_capitalize": false,
 		"ingest_whitespace": true,
 		"page_view": 0,
@@ -276,6 +276,9 @@
 			"play_sfx": {
 
 			},
+			"replace_lc_tags": {
+
+			},
 			"request_advance": {
 
 			},
@@ -380,7 +383,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854772621,
+		"id_counter": -9223372036854772073,
 		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa\nx: xelia",
 		"locales_to_export": [
 			"de_DE",
@@ -1414,7 +1417,7 @@
 					}
 				],
 				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 684,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 1.0,
 				"number": 0,

@@ -342,12 +342,12 @@ func _get_game_progress() -> float:
 	if full_progress_on_last_page and page_index_in_trail + 1 == trail_size:
 		return 1.0
 	
-	var chunk_progress := 0.0
+	var dialine_progress := 0.0
 	if line_reader:
 		if line_reader.line_type == DIISIS.LineType.Text and line_reader._dialog_lines.size() > 0:
-			chunk_progress = float(line_reader._dialog_line_index) / float(line_reader._dialog_lines.size())
+			dialine_progress = float(line_reader._dialog_line_index) / float(line_reader._dialog_lines.size())
 	
-	return page_progress + (line_progress / float(trail_size)) + ((chunk_progress / float(line_count_on_page)) / float(trail_size))
+	return page_progress + (line_progress / float(trail_size)) + ((dialine_progress / float(line_count_on_page)) / float(trail_size))
 
 func get_line_type(address:String) -> DIISIS.LineType:
 	var parts = DiisisEditorUtil.get_split_address(address)
@@ -412,7 +412,7 @@ func go_back():
 		trail_shift = 0
 	
 	
-	if line_reader._attempt_read_previous_chunk() and line_reader.line_type == DIISIS.LineType.Text:
+	if line_reader._attempt_read_previous_dialine() and line_reader.line_type == DIISIS.LineType.Text:
 		return
 	
 	var instruction_stack := []
