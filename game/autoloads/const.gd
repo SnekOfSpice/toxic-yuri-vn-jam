@@ -19,7 +19,9 @@ const BACKGROUND_DEFAULT := "void.png"
 const BACKGROUND_SKYLINE := "skyline.png"
 
 const MUSIC_ROOT := "res://game/sounds/music/"
-const MUSIC_DEFAULT := "Loyalty Freak Music - CHILL FOR REAL ! - 06 Vroom Vroom Heart Heart -blob_0w0-​.ogg"
+const MUSIC_DRUNK_DRIVING := "Paradise_Found.mp3"
+const MUSIC_GAS_STATION := "Paradise_Found.mp3"
+const MUSIC_INTRO := "Paradise_Found.mp3"
 const MUSIC_MAIN_MENU := "Modela - It's Not Pretty Here.ogg"
 
 const SFX_ROOT := "res://game/sounds/sfx/"

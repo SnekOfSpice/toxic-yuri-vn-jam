@@ -349,12 +349,12 @@ corner_radius_top_left = 5
 corner_radius_bottom_right = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ypm0y"]
-bg_color = Color(0.92, 0.3772, 0.630507, 0.760784)
+bg_color = Color(0.92, 0.3772, 0.630507, 0.14902)
 border_width_left = 8
 border_width_top = 8
 border_width_right = 8
 border_width_bottom = 8
-border_color = Color(0.2, 0.2, 0.2, 0.239216)
+border_color = Color(0.2, 0.2, 0.2, 1)
 border_blend = true
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_yts5l"]
