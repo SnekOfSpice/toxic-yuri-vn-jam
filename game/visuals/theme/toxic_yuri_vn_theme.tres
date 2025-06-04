@@ -1,4 +1,71 @@
-[gd_resource type="Theme" load_steps=3 format=3 uid="uid://gee0nt5mhjku"]
+[gd_resource type="Theme" load_steps=13 format=3 uid="uid://gee0nt5mhjku"]
+
+[ext_resource type="FontFile" uid="uid://df8rce7yfdeog" path="res://game/visuals/theme/fonts/body_candidates/barlow/Barlow-Black.otf" id="1_b647t"]
+[ext_resource type="FontFile" uid="uid://5cictvfk5bbm" path="res://game/visuals/theme/fonts/body_candidates/veramono/VeraMono.ttf" id="1_booqv"]
+[ext_resource type="FontFile" uid="uid://b131hg4ehie05" path="res://game/visuals/theme/fonts/body_candidates/veramono/VeraMono-Bold.ttf" id="2_er4n1"]
+[ext_resource type="FontFile" uid="uid://j23b1a8vc4c0" path="res://game/visuals/theme/fonts/body_candidates/barlow/Barlow-BlackItalic.otf" id="2_sdbci"]
+[ext_resource type="FontFile" uid="uid://dbfrdgojyjp35" path="res://game/visuals/theme/fonts/body_candidates/barlow/Barlow-MediumItalic.otf" id="3_booqv"]
+[ext_resource type="FontFile" uid="uid://ctenk40s27iw1" path="res://game/visuals/theme/fonts/body_candidates/barlow/Barlow-Medium.otf" id="4_er4n1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ggh8c"]
+content_margin_left = 4.0
+content_margin_top = 1.0
+content_margin_right = 41.0
+content_margin_bottom = 1.0
+bg_color = Color(0.06, 0.06, 0.06, 0)
+border_width_left = 5
+border_width_top = 4
+border_width_right = 5
+border_width_bottom = 4
+border_color = Color(0.944088, 0.723326, 0.623416, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oefcn"]
+content_margin_left = 6.0
+content_margin_top = 3.0
+content_margin_right = 6.0
+content_margin_bottom = 3.0
+bg_color = Color(0.06, 0.06, 0.06, 0.921569)
+border_width_left = 3
+border_width_top = 2
+border_width_right = 3
+border_width_bottom = 2
+border_color = Color(0.901961, 0.34902, 0.490196, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_58eoa"]
+content_margin_left = 6.0
+content_margin_top = 3.0
+content_margin_right = 6.0
+content_margin_bottom = 3.0
+bg_color = Color(0.129559, 0.129558, 0.129558, 0.862745)
+border_width_left = 3
+border_width_top = 2
+border_width_right = 3
+border_width_bottom = 2
+border_color = Color(0.75, 0.4875, 0.553125, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 1
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d6fam"]
+content_margin_left = 5.0
+content_margin_top = 1.0
+content_margin_right = 5.0
+content_margin_bottom = 1.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p5fhx"]
 bg_color = Color(0.109804, 0.109804, 0.109804, 1)
@@ -25,6 +92,25 @@ expand_margin_bottom = 7.0
 anti_aliasing = false
 
 [resource]
+Button/colors/font_color = Color(0.972549, 0.764706, 0.356863, 1)
+Button/fonts/font = ExtResource("1_booqv")
+Button/styles/focus = SubResource("StyleBoxFlat_ggh8c")
+Button/styles/hover = SubResource("StyleBoxFlat_oefcn")
+Button/styles/normal = SubResource("StyleBoxFlat_58eoa")
+Label/colors/font_color = Color(0.9, 0.5706, 0.351, 1)
+Label/constants/outline_size = 6
+Label/fonts/font = ExtResource("2_er4n1")
+Label/styles/normal = SubResource("StyleBoxEmpty_d6fam")
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_p5fhx")
+RichTextLabel/font_sizes/bold_font_size = 20
+RichTextLabel/font_sizes/bold_italics_font_size = 20
+RichTextLabel/font_sizes/italics_font_size = 20
+RichTextLabel/font_sizes/mono_font_size = 20
+RichTextLabel/font_sizes/normal_font_size = 20
+RichTextLabel/fonts/bold_font = ExtResource("1_b647t")
+RichTextLabel/fonts/bold_italics_font = ExtResource("2_sdbci")
+RichTextLabel/fonts/italics_font = ExtResource("3_booqv")
+RichTextLabel/fonts/mono_font = ExtResource("1_booqv")
+RichTextLabel/fonts/normal_font = ExtResource("4_er4n1")
 Window/colors/title_color = Color(0.853916, 0.857043, 0.484737, 1)
 Window/styles/embedded_border = SubResource("StyleBoxFlat_88008")

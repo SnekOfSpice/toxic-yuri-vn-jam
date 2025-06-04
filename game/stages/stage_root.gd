@@ -11,14 +11,14 @@ var screen := ""
 var screenshot_to_save:Image
 
 func _ready():
-	change_stage(CONST.STAGE_GAME)
+	change_stage(CONST.STAGE_MAIN)
 	set_screen("")
 	GameWorld.stage_root = self
 
 func set_screen(screen_path:String, payload := {}):
-	#if is_instance_valid(Parser.line_reader):
-		#if Parser.line_reader.is_executing:
-			#return
+	if is_instance_valid(Parser.line_reader):
+		if Parser.line_reader.is_executing:
+			return
 	
 	if stage == CONST.STAGE_GAME:
 		screenshot_to_save = get_viewport().get_texture().get_image()

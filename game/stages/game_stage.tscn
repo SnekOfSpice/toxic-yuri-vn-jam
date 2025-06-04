@@ -88,7 +88,6 @@ grow_vertical = 2
 focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
-devmode_enabled = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -139,6 +138,7 @@ body_label_function_funnel = Array[String](["Style.adjust_font_size_tags"])
 choice_button_keyboard_focus = false
 input_prompt_delay = 1.29
 input_prompt_lerp_weight = 0.233
+inline_name_separator = "~"
 warn_on_non_bool_function_return = false
 
 [node name="Objects" type="Node2D" parent="LineReader"]
@@ -235,36 +235,34 @@ mouse_filter = 2
 [node name="DefaultTextContainer" type="MarginContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI"]
 unique_name_in_owner = true
 layout_mode = 1
-anchors_preset = 7
+anchors_preset = 5
 anchor_left = 0.5
-anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 1.0
 offset_left = -260.0
-offset_top = -175.0
 offset_right = 260.0
+offset_bottom = 175.0
 grow_horizontal = 2
-grow_vertical = 0
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 15
 
 [node name="VBoxContainer" type="VBoxContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer"]
 layout_mode = 2
 
+[node name="BodyLabel" type="RichTextLabel" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/VBoxContainer"]
+custom_minimum_size = Vector2(550, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+bbcode_enabled = true
+text = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+fit_content = true
+scroll_active = false
+
 [node name="NameContainer" type="MarginContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/VBoxContainer"]
 layout_mode = 2
 
 [node name="NameLabel" type="Label" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/VBoxContainer/NameContainer"]
 layout_mode = 2
-
-[node name="BodyLabel" type="RichTextLabel" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/VBoxContainer"]
-custom_minimum_size = Vector2(500, 0)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
-bbcode_enabled = true
-fit_content = true
-scroll_active = false
 
 [node name="Windows" type="Control" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI"]
 anchors_preset = 0

@@ -47,7 +47,7 @@ func _gui_input(event: InputEvent) -> void:
 			GameWorld.stage_root.set_screen(CONST.SCREEN_OPTIONS)
 
 func set_save_slot(slot:int):
-	find_child("SaveSlotLabel").text = str("Current Save Slot: ", slot + 1)
+	find_child("SaveSlotLabel").text = str("Save Slot: ", slot + 1)
 	update_load_button()
 
 func _on_quit_button_pressed() -> void:
@@ -67,12 +67,7 @@ func _on_cw_button_pressed() -> void:
 	GameWorld.stage_root.set_screen(CONST.SCREEN_CONTENT_WARNING)
 
 
-func _on_discord_button_pressed() -> void:
-	OS.shell_open("https://discord.gg/jPU4RvmTvP")
 
-
-func _on_git_hub_button_pressed() -> void:
-	OS.shell_open("https://github.com/SnekOfSpice/dialog-editor")
 
 
 func _on_sound_check_button_pressed() -> void:

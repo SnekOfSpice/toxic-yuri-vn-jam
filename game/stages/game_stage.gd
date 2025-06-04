@@ -84,6 +84,10 @@ func _ready():
 	
 	await get_tree().process_frame
 	find_child("StartCover").visible = false
+	set_enable_dither(Options.enable_dither)
+
+func set_enable_dither(value:bool):
+	find_child("DitherLayer").visible = value
 
 var target_label_history_by_subaddress := {}
 var window_visibilities_by_subaddress := {}

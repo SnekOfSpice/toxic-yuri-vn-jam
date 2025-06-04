@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://clvr2siqvathu"]
 
 [ext_resource type="Script" uid="uid://uupjdu0y5l24" path="res://game/screens/options_screen.gd" id="1_1als3"]
-[ext_resource type="Theme" uid="uid://drk5fhsdjoewf" path="res://game/visuals/theme/diisis_theme.tres" id="1_4xofk"]
+[ext_resource type="Theme" uid="uid://gee0nt5mhjku" path="res://game/visuals/theme/toxic_yuri_vn_theme.tres" id="1_51xcd"]
 [ext_resource type="StyleBox" uid="uid://dadnwlbrdktog" path="res://game/visuals/theme/background_panel.tres" id="3_d5t3h"]
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_kpjpj"]
@@ -19,7 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_4xofk")
+theme = ExtResource("1_51xcd")
 script = ExtResource("1_1als3")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
@@ -300,8 +300,20 @@ text = "Window"
 
 [node name="FullscreenCheckBox" type="CheckBox" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/DisplayMenu/GridContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 0
 text = "Fullscreen
 "
+
+[node name="Label2" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/DisplayMenu/GridContainer/VBoxContainer"]
+layout_mode = 2
+text = "Accessibility"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/DisplayMenu/GridContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="EnableDitherCheckBox" type="CheckBox" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/DisplayMenu/GridContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Enable Dither"
 
 [node name="SoundMenu" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer"]
 auto_translate_mode = 1
@@ -384,6 +396,7 @@ text = "Close"
 [connection signal="drag_ended" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/TextMenu/HBoxContainer/VBoxContainer2/VBoxContainer3/GridContainer2/RTLFontSizeSlider" to="." method="_on_rtl_font_size_slider_drag_ended"]
 [connection signal="value_changed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/TextMenu/HBoxContainer/VBoxContainer2/VBoxContainer3/GridContainer2/RTLFontSizeSlider" to="." method="_on_rtl_font_size_slider_value_changed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/DisplayMenu/GridContainer/VBoxContainer/FullscreenCheckBox" to="." method="_on_fullscreen_check_box_pressed"]
+[connection signal="toggled" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/DisplayMenu/GridContainer/VBoxContainer/HBoxContainer/EnableDitherCheckBox" to="." method="_on_enable_dither_check_box_toggled"]
 [connection signal="value_changed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/SoundMenu/GridContainer/MasterVolumeSlider" to="." method="_on_master_volume_slider_value_changed"]
 [connection signal="value_changed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/SoundMenu/GridContainer/MusicVolumeSlider" to="." method="_on_music_volume_slider_value_changed"]
 [connection signal="value_changed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/SoundMenu/GridContainer/SFXVolumeSlider" to="." method="_on_sfx_volume_slider_value_changed"]

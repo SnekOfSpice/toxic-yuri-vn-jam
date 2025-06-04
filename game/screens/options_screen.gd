@@ -44,7 +44,8 @@ func _ready() -> void:
 	
 	set_menu(0)
 	find_child("SaveContainer").visible = GameWorld.stage_root.stage != CONST.STAGE_MAIN
-
+	
+	find_child("EnableDitherCheckBox").button_pressed = Options.enable_dither
 
 func close():
 	Options.save_prefs()
@@ -197,3 +198,9 @@ func _on_rtl_font_size_slider_value_changed(value: float) -> void:
 func _on_reset_rtl_font_size_button_pressed() -> void:
 	find_child("RTLFontSizeSlider").value = Style.DEFAULT_RTL_FONT_SIZE
 	Style.set_rich_text_label_font_size(Style.DEFAULT_RTL_FONT_SIZE)
+
+
+func _on_enable_dither_check_box_toggled(toggled_on: bool) -> void:
+	Options.set_enable_dither(toggled_on)
+	if GameWorld.game_stage:
+		GameWorld.game_stage.set_enable_dither(toggled_on)

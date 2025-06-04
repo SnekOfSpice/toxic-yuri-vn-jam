@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://b3u3nrek114bl"]
 
-[ext_resource type="Theme" uid="uid://dd3wmvu0xxyhs" path="res://game/visuals/theme/theme.tres" id="1_5gfyt"]
+[ext_resource type="Theme" uid="uid://gee0nt5mhjku" path="res://game/visuals/theme/toxic_yuri_vn_theme.tres" id="1_6wjhx"]
 [ext_resource type="Script" uid="uid://dnbopb4ksr64p" path="res://game/stages/main_menu_stage.gd" id="1_wqqgh"]
 [ext_resource type="Material" uid="uid://cjfy0guf7efb6" path="res://game/visuals/shaders/quantize_material.tres" id="3_6wjhx"]
 [ext_resource type="Theme" uid="uid://drk5fhsdjoewf" path="res://game/visuals/theme/diisis_theme.tres" id="3_fjoxk"]
-[ext_resource type="Texture2D" uid="uid://cragbc6muwrx1" path="res://game/backgrounds/main_menu.png" id="3_q1aoy"]
+[ext_resource type="Texture2D" uid="uid://bj52mo45ls5d6" path="res://game/visuals/logo_scrawl_1312.png" id="4_70r8q"]
 
 [node name="MainMenuStage" type="Control"]
 layout_mode = 3
@@ -13,7 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_5gfyt")
+theme = ExtResource("1_6wjhx")
 script = ExtResource("1_wqqgh")
 menu_music = "main_menu"
 
@@ -32,38 +32,19 @@ render_target_update_mode = 4
 layer = -2
 
 [node name="TextureRect" type="TextureRect" parent="SubViewportContainer/SubViewport/CanvasLayer"]
-offset_right = 960.0
-offset_bottom = 540.0
-texture = ExtResource("3_q1aoy")
-
-[node name="HBoxContainer" type="HBoxContainer" parent="SubViewportContainer/SubViewport"]
-visible = false
-anchors_preset = 3
+anchors_preset = 6
 anchor_left = 1.0
-anchor_top = 1.0
+anchor_top = 0.5
 anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -336.0
-offset_top = -38.0
+anchor_bottom = 0.5
+offset_left = -870.0
+offset_top = -379.0
+offset_right = 442.0
+offset_bottom = 933.0
 grow_horizontal = 0
-grow_vertical = 0
-theme = ExtResource("3_fjoxk")
-
-[node name="DiscordButton" type="Button" parent="SubViewportContainer/SubViewport/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
-text = "DIISIS Discord"
-
-[node name="GitHubButton" type="Button" parent="SubViewportContainer/SubViewport/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
-text = "DIISIS GitHub"
-
-[node name="MarginContainer" type="MarginContainer" parent="SubViewportContainer/SubViewport/HBoxContainer"]
-layout_mode = 2
-theme_override_constants/margin_left = 50
+grow_vertical = 2
+scale = Vector2(0.568055, 0.568055)
+texture = ExtResource("4_70r8q")
 
 [node name="CenterContainer" type="CenterContainer" parent="SubViewportContainer/SubViewport"]
 offset_right = 40.0
@@ -73,23 +54,26 @@ offset_bottom = 40.0
 layer = 3
 
 [node name="MarginContainer" type="MarginContainer" parent="SubViewportContainer/SubViewport/CanvasLayer2"]
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = -92.0
-offset_right = 671.0
-offset_bottom = 92.0
-grow_vertical = 2
-theme = ExtResource("3_fjoxk")
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -335.5
+offset_top = -221.0
+offset_right = 335.5
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("1_6wjhx")
 theme_override_constants/margin_left = 7
 
 [node name="VBoxContainer" type="VBoxContainer" parent="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer"]
 layout_mode = 2
-size_flags_horizontal = 0
-theme = ExtResource("3_fjoxk")
+size_flags_horizontal = 4
 theme_override_constants/separation = 12
 
-[node name="HBoxContainer" type="VBoxContainer" parent="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 
@@ -117,6 +101,29 @@ theme_override_font_sizes/font_size = 30
 text = "Epilogue"
 alignment = 2
 
+[node name="VBoxContainer" type="VBoxContainer" parent="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="SaveContainer" type="MarginContainer" parent="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_right = 10
+
+[node name="Vbox" type="HBoxContainer" parent="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer/VBoxContainer/SaveContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="SaveSlotLabel" type="Label" parent="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer/VBoxContainer/SaveContainer/Vbox"]
+layout_mode = 2
+text = "Save Slot: 1"
+
+[node name="SaveSlotButton" type="Button" parent="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer/VBoxContainer/SaveContainer/Vbox"]
+layout_mode = 2
+size_flags_vertical = 4
+focus_mode = 0
+text = "Change"
+
 [node name="HBoxContainer2" type="VBoxContainer" parent="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
@@ -126,58 +133,24 @@ auto_translate_mode = 1
 layout_mode = 2
 focus_mode = 0
 text = "Options"
-alignment = 2
 
 [node name="CWButton" type="Button" parent="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2"]
 auto_translate_mode = 1
 layout_mode = 2
 focus_mode = 0
 text = "Content Warning"
-alignment = 2
 
 [node name="CreditsButton" type="Button" parent="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2"]
 auto_translate_mode = 1
 layout_mode = 2
 focus_mode = 0
 text = "Credits"
-alignment = 2
 
 [node name="QuitButton" type="Button" parent="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2"]
 auto_translate_mode = 1
 layout_mode = 2
 focus_mode = 0
 text = "Quit"
-alignment = 2
-
-[node name="SaveContainer" type="PanelContainer" parent="SubViewportContainer/SubViewport/CanvasLayer2"]
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -54.0
-offset_right = 307.0
-grow_vertical = 0
-size_flags_vertical = 4
-
-[node name="MarginContainer" type="MarginContainer" parent="SubViewportContainer/SubViewport/CanvasLayer2/SaveContainer"]
-layout_mode = 2
-theme_override_constants/margin_left = 6
-theme_override_constants/margin_right = 10
-
-[node name="Vbox" type="HBoxContainer" parent="SubViewportContainer/SubViewport/CanvasLayer2/SaveContainer/MarginContainer"]
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 4
-theme = ExtResource("3_fjoxk")
-
-[node name="SaveSlotLabel" type="Label" parent="SubViewportContainer/SubViewport/CanvasLayer2/SaveContainer/MarginContainer/Vbox"]
-layout_mode = 2
-text = "Current Save Slot: 1"
-
-[node name="SaveSlotButton" type="Button" parent="SubViewportContainer/SubViewport/CanvasLayer2/SaveContainer/MarginContainer/Vbox"]
-layout_mode = 2
-size_flags_vertical = 4
-focus_mode = 0
-text = "Change"
 
 [node name="CanvasLayer3" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
 layer = 20
@@ -260,12 +233,10 @@ fit_content = true
 layout_mode = 2
 text = "Got it"
 
-[connection signal="pressed" from="SubViewportContainer/SubViewport/HBoxContainer/DiscordButton" to="." method="_on_discord_button_pressed"]
-[connection signal="pressed" from="SubViewportContainer/SubViewport/HBoxContainer/GitHubButton" to="." method="_on_git_hub_button_pressed"]
+[connection signal="pressed" from="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer/VBoxContainer/SaveContainer/Vbox/SaveSlotButton" to="." method="_on_save_slot_button_pressed"]
 [connection signal="pressed" from="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/CWButton" to="." method="_on_cw_button_pressed"]
 [connection signal="pressed" from="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/QuitButton" to="." method="_on_quit_button_pressed"]
-[connection signal="pressed" from="SubViewportContainer/SubViewport/CanvasLayer2/SaveContainer/MarginContainer/Vbox/SaveSlotButton" to="." method="_on_save_slot_button_pressed"]
 [connection signal="pressed" from="SubViewportContainer/SubViewport/CanvasLayer3/SoundCheckOverlay/CenterContainer/VBoxContainer/SoundCheckButton" to="." method="_on_sound_check_button_pressed"]
 [connection signal="pressed" from="SubViewportContainer/SubViewport/CanvasLayer3/UnlockedEpilogueOverlay/CenterContainer/VBoxContainer/UnlockedEpilogueButton" to="." method="_on_unlocked_epilogue_button_pressed"]

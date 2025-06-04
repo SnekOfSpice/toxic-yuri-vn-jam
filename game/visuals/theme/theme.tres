@@ -1,9 +1,8 @@
 [gd_resource type="Theme" load_steps=19 format=3 uid="uid://dd3wmvu0xxyhs"]
 
-[ext_resource type="FontFile" uid="uid://jc0pccgisvh0" path="res://game/visuals/fonts/FromSunflowerFie.ttf" id="1_3rf7y"]
-[ext_resource type="Texture2D" uid="uid://dtxewlf7ea43j" path="res://game/visuals/unchecked.png" id="3_nf353"]
-[ext_resource type="FontFile" uid="uid://dokobl1mpxdlu" path="res://game/visuals/fonts/Pixel Georgia Bold.ttf" id="5_85f18"]
-[ext_resource type="FontFile" uid="uid://ccqagtvgqnth1" path="res://game/visuals/fonts/Pixel Georgia.ttf" id="5_ia6r6"]
+[ext_resource type="FontFile" uid="uid://jc0pccgisvh0" path="res://game/visuals/theme/fonts/FromSunflowerFie.ttf" id="1_3rf7y"]
+[ext_resource type="FontFile" uid="uid://dokobl1mpxdlu" path="res://game/visuals/theme/fonts/Pixel Georgia Bold.ttf" id="5_85f18"]
+[ext_resource type="FontFile" uid="uid://ccqagtvgqnth1" path="res://game/visuals/theme/fonts/Pixel Georgia.ttf" id="5_ia6r6"]
 [ext_resource type="StyleBox" uid="uid://cmup13by2d3f" path="res://game/visuals/panel_opaque.tres" id="7_ps107"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n20hv"]
@@ -60,6 +59,9 @@ corner_radius_bottom_left = 60
 shadow_color = Color(0.194349, 0.194349, 0.194349, 0.6)
 shadow_size = 4
 anti_aliasing = false
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3rpp6"]
+load_path = "res://.godot/imported/unchecked.png-c727aca1cb7a28165178c35157907748.ctex"
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hqfos"]
 content_margin_left = 20.0
@@ -171,7 +173,7 @@ CheckBox/colors/icon_hover_pressed_color = Color(1, 0.4097, 0.814116, 1)
 CheckBox/colors/icon_normal_color = Color(0, 0.220344, 0.0476765, 1)
 CheckBox/colors/icon_pressed_color = Color(0.782516, 0.86593, 0.926679, 1)
 CheckBox/icons/checked = null
-CheckBox/icons/unchecked = ExtResource("3_nf353")
+CheckBox/icons/unchecked = SubResource("CompressedTexture2D_3rpp6")
 CheckBox/styles/hover_pressed = SubResource("StyleBoxFlat_hqfos")
 HSlider/icons/grabber = null
 HSlider/icons/grabber_disabled = null
