@@ -170,6 +170,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			if InputMap.action_has_event("toggle_auto_continue", event):
 				line_reader.auto_continue = not line_reader.auto_continue
 				Options.auto_continue = line_reader.auto_continue
+				Options.save_prefs()
 			if InputMap.action_has_event("toggle_ui", event):
 				if find_child("VNUI").visible:
 					hide_ui()
