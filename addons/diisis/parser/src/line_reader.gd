@@ -554,7 +554,7 @@ func _ready() -> void:
 	emit_signal("line_reader_ready")
 
 # nts this is where _lmao(a, b) lies RIP
-func _on_go_back_accepted(_page_index:int, _line_index:int):
+func _on_go_back_accepted(_page_index:int, _line_index:int, _dialine:int):
 	_reverse_next_instruction = true
 
 ## Gets the prefrences that are usually set by the user. Save this to disk and apply it again with [code]apply_preferences()[/code].
@@ -1948,6 +1948,7 @@ func _set_dialog_line_index(value: int):
 	
 	_insert_strings_in_current_dialine()
 	_handle_tags_and_start_reading()
+	ParserEvents.start_new_dialine.emit(_dialog_line_index)
 
 # returns actor name
 func _trim_syntax_and_emit_dialog_line_args(raw_name:String) -> String:

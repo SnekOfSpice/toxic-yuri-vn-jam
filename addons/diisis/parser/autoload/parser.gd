@@ -449,7 +449,17 @@ func go_back():
 	var prev_page = parts[0]
 	var prev_line = parts[1]
 	if not get_line_type_by_address(previous_address) in [DIISIS.LineType.Choice, DIISIS.LineType.Folder]:
-		ParserEvents.go_back_accepted.emit(prev_page, prev_line)
+		# we need to preempt which dialine the linereader will be reading
+		var dialine_about_to_read : int
+		if trail_shift == 0:
+			dialine_about_to_read = 0
+		elif trail_shift != 0:
+			var line_data : Array = page_data.get(page_index).get("lines")
+			var raw_content : Dictionary = line_data[prev_line].get("content")
+			var content := get_text(raw_content.get("text_id"))
+			dialine_about_to_read = content.count("[]>") + content.count("<lc>") -1
+			
+		ParserEvents.go_back_accepted.emit(prev_page, prev_line, dialine_about_to_read)
 		if not address_trail.is_empty():
 			address_trail.resize(address_trail_index)
 		if prev_page == page_index:

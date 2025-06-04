@@ -38,19 +38,25 @@ var target_lod := 0.0
 var target_mix := 0.0
 var target_static := 0.0
 
+@onready var windows : Array = find_child("Windows").get_children()
+var last_body_label_target := 0
+var target_label_id_by_actor := {}
+
 func _ready():
 	find_child("DevModeLabel").visible = devmode_enabled
-	body_label_id_by_actor.clear()
+	target_label_id_by_actor.clear()
 	for actor in line_reader.name_map.keys():
-		body_label_id_by_actor[actor] = 0
+		target_label_id_by_actor[actor] = 0
 	find_child("StartCover").visible = true
 	ParserEvents.actor_name_changed.connect(on_actor_name_changed)
 	ParserEvents.actor_name_about_to_change.connect(on_actor_name_about_to_change)
 	ParserEvents.page_terminated.connect(go_to_main_menu)
 	ParserEvents.instruction_started.connect(on_instruction_started)
 	ParserEvents.instruction_completed.connect(on_instruction_completed)
-	ParserEvents.read_new_line.connect(on_read_new_line)
+	#ParserEvents.read_new_line.connect(on_read_new_line)
 	ParserEvents.dialog_line_args_passed.connect(on_dialog_line_args_passed)
+	ParserEvents.go_back_accepted.connect(on_go_back_accepted)
+	ParserEvents.start_new_dialine.connect(on_start_new_dialine)
 	
 	GameWorld.game_stage = self
 	
@@ -79,8 +85,29 @@ func _ready():
 	await get_tree().process_frame
 	find_child("StartCover").visible = false
 
-func on_read_new_line(_line_index:int):
-	Options.save_gamestate()
+var target_label_history_by_subaddress := {}
+var window_visibilities_by_subaddress := {}
+func on_go_back_accepted(page:int, line:int, dialine:int):
+	var subaddress := str(page, ".", line, ".", dialine)
+	target_label_id_by_actor = target_label_history_by_subaddress.get(subaddress, target_label_id_by_actor).duplicate()
+	
+	var visibilities : Dictionary = window_visibilities_by_subaddress.get(subaddress, get_window_visibilities()).duplicate()
+	for window : CustomWindow in windows:
+		window.visible = visibilities.get(window.uid)
+
+func on_start_new_dialine(_a):
+	var subaddress := line_reader._get_dialog_subaddress()
+	target_label_history_by_subaddress[subaddress] = target_label_id_by_actor.duplicate()
+	window_visibilities_by_subaddress[subaddress] = get_window_visibilities()
+
+func get_window_visibilities() -> Dictionary:
+	var result := {}
+	for window : CustomWindow in windows:
+		result[window.uid] = window.visible
+	return result
+
+#func on_read_new_line(_line_index:int):
+	#Options.save_gamestate()
 
 func on_tree_exit():
 	GameWorld.game_stage = null
@@ -270,7 +297,7 @@ func on_actor_name_about_to_change(actor:String):
 	if block_about_new_actor_handling:
 		block_about_new_actor_handling = false
 		return
-	set_target_labels(actor, body_label_id_by_actor.get(actor, 0))
+	set_target_labels(actor, target_label_id_by_actor.get(actor, 0))
 
 
 
@@ -296,8 +323,11 @@ func serialize() -> Dictionary:
 	result["fade_out_mix_percentage"] = overlay_fade_out.get_material().get_shader_parameter("mix_percentage")
 	
 	result["camera"] = %Camera2D.serialize()
-	result["body_label_id_by_actor"] = body_label_id_by_actor
+	result["target_label_id_by_actor"] = target_label_id_by_actor
 	result["last_body_label_target"] = last_body_label_target
+	
+	result["window_visibilities_by_subaddress"] = window_visibilities_by_subaddress
+	result["target_label_history_by_subaddress"] = target_label_history_by_subaddress
 	
 	var window_data_by_uid := {}
 	for window : CustomWindow in windows:
@@ -338,13 +368,16 @@ func deserialize(data:Dictionary):
 	overlay_static.get_material().set_shader_parameter("border_size", 1 - target_static)
 	
 	base_cg_offset = GameWorld.str_to_vec2(data.get("base_cg_offset", Vector2.ZERO))
-	body_label_id_by_actor = data.get("body_label_id_by_actor", {})
+	target_label_id_by_actor = data.get("target_label_id_by_actor", {})
+	
+	window_visibilities_by_subaddress = data.get("window_visibilities_by_subaddress", {})
+	target_label_history_by_subaddress = data.get("target_label_history_by_subaddress", {})
 	
 	# windows
 	var window_data : Dictionary = data.get("windows", {})
 	for window : CustomWindow in windows:
 		printt(typeof(window.uid), typeof(window_data.keys().front()))
-		window.deserialize(window_data.get(str(window.uid)))
+		window.deserialize(window_data.get(str(window.uid), {}))
 	%LineReader.body_label = get_body_label(data.get("last_body_label_target", 0))
 
 var emit_insutrction_complete_on_cg_hide :bool
@@ -394,13 +427,6 @@ func set_fade_out(lod:float, mix:float):
 	target_mix = mix
 
 
-@onready var windows : Array = find_child("Windows").get_children()
-var last_body_label_target := 0
-var body_label_id_by_actor := {
-	"veil" : 0,
-	"narrator" : 0,
-	"amber" : 0,
-}
 func get_body_label(target_id:int):
 	if target_id == 0:
 		return%DefaultTextContainer.find_child("BodyLabel")
@@ -411,7 +437,7 @@ func get_body_label(target_id:int):
 
 func set_target_labels(actor:String, target_id:int, force_show:=true):
 	last_body_label_target = target_id
-	body_label_id_by_actor[actor] = target_id
+	target_label_id_by_actor[actor] = target_id
 	if target_id == 0:
 		%LineReader.set_body_label(%DefaultTextContainer.find_child("BodyLabel"), false)
 		var name_label = %DefaultTextContainer.find_child("NameLabel")
@@ -431,7 +457,7 @@ func on_dialog_line_args_passed(
 	actor: String,
 	dialog_line_args: Dictionary):
 		block_about_new_actor_handling = true
-		set_target_labels(actor, int(dialog_line_args.get("target", body_label_id_by_actor.get(actor))))
+		set_target_labels(actor, int(dialog_line_args.get("target", target_label_id_by_actor.get(actor))))
 
 func hide_all_windows():
 	for window : CustomWindow in windows:
