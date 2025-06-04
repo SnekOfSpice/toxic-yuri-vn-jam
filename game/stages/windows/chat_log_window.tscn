@@ -1,29 +1,47 @@
-[gd_scene load_steps=2 format=3 uid="uid://cosugqpmyex1j"]
+[gd_scene load_steps=4 format=3 uid="uid://cosugqpmyex1j"]
 
 [ext_resource type="Script" uid="uid://3d66w6kp63vs" path="res://game/stages/windows/chat_log_window.gd" id="1_023oh"]
+[ext_resource type="Theme" uid="uid://gee0nt5mhjku" path="res://game/visuals/theme/toxic_yuri_vn_theme.tres" id="1_pxmp7"]
+[ext_resource type="Texture2D" uid="uid://bnobfiqbcc60g" path="res://game/characters/portraits/xelia.png" id="3_h2eej"]
 
 [node name="ChatLogWindow" type="PanelContainer" node_paths=PackedStringArray("header_vbox_parent") groups=["chatlogwindow"]]
 offset_right = 56.0
 offset_bottom = 73.0
 mouse_filter = 1
+theme = ExtResource("1_pxmp7")
 script = ExtResource("1_023oh")
 title = "BARK"
-header_vbox_parent = NodePath("MarginContainer/TextContent")
+header_vbox_parent = NodePath("HBoxContainer/PanelContainer/MarginContainer/TextContent")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Portrait" type="TextureRect" parent="HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_vertical = 0
+texture = ExtResource("3_h2eej")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/PanelContainer"]
 layout_mode = 2
 size_flags_vertical = 0
 
-[node name="TextContent" type="VBoxContainer" parent="MarginContainer"]
-unique_name_in_owner = true
-layout_mode = 2
-
-[node name="NameLabel" type="Label" parent="MarginContainer/TextContent"]
+[node name="NameLabel" type="Label" parent="HBoxContainer/PanelContainer/MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 text = "owowo"
 
-[node name="BodyLabel" type="RichTextLabel" parent="MarginContainer/TextContent"]
+[node name="TextContent" type="VBoxContainer" parent="HBoxContainer/PanelContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="BodyLabel" type="RichTextLabel" parent="HBoxContainer/PanelContainer/MarginContainer/TextContent"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(370, 0)
 layout_mode = 2

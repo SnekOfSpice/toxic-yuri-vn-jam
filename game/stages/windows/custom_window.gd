@@ -4,21 +4,27 @@ class_name CustomWindow
 ## used for whatever, usually within the window group 8f image viewrs, text log, etc
 @export var id := 0
 ## used for saving / loading
-@export var uid := 0
+var uid := 0
 @export var title : String
 @export var allow_close := false
+@export var include_title_bar := true
 @export var header_vbox_parent : VBoxContainer
 @export var hide_on_ready := true
+@export var icon : Texture2D
 
 func  _ready() -> void:
+	uid = get_index()
 	if hide_on_ready: hide()
-	var title_bar = preload("res://game/stages/windows/custom_window_title_bar.tscn").instantiate()
-	header_vbox_parent.add_child(title_bar)
-	header_vbox_parent.move_child(title_bar, 0)
-	title_bar.close_requested.connect(close)
-	title_bar.set_close_button_visible(allow_close)
-	if title:
-		title_bar.set_title(title)
+	if include_title_bar:
+		var title_bar = preload("res://game/stages/windows/custom_window_title_bar.tscn").instantiate()
+		header_vbox_parent.add_child(title_bar)
+		header_vbox_parent.move_child(title_bar, 0)
+		title_bar.close_requested.connect(close)
+		title_bar.set_close_button_visible(allow_close)
+		if title:
+			title_bar.set_title(title)
+		if icon:
+			title_bar.set_icon(icon)
 	
 	gui_input.connect(on_gui_input)
 

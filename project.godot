@@ -50,6 +50,10 @@ window/stretch/mode="canvas_items"
 
 enabled=PackedStringArray("res://addons/diisis/plugin.cfg")
 
+[gui]
+
+theme/custom="uid://gee0nt5mhjku"
+
 [input]
 
 advance={

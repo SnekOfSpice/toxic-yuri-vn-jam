@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=13 format=3 uid="uid://gee0nt5mhjku"]
+[gd_resource type="Theme" load_steps=14 format=3 uid="uid://gee0nt5mhjku"]
 
 [ext_resource type="FontFile" uid="uid://df8rce7yfdeog" path="res://game/visuals/theme/fonts/body_candidates/barlow/Barlow-Black.otf" id="1_b647t"]
 [ext_resource type="FontFile" uid="uid://5cictvfk5bbm" path="res://game/visuals/theme/fonts/body_candidates/veramono/VeraMono.ttf" id="1_booqv"]
@@ -61,6 +61,22 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 corner_detail = 1
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_booqv"]
+content_margin_left = 26.0
+content_margin_top = 10.0
+content_margin_right = 26.0
+content_margin_bottom = 10.0
+bg_color = Color(0.11, 0.11, 0.11, 0.203922)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_blend = true
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+corner_detail = 1
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d6fam"]
 content_margin_left = 5.0
 content_margin_top = 1.0
@@ -97,6 +113,9 @@ Button/fonts/font = ExtResource("1_booqv")
 Button/styles/focus = SubResource("StyleBoxFlat_ggh8c")
 Button/styles/hover = SubResource("StyleBoxFlat_oefcn")
 Button/styles/normal = SubResource("StyleBoxFlat_58eoa")
+DigitalText/fonts/normal_font = ExtResource("1_booqv")
+EmbodiedText/base_type = &"PanelContainer"
+EmbodiedText/styles/panel = SubResource("StyleBoxFlat_booqv")
 Label/colors/font_color = Color(0.9, 0.5706, 0.351, 1)
 Label/constants/outline_size = 6
 Label/fonts/font = ExtResource("2_er4n1")

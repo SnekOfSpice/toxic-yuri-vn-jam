@@ -8,6 +8,11 @@ script = ExtResource("1_fcfnp")
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 2
 
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+expand_mode = 3
+stretch_mode = 5
+
 [node name="TitleLabel" type="Label" parent="."]
 layout_mode = 2
 size_flags_horizontal = 3

@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=45 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" uid="uid://j84s4qlkmfxw" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" uid="uid://bqw08o3b22fdc" path="res://game/stages/line_reader_custom.gd" id="3_pms35"]
@@ -7,9 +7,11 @@
 [ext_resource type="Theme" uid="uid://gee0nt5mhjku" path="res://game/visuals/theme/toxic_yuri_vn_theme.tres" id="6_aqeli"]
 [ext_resource type="PackedScene" uid="uid://okxj0h4jwh18" path="res://game/stages/windows/image_viewer_window.tscn" id="7_3xf2c"]
 [ext_resource type="PackedScene" uid="uid://cosugqpmyex1j" path="res://game/stages/windows/chat_log_window.tscn" id="7_j1uqk"]
+[ext_resource type="Texture2D" uid="uid://vktxh4bdox5r" path="res://icon.svg" id="8_7jfvv"]
 [ext_resource type="PackedScene" uid="uid://qkegdwc8ux5o" path="res://game/stages/black_fade.tscn" id="8_50byo"]
 [ext_resource type="PackedScene" uid="uid://ern10pbw5tlc" path="res://game/stages/windows/wave_form_window.tscn" id="9_knhaa"]
 [ext_resource type="Script" uid="uid://c2vvnjn4tl6a7" path="res://game/stages/game_camera.gd" id="9_lbjue"]
+[ext_resource type="Texture2D" uid="uid://dno3qlric4rke" path="res://game/stages/windows/icon_chat.png" id="10_pms35"]
 [ext_resource type="PackedScene" uid="uid://cjy7vf1xrnq5y" path="res://game/screens/chapter_cover.tscn" id="12_vf2y4"]
 [ext_resource type="PackedScene" uid="uid://biu88w163ploy" path="res://game/systems/cheats.tscn" id="13_qackq"]
 [ext_resource type="Script" uid="uid://byyv78vc44g4u" path="res://game/stages/start_cover.gd" id="13_qfsh6"]
@@ -133,14 +135,12 @@ color_map = Dictionary[String, Color]({
 "xelia": Color(0.612394, 0.862658, 0.477221, 1)
 })
 name_style = 1
-name_label = NodePath("SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/VBoxContainer/NameContainer/NameLabel")
+name_label = NodePath("SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer/PanelContainer/VBoxContainer/NameContainer/NameLabel")
 text_container = NodePath("SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer")
-name_container = NodePath("SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/VBoxContainer/NameContainer/NameLabel")
+name_container = NodePath("SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer/PanelContainer/VBoxContainer/NameContainer/NameLabel")
 body_label_function_funnel = Array[String](["Style.adjust_font_size_tags"])
 chatlog_fuse_lines = false
 chatlog_fallback_color_map = true
-chatlog_line_prefix = null
-chatlog_line_suffix = null
 choice_button_keyboard_focus = false
 input_prompt_delay = 1.29
 input_prompt_lerp_weight = 0.233
@@ -251,10 +251,25 @@ grow_horizontal = 2
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 15
 
-[node name="VBoxContainer" type="VBoxContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer"]
 layout_mode = 2
 
-[node name="BodyLabel" type="RichTextLabel" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/VBoxContainer"]
+[node name="Portrait" type="TextureRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_vertical = 0
+texture = ExtResource("8_7jfvv")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="PanelContainer" type="PanelContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"EmbodiedText"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="BodyLabel" type="RichTextLabel" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 custom_minimum_size = Vector2(550, 0)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -264,10 +279,10 @@ text = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
 fit_content = true
 scroll_active = false
 
-[node name="NameContainer" type="MarginContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/VBoxContainer"]
+[node name="NameContainer" type="MarginContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="NameLabel" type="Label" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/VBoxContainer/NameContainer"]
+[node name="NameLabel" type="Label" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer/PanelContainer/VBoxContainer/NameContainer"]
 layout_mode = 2
 
 [node name="Windows" type="Control" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI"]
@@ -276,20 +291,39 @@ mouse_filter = 2
 
 [node name="ChatLogWindow1" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
 layout_mode = 1
-offset_left = 593.0
-offset_top = 89.0
-offset_right = 965.0
-offset_bottom = 164.0
+offset_left = 585.0
+offset_top = 110.0
+offset_right = 1013.0
+offset_bottom = 185.0
 id = 1
+include_title_bar = false
 
 [node name="ChatLogWindow2" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
 layout_mode = 1
-offset_left = 12.0
-offset_top = 491.0
-offset_right = 384.0
-offset_bottom = 566.0
+offset_left = 28.0
+offset_top = 375.0
+offset_right = 456.0
+offset_bottom = 450.0
 id = 2
-uid = 1
+include_title_bar = false
+
+[node name="ChatLogWindow3" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
+layout_mode = 1
+offset_left = 551.0
+offset_top = 491.0
+offset_right = 979.0
+offset_bottom = 566.0
+id = 3
+title = "PAWZ - chat client"
+
+[node name="ChatLogWindow4" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
+layout_mode = 1
+offset_left = 554.0
+offset_top = 377.0
+offset_right = 982.0
+offset_bottom = 452.0
+id = 4
+title = "BARK - vox client"
 
 [node name="ImageViewerWindow" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_3xf2c")]
 layout_mode = 0
@@ -297,7 +331,7 @@ offset_left = 13.0
 offset_top = 104.0
 offset_right = 168.0
 offset_bottom = 204.0
-uid = 2
+icon = ExtResource("10_pms35")
 
 [node name="WaveFormWindow" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("9_knhaa")]
 layout_mode = 0
@@ -305,7 +339,6 @@ offset_left = 848.0
 offset_top = 678.0
 offset_right = 960.0
 offset_bottom = 714.0
-uid = 4
 
 [node name="ControlsContainer" type="VBoxContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI"]
 layout_mode = 1
@@ -430,6 +463,7 @@ grow_horizontal = 2
 text = "DEV MODE ENABLED"
 
 [node name="DitherLayer" type="CanvasLayer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D"]
+visible = false
 
 [node name="Dither" type="ColorRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/DitherLayer"]
 material = SubResource("ShaderMaterial_knhaa")

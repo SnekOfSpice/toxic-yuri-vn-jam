@@ -297,6 +297,19 @@ func on_actor_name_changed(
 	):
 		actor_name = actor
 		is_name_container_visible = name_container_visible
+		
+		var target_id : int = target_label_id_by_actor.get(actor, 0)
+		if actor in Parser.line_reader.blank_names:
+			if target_id == 0:
+				find_child("Portrait").texture = load("res://game/characters/portraits/none.png")
+			else:
+				get_chatlog_window(target_id).set_portrait("")
+		else:
+			if target_id == 0:
+				find_child("Portrait").texture = load("res://game/characters/portraits/%s.png" % actor_name)
+			else:
+				get_chatlog_window(target_id).set_portrait(actor_name)
+
 func on_actor_name_about_to_change(actor:String):
 	if block_about_new_actor_handling:
 		block_about_new_actor_handling = false
@@ -430,14 +443,16 @@ func set_fade_out(lod:float, mix:float):
 	target_lod = lod
 	target_mix = mix
 
+func get_chatlog_window(id:int) -> ChatLogWindow:
+	var vnui : Control = find_child("VNUI")
+	var window : ChatLogWindow = vnui.find_child("ChatLogWindow%s"%id)
+	return window
 
 func get_body_label(target_id:int):
 	if target_id == 0:
 		return%DefaultTextContainer.find_child("BodyLabel")
 	else:
-		var vnui : Control = find_child("VNUI")
-		var window : CustomWindow = vnui.find_child("ChatLogWindow%s"%target_id)
-		return window.get_body_label()
+		return get_chatlog_window(target_id).get_body_label()
 
 func set_target_labels(actor:String, target_id:int, force_show:=true):
 	last_body_label_target = target_id
