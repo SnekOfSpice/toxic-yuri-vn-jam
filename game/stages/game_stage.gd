@@ -482,4 +482,6 @@ func on_dialog_line_args_passed(
 
 func hide_all_windows():
 	for window : CustomWindow in windows:
+		if window is WaveFormWindow:
+			continue
 		window.hide()

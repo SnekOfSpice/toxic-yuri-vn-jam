@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=24 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" uid="uid://j84s4qlkmfxw" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" uid="uid://bqw08o3b22fdc" path="res://game/stages/line_reader_custom.gd" id="3_pms35"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://ern10pbw5tlc" path="res://game/stages/windows/wave_form_window.tscn" id="9_knhaa"]
 [ext_resource type="Script" uid="uid://c2vvnjn4tl6a7" path="res://game/stages/game_camera.gd" id="9_lbjue"]
 [ext_resource type="Texture2D" uid="uid://dno3qlric4rke" path="res://game/stages/windows/icon_chat.png" id="10_pms35"]
+[ext_resource type="Texture2D" uid="uid://bnwv6gfnnbq6d" path="res://game/stages/windows/icon_call.png" id="11_n0qn6"]
 [ext_resource type="PackedScene" uid="uid://cjy7vf1xrnq5y" path="res://game/screens/chapter_cover.tscn" id="12_vf2y4"]
 [ext_resource type="PackedScene" uid="uid://biu88w163ploy" path="res://game/systems/cheats.tscn" id="13_qackq"]
 [ext_resource type="Script" uid="uid://byyv78vc44g4u" path="res://game/stages/start_cover.gd" id="13_qfsh6"]
@@ -46,7 +47,6 @@ grow_vertical = 2
 focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
-devmode_enabled = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -273,6 +273,7 @@ offset_right = 971.0
 offset_bottom = 563.0
 id = 3
 title = "PAWZ - chat client"
+icon = ExtResource("10_pms35")
 
 [node name="ChatLogWindow4" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
 layout_mode = 1
@@ -282,6 +283,7 @@ offset_right = 971.0
 offset_bottom = 460.0
 id = 4
 title = "BARK - vox client"
+icon = ExtResource("11_n0qn6")
 
 [node name="ChatLogWindow5" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
 layout_mode = 1
@@ -291,6 +293,7 @@ offset_right = 478.0
 offset_bottom = 531.0
 id = 5
 title = "PAWZ - chat client"
+icon = ExtResource("10_pms35")
 
 [node name="ImageViewerWindow" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_3xf2c")]
 layout_mode = 0
@@ -298,7 +301,6 @@ offset_left = 13.0
 offset_top = 104.0
 offset_right = 168.0
 offset_bottom = 204.0
-icon = ExtResource("10_pms35")
 
 [node name="WaveFormWindow" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("9_knhaa")]
 layout_mode = 0
