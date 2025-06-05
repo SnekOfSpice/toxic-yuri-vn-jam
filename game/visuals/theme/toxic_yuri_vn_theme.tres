@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=20 format=3 uid="uid://gee0nt5mhjku"]
+[gd_resource type="Theme" load_steps=32 format=3 uid="uid://gee0nt5mhjku"]
 
 [ext_resource type="FontFile" uid="uid://df8rce7yfdeog" path="res://game/visuals/theme/fonts/body_candidates/barlow/Barlow-Black.otf" id="1_b647t"]
 [ext_resource type="FontFile" uid="uid://5cictvfk5bbm" path="res://game/visuals/theme/fonts/body_candidates/veramono/VeraMono.ttf" id="1_booqv"]
@@ -80,6 +80,28 @@ corner_radius_bottom_right = 25
 corner_radius_bottom_left = 25
 corner_detail = 3
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oefcn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_58eoa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eou7f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j4rf8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qa4mq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1mesm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uwlm2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jt05t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8nnbg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uapgc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e8cso"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eou7f"]
 bg_color = Color(0.87, 0.78532, 0.2349, 1)
 corner_radius_top_left = 2
@@ -120,6 +142,11 @@ border_width_right = 1
 border_width_bottom = 1
 border_blend = true
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qa4mq"]
+bg_color = Color(0.61, 0.418257, 0.3599, 0.639216)
+expand_margin_left = 1.0
+expand_margin_right = 1.0
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_88008"]
 bg_color = Color(0.111197, 0.111197, 0.111197, 1)
 border_width_left = 3
@@ -145,6 +172,22 @@ Button/styles/normal = SubResource("StyleBoxFlat_58eoa")
 DigitalText/fonts/normal_font = ExtResource("1_booqv")
 EmbodiedText/base_type = &"PanelContainer"
 EmbodiedText/styles/panel = SubResource("StyleBoxFlat_booqv")
+FreeButton/base_type = &"Button"
+FreeButton/colors/font_color = Color(0, 0, 0, 1)
+FreeButton/colors/font_outline_color = Color(0.909804, 0.741176, 0.772549, 0.286275)
+FreeButton/constants/outline_size = 10
+FreeButton/font_sizes/font_size = 18
+FreeButton/styles/disabled = SubResource("StyleBoxEmpty_oefcn")
+FreeButton/styles/disabled_mirrored = SubResource("StyleBoxEmpty_58eoa")
+FreeButton/styles/focus = SubResource("StyleBoxEmpty_eou7f")
+FreeButton/styles/hover = SubResource("StyleBoxEmpty_j4rf8")
+FreeButton/styles/hover_mirrored = SubResource("StyleBoxEmpty_qa4mq")
+FreeButton/styles/hover_pressed = SubResource("StyleBoxEmpty_1mesm")
+FreeButton/styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_uwlm2")
+FreeButton/styles/normal = SubResource("StyleBoxEmpty_jt05t")
+FreeButton/styles/normal_mirrored = SubResource("StyleBoxEmpty_8nnbg")
+FreeButton/styles/pressed = SubResource("StyleBoxEmpty_uapgc")
+FreeButton/styles/pressed_mirrored = SubResource("StyleBoxEmpty_e8cso")
 HSlider/icons/grabber = ExtResource("2_oefcn")
 HSlider/icons/grabber_disabled = ExtResource("3_58eoa")
 HSlider/icons/grabber_highlight = ExtResource("4_d6fam")
@@ -166,5 +209,6 @@ RichTextLabel/fonts/bold_italics_font = ExtResource("2_sdbci")
 RichTextLabel/fonts/italics_font = ExtResource("3_booqv")
 RichTextLabel/fonts/mono_font = ExtResource("1_booqv")
 RichTextLabel/fonts/normal_font = ExtResource("4_er4n1")
+VSeparator/styles/separator = SubResource("StyleBoxFlat_qa4mq")
 Window/colors/title_color = Color(0.853916, 0.857043, 0.484737, 1)
 Window/styles/embedded_border = SubResource("StyleBoxFlat_88008")

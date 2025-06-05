@@ -2039,6 +2039,15 @@ func _on_name_label_updated(
 func get_subaddress() -> String:
 	return str(Parser.page_index, ".", line_index, ".", _dialog_line_index)
 
+## returns length 3 if text or length 2 if not text
+func get_subaddress_arr(fill_with_zero := true) -> Array:
+	var result := [Parser.page_index, line_index]
+	if line_type == DIISIS.LineType.Text and Pages.use_dialog_syntax:
+		result.append(_dialog_line_index)
+	elif fill_with_zero:
+		result.append(0)
+	return result
+
 ## Automation to append stuff to parser history
 func _on_body_label_text_changed(old_text: String,
 	new_text: String,

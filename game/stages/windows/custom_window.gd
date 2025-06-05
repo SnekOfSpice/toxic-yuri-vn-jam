@@ -13,6 +13,7 @@ var uid := 0
 @export var icon : Texture2D
 
 func  _ready() -> void:
+	visibilities_by_subaddress = {0:{0:{0:hide_on_ready}}}
 	uid = get_index()
 	if hide_on_ready: hide()
 	if include_title_bar:
@@ -32,12 +33,50 @@ func  _ready() -> void:
 
 var visibilities_by_subaddress := {}
 func on_go_back_accepted(page:int, line:int, dialine:int):
-	var subaddress := str(page, ".", line, ".", dialine)
-	if subaddress in visibilities_by_subaddress:
-		visible = visibilities_by_subaddress.get(subaddress)
+	#windows can get hidden through and retargeted through functions, so there also needs to be a function that listens to any new line being read 
+#and when going back, we need to compare to the first possible address
+	var prev_page := page
+	while prev_page > 0:
+		if visibilities_by_subaddress.has(prev_page):
+			break
+		prev_page -= 1
+	
+	var prev_line := line
+	while prev_line > 0:
+		if visibilities_by_subaddress.get(prev_page).has(prev_line):
+			break
+		prev_line -= 1
+	
+	var prev_dialine := dialine
+	while prev_dialine > 0:
+		if visibilities_by_subaddress.get(prev_page).get(prev_line).get(prev_dialine):
+			break
+		prev_dialine -= 1
+	
+	visible = visibilities_by_subaddress[prev_page][prev_line][prev_dialine]
 
 func on_visibility_changed():
-	visibilities_by_subaddress[Parser.line_reader.get_subaddress()] = not visible
+	var subaddress_arr := Parser.line_reader.get_subaddress_arr()
+	var page : Dictionary
+	var page_index : int = subaddress_arr[0]
+	var line_index : int = subaddress_arr[1]
+	var dialine_index : int = subaddress_arr[2]
+	if visibilities_by_subaddress.has(page_index):
+		page = visibilities_by_subaddress.get(page_index)
+	else:
+		page = {}
+		visibilities_by_subaddress[page_index] = page
+	var line : Dictionary
+	if page.has(line_index):
+		line = page.get(line_index)
+	else:
+		line = {}
+		page[line_index] = line
+	
+	if not line.has(dialine_index):
+		line[dialine_index] = visible
+	
+	visibilities_by_subaddress[page_index][line_index][dialine_index] = visible
 
 var dragging := false
 var drag_offset : Vector2
@@ -54,9 +93,7 @@ func on_gui_input(event: InputEvent):
 
 func move_to_top():
 	open_if_closed()
-	for window :CustomWindow in get_parent().get_children():
-		window.z_index = 0
-	z_index = 1
+	get_parent().move_child(self, get_parent().get_child_count() - 1)
 
 func _process(delta: float) -> void:
 	if dragging:

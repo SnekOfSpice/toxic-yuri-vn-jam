@@ -183,8 +183,8 @@ func _unhandled_input(event: InputEvent) -> void:
 		if not find_child("VNUI").visible:
 			return
 		line_reader.request_advance()
-	elif event.is_action_pressed("go_back"):
-		line_reader.request_go_back()
+	#elif event.is_action_pressed("go_back"):
+		#line_reader.request_go_back()
 
 func show_ui():
 	if is_instance_valid(find_child("VNUI")):
@@ -382,6 +382,8 @@ func deserialize(data:Dictionary):
 	
 	base_cg_offset = GameWorld.str_to_vec2(data.get("base_cg_offset", Vector2.ZERO))
 	target_label_id_by_actor = data.get("target_label_id_by_actor", {})
+	for actor in target_label_id_by_actor.keys():
+		set_target_labels(actor, target_label_id_by_actor.get(actor), false)
 	
 	#window_visibilities_by_subaddress = data.get("window_visibilities_by_subaddress", {})
 	target_label_history_by_subaddress = data.get("target_label_history_by_subaddress", {})
@@ -390,7 +392,6 @@ func deserialize(data:Dictionary):
 	# windows
 	var window_data : Dictionary = data.get("windows", {})
 	for window : CustomWindow in windows:
-		printt(typeof(window.uid), typeof(window_data.keys().front()))
 		window.deserialize(window_data.get(str(window.uid), {}))
 	%LineReader.body_label = get_body_label(data.get("last_body_label_target", 0))
 

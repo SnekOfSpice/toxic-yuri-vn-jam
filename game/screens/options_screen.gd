@@ -34,11 +34,11 @@ func _ready() -> void:
 	#for family : Dictionary in Style.RICH_TEXT_LABEL_FONTS:
 		#var loaded : Font = load(family.get("normal_font"))
 		#find_child("RTLFontOptionButton").add_item(loaded.get_font_name())
-	find_child("RTLFontOptionButton").select(Options.font_prefs.get("rich_text_label_font", 0))
-	find_child("LabelFontSizeSlider").value = theme.get_font_size("font_size", "Label")
-	find_child("LabelFontSizeLabel").text = str(int(find_child("LabelFontSizeSlider").value))
-	find_child("RTLFontSizeSlider").value = theme.get_font_size("normal_font_size", "RichTextLabel")
-	find_child("RTLFontSizeLabel").text = str(int(find_child("RTLFontSizeSlider").value))
+	#find_child("RTLFontOptionButton").select(Options.font_prefs.get("rich_text_label_font", 0))
+	#find_child("LabelFontSizeSlider").value = theme.get_font_size("font_size", "Label")
+	#find_child("LabelFontSizeLabel").text = str(int(find_child("LabelFontSizeSlider").value))
+	#find_child("RTLFontSizeSlider").value = theme.get_font_size("normal_font_size", "RichTextLabel")
+	#find_child("RTLFontSizeLabel").text = str(int(find_child("RTLFontSizeSlider").value))
 	
 	set_menu(0)
 	find_child("SaveContainer").visible = GameWorld.stage_root.stage != CONST.STAGE_MAIN
