@@ -55,8 +55,8 @@ func _ready():
 	ParserEvents.instruction_completed.connect(on_instruction_completed)
 	ParserEvents.read_new_line.connect(on_read_new_line)
 	ParserEvents.dialog_line_args_passed.connect(on_dialog_line_args_passed)
-	ParserEvents.go_back_accepted.connect(on_go_back_accepted)
-	ParserEvents.start_new_dialine.connect(on_start_new_dialine)
+	#ParserEvents.go_back_accepted.connect(on_go_back_accepted)
+	#ParserEvents.start_new_dialine.connect(on_start_new_dialine)
 	
 	GameWorld.game_stage = self
 	
@@ -90,19 +90,11 @@ func set_enable_dither(value:bool):
 	find_child("DitherLayer").visible = value
 
 var target_label_history_by_subaddress := {}
-var window_visibilities_by_subaddress := {}
+#var window_visibilities_by_subaddress := {}
 func on_go_back_accepted(page:int, line:int, dialine:int):
 	var subaddress := str(page, ".", line, ".", dialine)
-	target_label_id_by_actor = target_label_history_by_subaddress.get(subaddress, target_label_id_by_actor).duplicate()
-	
-	var visibilities : Dictionary = window_visibilities_by_subaddress.get(subaddress, get_window_visibilities()).duplicate()
-	for window : CustomWindow in windows:
-		window.visible = visibilities.get(window.uid)
-
-func on_start_new_dialine(_a):
-	var subaddress := line_reader._get_dialog_subaddress()
-	target_label_history_by_subaddress[subaddress] = target_label_id_by_actor.duplicate()
-	window_visibilities_by_subaddress[subaddress] = get_window_visibilities()
+	if target_label_history_by_subaddress.has(subaddress):
+		target_label_id_by_actor = target_label_history_by_subaddress.get(subaddress).duplicate()
 
 func get_window_visibilities() -> Dictionary:
 	var result := {}
@@ -346,8 +338,8 @@ func serialize() -> Dictionary:
 	result["target_label_id_by_actor"] = target_label_id_by_actor
 	result["last_body_label_target"] = last_body_label_target
 	
-	result["window_visibilities_by_subaddress"] = window_visibilities_by_subaddress
-	result["target_label_history_by_subaddress"] = target_label_history_by_subaddress
+	#result["window_visibilities_by_subaddress"] = window_visibilities_by_subaddress
+	#result["target_label_history_by_subaddress"] = target_label_history_by_subaddress
 	result["are_words_being_spoken"] = are_words_being_spoken
 	
 	var window_data_by_uid := {}
@@ -391,7 +383,7 @@ func deserialize(data:Dictionary):
 	base_cg_offset = GameWorld.str_to_vec2(data.get("base_cg_offset", Vector2.ZERO))
 	target_label_id_by_actor = data.get("target_label_id_by_actor", {})
 	
-	window_visibilities_by_subaddress = data.get("window_visibilities_by_subaddress", {})
+	#window_visibilities_by_subaddress = data.get("window_visibilities_by_subaddress", {})
 	target_label_history_by_subaddress = data.get("target_label_history_by_subaddress", {})
 	are_words_being_spoken = data.get("are_words_being_spoken", are_words_being_spoken)
 	
@@ -478,6 +470,7 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 		if force_show:
 			window.move_to_top()
 			window.open_if_closed()
+	target_label_history_by_subaddress[line_reader.get_subaddress()] = target_label_id_by_actor.duplicate()
 
 var block_about_new_actor_handling := false
 func on_dialog_line_args_passed(

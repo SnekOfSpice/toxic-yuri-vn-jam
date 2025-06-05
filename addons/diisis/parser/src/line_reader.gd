@@ -2036,14 +2036,14 @@ func _on_name_label_updated(
 	_currently_speaking_name = actor_name
 	_currently_speaking_visible = is_name_container_visible
 
-func _get_dialog_subaddress() -> String:
+func get_subaddress() -> String:
 	return str(Parser.page_index, ".", line_index, ".", _dialog_line_index)
 
 ## Automation to append stuff to parser history
 func _on_body_label_text_changed(old_text: String,
 	new_text: String,
 	lead_time: float):
-	var sub_address := _get_dialog_subaddress()
+	var sub_address := get_subaddress()
 	if _subaddresses_in_history.has(sub_address):
 		return
 	_subaddresses_in_history.append(sub_address)

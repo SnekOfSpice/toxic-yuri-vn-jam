@@ -27,6 +27,17 @@ func  _ready() -> void:
 			title_bar.set_icon(icon)
 	
 	gui_input.connect(on_gui_input)
+	ParserEvents.go_back_accepted.connect(on_go_back_accepted)
+	visibility_changed.connect(on_visibility_changed)
+
+var visibilities_by_subaddress := {}
+func on_go_back_accepted(page:int, line:int, dialine:int):
+	var subaddress := str(page, ".", line, ".", dialine)
+	if subaddress in visibilities_by_subaddress:
+		visible = visibilities_by_subaddress.get(subaddress)
+
+func on_visibility_changed():
+	visibilities_by_subaddress[Parser.line_reader.get_subaddress()] = not visible
 
 var dragging := false
 var drag_offset : Vector2
