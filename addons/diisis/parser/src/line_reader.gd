@@ -1077,7 +1077,7 @@ func _process(delta: float) -> void:
 					_full_word_timer -= delta
 				if _full_word_timer <= 0 or old_text_length == 0:
 					body_label.visible_characters = min(next_space_position, _get_end_of_chunk_position())
-					_full_word_timer = (MAX_TEXT_SPEED / current_text_speed) * delta
+					_full_word_timer = (MAX_TEXT_SPEED / current_text_speed) * delta * 5.0 # avg word length whatever
 			else:
 				body_label.visible_ratio += (float(current_text_speed) / body_label.get_parsed_text().length()) * delta
 			# fast text speed can make it go over the end  of the chunk

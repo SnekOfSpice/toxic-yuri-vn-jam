@@ -16,6 +16,9 @@ func get_segments() -> Array:
 func on_word_read(word:String):
 	if Parser.line_reader.current_raw_name in Parser.line_reader.blank_names:
 		return
+	if GameWorld.game_stage:
+		if not GameWorld.game_stage.are_words_being_spoken:
+			return
 	var i := 0.0
 	var segment_count := get_segments().size()
 	var used_band = band + randi_range(-2, 2)

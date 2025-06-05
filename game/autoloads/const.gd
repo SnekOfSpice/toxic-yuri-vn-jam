@@ -19,6 +19,8 @@ const BACKGROUND_DEFAULT := "void.png"
 const BACKGROUND_SKYLINE := "skyline.png"
 
 const MUSIC_ROOT := "res://game/sounds/music/"
+const MUSIC_CONSENSUAL_HATE_FUCK := "Paradise_Found.mp3"
+const MUSIC_DICKS := "Paradise_Found.mp3"
 const MUSIC_DRUNK_DRIVING := "Paradise_Found.mp3"
 const MUSIC_GAS_STATION := "Paradise_Found.mp3"
 const MUSIC_HANGOVER := "Paradise_Found.mp3"

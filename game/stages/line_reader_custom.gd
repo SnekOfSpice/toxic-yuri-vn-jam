@@ -227,15 +227,17 @@ func hide_windows(window_type:String):
 const SPLASH_STRINGS := {
 	"opening" : "[ph]I fucking hate you.",
 	"yea_right" : "Yeah.\nRight.",
-	"post_surgery" : "[ph]Surgery happened."
+	"post_surgery" : "[ph]Surgery happened.",
+	"killer_hangover" : "Killer hangover.",
+	"filthy" : "Filthy.",
 }
-func splash_text(key:String, hide_all_windows := true):
+func splash_text(key:String, reset_windows := true):
 	if GameWorld.game_stage.devmode_enabled:
 		print(SPLASH_STRINGS.get(key))
 		return false
 	var cover = preload("res://game/stages/text_reading_cover.tscn").instantiate()
 	find_child("VNUICanvasLayer").add_child(cover)
-	cover.read(SPLASH_STRINGS.get(key), hide_all_windows)
+	cover.read(SPLASH_STRINGS.get(key), reset_windows)
 	return true
 
 func set_target_labels(actor:String, target_id:int, force_show:=true):

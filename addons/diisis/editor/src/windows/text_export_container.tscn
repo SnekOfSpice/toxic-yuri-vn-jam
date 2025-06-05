@@ -86,6 +86,7 @@ text = "Export as file..."
 
 [node name="FileDialog" type="FileDialog" parent="."]
 title = "Export as Text"
+always_on_top = true
 access = 2
 filters = PackedStringArray("*.txt")
 

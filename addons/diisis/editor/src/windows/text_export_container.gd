@@ -1,6 +1,9 @@
 @tool
 extends Control
 
+signal fd_opened
+signal fd_closed
+
 func init():
 	for child in %SelectionContainer.get_children():
 		child.queue_free()
@@ -55,6 +58,8 @@ func _on_file_dialog_file_selected(path: String) -> void:
 
 func _on_file_button_pressed() -> void:
 	$FileDialog.popup()
+	emit_signal("fd_opened")
 
 func _on_file_dialog_close_requested() -> void:
 	$FileDialog.hide()
+	emit_signal("fd_closed")

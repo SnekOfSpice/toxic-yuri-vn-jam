@@ -53,7 +53,7 @@ func _ready():
 	ParserEvents.page_terminated.connect(go_to_main_menu)
 	ParserEvents.instruction_started.connect(on_instruction_started)
 	ParserEvents.instruction_completed.connect(on_instruction_completed)
-	#ParserEvents.read_new_line.connect(on_read_new_line)
+	ParserEvents.read_new_line.connect(on_read_new_line)
 	ParserEvents.dialog_line_args_passed.connect(on_dialog_line_args_passed)
 	ParserEvents.go_back_accepted.connect(on_go_back_accepted)
 	ParserEvents.start_new_dialine.connect(on_start_new_dialine)
@@ -110,8 +110,8 @@ func get_window_visibilities() -> Dictionary:
 		result[window.uid] = window.visible
 	return result
 
-#func on_read_new_line(_line_index:int):
-	#Options.save_gamestate()
+func on_read_new_line(_line_index:int):
+	Options.save_gamestate()
 
 func on_tree_exit():
 	GameWorld.game_stage = null
@@ -346,6 +346,7 @@ func serialize() -> Dictionary:
 	
 	result["window_visibilities_by_subaddress"] = window_visibilities_by_subaddress
 	result["target_label_history_by_subaddress"] = target_label_history_by_subaddress
+	result["are_words_being_spoken"] = are_words_being_spoken
 	
 	var window_data_by_uid := {}
 	for window : CustomWindow in windows:
@@ -390,6 +391,7 @@ func deserialize(data:Dictionary):
 	
 	window_visibilities_by_subaddress = data.get("window_visibilities_by_subaddress", {})
 	target_label_history_by_subaddress = data.get("target_label_history_by_subaddress", {})
+	are_words_being_spoken = data.get("are_words_being_spoken", are_words_being_spoken)
 	
 	# windows
 	var window_data : Dictionary = data.get("windows", {})
@@ -455,9 +457,12 @@ func get_body_label(target_id:int):
 	else:
 		return get_chatlog_window(target_id).get_body_label()
 
+var are_words_being_spoken := true
 func set_target_labels(actor:String, target_id:int, force_show:=true):
 	last_body_label_target = target_id
 	target_label_id_by_actor[actor] = target_id
+	line_reader.full_words = target_id in [3, 4]
+	are_words_being_spoken = target_id != 3
 	if target_id == 0:
 		%LineReader.set_body_label(%DefaultTextContainer.find_child("BodyLabel"), false)
 		var name_label = %DefaultTextContainer.find_child("NameLabel")

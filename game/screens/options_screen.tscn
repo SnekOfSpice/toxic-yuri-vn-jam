@@ -110,7 +110,7 @@ layout_mode = 2
 [node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer"]
 layout_mode = 2
 bbcode_enabled = true
-text = "[center]Progress is saved automatically when you leave."
+text = "[center]Progress is saved automatically."
 fit_content = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer"]
@@ -135,6 +135,7 @@ text = "Quit"
 layout_mode = 2
 bbcode_enabled = true
 text = "Advance - [LClick] / [Space] / [Right]
+Move Window - [RClick] + drag
 Screenshot - [S]
 Toggle UI - [H]
 Toggle auto - [A]
