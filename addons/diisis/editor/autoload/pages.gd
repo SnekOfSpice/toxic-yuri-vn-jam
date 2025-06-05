@@ -1922,3 +1922,13 @@ func make_puppy() -> String:
 	if has_whiskers:
 		emoticon += w[1]
 	return emoticon
+
+
+func linearize_pages():
+	for i in get_page_count():
+		var data := get_page_data(i)
+		data["next"] = i + 1
+		data["terminate"] = i == get_page_count() - 1
+		page_data[i] = data
+	await get_tree().process_frame
+	editor.refresh(false)

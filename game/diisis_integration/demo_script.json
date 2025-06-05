@@ -432,7 +432,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854767556,
+		"id_counter": -9223372036854767404,
 		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa\nx: xelia\nl: leah\nf: franco\nno: noni",
 		"locales_to_export": [
 			"de_DE",
@@ -1606,7 +1606,7 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 2732.0,
 				"meta.selected": false,
-				"next": 1.0,
+				"next": 1,
 				"number": 0.0,
 				"page_key": "beginning",
 				"terminate": false
@@ -1966,7 +1966,7 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 674.0,
 				"meta.selected": false,
-				"next": 2.0,
+				"next": 2,
 				"number": 1.0,
 				"page_key": "the next morning, maya leaves for her date",
 				"terminate": false
@@ -2116,7 +2116,7 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 3.0,
+				"next": 3,
 				"number": 2.0,
 				"page_key": "maya gets spitroasted by roaches and hn",
 				"terminate": false
@@ -2577,7 +2577,7 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 1530.0,
 				"meta.selected": false,
-				"next": 4.0,
+				"next": 4,
 				"number": 3.0,
 				"page_key": "audrey shoots her dick off",
 				"terminate": false
@@ -2809,7 +2809,7 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 5.0,
+				"next": 5,
 				"number": 4.0,
 				"page_key": "the idiots run into argo again",
 				"terminate": false
@@ -2825,7 +2825,7 @@
 					{
 						"address": "5.0",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -2835,7 +2835,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -2857,12 +2857,12 @@
 						},
 						"header": [],
 						"id": "1749093417.979--9223372036854769478",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -2871,7 +2871,7 @@
 					{
 						"address": "5.1",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -2881,7 +2881,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -2898,12 +2898,12 @@
 						},
 						"header": [],
 						"id": "1748894240.252--9223372036854773707",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 1.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -2912,7 +2912,7 @@
 					{
 						"address": "5.2",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -2922,7 +2922,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -2944,12 +2944,12 @@
 						},
 						"header": [],
 						"id": "1749093698.908--9223372036854769465",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 2.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -2958,7 +2958,7 @@
 					{
 						"address": "5.3",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -2968,7 +2968,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -2985,12 +2985,12 @@
 						},
 						"header": [],
 						"id": "1749093718.907--9223372036854769464",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 3.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -2999,7 +2999,7 @@
 					{
 						"address": "5.4",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3009,7 +3009,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3026,23 +3026,23 @@
 						},
 						"header": [],
 						"id": "1749096822.856--9223372036854768663",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4,
+						"meta.line_index": 4.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 229,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 229.0,
 				"meta.selected": false,
-				"next": 6.0,
-				"number": 5,
+				"next": 6,
+				"number": 5.0,
 				"page_key": "argo does drugs out of boredom, goes about its day",
 				"terminate": false
 			},
@@ -3189,7 +3189,7 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 7.0,
+				"next": 7,
 				"number": 6.0,
 				"page_key": "post-surgery, the gang gets argos number",
 				"terminate": false
@@ -3411,7 +3411,7 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 77.0,
 				"meta.selected": false,
-				"next": 8.0,
+				"next": 8,
 				"number": 7.0,
 				"page_key": "argo hangs out with the gang",
 				"terminate": false
@@ -3515,7 +3515,7 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 9.0,
+				"next": 9,
 				"number": 8.0,
 				"page_key": "argo asks nessa on a date",
 				"terminate": false
@@ -3781,7 +3781,7 @@
 					}
 				],
 				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 262,
 				"meta.selected": false,
 				"next": 10.0,
 				"number": 9,
@@ -3799,7 +3799,7 @@
 					{
 						"address": "10.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3809,7 +3809,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3826,12 +3826,12 @@
 						},
 						"header": [],
 						"id": "1749097770.330--9223372036854768209",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3840,7 +3840,7 @@
 					{
 						"address": "10.1",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3850,7 +3850,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3867,12 +3867,12 @@
 						},
 						"header": [],
 						"id": "1748894620.756--9223372036854773696",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1.0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3881,7 +3881,7 @@
 					{
 						"address": "10.2",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3891,7 +3891,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3908,12 +3908,12 @@
 						},
 						"header": [],
 						"id": "1748894330.240--9223372036854773701",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2.0,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3922,7 +3922,7 @@
 					{
 						"address": "10.3",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3932,7 +3932,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3954,12 +3954,12 @@
 						},
 						"header": [],
 						"id": "1748894545.569--9223372036854773699",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3.0,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3968,7 +3968,7 @@
 					{
 						"address": "10.4",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3978,7 +3978,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3999,23 +3999,23 @@
 						},
 						"header": [],
 						"id": "1748894560.579--9223372036854773698",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4.0,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 0.0,
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
-				"next": 11.0,
-				"number": 10.0,
+				"next": 11,
+				"number": 10,
 				"page_key": "venassa & argo mutual sh on acid (thats their date)",
 				"terminate": false
 			},
@@ -4113,7 +4113,7 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 12.0,
+				"next": 12,
 				"number": 11.0,
 				"page_key": "argo has its first bathroom monologue",
 				"terminate": false
@@ -4212,7 +4212,7 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 13.0,
+				"next": 13,
 				"number": 12.0,
 				"page_key": "argo and vanessa go to a concert together, xelia is introduced",
 				"terminate": false
@@ -4352,7 +4352,7 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 14.0,
+				"next": 14,
 				"number": 13.0,
 				"page_key": "hangout: vein launch, haya drama, audrey 5th wheels lmao",
 				"terminate": false
@@ -4623,7 +4623,7 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 704.0,
 				"meta.selected": false,
-				"next": 15.0,
+				"next": 15,
 				"number": 14.0,
 				"page_key": "vanessa and argo sex scene",
 				"terminate": false
@@ -4639,7 +4639,7 @@
 					{
 						"address": "15.0",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4649,7 +4649,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4666,12 +4666,12 @@
 						},
 						"header": [],
 						"id": "1749095991.713--9223372036854768945",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4680,7 +4680,7 @@
 					{
 						"address": "15.1",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4690,7 +4690,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4707,23 +4707,23 @@
 						},
 						"header": [],
 						"id": "1749096011.734--9223372036854768943",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 1.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 0,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 16.0,
-				"number": 15,
+				"next": 16,
+				"number": 15.0,
 				"page_key": "checkin on noni + xelia organizes with roaches",
 				"terminate": false
 			},
@@ -4738,7 +4738,7 @@
 					{
 						"address": "16.0",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4748,7 +4748,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4770,12 +4770,12 @@
 						},
 						"header": [],
 						"id": "1749122710.931--9223372036854767581",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4784,7 +4784,7 @@
 					{
 						"address": "16.1",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4794,7 +4794,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4811,12 +4811,12 @@
 						},
 						"header": [],
 						"id": "1749122811.327--9223372036854767580",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 1.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4825,7 +4825,7 @@
 					{
 						"address": "16.2",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4835,7 +4835,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4852,23 +4852,23 @@
 						},
 						"header": [],
 						"id": "1749122861.376--9223372036854767578",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 2.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 0,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 17.0,
-				"number": 16,
+				"next": 17,
+				"number": 16.0,
 				"page_key": "haley and maya falling out",
 				"terminate": false
 			},
@@ -4883,7 +4883,7 @@
 					{
 						"address": "17.0",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4893,7 +4893,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4910,23 +4910,23 @@
 						},
 						"header": [],
 						"id": "1749095831.455--9223372036854769010",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 0,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 18.0,
-				"number": 17,
+				"next": 18,
+				"number": 17.0,
 				"page_key": "maya gets groomed into the thing with franco",
 				"terminate": false
 			},
@@ -4941,8 +4941,8 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 19.0,
-				"number": 18,
+				"next": 19,
+				"number": 18.0,
 				"page_key": "noni has a mental health emergency",
 				"terminate": false
 			},
@@ -4999,8 +4999,8 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 20.0,
-				"number": 19,
+				"next": 20,
+				"number": 19.0,
 				"page_key": "maya gets raped by franco",
 				"terminate": false
 			},
@@ -5221,8 +5221,8 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 93.0,
 				"meta.selected": false,
-				"next": 21.0,
-				"number": 20,
+				"next": 21,
+				"number": 20.0,
 				"page_key": "intermission, vein has another acid trip, its really sweet <3",
 				"terminate": false
 			},
@@ -5366,8 +5366,8 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 22.0,
-				"number": 21,
+				"next": 22,
+				"number": 21.0,
 				"page_key": "haley's suicide",
 				"terminate": false
 			},
@@ -5506,8 +5506,8 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 63.0,
 				"meta.selected": false,
-				"next": 23.0,
-				"number": 22,
+				"next": 23,
+				"number": 22.0,
 				"page_key": "after haley's suicide (incl maya breakdown)",
 				"terminate": false
 			},
@@ -5646,8 +5646,8 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 25.0,
-				"number": 23,
+				"next": 24,
+				"number": 23.0,
 				"page_key": "maya's suicide",
 				"terminate": false
 			},
@@ -5827,8 +5827,8 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 25.0,
-				"number": 24,
+				"next": 25,
+				"number": 24.0,
 				"page_key": "after maya's suicide after haley's suicide",
 				"terminate": false
 			},
@@ -6093,8 +6093,8 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 408.0,
 				"meta.selected": false,
-				"next": 26.0,
-				"number": 25,
+				"next": 26,
+				"number": 25.0,
 				"page_key": "audrey shoots franco",
 				"terminate": false
 			},
@@ -6243,8 +6243,8 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 0.0,
-				"number": 26,
+				"next": 27,
+				"number": 26.0,
 				"page_key": "the end",
 				"terminate": true
 			}

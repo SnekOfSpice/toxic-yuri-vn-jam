@@ -74,3 +74,10 @@ func _on_reset_address_mode_pressed() -> void:
 func _on_reset_address_mode_popup_change_to_mode(mode: AddressModeButton.Mode) -> void:
 	for item in find_child("Items").get_children():
 		item.set_address_mode(mode)
+
+
+func _on_v_id_pressed(id: int) -> void:
+	match id:
+		0:
+			Pages.linearize_pages()
+			fill()
