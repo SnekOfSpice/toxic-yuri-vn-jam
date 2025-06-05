@@ -169,6 +169,7 @@ layout_mode = 2
 size_flags_vertical = 4
 focus_mode = 0
 min_value = 1.0
+max_value = 200.0
 value = 1.0
 
 [node name="TextSpeedValueLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/TextMenu/HBoxContainer/VBoxContainer2/VBoxContainer"]
@@ -203,10 +204,12 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Label2" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/TextMenu/HBoxContainer/VBoxContainer2/VBoxContainer3"]
+visible = false
 layout_mode = 2
 text = "Fonts"
 
 [node name="HBoxContainer" type="GridContainer" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/TextMenu/HBoxContainer/VBoxContainer2/VBoxContainer3"]
+visible = false
 layout_mode = 2
 
 [node name="LabelFontOptionButton" type="OptionButton" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/TextMenu/HBoxContainer/VBoxContainer2/VBoxContainer3/HBoxContainer"]
@@ -216,10 +219,12 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Label3" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/TextMenu/HBoxContainer/VBoxContainer2/VBoxContainer3"]
+visible = false
 layout_mode = 2
 text = "Font Size"
 
 [node name="GridContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/TextMenu/HBoxContainer/VBoxContainer2/VBoxContainer3"]
+visible = false
 layout_mode = 2
 
 [node name="ResetLabelFontSizeButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/TextMenu/HBoxContainer/VBoxContainer2/VBoxContainer3/GridContainer"]
@@ -241,6 +246,7 @@ value = 24.0
 layout_mode = 2
 
 [node name="GridContainer2" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/TextMenu/HBoxContainer/VBoxContainer2/VBoxContainer3"]
+visible = false
 layout_mode = 2
 
 [node name="ResetRTLFontSizeButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/TextMenu/HBoxContainer/VBoxContainer2/VBoxContainer3/GridContainer2"]

@@ -137,7 +137,6 @@ name_style = 1
 name_label = NodePath("SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer/PanelContainer/VBoxContainer/NameContainer/NameLabel")
 text_container = NodePath("SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer")
 name_container = NodePath("SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer/PanelContainer/VBoxContainer/NameContainer/NameLabel")
-body_label_function_funnel = Array[String](["Style.adjust_font_size_tags"])
 chatlog_fuse_lines = false
 chatlog_fallback_color_map = true
 choice_button_keyboard_focus = false

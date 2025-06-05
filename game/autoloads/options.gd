@@ -79,10 +79,10 @@ func store_font_prefs(prefs:Dictionary):
 
 func apply_font_prefs(prefs:Dictionary):
 	font_prefs = prefs
-	Style.set_label_font(prefs.get("label_font", 0))
-	Style.set_rich_text_label_font(prefs.get("rich_text_label_font", 0))
-	Style.set_rich_text_label_font_size(prefs.get("rich_text_label_font_size", Style.DEFAULT_RTL_FONT_SIZE))
-	Style.set_label_font_size(prefs.get("label_font_size", Style.DEFAULT_LABEL_FONT_SIZE))
+	#Style.set_label_font(prefs.get("label_font", 0))
+	#Style.set_rich_text_label_font(prefs.get("rich_text_label_font", 0))
+	#Style.set_rich_text_label_font_size(prefs.get("rich_text_label_font_size", Style.DEFAULT_RTL_FONT_SIZE))
+	#Style.set_label_font_size(prefs.get("label_font_size", Style.DEFAULT_LABEL_FONT_SIZE))
 
 func save_prefs():
 	var config = ConfigFile.new()
