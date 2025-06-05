@@ -232,6 +232,7 @@ const SPLASH_STRINGS := {
 	"audrey_lives" : "Audrey lives.",
 	"ending" : "REFUSE REFUSE REFUSE REFUSE FOREVER AND EVER AND EVER MORE",
 	"noni_rescue" : "[PH]noni rescue",
+	"pale" : "Pale as a corpse grey morning sky...",
 	"one_of_us" : "When you're one of us, making it out of your 20s will be your first and greatest life achievement."
 }
 func splash_text(key:String, reset_windows := true):
