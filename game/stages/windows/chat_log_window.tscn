@@ -5,8 +5,13 @@
 [ext_resource type="Texture2D" uid="uid://bnobfiqbcc60g" path="res://game/characters/portraits/xelia.png" id="3_h2eej"]
 
 [node name="ChatLogWindow" type="PanelContainer" node_paths=PackedStringArray("header_vbox_parent") groups=["chatlogwindow"]]
-offset_right = 56.0
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -374.0
 offset_bottom = 73.0
+grow_horizontal = 0
+size_flags_horizontal = 3
 mouse_filter = 1
 theme = ExtResource("1_pxmp7")
 script = ExtResource("1_023oh")
@@ -27,6 +32,8 @@ stretch_mode = 5
 
 [node name="PanelContainer" type="PanelContainer" parent="HBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/PanelContainer"]
 layout_mode = 2

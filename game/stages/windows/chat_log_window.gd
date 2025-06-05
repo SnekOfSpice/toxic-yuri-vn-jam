@@ -20,8 +20,10 @@ func get_name_container() -> Control:
 
 func set_portrait(actor:String):
 	if actor == "":
+		%Portrait.visible = false
 		%Portrait.texture = load("res://game/characters/portraits/none.png")
 		return
+	%Portrait.visible = true
 	%Portrait.texture = load("res://game/characters/portraits/%s.png" % actor)
 func serialize() -> Dictionary:
 	var data := super.serialize()

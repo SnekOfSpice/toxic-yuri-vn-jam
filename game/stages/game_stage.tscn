@@ -240,18 +240,19 @@ mouse_filter = 2
 [node name="DefaultTextContainer" type="MarginContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI"]
 unique_name_in_owner = true
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -260.0
-offset_right = 260.0
-offset_bottom = 175.0
-grow_horizontal = 2
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -833.0
+offset_right = -157.0
+offset_bottom = 324.0
+grow_horizontal = 0
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 15
 
 [node name="HBoxContainer" type="HBoxContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer"]
 layout_mode = 2
+alignment = 2
 
 [node name="Portrait" type="TextureRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer"]
 custom_minimum_size = Vector2(50, 0)
@@ -263,6 +264,8 @@ stretch_mode = 5
 
 [node name="PanelContainer" type="PanelContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 0
+mouse_filter = 2
 theme_type_variation = &"EmbodiedText"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer/PanelContainer"]
@@ -273,6 +276,7 @@ custom_minimum_size = Vector2(550, 0)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
+mouse_filter = 2
 bbcode_enabled = true
 text = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
 fit_content = true
@@ -290,39 +294,48 @@ mouse_filter = 2
 
 [node name="ChatLogWindow1" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
 layout_mode = 1
-offset_left = 585.0
-offset_top = 110.0
-offset_right = 1013.0
-offset_bottom = 185.0
+offset_left = 571.0
+offset_top = 297.0
+offset_right = 999.0
+offset_bottom = 372.0
 id = 1
 include_title_bar = false
 
 [node name="ChatLogWindow2" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
 layout_mode = 1
-offset_left = 28.0
-offset_top = 375.0
-offset_right = 456.0
-offset_bottom = 450.0
+offset_left = 60.0
+offset_top = 346.0
+offset_right = 488.0
+offset_bottom = 421.0
 id = 2
 include_title_bar = false
 
 [node name="ChatLogWindow3" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
 layout_mode = 1
-offset_left = 551.0
-offset_top = 491.0
-offset_right = 979.0
-offset_bottom = 566.0
+offset_left = 543.0
+offset_top = 488.0
+offset_right = 971.0
+offset_bottom = 563.0
 id = 3
 title = "PAWZ - chat client"
 
 [node name="ChatLogWindow4" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
 layout_mode = 1
-offset_left = 554.0
-offset_top = 377.0
-offset_right = 982.0
-offset_bottom = 452.0
+offset_left = 543.0
+offset_top = 385.0
+offset_right = 971.0
+offset_bottom = 460.0
 id = 4
 title = "BARK - vox client"
+
+[node name="ChatLogWindow5" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
+layout_mode = 1
+offset_left = 50.0
+offset_top = 456.0
+offset_right = 478.0
+offset_bottom = 531.0
+id = 5
+title = "PAWZ - chat client"
 
 [node name="ImageViewerWindow" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_3xf2c")]
 layout_mode = 0

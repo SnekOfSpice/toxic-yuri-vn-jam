@@ -302,11 +302,13 @@ func on_actor_name_changed(
 		var target_id : int = target_label_id_by_actor.get(actor, 0)
 		if actor in Parser.line_reader.blank_names:
 			if target_id == 0:
+				find_child("Portrait").visible = false
 				find_child("Portrait").texture = load("res://game/characters/portraits/none.png")
 			else:
 				get_chatlog_window(target_id).set_portrait("")
 		else:
 			if target_id == 0:
+				find_child("Portrait").visible = true
 				find_child("Portrait").texture = load("res://game/characters/portraits/%s.png" % actor_name)
 			else:
 				get_chatlog_window(target_id).set_portrait(actor_name)
