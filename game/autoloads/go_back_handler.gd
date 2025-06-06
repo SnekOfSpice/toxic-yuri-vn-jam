@@ -38,8 +38,6 @@ func on_go_back_accepted(page:int, line:int, _a):
 	#for character : Character in get_tree().get_nodes_in_group("character"):
 		#character.deserialize(characters.get(character.character_name, {}))
 	
-	if is_instance_valid(GameWorld.stage_root):
-		GameWorld.stage_root.set_background(state.get("background", ""))
 	
 	if is_instance_valid(GameWorld.game_stage):
 		GameWorld.game_stage.deserialize(state.get("game_stage", {}))

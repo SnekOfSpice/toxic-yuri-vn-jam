@@ -25,10 +25,10 @@ func set_chapter_cover(pov_name: String, bottom_text: String, new_background: St
 		if GameWorld.camera:
 			GameWorld.camera.zoom_to(zoom, 0)
 		Sound.play_bgm(bgm)
-		GameWorld.stage_root.set_background(new_background)
+		GameWorld.game_stage.set_background(new_background)
 		emit_signal("chapter_intro_finished")
 		
-		GameWorld.stage_root.set_background(new_background)
+		GameWorld.game_stage.set_background(new_background)
 		GameWorld.camera.zoom_to(zoom, 0.0)
 		GameWorld.camera.move_to(0,0,0)
 		GameWorld.hide_all_characters()
@@ -122,7 +122,7 @@ func set_chapter_cover(pov_name: String, bottom_text: String, new_background: St
 	
 	mod_tween.tween_property(self, "modulate:a", 0, 2.4).set_delay(full_fade_in_after + 4)
 	
-	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.stage_root.set_background.bind(new_background))
+	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.game_stage.set_background.bind(new_background))
 	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.camera.zoom_to.bind(zoom, 0.0))
 	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.camera.move_to.bind(0,0,0))
 	get_tree().create_timer(full_fade_in_after).timeout.connect(GameWorld.hide_all_characters)

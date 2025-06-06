@@ -77,7 +77,7 @@ func hide_cg(fade_out:=2.0):
 	return false
 
 func set_background(_name:String, fade_time:float):
-	GameWorld.stage_root.set_background(
+	GameWorld.game_stage.set_background(
 				_name,
 				fade_time
 			)

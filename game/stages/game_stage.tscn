@@ -47,6 +47,7 @@ grow_vertical = 2
 focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
+devmode_enabled = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -121,6 +122,10 @@ render_target_update_mode = 4
 unique_name_in_owner = true
 position = Vector2(502, 377)
 script = ExtResource("9_lbjue")
+
+[node name="Background" type="Node2D" parent="LineReader/SubViewportContainer/SubViewport/Camera2D"]
+unique_name_in_owner = true
+position = Vector2(-500, -375)
 
 [node name="CGBottom" type="CanvasLayer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D"]
 

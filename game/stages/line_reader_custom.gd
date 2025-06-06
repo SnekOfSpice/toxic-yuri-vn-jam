@@ -81,8 +81,8 @@ func hide_cg(fade_out:=2.0):
 	emit_signal("start_hide_cg", fade_out)
 	return false
 
-func set_background(_name:String, fade_time:float):
-	GameWorld.stage_root.set_background(
+func set_background(_name:String, fade_time:=0.0):
+	GameWorld.game_stage.set_background(
 				_name,
 				fade_time
 			)
@@ -233,15 +233,24 @@ const SPLASH_STRINGS := {
 	"ending" : "REFUSE REFUSE REFUSE REFUSE FOREVER AND EVER AND EVER MORE",
 	"noni_rescue" : "[PH]noni rescue",
 	"pale" : "Pale as a corpse grey morning sky...",
-	"one_of_us" : "When you're one of us, making it out of your 20s will be your first and greatest life achievement."
+	"vibrant" : "Vibrant as bruises...",
+	"one_of_us" : "When you're one of us, making it out of your 20s will be your first and greatest life achievement.",
+	"rape_intro" : "[ph]Sometimes, existence hurts."
 }
-func splash_text(key:String, reset_windows := true):
+func splash_text(key:String,
+	background:=GameWorld.game_stage.background,
+	bgm:=Sound.bgm_key,
+	reset_windows := true):
 	if GameWorld.game_stage.devmode_enabled:
+		if reset_windows:
+			hide_all_windows()
+			set_all_target_labels(0)
+		set_background(background, 0)
 		print(SPLASH_STRINGS.get(key))
 		return false
 	var cover = preload("res://game/stages/text_reading_cover.tscn").instantiate()
 	find_child("VNUICanvasLayer").add_child(cover)
-	cover.read(SPLASH_STRINGS.get(key), reset_windows)
+	cover.read(SPLASH_STRINGS.get(key), background, bgm, reset_windows)
 	return true
 
 func set_target_labels(actor:String, target_id:int, force_show:=true):

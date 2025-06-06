@@ -43,7 +43,7 @@ func on_full_black_reached():
 		for c in get_tree().get_nodes_in_group("character"):
 			c.visible = false
 	
-	GameWorld.stage_root.set_background(new_background_on_full_black_reached)
+	GameWorld.game_stage.set_background(new_background_on_full_black_reached)
 	#emit_signal("request_background_change", new_background_on_full_black_reached)
 	
 	if not new_bgm_on_full_black_reached.is_empty():
