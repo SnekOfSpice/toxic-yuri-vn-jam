@@ -329,6 +329,7 @@ func serialize() -> Dictionary:
 	result["cg"] = cg
 	result["cg_position"] = cg_position
 	result["base_cg_offset"] = base_cg_offset
+	result["background"] = background
 	result["objects"] = %Objects.serialize()
 	
 	result["start_cover_visible"] = find_child("StartCover").visible
@@ -390,6 +391,8 @@ func deserialize(data:Dictionary):
 	#window_visibilities_by_subaddress = data.get("window_visibilities_by_subaddress", {})
 	target_label_history_by_subaddress = data.get("target_label_history_by_subaddress", {})
 	are_words_being_spoken = data.get("are_words_being_spoken", are_words_being_spoken)
+	
+	set_background(data.get("background"))
 	
 	# windows
 	var window_data : Dictionary = data.get("windows", {})
