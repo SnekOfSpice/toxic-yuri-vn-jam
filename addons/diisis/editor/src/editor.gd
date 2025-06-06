@@ -69,6 +69,7 @@ func refresh(serialize_before_load:=true, fragile:=false):
 		find_child("GoTo")._address_bar_grab_focus()
 
 func init(active_file_path:="") -> void:
+	$OpeningCover.visible = true
 	Pages.clear()
 	DiisisEditorActions.clear()
 	opening = true
@@ -187,6 +188,7 @@ func load_page(number: int, discard_without_saving:=false):
 	page_instance.init(number)
 	update_controls()
 	await get_tree().process_frame
+	$OpeningCover.visible = false
 
 func get_line_data(index:int):
 	return 
@@ -531,6 +533,7 @@ func open_from_path(path:String):
 	var file = FileAccess.open(path, FileAccess.READ)
 	
 	if not file:
+		$OpeningCover.visible = false
 		return
 	
 	var data : Dictionary = JSON.parse_string(file.get_as_text())

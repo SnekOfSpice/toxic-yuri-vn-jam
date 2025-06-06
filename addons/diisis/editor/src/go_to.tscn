@@ -21,7 +21,7 @@ layout_mode = 2
 [node name="GoToButton" type="Button" parent="HBoxContainer/HBoxContainer"]
 layout_mode = 2
 focus_mode = 0
-text = "Go>"
+text = "Go"
 
 [node name="CancelGoTo" type="Button" parent="HBoxContainer/HBoxContainer"]
 visible = false

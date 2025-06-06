@@ -14,15 +14,6 @@ func _ready() -> void:
 	$Label.visible = true
 
 func start():
-	await get_tree().create_timer(1.0).timeout
-	Parser.line_reader.set_sun("steps", 3.7)
-	await get_tree().create_timer(1.5).timeout
-	Parser.line_reader.set_sun("fill_amount", 6.5)
-	await get_tree().create_timer(1.5).timeout
-	Parser.line_reader.set_sun("steps", 1.8)
-	await get_tree().create_timer(0.5).timeout
-	
-	
 	var white_tween = create_tween()
 	white_tween.tween_property($White, "modulate:a", 1.0, 4.0)
 	

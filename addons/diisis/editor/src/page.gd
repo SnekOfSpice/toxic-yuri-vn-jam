@@ -477,8 +477,9 @@ func update_incoming_references_to_page():
 	var ref_label : RichTextLabel = find_child("IncomingReferences")
 	ref_label.visible = ref_count != 0
 	if ref_count == 1:
-		ref_label.text = "[url=goto-%s]%s[/url] " % [refs[0], refs[0]]
-		ref_label.tooltip_text = "%s points here. Click to go there." % refs[0]
+		var page : String = refs[0]
+		ref_label.text = "[url=goto-%s]%s[/url] " % [page, page]
+		ref_label.tooltip_text = "%s points here. Click to go there.\nPage Key: %s" % [page, Pages.get_page_key(int(page))]
 	else:
 		var bars := ""
 		for i in min(ref_count, 8):
