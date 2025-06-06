@@ -15,8 +15,8 @@ const SCREEN_SAVE := "save_screen.tscn"
 const CG_ROOT := "res://game/cg/"
 
 const BACKGROUND_ROOT := "res://game/backgrounds/"
-const BACKGROUND_DEFAULT := "void.png"
-const BACKGROUND_SKYLINE := "skyline.png"
+const BACKGROUND_ARGO_APARTMENT := "void.png"
+const BACKGROUND_RECOVERY_CENTER := "void.png"
 
 const MUSIC_ROOT := "res://game/sounds/music/"
 const MUSIC_CONSENSUAL_HATE_FUCK := "Paradise_Found.mp3"
@@ -28,6 +28,7 @@ const MUSIC_INTRO := "Paradise_Found.mp3"
 const MUSIC_MAIN_MENU := "Modela - It's Not Pretty Here.ogg"
 const MUSIC_MEETING_AGAIN := "Paradise_Found.mp3"
 const MUSIC_NIGHTCORE := "Paradise_Found.mp3"
+const MUSIC_SHELTER := "Paradise_Found.mp3"
 
 const SFX_ROOT := "res://game/sounds/sfx/"
 const SFX_CLICK := "637345__kyles__camera-toy-single-shot-nice-stereo.ogg"

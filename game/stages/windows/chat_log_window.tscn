@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cosugqpmyex1j"]
+[gd_scene load_steps=5 format=3 uid="uid://cosugqpmyex1j"]
 
 [ext_resource type="Script" uid="uid://3d66w6kp63vs" path="res://game/stages/windows/chat_log_window.gd" id="1_023oh"]
 [ext_resource type="Theme" uid="uid://gee0nt5mhjku" path="res://game/visuals/theme/toxic_yuri_vn_theme.tres" id="1_pxmp7"]
 [ext_resource type="Texture2D" uid="uid://bnobfiqbcc60g" path="res://game/characters/portraits/xelia.png" id="3_h2eej"]
+[ext_resource type="Script" uid="uid://cxhdkxbk2nop" path="res://game/screens/auto_scroll_container.gd" id="4_wrkq1"]
 
 [node name="ChatLogWindow" type="PanelContainer" node_paths=PackedStringArray("header_vbox_parent") groups=["chatlogwindow"]]
 anchors_preset = 1
@@ -16,14 +17,14 @@ mouse_filter = 1
 theme = ExtResource("1_pxmp7")
 script = ExtResource("1_023oh")
 title = "BARK"
-header_vbox_parent = NodePath("HBoxContainer/PanelContainer/MarginContainer/TextContent")
+header_vbox_parent = NodePath("HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
 
 [node name="Portrait" type="TextureRect" parent="HBoxContainer"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(50, 0)
+custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_vertical = 0
 texture = ExtResource("3_h2eej")
@@ -44,11 +45,22 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "owowo"
 
-[node name="TextContent" type="VBoxContainer" parent="HBoxContainer/PanelContainer/MarginContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/PanelContainer/MarginContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+horizontal_scroll_mode = 0
+script = ExtResource("4_wrkq1")
+
+[node name="TextContent" type="VBoxContainer" parent="HBoxContainer/PanelContainer/MarginContainer/ScrollContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="BodyLabel" type="RichTextLabel" parent="HBoxContainer/PanelContainer/MarginContainer/TextContent"]
+[node name="PastContainer" type="VBoxContainer" parent="HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="BodyLabel" type="RichTextLabel" parent="HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(370, 0)
 layout_mode = 2

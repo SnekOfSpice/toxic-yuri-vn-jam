@@ -202,10 +202,18 @@ func set_all_target_labels(target_id:int, force_show := true):
 	for actor in GameWorld.game_stage.target_label_id_by_actor.keys():
 		GameWorld.game_stage.set_target_labels(actor, target_id, force_show)
 
+func reset_window_rotations(time:float):
+	for window : CustomWindow in find_child("Windows").get_children():
+		var t = create_tween()
+		t.tween_property(window, "rotation_degrees", 0, randf_range(0.9  * time, time * 1.08))
+	var t = create_tween()
+	t.tween_property(%DefaultTextContainer, "rotation_degrees", 0, randf_range(0.9  * time, time * 1.08))
+
 func shake_windows(strength:float):
 	shake_camera(strength)
-	for window : Control in find_child("Windows").get_children():
+	for window : CustomWindow in find_child("Windows").get_children():
 		window.rotation_degrees = randf_range(-0.5 * strength, 0.5 * strength)
+	%DefaultTextContainer.rotation_degrees = randf_range(-0.5 * strength, 0.5 * strength)
 	
 func show_image(image:String, viewer:=0, x_min_size := 200, y_min_size := 200, ):
 	for child in find_child("Windows").get_children():
@@ -258,3 +266,12 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 
 func hide_all_windows():
 	GameWorld.game_stage.hide_all_windows()
+
+
+func set_up_blank(display_name:String):
+	set_actor_name("blank", display_name)
+	var color : = Color.WHITE
+	color.r = randf_range(0.8, 1)
+	color.g = randf_range(0.8, 1)
+	color.b = randf_range(0.8, 1)
+	set_actor_color("blank", color)

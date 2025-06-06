@@ -456,11 +456,12 @@ func get_body_label(target_id:int):
 
 var are_words_being_spoken := true
 func set_target_labels(actor:String, target_id:int, force_show:=true):
-	last_body_label_target = target_id
 	target_label_id_by_actor[actor] = target_id
-	line_reader.full_words = target_id in [3, 4]
-	are_words_being_spoken = target_id != 3
+	var is_texting := target_id in [3,5]
+	var is_digital := target_id in [3,4,5]
+	are_words_being_spoken = not is_texting
 	if target_id == 0:
+		%LineReader.custom_text_speed_override = -1
 		%LineReader.set_body_label(%DefaultTextContainer.find_child("BodyLabel"), false)
 		var name_label = %DefaultTextContainer.find_child("NameLabel")
 		var name_container = %DefaultTextContainer.find_child("NameContainer")
@@ -470,10 +471,25 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 		var window : ChatLogWindow = vnui.find_child("ChatLogWindow%s"%target_id)
 		%LineReader.set_body_label(window.get_body_label(), false)
 		%LineReader.set_name_controls(window.get_name_label(), window.get_name_container())
+		if is_texting:
+			%LineReader.custom_text_speed_override = 201
+			%LineReader.body_label_prefix = "[code]"
+			%LineReader.body_label_suffix = "[/code]"
+			if last_body_label_target != target_id:
+				window.clear_past_container()
+			%LineReader.enable_keep_past_lines(
+				window.get_past_container()
+			)
+		else:
+			%LineReader.custom_text_speed_override = -1
+			%LineReader.body_label_prefix = ""
+			%LineReader.body_label_suffix = ""
+			%LineReader.keep_past_lines = false
 		if force_show:
 			window.move_to_top()
 			window.open_if_closed()
 	target_label_history_by_subaddress[line_reader.get_subaddress()] = target_label_id_by_actor.duplicate()
+	last_body_label_target = target_id
 
 var block_about_new_actor_handling := false
 func on_dialog_line_args_passed(

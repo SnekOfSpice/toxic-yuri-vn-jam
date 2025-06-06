@@ -6,8 +6,10 @@ func  _ready() -> void:
 	close()
 	if not include_title_bar: # is for embodied voice
 		find_child("PanelContainer").theme_type_variation = "EmbodiedText"
+		%ScrollContainer.vertical_scroll_mode = ScrollContainer.ScrollMode.SCROLL_MODE_DISABLED
 	else: # is digital comm
 		%TextContent.theme_type_variation = "DigitalText"
+		%ScrollContainer.vertical_scroll_mode = ScrollContainer.ScrollMode.SCROLL_MODE_RESERVE
 
 func get_body_label() -> RichTextLabel:
 	return %BodyLabel
@@ -17,6 +19,11 @@ func get_text_container() -> Control:
 	return %TextContent
 func get_name_container() -> Control:
 	return %NameLabel
+func get_past_container() -> VBoxContainer:
+	return %PastContainer
+func clear_past_container():
+	for child in %PastContainer.get_children():
+		child.queue_free()
 
 func set_portrait(actor:String):
 	if actor == "":

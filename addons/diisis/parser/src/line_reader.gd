@@ -1712,6 +1712,8 @@ func _get_actor_color(actor_key:String) -> Color:
 ## Sets the value of key [param actor_key] in [member name_map] to [param actor_name].
 func set_actor_name(actor_key:String, actor_name:String):
 	name_map[actor_key] = actor_name
+func set_actor_color(actor_key:String, color:Color):
+	color_map[actor_key] = color
 
 func _build_choices(choices, auto_switch:bool):
 	if not choice_container:

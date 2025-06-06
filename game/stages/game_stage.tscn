@@ -48,6 +48,7 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
+devmode_start_page = 21
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -215,7 +216,7 @@ layout_mode = 2
 alignment = 2
 
 [node name="Portrait" type="TextureRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer"]
-custom_minimum_size = Vector2(50, 0)
+custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_vertical = 0
 texture = ExtResource("8_7jfvv")
