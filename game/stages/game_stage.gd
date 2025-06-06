@@ -513,12 +513,12 @@ func hide_all_windows():
 		window.hide()
 
 
-func set_background(background:String, fade_time:=0.0):
-	if background == "none" or background == "null" or background.is_empty():
-		background = GameWorld.background
-	var path = CONST.fetch("BACKGROUND", background)
+func set_background(new_bg_key:String, fade_time:=0.0):
+	if new_bg_key == "none" or new_bg_key == "null" or new_bg_key.is_empty():
+		new_bg_key = GameWorld.background
+	var path = CONST.fetch("BACKGROUND", new_bg_key)
 	if not path:
-		push_warning(str("COULDN'T FIND BACKGROUND ", background, "!"))
+		push_warning(str("COULDN'T FIND BACKGROUND ", new_bg_key, "!"))
 		return
 	var new_background:Node2D
 	var old_backgrounds:=%Background.get_children()
@@ -531,7 +531,7 @@ func set_background(background:String, fade_time:=0.0):
 	elif path.ends_with(".tscn"):
 		new_background = load(path).instantiate()
 	else:
-		push_error(str("Background ", background, " does not end in .png, .jpg, .jpeg or .tscn."))
+		push_error(str("Background ", new_bg_key, " does not end in .png, .jpg, .jpeg or .tscn."))
 		return
 	
 	%Background.add_child(new_background)
@@ -558,7 +558,7 @@ func set_background(background:String, fade_time:=0.0):
 		fade_tween.tween_property(old_node, "modulate:a", 0.0, fade_time)
 		fade_tween.finished.connect(old_node.queue_free)
 	
-	GameWorld.background = background
+	GameWorld.background = new_bg_key
 	
 	#if is_instance_valid(GameWorld.game_stage):
 		#GameWorld.game_stage.get_node("Objects").hide_all()

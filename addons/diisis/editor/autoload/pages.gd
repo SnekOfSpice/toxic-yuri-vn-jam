@@ -1649,6 +1649,8 @@ func capitalize_sentence_beginnings(text:String) -> String:
 		var letter : String = letter_indices_after_elipses.get(index)
 		text[index] = letter
 	
+	text = text.replace(" i ", " I ")
+	
 	return text
 
 func neaten_whitespace(text:String) -> String:

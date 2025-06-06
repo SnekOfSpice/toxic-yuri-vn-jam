@@ -1,5 +1,6 @@
 extends Screen
 
+@warning_ignore("integer_division")
 @onready var index : int = Parser.history.size() / 100
 @onready var max_index := index
 
