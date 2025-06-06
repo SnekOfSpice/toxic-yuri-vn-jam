@@ -26,6 +26,7 @@ func show_image(image:String, x_min:=200, y_min:=200):
 	tex.custom_minimum_size = Vector2(x_min, y_min)
 	find_child("FileNameLabel").text = image
 	move_to_top()
+	clamp_to_viewport()
 
 
 func _on_change_size_button_pressed() -> void:

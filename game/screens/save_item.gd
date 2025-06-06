@@ -9,7 +9,11 @@ func set_slot(slot:int):
 	save_slot = slot
 	var thumb_path := Options.get_save_thumbnail_path(save_slot)
 	var image = Image.new()
-	var error = image.load(thumb_path)
+	var error : int
+	if not ResourceLoader.exists(thumb_path):
+		error = 1
+	else:
+		error = image.load(thumb_path)
 	if error:
 		find_child("TextureRect").texture = load("res://game/systems/save_system/no_data.png")
 	else:

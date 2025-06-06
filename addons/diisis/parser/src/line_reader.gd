@@ -89,6 +89,7 @@ var _last_raw_name := ""
 ## A String:Color Dictionary. The keys are the actor names set in the options of the Speaker Dropdown in DIISIS.
 ## The respective value is the color modulation applied to [member name_label] or bbcode color tag inserted around the name in [member body_label], depending on [member name_style].
 @export var color_map : Dictionary[String, Color] = {}
+@export var color_config : Dictionary[String, LineReaderActorColors] = {}
 ## Style in which names get displayed. See [enum LineReader.NameStyle].
 @export var name_style : NameStyle = NameStyle.NameLabel
 ## Use [const Color.TRANSPARENT] to use the theme color of [member name_label] instead if [member color_map] doesn't have an actor name set.
@@ -891,7 +892,7 @@ func _get_chatlog_name(actor_name:String) -> String:
 	return chatlog_name_map.get(actor_name, actor_name)
 
 func _get_chatlog_color(actor_name:String) -> Color:
-	if chatlog_fallback_color_map:
+	if chatlog_fallback_color_map and not chatlog_color_map.has(actor_name):
 		var color : Color = _get_actor_color(actor_name)
 		if color == Color.TRANSPARENT:
 			push_warning("Chatlog is falling back on transparent default color")

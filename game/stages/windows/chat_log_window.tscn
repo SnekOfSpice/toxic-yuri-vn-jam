@@ -9,10 +9,11 @@
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -374.0
-offset_bottom = 73.0
+offset_left = -528.0
+offset_bottom = 154.0
 grow_horizontal = 0
 size_flags_horizontal = 3
+size_flags_vertical = 0
 mouse_filter = 1
 theme = ExtResource("1_pxmp7")
 script = ExtResource("1_023oh")
@@ -21,6 +22,7 @@ header_vbox_parent = NodePath("HBoxContainer/PanelContainer/MarginContainer/Scro
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
+size_flags_vertical = 0
 
 [node name="Portrait" type="TextureRect" parent="HBoxContainer"]
 unique_name_in_owner = true
@@ -34,6 +36,7 @@ stretch_mode = 5
 [node name="PanelContainer" type="PanelContainer" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 0
 mouse_filter = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/PanelContainer"]
@@ -55,6 +58,7 @@ script = ExtResource("4_wrkq1")
 [node name="TextContent" type="VBoxContainer" parent="HBoxContainer/PanelContainer/MarginContainer/ScrollContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="PastContainer" type="VBoxContainer" parent="HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent"]
 unique_name_in_owner = true
@@ -67,5 +71,4 @@ layout_mode = 2
 size_flags_vertical = 3
 mouse_filter = 2
 bbcode_enabled = true
-text = "text"
 fit_content = true

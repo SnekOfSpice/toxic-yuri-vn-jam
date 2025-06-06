@@ -30,6 +30,7 @@ func  _ready() -> void:
 	gui_input.connect(on_gui_input)
 	ParserEvents.go_back_accepted.connect(on_go_back_accepted)
 	visibility_changed.connect(on_visibility_changed)
+	clamp_to_viewport()
 
 var visibilities_by_subaddress := {}
 func on_go_back_accepted(page:int, line:int, dialine:int):
@@ -56,6 +57,7 @@ func on_go_back_accepted(page:int, line:int, dialine:int):
 	visible = visibilities_by_subaddress[prev_page][prev_line][prev_dialine]
 
 func on_visibility_changed():
+	dragging = false
 	var subaddress_arr := Parser.line_reader.get_subaddress_arr()
 	var page : Dictionary
 	var page_index : int = subaddress_arr[0]
@@ -95,9 +97,19 @@ func move_to_top():
 	open_if_closed()
 	get_parent().move_child(self, get_parent().get_child_count() - 1)
 
+func clamp_to_viewport():
+	global_position.x = clamp(global_position.x,
+		0,
+		ProjectSettings.get_setting("display/window/size/viewport_width") - size.x)
+	global_position.y = clamp(global_position.y,
+		0,
+		ProjectSettings.get_setting("display/window/size/viewport_height") - size.y)
+
 func _process(delta: float) -> void:
 	if dragging:
 		global_position = get_global_mouse_position() - drag_offset
+		clamp_to_viewport()
+		
 
 func serialize() -> Dictionary:
 	# serialize the get_index() of these and then also use that during deserialization to preserve order

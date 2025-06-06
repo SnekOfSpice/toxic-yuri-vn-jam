@@ -457,6 +457,7 @@ func get_body_label(target_id:int):
 	else:
 		return get_chatlog_window(target_id).get_body_label()
 
+
 var are_words_being_spoken := true
 func set_target_labels(actor:String, target_id:int, force_show:=true):
 	target_label_id_by_actor[actor] = target_id
@@ -469,6 +470,10 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 		var name_label = %DefaultTextContainer.find_child("NameLabel")
 		var name_container = %DefaultTextContainer.find_child("NameContainer")
 		%LineReader.set_name_controls(name_label, name_container)
+		%LineReader.custom_text_speed_override = -1
+		%LineReader.body_label_prefix = ""
+		%LineReader.body_label_suffix = ""
+		%LineReader.keep_past_lines = false
 	else:
 		var vnui : Control = find_child("VNUI")
 		var window : ChatLogWindow = vnui.find_child("ChatLogWindow%s"%target_id)

@@ -10,7 +10,7 @@ func  _ready() -> void:
 	else: # is digital comm
 		%TextContent.theme_type_variation = "DigitalText"
 		%ScrollContainer.vertical_scroll_mode = ScrollContainer.ScrollMode.SCROLL_MODE_RESERVE
-
+	visibility_changed.connect(clear_past_container)
 func get_body_label() -> RichTextLabel:
 	return %BodyLabel
 func get_name_label() -> Label:
@@ -29,9 +29,14 @@ func set_portrait(actor:String):
 	if actor == "":
 		%Portrait.visible = false
 		%Portrait.texture = load("res://game/characters/portraits/none.png")
+		await get_tree().process_frame
+		clamp_to_viewport()
 		return
 	%Portrait.visible = true
 	%Portrait.texture = load("res://game/characters/portraits/%s.png" % actor)
+	await get_tree().process_frame
+	clamp_to_viewport()
+
 func serialize() -> Dictionary:
 	var data := super.serialize()
 	data["body_label_text"] = %BodyLabel.text
