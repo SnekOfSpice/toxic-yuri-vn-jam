@@ -41,9 +41,22 @@ func serialize() -> Dictionary:
 	var data := super.serialize()
 	data["body_label_text"] = %BodyLabel.text
 	data["name_label_text"] = %NameLabel.text
+	var past_lines := []
+	for line in %PastContainer.get_children():
+		past_lines.append(line.text)
+	data["past_lines"] = past_lines
 	return data
 
 func deserialize(data:Dictionary):
 	super.deserialize(data)
 	%BodyLabel.text = data.get("body_label_text", "")
 	%NameLabel.text = data.get("name_label_text", "")
+	
+	for line in data.get("past_lines", []):
+		var past_line = RichTextLabel.new()
+		past_line.custom_minimum_size.x = %BodyLabel.custom_minimum_size.x
+		past_line.fit_content = true
+		past_line.bbcode_enabled = true
+		past_line.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		past_line.text = line
+		%PastContainer.add_child(past_line)
