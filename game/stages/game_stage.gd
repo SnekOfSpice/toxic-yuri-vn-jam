@@ -506,12 +506,17 @@ func on_dialog_line_args_passed(
 		block_about_new_actor_handling = true
 		set_target_labels(actor, int(dialog_line_args.get("target", target_label_id_by_actor.get(actor))))
 
-func hide_all_windows():
+func hide_all_windows(reset_to_default:=true):
 	for window : CustomWindow in windows:
 		if window is WaveFormWindow:
 			continue
 		window.hide()
+	if reset_to_default:
+		set_all_target_labels(0, false)
 
+func set_all_target_labels(target_id:int, force_show := true):
+	for actor in target_label_id_by_actor.keys():
+		set_target_labels(actor, target_id, force_show)
 
 func set_background(new_bg_key:String, fade_time:=0.0):
 	if new_bg_key == "none" or new_bg_key == "null" or new_bg_key.is_empty():

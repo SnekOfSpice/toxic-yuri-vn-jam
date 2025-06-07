@@ -18,13 +18,16 @@ mouse_filter = 1
 theme = ExtResource("1_pxmp7")
 script = ExtResource("1_023oh")
 title = "BARK"
-header_vbox_parent = NodePath("HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent")
+header_vbox_parent = NodePath("VBoxContainer")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 0
 
-[node name="Portrait" type="TextureRect" parent="HBoxContainer"]
+[node name="Portrait" type="TextureRect" parent="VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
@@ -33,42 +36,42 @@ texture = ExtResource("3_h2eej")
 expand_mode = 4
 stretch_mode = 5
 
-[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
 mouse_filter = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/PanelContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer/PanelContainer"]
 layout_mode = 2
 size_flags_vertical = 0
 
-[node name="NameLabel" type="Label" parent="HBoxContainer/PanelContainer/MarginContainer"]
+[node name="NameLabel" type="Label" parent="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 text = "owowo"
 
-[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/PanelContainer/MarginContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 horizontal_scroll_mode = 0
 script = ExtResource("4_wrkq1")
 
-[node name="TextContent" type="VBoxContainer" parent="HBoxContainer/PanelContainer/MarginContainer/ScrollContainer"]
+[node name="TextContent" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="PastContainer" type="VBoxContainer" parent="HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent"]
+[node name="PastContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent"]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="BodyLabel" type="RichTextLabel" parent="HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent"]
+[node name="BodyLabel" type="RichTextLabel" parent="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(370, 0)
 layout_mode = 2
 size_flags_vertical = 3
-mouse_filter = 2
+mouse_filter = 1
 bbcode_enabled = true
 fit_content = true

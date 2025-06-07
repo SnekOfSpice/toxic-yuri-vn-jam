@@ -11,6 +11,7 @@ func  _ready() -> void:
 		%TextContent.theme_type_variation = "DigitalText"
 		%ScrollContainer.vertical_scroll_mode = ScrollContainer.ScrollMode.SCROLL_MODE_RESERVE
 	visibility_changed.connect(clear_past_container)
+
 func get_body_label() -> RichTextLabel:
 	return %BodyLabel
 func get_name_label() -> Label:
@@ -57,6 +58,11 @@ func deserialize(data:Dictionary):
 		past_line.custom_minimum_size.x = %BodyLabel.custom_minimum_size.x
 		past_line.fit_content = true
 		past_line.bbcode_enabled = true
-		past_line.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		past_line.mouse_filter = Control.MOUSE_FILTER_PASS
 		past_line.text = line
 		%PastContainer.add_child(past_line)
+
+@warning_ignore("native_method_override")
+func hide():
+	super.hide()
+	clear_past_container()

@@ -58,6 +58,7 @@ theme_override_icons/checked = ExtResource("2_vubmj")
 theme_override_icons/unchecked = ExtResource("2_ykglj")
 
 [node name="IncomingReferences" type="RichTextLabel" parent="PanelContainer/Info"]
+self_modulate = Color(1, 1, 1, 0.639216)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
@@ -121,6 +122,7 @@ theme_override_styles/read_only = SubResource("StyleBoxEmpty_yg0hh")
 expand_to_text_length = true
 
 [node name="TerminateCheck" type="CheckBox" parent="PanelContainer/Info"]
+self_modulate = Color(1, 1, 1, 0.737255)
 layout_mode = 2
 size_flags_vertical = 4
 tooltip_text = "Terminate: Terminates the page, stopping the parser from reading the next one automatically, emitting page_terminated.

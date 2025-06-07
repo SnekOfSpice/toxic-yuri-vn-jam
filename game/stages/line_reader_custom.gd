@@ -199,8 +199,7 @@ func cum(voice: String) -> bool:
 	return false
 
 func set_all_target_labels(target_id:int, force_show := true):
-	for actor in GameWorld.game_stage.target_label_id_by_actor.keys():
-		GameWorld.game_stage.set_target_labels(actor, target_id, force_show)
+	GameWorld.game_stage.set_all_target_labels(target_id, force_show)
 
 func reset_window_rotations(time:float):
 	for window : CustomWindow in find_child("Windows").get_children():
