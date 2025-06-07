@@ -6,7 +6,7 @@ var max_scroll_length = 0
 
 @export var code_edit : CodeEdit
 
-func _ready() -> void:
+func init() -> void:
 	# auto scrolling
 	scrollbar.connect("changed", handle_scrollbar_changed)
 	max_scroll_length = scrollbar.max_value
@@ -22,5 +22,6 @@ func handle_scrollbar_changed():
 	
 	if code_edit:
 		scroll_vertical = scroll_before
+		printt("scroll ", code_edit.get_caret_draw_pos().y, size.y)
 		if code_edit.get_caret_draw_pos().y > size.y:
 			scroll_vertical = int(code_edit.get_caret_draw_pos().y)

@@ -71,6 +71,8 @@ func init() -> void:
 	text_actions.set_item_as_checkable(ID_LOCK+submenu_offset, true)
 	text_actions.set_item_checked(ID_LOCK+submenu_offset, false)
 	
+	find_child("ScrollContainer").init()
+	
 const ID_CAPITALIZE := 0
 const ID_WHITESPACE := 1
 const ID_TEXT_ID := 3

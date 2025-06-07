@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 0,
+		"current_page_number": 3,
 		"ingest_capitalize": false,
 		"ingest_whitespace": true,
 		"page_view": 0,
@@ -450,7 +450,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854760826,
+		"id_counter": -9223372036854760131,
 		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa\nx: xelia\nl: leah\nf: franco\nno: noni\nb: blank",
 		"locales_to_export": [
 			"de_DE",
@@ -1622,7 +1622,7 @@
 					}
 				],
 				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 0,
+				"meta.scroll_vertical": 2960,
 				"meta.selected": false,
 				"next": 1.0,
 				"number": 0,
@@ -2475,7 +2475,7 @@
 							"delay_before": 0.0,
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "black_fade(2,4,2,true,none,dicks)",
+							"meta.text": "black_fade(2,4,0,true,none,dicks)",
 							"meta.validation_status": "OK",
 							"name": "black_fade",
 							"reverse_name": ""
@@ -2517,6 +2517,93 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0.0,
+							"delay_before": 0.0,
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "splash_text(bottom_surgery)",
+							"meta.validation_status": "OK",
+							"name": "splash_text",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1749281921.207--9223372036854760174",
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "3.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1749282337.029--9223372036854760172"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1749282337.029--9223372036854760173",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "3.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"meta.locked": false,
 							"meta.validation_status": "OK",
 							"text_id": "1749022910.493--9223372036854771556"
@@ -2534,14 +2621,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "3.2",
+						"address": "3.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2579,14 +2666,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "3.3",
+						"address": "3.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2625,14 +2712,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "3.4",
+						"address": "3.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2671,14 +2758,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "3.5",
+						"address": "3.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2712,14 +2799,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "3.6",
+						"address": "3.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2758,14 +2845,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "3.7",
+						"address": "3.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2799,14 +2886,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "3.8",
+						"address": "3.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2845,14 +2932,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 8,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "3.9",
+						"address": "3.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -2891,7 +2978,7 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 9,
+						"meta.line_index": 11,
 						"meta.selector": {
 							"selected": false
 						},
@@ -2899,7 +2986,7 @@
 					}
 				],
 				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 1530,
+				"meta.scroll_vertical": 866,
 				"meta.selected": false,
 				"next": 4.0,
 				"number": 3,
@@ -6069,6 +6156,47 @@
 							"selected": false
 						},
 						"skip": false
+					},
+					{
+						"address": "14.4",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1749279401.730--9223372036854760547"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1749279401.730--9223372036854760548",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
 					}
 				],
 				"meta.address_mode_next": 0,
@@ -7052,6 +7180,88 @@
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
 						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "20.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1749279466.758--9223372036854760518"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1749279466.758--9223372036854760519",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "20.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1749279526.732--9223372036854760505"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1749279526.732--9223372036854760506",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
@@ -8968,19 +9178,19 @@
 			"1748933497.051--9223372036854773755": "[]>narrator: Absconding into oblivion, it inhales another line of ego death and...",
 			"1748933537.986--9223372036854773752": "[]>narrator: Over and over.\n[]>narrator: Concussion after concussion.\n[]>narrator: A broken jaw.\n[]>narrator: A dislodged eye.\n[]>narrator: Barely conscious and positively braindamaged.\n[]>narrator: The only way for these puppies to be.\n[]>narrator: A handler to arbitrate over their lives for it is their last and only possession and far too valuable to be left in their own paws.\n[]>narrator: Most of them cannibalize the other before being ground up in the machine.\n[]>narrator: With another impact on the industrial floor, metal grating shakes and resounds through fragments of broken skull.\n[]>narrator: This one, [color=red]snuffed[/color].",
 			"1748934497.298--9223372036854773714": "[]>narrator: fade in other music and road art",
-			"1748934542.233--9223372036854773712": "[]>narrator: Argo has retreated from the gas station counter and is making inventory rounds again. Everything is where it's supposed to be. It puts the ballpoint into its pocket and brushes against a small remnant baggie of meth that's half supposed to be there.\n[]>narrator: It wants it to be there.\n[]>narrator: Management doesn't.",
+			"1748934542.233--9223372036854773712": "[]>narrator: Argo has retreated from the gas station counter and is making inventory rounds again. Everything is where it's supposed to be. It puts the ballpoint into its pocket and brushes against a small remnant baggie of meth that's half supposed to be there.",
 			"1748934558.877--9223372036854773710": "[]>audrey: Do we still have some whiskey left back there?\n[]>vanessa: Here.\n[]>audrey: Shit or over here\n[]>vanessa: Watch out!\n[]>haley: Mmhm...\n[]>audrey: You watch out you fucking moron.\n[]>vanessa: Whatever.\n[]>audrey: Just don't spill it on me.\n[]>vanessa: Yeah, yeah.\n[]>vanessa: Focus on the road.",
-			"1748934667.257--9223372036854773708": "[]>narrator: It's 1:22 am an it's carabiner clings against the metal shelving as considers its options.\n[]>haley: <call:show_image(gas station)>Pull up here idk\n[]>narrator: It could do a line.\n[]>narrator: But there's not that much left.\n[]>audrey: Ay! Don't slam the door like that!\n[]>argo: Oh.\n[]>narrator: It's new customers\n[]>audrey: Snack time, girlies!\n[]>vanessa: Whooo!\n[]>narrator: Argo checks for the shotgun under the counter and then takes up it's position as rightful beacon of capitalistic and chaser-istic desires.\n[]>maya: I want dog treats!!!!\n[]>narrator: ...Or something like that.\n[]>haley: Sure.\n[]>audrey: I'm gonna get more vodka.\n[]>vanessa: Can you still drive??\n[]>audrey: Shut the fuck up, do you see my hands at the wheel right now?\n[]>vanessa: That's because we're inside a fucking gas stashion!!!\n[]>narrator: Argo makes eye contact with the drunk driver. It doesn't care.\n[]>narrator{target|1}: Audrey looks back at Vanessa.\n[]>audrey: Also I'm getting this shit for all of you.\n[]>haley: Which type do you want puppy, huh?\n[]>maya: [i]*whines*[/i] \n[]>haley: Aww look at you all cute like that\n[]>narrator{target|0}: Argo watches as the one with the rust red hair ruffles the one with the collar.\n[]>narrator: They push it down behind the shelves.\n[]>haley: Nuzzle your owner nice and thoroughly and I'll get you what you need, yea?\n[]>maya: Whines more\n[]>narrator: Haley and Maya are making no effort to hide their tranny shit because they see what Argo is. Audrey and Argo meet each other's eyes again.\n[]>narrator: Their faces are unreadable to each other.\n[]>audrey: You two done?\n[]>haley: Yea yea\n[]>haley: Good puppy.\n[]>narrator: More head ruffles.\n[]>narrator: The three and their dog make their way to the counter.\n[]>narrator: Audrey places two bottles of vodka on the counter. <mp>Vanessa 8 bottles of beer.",
+			"1748934667.257--9223372036854773708": "[]>narrator: It's 1:22 am an it's carabiner clings against the metal shelving as considers its options.\n[]>haley: <call:show_image(gas station)>Pull up here idk\n[]>narrator: It could do a line.\n[]>narrator: But there's not that much left.\n[]>audrey: Ay! Don't slam the door like that!\n[]>argo: Oh.\n[]>narrator: It's new customers\n[]>audrey: Snack time, girlies!\n[]>vanessa: Whooo!\n[]>narrator: Argo checks for the shotgun under the counter and then takes up it's position as rightful beacon of capitalistic and chaser-istic desires.\n[]>maya: I want dog treats!!!!\n[]>narrator: ...Or something like that.\n[]>haley: Sure.\n[]>audrey: I'm gonna get more vodka.\n[]>vanessa: Can you still drive??\n[]>audrey: Shut the fuck up, do you see my hands at the wheel right now?\n[]>vanessa: That's because we're inside a fucking gas stashion!!!\n[]>narrator: Argo makes eye contact with the drunk driver. It doesn't care.\n[]>narrator{target|1}: Audrey looks back at Vanessa.\n[]>audrey: Also I'm getting this shit for all of you.\n[]>haley: Which type do you want puppy, huh?\n[]>maya: [i]*whines*[/i] \n[]>haley: Aww look at you all cute like that\n[]>narrator{target|0}: Argo watches as the one with the rust red hair ruffles the one with the collar.\n[]>narrator: They push it down behind the shelves.\n[]>haley: Nuzzle your owner nice and thoroughly and I'll get you what you need, yea?\n[]>maya: Whines more\n[]>narrator: Haley and Maya are making no effort to hide their tranny shit because they see what Argo is. Audrey and Argo meet each other's eyes again.\n[]>narrator: Their faces are unreadable to each other.\n[]>audrey: You two done?\n[]>haley: Yea yea\n[]>haley: Good puppy.\n[]>narrator{target|1}: More head ruffles.\n[]>narrator{target|0}: The three and their dog make their way to the counter, on which Audrey places two bottles of vodka on the counter. Vanessa attempts to follow suit, working hard to gather the grace required to not let her eight bottles of beer ruin Argo's already kinda shit shift.",
 			"1748935285.345--9223372036854773536": "[]>audrey: Hey... you're hot...\n[]>argo: Mhm.\n[]>audrey: Wanna... come back to our place...\n[]>vanessa: The fuck...\n[]>haley: They don't gotta do...\n[]>vanessa:Ugh... im fuckignng sorey\n[]>audrey: Wait whatsyapronouns...\n[]>argo: ...\n[]>haley: Isit a case of them its?\n[]>argo:...\n[]>argo:...Yea...\n[]>haley: Bingo\n[]>narrator: Haley slams her head into the counter.\n[]>audrey: Haley!!\n[]>haley: Fucking told you Vans.\n[]>vanessa: You didn't say anything to me. <mp>Also please don't call me that.\n[]>narrator: And she's presently almost faceplanting a pool of drool onto the cash tray.\n[]>narrator: Audrey picks her up by the scruff.\n[]>audrey: Halley you fucking...\n[]>argo: You still need to pay.\n[]>audrey: Hold her.\n[]>vanessa: Ow.\n[]>narrator: Audrey is making fierce eye contact with her wallet.\n[]>audrey: If we evrr meet againunder lesss fucked circumstances imma buy you a dringk.\n[]>audrey: You're cute.\n[]>narrator: Argo stutters out a thanks as it gives Audrey her change.",
 			"1748936835.282--9223372036854772826": "[]>maya:awawa!!!\n[]>narrator:Then the door clicks at Maya's paws. And Haleys does her best to drift back to sleep.",
 			"1748936887.243--9223372036854772824": "[]>narrator{target|1}:Argo has made its way back home after the end of its shift, the memory of the four drunk fuckwits freom earlier already largely suffienciently sanded away by sleep deprivation, drug abuse, and not giving a fuck (service industry).\n[]>narrator{target|0}:Maya stumbles into the door of Roaches' den on the other side of town. Walked an hour only to wait for way too long so it laid down on the doormat like a good dog and eventually Roaches remembered it had a [s]threesome[/s] date (it'll totally become a threesome) with Haley's bitch. <mp>Shortly after Maya started comfortably sprawling on the concrete doorstep, Roaches opens the door.\n[]>roaches:Hey pup.\n[]>maya:Roachiiieesss!!!!\n[]>narrator:Excitedly, Maya paws and nuzzles at Roaches' chest.\n[]>roaches: Heh. Hi.",
 			"1748936897.255--9223372036854772822": "[]>maya:Awaa...\n[]>narrator:Harsh Noise is currently busy fixing the flat share's busted porcelain throne because it \"accidentally\" had to bring its comfort plushie (sledgehammer) onto the toilet with it last-ish night. The repair job consists mostly of it picking up the toilet shards, getting soaked in remnant sewage from the pipings, and stuffing paper towers down the drain. <mp>It has no fucking idea how to fix this without informing the landlord, which it sure as fuck is not about to do. <mp>It knows that for certain, and now you do to. <mp>It has never been more certain. <mp>Fuck landlords.\n[]>roaches:Yea... don't worry about that... uhh...\n[]>roaches:Had like... an accident.\n[]>maya:Mhm.\n[]>narrator:It's not too concerned with the state of the flat. Not like it ever was better, the damage just keeps growing, from the broken-then-lacking bedframe, to the ripped-then-burned wallpaper, to the syphillic-now-broken toilet. Such is life.\n[]>maya:Uhm...\n[]>roaches:What?\n[]>maya:Where... do I go to... pee tho?\n[]>roaches:Uhh. Front lawn.\n[]>narrator:Maya's puppy brain excitations zing across its grey matter and it licks Roaches' face.\n[]>maya: Okies ^-^",
 			"1748937685.992--9223372036854772607": "[]>narrator{target|2}:there is a lovely event horizon beyond alcohol where all sensations lag and echo on a more pleasurable timescale than when sober. <lc>Haley knows this - or at least would know this if she herself was sober - as she tips the bottle of whiskey against the lips of her puppy. <lc>Getting your muttgf drunk beyond her limit is also just fun. To drunk Haley, that's the important part. Getting her all squishy and nonverbal and so so pliant, squished completely limp helpless against her owner <3",
 			"1748938015.510--9223372036854772605": "[]>haley: fuck I want you\n[]>maya: mnnhmhm...\n[]>maya: wannu.. tooo...\n[]>narrator{target|2}: The second event horizon is when they start being completely at your whim.",
-			"1749022910.493--9223372036854771556": "[]>audrey: There's this funny online trend where you put a gun in your crotch and pull the trigger.\n[]>haley: Audrey are you fucking retarded.\n[]>vanessa: What do you mean trend?\n[]>audrey: Yk. A few posts.\n[]>vanessa: Like 5 people?\n[]>audrey: Ok fine\n[]>audrey: Really it just looked like fun.\n[]>vanessa: Audrey. Don't blow your dick off.\n[]>haley: Record it if you do.\n[]>vanessa: Haley!\n[]>haley: What.\n[]>audrey: Hold on...\n[]>vanessa: You can't keep enabling her to do stupid shit like this.\n[]>haley: Meanie.\n[]>vanessa: It's not...\n[]>vanessa: Ugh whatever.\n[]>haley: Like she literally drunk drives better than I... <ap>sober... <ap>drive.\n[]>vanessa: That just means you gotta get more practice in.\n[]>narrator: Following no damned consideration whatsovever, Haley cuts up another line of meth.\n[]>haley: Nah.\n[]>haley: Lmao.\n[]>narrator:She's kinda stupid so she forgot to switch nostrils. <mp>Now it hurts more badly than it has to.\n[]>haley: Ugh fuck.",
-			"1749022981.046--9223372036854771554": "[]>audrey: Hey check this shit out\n [cg with her being all smug pressing the pistol into her groin]\n[]>vanessa: Audrey what are you doing\n[]>audrey: Haha \n [BAM]\n [closeup cg of her face being in so much shock and pain]\n[]>audrey: <call:Sound.play_sfx(dickshot)>hrhgg...\n[]>vanessa: Ohfuckohfuckohfuckohfuckohfuck\n[]>haley: What the FUCK did you DO???\n[]>audrey: Mfngfdg...\n[]>audrey: Fuck...\n[]>vanessa: There's so much blood AUDREY YOU'RE BLEEDING OUT!\n[]>audrey: Nah don't worry it's just my dick.\n[]>vanessa: We need to get you to a fucking hospital.\n[]>audrey: Hjghghh...\n[]>vanessa: Haley can you drive?\n[]>haley: Bitch I am ON METH-\n[]>vanessa: Oh you fucking-\n[]>haley: I fucking what?\n[]>vanessa: Whatever.\n[]>vanessa: Can you bandage Audrey?\n[]>audrey: Can do that myself too.\n[]>vanessa: Then do that together.\n[]>haley: Whatever.\n[]>vanessa: I'm getting an ambulance.\n[]>haley: Bitch where is the GAUZE in this SHITBOX.\n[]>audrey: Top shelf.\n[]>haley: Ah-\n[]>haley: Ouch.\n[]>vanessa{target|4}: Yea hi...\n[]>haley: Why is there an OPEN FUCKING SCALPEL HERE!!!\n[]>vanessa: One of my friends shot herself in the dick.\n[]>haley: Ok this shit is half rusted, was nice knowing you.\n[]>vanessa{target|0}: Get over here you whiny mutt\n[]>audrey: Yea get between my legs already\n[]>vanessa{target|4}: Yea her\n[]>haley: I - am - gonna stab you with this shit if *you're* not careful\n[]>audrey: Please kill me faster, why don't you?\n[]>audrey: Ouch.\n[]>audrey: More pressure I think.\n[]>vanessa: Well HER dick is currently ruining my couch.\n[]>haley: Whatever.\n[]>vanessa: MISGENDER HER ONE MORE TIME AND I'LL FUCKING KILL YOU!! I DON'T GIVE A SHIT YOU FUCKING CISSOID SCUM!!!!\n[]>audrey: Nessa, it's fine.\n[]>vanessa: Inform the authorities of my cum leaking from your mom.\n[]>vanessa{target|0}: <call:hide_all_windows()> ambulance isn't coming.\n[]>audrey: NESSA????\n[]>vanessa: I'm sorry they were being shitheads.\n[]>audrey: Both of you are literally killing me more than this fucking- <ap>thing.\n[]>haley: Do I keep bandaging you?\n[]>vanessa: WELL SHE'S BLEEDING THE FUCK OUT OF COURSE YOU DO!\n[]>audrey: NESSA CALM THE FUCK NOW I'M NOT BLEEDING OUT\n[]>narrator:Her stare nails Vanessa to the wall.\n[]>audrey:Just bleeding... <ap>a lot.\n[]>audrey: Yea.\n[]>audrey:...\n[]>narrator:Haley's hands are drenched in dick blood.\n[]>audrey:...\n[]>vanessa:...\n[]>audrey:It's fine. not like I'd have gone to an ER anyways. <mp>I think...\n[]>audrey: I have someone I can call for shit like this.\n[]>haley:What.\n[]>audrey:Leah. She's a vet.\n[]>vanessa: I'm killing myself.\n[]>vanessa:Leah?\n[]>vanessa: You think we can crash there?\n[]>audrey:She's done surgery on shelter puppies before.\n[]>audrey:Not like I'm any different.\n[]>audrey: Nessa, no more phone calls.\n[]>audrey: Haley, thank you for the bandages, put the scalpel away from the couch table tho.\n[]>haley: Sure thing.\n[]>audrey: Oh and could you bring me some painkillers?\n[]>haley: *groan*\n[]>narrator: Vanessa chains a few statements of logic in her head. Haley is scrounging for painkillers in the bathroom, which is in a state of disarray only slightly above its average.\n[]>vanessa: Well... can I at least call Leah?\n[]>audrey:Just do it, I don't fucking care.",
+			"1749022910.493--9223372036854771556": "[]>audrey: There's this funny online trend where you put a gun in your crotch and pull the trigger.\n[]>haley: Audrey... what?\n[]>haley: Are you fucking retarded?\n[]>vanessa: What do you mean trend?\n[]>audrey: Yk. A few posts.\n[]>vanessa: Like 5 people?\n[]>audrey: Ok fine.\n[]>audrey: Really it just looked like fun.\n[]>vanessa: Audrey. Don't blow your dick off.\n[]>haley: Record it if you do.\n[]>vanessa: Haley!\n[]>haley: What.\n[]>audrey: Hold on...\n[]>vanessa: You can't keep enabling her to do stupid shit like this.\n[]>haley: Meanie.\n[]>vanessa: It's not...\n[]>vanessa: Ugh whatever.\n[]>haley: Like she literally drunk drives better than I... <ap>sober... <ap>drive.\n[]>vanessa:That has... sure.\n[]>vanessa: That just means you gotta get more practice in.\n[]>narrator: Following no damned consideration whatsovever, Haley cuts up another line of meth.\n[]>haley: Nah.\n[]>haley: Lmao.\n[]>narrator:She's kinda stupid so she forgot to switch nostrils. <mp>Now it hurts more badly than it has to.\n[]>haley: Ugh fuck.",
+			"1749022981.046--9223372036854771554": "[]>audrey: Hey check this shit out.\n[]>vanessa: Woahwoahwoahwoah what the fuck are you doing Audrey??\n[]>audrey:Calm down, it's not even loaded.\n[]>vanessa:Nah, fuck that. Gun safety and all that is like... important.\n[]>audrey:Nah lol.\n[]>haley:Oh this is stupid.\n[]>narrator:And she just grinds and grinds the tip of the barrel with her own dick, a wonderful display of dryhump frotting gunplay.\n[]>vanessa: Audrey what are you doing?\n[]>audrey: Haha...\n[]>audrey: <call:Sound.play_sfx(dickshot)>hrhgg...\n[]>vanessa: Ohfuckohfuckohfuckohfuckohfuck\n[]>haley: What the FUCK did you DO???\n[]>audrey: Mfngfdg...\n[]>audrey: Fuck...\n[]>vanessa: There's so much blood AUDREY YOU'RE BLEEDING OUT!\n[]>audrey: Nah, don't worry... it's just my dick.\n[]>vanessa: We need to get you to a fucking hospital.\n[]>audrey: Hjghghh...\n[]>vanessa: Haley can you drive?\n[]>haley: Bitch I am ON METH-\n[]>vanessa: Oh you fucking-\n[]>haley: I fucking what?\n[]>vanessa: Whatever.\n[]>vanessa: Can you bandage Audrey?\n[]>audrey: Can do that myself too.\n[]>vanessa: Then do that together.\n[]>haley: Whatever.\n[]>vanessa: I'm getting an ambulance.\n[]>haley: Bitch where is the GAUZE in this SHITBOX.\n[]>audrey: Top shelf.\n[]>haley: Ah-\n[]>haley: Ouch.\n[]>vanessa{target|4}: Yea hi...\n[]>haley: Why is there an OPEN FUCKING SCALPEL HERE!!!\n[]>vanessa: One of my friends shot herself in the dick.\n[]>haley: Ok this shit is half rusted, was nice knowing you.\n[]>vanessa{target|0}: Get over here you whiny mutt\n[]>audrey: Yea get between my legs already\n[]>vanessa{target|4}: Yea her\n[]>haley: I - am - gonna stab you with this shit if *you're* not careful\n[]>audrey: Please kill me faster, why don't you?\n[]>audrey: Ouch.\n[]>audrey: More pressure I think.\n[]>vanessa: Well HER dick is currently ruining my couch.\n[]>haley: Whatever.\n[]>vanessa: How it happened... uhh...\n[]>vanessa:\n[]>audrey:Are you about to get cops sent our way?\n[]>vanessa:...\n[]>vanessa:shit.\n[]>vanessa:we dont need any intervention actually.\n[]>vanessa:oh and...\n[]>vanessa: MISGENDER HER ONE MORE TIME AND I'LL FUCKING KILL YOU!! I DON'T GIVE A SHIT YOU FUCKING CISSOID SCUM!!!!\n[]>audrey: Nessa, it's fine.\n[]>vanessa: Inform the authorities of my cum leaking from your mom.\n[]>vanessa{target|0}: <call:hide_all_windows()> Ambulance isn't coming.\n[]>audrey: Yea its fine. dont wana deal with cops.\n[]>vanessa: I'm sorry they were being shitheads.\n[]>audrey:oh dont... whatever.\n[]>audrey: Both of you are literally killing me more than this fucking- <ap>thing.\n[]>haley: Do I keep bandaging you?\n[]>vanessa: WELL SHE'S BLEEDING THE FUCK OUT OF COURSE YOU DO!\n[]>audrey: NESSA CALM THE FUCK NOW I'M NOT BLEEDING OUT.\n[]>narrator:Her stare nails Vanessa to the wall.\n[]>audrey:Just bleeding... <ap>a lot.\n[]>audrey: Yea.\n[]>audrey:...\n[]>narrator:Haley's hands are drenched in dick blood.\n[]>audrey:...\n[]>vanessa:...\n[]>audrey:It's fine. not like I'd have gone to an ER anyways. <mp>I think...\n[]>audrey: I have someone I can call for shit like this.\n[]>haley:What.\n[]>audrey:Leah. She's a vet.\n[]>vanessa: I'm killing myself.\n[]>vanessa:Leah?\n[]>vanessa: You think we can crash there?\n[]>audrey:She's done surgery on shelter puppies before.\n[]>audrey:Not like I'm any different.\n[]>audrey: Nessa, no more phone calls.\n[]>audrey: Haley, thank you for the bandages, put the scalpel away from the couch table tho.\n[]>haley: Sure thing.\n[]>audrey: Oh and could you bring me some painkillers?\n[]>haley: *groan*\n[]>narrator: Vanessa chains a few statements of logic in her head. Haley is scrounging for painkillers in the bathroom, which is in a state of disarray only slightly above its average.\n[]>vanessa: Well... can I at least call Leah?\n[]>audrey:Just do it, I don't fucking care.",
 			"1749023155.502--9223372036854771552": "[]>vanessa:...\n[]>vanessa: Audrey shot her dick off.\n[]>vanessa: You free?\n[]>vanessa: Leah?\n[]>vanessa: Please, it's urgent\n[]>haley: Can you walk?\n[]>vanessa: Leah.\n[]>vanessa: Hey.\n[]>leah: Hi.\n[]>leah: What do you mean, \"shot off\"?\n[]>vanessa: With a gun.\n[]>vanessa: Gun in crotch.\n[]>vanessa: Trigger.\n[]>vanessa: Blood.\n[]>leah: ...\n[]>leah: Have you given her first aid.\n[]>vanessa: Yeah.\n[]>leah: And you're hitting me up about surgery, I take it?\n[]>vanessa: Please.\n[]>leah: It's 2 AM.\n[]>audrey: Ow.\n[]>vanessa: Plsplsplsplsplsplsplsplspls\n[]>haley: Watch the door, bitch.\n[]>leah: Sure.\n[]>audrey: Ugh.\n[]>leah: Gimme like 30 minutes to set shit up.\n[]>vanessa: Driving there now.\n[]>vanessa: Pray we don't die.\n[]>vanessa: Haley is on meth lmao.\n[]>haley: Brave seatbelt warrior Nessa.\n[]>leah: You owe me big time for waking me up for impromptu surgery.\n[]>audrey: Please just drive.\n[]>vanessa: Please.\n[]>leah: Just shut up.\n[]>leah: Prepping surgery table now.\n[]>leah: Ttyl",
-			"1749023658.814--9223372036854771361": "[]>audrey: Fuck me...\n[]>leah{target|3}: <3",
+			"1749023658.814--9223372036854771361": "[]>audrey: Fuck me...\n[]>vanessa:Oh also I did call with number suppressed.\n[]>audrey:Huh?\n[]>vanessa:You know like...\n[]>vanessa:So no cops.\n[]>haley:Good going Einstein.\n[]>leah{target|3}: <3\n[]>vanessa:Oh shut up and drive.",
 			"1749024870.085--9223372036854771118": "[]>argo:1",
 			"1749025143.572--9223372036854771051": "[]>argo:e",
 			"1749025460.936--9223372036854770931": "[]>leah{target|4}: hey its me again\n[]>vanessa{target|4}: I KNOW\n[]>vanessa: ...\n[]>vanessa: sorry leah\n[]>leah: yeah.\n[]>leah: anyways, I think I left by thread with someone else\n[]>vanessa: you're shitting me\n[]>leah: ik ik sorry. been a busy few weeks over here.\n[]>leah: good news is, that one is right on the way and presently awake. \n[]>leah: or close to it at least\n[]>leah: I just sent you the address\n[]>vanessa{target|0}: ...\n[]>vanessa: Haley...\n[]>leah: ...\n[]>vanessa: ...\n[]>vanessa: can we...?\n[]>haley: FUCK YOU LEAH\n[]>leah: SHUT THE FUCK UP AND DRIVE I'M TALKING TO NESSA HERE\n[]>vanessa{target|4}: ok\n[]>vanessa: so\n[]>vanessa: yea we can do that\n[]>haley: that's like 10 more minutes\n[]>audrey: oh COME ON\n[]>vanessa{target|0}: sorry, your dick's gotta get stiches\n[]>audrey: i KNOW I just wanna fucking get it over with you hear me\n[]>audrey: fuck man it hurts so bad\n[]>vanessa: you're a fucking mess\n[]>vanessa: don't look at the seats\n[]>haley: oh this is gonna be hell to clean\n[]>vanessa: focus on the fucking road\n[]>haley: I AM\n[]>vanessa: EYES FORWARD RETARD\n[]>haley: FUCK YOU\n[]>vanessa: aaaaaaargh\n[]>vanessa{target|4}: leah?\n[]>leah: ...\n[]>vanessa: still there?\n[]>leah: ...\n[]>leah: was prepping shit\n[]>leah: but yea, exit at the 48, 3 streets down, it should be waiting there.\n[]>leah: ...\n[]>vanessa: ...\n[]>vanessa: thanks.\n[]>leah: see ya.",
@@ -9063,8 +9273,8 @@
 			"1749195435.568--9223372036854767438": "[]>narrator{target|1}:Listening to about half an hour of death industrial before bed, Argo grinds its head into its lone pillow. <mp>The high is like... marginally okay. <mp>It is diligently using this opportunity to catch up with other contacts. Someone else it met a few weeks?months?whatever ago is posting about needing . Nothing'll come of it by the time they get back to Argo. Which is never. Why do others not really care about responding after meeting someone new? Whatever. You get used to it.",
 			"1749195452.961--9223372036854767436": "[]>argo{target|1}:<ts_rel:0.4>zzzzzzzzzzzzzzzz",
 			"1749196229.731--9223372036854767404": "[]>narrator:Maya is spiritually soaking in the morning dew air, and soaking the <call:show_image(piss)>dead fucking soil below her with her acrid piss. Oh all fours, naturally. <mp>Roaches' and Harsh Noise's front lawn may be the most peaceful place in the whole wide universe right now, Maya feels.\n[]>narrator:Then Maya thinks that maybe she should've saveed the urine for her dates. Then she thinks that Roaches would rather piss in/on her than the other way around, and thusly Maya gets lost in the growing wet patch of dirt below again. <mp>Her heart feels in tune with the vanishing stars above and the wind carries her stupid human anxieties away, and also the reek of piss, so she lowers her nose down to the ground to sniff her mark and tastes a bit of it but mostly it tastes like wet dirt.",
-			"1749196679.988--9223372036854767345": "[]>narrator{target|1}:Haley's separation anxieties stagnantly hang above her actully-not-asleep form. <mp>Sucks for her. <lc>Let's leave her be for now.\n[]>narrator{target|0}:<call:hide_all_windows()> awawa",
-			"1749198825.168--9223372036854766621": "[]>narrator:MORE SEX SCENE",
+			"1749196679.988--9223372036854767345": "[]>narrator{target|1}:Haley's separation anxieties stagnantly hang above her actully-not-asleep form. <mp>Sucks for her. <lc>Let's leave her be for now.\n[]>narrator{target|0}:<call:hide_all_windows()> These three disgusting perverts keep flattening the lone mattress, drownfeeding the bedbugs with their spilling juices. Harsh Noise's sinewy thighs propel it forward, eager to destroy Maya, half-wishing she would just finally actually safeword (as if they ever declared one). Turning this fuckfest into rape, pinning down this poor doggy bitch despite its objections, but regrettably for Harsh Noise, she is currently blissed out from being used just like such a toy void of agency, meaning it has no will to violate. Such is life.\\n\\nHarsh Noise shudders and drizzles a puny watery load into Maya's ass, who hazily grinds herself back into a noise-ish direction. Good enough.",
+			"1749198825.168--9223372036854766621": "[]>roaches: Oh wow, done already?\n[]>narrator: Roaches does a slow grind into Maya's throat. Harsh Noise can't really concentrate on whatever the fuck she's saying.\n[]>harshnoise: Fuck, you're great. Bitch.\n[]>narrator: It places a few limp claw scratches on Maya's ass, then pulls out and adds another to-be-stain onto the browning bedsheets below. Roaches keeps fucking Maya's face.",
 			"1749198959.059--9223372036854766578": "[]>maya:what...\n[]>maya:where are you taking me?\n[]>narrator:Her client hasn't said anything since he picked her up.",
 			"1749204393.733--9223372036854764830": "[]>narrator:And then evening comes and Argo's heart still has not abated in the slightest. Oh you poor fucker. <mp>Use your piss break and let's just get it over with.",
 			"1749204440.559--9223372036854764828": "[]>narrator:Argo gets home",
@@ -9085,6 +9295,10 @@
 			"1749232733.350--9223372036854764006": "[]>audrey:That's why I do the pickups. To rescue as many as I can.",
 			"1749233210.718--9223372036854763615": "[]>haley:you saw the hole huh?\n[]>narrator:What the months of drug use are inhibiting from recall, Audrey offered numerous times to Haley, only that the letter never gave enough of a fuck to actually accompany her. [whatever reword this]",
 			"1749233769.986--9223372036854763350": "[]>argo{target|5}:getting audrey to show me The Hole today\n[]>argo:whatever that is\n[]>argo:i know youre probably asleep bc it *is* the middle of the night but yea just wanted to say hi\n[]>argo:going on adventures and shit\n[]>argo:i hope youre sleeping well awa",
+			"1749279401.730--9223372036854760547": "[]>narrator:it'*s a lovely slightly-too-late evening after the concert and xelia just returned home. it has these powers bordering on clairvoicance (called delusions or whateverthefuck by psychiatry industry) and can sense / know. just in general. it is still too early to pinpoint the retrocause of this impending hurt but there is one certain gravity well of fate strings on the horizon, and potentially several more not yet visible. regardless, this will hurt like a motherfucker and the catharsis will be the hurt. xelia bites itself. xelia furthermore apologizes for her vagueness but with matters of the future, these thoughts are not to be crystalized until they are ready-which is when their target state is reached.",
+			"1749279466.758--9223372036854760518": "[]>narrator: and when people get worried, you start to feel like shit\nthings would be easier if people didnt give a shit\n[]>harshnoise: well but we do care about you\n[]>harshnoise: so\n[]>xelia: god fuck off\n[]>xelia: i know you do\n[]>xelia: its what makes this all so fucking exhausting\n[]>xelia: just lemme be silly\n[]>harshnoise: id rather sit on the edge here than you be silly here on your own\n[]>xelia: mdghfjfg",
+			"1749279526.732--9223372036854760505": "[]>narrator:during cutting: (before groomimg) (PUT THIS SOMEWHERE ELSE)\nsometimes you have this building premonition. that there's a crash coming soon. sometimes its directly after waking up, across a single day, sometimes its across an infinite expanse of eerily-fine weeks. and you build and build towards that crash and then some fucking faggots will accuse you of being unhealthy about it when you knew all along and couldve stopped at any point but didnt because you know you need to do this or the consequences will be fucking catastrophic. SOMETIMES you lose your FUCKING GF IN A SNUFF PRODUCTION. Only for you to be \"rescued\" a few days later.\nand then you bandage your head hwoever you can.\n[]>argo: hi\n[]>argo: xelia\n[]>argo: please answer\n[]>xelia: im busy\n[]>argo: i knew youd say that which is why im reaching out\n[]>argo: i dont want you to suffer alone today\n[]>xelia: suffer with what lol\n[]>xelia: im fine\n[]>argo: are you\n[]>xelia: just get off my fucking case and let me cut myself in peace\n[]>xelia: please\n[]>xelia: im alive\n[]>xelia: isnt that what counts\n[]>xelia: haha\n[]>xelia: but no seriously ill be fine\n[]>xelia: ttyl\n[]>narrator: it's so annoying when these faggots are worried for your safety when you and they know youll survive. and if you dont that wouldnt be a loss either. slight shame for the missed out shenanigans but its not like thats a reason to stay alive. it just sweetens the black hole in your chest and provides a nice contrast to the box cutter you got for cutting so many boxes.\n[]>narrator: you should go to sleep.\n[]>narrator: ...\n[]>narrator: forever, preferrably.\n[]>narrator: ...\n[]>narrator: it's gonna be like that every year huh.",
+			"1749282337.029--9223372036854760172": "[]>narrator: Maya is passed out in Roaches' arms. Harsh Noise is going to the hardware store. Vanessa is Getting Sober again since about five hours ago, and Haley just scored a mean deal of meth. Audrey invited those two because she's bored out of her mind and those two miraculously tend to have time whenever she wants, so they spend a lot of time together, mostly during nightly hours. When Nessa and Haley entered, Audrey was already starting to get wasted again, and the brainrotting mindwaves emenating from the quiet TV in the background have none nothing but worsen her conditio[]>narrator: Being a fucking idiot. \n[]>narrator: The three talk about various life shit, as you do, such as how much they care about having their dicks intact and which online hellholes they frequent and why any of them are simultaneously better and worse and more unique than the rest. <mp>Fuuuuuck, Nessa thinks, sometimes life really is just nothing but drugs and body horror. Haley can't read her thoughts and instead rambles on about some shitass shounen she's been watching. <mp>Audrey, is bored just as much and is about to do something about it.",
 			"amber-is-happy": "[]>amber{amber-emotion|happy}: I'm really happy to hear that! <mp>I think you're cool too!"
 		},
 		"text_lead_time_other_actor": 0.0,
