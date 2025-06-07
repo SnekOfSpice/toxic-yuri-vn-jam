@@ -453,7 +453,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854758333,
+		"id_counter": -9223372036854758302,
 		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa\nx: xelia\nl: leah\nf: franco\nno: noni\nb: blank",
 		"locales_to_export": [
 			"de_DE",
@@ -4925,6 +4925,9 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"meta.function_calls": [
+								"show_image(argo_bathroom)"
+							],
 							"meta.locked": false,
 							"meta.validation_status": "OK",
 							"text_id": "1749130712.361--9223372036854767035"
@@ -5066,47 +5069,6 @@
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
 						"meta.line_index": 4,
-						"meta.selector": {
-							"selected": false
-						},
-						"skip": false
-					},
-					{
-						"address": "10.5",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.controls_collapsed": true,
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"meta.locked": false,
-							"meta.validation_status": "OK",
-							"text_id": "1749130753.577--9223372036854767031"
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"id": "1749130753.577--9223372036854767032",
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": true,
-						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						},
@@ -9079,7 +9041,7 @@
 			"1744987742.697--9223372036854775760": "[]>narrator: How can you leave this place again? Well you can just terminate the page by not having it point to a page again :3 <mp>(That's the [img]res://addons/diisis/editor/visuals/theme/buttons_ui/ticked_terminate.png[/img] symbol in the top left in DIISIS)\n[]>narrator: This demo and DIISIS entirely was made by [url=https://snekofspice.itch.io/]Snek[/url].\n[]>narrator: Music by [url=https://chezmonplaisir.bandcamp.com/album/chill-for-real]Loyalty Freak Music[/url] and [url=https://lmnlrecords.bandcamp.com/track/its-not-pretty-here]Modela[/url].\n[]>narrator: <call:control_camera(1, 0,0,4)>Amber art by [url=https://x.com/_10qi]10qi[/url].\n[]>narrator: [rainbow freq=1.0 sat=0.8 val=0.8]Go out there and create![/rainbow] ",
 			"1744987742.697--9223372036854775762": "[]>narrator: There you go <3\n[]>narrator: Dear reader; This template comes with all the simple things you need to make your own visual novel. There's a guide for the setup [url=https://github.com/SnekOfSpice/dialog-editor/wiki/Using-the-visual-novel-template]here[/url]. I would recommend you still know the very basics of Godot, maybe look into how to use themes.",
 			"1747669421.946--9223372036854773668": "[]>amber:hi",
-			"1748889010.129--9223372036854773752": "[]>argo:\"wait for god As she dies besides me\"\n[]>argo:i wanna help everyone before i fucking expire\ni have trannies die left and right at the hands of the state and themselves and I can do nothing but do drugs and tell a few of them it's gonna be ok tomorrow \nand overmorrow is darker than today\nand im just supposed to tell them things will be fine\nfuck off",
+			"1748889010.129--9223372036854773752": "[]>argo: \"wait for god As she dies besides me\"\n[]>argo: I wanna help everyone before I fucking expire\n[]>argo: I have trannies die left and right at the hands of the state and themselves and I can do nothing but do drugs and tell a few of them it's gonna be okay tomorrow.\n[]>argo: And overmorrow is darker than today.\n[]>argo: And I'm just supposed to tell them things will be fine??\n[]>argo: Fuck off.",
 			"1748894235.248--9223372036854773708": "[]>",
 			"1748894240.252--9223372036854773706": "[]>narrator:2:32 AM. If Argo tried really hard it might develop a heart rate in line with the stakes at hand. Critically however, it does not try, and really just wants to have a fucking break before it goes to bed before its next shift. <mp>It heads back up to its apartment.\n[]>argo:doing drugs & runs out of drugs\n[]>argo:slinging hormones\n[]>argo:dealing with shitheds at the gas station",
 			"1748894285.087--9223372036854773704": "[]>narrator:As the morning sun rears its oppressive head, Arg and Vanessa fnd themselves in the kitchen, leanig next to one another against the counter.\n[]>vanessa:So...\n[]>vanessa:Your cuts.\n[]>argo:Mhm.\n[]>vanessa:Wanna talk about them?\n[]>argo:Sure.\n[]>vanessa:vanessa and argo get to talking and bonding over sh",
@@ -9151,7 +9113,7 @@
 			"1749095946.552--9223372036854768967": "[]>narrator:on the side, also: Haley is made aware of it and Maya getting raped\nshe just is so overcome with grief that she kills herself\n[]>audrey:haley?\n[]>audrey:HALEY??",
 			"1749095991.713--9223372036854768944": "[]>narrator:noni gets aclimated to the recovery center!\n[]>audrey:audrey checks on her!!\n[]>audrey:I brought you some stuff\n[]>noni:yay yippee!!\n[]>noni:I also shoplifted some stuff for you!!!\n[]>audrey:heh. glad to see the other girlies have taken you in well.",
 			"1749096011.734--9223372036854768942": "[]>xelia{target|3}: hey\n[]>xelia: im looking for some1\n[]>roaches{target|3}: who?\n[]>xelia: no one in particular\n[]>xelia: certain type tho\n[]>roaches: huh\n[]>xelia: I'll tell you in person\n[]>xelia: your place tomorrow?\n[]>roaches: sounds serious\n[]>xelia: not serious\n[]>xelia: just potential for a bit of cash",
-			"1749096237.023--9223372036854768885": "[]>roaches{target|3}: noise just had an idea\n[]>roaches: you shoukd like totally drink from the toilet bowl\n[]>maya{target|3}: okies!\n[]>roaches: holy shit did you actually do it?\n[]>maya: sends a pic\n[]>haley{target|2}:Hey what're you doing?\n[]>maya{target|2}:Sending a thing to Roachies.\n[]>haley:...\n[]>haley:Alright.",
+			"1749096237.023--9223372036854768885": "[]>roaches{target|3}: noise just had an idea\n[]>roaches: you shoukd like totally drink from the toilet bowl\n[]>maya{target|3}: okies!\n[]>argo:Fucking DIY corpse party. Fuck it. <mp>I just want them to be ok.\n[]>roaches: holy shit did you actually do it?\n[]>maya:hehe\n[]>maya: [img]res://game/images/maya_toilet.png[/img]\n[]>haley{target|2}:Hey what're you doing?\n[]>argo: Whatever. Not gonna cut myself over this when I have a date tomorrow. <mp>At least I keep calling it a date in my head.\n[]>maya{target|2}:Sending a thing to Roachies.\n[]>haley:...\n[]>haley:Alright.",
 			"1749096312.146--9223372036854768864": "[]>audrey: got a new puppy! \n[]>noni: h..hi\n[]>audrey: she's still an absolute scaredy-cat \n[]>argo: what's gonna happen to her?\n[]>audrey: idk im pretty swamped with shit rn\n[]>audrey: and my dick still hurts\n[]>audrey: im probably just gonna drop her off at the recovery center \n[]>audrey: nah that one's community run\n[]>maya: mhm! by puppies!!\n[]>maya: I wuz there for a few months once before Haley adopted me >. <\n[]>argo: oh, nice\n[]>argo: didn't even know that existed\n[]>audrey: comes from only ever working that fucking gas station\n[]>audrey: you need to go out more\n[]>argo: I already am\n[]>argo: I just do all of it solo most of the time",
 			"1749096357.747--9223372036854768861": "[]>narrator:write the actual rescue scene\n[]>audrey:hey pup",
 			"1749096822.856--9223372036854768662": "[]>argo{target|5}: hey xelia\n[]>xelia: hi\n[]>xelia: i heard death upon the stars are playing at dollhouse\n[]>xelia: always wanted to see them live\n[]>xelia: wanna goooo?\n[]>argo: wanna go...\n[]>argo: sure.\n[]>xelia: yay!\n[]>argo: but when? might be difficult if it's less than a month away\n[]>xelia: nexttt weeeeek\n[]>xelia: saturday\n[]>argo: hmmm\n[]>argo: well dollhouse always starts pretty late\n[]>argo: should work\n[]>xelia: yay!!!!\n[]>argo: btw\n[]>argo: none of my plugs are open anymore\n[]>argo: do you still sell\n[]>xelia: course I do\n[]>xelia: especially for you <3\n[]>argo: sweet\n[]>argo: where do you even live now?\n[]>xelia: fuckass suburbs\n[]>argo: shit lol\n[]>xelia: yea\n[]>argo: idk if ill have time before then\n[]>argo: wanna meet at dollhouse\n[]>xelia: sure\n[]>xelia: buy my ticket and ill be thereee <3\n[]>argo: got it\n[]>xelia: oooh nostalgic memories\n[]>xelia: nice\n[]>xelia: k see ya\n[]>argo: see ya",
@@ -9171,8 +9133,8 @@
 			"1749130379.116--9223372036854767403": "[]>argo:I gotta go to the concert in a bit. So.",
 			"1749130395.001--9223372036854767388": "[]>argo:Oh god... \n[]>audrey:You're lucky we didn't go to the hole.\n[]>argo:Hole?\n[]>audrey:Later. For now, grab her ankles and set her down on the rear bench.\n[]>audrey:In case you didn't know, she's supposed to be dead, so we gotta hurry.",
 			"1749130576.385--9223372036854767384": "[]>argo:I mean I'm going to a concert soon.\n[]>noni:Noni... likes noise...\n[]>noni:makes the brain go quiet",
-			"1749130712.361--9223372036854767035": "[]>narrator:Argo is so exhausted\n[]>argo:awesome. another socialite outing soccessful. fuck me.",
-			"1749130738.579--9223372036854767033": "[]>argo:but uaaaaghfgg I can't wait for the date tomorrow",
+			"1749130712.361--9223372036854767035": "[]>narrator: Confronted with the actual product of the world it lives in, argo just deflates. Or maybe it always knew this but just didn't really see it? Either way, it's sad and angry and everything now.\n[]>narrator: Just take a fucking shower<call:show_image(argo_bathroom)>. The corpse stench clings so horribly.\n[]>narrator:Argo is so exhausted. <mp>Winded.",
+			"1749130738.579--9223372036854767033": "[]>argo{target|5}: i bet youre still asleep\n[]>argo{target|5}: ok so thehole fucked me up\n[]>argo: sorry if ill be a bit out of it a bit\n[]>argo: but\n[]>argo: im still looking forward to tomorrow\n[]>argo: cant wait\n[]>argo: ok gonna ty and sleep the hole off",
 			"1749130753.577--9223372036854767031": "[]>argo{target|3}:hiiii\n[]>vanessa{target|3}: hi :3\n[]>argo:im so fucking excited",
 			"1749193147.676--9223372036854767566": "[]>noni:argo doesnt even want me",
 			"1749193212.673--9223372036854767552": "[]>argo:but , noni has been kinda hitting me up\n[]>vanessa:yea nah idt id wanna share you atm\n[]>argo:thats fine ill tell her off",
