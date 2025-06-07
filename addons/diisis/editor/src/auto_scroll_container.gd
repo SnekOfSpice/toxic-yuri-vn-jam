@@ -22,6 +22,7 @@ func handle_scrollbar_changed():
 	
 	if code_edit:
 		scroll_vertical = scroll_before
-		printt("scroll ", code_edit.get_caret_draw_pos().y, size.y)
-		if code_edit.get_caret_draw_pos().y > size.y:
-			scroll_vertical = int(code_edit.get_caret_draw_pos().y)
+		var draw_y = int(code_edit.get_caret_draw_pos().y)
+		#printt("scroll ", code_edit.get_caret_draw_pos().y, size.y, scroll_vertical)
+		if (draw_y > size.y) and (draw_y < scroll_vertical):
+			scroll_vertical = draw_y
