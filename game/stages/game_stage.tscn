@@ -47,8 +47,9 @@ grow_vertical = 2
 focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
-devmode_start_page = 2
-devmode_start_line = 2
+devmode_enabled = true
+devmode_start_page = 3
+devmode_start_line = 4
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -234,7 +235,7 @@ theme_type_variation = &"EmbodiedText"
 layout_mode = 2
 
 [node name="BodyLabel" type="RichTextLabel" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer/PanelContainer/VBoxContainer"]
-custom_minimum_size = Vector2(550, 20)
+custom_minimum_size = Vector2(550, 24)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0

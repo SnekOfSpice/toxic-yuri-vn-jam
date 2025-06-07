@@ -267,8 +267,12 @@ func splash_text(key:String,
 func set_target_labels(actor:String, target_id:int, force_show:=true):
 	GameWorld.game_stage.set_target_labels(actor, target_id, force_show)
 
+
+
 func hide_all_windows():
 	GameWorld.game_stage.hide_all_windows()
+func hide_window(id:int):
+	GameWorld.game_stage.hide_window(id)
 
 
 func set_up_blank(display_name:String):

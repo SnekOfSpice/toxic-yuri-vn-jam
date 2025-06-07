@@ -563,3 +563,8 @@ func set_background(new_bg_key:String, fade_time:=0.0):
 	#if is_instance_valid(GameWorld.game_stage):
 		#GameWorld.game_stage.get_node("Objects").hide_all()
 		
+func hide_window(id:int):
+	for window : CustomWindow in windows:
+		if window.id == id:
+			window.hide()
+			return
