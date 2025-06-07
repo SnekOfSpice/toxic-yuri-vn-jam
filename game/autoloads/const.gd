@@ -19,7 +19,7 @@ const BACKGROUND_ARGO_APARTMENT := "void.png"
 const BACKGROUND_RECOVERY_CENTER := "void.png"
 
 const MUSIC_ROOT := "res://game/sounds/music/"
-const MUSIC_ARGO_DEFAULT := "Paradise_Found.mp3"
+const MUSIC_ARGO_DEFAULT := "2025-06-07-tyj_01.mp3"
 const MUSIC_CONSENSUAL_HATE_FUCK := "Paradise_Found.mp3"
 const MUSIC_DICKS := "Paradise_Found.mp3"
 const MUSIC_DOLLHOUSE := "Paradise_Found.mp3"

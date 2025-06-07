@@ -33,6 +33,7 @@ func fill():
 		item.connect("move_page", swap_pages)
 		item.connect("on_direct_swap", direct_swap)
 		item.connect("go_to", on_item_go_to)
+		item.init()
 	
 	find_child("SearchLineEdit").text = ""
 	find_child("SearchLineEdit").grab_focus()
