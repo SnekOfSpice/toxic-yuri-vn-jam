@@ -59,6 +59,7 @@ func serialize() -> Dictionary:
 	data["facts"] = find_child("Facts").serialize()
 	data["meta.selected"] = find_child("LineSelector").button_pressed
 	data["meta.address_mode_next"] = find_child("AddressModeButton").get_mode()
+	data["skip"] = find_child("SkipCheckBox").button_pressed
 	
 	var lines_data := []
 	for c in lines.get_children():
@@ -80,12 +81,17 @@ func deserialize(data: Dictionary):
 	find_child("Facts").deserialize(data.get("facts", {}))
 	find_child("LineSelector").button_pressed = data.get("meta.selected", false)
 	find_child("AddressModeButton").set_mode(data.get("meta.address_mode_next", Pages.default_address_mode_pages))
+	set_skip(data.get("skip", false))
 	
 	update_incoming_references_to_page()
 	
 	await get_tree().process_frame
 	find_child("ScrollContainer").scroll_vertical = data.get("meta.scroll_vertical", 0)
 	update()
+
+func set_skip(value:bool):
+	modulate.a = 0.6 if value else 1
+	find_child("SkipCheckBox").button_pressed = value
 
 func deserialize_lines(lines_data: Array):
 	# instantiate lines

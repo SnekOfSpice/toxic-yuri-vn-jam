@@ -255,14 +255,21 @@ func read_page_by_key(key:String, starting_line_index := 0):
 		return
 	read_page(number, starting_line_index)
 
-func read_page(number: int, starting_line_index := 0):
-	if not page_data.keys().has(number):
-		push_warning(str("number ", number, " not in page data"))
+func read_page(starting_page_index: int, starting_line_index := 0):
+	if not page_data.keys().has(starting_page_index):
+		push_warning(str("number ", starting_page_index, " not in page data"))
+		return
+	
+	if page_data.get(starting_page_index).get("skip", false):
+		if is_terminating(starting_page_index):
+			emit_signal("page_terminated", starting_page_index)
+			return
+		read_page(get_next(starting_page_index), starting_line_index)
 		return
 	
 	set_paused(false)
-	ParserEvents.read_new_page.emit(number)
-	page_index = number
+	ParserEvents.read_new_page.emit(starting_page_index)
+	page_index = starting_page_index
 	lines = page_data.get(page_index).get("lines")
 	max_line_index_on_page = lines.size() - 1
 	
@@ -545,8 +552,6 @@ func close_connection():
 
 ## Changes [param fact_name] to [param new_value]. If [param suppress_event] is [code]true[/code]
 ## [signal ParserEvents.fact_changed] won't be emitted.[br]
-
-
 func change_fact(fact_item_data:Dictionary, suppress_event:=false):
 	var fact_name : String = fact_item_data.get("fact_name", "")
 	var old_value = facts.get(fact_name, false)
