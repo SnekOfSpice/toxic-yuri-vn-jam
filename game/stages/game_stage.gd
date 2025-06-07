@@ -294,6 +294,9 @@ func on_actor_name_changed(
 		is_name_container_visible = name_container_visible
 		
 		var target_id : int = target_label_id_by_actor.get(actor, 0)
+		if target_id == 6:
+			find_child("Portrait").visible = false
+			return
 		if actor in Parser.line_reader.blank_names:
 			if target_id == 0:
 				find_child("Portrait").visible = false
@@ -464,11 +467,29 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 	var is_texting := target_id in [3,5]
 	var is_digital := target_id in [3,4,5]
 	are_words_being_spoken = not is_texting
+	if target_id == 6:
+		hide_all_windows()
+		%DefaultTextContainer.visible = false
+		%FullCoverText.visible = true
+	else:
+		%DefaultTextContainer.visible = true
+		%FullCoverText.visible = false
+		
 	if target_id == 0:
 		%LineReader.custom_text_speed_override = -1
 		%LineReader.set_body_label(%DefaultTextContainer.find_child("BodyLabel"), false)
 		var name_label = %DefaultTextContainer.find_child("NameLabel")
 		var name_container = %DefaultTextContainer.find_child("NameContainer")
+		%LineReader.set_name_controls(name_label, name_container)
+		%LineReader.custom_text_speed_override = -1
+		%LineReader.body_label_prefix = ""
+		%LineReader.body_label_suffix = ""
+		%LineReader.keep_past_lines = false
+	elif target_id == 6:
+		%LineReader.custom_text_speed_override = -1
+		%LineReader.set_body_label(%FullCoverText.find_child("BodyLabel"), false)
+		var name_label = %FullCoverText.find_child("NameLabel")
+		var name_container = %FullCoverText.find_child("NameLabel")
 		%LineReader.set_name_controls(name_label, name_container)
 		%LineReader.custom_text_speed_override = -1
 		%LineReader.body_label_prefix = ""

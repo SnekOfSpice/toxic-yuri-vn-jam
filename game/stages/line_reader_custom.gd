@@ -237,16 +237,17 @@ const SPLASH_STRINGS := {
 	"killer_hangover" : "Killer hangover.",
 	"filthy" : "Filthy.",
 	"audrey_lives" : "Audrey lives.",
-	"ending" : "REFUSE REFUSE REFUSE REFUSE FOREVER AND EVER AND EVER MORE",
+	"ending" : "REFUSE REFUSE REFUSE REFUSE FOREVER AND EVER AND EVER MORE!",
 	"noni_rescue" : "[PH]noni rescue",
 	"pale" : "Pale as a corpse grey morning sky...",
 	"vibrant" : "Vibrant as bruises...",
 	"one_of_us" : "When you're one of us, making it out of your 20s will be your first and greatest life achievement.",
 	"rape_intro" : "[ph]Sometimes, existence hurts.",
-	"the_hole" : "The hole",
-	"not_gentle" : "the world is not a gentle place",
-	"bottom_surgery" : "Bottom surgery",
-	"cosmic_sorority" : "Emerging from the waves, a cosmic sorority"
+	"the_hole" : "The hole.",
+	"not_gentle" : "the world is not a gentle place.",
+	"bottom_surgery" : "Bottom surgery.",
+	"cosmic_sorority" : "Emerging from the waves, a cosmic sorority.",
+	"fuck" : "Fuck."
 }
 func splash_text(key:String,
 	background:=GameWorld.game_stage.background,

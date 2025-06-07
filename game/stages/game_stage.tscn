@@ -48,7 +48,7 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_page = 17
+devmode_start_page = 22
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -341,6 +341,30 @@ layout_mode = 2
 focus_mode = 0
 theme_type_variation = &"FreeButton"
 text = "Menu"
+
+[node name="FullCoverText" type="Control" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="BodyLabel" type="RichTextLabel" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/FullCoverText"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="NameLabel" type="Label" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/FullCoverText/BodyLabel"]
+layout_mode = 0
+offset_right = 11.0
+offset_bottom = 21.0
 
 [node name="CGTopContainer" type="Control" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot"]
 visible = false
