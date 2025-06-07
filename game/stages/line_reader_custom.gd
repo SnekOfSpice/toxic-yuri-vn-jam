@@ -246,6 +246,7 @@ const SPLASH_STRINGS := {
 	"the_hole" : "The hole",
 	"not_gentle" : "the world is not a gentle place",
 	"bottom_surgery" : "Bottom surgery",
+	"cosmic_sorority" : "Emerging from the waves, a cosmic sorority"
 }
 func splash_text(key:String,
 	background:=GameWorld.game_stage.background,

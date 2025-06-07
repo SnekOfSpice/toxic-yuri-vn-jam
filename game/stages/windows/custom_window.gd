@@ -58,6 +58,7 @@ func on_go_back_accepted(page:int, line:int, dialine:int):
 
 func on_visibility_changed():
 	dragging = false
+	return
 	var subaddress_arr := Parser.line_reader.get_subaddress_arr()
 	var page : Dictionary
 	var page_index : int = subaddress_arr[0]

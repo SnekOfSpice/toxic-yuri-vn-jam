@@ -10,7 +10,12 @@ func  _ready() -> void:
 	else: # is digital comm
 		%TextContent.theme_type_variation = "DigitalText"
 		%ScrollContainer.vertical_scroll_mode = ScrollContainer.ScrollMode.SCROLL_MODE_RESERVE
-	visibility_changed.connect(clear_past_container)
+
+func on_visibility_changed():
+	super.on_visibility_changed()
+	clear_past_container()
+	if not visible:
+		get_body_label().text = ""
 
 func get_body_label() -> RichTextLabel:
 	return %BodyLabel

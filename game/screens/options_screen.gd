@@ -63,7 +63,7 @@ func _process(delta: float) -> void:
 			return
 		restart_preview_timer -= delta
 		if restart_preview_timer <= 0:
-			restart_preview_timer = 4
+			restart_preview_timer = get_restart_preview_timer_duration()
 			rtl.visible_ratio = 0
 	else:
 		# just taken directly from line reader
@@ -138,11 +138,16 @@ func _on_text_speed_slider_value_changed(value: float) -> void:
 	else:
 		label.text = str(int(value))
 		find_child("RTLFontLabel").visible_ratio = 0
-		restart_preview_timer = 4
+		restart_preview_timer = get_restart_preview_timer_duration()
 	Options.text_speed = int(value)
 	if is_instance_valid(Parser.line_reader):
 		Parser.line_reader.text_speed = value
 
+func get_restart_preview_timer_duration() -> float:
+	if find_child("AutoContinueCheckBox").button_pressed:
+		return find_child("AutoDelaySlider").value
+	else:
+		return 4
 
 func _on_auto_delay_slider_value_changed(value: float) -> void:
 	var label : Label = find_child("AutoDelayLabel")
@@ -150,6 +155,11 @@ func _on_auto_delay_slider_value_changed(value: float) -> void:
 	Options.auto_continue_delay = value
 	if is_instance_valid(Parser.line_reader):
 		Parser.line_reader.auto_continue_delay = value
+	if value == LineReader.MAX_TEXT_SPEED:
+		find_child("RTLFontLabel").visible_ratio = 1
+	else:
+		find_child("RTLFontLabel").visible_ratio = 0
+	restart_preview_timer = get_restart_preview_timer_duration()
 
 
 func _on_fullscreen_check_box_pressed() -> void:
