@@ -34,11 +34,7 @@ func fade_out(duration:= release_on_full_black_reached):
 
 
 func on_full_black_reached():
-	if GameWorld.game_stage:
-		GameWorld.game_stage.set_fade_out(0, 0)
-		GameWorld.game_stage.hide_cg()
-		GameWorld.game_stage.hide_all_windows()
-		Parser.line_reader.set_all_target_labels(0, false)
+	GameWorld.hidden_ui_reset()
 	if hide_characters_on_full_black_reached:
 		for c in get_tree().get_nodes_in_group("character"):
 			c.visible = false

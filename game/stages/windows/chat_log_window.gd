@@ -1,6 +1,8 @@
 extends CustomWindow
 class_name ChatLogWindow
 
+
+var actor : String
 func  _ready() -> void:
 	super()
 	close()
@@ -31,15 +33,16 @@ func clear_past_container():
 	for child in %PastContainer.get_children():
 		child.queue_free()
 
-func set_portrait(actor:String):
-	if actor == "":
+func set_portrait(actor_name:String):
+	actor = actor_name
+	if actor_name == "":
 		%Portrait.visible = false
 		%Portrait.texture = load("res://game/characters/portraits/none.png")
 		await get_tree().process_frame
 		clamp_to_viewport()
 		return
 	%Portrait.visible = true
-	%Portrait.texture = load("res://game/characters/portraits/%s.png" % actor)
+	%Portrait.texture = load("res://game/characters/portraits/%s.png" % actor_name)
 	await get_tree().process_frame
 	clamp_to_viewport()
 
@@ -51,6 +54,7 @@ func serialize() -> Dictionary:
 	for line in %PastContainer.get_children():
 		past_lines.append(line.text)
 	data["past_lines"] = past_lines
+	data["actor"] = actor
 	return data
 
 func deserialize(data:Dictionary):
@@ -66,6 +70,7 @@ func deserialize(data:Dictionary):
 		past_line.mouse_filter = Control.MOUSE_FILTER_PASS
 		past_line.text = line
 		%PastContainer.add_child(past_line)
+	set_portrait(data.get("actor", ""))
 
 @warning_ignore("native_method_override")
 func hide():

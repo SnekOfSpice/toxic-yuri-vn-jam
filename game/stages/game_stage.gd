@@ -86,10 +86,12 @@ func _ready():
 	
 	await get_tree().process_frame
 	find_child("StartCover").visible = false
+	find_child("Portrait").visible = false
 	set_enable_dither(Options.enable_dither)
 
 func set_enable_dither(value:bool):
 	find_child("DitherLayer").visible = value
+	find_child("DitherLayer2").visible = value
 
 var target_label_history_by_subaddress := {}
 #var window_visibilities_by_subaddress := {}
@@ -353,7 +355,21 @@ func serialize() -> Dictionary:
 		var data := window.serialize()
 		window_data_by_uid[int(data.get("uid"))] = data
 	result["windows"] = window_data_by_uid
+	result["text_content_default"] = serialize_text_content(%DefaultTextContainer)
+	result["text_content_full"] = serialize_text_content(%FullCoverText)
+	
 	return result
+
+func serialize_text_content(root:Control) -> Dictionary:
+	var result := {}
+	result["root_visible"] = root.visible
+	result["body_text"] = root.find_child("BodyLabel").text
+	result["visible_characters"] = root.find_child("BodyLabel").visible_characters
+	return result
+func deserialize_text_content(root:Control, data:Dictionary) -> void:
+	root.visible = data.get("root_visible", false)
+	root.find_child("BodyLabel").text = data.get("body_text", "")
+	root.find_child("BodyLabel").visible_characters = data.get("visible_characters", -1)
 
 func deserialize(data:Dictionary):
 	var character_data : Dictionary = data.get("character_data", {})
@@ -402,6 +418,9 @@ func deserialize(data:Dictionary):
 	for window : CustomWindow in windows:
 		window.deserialize(window_data.get(str(window.uid), {}))
 	%LineReader.body_label = get_body_label(data.get("last_body_label_target", 0))
+	
+	deserialize_text_content(%DefaultTextContainer, data.get("text_content_default", {}))
+	deserialize_text_content(%FullCoverText, data.get("text_content_full", {}))
 
 var emit_insutrction_complete_on_cg_hide :bool
 
@@ -425,8 +444,8 @@ func _on_handler_start_show_cg(cg_name: String, fade_in: float, on_top: bool) ->
 		emit_insutrction_complete_on_cg_hide = true
 		set_cg_top(cg_name, fade_in)
 	else:
-		var t = get_tree().create_timer(fade_in)
-		t.timeout.connect(Parser.function_acceded)
+		#var t = get_tree().create_timer(fade_in)
+		#t.timeout.connect(Parser.function_acceded)
 		set_cg_bottom(cg_name, fade_in)
 
 func _on_rich_text_label_meta_clicked(meta: Variant) -> void:
@@ -472,7 +491,7 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 		%DefaultTextContainer.visible = false
 		%FullCoverText.visible = true
 	else:
-		%DefaultTextContainer.visible = true
+		#%DefaultTextContainer.visible = true
 		%FullCoverText.visible = false
 		
 	if target_id == 0:

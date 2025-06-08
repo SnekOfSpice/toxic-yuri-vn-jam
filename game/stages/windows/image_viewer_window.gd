@@ -13,8 +13,8 @@ func serialize() -> Dictionary:
 	return data
 
 func deserialize(data:Dictionary):
-	super.deserialize(data)
 	show_image(data.get("image_id", ""))
+	super.deserialize(data)
 
 
 func show_image(image:String, x_min:=200, y_min:=200):

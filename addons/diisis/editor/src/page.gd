@@ -237,6 +237,7 @@ func get_indices_to_delete(start_index:int, consider_folder:=false) -> Array:
 
 func ensure_control_at_address_is_visible(address:String):
 	find_child("ScrollContainer").scroll_vertical = 0
+	await get_tree().process_frame
 	var target = DiisisEditorUtil.get_node_at_address(address)
 	find_child("ScrollContainer").ensure_control_visible(target)
 
@@ -253,6 +254,7 @@ func request_add_line(at_index:int):
 
 func add_lines(indices:Array, data_by_index:={}, force_new_line_object:=false, change_line_references:=false):
 	indices.sort()
+	var added_new_line := false
 	for at_index in indices:
 		var line:Line
 		var line_data = data_by_index.get(at_index, {})
@@ -265,6 +267,7 @@ func add_lines(indices:Array, data_by_index:={}, force_new_line_object:=false, c
 			line.connect("insert_line", request_add_line)
 			line.connect("delete_line", request_delete_line)
 			line.connect("move_to", move_line_to)
+			added_new_line = true
 		else:
 			line = lines.get_child(at_index)
 			line.deserialize({})
@@ -291,6 +294,10 @@ func add_lines(indices:Array, data_by_index:={}, force_new_line_object:=false, c
 			to,
 			 + 1
 			)
+	
+	if added_new_line:
+		await get_tree().process_frame
+		find_child("ScrollContainer").scroll_vertical = find_child("ScrollContainer").get_v_scroll_bar().max_value
 
 func add_line(at_index:int, data := {}):
 	add_lines([at_index], {at_index: data})

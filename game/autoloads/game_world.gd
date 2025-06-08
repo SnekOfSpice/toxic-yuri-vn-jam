@@ -11,6 +11,15 @@ var background := ""
 var skip := false
 var just_started := true
 
+# function called by splash text and black fade etc. clean up the ui back to its default state
+func hidden_ui_reset():
+	if not game_stage:
+		return
+	game_stage.set_fade_out(0, 0)
+	game_stage.hide_cg()
+	game_stage.hide_all_windows()
+	Parser.line_reader.set_all_target_labels(0, false)
+
 func str_to_vec2(s) -> Vector2:
 	if s is Vector2:
 		return s

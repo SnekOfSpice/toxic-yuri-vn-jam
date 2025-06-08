@@ -18,8 +18,7 @@ func read(text:String,
 	label.visible_characters = 0
 	await get_tree().create_timer(1).timeout
 	if reset_windows:
-		GameWorld.game_stage.hide_all_windows()
-		Parser.line_reader.set_all_target_labels(0)
+		GameWorld.hidden_ui_reset()
 	GameWorld.game_stage.set_background(background)
 	for i in text.length() + 1:
 		await get_tree().create_timer(randf_range(0.2, 0.3)).timeout
