@@ -1698,6 +1698,7 @@ func neaten_whitespace(text:String) -> String:
 	text = text.replace("] .", "].")
 	text = text.replace("> .", ">.")
 	text = text.replace(": //", "://")
+	text = text.replace(":...", ": ...")
 	
 	return text
 
