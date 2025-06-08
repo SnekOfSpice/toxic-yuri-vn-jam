@@ -12,6 +12,7 @@ signal move_to (child, idx)
 signal delete_line
 
 func init() -> void:
+	%GoToHighlight.self_modulate.a = 0
 	grab_focus()
 	find_child("Header").init()
 	find_child("Conditionals").init()
@@ -346,3 +347,6 @@ func _on_delete_button_mouse_exited() -> void:
 	if not is_instance_valid(find_child("SkipCheckBox")):
 		return
 	set_skip(find_child("SkipCheckBox").button_pressed)
+
+func flash_highlight():
+	DiisisEditorUtil.flash_highlight(%GoToHighlight)

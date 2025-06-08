@@ -581,6 +581,7 @@ func request_go_to_address(address:String, action_message:=""):
 	undo_redo.commit_action()
 
 func request_load_page(number:int, action_message:=""):
+	DiisisEditorUtil.block_next_flash_highlight = true
 	request_go_to_address(str(number), action_message)
 
 func notify(message:String, duration:=5.0):

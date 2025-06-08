@@ -11,6 +11,7 @@ var lines:Node
 signal request_delete()
 
 func init(n:=number):
+	%GoToHighlight.self_modulate.a = 0
 	var data = Pages.page_data.get(n)
 	number = n
 	lines = find_child("Lines")
@@ -633,3 +634,17 @@ func _on_incoming_references_meta_clicked(meta: Variant) -> void:
 		Pages.editor.view_incoming_references(number)
 	else:
 		Pages.editor.goto_with_meta(meta)
+
+
+func flash_highlight(address:String):
+	if DiisisEditorUtil.block_next_flash_highlight:
+		DiisisEditorUtil.block_next_flash_highlight = false
+		return
+	var parts = DiisisEditorUtil.get_split_address(address)
+	match parts.size():
+		1:
+			DiisisEditorUtil.flash_highlight(%GoToHighlight)
+		2:
+			get_line(parts[1]).flash_highlight()
+		3:
+			get_line(parts[1]).get_choice_item(parts[2]).flash_highlight()

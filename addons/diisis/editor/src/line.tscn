@@ -1,9 +1,10 @@
-[gd_scene load_steps=29 format=3 uid="uid://b53i8f73mqi3r"]
+[gd_scene load_steps=30 format=3 uid="uid://b53i8f73mqi3r"]
 
 [ext_resource type="Script" uid="uid://bpc55ta1uccyf" path="res://addons/diisis/editor/src/line.gd" id="1_6i1bg"]
 [ext_resource type="Theme" uid="uid://jddhsc4auo55" path="res://addons/diisis/editor/visuals/theme/amber_cherryblossom.tres" id="1_viyfr"]
 [ext_resource type="PackedScene" uid="uid://c23v82ojiuvbs" path="res://addons/diisis/editor/src/header.tscn" id="2_qs17t"]
 [ext_resource type="PackedScene" uid="uid://bgvfjindfxypf" path="res://addons/diisis/editor/src/facts.tscn" id="3_01wq6"]
+[ext_resource type="PackedScene" uid="uid://bixawifxp2bsf" path="res://addons/diisis/editor/src/go_to_highlight.tscn" id="3_f4r4p"]
 [ext_resource type="PackedScene" uid="uid://btcdvjuk2ku18" path="res://addons/diisis/editor/src/choice_container.tscn" id="3_jjtdq"]
 [ext_resource type="PackedScene" uid="uid://c5eu4io5wokaq" path="res://addons/diisis/editor/src/address_select_action_container.tscn" id="3_k7b5x"]
 [ext_resource type="Texture2D" uid="uid://bvfeiavga4a2q" path="res://addons/diisis/editor/visuals/theme/buttons_ui/skip_enabled.png" id="3_ly3u8"]
@@ -64,6 +65,10 @@ script = ExtResource("1_6i1bg")
 layout_mode = 2
 focus_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_k5f2i")
+
+[node name="GoToHighlight" parent="PanelContainer" instance=ExtResource("3_f4r4p")]
+unique_name_in_owner = true
+layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
 layout_mode = 2
@@ -135,6 +140,7 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="HeadVisibilityToggle" type="CheckButton" parent="PanelContainer/HBoxContainer/MarginContainer/HBoxContainer/MarginContainer/VBoxContainer/HBoxContainer/MoveControlsContainer/VBoxContainer/HBoxContainer/Controls"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
