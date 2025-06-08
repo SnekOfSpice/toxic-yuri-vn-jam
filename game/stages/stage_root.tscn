@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://ce72qyvaredxn"]
+[gd_scene load_steps=4 format=3 uid="uid://ce72qyvaredxn"]
 
 [ext_resource type="Theme" uid="uid://drk5fhsdjoewf" path="res://game/visuals/theme/diisis_theme.tres" id="1_twmxo"]
 [ext_resource type="Script" uid="uid://2ixj0k2jnsqy" path="res://game/stages/stage_root.gd" id="1_uh8ly"]
+[ext_resource type="Theme" uid="uid://gee0nt5mhjku" path="res://game/visuals/theme/toxic_yuri_vn_theme.tres" id="3_5mv20"]
 
 [node name="StageRoot" type="Control"]
 layout_mode = 3
@@ -36,4 +37,4 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-theme = ExtResource("1_twmxo")
+theme = ExtResource("3_5mv20")

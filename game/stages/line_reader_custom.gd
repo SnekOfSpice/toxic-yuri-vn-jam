@@ -250,9 +250,19 @@ const SPLASH_STRINGS := {
 	"fuck" : "Fuck."
 }
 func splash_text(key:String,
+	fade_in := 0.0,
 	background:=GameWorld.game_stage.background,
 	bgm:=Sound.bgm_key,
 	reset_windows := true):
+	var black_cover:Control
+	if fade_in > 0:
+		black_cover = ColorRect.new()
+		black_cover.color = Color.BLACK
+		black_cover.modulate.a = 0
+		find_child("VNUICanvasLayer").add_child(black_cover)
+		var tween = create_tween()
+		tween.tween_property(black_cover, "modulate:a", 1, fade_in)
+		await tween.finished
 	if GameWorld.game_stage.devmode_enabled:
 		if reset_windows:
 			hide_all_windows()
@@ -263,6 +273,8 @@ func splash_text(key:String,
 	var cover = preload("res://game/stages/text_reading_cover.tscn").instantiate()
 	find_child("VNUICanvasLayer").add_child(cover)
 	cover.read(SPLASH_STRINGS.get(key), background, bgm, reset_windows)
+	if black_cover:
+		black_cover.queue_free()
 	return true
 
 func set_target_labels(actor:String, target_id:int, force_show:=true):

@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=33 format=3 uid="uid://gee0nt5mhjku"]
+[gd_resource type="Theme" load_steps=37 format=3 uid="uid://gee0nt5mhjku"]
 
 [ext_resource type="FontFile" uid="uid://df8rce7yfdeog" path="res://game/visuals/theme/fonts/body_candidates/barlow/Barlow-Black.otf" id="1_b647t"]
 [ext_resource type="FontFile" uid="uid://5cictvfk5bbm" path="res://game/visuals/theme/fonts/body_candidates/veramono/VeraMono.ttf" id="1_booqv"]
@@ -47,6 +47,24 @@ corner_radius_bottom_left = 5
 corner_detail = 1
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_58eoa"]
+content_margin_left = 6.0
+content_margin_top = 3.0
+content_margin_right = 6.0
+content_margin_bottom = 3.0
+bg_color = Color(0.129559, 0.129558, 0.129558, 0.862745)
+border_width_left = 3
+border_width_top = 2
+border_width_right = 3
+border_width_bottom = 2
+border_color = Color(0.75, 0.4875, 0.553125, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8nnbg"]
 content_margin_left = 6.0
 content_margin_top = 3.0
 content_margin_right = 6.0
@@ -148,6 +166,15 @@ content_margin_top = 6.0
 content_margin_right = 8.0
 content_margin_bottom = 6.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1mesm"]
+bg_color = Color(0.370362, 0.477514, 0.631894, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uwlm2"]
+bg_color = Color(0.870588, 0.784314, 0.235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jt05t"]
+bg_color = Color(0.827451, 0.235294, 0.870588, 1)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qa4mq"]
 bg_color = Color(0.61, 0.418257, 0.3599, 0.639216)
 expand_margin_left = 1.0
@@ -175,6 +202,7 @@ Button/fonts/font = ExtResource("1_booqv")
 Button/styles/focus = SubResource("StyleBoxFlat_ggh8c")
 Button/styles/hover = SubResource("StyleBoxFlat_oefcn")
 Button/styles/normal = SubResource("StyleBoxFlat_58eoa")
+Button/styles/pressed = SubResource("StyleBoxFlat_8nnbg")
 DigitalText/fonts/normal_font = ExtResource("1_booqv")
 EmbodiedText/base_type = &"PanelContainer"
 EmbodiedText/styles/panel = SubResource("StyleBoxFlat_booqv")
@@ -217,6 +245,9 @@ RichTextLabel/fonts/italics_font = ExtResource("3_booqv")
 RichTextLabel/fonts/mono_font = ExtResource("1_booqv")
 RichTextLabel/fonts/normal_font = ExtResource("4_er4n1")
 RichTextLabel/styles/normal = SubResource("StyleBoxEmpty_p6lps")
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_1mesm")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_uwlm2")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_jt05t")
 VSeparator/styles/separator = SubResource("StyleBoxFlat_qa4mq")
 Window/colors/title_color = Color(0.853916, 0.857043, 0.484737, 1)
 Window/styles/embedded_border = SubResource("StyleBoxFlat_88008")

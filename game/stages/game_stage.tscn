@@ -245,6 +245,7 @@ expand_mode = 5
 stretch_mode = 5
 
 [node name="PanelContainer" type="PanelContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 81)
 layout_mode = 2
 size_flags_vertical = 0
 mouse_filter = 2
