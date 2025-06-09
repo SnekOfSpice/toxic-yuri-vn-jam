@@ -51,7 +51,7 @@ void fragment() {
 			}
 			color = clamp(color, 0.0, 1.0);
 			color = quantize_color(color, quantization_level);
-			
+
 			int palette_size = 16;
 			float closest_distance = 9999.0;
 			vec4 closest_color = vec4(0.0);

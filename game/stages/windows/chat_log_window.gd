@@ -12,6 +12,7 @@ func  _ready() -> void:
 	else: # is digital comm
 		%TextContent.theme_type_variation = "DigitalText"
 		%ScrollContainer.vertical_scroll_mode = ScrollContainer.ScrollMode.SCROLL_MODE_RESERVE
+		flatten_stylebox(get_body_label())
 
 func on_visibility_changed():
 	super.on_visibility_changed()
@@ -77,8 +78,16 @@ func hide():
 	super.hide()
 	clear_past_container()
 
+func flatten_stylebox(on_label:RichTextLabel):
+	var stylebox : StyleBox = on_label.get_theme_stylebox("normal")
+	var lmargin = stylebox.get_margin(SIDE_LEFT)
+	var rmargin = stylebox.get_margin(SIDE_RIGHT)
+	var box = StyleBoxEmpty.new()
+	box.content_margin_left = lmargin
+	box.content_margin_right = rmargin
+	on_label.add_theme_stylebox_override("normal", box)
 
 func _on_past_container_child_entered_tree(node: Node) -> void:
 	if node in %PastContainer.get_children():
 		if node is RichTextLabel:
-			node.custom_minimum_size.y = 0
+			flatten_stylebox(node)

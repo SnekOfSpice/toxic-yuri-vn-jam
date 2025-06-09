@@ -263,13 +263,13 @@ func splash_text(key:String,
 		var tween = create_tween()
 		tween.tween_property(black_cover, "modulate:a", 1, fade_in)
 		await tween.finished
-	if GameWorld.game_stage.devmode_enabled:
-		if reset_windows:
-			hide_all_windows()
-			set_all_target_labels(0)
-		set_background(background, 0)
-		print(SPLASH_STRINGS.get(key))
-		return false
+	#if GameWorld.game_stage.devmode_enabled:
+		#if reset_windows:
+			#hide_all_windows()
+			#set_all_target_labels(0)
+		#set_background(background, 0)
+		#print(SPLASH_STRINGS.get(key))
+		#return false
 	var cover = preload("res://game/stages/text_reading_cover.tscn").instantiate()
 	find_child("VNUICanvasLayer").add_child(cover)
 	cover.read(SPLASH_STRINGS.get(key), background, bgm, reset_windows)

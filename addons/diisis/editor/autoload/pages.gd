@@ -1592,7 +1592,7 @@ func capitalize_sentence_beginnings(text:String) -> String:
 	var elipse_position := text.find("...")
 	var elipse_length := 3
 	while elipse_position != -1:
-		if elipse_position < text.length():
+		if elipse_position < text.length() - elipse_length:
 			if text[elipse_position + elipse_length + 1] in LETTERS:
 				letter_indices_after_elipses[elipse_position + elipse_length + 1] = text[elipse_position + elipse_length + 1]
 				elipse_position = text.find("...", elipse_position + elipse_length + 1)
