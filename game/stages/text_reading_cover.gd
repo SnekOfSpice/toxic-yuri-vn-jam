@@ -21,7 +21,10 @@ func read(text:String,
 		GameWorld.hidden_ui_reset()
 	GameWorld.game_stage.set_background(background)
 	for i in text.length() + 1:
-		await get_tree().create_timer(randf_range(0.2, 0.3)).timeout
+		var wait_time = randf_range(0.2, 0.3)
+		if label.get_parsed_text().substr(0, label.visible_characters-1).ends_with("\n"):
+			wait_time += 0.5
+		await get_tree().create_timer(wait_time).timeout
 		label.visible_characters = i + 2
 		Sound.play_sfx("keyboard")
 		var s = $RichTextLabel.get_theme_font_size("normal_font_size")
@@ -29,7 +32,6 @@ func read(text:String,
 		if i > 0 and i <= text.length() - 1:
 			label.text = label.text.erase(i, cursor.length())
 		if i < text.length() - 1:
-			
 			label.text = label.text.insert(i+1, cursor)
 	
 	await get_tree().create_timer(1.5).timeout
