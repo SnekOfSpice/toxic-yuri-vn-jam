@@ -257,6 +257,8 @@ func add_lines(indices:Array, data_by_index:={}, force_new_line_object:=false, c
 	indices.sort()
 	var added_new_line := false
 	for at_index in indices:
+		if at_index >= lines.get_child_count():
+			added_new_line = true
 		var line:Line
 		var line_data = data_by_index.get(at_index, {})
 		if at_index >= lines.get_child_count() or force_new_line_object:
@@ -268,7 +270,6 @@ func add_lines(indices:Array, data_by_index:={}, force_new_line_object:=false, c
 			line.connect("insert_line", request_add_line)
 			line.connect("delete_line", request_delete_line)
 			line.connect("move_to", move_line_to)
-			added_new_line = true
 		else:
 			line = lines.get_child(at_index)
 			line.deserialize({})

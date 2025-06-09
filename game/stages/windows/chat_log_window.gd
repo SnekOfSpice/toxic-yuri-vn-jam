@@ -76,3 +76,9 @@ func deserialize(data:Dictionary):
 func hide():
 	super.hide()
 	clear_past_container()
+
+
+func _on_past_container_child_entered_tree(node: Node) -> void:
+	if node in %PastContainer.get_children():
+		if node is RichTextLabel:
+			node.custom_minimum_size.y = 0

@@ -41,7 +41,7 @@ func set_number(n: int):
 	find_child("AddressModeButton").set_mode(Pages.page_data.get(n).get("meta.address_mode_next", Pages.default_address_mode_pages))
 	find_child("AddressModeButton").visible = not terminates
 	
-	find_child("WordCountLabel").text = str(Pages.get_count_on_page(number).x)
+	find_child("WordCountLabel").text = str(Pages.get_count_on_page(number, true).x)
 
 func get_next() -> int:
 	return next

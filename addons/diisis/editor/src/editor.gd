@@ -735,13 +735,29 @@ func _on_utility_id_pressed(id: int) -> void:
 	match id:
 		0: 
 			var total : Vector2i = Pages.get_count_total()
+			var total_with_skip : Vector2i = Pages.get_count_total(true)
 			var on_page : Vector2i = Pages.get_count_on_page(get_current_page_number())
+			var on_page_with_skip : Vector2i = Pages.get_count_on_page(get_current_page_number(), true)
+			
+			var total_word_skip_diff := ""
+			var total_char_skip_diff := ""
+			var page_word_skip_diff := ""
+			var page_char_skip_diff := ""
+			
+			if total.x != total_with_skip.x:
+				total_word_skip_diff = " (%s including skipped)" % total_with_skip.x
+			if total.y != total_with_skip.y:
+				total_char_skip_diff = " (%s including skipped)" % total_with_skip.y
+			if on_page.x != on_page_with_skip.x:
+				page_word_skip_diff = " (%s including skipped)" % on_page_with_skip.x
+			if on_page.y != on_page_with_skip.y:
+				page_char_skip_diff = " (%s including skipped)" % on_page_with_skip.y
 			var dialog_text := str(
-				"Total Word Count: [b]%s[/b]\n" % total.x,
-				"Total Character Count: [b]%s[/b]" % total.y,
+				"Total Word Count: [b]%s[/b] %s\n" % [total.x, total_word_skip_diff],
+				"Total Character Count: [b]%s[/b] %s" % [total.y, total_char_skip_diff],
 				"\n\n",
-				"Word Count on page: [b]%s[/b]\n" % on_page.x,
-				"Character Count on page: [b]%s[/b]\n" % on_page.y,
+				"Word Count on page: [b]%s[/b] %s\n" % [on_page.x, page_word_skip_diff],
+				"Character Count on page: [b]%s[/b] %s\n" % [on_page.y, page_char_skip_diff],
 				"\n",
 				"[wave amp=10.0 freq=-4 connected=1][color=f2e260]Note:[/color][/wave]",
 				" Words are counted by spaces."

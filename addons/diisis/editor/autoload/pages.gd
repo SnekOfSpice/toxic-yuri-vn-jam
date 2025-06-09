@@ -944,11 +944,15 @@ func get_text_on_page(page_number:int) -> String:
 	return result
 
 ## Returns word count in x and character count in y
-func get_count_on_page(page_number:int) -> Vector2i:
+func get_count_on_page(page_number:int, include_skipped:=false) -> Vector2i:
 	var character_count := 0
 	var word_count := 0
 	var data := get_page_data(page_number)
+	if data.get("skip", false) and not include_skipped:
+		return Vector2i.ZERO
 	for line in data.get("lines", []):
+		if line.get("skip", false) and not include_skipped:
+			continue
 		var line_type = line.get("line_type")
 		var content = line.get("content")
 		if line_type == DIISIS.LineType.Choice:
@@ -973,10 +977,10 @@ func get_count_on_page(page_number:int) -> Vector2i:
 	return Vector2(word_count, character_count)
 
 ## Returns word count in x and character count in y
-func get_count_total() -> Vector2i:
+func get_count_total(include_skipped:=false) -> Vector2i:
 	var sum := Vector2.ZERO
 	for i in page_data.keys():
-		var result = get_count_on_page(i)
+		var result = get_count_on_page(i, include_skipped)
 		sum.x += result.x
 		sum.y += result.y
 	

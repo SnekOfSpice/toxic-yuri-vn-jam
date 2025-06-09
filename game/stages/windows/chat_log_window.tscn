@@ -75,3 +75,5 @@ size_flags_vertical = 3
 mouse_filter = 1
 bbcode_enabled = true
 fit_content = true
+
+[connection signal="child_entered_tree" from="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent/PastContainer" to="." method="_on_past_container_child_entered_tree"]

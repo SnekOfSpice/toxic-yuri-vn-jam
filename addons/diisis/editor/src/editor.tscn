@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://bjaj8aln7f08r"]
+[gd_scene load_steps=36 format=3 uid="uid://bjaj8aln7f08r"]
 
 [ext_resource type="Theme" uid="uid://jddhsc4auo55" path="res://addons/diisis/editor/visuals/theme/amber_cherryblossom.tres" id="1_nb6ej"]
 [ext_resource type="Script" uid="uid://chwojuffots4c" path="res://addons/diisis/editor/src/editor.gd" id="1_r2t7d"]
@@ -24,7 +24,6 @@
 [ext_resource type="Texture2D" uid="uid://bgycyoomk20tr" path="res://addons/diisis/editor/visuals/theme/buttons_ui/icon_folder.png" id="9_mh3o1"]
 [ext_resource type="Texture2D" uid="uid://7ht8k4ris3wj" path="res://addons/diisis/editor/visuals/theme/buttons_ui/page_view_truncated.png" id="9_o3byv"]
 [ext_resource type="Texture2D" uid="uid://b7m22tnt1f2ft" path="res://addons/diisis/editor/visuals/theme/buttons_ui/page_view_minimal.png" id="10_qli38"]
-[ext_resource type="PackedScene" uid="uid://dh7lwmyvues6e" path="res://addons/diisis/editor/src/word_count_dialog.tscn" id="12_icedl"]
 [ext_resource type="Texture2D" uid="uid://cowtdbgbvq7fp" path="res://addons/diisis/parser/style/icon_instruction_handler.svg" id="14_m63dd"]
 [ext_resource type="PackedScene" uid="uid://cqaxdhdqxqyrw" path="res://addons/diisis/editor/src/text_search_popup.tscn" id="14_uw1uu"]
 [ext_resource type="PackedScene" uid="uid://ceoicybbk4rjn" path="res://addons/diisis/editor/src/file_config_popup.tscn" id="19_rgmxs"]
@@ -590,9 +589,6 @@ visible = false
 [node name="DropdownWindow" parent="Popups" instance=ExtResource("9_i203b")]
 visible = false
 transient = true
-
-[node name="WordCountDialog" parent="Popups" instance=ExtResource("12_icedl")]
-visible = false
 
 [node name="TextSearchPopup" parent="Popups" instance=ExtResource("14_uw1uu")]
 visible = false
