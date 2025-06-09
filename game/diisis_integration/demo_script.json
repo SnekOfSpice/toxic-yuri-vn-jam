@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 14,
+		"current_page_number": 9,
 		"ingest_capitalize": false,
 		"ingest_whitespace": true,
 		"page_view": 0,
@@ -455,7 +455,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854749840,
+		"id_counter": -9223372036854749588,
 		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa\nx: xelia\nl: leah\nf: franco\nno: noni\nb: blank",
 		"locales_to_export": [
 			"de_DE",
@@ -4566,7 +4566,7 @@
 							"delay_before": 0.0,
 							"meta.has_reverse": false,
 							"meta.reverse_text": "",
-							"meta.text": "splash_text(life,2, city, none)",
+							"meta.text": "splash_text(life ,2, city, none)",
 							"meta.validation_status": "OK",
 							"name": "splash_text",
 							"reverse_name": ""
@@ -4733,47 +4733,6 @@
 						"content": {
 							"meta.locked": false,
 							"meta.validation_status": "OK",
-							"text_id": "1749455578.148--9223372036854752220"
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"id": "1749455578.148--9223372036854752221",
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": true,
-						"meta.line_index": 4,
-						"meta.selector": {
-							"selected": false
-						},
-						"skip": false
-					},
-					{
-						"address": "9.5",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.controls_collapsed": true,
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"meta.locked": false,
-							"meta.validation_status": "OK",
 							"text_id": "1749479875.090--9223372036854750197"
 						},
 						"facts": {
@@ -4789,14 +4748,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "9.6",
+						"address": "9.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -4830,6 +4789,52 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
+						"meta.line_index": 5,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "9.6",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0.0,
+							"delay_before": 0.0,
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "splash_text(carnage, 0, city, none)",
+							"meta.validation_status": "OK",
+							"name": "splash_text",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1749481258.190--9223372036854749737",
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
 						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
@@ -4838,6 +4843,47 @@
 					},
 					{
 						"address": "9.7",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1749480994.946--9223372036854749738"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1749480994.946--9223372036854749739",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 7,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "9.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -4876,14 +4922,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "9.8",
+						"address": "9.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -4917,7 +4963,7 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 8,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4925,9 +4971,9 @@
 					}
 				],
 				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 487,
+				"meta.scroll_vertical": 204,
 				"meta.selected": false,
-				"next": 10,
+				"next": 10.0,
 				"number": 9,
 				"page_key": "argo xelia concert + haya sex",
 				"skip": false,
@@ -10513,9 +10559,9 @@
 				},
 				"lines": [
 					{
-						"address": "34.0",
+						"address": "35.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10525,7 +10571,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10547,21 +10593,21 @@
 						},
 						"header": [],
 						"id": "1749094068.139--9223372036854769377",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "34.1",
+						"address": "35.1",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10571,7 +10617,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10588,21 +10634,21 @@
 						},
 						"header": [],
 						"id": "1749309628.819--9223372036854757265",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1.0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "34.2",
+						"address": "35.2",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10612,7 +10658,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10629,21 +10675,21 @@
 						},
 						"header": [],
 						"id": "1744999499.058--9223372036854774709",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2.0,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "34.3",
+						"address": "35.3",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10653,7 +10699,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10675,22 +10721,22 @@
 						},
 						"header": [],
 						"id": "1749094249.489--9223372036854769376",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3.0,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 0.0,
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
-				"next": 36,
+				"next": 35.0,
 				"number": 35,
 				"page_key": "the end",
 				"skip": false,
@@ -10852,7 +10898,7 @@
 			"1749232733.350--9223372036854764006": "[]>audrey:That's why I do the pickups. To rescue as many as I can.",
 			"1749233210.718--9223372036854763615": "[]>haley:you saw the hole huh?\n[]>narrator:What the months of drug use are inhibiting from recall, Audrey offered numerous times to Haley, only that the letter never gave enough of a fuck to actually accompany her. [whatever reword this]",
 			"1749233769.986--9223372036854763350": "[]>argo{target|5}: getting audrey to show me The Hole today\n[]>argo: whatever that is\n[]>argo: i know youre probably asleep bc it *is* the middle of the night but yea just wanted to say hi\n[]>argo: going on adventures and shit\n[]>argo: i hope youre sleeping well awa",
-			"1749279401.730--9223372036854760547": "[]>narrator:it'*s a lovely slightly-too-late evening after the concert and xelia just returned home. it has these powers bordering on clairvoicance (called delusions or whateverthefuck by psychiatry industry) and can sense / know. just in general. it is still too early to pinpoint the retrocause of this impending hurt but there is one certain gravity well of fate strings on the horizon, and potentially several more not yet visible. regardless, this will hurt like a motherfucker and the catharsis will be the hurt. xelia bites itself. xelia furthermore apologizes for her vagueness but with matters of the future, these thoughts are not to be crystalized until they are ready-which is when their target state is reached.\n[]>narrator:xelia is drunk as shit.",
+			"1749279401.730--9223372036854760547": "[]>narrator:it'*s a lovely slightly-too-late evening after the concert and xelia just returned home. it has these powers bordering on clairvoicance (called delusions or whateverthefuck by psychiatry industry) and can sense / know. just in general. it is still too early to pinpoint the retrocause of this impending hurt but there is one certain gravity well of fate strings on the horizon, and potentially several more not yet visible. regardless, this will hurt like a motherfucker and the catharsis will be the hurt. xelia bites itself. xelia furthermore apologizes for her vagueness but with matters of the future, these thoughts are not to be crystalized until they are ready-which is when their target state is reached.\n[]>narrator:xelia is drunk as shit.\n[]>audrey{target|3}:we should hang out again\n[]>argo{target|3}:sure! just came home from a concert\n[]>audrey:just came home from hanging out with leah\n[]>argo:cool.\n[]>audrey:btw\n[]>audrey:whats you pronouns again\n[]>argo:it/its\n[]>audrey:ah bc leah kept she/hering you\n[]>argo:yea thats another tihn g about her\n[]>argo:said its too dehumaniing and shes uncomfortable with it when thats the entire point\n[]>argo:ugh\n[]>audrey:shit im sorry that sucks\n[]>argo:yea lol",
 			"1749279466.758--9223372036854760518": "[]>narrator{target|1}: <call:show_image(roof)>...and when people get worried, you start to feel like shit\nthings would be easier if people didnt give a shit\n[]>harshnoise{target|1}: well but we do care about you\n[]>harshnoise{target|1}: so\n[]>xelia{target|1}: god fuck off\n[]>xelia: i know you do\n[]>xelia: its what makes this all so fucking exhausting\n[]>xelia{target|1}: just lemme be silly\n[]>harshnoise{target|1}: id rather sit on the edge here than you be silly here on your own\n[]>xelia{target|1}: mdghfjfg",
 			"1749279526.732--9223372036854760505": "[]>narrator:during cutting: (before groomimg) (PUT THIS SOMEWHERE ELSE)\nsometimes you have this building premonition. that there's a crash coming soon. sometimes its directly after waking up, across a single day, sometimes its across an infinite expanse of eerily-fine weeks. and you build and build towards that crash and then some fucking faggots will accuse you of being unhealthy about it when you knew all along and couldve stopped at any point but didnt because you know you need to do this or the consequences will be fucking catastrophic. SOMETIMES you lose your FUCKING GF IN A SNUFF PRODUCTION. Only for you to be \"rescued\" a few days later.\nand then you bandage your head hwoever you can.\n[]>argo: hi\n[]>argo: xelia\n[]>argo: please answer\n[]>xelia: im busy\n[]>argo: i knew youd say that which is why im reaching out\n[]>argo: i dont want you to suffer alone today\n[]>xelia: suffer with what lol\n[]>xelia: im fine\n[]>argo: are you\n[]>xelia: just get off my fucking case and let me cut myself in peace\n[]>xelia: please\n[]>xelia: im alive\n[]>xelia: isnt that what counts\n[]>xelia: haha\n[]>xelia: but no seriously ill be fine\n[]>xelia: ttyl\n[]>narrator: it's so annoying when these faggots are worried for your safety when you and they know youll survive. and if you dont that wouldnt be a loss either. slight shame for the missed out shenanigans but its not like thats a reason to stay alive. it just sweetens the black hole in your chest and provides a nice contrast to the box cutter you got for cutting so many boxes.\n[]>narrator: you should go to sleep.\n[]>narrator: ...\n[]>narrator: forever, preferrably.\n[]>narrator: ...\n[]>narrator: it's gonna be like that every year huh.",
 			"1749282337.029--9223372036854760172": "[]>narrator: Maya is passed out in Roaches' arms. Harsh Noise is going to the hardware store. Vanessa is Getting Sober again since about five hours ago, and Haley just scored a mean deal of meth. Audrey invited those two because she's bored out of her mind and those two miraculously tend to have time whenever she wants, so they spend a lot of time together, mostly during nightly hours. When Nessa and Haley entered, Audrey was already starting to get wasted again, and the brainrotting mindwaves emenating from the quiet TV in the background have none nothing but worsen her conditio[]>narrator: Being a fucking idiot. \n[]>narrator: The three talk about various life shit, as you do, such as how much they care about having their dicks intact and which online hellholes they frequent and why any of them are simultaneously better and worse and more unique than the rest. <mp>Fuuuuuck, Nessa thinks, sometimes life really is just nothing but drugs and body horror. Haley can't read her thoughts and instead rambles on about some shitass shounen she's been watching. <mp>Audrey, is bored just as much and is about to do something about it.",
@@ -10872,7 +10918,7 @@
 			"1749308078.783--9223372036854756791": "[]>audrey{target|3}: OH HEY SINCE WERE ON THE TOPIC OF RUINING RELATOPNSHIPS\n[]>audrey: DO YOU HAVE ANY IDEA HOPW FUCKING AGONIZING IT IS TO BE AORUND YOU\n[]>audrey: I FUCKING HAD A CRUSH ON YOU THE MOMENT WE MET\n[]>audrey: I HTINK MY FIRST WORDS OUT OF MY MOUTH TOWADS YOU WERE LITERALLY \"HEY I THINK YOURE FUCKING\" CUTE OR SOME SHIT\n[]>audrey: BUT BNO YOU HAD TO BOD GILRIE ALL OVER NESSA AND LEAVE ME TO SHOW YO HOW TH WORLD RUNS INSTEAD YOU FUCKING FAILURE\na : YEA CONGRSTS ON HAVING A BUNCH OF TRANSFAGS BE MATERIALLY DEPENDENT ON YOU YOU FUCK\n[]>audrey: I HOPE OYU FUCKING DIE\n[]>argo{target|3}: Audrey\n[]>argo: What's up? Are you fine? I mean evidently not but what\n[]>audrey: OH YEA SORRY FOR BEING AN ALCOHOLIC AND NOT DOING WHATEVER FUCKING CHEMNS OYU ALL DO\n[]>argo: are you drunk?\n[]>audrey: OF YOU COURSE IM DRUNK\n[]>audrey: haley and maya broke up and noni is all overyou and i hope she said that to you already because if not shes fucking shit out of luck and ofc you had to get lucky and score nessa\n[]>audrey: i never wanted to be yalls fucking relationship therapist",
 			"1749308358.959--9223372036854756740": "[]>audrey{target|3}:leah you were fucking right. argo has ruined my life",
 			"1749308513.963--9223372036854756712": "[]>argo: fucj you im leaving\n[]>xelia: oh yea bc Leah will listen to how you wanna fuck your way through the local elementary school\n[]>argo: listen idk anymore\n[]>argo:ever since nessa entered my life ive been kinda drifting away from those headspaces\n[]>argo:i havent even looked at necro stuff since i met her\n[]>argo:and in general idk\n[]>argo:mellowing out?\n[]>harshnoise:that's a shame\n[]>narrator:harsh noise leaves, argo smokes dmt with xelia",
-			"1749309628.819--9223372036854757264": "[]>narrator:Maya is getting fucked at the perimeter of the hole by Harsh Noise.",
+			"1749309628.819--9223372036854757264": "[]>narrator:Maya is getting fucked at the perimeter of the hole by Harsh Noise.\n[]>narrator:alt? Maya is about to be killed at the hole. Vanessa is currently crying waiting for argo to come home. Argo is out on puppy run.",
 			"1749311039.755--9223372036854757184": "[]>narrator: vanessa leans her head on argos shoulder.\n[]>vanessa:its been ages since I could talk to someone about this. The others just have... kinda different experiences.\n[]>argo:I'm sorry- and glad.",
 			"1749372883.342--9223372036854757215": "[]>audrey: Hey check this shit out.\n[]>vanessa: Woahwoahwoahwoah what the fuck are you doing Audrey??\n[]>audrey: Calm down, it's not even loaded.\n[]>vanessa: Nah, fuck that. Gun safety and all that is like... important.\n[]>audrey: Nah lol.\n[]>haley: Oh this is stupid.\n[]>narrator: And she just grinds and grinds the tip of the barrel with her own dick, a wonderful display of dryhump frotting gunplay.\n[]>vanessa: Audrey what are you doing?\n[]>audrey: Haha...",
 			"1749374047.695--9223372036854757082": "[]>",
@@ -10892,6 +10938,7 @@
 			"1749459796.765--9223372036854751475": "[]>narrator:nya\n[]>argo:happy motivational mike monday from me and the crew from LD:SPCN\n[]>vanessa:yaay yippie\n[]>maya:hehe",
 			"1749479191.203--9223372036854750313": "[]>audrey:talk about puppy rescue\n[]>argo:and the hole!",
 			"1749479875.090--9223372036854750197": "[]>audrey{target|2}: hanging out with leah\n[]>leah{target|2}: hanigng out with audrey",
+			"1749480994.946--9223372036854749738": "[]>maya: please please please fucking knock me up god\n[]>haley: yea you fucking worthless tranny bitch\n[]>narrator: brng the dusters here\n[]>narrator: incredibly violent sex",
 			"amber-is-happy": "[]>amber{amber-emotion|happy}: I'm really happy to hear that! <mp>I think you're cool too!"
 		},
 		"text_lead_time_other_actor": 0.0,

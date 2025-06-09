@@ -247,7 +247,9 @@ const SPLASH_STRINGS := {
 	"not_gentle" : "the world is not a gentle place.",
 	"bottom_surgery" : "Bottom surgery.",
 	"cosmic_sorority" : "Emerging from the waves, a cosmic sorority.",
-	"fuck" : "Fuck."
+	"fuck" : "Fuck.",
+	"carnage" : "In carnage you will bloom.",
+	"quandary_of_thought" : "A quandary of thought.",
 }
 func splash_text(key:String,
 	fade_in := 0.0,

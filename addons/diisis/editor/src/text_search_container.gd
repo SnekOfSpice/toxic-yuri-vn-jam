@@ -72,6 +72,10 @@ func display_results(search:String):
 	
 	find_child("ResultCountLabel").text = "%s results" % result_count
 	
+	
+	if item_list.item_count == 0:
+		return
+	
 	var reselected_text := false
 	for idx in item_list.item_count:
 		if item_list.get_item_text(idx) == selection_text_before:
