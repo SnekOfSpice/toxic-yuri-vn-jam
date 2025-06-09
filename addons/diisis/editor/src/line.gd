@@ -141,7 +141,7 @@ func serialize() -> Dictionary:
 	
 	var data = {}
 	
-	data["line_type"] = line_type
+	data["line_type"] = int(line_type)
 	data["header"] = find_child("Header").serialize()
 	data["facts"] = find_child("Facts").serialize()
 	data["conditionals"] = find_child("Conditionals").serialize()
@@ -150,7 +150,7 @@ func serialize() -> Dictionary:
 	data["meta.line_index"] = get_index()
 	data["meta.facts_visible"] = find_child("FactsVisibilityToggle").button_pressed
 	data["meta.conditionals_visible"] = find_child("ConditionalsVisibilityToggle").button_pressed
-	data["meta.indent_level"] = indent_level
+	data["meta.indent_level"] = int(indent_level)
 	data["meta.selector"] = find_child("AddressSelectActionContainer").serialize()
 	data["address"] = DiisisEditorUtil.get_address(self, DiisisEditorUtil.AddressDepth.Line)
 	data["id"] = id
