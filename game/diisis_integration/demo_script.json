@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 12,
+		"current_page_number": 26,
 		"ingest_capitalize": false,
 		"ingest_whitespace": true,
 		"page_view": 0,
@@ -455,7 +455,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854751344,
+		"id_counter": -9223372036854751303,
 		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa\nx: xelia\nl: leah\nf: franco\nno: noni\nb: blank",
 		"locales_to_export": [
 			"de_DE",
@@ -8965,7 +8965,7 @@
 					{
 						"address": "26.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -8975,7 +8975,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -8997,12 +8997,12 @@
 						},
 						"header": [],
 						"id": "1749206979.806--9223372036854764508",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -9011,7 +9011,7 @@
 					{
 						"address": "26.1",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -9021,7 +9021,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -9038,12 +9038,12 @@
 						},
 						"header": [],
 						"id": "1749206850.380--9223372036854764532",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1.0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						},
@@ -9052,7 +9052,7 @@
 					{
 						"address": "26.2",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -9062,11 +9062,18 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
 						"content": {
+							"meta.function_calls": [
+								"shake_windows(5)",
+								"shake_windows(15)",
+								"shake_windows(5)",
+								"shake_windows(5)",
+								"shake_windows(2)"
+							],
 							"meta.locked": false,
 							"meta.validation_status": "OK",
 							"text_id": "1749205570.601--9223372036854764541"
@@ -9079,23 +9086,23 @@
 						},
 						"header": [],
 						"id": "1749205570.601--9223372036854764542",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2.0,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 3.0,
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 3,
 				"meta.selected": false,
 				"next": 27.0,
-				"number": 26.0,
+				"number": 26,
 				"page_key": "argo and noni talk about nonis crush",
 				"skip": false,
 				"terminate": false
@@ -10594,7 +10601,7 @@
 			"1749204546.103--9223372036854764782": "[]>narrator:Argo ",
 			"1749204663.068--9223372036854764780": "[]>narrator: Argo just got off another night shift. It's headed to someone's place now. Maya has her head in haley's lap. Haley is stroking her puppy's hair. Audrey is drinking some cheap beer. Nessa is just focused on the convo between them.\n[]>narrator: Eventually, the doorbell rings and after the usual 4 am introductions, \n[]>audrey: do you always work those shifts btw?\n[]>argo: at least for the month\n[]>audrey: well it works out for all of us so that's nice\n[]>argo: that's whatever to me by now lol",
 			"1749204783.169--9223372036854764746": "[]>narrator: Argo's apartment is filled with the sounds of cringey last-decade nightcore love songs and their nostalgia-driven descendants from last month. nessa is just so fucking cute, argo thinks. it has to be more normal, argo also thinks. fuck that, actually, it thinks then. why be normal about someone when you can just fucking burn up from the warmth they ignite inside your chest? <mp>another small hardstyle-esque steppy and kicky dance sequence through the living room follows <mp>\"Oh FUCK I dfjhgbfjhfg.\" is roughly what every other sentence from argo's hyperactive brain-therefore-mouth sounds like right now.\n[]>argo: we've only seen each other like three times. and once she was so fucking drunk. and once she was well... fuck.\n[]>narrator: I'm glad Audrey is largely fine, Argo thinks, before immediately flushing its empath thoughts away with more squishy manic love. It knows this can crash. Fucking has in the past and that's how it added a few more stitches to the area above the ulna but also it beats whatever this vaguely whore-shaped gas station shtick it that it has going on right now. If it can just convince nessa to rot away together. Oh my god, it thinks, this is so stupid.\n[]>narrator: Argo lets out a yell, pomfs into the pillow, gets up again, tries to go any which way about its day in a capacity that exceeds the constant hypomanic episodes originating from this rapidly-soul-engulfing crush.",
-			"1749205570.601--9223372036854764541": "[]>noni{target|3}: hey argo\n[]>noni: i have a thing i wanna talk about with u\n[]>argo{target|3}: whats up\n[]>noni: i had like- an episode\n[]>noni: idk i just couldnt cope with u not wanting to fuck me\n[]>noni: i think i gave myself a concussion\n[]>argo: oh fuck what did you do?? (concerned)\n[]>noni: nothing just bashed my head into the sidewalk a bit\n[]>noni: butyea\n[]>noni: wanted 2 let u know that u made me feel things thatre mostly positive but also really intense and i didnt really know how to deal with it but maybe u wont hate me for them and if yes thatd be nice\n[]>noni: and itd probably be helpful 2 let u kno abt this someone from the center said\n[]>noni: but also if u do hate me i totally get it and ill fuck off \n[]>noni: sorry\n[]>argo: oh noni\n[]>argo: poor girl, i dont hate you for this\n[]>argo: i totally get you\n[]>argo: like sorry if ive been more distant than you mightve heard from others? idk\n[]>argo: i very recently also got absorbed into something as intense but with someone that reciprocates that intensity and thats why ive been neglecting a bunch of my social life and im only now trying to get better again\n[]>argo: like yk make people feel cared about\n[]>argo: but sometimes i also need to lose myself to like feel like my system is fine and idk im really exhausted lol\n[]>argo: tldr, ty for telling me. i really appreciate it.\n[]>argo: ill be there for you as best as i can when shit happens again\n[]>argo: you can just let me know\n[]>noni: u rly dont hate me?\n[]>argo: no.\n[]>noni: ty.\n[]>noni: can we see each other again tho?\n[]>noni: as friends\n[]>argo: sure.\n[]>argo: might take a small break from going out a bunch because on top of this months' night shifts it has been\n[]>argo: ugh\n[]>argo: but yea, maybe in 1 or 2 weeks?\n[]>noni: there's a concert at the dollhouse next saturday\n[]>argo: sure.\n[]>noni: thank you\n[]>argo: gladly :3",
+			"1749205570.601--9223372036854764541": "[]>noni{target|3}: hey argo\n[]>noni: i have a thing i wanna talk about with u\n[]>argo{target|3}: whats up\n[]>noni: i had like- an episode\n[]>noni: idk i just couldnt cope with u not wanting to fuck me\n[]>noni: i think i gave myself a concussion\n[]>argo: oh fuck what did you do?? (concerned)\n[]>noni: nothing just bashed my head into the sidewalk a bit\n[]>noni: butyea\n[]>noni: wanted 2 let u know that u made me feel things thatre mostly positive but also really intense and i didnt really know how to deal with it but maybe u wont hate me for them and if yes thatd be nice\n[]>noni: and itd probably be helpful 2 let u kno abt this someone from the center said\n[]>noni: but also if u do hate me i totally get it and ill fuck off \n[]>noni: sorry\n[]>argo: oh noni\n[]>argo: poor girl, i dont hate you for this\n[]>argo: i totally get you\n[]>argo: like sorry if ive been more distant than you mightve heard from others? idk\n[]>argo: i very recently also got absorbed into something as intense but with someone that reciprocates that intensity and thats why ive been neglecting a bunch of my social life and im only now trying to get better again\n[]>narrator{target|2}:Oh great it has someone better than you.\n[]>argo: like yk make people feel cared about\n[]>narrator:<call:shake_windows(5)>It has someone else.\n[]>argo: but sometimes i also need to lose myself to like feel like my system is fine and idk im really exhausted lol\n[]>argo: tldr, ty for telling me. i really appreciate it.\n[]>narrator:<call:shake_windows(15)>It fucking has someone else.\n[]>argo: ill be there for you as best as i can when shit happens again\n[]>argo: you can just let me know\n[]>noni: u rly dont hate me?\n[]>narrator:<call:shake_windows(5)>Why are you even still here.\n[]>argo: no.\n[]>noni: ty.\n[]>noni: can we see each other again tho?\n[]>noni: as friends\n[]>argo: sure.\n[]>argo: might take a small break from going out a bunch because on top of this months' night shifts it has been\n[]>narrator:<call:shake_windows(5)>You're not worth its time.\n[]>argo: ugh\n[]>argo: but yea, maybe in 1 or 2 weeks?\n[]>noni: there's a concert at the dollhouse next saturday\n[]>argo: sure.\n[]>narrator:<call:shake_windows(2)>Fuck.\n[]>noni: thank you\n[]>argo: gladly :3",
 			"1749206850.380--9223372036854764531": "[]>narrator: when you do acid, it kinda fries your entire brain. well not really, but it does have a substantial aftershock to it. an aftershock, which Veil is currently experiencing, in a formerly-sleepy embrace with Pain. <mp>Pain herself, is still asleep. Veil, is not. So it checks its phone.",
 			"1749208202.563--9223372036854764408": "[]>narrator: Noni's room in the recovery center is starting to look home-y. Little LED lights and glow-in-the-dark stars dot the walls and a few printouts of her favorite manga panels are already taped up to the wall. The other residents are glad she's taking to the center so well, so it comes at the exhaustion of everyone in the community center in the bottom floor when she's sobbing her eyes out, running out into the street, concussing herself, and then has to be dragged back by the others.\n[]>narrator: Noni just wants her cranium to shatter <call:shake_windows(8)>.\n[]>blank: Noni.\n[]>noni: Jfgnjhkf ;-;\n[]>blank: It's alright . It'll all be fine you're safe here with us\n[]>narrator: She just expells so many more tears at that.\n[]>blank: Please tell me what's up girl\n[]>noni: No...\n[]>noni: This is so stupid and idek why I'm reacting this negatively\n[]>noni: I just\n[]>noni: Fuck....\n[]>blank: Noni. You're safe.\n[]>narrator: She's being held. And sobs more.\n[]>noni: <call:reset_window_rotations(8)>argo doesnt even want me\n[]>blank: Argo?\n[]>noni: Met it recently.\n[]>noni: It took me to a really cool show and I just. (that didnt happen atm lol)\n[]>noni: Have all these emotions about it\n[]>noni: And god I am such a pathetic mess\n[]>noni: We have the same music taste and get along really well\n[]>noni: It's like.\n[]>noni: God the first time in.\n[]>noni: [cries]\n[]>noni: I just wanna get out.\n[]>noni: Please.\n[]>noni: PLEASE.\n[]>blank: You're outs- <advance>\n[]>noni: Please let my face meet the concrete again.\n[]>noni: The shelter was better than having to live outside.\n[]>blank: Noni.\n[]>blank: This'll be fine.\n[]>blank: You're an absolute mess because you just got out of absolute hell.\n[]>noni: But i dont wanna have to deal with this.\n[]>noni: I fucking hate this...\n[]>blank: Have you told argo or anyone else yet?\n[]>noni: No...\n[]>blank: Then maybe do that\n[]>blank: Let it be there for you maybe\n[]>narrator: Noni does nothing but cry more into riley's arms. Such is the shitbox codependency life. Then she cries some more in bed.",
 			"1749230969.669--9223372036854764392": "[]>narrator: <call:show_image(car)>Out on the road, this gaggle of girls is now barrelling towards the domicile of their mildly-integrated vet friend. If any of them were aware of it, they'd probably be glad about this not being the most catastrohpically shit plan they ever devised.",

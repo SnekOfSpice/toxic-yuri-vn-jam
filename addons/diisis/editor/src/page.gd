@@ -52,14 +52,14 @@ func serialize() -> Dictionary:
 		init(number)
 	var data := {}
 	
-	data["number"] = number
+	data["number"] = int(number)
 	data["page_key"] = get_page_key()
 	data["next"] = find_child("NextLineEdit").value
-	data["meta.scroll_vertical"] = find_child("ScrollContainer").scroll_vertical
+	data["meta.scroll_vertical"] = int(find_child("ScrollContainer").scroll_vertical)
 	data["terminate"] = find_child("TerminateCheck").button_pressed
 	data["facts"] = find_child("Facts").serialize()
 	data["meta.selected"] = find_child("LineSelector").button_pressed
-	data["meta.address_mode_next"] = find_child("AddressModeButton").get_mode()
+	data["meta.address_mode_next"] = int(find_child("AddressModeButton").get_mode())
 	data["skip"] = find_child("SkipCheckBox").button_pressed
 	
 	var lines_data := []
