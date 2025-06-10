@@ -431,11 +431,11 @@ func go_back():
 		instruction_stack.append(address_content)
 		previous_line_type = get_line_type(address_trail[address_trail_index + trail_shift])
 		trail_shift -= 1
-		if address_trail_index + trail_shift <= 0:
+		if address_trail_index + trail_shift < 0:
 			a = false
 			trail_shift = 0
 			break
-	if a:
+	if a: # cant remember what this fixed
 		trail_shift += 1
 	instruction_stack.pop_back()
 	

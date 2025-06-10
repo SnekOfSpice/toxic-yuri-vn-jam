@@ -44,11 +44,15 @@ var target_static := 0.0
 var last_body_label_target := 0
 var target_label_id_by_actor := {}
 
+func get_default_targets() -> Dictionary:
+	var result := {}
+	for actor in line_reader.name_map.keys():
+		result[actor] = 0
+	return result
+
 func _ready():
 	find_child("DevModeLabel").visible = devmode_enabled
-	target_label_id_by_actor.clear()
-	for actor in line_reader.name_map.keys():
-		target_label_id_by_actor[actor] = 0
+	target_label_id_by_actor = get_default_targets()
 	find_child("StartCover").visible = true
 	ParserEvents.actor_name_changed.connect(on_actor_name_changed)
 	ParserEvents.actor_name_about_to_change.connect(on_actor_name_about_to_change)
@@ -57,7 +61,7 @@ func _ready():
 	ParserEvents.instruction_completed.connect(on_instruction_completed)
 	ParserEvents.read_new_line.connect(on_read_new_line)
 	ParserEvents.dialog_line_args_passed.connect(on_dialog_line_args_passed)
-	#ParserEvents.go_back_accepted.connect(on_go_back_accepted)
+	ParserEvents.go_back_accepted.connect(on_go_back_accepted)
 	#ParserEvents.start_new_dialine.connect(on_start_new_dialine)
 	
 	GameWorld.game_stage = self
@@ -93,12 +97,40 @@ func set_enable_dither(value:bool):
 	find_child("DitherLayer").visible = value
 	find_child("DitherLayer2").visible = value
 
-var target_label_history_by_subaddress := {}
+func get_ready_targets_by_subaddress() -> Dictionary:
+	return {
+	0 : {
+		0:{
+			0: get_default_targets()
+		}
+	}
+}
+@onready var targets_by_subaddress := get_ready_targets_by_subaddress()
 #var window_visibilities_by_subaddress := {}
 func on_go_back_accepted(page:int, line:int, dialine:int):
 	var subaddress := str(page, ".", line, ".", dialine)
-	if target_label_history_by_subaddress.has(subaddress):
-		target_label_id_by_actor = target_label_history_by_subaddress.get(subaddress).duplicate()
+	#windows can get hidden through and retargeted through functions, so there also needs to be a function that listens to any new line being read 
+#and when going back, we need to compare to the first possible address
+	var prev_page := page
+	while prev_page > 0:
+		if targets_by_subaddress.has(prev_page):
+			break
+		prev_page -= 1
+	
+	var prev_line := line
+	while prev_line > 0:
+		if targets_by_subaddress.get(prev_page).has(prev_line):
+			break
+		prev_line -= 1
+	
+	var prev_dialine := dialine
+	while prev_dialine > 0:
+		if targets_by_subaddress.get(prev_page).get(prev_line).has(prev_dialine):
+			break
+		prev_dialine -= 1
+	
+	target_label_id_by_actor = targets_by_subaddress[prev_page][prev_line][prev_dialine]
+
 
 func get_window_visibilities() -> Dictionary:
 	var result := {}
@@ -187,8 +219,8 @@ func _unhandled_input(event: InputEvent) -> void:
 		if not find_child("VNUI").visible:
 			return
 		line_reader.request_advance()
-	#elif event.is_action_pressed("go_back"):
-		#line_reader.request_go_back()
+	elif event.is_action_pressed("go_back"):
+		line_reader.request_go_back()
 
 func show_ui():
 	if is_instance_valid(find_child("VNUI")):
@@ -410,7 +442,7 @@ func deserialize(data:Dictionary):
 		set_target_labels(actor, target_label_id_by_actor.get(actor), false)
 	
 	#window_visibilities_by_subaddress = data.get("window_visibilities_by_subaddress", {})
-	target_label_history_by_subaddress = data.get("target_label_history_by_subaddress", {})
+	targets_by_subaddress = data.get("targets_by_subaddress", get_ready_targets_by_subaddress())
 	are_words_being_spoken = data.get("are_words_being_spoken", are_words_being_spoken)
 	
 	set_background(data.get("background"))
@@ -538,7 +570,35 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 		if force_show:
 			window.move_to_top()
 			window.open_if_closed()
-	target_label_history_by_subaddress[line_reader.get_subaddress()] = target_label_id_by_actor.duplicate()
+	
+	var subaddress_arr := Parser.line_reader.get_subaddress_arr()
+	var page : Dictionary
+	var page_index : int = subaddress_arr[0]
+	var line_index : int = subaddress_arr[1]
+	var dialine_index : int = subaddress_arr[2]
+	if targets_by_subaddress.has(page_index):
+		page = targets_by_subaddress.get(page_index)
+	else:
+		page = {}
+		targets_by_subaddress[page_index] = page
+	var line : Dictionary
+	if page.has(line_index):
+		line = page.get(line_index)
+	else:
+		line = {}
+		page[line_index] = line
+	
+	var value_to_save:Dictionary
+	if page_index == 0 and line_index == 0 and dialine_index == 0:
+		value_to_save = get_default_targets()
+	else:
+		value_to_save = target_label_id_by_actor.duplicate()
+	
+	if not line.has(dialine_index):
+		line[dialine_index] = value_to_save
+	
+	targets_by_subaddress[page_index][line_index][dialine_index] = value_to_save
+	
 	last_body_label_target = target_id
 
 var block_about_new_actor_handling := false

@@ -13,7 +13,7 @@ var uid := 0
 @export var icon : Texture2D
 
 func  _ready() -> void:
-	visibilities_by_subaddress = {0:{0:{0:hide_on_ready}}}
+	visibilities_by_subaddress = {0:{0:{0:not hide_on_ready}}}
 	uid = get_index()
 	if hide_on_ready: hide()
 	if include_title_bar:
@@ -50,7 +50,7 @@ func on_go_back_accepted(page:int, line:int, dialine:int):
 	
 	var prev_dialine := dialine
 	while prev_dialine > 0:
-		if visibilities_by_subaddress.get(prev_page).get(prev_line).get(prev_dialine):
+		if visibilities_by_subaddress.get(prev_page).get(prev_line).has(prev_dialine):
 			break
 		prev_dialine -= 1
 	
@@ -58,7 +58,7 @@ func on_go_back_accepted(page:int, line:int, dialine:int):
 
 func on_visibility_changed():
 	dragging = false
-	return
+	#return
 	var subaddress_arr := Parser.line_reader.get_subaddress_arr()
 	var page : Dictionary
 	var page_index : int = subaddress_arr[0]
@@ -76,10 +76,16 @@ func on_visibility_changed():
 		line = {}
 		page[line_index] = line
 	
-	if not line.has(dialine_index):
-		line[dialine_index] = visible
+	var value_to_save:bool
+	if page_index == 0 and line_index == 0 and dialine_index == 0:
+		value_to_save = false
+	else:
+		value_to_save = not visible
 	
-	visibilities_by_subaddress[page_index][line_index][dialine_index] = visible
+	if not line.has(dialine_index):
+		line[dialine_index] = value_to_save
+	
+	visibilities_by_subaddress[page_index][line_index][dialine_index] = value_to_save
 
 var dragging := false
 var drag_offset : Vector2

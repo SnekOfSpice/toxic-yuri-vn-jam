@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 12,
+		"current_page_number": 0,
 		"ingest_capitalize": false,
 		"ingest_whitespace": true,
 		"page_view": 0,
@@ -455,7 +455,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854746754,
+		"id_counter": -9223372036854746564,
 		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa\nx: xelia\nl: leah\nf: franco\nno: noni\nb: blank",
 		"locales_to_export": [
 			"de_DE",
@@ -1581,7 +1581,7 @@
 					}
 				],
 				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 2704,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
 				"next": 1.0,
 				"number": 0,
@@ -3243,7 +3243,7 @@
 					{
 						"address": "5.0",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3253,7 +3253,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3275,12 +3275,12 @@
 						},
 						"header": [],
 						"id": "1749093417.979--9223372036854769478",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3289,7 +3289,7 @@
 					{
 						"address": "5.1",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3299,7 +3299,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3316,12 +3316,12 @@
 						},
 						"header": [],
 						"id": "1748894240.252--9223372036854773707",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 1.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3330,7 +3330,7 @@
 					{
 						"address": "5.2",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3340,7 +3340,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3362,12 +3362,12 @@
 						},
 						"header": [],
 						"id": "1749548501.860--9223372036854747133",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 2.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3376,7 +3376,7 @@
 					{
 						"address": "5.3",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3386,7 +3386,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3408,12 +3408,12 @@
 						},
 						"header": [],
 						"id": "1749093698.908--9223372036854769465",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 3.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3422,7 +3422,7 @@
 					{
 						"address": "5.4",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3432,7 +3432,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3449,12 +3449,12 @@
 						},
 						"header": [],
 						"id": "1749093718.907--9223372036854769464",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4,
+						"meta.line_index": 4.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3463,7 +3463,7 @@
 					{
 						"address": "5.5",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3473,7 +3473,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3490,12 +3490,12 @@
 						},
 						"header": [],
 						"id": "1749096822.856--9223372036854768663",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5,
+						"meta.line_index": 5.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3504,7 +3504,7 @@
 					{
 						"address": "5.6",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3514,7 +3514,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3531,23 +3531,23 @@
 						},
 						"header": [],
 						"id": "1749546045.877--9223372036854748026",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6,
+						"meta.line_index": 6.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 597,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 597.0,
 				"meta.selected": false,
 				"next": 6.0,
-				"number": 5,
+				"number": 5.0,
 				"page_key": "argo does drugs out of boredom, goes about its day",
 				"skip": false,
 				"terminate": false
@@ -3563,7 +3563,7 @@
 					{
 						"address": "6.0",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3573,7 +3573,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3595,12 +3595,12 @@
 						},
 						"header": [],
 						"id": "1749028307.094--9223372036854770805",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3609,7 +3609,7 @@
 					{
 						"address": "6.1",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3619,7 +3619,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3639,12 +3639,12 @@
 						},
 						"header": [],
 						"id": "1749028143.833--9223372036854770807",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 1.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3653,7 +3653,7 @@
 					{
 						"address": "6.2",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3663,7 +3663,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3680,12 +3680,12 @@
 						},
 						"header": [],
 						"id": "1749027674.257--9223372036854770825",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 2.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3694,7 +3694,7 @@
 					{
 						"address": "6.3",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3704,7 +3704,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3721,23 +3721,23 @@
 						},
 						"header": [],
 						"id": "1749296164.305--9223372036854757402",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 3.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 260,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 260.0,
 				"meta.selected": false,
 				"next": 7.0,
-				"number": 6,
+				"number": 6.0,
 				"page_key": "post-surgery, the gang gets argos number",
 				"skip": false,
 				"terminate": false
@@ -3753,7 +3753,7 @@
 					{
 						"address": "7.0",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3763,7 +3763,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3785,12 +3785,12 @@
 						},
 						"header": [],
 						"id": "1749479026.135--9223372036854750434",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3799,7 +3799,7 @@
 					{
 						"address": "7.1",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3809,7 +3809,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3826,12 +3826,12 @@
 						},
 						"header": [],
 						"id": "1749204663.068--9223372036854764781",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 1.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3840,7 +3840,7 @@
 					{
 						"address": "7.2",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3850,7 +3850,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3872,12 +3872,12 @@
 						},
 						"header": [],
 						"id": "1749541655.286--9223372036854748654",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 2.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3886,7 +3886,7 @@
 					{
 						"address": "7.3",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3896,7 +3896,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3916,12 +3916,12 @@
 						},
 						"header": [],
 						"id": "1748894285.087--9223372036854773705",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 3.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3930,7 +3930,7 @@
 					{
 						"address": "7.4",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3940,7 +3940,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -3961,12 +3961,12 @@
 						},
 						"header": [],
 						"id": "1749536422.569--9223372036854749076",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4,
+						"meta.line_index": 4.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -3975,7 +3975,7 @@
 					{
 						"address": "7.5",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -3985,7 +3985,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4002,12 +4002,12 @@
 						},
 						"header": [],
 						"id": "1749028659.330--9223372036854770801",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5,
+						"meta.line_index": 5.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4016,7 +4016,7 @@
 					{
 						"address": "7.6",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4026,7 +4026,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4048,12 +4048,12 @@
 						},
 						"header": [],
 						"id": "1749194346.855--9223372036854767579",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6,
+						"meta.line_index": 6.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4062,7 +4062,7 @@
 					{
 						"address": "7.7",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4072,7 +4072,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4089,12 +4089,12 @@
 						},
 						"header": [],
 						"id": "1749194374.744--9223372036854767578",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7,
+						"meta.line_index": 7.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4103,7 +4103,7 @@
 					{
 						"address": "7.8",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4113,7 +4113,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4130,12 +4130,12 @@
 						},
 						"header": [],
 						"id": "1749095410.689--9223372036854769156",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 8,
+						"meta.line_index": 8.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4144,7 +4144,7 @@
 					{
 						"address": "7.9",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4154,7 +4154,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4171,12 +4171,12 @@
 						},
 						"header": [],
 						"id": "1749296337.160--9223372036854757351",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 9,
+						"meta.line_index": 9.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4185,7 +4185,7 @@
 					{
 						"address": "7.10",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4195,7 +4195,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4212,12 +4212,12 @@
 						},
 						"header": [],
 						"id": "1749097513.351--9223372036854768300",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 10,
+						"meta.line_index": 10.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4226,7 +4226,7 @@
 					{
 						"address": "7.11",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4236,7 +4236,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4256,12 +4256,12 @@
 						},
 						"header": [],
 						"id": "1749204440.559--9223372036854764829",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 11,
+						"meta.line_index": 11.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4270,7 +4270,7 @@
 					{
 						"address": "7.12",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4280,7 +4280,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4302,12 +4302,12 @@
 						},
 						"header": [],
 						"id": "1749204393.732--9223372036854764832",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 12,
+						"meta.line_index": 12.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4316,7 +4316,7 @@
 					{
 						"address": "7.13",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4326,7 +4326,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4343,12 +4343,12 @@
 						},
 						"header": [],
 						"id": "1749204783.169--9223372036854764747",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 13,
+						"meta.line_index": 13.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4357,7 +4357,7 @@
 					{
 						"address": "7.14",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4367,7 +4367,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4389,12 +4389,12 @@
 						},
 						"header": [],
 						"id": "1749479070.553--9223372036854750433",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 14,
+						"meta.line_index": 14.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4403,7 +4403,7 @@
 					{
 						"address": "7.15",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4413,7 +4413,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4435,12 +4435,12 @@
 						},
 						"header": [],
 						"id": "1749479084.349--9223372036854750432",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 15,
+						"meta.line_index": 15.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4449,7 +4449,7 @@
 					{
 						"address": "7.16",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4459,7 +4459,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4476,23 +4476,23 @@
 						},
 						"header": [],
 						"id": "1749204393.732--9223372036854764831",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 16,
+						"meta.line_index": 16.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 2791,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 2791.0,
 				"meta.selected": false,
 				"next": 8.0,
-				"number": 7,
+				"number": 7.0,
 				"page_key": "argo hangs out with the gang",
 				"skip": false,
 				"terminate": false
@@ -4508,7 +4508,7 @@
 					{
 						"address": "8.0",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4518,7 +4518,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4535,23 +4535,23 @@
 						},
 						"header": [],
 						"id": "1749028985.085--9223372036854770771",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 0,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
 				"next": 9.0,
-				"number": 8,
+				"number": 8.0,
 				"page_key": "argo asks nessa on a date",
 				"skip": false,
 				"terminate": false
@@ -4567,7 +4567,7 @@
 					{
 						"address": "9.0",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4577,7 +4577,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4599,12 +4599,12 @@
 						},
 						"header": [],
 						"id": "1749479972.470--9223372036854750196",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4613,7 +4613,7 @@
 					{
 						"address": "9.1",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4623,7 +4623,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4640,12 +4640,12 @@
 						},
 						"header": [],
 						"id": "1749130379.116--9223372036854767404",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 1.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4654,7 +4654,7 @@
 					{
 						"address": "9.2",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4664,7 +4664,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4681,12 +4681,12 @@
 						},
 						"header": [],
 						"id": "1749130376.238--9223372036854767406",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 2.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4695,7 +4695,7 @@
 					{
 						"address": "9.3",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4705,7 +4705,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4722,12 +4722,12 @@
 						},
 						"header": [],
 						"id": "1749193559.908--9223372036854767260",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 3.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4736,7 +4736,7 @@
 					{
 						"address": "9.4",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4746,7 +4746,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4763,12 +4763,12 @@
 						},
 						"header": [],
 						"id": "1749479875.090--9223372036854750198",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4,
+						"meta.line_index": 4.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4777,7 +4777,7 @@
 					{
 						"address": "9.5",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4787,7 +4787,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4804,12 +4804,12 @@
 						},
 						"header": [],
 						"id": "1749193322.751--9223372036854767492",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5,
+						"meta.line_index": 5.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4818,7 +4818,7 @@
 					{
 						"address": "9.6",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4828,7 +4828,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4850,12 +4850,12 @@
 						},
 						"header": [],
 						"id": "1749481258.190--9223372036854749737",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6,
+						"meta.line_index": 6.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4864,7 +4864,7 @@
 					{
 						"address": "9.7",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4874,7 +4874,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4891,12 +4891,12 @@
 						},
 						"header": [],
 						"id": "1749480994.946--9223372036854749739",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7,
+						"meta.line_index": 7.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4905,7 +4905,7 @@
 					{
 						"address": "9.8",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4915,7 +4915,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4937,12 +4937,12 @@
 						},
 						"header": [],
 						"id": "1749480226.618--9223372036854750195",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 8,
+						"meta.line_index": 8.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4951,7 +4951,7 @@
 					{
 						"address": "9.9",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -4961,7 +4961,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -4978,12 +4978,12 @@
 						},
 						"header": [],
 						"id": "1749279401.730--9223372036854760548",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 9,
+						"meta.line_index": 9.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -4992,7 +4992,7 @@
 					{
 						"address": "9.10",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5002,7 +5002,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5024,23 +5024,23 @@
 						},
 						"header": [],
 						"id": "1749549818.099--9223372036854747023",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 10,
+						"meta.line_index": 10.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 1315,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 1315.0,
 				"meta.selected": false,
 				"next": 10.0,
-				"number": 9,
+				"number": 9.0,
 				"page_key": "argo xelia concert + haya sex",
 				"skip": false,
 				"terminate": false
@@ -5054,240 +5054,9 @@
 				},
 				"lines": [
 					{
-						"address": "10.0",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.controls_collapsed": true,
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"delay_after": 0.0,
-							"delay_before": 0.0,
-							"meta.has_reverse": false,
-							"meta.reverse_text": "",
-							"meta.text": "black_fade(2,2,4, true, streets, argo_default)",
-							"meta.validation_status": "OK",
-							"name": "black_fade",
-							"reverse_name": ""
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"id": "1749288839.182--9223372036854758333",
-						"line_type": 2,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": true,
-						"meta.line_index": 0,
-						"meta.selector": {
-							"selected": false
-						},
-						"skip": false
-					},
-					{
-						"address": "10.1",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.controls_collapsed": true,
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"meta.function_calls": [
-								"show_image(argo_bathroom)"
-							],
-							"meta.locked": false,
-							"meta.validation_status": "OK",
-							"text_id": "1749130712.361--9223372036854767035"
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"id": "1749130712.361--9223372036854767036",
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": true,
-						"meta.line_index": 1,
-						"meta.selector": {
-							"selected": false
-						},
-						"skip": false
-					},
-					{
-						"address": "10.2",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.controls_collapsed": true,
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"meta.locked": false,
-							"meta.validation_status": "OK",
-							"text_id": "1748889010.129--9223372036854773752"
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"id": "1748889010.129--9223372036854773753",
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": true,
-						"meta.line_index": 2,
-						"meta.selector": {
-							"selected": false
-						},
-						"skip": false
-					},
-					{
-						"address": "10.3",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.controls_collapsed": true,
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"meta.locked": false,
-							"meta.validation_status": "OK",
-							"text_id": "1749096237.023--9223372036854768885"
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"id": "1749096237.022--9223372036854768886",
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": true,
-						"meta.line_index": 3,
-						"meta.selector": {
-							"selected": false
-						},
-						"skip": false
-					},
-					{
-						"address": "10.4",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.controls_collapsed": true,
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"meta.locked": false,
-							"meta.validation_status": "OK",
-							"text_id": "1749130738.579--9223372036854767033"
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"id": "1749130738.579--9223372036854767034",
-						"line_type": 0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0,
-						"meta.is_head_editable": true,
-						"meta.line_index": 4,
-						"meta.selector": {
-							"selected": false
-						},
-						"skip": false
-					}
-				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 69,
-				"meta.selected": false,
-				"next": 11.0,
-				"number": 10,
-				"page_key": "argo has its first bathroom monologue",
-				"skip": false,
-				"terminate": false
-			},
-			"11": {
-				"facts": {
-					"fact_data_by_name": {
-
-					},
-					"meta.visible": false
-				},
-				"lines": [
-					{
 						"address": "11.0",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5297,7 +5066,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5319,12 +5088,12 @@
 						},
 						"header": [],
 						"id": "1749291805.698--9223372036854758199",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -5333,7 +5102,7 @@
 					{
 						"address": "11.1",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5343,7 +5112,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5363,12 +5132,12 @@
 						},
 						"header": [],
 						"id": "1749031670.805--9223372036854770298",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 1.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -5377,7 +5146,7 @@
 					{
 						"address": "11.2",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5387,7 +5156,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5404,12 +5173,12 @@
 						},
 						"header": [],
 						"id": "1749031590.831--9223372036854770300",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 2.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -5418,7 +5187,7 @@
 					{
 						"address": "11.3",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5428,7 +5197,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5449,28 +5218,28 @@
 						},
 						"header": [],
 						"id": "1749294717.837--9223372036854757529",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 3.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 0,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 12.0,
-				"number": 11,
+				"next": 11.0,
+				"number": 10.0,
 				"page_key": "argo and vanessa go to a concert together, xelia is introduced",
 				"skip": false,
 				"terminate": false
 			},
-			"12": {
+			"11": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -5479,9 +5248,9 @@
 				},
 				"lines": [
 					{
-						"address": "12.0",
+						"address": "11.0",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5491,7 +5260,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5513,21 +5282,21 @@
 						},
 						"header": [],
 						"id": "1749291655.268--9223372036854758229",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "12.1",
+						"address": "11.1",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5537,7 +5306,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5554,21 +5323,21 @@
 						},
 						"header": [],
 						"id": "1749550633.404--9223372036854746883",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 1.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "12.2",
+						"address": "11.2",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5578,7 +5347,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5595,21 +5364,21 @@
 						},
 						"header": [],
 						"id": "1749449620.523--9223372036854753744",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 2.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "12.3",
+						"address": "11.3",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5619,7 +5388,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5636,21 +5405,21 @@
 						},
 						"header": [],
 						"id": "1749097770.330--9223372036854768209",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 3.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "12.4",
+						"address": "11.4",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5660,7 +5429,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5677,21 +5446,21 @@
 						},
 						"header": [],
 						"id": "1748894620.756--9223372036854773696",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4,
+						"meta.line_index": 4.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "12.5",
+						"address": "11.5",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5701,7 +5470,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5718,21 +5487,21 @@
 						},
 						"header": [],
 						"id": "1749551028.463--9223372036854746799",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5,
+						"meta.line_index": 5.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "12.6",
+						"address": "11.6",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5742,7 +5511,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5759,21 +5528,21 @@
 						},
 						"header": [],
 						"id": "1748894330.240--9223372036854773701",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6,
+						"meta.line_index": 6.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "12.7",
+						"address": "11.7",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5783,7 +5552,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5805,21 +5574,21 @@
 						},
 						"header": [],
 						"id": "1748894545.569--9223372036854773699",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7,
+						"meta.line_index": 7.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "12.8",
+						"address": "11.8",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5829,7 +5598,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5850,21 +5619,21 @@
 						},
 						"header": [],
 						"id": "1748894560.579--9223372036854773698",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 8,
+						"meta.line_index": 8.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "12.9",
+						"address": "11.9",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5874,7 +5643,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5896,21 +5665,21 @@
 						},
 						"header": [],
 						"id": "1749201517.194--9223372036854765071",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 9,
+						"meta.line_index": 9.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "12.10",
+						"address": "11.10",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5920,7 +5689,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5942,21 +5711,21 @@
 						},
 						"header": [],
 						"id": "1749201517.194--9223372036854765070",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 10,
+						"meta.line_index": 10.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "12.11",
+						"address": "11.11",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -5966,7 +5735,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -5983,28 +5752,28 @@
 						},
 						"header": [],
 						"id": "1749303374.712--9223372036854757335",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 11,
+						"meta.line_index": 11.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 408,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 408.0,
 				"meta.selected": false,
-				"next": 13.0,
-				"number": 12,
+				"next": 12.0,
+				"number": 11.0,
 				"page_key": "venassa & argo mutual sh on acid (thats their date)",
 				"skip": false,
 				"terminate": false
 			},
-			"13": {
+			"12": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -6013,7 +5782,7 @@
 				},
 				"lines": [
 					{
-						"address": "13.0",
+						"address": "12.0",
 						"conditionals": {
 							"behavior": 0.0,
 							"behavior_key": "Show",
@@ -6057,13 +5826,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 14.0,
-				"number": 13.0,
+				"next": 13.0,
+				"number": 12.0,
 				"page_key": "talk about puppy rescue and make plans for hole visit",
 				"skip": false,
 				"terminate": false
 			},
-			"14": {
+			"13": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -6072,9 +5841,9 @@
 				},
 				"lines": [
 					{
-						"address": "14.0",
+						"address": "13.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -6084,7 +5853,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -6106,21 +5875,21 @@
 						},
 						"header": [],
 						"id": "1749096326.120--9223372036854768863",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "14.1",
+						"address": "13.1",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -6130,7 +5899,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -6147,21 +5916,21 @@
 						},
 						"header": [],
 						"id": "1749130395.001--9223372036854767389",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1.0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "14.2",
+						"address": "13.2",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -6171,7 +5940,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -6188,21 +5957,21 @@
 						},
 						"header": [],
 						"id": "1749096357.747--9223372036854768862",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2.0,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "14.3",
+						"address": "13.3",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -6212,7 +5981,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -6234,21 +6003,21 @@
 						},
 						"header": [],
 						"id": "1749130549.458--9223372036854767386",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3.0,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "14.4",
+						"address": "13.4",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -6258,7 +6027,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -6275,21 +6044,21 @@
 						},
 						"header": [],
 						"id": "1749096312.146--9223372036854768865",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4.0,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "14.5",
+						"address": "13.5",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -6299,7 +6068,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -6316,21 +6085,21 @@
 						},
 						"header": [],
 						"id": "1749097032.855--9223372036854768618",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5.0,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "14.6",
+						"address": "13.6",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -6340,7 +6109,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -6357,21 +6126,21 @@
 						},
 						"header": [],
 						"id": "1749292560.059--9223372036854757996",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6.0,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "14.7",
+						"address": "13.7",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -6381,7 +6150,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -6398,19 +6167,78 @@
 						},
 						"header": [],
 						"id": "1749130576.385--9223372036854767385",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7.0,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "14.8",
+						"address": "13.8",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1749193397.759--9223372036854767442"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1749193397.759--9223372036854767443",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 8,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					}
+				],
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 14.0,
+				"number": 13,
+				"page_key": "audrey rescues noni",
+				"skip": false,
+				"terminate": false
+			},
+			"14": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "15.0",
 						"conditionals": {
 							"behavior": 0.0,
 							"behavior_key": "Show",
@@ -6429,65 +6257,6 @@
 						"content": {
 							"meta.locked": false,
 							"meta.validation_status": "OK",
-							"text_id": "1749193397.759--9223372036854767442"
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"id": "1749193397.759--9223372036854767443",
-						"line_type": 0.0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
-						"meta.is_head_editable": true,
-						"meta.line_index": 8.0,
-						"meta.selector": {
-							"selected": false
-						},
-						"skip": false
-					}
-				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 687.0,
-				"meta.selected": false,
-				"next": 15.0,
-				"number": 14.0,
-				"page_key": "audrey rescues noni",
-				"skip": false,
-				"terminate": false
-			},
-			"15": {
-				"facts": {
-					"fact_data_by_name": {
-
-					},
-					"meta.visible": false
-				},
-				"lines": [
-					{
-						"address": "15.0",
-						"conditionals": {
-							"behavior": 0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.controls_collapsed": true,
-							"meta.visible": false,
-							"operand": 0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"meta.locked": false,
-							"meta.validation_status": "OK",
 							"text_id": "1749233210.718--9223372036854763615"
 						},
 						"facts": {
@@ -6498,12 +6267,12 @@
 						},
 						"header": [],
 						"id": "1749233210.718--9223372036854763616",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -6512,7 +6281,7 @@
 					{
 						"address": "15.1",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -6522,7 +6291,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -6539,12 +6308,12 @@
 						},
 						"header": [],
 						"id": "1749546778.979--9223372036854747911",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 1.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -6553,7 +6322,7 @@
 					{
 						"address": "15.2",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -6563,7 +6332,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -6580,12 +6349,12 @@
 						},
 						"header": [],
 						"id": "1749095581.108--9223372036854769089",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 2.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -6594,7 +6363,7 @@
 					{
 						"address": "15.3",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -6604,7 +6373,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -6621,12 +6390,12 @@
 						},
 						"header": [],
 						"id": "1749095631.124--9223372036854769087",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 3.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -6635,7 +6404,7 @@
 					{
 						"address": "15.4",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -6645,7 +6414,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -6662,12 +6431,12 @@
 						},
 						"header": [],
 						"id": "1749095656.133--9223372036854769085",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4,
+						"meta.line_index": 4.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -6676,7 +6445,7 @@
 					{
 						"address": "15.5",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -6686,7 +6455,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -6703,28 +6472,28 @@
 						},
 						"header": [],
 						"id": "1749193472.964--9223372036854767361",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5,
+						"meta.line_index": 5.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 0,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 16.0,
-				"number": 15,
+				"next": 15.0,
+				"number": 14.0,
 				"page_key": "hangout: vein launch, haya drama, audrey 5th wheels lmao",
 				"skip": false,
 				"terminate": false
 			},
-			"16": {
+			"15": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -7514,9 +7283,240 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 1214.0,
 				"meta.selected": false,
+				"next": 16.0,
+				"number": 15.0,
+				"page_key": "audrey shows argo the hole",
+				"skip": false,
+				"terminate": false
+			},
+			"16": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "10.0",
+						"conditionals": {
+							"behavior": 0.0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0.0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0.0,
+							"delay_before": 0.0,
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "black_fade(2,2,4, true, streets, argo_default)",
+							"meta.validation_status": "OK",
+							"name": "black_fade",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1749288839.182--9223372036854758333",
+						"line_type": 2.0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0.0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 0.0,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "10.1",
+						"conditionals": {
+							"behavior": 0.0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0.0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.function_calls": [
+								"show_image(argo_bathroom)"
+							],
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1749130712.361--9223372036854767035"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1749130712.361--9223372036854767036",
+						"line_type": 0.0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0.0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 1.0,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "10.2",
+						"conditionals": {
+							"behavior": 0.0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0.0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1748889010.129--9223372036854773752"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1748889010.129--9223372036854773753",
+						"line_type": 0.0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0.0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 2.0,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "10.3",
+						"conditionals": {
+							"behavior": 0.0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0.0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1749096237.023--9223372036854768885"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1749096237.022--9223372036854768886",
+						"line_type": 0.0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0.0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 3.0,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "10.4",
+						"conditionals": {
+							"behavior": 0.0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0.0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1749130738.579--9223372036854767033"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1749130738.579--9223372036854767034",
+						"line_type": 0.0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0.0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 4.0,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					}
+				],
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 69.0,
+				"meta.selected": false,
 				"next": 17.0,
 				"number": 16.0,
-				"page_key": "audrey shows argo the hole",
+				"page_key": "argo has its first bathroom monologue",
 				"skip": false,
 				"terminate": false
 			},
@@ -10929,7 +10929,7 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 35.0,
+				"next": 36.0,
 				"number": 35.0,
 				"page_key": "the end",
 				"skip": false,
