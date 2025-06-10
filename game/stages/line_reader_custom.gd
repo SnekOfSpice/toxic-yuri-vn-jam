@@ -248,6 +248,7 @@ const SPLASH_STRINGS := {
 	"bottom_surgery" : "Bottom surgery.",
 	"cosmic_sorority" : "Emerging from the waves, a cosmic sorority.",
 	"fuck" : "Fuck.",
+	"life" : "Life.",
 	"carnage" : "In carnage you will bloom.",
 	"quandary_of_thought" : "A quandary of thought.",
 }

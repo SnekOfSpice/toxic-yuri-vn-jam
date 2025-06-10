@@ -6,6 +6,8 @@ var max_scroll_length = 0
 
 @export var code_edit : CodeEdit
 
+
+
 func init() -> void:
 	# auto scrolling
 	scrollbar.connect("changed", handle_scrollbar_changed)

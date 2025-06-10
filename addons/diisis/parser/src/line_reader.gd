@@ -1029,7 +1029,7 @@ func _process(delta: float) -> void:
 		if not has_executed:
 			ParserEvents.instruction_started_after_delay.emit(execution_text, delay_before)
 			has_executed = true
-			has_received_execute_callback = not execute(execution_text)
+			has_received_execute_callback = not await execute(execution_text)
 		
 		if not has_received_execute_callback:
 			return
@@ -2194,7 +2194,7 @@ func execute(instruction_text: String) -> bool:
 	if (not has_method(instruction_name)) and (not "." in instruction_name):
 		push_error(str("Function ", instruction_name, " not found in ", get_script().get_global_name(),"."))
 		return false
-	var result = call_from_string(instruction_text)
+	var result = await call_from_string(instruction_text)
 	if not result is bool:
 		if warn_on_non_bool_function_return:
 			push_warning(str("Function ", instruction_name, " in ", get_script().get_global_name(), " should return true or false."))
