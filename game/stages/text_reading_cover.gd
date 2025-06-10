@@ -26,7 +26,8 @@ func read(text:String,
 			wait_time += 0.5
 		await get_tree().create_timer(wait_time).timeout
 		label.visible_characters = i + 2
-		Sound.play_sfx("keyboard")
+		if i < text.length():
+			Sound.play_sfx("keyboard")
 		var s = $RichTextLabel.get_theme_font_size("normal_font_size")
 		var cursor := "[font_size=%s]▮[/font_size]" % str(s * 0.5)
 		if i > 0 and i <= text.length() - 1:

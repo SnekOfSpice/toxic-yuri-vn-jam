@@ -52,6 +52,8 @@ var _auto_continue_duration:= auto_continue_delay
 @export_subgroup("Show Text During", "show_text_during")
 ## If [code]true[/code], shows [param text_container] when choices are being displayed.
 @export var show_text_during_choices := true
+##
+@export var show_text_during_text := true
 ## If [code]true[/code], shows [param text_container] when instructions are being executed.
 @export var show_text_during_instructions := false
 @export_subgroup("Past Lines")
@@ -1029,7 +1031,7 @@ func _process(delta: float) -> void:
 		if not has_executed:
 			ParserEvents.instruction_started_after_delay.emit(execution_text, delay_before)
 			has_executed = true
-			has_received_execute_callback = not await execute(execution_text)
+			has_received_execute_callback = not execute(execution_text)
 		
 		if not has_received_execute_callback:
 			return
@@ -2015,7 +2017,7 @@ func update_name_label(actor_name: String):
 
 func _can_text_container_be_visible() -> bool:
 	if line_type == DIISIS.LineType.Text:
-		return true
+		return show_text_during_text or text_container.visible
 	if line_type == DIISIS.LineType.Choice:
 		return show_text_during_choices
 	if line_type == DIISIS.LineType.Instruction:
@@ -2194,7 +2196,7 @@ func execute(instruction_text: String) -> bool:
 	if (not has_method(instruction_name)) and (not "." in instruction_name):
 		push_error(str("Function ", instruction_name, " not found in ", get_script().get_global_name(),"."))
 		return false
-	var result = await call_from_string(instruction_text)
+	var result = call_from_string(instruction_text)
 	if not result is bool:
 		if warn_on_non_bool_function_return:
 			push_warning(str("Function ", instruction_name, " in ", get_script().get_global_name(), " should return true or false."))

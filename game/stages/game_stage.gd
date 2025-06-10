@@ -53,6 +53,7 @@ func get_default_targets() -> Dictionary:
 func _ready():
 	find_child("DevModeLabel").visible = devmode_enabled
 	target_label_id_by_actor = get_default_targets()
+	#GoBackHandler.store_into_subaddress(get_default_targets(), get_default_targets(), targets_by_subaddress, 0,0,0)
 	find_child("StartCover").visible = true
 	ParserEvents.actor_name_changed.connect(on_actor_name_changed)
 	ParserEvents.actor_name_about_to_change.connect(on_actor_name_about_to_change)
@@ -61,7 +62,7 @@ func _ready():
 	ParserEvents.instruction_completed.connect(on_instruction_completed)
 	ParserEvents.read_new_line.connect(on_read_new_line)
 	ParserEvents.dialog_line_args_passed.connect(on_dialog_line_args_passed)
-	ParserEvents.go_back_accepted.connect(on_go_back_accepted)
+	#ParserEvents.go_back_accepted.connect(on_go_back_accepted)
 	#ParserEvents.start_new_dialine.connect(on_start_new_dialine)
 	
 	GameWorld.game_stage = self
@@ -105,31 +106,19 @@ func get_ready_targets_by_subaddress() -> Dictionary:
 		}
 	}
 }
-@onready var targets_by_subaddress := get_ready_targets_by_subaddress()
+#@onready var targets_by_subaddress := get_ready_targets_by_subaddress()
 #var window_visibilities_by_subaddress := {}
-func on_go_back_accepted(page:int, line:int, dialine:int):
-	var subaddress := str(page, ".", line, ".", dialine)
-	#windows can get hidden through and retargeted through functions, so there also needs to be a function that listens to any new line being read 
-#and when going back, we need to compare to the first possible address
-	var prev_page := page
-	while prev_page > 0:
-		if targets_by_subaddress.has(prev_page):
-			break
-		prev_page -= 1
-	
-	var prev_line := line
-	while prev_line > 0:
-		if targets_by_subaddress.get(prev_page).has(prev_line):
-			break
-		prev_line -= 1
-	
-	var prev_dialine := dialine
-	while prev_dialine > 0:
-		if targets_by_subaddress.get(prev_page).get(prev_line).has(prev_dialine):
-			break
-		prev_dialine -= 1
-	
-	target_label_id_by_actor = targets_by_subaddress[prev_page][prev_line][prev_dialine]
+#func on_go_back_accepted(page:int, line:int, dialine:int):
+	#var subaddress_arr := Parser.line_reader.get_subaddress_arr()
+	#var page_index : int = subaddress_arr[0]
+	#var line_index : int = subaddress_arr[1]
+	#var dialine_index : int = subaddress_arr[2]
+	#if targets_by_subaddress.has(page_index):
+		#if targets_by_subaddress.get(page_index).has(line_index):
+			#if targets_by_subaddress.get(page_index).get(line_index).has(dialine_index):
+				#var targets = targets_by_subaddress.get(page_index).get(line_index).get(dialine_index)
+				#for actor in targets.keys():
+					#set_target_labels(actor, targets.get(actor), false)
 
 
 func get_window_visibilities() -> Dictionary:
@@ -138,8 +127,12 @@ func get_window_visibilities() -> Dictionary:
 		result[window.uid] = window.visible
 	return result
 
-func on_read_new_line(_line_index:int):
+func on_read_new_line(line_index:int):
 	Options.save_gamestate()
+	#GoBackHandler.store_into_subaddress(target_label_id_by_actor.duplicate(), get_default_targets(), targets_by_subaddress, Parser.page_index, line_index, 0)
+	#print("dfhgufjdghdfj----------")
+	#print(targets_by_subaddress)
+	#print("\n\n")
 
 func on_tree_exit():
 	GameWorld.game_stage = null
@@ -219,8 +212,8 @@ func _unhandled_input(event: InputEvent) -> void:
 		if not find_child("VNUI").visible:
 			return
 		line_reader.request_advance()
-	elif event.is_action_pressed("go_back"):
-		line_reader.request_go_back()
+	#elif event.is_action_pressed("go_back"):
+		#line_reader.request_go_back()
 
 func show_ui():
 	if is_instance_valid(find_child("VNUI")):
@@ -442,7 +435,7 @@ func deserialize(data:Dictionary):
 		set_target_labels(actor, target_label_id_by_actor.get(actor), false)
 	
 	#window_visibilities_by_subaddress = data.get("window_visibilities_by_subaddress", {})
-	targets_by_subaddress = data.get("targets_by_subaddress", get_ready_targets_by_subaddress())
+	#targets_by_subaddress = data.get("targets_by_subaddress", get_ready_targets_by_subaddress())
 	are_words_being_spoken = data.get("are_words_being_spoken", are_words_being_spoken)
 	
 	set_background(data.get("background"))
@@ -513,9 +506,20 @@ func get_body_label(target_id:int):
 	else:
 		return get_chatlog_window(target_id).get_body_label()
 
-
+func hide_default_text_container():
+	%DefaultTextContainer.visible = false
 var are_words_being_spoken := true
 func set_target_labels(actor:String, target_id:int, force_show:=true):
+	var subaddress_arr := Parser.line_reader.get_subaddress_arr()
+	var page_index : int = subaddress_arr[0]
+	var line_index : int = subaddress_arr[1]
+	var dialine_index : int = subaddress_arr[2]
+	
+	#GoBackHandler.store_into_subaddress(target_label_id_by_actor.duplicate(),
+		#get_default_targets(),
+		#targets_by_subaddress,
+		#page_index, line_index, dialine_index
+	#)
 	target_label_id_by_actor[actor] = target_id
 	var is_texting := target_id in [3,5]
 	var is_digital := target_id in [3,4,5]
@@ -525,11 +529,12 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 		%DefaultTextContainer.visible = false
 		%FullCoverText.visible = true
 	else:
-		#%DefaultTextContainer.visible = true
 		%FullCoverText.visible = false
 		
 	if target_id == 0:
+		%DefaultTextContainer.visible = true
 		%LineReader.custom_text_speed_override = -1
+		%LineReader.text_container = %DefaultTextContainer
 		%LineReader.set_body_label(%DefaultTextContainer.find_child("BodyLabel"), false)
 		var name_label = %DefaultTextContainer.find_child("NameLabel")
 		var name_container = %DefaultTextContainer.find_child("NameContainer")
@@ -539,6 +544,7 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 		%LineReader.body_label_suffix = ""
 		%LineReader.keep_past_lines = false
 	elif target_id == 6:
+		%LineReader.text_container = %FullCoverText
 		%LineReader.custom_text_speed_override = -1
 		%LineReader.set_body_label(%FullCoverText.find_child("BodyLabel"), false)
 		var name_label = %FullCoverText.find_child("NameLabel")
@@ -553,6 +559,7 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 		var window : ChatLogWindow = vnui.find_child("ChatLogWindow%s"%target_id)
 		%LineReader.set_body_label(window.get_body_label(), false)
 		%LineReader.set_name_controls(window.get_name_label(), window.get_name_container())
+		%LineReader.text_container = window.get_text_container()
 		if is_texting:
 			%LineReader.custom_text_speed_override = 201
 			%LineReader.body_label_prefix = "[code]"
@@ -571,33 +578,8 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 			window.move_to_top()
 			window.open_if_closed()
 	
-	var subaddress_arr := Parser.line_reader.get_subaddress_arr()
-	var page : Dictionary
-	var page_index : int = subaddress_arr[0]
-	var line_index : int = subaddress_arr[1]
-	var dialine_index : int = subaddress_arr[2]
-	if targets_by_subaddress.has(page_index):
-		page = targets_by_subaddress.get(page_index)
-	else:
-		page = {}
-		targets_by_subaddress[page_index] = page
-	var line : Dictionary
-	if page.has(line_index):
-		line = page.get(line_index)
-	else:
-		line = {}
-		page[line_index] = line
+
 	
-	var value_to_save:Dictionary
-	if page_index == 0 and line_index == 0 and dialine_index == 0:
-		value_to_save = get_default_targets()
-	else:
-		value_to_save = target_label_id_by_actor.duplicate()
-	
-	if not line.has(dialine_index):
-		line[dialine_index] = value_to_save
-	
-	targets_by_subaddress[page_index][line_index][dialine_index] = value_to_save
 	
 	last_body_label_target = target_id
 

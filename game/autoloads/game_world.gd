@@ -18,7 +18,8 @@ func hidden_ui_reset():
 	game_stage.set_fade_out(0, 0)
 	game_stage.hide_cg()
 	game_stage.hide_all_windows()
-	Parser.line_reader.set_all_target_labels(0, false)
+	game_stage.set_all_target_labels(0, false)
+	game_stage.hide_default_text_container()
 
 func str_to_vec2(s) -> Vector2:
 	if s is Vector2:

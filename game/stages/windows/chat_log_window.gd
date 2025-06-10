@@ -19,6 +19,8 @@ func on_visibility_changed():
 	clear_past_container()
 	if not visible:
 		get_body_label().text = ""
+	if visible:
+		get_text_container().visible = true
 
 func get_body_label() -> RichTextLabel:
 	return %BodyLabel

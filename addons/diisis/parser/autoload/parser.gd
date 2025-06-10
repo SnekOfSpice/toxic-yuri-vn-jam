@@ -420,6 +420,8 @@ func go_back():
 	
 	
 	if line_reader._attempt_read_previous_dialine() and line_reader.line_type == DIISIS.LineType.Text:
+		var subaddr = line_reader.get_subaddress_arr()
+		ParserEvents.go_back_accepted.emit(subaddr[0], subaddr[1], subaddr[2])
 		return
 	
 	var instruction_stack := []

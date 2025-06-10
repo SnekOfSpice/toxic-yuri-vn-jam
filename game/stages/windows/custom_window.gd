@@ -29,32 +29,20 @@ func  _ready() -> void:
 	
 	gui_input.connect(on_gui_input)
 	ParserEvents.go_back_accepted.connect(on_go_back_accepted)
+	ParserEvents.read_new_line.connect(on_read_new_line)
 	visibility_changed.connect(on_visibility_changed)
 	clamp_to_viewport()
+
+func on_read_new_line(line_index:int):
+	GoBackHandler.store_into_subaddress(visible, false, visibilities_by_subaddress, Parser.page_index, line_index, 0)
+
 
 var visibilities_by_subaddress := {}
 func on_go_back_accepted(page:int, line:int, dialine:int):
 	#windows can get hidden through and retargeted through functions, so there also needs to be a function that listens to any new line being read 
 #and when going back, we need to compare to the first possible address
-	var prev_page := page
-	while prev_page > 0:
-		if visibilities_by_subaddress.has(prev_page):
-			break
-		prev_page -= 1
 	
-	var prev_line := line
-	while prev_line > 0:
-		if visibilities_by_subaddress.get(prev_page).has(prev_line):
-			break
-		prev_line -= 1
-	
-	var prev_dialine := dialine
-	while prev_dialine > 0:
-		if visibilities_by_subaddress.get(prev_page).get(prev_line).has(prev_dialine):
-			break
-		prev_dialine -= 1
-	
-	visible = visibilities_by_subaddress[prev_page][prev_line][prev_dialine]
+	visible = GoBackHandler.fetch_from_subaddress(visibilities_by_subaddress, page, line, dialine)
 
 func on_visibility_changed():
 	dragging = false
@@ -64,28 +52,7 @@ func on_visibility_changed():
 	var page_index : int = subaddress_arr[0]
 	var line_index : int = subaddress_arr[1]
 	var dialine_index : int = subaddress_arr[2]
-	if visibilities_by_subaddress.has(page_index):
-		page = visibilities_by_subaddress.get(page_index)
-	else:
-		page = {}
-		visibilities_by_subaddress[page_index] = page
-	var line : Dictionary
-	if page.has(line_index):
-		line = page.get(line_index)
-	else:
-		line = {}
-		page[line_index] = line
-	
-	var value_to_save:bool
-	if page_index == 0 and line_index == 0 and dialine_index == 0:
-		value_to_save = false
-	else:
-		value_to_save = not visible
-	
-	if not line.has(dialine_index):
-		line[dialine_index] = value_to_save
-	
-	visibilities_by_subaddress[page_index][line_index][dialine_index] = value_to_save
+	GoBackHandler.store_into_subaddress(visible, false, visibilities_by_subaddress, page_index, line_index, dialine_index)
 
 var dragging := false
 var drag_offset : Vector2
