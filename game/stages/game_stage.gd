@@ -363,11 +363,13 @@ func serialize() -> Dictionary:
 func serialize_text_content(root:Control) -> Dictionary:
 	var result := {}
 	result["root_visible"] = root.visible
+	result["rotation_degrees"] = root.rotation_degrees
 	result["body_text"] = root.find_child("BodyLabel").text
 	result["visible_characters"] = root.find_child("BodyLabel").visible_characters
 	return result
 func deserialize_text_content(root:Control, data:Dictionary) -> void:
 	root.visible = data.get("root_visible", false)
+	root.rotation_degrees = data.get("rotation_degrees", 0)
 	root.find_child("BodyLabel").text = data.get("body_text", "")
 	root.find_child("BodyLabel").visible_characters = data.get("visible_characters", -1)
 
