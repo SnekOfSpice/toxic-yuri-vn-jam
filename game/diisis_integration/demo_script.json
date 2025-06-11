@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 1,
+		"current_page_number": 19,
 		"ingest_capitalize": false,
 		"ingest_whitespace": true,
 		"page_view": 0,
@@ -455,7 +455,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854741600,
+		"id_counter": -9223372036854741885,
 		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa\nx: xelia\nl: leah\nf: franco\nno: noni\nb: blank",
 		"locales_to_export": [
 			"de_DE",
@@ -7405,7 +7405,7 @@
 					{
 						"address": "16.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -7415,7 +7415,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -7437,12 +7437,12 @@
 						},
 						"header": [],
 						"id": "1749288839.182--9223372036854758333",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -7451,7 +7451,7 @@
 					{
 						"address": "16.1",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -7461,7 +7461,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -7481,12 +7481,12 @@
 						},
 						"header": [],
 						"id": "1749130712.361--9223372036854767036",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1.0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						},
@@ -7495,7 +7495,7 @@
 					{
 						"address": "16.2",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -7505,7 +7505,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -7522,12 +7522,12 @@
 						},
 						"header": [],
 						"id": "1748889010.129--9223372036854773753",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2.0,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
@@ -7536,7 +7536,7 @@
 					{
 						"address": "16.3",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -7546,7 +7546,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -7563,12 +7563,12 @@
 						},
 						"header": [],
 						"id": "1749096237.022--9223372036854768886",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3.0,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
@@ -7577,7 +7577,7 @@
 					{
 						"address": "16.4",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -7587,7 +7587,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -7604,23 +7604,23 @@
 						},
 						"header": [],
 						"id": "1749130738.579--9223372036854767034",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4.0,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 0.0,
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 69,
 				"meta.selected": false,
 				"next": 17.0,
-				"number": 16.0,
+				"number": 16,
 				"page_key": "argo has its first bathroom monologue",
 				"skip": false,
 				"terminate": false
@@ -7636,7 +7636,7 @@
 					{
 						"address": "17.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -7646,7 +7646,189 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1749656655.288--9223372036854741931"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1749656655.288--9223372036854741932",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 0,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "17.1",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1749656690.226--9223372036854741929"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1749656690.226--9223372036854741930",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "17.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1749656705.249--9223372036854741927"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1749656705.249--9223372036854741928",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 2,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "17.3",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1749656760.228--9223372036854741925"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1749656760.228--9223372036854741926",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 3,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					}
+				],
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 0,
+				"meta.selected": false,
+				"next": 18.0,
+				"number": 17,
+				"page_key": "haley has a first meltdown over the toilet pic",
+				"skip": false,
+				"terminate": false
+			},
+			"18": {
+				"facts": {
+					"fact_data_by_name": {
+
+					},
+					"meta.visible": false
+				},
+				"lines": [
+					{
+						"address": "18.0",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -7668,21 +7850,21 @@
 						},
 						"header": [],
 						"id": "1749630775.388--9223372036854742261",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "17.1",
+						"address": "18.1",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -7692,7 +7874,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -7709,21 +7891,21 @@
 						},
 						"header": [],
 						"id": "1749193447.956--9223372036854767371",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1.0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "17.2",
+						"address": "18.2",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -7733,7 +7915,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -7750,21 +7932,21 @@
 						},
 						"header": [],
 						"id": "1749456364.296--9223372036854752129",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2.0,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "17.3",
+						"address": "18.3",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -7774,7 +7956,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -7791,28 +7973,28 @@
 						},
 						"header": [],
 						"id": "1749459266.582--9223372036854751531",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3.0,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 0.0,
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 0,
 				"meta.selected": false,
-				"next": 18.0,
-				"number": 17.0,
+				"next": 19.0,
+				"number": 18,
 				"page_key": "noni and argo listen to argos music + maya gets a new tat from hn",
 				"skip": false,
 				"terminate": false
 			},
-			"18": {
+			"19": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -7821,9 +8003,9 @@
 				},
 				"lines": [
 					{
-						"address": "18.0",
+						"address": "19.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -7833,7 +8015,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -7850,21 +8032,21 @@
 						},
 						"header": [],
 						"id": "1749630875.687--9223372036854742241",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "18.1",
+						"address": "19.1",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -7874,7 +8056,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -7891,21 +8073,21 @@
 						},
 						"header": [],
 						"id": "1748894911.275--9223372036854773594",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1.0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "18.2",
+						"address": "19.2",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -7915,7 +8097,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -7932,21 +8114,21 @@
 						},
 						"header": [],
 						"id": "1748894921.275--9223372036854773592",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2.0,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "18.3",
+						"address": "19.3",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -7956,7 +8138,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -7978,21 +8160,21 @@
 						},
 						"header": [],
 						"id": "1748895438.878--9223372036854773751",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3.0,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "18.4",
+						"address": "19.4",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -8002,7 +8184,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -8022,21 +8204,21 @@
 						},
 						"header": [],
 						"id": "1748895441.112--9223372036854773750",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4.0,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "18.5",
+						"address": "19.5",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -8046,7 +8228,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -8063,21 +8245,21 @@
 						},
 						"header": [],
 						"id": "1748894926.247--9223372036854773590",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5.0,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "18.6",
+						"address": "19.6",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -8087,7 +8269,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -8104,21 +8286,21 @@
 						},
 						"header": [],
 						"id": "1748894946.286--9223372036854773588",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6.0,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "18.7",
+						"address": "19.7",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -8128,7 +8310,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -8145,21 +8327,21 @@
 						},
 						"header": [],
 						"id": "1749292833.119--9223372036854757765",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7.0,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "18.8",
+						"address": "19.8",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -8169,7 +8351,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -8186,28 +8368,28 @@
 						},
 						"header": [],
 						"id": "1749193212.673--9223372036854767553",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 8.0,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 1337.0,
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 1337,
 				"meta.selected": false,
-				"next": 19.0,
-				"number": 18.0,
+				"next": 20.0,
+				"number": 19,
 				"page_key": "vanessa and argo sex scene + things bre between haya",
 				"skip": false,
 				"terminate": false
 			},
-			"19": {
+			"20": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -8424,13 +8606,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 149.0,
 				"meta.selected": false,
-				"next": 20.0,
-				"number": 19.0,
+				"next": 21.0,
+				"number": 20,
 				"page_key": "checkin on noni + first xelia cuts",
 				"skip": false,
 				"terminate": false
 			},
-			"20": {
+			"21": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -8652,13 +8834,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 21.0,
-				"number": 20.0,
+				"next": 22.0,
+				"number": 21,
 				"page_key": "haley and maya falling out",
 				"skip": false,
 				"terminate": false
 			},
-			"21": {
+			"22": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -8842,13 +9024,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 22.0,
-				"number": 21.0,
+				"next": 23.0,
+				"number": 22,
 				"page_key": "vein kandi date!!!",
 				"skip": false,
 				"terminate": false
 			},
-			"22": {
+			"23": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -8859,13 +9041,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 23.0,
-				"number": 22.0,
+				"next": 24.0,
+				"number": 23,
 				"page_key": "nothing lol",
 				"skip": true,
 				"terminate": false
 			},
-			"23": {
+			"24": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -9005,13 +9187,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 24.0,
-				"number": 23.0,
+				"next": 25.0,
+				"number": 24,
 				"page_key": "haley panic attack",
 				"skip": false,
 				"terminate": false
 			},
-			"24": {
+			"25": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -9201,13 +9383,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 100.0,
 				"meta.selected": false,
-				"next": 25.0,
-				"number": 24.0,
+				"next": 26.0,
+				"number": 25,
 				"page_key": "noni has a mental health emergency",
 				"skip": false,
 				"terminate": false
 			},
-			"25": {
+			"26": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -9393,13 +9575,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 26.0,
-				"number": 25.0,
+				"next": 27.0,
+				"number": 26,
 				"page_key": "maya gets raped by franco",
 				"skip": true,
 				"terminate": false
 			},
-			"26": {
+			"27": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -9534,13 +9716,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 27.0,
-				"number": 26.0,
+				"next": 28.0,
+				"number": 27,
 				"page_key": "intermission, vein has another acid trip, its really sweet <3",
 				"skip": false,
 				"terminate": false
 			},
-			"27": {
+			"28": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -9687,13 +9869,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 28.0,
-				"number": 27.0,
+				"next": 29.0,
+				"number": 28,
 				"page_key": "argo and noni talk about nonis crush",
 				"skip": false,
 				"terminate": false
 			},
-			"28": {
+			"29": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -9910,13 +10092,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 383.0,
 				"meta.selected": false,
-				"next": 29.0,
-				"number": 28.0,
+				"next": 30.0,
+				"number": 29,
 				"page_key": "audrey snaps",
 				"skip": false,
 				"terminate": false
 			},
-			"29": {
+			"30": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -10056,13 +10238,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 30.0,
-				"number": 29.0,
+				"next": 31.0,
+				"number": 30,
 				"page_key": "haley's suicide",
 				"skip": false,
 				"terminate": false
 			},
-			"30": {
+			"31": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -10279,13 +10461,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 429.0,
 				"meta.selected": false,
-				"next": 31.0,
-				"number": 30.0,
+				"next": 32.0,
+				"number": 31,
 				"page_key": "xelia and hn find the body",
 				"skip": false,
 				"terminate": false
 			},
-			"31": {
+			"32": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -10379,13 +10561,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 32.0,
-				"number": 31.0,
+				"next": 33.0,
+				"number": 32,
 				"page_key": "xelia and hn decide to keep the body, news make the rounds",
 				"skip": false,
 				"terminate": false
 			},
-			"32": {
+			"33": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -10479,13 +10661,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 33.0,
-				"number": 32.0,
+				"next": 34.0,
+				"number": 33,
 				"page_key": "maya struggles",
 				"skip": true,
 				"terminate": false
 			},
-			"33": {
+			"34": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -10625,13 +10807,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 34.0,
-				"number": 33.0,
+				"next": 35.0,
+				"number": 34,
 				"page_key": "after haley's suicide (incl maya breakdown)",
 				"skip": false,
 				"terminate": false
 			},
-			"34": {
+			"35": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -10725,13 +10907,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 35.0,
-				"number": 34.0,
+				"next": 36.0,
+				"number": 35,
 				"page_key": "maya goes to see the body",
 				"skip": false,
 				"terminate": false
 			},
-			"35": {
+			"36": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -11030,13 +11212,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 306.0,
 				"meta.selected": false,
-				"next": 36.0,
-				"number": 35.0,
+				"next": 37.0,
+				"number": 36,
 				"page_key": "audrey and maya fight + nessa needs space",
 				"skip": false,
 				"terminate": false
 			},
-			"36": {
+			"37": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -11297,13 +11479,13 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 408.0,
 				"meta.selected": false,
-				"next": 37.0,
-				"number": 36.0,
+				"next": 38.0,
+				"number": 37,
 				"page_key": "audrey shoots franco",
 				"skip": true,
 				"terminate": false
 			},
-			"37": {
+			"38": {
 				"facts": {
 					"fact_data_by_name": {
 
@@ -11489,8 +11671,8 @@
 				"meta.address_mode_next": 0.0,
 				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
-				"next": 38.0,
-				"number": 37.0,
+				"next": 39.0,
+				"number": 38,
 				"page_key": "the end",
 				"skip": false,
 				"terminate": true
@@ -11720,6 +11902,10 @@
 			"1749630436.151--9223372036854742295": "[]>",
 			"1749630444.844--9223372036854742293": "[]>narrator:With the moon high above their heads and Audrey focused on the road in a jarring contrast to her first impression, Argo checks its phone.",
 			"1749630875.687--9223372036854742240": "[]>narrator:its been an entire week since argo has been crashng at nessas",
+			"1749656655.288--9223372036854741931": "[]>haley: you never send me stuff\n[]>maya: well you odnt ask\n[]>haley: do i really have to ask my girlfriend to send me pictures of her\n[]>maya: well\n[]>maya: yea, kinda\n[]>maya: i wanna be desired for them\n[]>haley: but i still matter to you right\n[]>maya: we literally fucked this morning\n[]>haley: that's not...\n[]>haley: whatever.\n[]>maya: yeah i care about you\n[]>haley: ...\n[]>haley: i care about you too",
+			"1749656690.226--9223372036854741929": "[]>haley: this just feels like cheating\n[]>haley: this feels horriböe\n[]>haley: please go away\n[]>haley: ill call again when I can\n[]>haley: Do you know ho fucking difficult it is to care for anyone when it feel like there's hell burning in your chest?",
+			"1749656705.249--9223372036854741927": "[]>maya:whyd you agree to open the relationship then\n[]>haley:idk\n[]>haley:i thought id be fine",
+			"1749656760.228--9223372036854741925": "[]>maya:getting a new tat soon btw\n[]>haley:hn again?\n[]>maya:yea\n[]>maya:cmon thats literally just because its like the best tattoo artist around\n[]>haley:yea sure",
 			"amber-is-happy": "[]>amber{amber-emotion|happy}: I'm really happy to hear that! <mp>I think you're cool too!"
 		},
 		"text_lead_time_other_actor": 0.0,
