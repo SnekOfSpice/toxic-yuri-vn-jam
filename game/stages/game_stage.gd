@@ -530,6 +530,9 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 		%LineReader.keep_past_lines = false
 	else:
 		var vnui : Control = find_child("VNUI")
+		if last_body_label_target in [3,4,5]:
+			var ui_fix_window : ChatLogWindow = vnui.find_child("ChatLogWindow%s"%last_body_label_target)
+			ui_fix_window.get_text_container().visible = true
 		var window : ChatLogWindow = vnui.find_child("ChatLogWindow%s"%target_id)
 		%LineReader.set_body_label(window.get_body_label(), false)
 		%LineReader.set_name_controls(window.get_name_label(), window.get_name_container())
