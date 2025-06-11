@@ -16,8 +16,8 @@ func _ready() -> void:
 
 func on_visibility_changed():
 	super.on_visibility_changed()
-	clear_past_container()
 	if not visible:
+		clear_past_container()
 		get_body_label().text = ""
 	if visible:
 		get_text_container().visible = true
