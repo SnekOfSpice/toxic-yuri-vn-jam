@@ -46,6 +46,10 @@ window/size/viewport_width=1000
 window/size/viewport_height=750
 window/stretch/mode="canvas_items"
 
+[editor]
+
+movie_writer/movie_file="D:/100_godot/toxic-yuri-vn-jam/footage/vid.avi"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/diisis/plugin.cfg")
