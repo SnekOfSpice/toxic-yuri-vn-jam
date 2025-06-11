@@ -221,9 +221,17 @@ func set_cg(cg_name:String, fade_in_duration:float, cg_root:Control):
 	if cg_path.ends_with(".tscn"):
 		cg_node = load(cg_path).instantiate()
 	else:
-		cg_node = TextureRect.new()
+		cg_node = ColorRect.new()
 		cg_node.set_anchors_preset(Control.PRESET_FULL_RECT)
-		cg_node.texture = load(cg_path)
+		cg_node.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		cg_node.color = Color.BLACK
+		var tex = TextureRect.new()
+		cg_node.add_child(tex)
+		tex.position -=  Vector2(1000, 750) * 0.7 * 0.5
+		tex.set_anchors_preset(Control.PRESET_CENTER)
+		tex.texture = load(cg_path)
+		tex.expand_mode = TextureRect.EXPAND_FIT_WIDTH_PROPORTIONAL
+		tex.custom_minimum_size = Vector2(1000, 750) * 0.7
 	
 	cg_root.add_child(cg_node)
 	

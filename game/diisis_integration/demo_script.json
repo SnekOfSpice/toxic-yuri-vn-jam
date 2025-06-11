@@ -455,7 +455,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854741687,
+		"id_counter": -9223372036854741600,
 		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa\nx: xelia\nl: leah\nf: franco\nno: noni\nb: blank",
 		"locales_to_export": [
 			"de_DE",
@@ -1865,7 +1865,7 @@
 						},
 						"content": {
 							"meta.function_calls": [
-								"show_image(piss)",
+								"show_image(piss, 0, 350)",
 								"show_cg(piss, 1, true)",
 								"hide_all_windows()"
 							],
@@ -1935,7 +1935,7 @@
 					}
 				],
 				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 1484,
+				"meta.scroll_vertical": 1325,
 				"meta.selected": false,
 				"next": 2.0,
 				"number": 1,
@@ -8669,7 +8669,7 @@
 					{
 						"address": "21.0",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -8679,7 +8679,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -8701,12 +8701,12 @@
 						},
 						"header": [],
 						"id": "1749199729.057--9223372036854766436",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -8715,7 +8715,7 @@
 					{
 						"address": "21.1",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -8725,7 +8725,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -8742,12 +8742,12 @@
 						},
 						"header": [],
 						"id": "1749193593.132--9223372036854767231",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 1.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -8756,7 +8756,7 @@
 					{
 						"address": "21.2",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -8766,7 +8766,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -8783,12 +8783,12 @@
 						},
 						"header": [],
 						"id": "1749301736.556--9223372036854757263",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 2.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -8797,7 +8797,7 @@
 					{
 						"address": "21.3",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -8807,7 +8807,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -8827,23 +8827,23 @@
 						},
 						"header": [],
 						"id": "1749279466.758--9223372036854760519",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 3.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 0,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 0.0,
 				"meta.selected": false,
 				"next": 22.0,
-				"number": 21,
+				"number": 21.0,
 				"page_key": "vein kandi date!!!",
 				"skip": false,
 				"terminate": false
@@ -11628,7 +11628,7 @@
 			"1749194374.744--9223372036854767577": "[]>narrator:Long after the sun has risen, signaling bedtime, Argo walks back to its place.",
 			"1749195435.568--9223372036854767438": "[]>narrator{target|1}:Listening to about half an hour of death industrial before bed, Argo grinds its head into its lone pillow. <mp>The high is like... marginally okay. <mp>It is diligently using this opportunity to catch up with other contacts. Someone else it met a few weeks?months?whatever ago is posting about needing a t shot. Nothing'll come of it by the time they get back to Argo. Which is never. Why do others not really care about responding after meeting someone new? Whatever. You get used to it.",
 			"1749195452.961--9223372036854767436": "[]>argo{target|1}:<ts_abs:20>zzzzzzzzzzzzzzzz",
-			"1749196229.731--9223372036854767404": "[]>narrator: Maya is spiritually soaking in the morning dew air, and soaking the <call:show_image(piss)>dead fucking soil below her with her acrid piss. <mp>Roaches' and Harsh Noise's front lawn may be the most peaceful place in the whole wide universe right now, Maya feels.\n[]>narrator: <call:show_cg(piss, 1, true)><call:hide_all_windows()>Then Maya thinks that maybe she should've saveed the urine for her dates. Then she thinks that Roaches would rather piss in/on her than the other way around, and thusly Maya gets lost in the growing wet patch of dirt below again. <mp>Her heart feels in tune with the vanishing stars above and the wind carries her stupid human anxieties away, and also the reek of piss, so she lowers her nose down to the ground to sniff her mark and tastes a bit of it but mostly it tastes like wet dirt.",
+			"1749196229.731--9223372036854767404": "[]>narrator: Maya is spiritually soaking in the morning dew air, and soaking the <call:show_image(piss, 0, 350)>dead fucking soil below her with her acrid piss. <mp>Roaches' and Harsh Noise's front lawn may be the most peaceful place in the whole wide universe right now, Maya feels.\n[]>narrator: <call:show_cg(piss, 1, true)><call:hide_all_windows()>Then Maya thinks that maybe she should've saveed the urine for her dates. Then she thinks that Roaches would rather piss in/on her than the other way around, and thusly Maya gets lost in the growing wet patch of dirt below again. <mp>Her heart feels in tune with the vanishing stars above and the wind carries her stupid human anxieties away, and also the reek of piss, so she lowers her nose down to the ground to sniff her mark and tastes a bit of it but mostly it tastes like wet dirt.",
 			"1749196679.988--9223372036854767345": "[]>narrator{target|1}:Haley's separation anxieties stagnantly hang above her actully-not-asleep form. <mp>Sucks for her. <lc>Let's leave her be for now.\n[]>narrator{target|0}:<call:hide_all_windows()> These three disgusting perverts keep flattening the lone mattress, drownfeeding the bedbugs with their spilling juices. Harsh Noise's sinewy thighs propel it forward, eager to destroy Maya, half-wishing she would just finally actually safeword (as if they ever declared one). Turning this fuckfest into rape, pinning down this poor doggy bitch despite its objections, but regrettably for Harsh Noise, she is currently blissed out from being used just like such a toy void of agency, meaning it has no will to violate. Such is life.\\n\\nHarsh Noise shudders and drizzles a puny watery load into Maya's ass, who hazily grinds herself back into a noise-ish direction. Good enough.",
 			"1749198825.168--9223372036854766621": "[]>roaches: Oh wow, done already?\n[]>narrator: Roaches does a slow grind into Maya's throat. Harsh Noise can't really concentrate on whatever the fuck she's saying.\n[]>harshnoise: Fuck, you're great. Bitch.\n[]>narrator: It places a few limp claw scratches on Maya's ass, then pulls out and adds another to-be-stain onto the browning bedsheets below. Roaches keeps fucking Maya's face.",
 			"1749198959.059--9223372036854766578": "[]>maya:what...\n[]>maya:where are you taking me?\n[]>narrator:Her client hasn't said anything since he picked her up.",
