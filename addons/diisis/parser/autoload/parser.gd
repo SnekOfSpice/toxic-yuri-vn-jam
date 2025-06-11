@@ -80,7 +80,6 @@ func _get_live_source_path(suppress_error:=false) -> String:
 	return source_path.trim_suffix("\n")
 
 func _get_data() -> Dictionary:
-	#var file := FileAccess.open(_get_live_source_path(), FileAccess.READ)
 	var file := FileAccess.open(ProjectSettings.get_setting("diisis/project/file/path"), FileAccess.READ)
 	if not file:
 		return {}

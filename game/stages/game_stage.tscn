@@ -53,7 +53,6 @@ grow_vertical = 2
 focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
-devmode_enabled = true
 devmode_start_page = 5
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -279,48 +278,48 @@ mouse_filter = 2
 
 [node name="ChatLogWindow1" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
 layout_mode = 1
-offset_left = 571.0
-offset_top = 297.0
-offset_right = 999.0
-offset_bottom = 372.0
+offset_left = 489.0
+offset_top = 306.0
+offset_right = 1017.0
+offset_bottom = 460.0
 id = 1
 include_title_bar = false
 
 [node name="ChatLogWindow2" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
 layout_mode = 1
-offset_left = 60.0
-offset_top = 346.0
+offset_left = -40.0
+offset_top = 392.0
 offset_right = 488.0
-offset_bottom = 421.0
+offset_bottom = 546.0
 id = 2
 include_title_bar = false
 
 [node name="ChatLogWindow3" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
 layout_mode = 1
-offset_left = 543.0
-offset_top = 488.0
-offset_right = 971.0
-offset_bottom = 563.0
+offset_left = 471.0
+offset_top = 599.0
+offset_right = 999.0
+offset_bottom = 753.0
 id = 3
 title = "PAWZ - chat client"
 icon = ExtResource("10_pms35")
 
 [node name="ChatLogWindow4" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
 layout_mode = 1
-offset_left = 543.0
-offset_top = 385.0
-offset_right = 971.0
-offset_bottom = 460.0
+offset_left = 453.0
+offset_top = 447.0
+offset_right = 981.0
+offset_bottom = 601.0
 id = 4
 title = "BARK - vox client"
 icon = ExtResource("11_n0qn6")
 
 [node name="ChatLogWindow5" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
 layout_mode = 1
-offset_left = 50.0
-offset_top = 456.0
+offset_left = -50.0
+offset_top = 559.0
 offset_right = 478.0
-offset_bottom = 531.0
+offset_bottom = 713.0
 id = 5
 title = "PAWZ - chat client"
 icon = ExtResource("10_pms35")
@@ -328,9 +327,9 @@ icon = ExtResource("10_pms35")
 [node name="ImageViewerWindow" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_3xf2c")]
 layout_mode = 0
 offset_left = 13.0
-offset_top = 104.0
-offset_right = 168.0
-offset_bottom = 204.0
+offset_top = 183.0
+offset_right = 296.0
+offset_bottom = 283.0
 
 [node name="WaveFormWindow" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("9_knhaa")]
 layout_mode = 0
@@ -367,6 +366,7 @@ text = "Menu"
 
 [node name="FullCoverText" type="Control" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

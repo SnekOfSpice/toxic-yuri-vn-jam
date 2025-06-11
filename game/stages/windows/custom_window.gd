@@ -13,7 +13,7 @@ var uid := 0
 @export var icon : Texture2D
 
 func  _ready() -> void:
-	visibilities_by_subaddress = {0:{0:{0:not hide_on_ready}}}
+	#GoBackHandler.store_into_subaddress(false, visibilities_by_subaddress, "0.0.0")
 	uid = get_index()
 	if hide_on_ready: hide()
 	if include_title_bar:
@@ -28,31 +28,26 @@ func  _ready() -> void:
 			title_bar.set_icon(icon)
 	
 	gui_input.connect(on_gui_input)
-	ParserEvents.go_back_accepted.connect(on_go_back_accepted)
-	ParserEvents.read_new_line.connect(on_read_new_line)
+	#ParserEvents.go_back_accepted.connect(on_go_back_accepted)
+	#ParserEvents.read_new_line.connect(on_read_new_line)
 	visibility_changed.connect(on_visibility_changed)
 	clamp_to_viewport()
 
-func on_read_new_line(line_index:int):
-	GoBackHandler.store_into_subaddress(visible, false, visibilities_by_subaddress, Parser.page_index, line_index, 0)
+#func on_read_new_line(line_index:int):
+	#GoBackHandler.store_into_subaddress(visible, false, visibilities_by_subaddress, Parser.page_index, line_index, 0)
 
-
-var visibilities_by_subaddress := {}
-func on_go_back_accepted(page:int, line:int, dialine:int):
-	#windows can get hidden through and retargeted through functions, so there also needs to be a function that listens to any new line being read 
-#and when going back, we need to compare to the first possible address
-	
-	visible = GoBackHandler.fetch_from_subaddress(visibilities_by_subaddress, page, line, dialine)
+#
+#var visibilities_by_subaddress := {}
+#func on_go_back_accepted(page:int, line:int, dialine:int):
+	##windows can get hidden through and retargeted through functions, so there also needs to be a function that listens to any new line being read 
+##and when going back, we need to compare to the first possible address
+	#
+	#visible = GoBackHandler.fetch_prev_from_subaddress(visibilities_by_subaddress, page, line, dialine)
 
 func on_visibility_changed():
 	dragging = false
-	#return
-	var subaddress_arr := Parser.line_reader.get_subaddress_arr()
-	var page : Dictionary
-	var page_index : int = subaddress_arr[0]
-	var line_index : int = subaddress_arr[1]
-	var dialine_index : int = subaddress_arr[2]
-	GoBackHandler.store_into_subaddress(visible, false, visibilities_by_subaddress, page_index, line_index, dialine_index)
+	
+	#GoBackHandler.store_into_subaddress(visible, visibilities_by_subaddress, Parser.line_reader.get_subaddress())
 
 var dragging := false
 var drag_offset : Vector2

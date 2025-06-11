@@ -53,7 +53,7 @@ func get_default_targets() -> Dictionary:
 func _ready():
 	find_child("DevModeLabel").visible = devmode_enabled
 	target_label_id_by_actor = get_default_targets()
-	#GoBackHandler.store_into_subaddress(get_default_targets(), get_default_targets(), targets_by_subaddress, 0,0,0)
+	#GoBackHandler.store_into_subaddress(get_default_targets(), targets_by_subaddress, "0.0.0")
 	find_child("StartCover").visible = true
 	ParserEvents.actor_name_changed.connect(on_actor_name_changed)
 	ParserEvents.actor_name_about_to_change.connect(on_actor_name_about_to_change)
@@ -98,27 +98,13 @@ func set_enable_dither(value:bool):
 	find_child("DitherLayer").visible = value
 	find_child("DitherLayer2").visible = value
 
-func get_ready_targets_by_subaddress() -> Dictionary:
-	return {
-	0 : {
-		0:{
-			0: get_default_targets()
-		}
-	}
-}
-#@onready var targets_by_subaddress := get_ready_targets_by_subaddress()
-#var window_visibilities_by_subaddress := {}
+
+#var targets_by_subaddress := {}
+##var window_visibilities_by_subaddress := {}
 #func on_go_back_accepted(page:int, line:int, dialine:int):
-	#var subaddress_arr := Parser.line_reader.get_subaddress_arr()
-	#var page_index : int = subaddress_arr[0]
-	#var line_index : int = subaddress_arr[1]
-	#var dialine_index : int = subaddress_arr[2]
-	#if targets_by_subaddress.has(page_index):
-		#if targets_by_subaddress.get(page_index).has(line_index):
-			#if targets_by_subaddress.get(page_index).get(line_index).has(dialine_index):
-				#var targets = targets_by_subaddress.get(page_index).get(line_index).get(dialine_index)
-				#for actor in targets.keys():
-					#set_target_labels(actor, targets.get(actor), false)
+	#var targets = GoBackHandler.fetch_prev_from_subaddress(targets_by_subaddress, page, line, dialine)
+	#for actor in targets.keys():
+		#set_target_labels(actor, targets.get(actor), false)
 
 
 func get_window_visibilities() -> Dictionary:
@@ -129,10 +115,6 @@ func get_window_visibilities() -> Dictionary:
 
 func on_read_new_line(line_index:int):
 	Options.save_gamestate()
-	#GoBackHandler.store_into_subaddress(target_label_id_by_actor.duplicate(), get_default_targets(), targets_by_subaddress, Parser.page_index, line_index, 0)
-	#print("dfhgufjdghdfj----------")
-	#print(targets_by_subaddress)
-	#print("\n\n")
 
 func on_tree_exit():
 	GameWorld.game_stage = null
@@ -510,16 +492,8 @@ func hide_default_text_container():
 	%DefaultTextContainer.visible = false
 var are_words_being_spoken := true
 func set_target_labels(actor:String, target_id:int, force_show:=true):
-	var subaddress_arr := Parser.line_reader.get_subaddress_arr()
-	var page_index : int = subaddress_arr[0]
-	var line_index : int = subaddress_arr[1]
-	var dialine_index : int = subaddress_arr[2]
-	
 	#GoBackHandler.store_into_subaddress(target_label_id_by_actor.duplicate(),
-		#get_default_targets(),
-		#targets_by_subaddress,
-		#page_index, line_index, dialine_index
-	#)
+		#targets_by_subaddress, Parser.line_reader.get_subaddress())
 	target_label_id_by_actor[actor] = target_id
 	var is_texting := target_id in [3,5]
 	var is_digital := target_id in [3,4,5]

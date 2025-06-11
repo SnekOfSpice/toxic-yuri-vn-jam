@@ -50,77 +50,30 @@ func serialize() -> Dictionary:
 func deserialize(data: Dictionary):
 	states_by_page = data.get("states_by_page", {})
 
-
-## default is at 0.0.0
-func store_into_subaddress(value, default, storage:Dictionary, page_index:int, line_index:int, dialine_index:int) -> void:
-	var page : Dictionary
-	if storage.has(page_index):
-		page = storage.get(page_index)
-	else:
-		page = {}
-		storage[page_index] = page
-	var line : Dictionary
-	if page.has(line_index):
-		line = page.get(line_index)
-	else:
-		line = {}
-		page[line_index] = line
-	
-	var value_to_save
-	if page_index == 0 and line_index == 0 and dialine_index == 0:
-		value_to_save = default
-	else:
-		value_to_save = value
-	
-	if not line.has(dialine_index):
-		line[dialine_index] = value_to_save
-	
-	storage[page_index][line_index][dialine_index] = value_to_save
-
-func fetch_from_subaddress(storage:Dictionary, page:int, line:int, dialine:int) -> Variant:
-	var prev_page := page
-	var prev_line := line
-	var prev_dialine := dialine
-	
-	while prev_page > 0:
-		if storage.has(prev_page):
-			break
-		prev_page -= 1
-	
-	while prev_line > 0:
-		if storage.get(prev_page).has(prev_line):
-			break
-		prev_line -= 1
-	
-	while prev_dialine > 0:
-		if storage.get(prev_page).get(prev_line).has(prev_dialine):
-			break
-		prev_dialine -= 1
-	
-
-	if not storage.has(prev_page):
-		var page_keys = storage.keys()
-		page_keys.sort()
-		var key_index := 0
-		while page_keys[key_index] < prev_page:
-			key_index += 1
-		prev_page = page_keys[key_index]
-		
-	if not storage.get(prev_page).has(prev_line):
-		var line_keys = storage.get(prev_page).keys()
-		line_keys.sort()
-		var key_index := 0
-		while line_keys[key_index] < prev_line:
-			key_index += 1
-		prev_line = line_keys[key_index]
-	
-	if not storage.get(prev_page).get(prev_line).has(prev_dialine):
-		var dialine_keys = storage.get(prev_page).get(prev_line).keys()
-		dialine_keys.sort()
-		var key_index := 0
-		while dialine_keys[key_index] < prev_dialine:
-			key_index += 1
-		prev_dialine = dialine_keys[key_index]
-		
-	
-	return storage[prev_page][prev_line][prev_dialine]
+#
+### default is at 0.0.0
+#func store_into_subaddress(value, storage:Dictionary, subaddress:String) -> void:
+	#storage[subaddress] = value
+#
+#func fetch_prev_from_subaddress(storage:Dictionary, start_page:int, start_line:int, start_dialine:int) -> Variant:
+	#var state_subaddresses := storage.keys()
+	#var start_subaddress := str(start_page, ".", start_line, ".", start_dialine)
+	#state_subaddresses.append(start_subaddress)
+	#state_subaddresses.sort_custom(sort_subaddrs)
+	#var prev_state_index = state_subaddresses.find(start_subaddress) - 1
+	#return storage.get(state_subaddresses[prev_state_index])
+#
+#func sort_subaddrs(a:String, b:String) -> bool:
+	#var parts_a = a.split(".")
+	#var parts_b = b.split(".")
+	#while parts_a.size() < 3:
+		#parts_a.append("0")
+	#while parts_b.size() < 3:
+		#parts_b.append("0")
+	#if parts_a[0] == parts_b[0]:
+		#if parts_a[1] == parts_b[1]:
+			#return parts_a[2] < parts_b[2]
+		#else:
+			#return parts_a[1] < parts_b[1]
+	#else:
+		#return parts_a[0] < parts_b[0]

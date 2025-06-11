@@ -3,7 +3,7 @@ class_name ChatLogWindow
 
 
 var actor : String
-func  _ready() -> void:
+func _ready() -> void:
 	super()
 	close()
 	if not include_title_bar: # is for embodied voice
