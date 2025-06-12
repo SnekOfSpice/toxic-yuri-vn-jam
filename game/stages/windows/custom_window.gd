@@ -46,7 +46,7 @@ func  _ready() -> void:
 
 func on_visibility_changed():
 	dragging = false
-	
+		
 	#GoBackHandler.store_into_subaddress(visible, visibilities_by_subaddress, Parser.line_reader.get_subaddress())
 
 var dragging := false

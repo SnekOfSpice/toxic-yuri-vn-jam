@@ -232,7 +232,7 @@ func hide_windows(window_type:String):
 
 
 const SPLASH_STRINGS := {
-	"opening" : "[ph]I fucking hate you.",
+	"opening" : "You don't deserve what I'm about to do to you.",
 	"yea_right" : "Yeah.\nRight.",
 	"killer_hangover" : "Killer hangover.",
 	"filthy" : "Filthy.",
@@ -253,6 +253,8 @@ const SPLASH_STRINGS := {
 	"quandary_of_thought" : "A quandary of thought.",
 	"wakey" : "Wakey wakey.",
 	"art" : "[ph]sth abt art.",
+	"keep_the_body" : "[ph]keep the body.",
+	"maya_huddles" : "Maya huddles.",
 }
 func splash_text(key:String,
 	fade_in := 0.0,
