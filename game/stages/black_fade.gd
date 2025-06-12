@@ -35,6 +35,7 @@ func fade_out(duration:= release_on_full_black_reached):
 
 func on_full_black_reached():
 	GameWorld.hidden_ui_reset()
+	Parser.line_reader.set_psychedelics(false)
 	if hide_characters_on_full_black_reached:
 		for c in get_tree().get_nodes_in_group("character"):
 			c.visible = false

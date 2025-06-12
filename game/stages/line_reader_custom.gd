@@ -307,3 +307,12 @@ func set_up_blank(display_name:String):
 func start_opening_splash():
 	%OpeningSplash.start()
 	return true
+
+func set_psychedelics(value:bool):
+	var layer : CanvasLayer = find_child("PsychedelicsLayer")
+	layer.visible = value
+	if value:
+		var color_rect : ColorRect = layer.get_child(0)
+		color_rect.color.a = 0
+		var t = create_tween()
+		t.tween_property(color_rect, "color:a", 1, 20)

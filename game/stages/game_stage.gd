@@ -51,6 +51,8 @@ func get_default_targets() -> Dictionary:
 	return result
 
 func _ready():
+	find_child("Portrait").visible = false
+	find_child("PsychedelicsLayer").visible = false
 	find_child("DevModeLabel").visible = devmode_enabled
 	target_label_id_by_actor = get_default_targets()
 	#GoBackHandler.store_into_subaddress(get_default_targets(), targets_by_subaddress, "0.0.0")
@@ -91,7 +93,6 @@ func _ready():
 	
 	await get_tree().process_frame
 	find_child("StartCover").visible = false
-	find_child("Portrait").visible = false
 	set_enable_dither(Options.enable_dither)
 
 func set_enable_dither(value:bool):
@@ -360,6 +361,7 @@ func serialize() -> Dictionary:
 	result["camera"] = %Camera2D.serialize()
 	result["target_label_id_by_actor"] = target_label_id_by_actor
 	result["last_body_label_target"] = last_body_label_target
+	result["psychedelics"] = find_child("PsychedelicsLayer").visible
 	
 	#result["window_visibilities_by_subaddress"] = window_visibilities_by_subaddress
 	#result["target_label_history_by_subaddress"] = target_label_history_by_subaddress
@@ -429,6 +431,7 @@ func deserialize(data:Dictionary):
 	are_words_being_spoken = data.get("are_words_being_spoken", are_words_being_spoken)
 	
 	set_background(data.get("background"))
+	find_child("PsychedelicsLayer").visible = data.get("psychedelics", false)
 	
 	# windows
 	var window_data : Dictionary = data.get("windows", {})
