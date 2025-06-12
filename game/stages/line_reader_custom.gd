@@ -303,3 +303,7 @@ func set_up_blank(display_name:String):
 	color.g = randf_range(0.8, 1)
 	color.b = randf_range(0.8, 1)
 	set_actor_color("blank", color)
+
+func start_opening_splash():
+	%OpeningSplash.start()
+	return true

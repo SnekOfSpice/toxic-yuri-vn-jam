@@ -1,11 +1,11 @@
-[gd_scene load_steps=26 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=27 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" uid="uid://j84s4qlkmfxw" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" uid="uid://bqw08o3b22fdc" path="res://game/stages/line_reader_custom.gd" id="3_pms35"]
 [ext_resource type="Script" uid="uid://brouc1vl1o5us" path="res://game/stages/objects.gd" id="3_x2eff"]
 [ext_resource type="Material" uid="uid://cjfy0guf7efb6" path="res://game/visuals/shaders/quantize_material.tres" id="4_qvfwk"]
 [ext_resource type="Theme" uid="uid://gee0nt5mhjku" path="res://game/visuals/theme/toxic_yuri_vn_theme.tres" id="6_aqeli"]
-[ext_resource type="Texture2D" uid="uid://u033hc5by020" path="res://game/backgrounds/desert.png" id="6_rra51"]
+[ext_resource type="Texture2D" uid="uid://bypfgb2as3i36" path="res://game/backgrounds/black.png" id="6_ij3no"]
 [ext_resource type="PackedScene" uid="uid://okxj0h4jwh18" path="res://game/stages/windows/image_viewer_window.tscn" id="7_3xf2c"]
 [ext_resource type="PackedScene" uid="uid://cosugqpmyex1j" path="res://game/stages/windows/chat_log_window.tscn" id="7_j1uqk"]
 [ext_resource type="Texture2D" uid="uid://vktxh4bdox5r" path="res://icon.svg" id="8_7jfvv"]
@@ -21,6 +21,7 @@
 [ext_resource type="Shader" uid="uid://dh14tp6f61jea" path="res://game/stages/sps_dither.gdshader" id="15_j1uqk"]
 [ext_resource type="Shader" uid="uid://oj2v8kbp13pd" path="res://game/stages/static.gdshader" id="17_dc0ef"]
 [ext_resource type="PackedScene" uid="uid://ipa310726xyt" path="res://game/stages/rolling_credits.tscn" id="17_gnute"]
+[ext_resource type="PackedScene" uid="uid://buhh6ornccsky" path="res://game/stages/opening_splash.tscn" id="22_ij3no"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ij3no"]
 shader = ExtResource("15_j1uqk")
@@ -54,7 +55,7 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_page = 8
+devmode_start_page = 11
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -138,7 +139,7 @@ position = Vector2(-500, -375)
 
 [node name="Sprite2D" type="Sprite2D" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/Background"]
 position = Vector2(485, 420)
-texture = ExtResource("6_rra51")
+texture = ExtResource("6_ij3no")
 
 [node name="DitherLayer2" type="CanvasLayer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D"]
 
@@ -459,6 +460,10 @@ offset_right = 79.5
 offset_bottom = 23.0
 grow_horizontal = 2
 text = "DEV MODE ENABLED"
+
+[node name="OpeningSplash" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer" instance=ExtResource("22_ij3no")]
+unique_name_in_owner = true
+visible = false
 
 [node name="DitherLayer" type="CanvasLayer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D"]
 visible = false
