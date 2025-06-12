@@ -1,7 +1,7 @@
 extends CustomWindow
 class_name ChatLogWindow
 
-
+var start_size:Vector2
 var actor : String
 func _ready() -> void:
 	super()
@@ -13,6 +13,7 @@ func _ready() -> void:
 		%TextContent.theme_type_variation = "DigitalText"
 		%ScrollContainer.vertical_scroll_mode = ScrollContainer.ScrollMode.SCROLL_MODE_RESERVE
 		flatten_stylebox(get_body_label())
+	start_size = size
 
 func on_visibility_changed():
 	super.on_visibility_changed()
@@ -93,3 +94,8 @@ func _on_past_container_child_entered_tree(node: Node) -> void:
 	if node in %PastContainer.get_children():
 		if node is RichTextLabel:
 			flatten_stylebox(node)
+
+
+func _on_body_label_item_rect_changed() -> void:
+	size = Vector2(start_size.x, 1)
+	clamp_to_viewport()

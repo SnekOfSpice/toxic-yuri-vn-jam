@@ -316,3 +316,6 @@ func set_psychedelics(value:bool):
 		color_rect.color.a = 0
 		var t = create_tween()
 		t.tween_property(color_rect, "color:a", 1, 20)
+
+func hide_default_text_container():
+	GameWorld.game_stage.hide_default_text_container()

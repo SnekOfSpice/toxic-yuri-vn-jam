@@ -102,7 +102,7 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_page = 11
+devmode_start_page = 7
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -336,10 +336,10 @@ include_title_bar = false
 
 [node name="ChatLogWindow2" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
 layout_mode = 1
-offset_left = -40.0
-offset_top = 392.0
-offset_right = 488.0
-offset_bottom = 546.0
+offset_left = -25.0
+offset_top = 455.0
+offset_right = 503.0
+offset_bottom = 609.0
 id = 2
 include_title_bar = false
 

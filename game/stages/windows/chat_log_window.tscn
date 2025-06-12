@@ -77,3 +77,4 @@ bbcode_enabled = true
 fit_content = true
 
 [connection signal="child_entered_tree" from="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent/PastContainer" to="." method="_on_past_container_child_entered_tree"]
+[connection signal="item_rect_changed" from="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent/BodyLabel" to="." method="_on_body_label_item_rect_changed"]
