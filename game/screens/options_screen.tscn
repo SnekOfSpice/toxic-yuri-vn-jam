@@ -138,8 +138,7 @@ text = "Advance - [LClick] / [Space] / [Right]
 Move Window - [RClick] + drag
 Screenshot - [S]
 Toggle UI - [H]
-Toggle auto - [A]
-Go back - [Scroll Down] / [Left]"
+Toggle auto - [A]"
 fit_content = true
 
 [node name="TextMenu" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer"]

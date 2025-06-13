@@ -1,12 +1,14 @@
-[gd_resource type="Theme" load_steps=37 format=3 uid="uid://gee0nt5mhjku"]
+[gd_resource type="Theme" load_steps=39 format=3 uid="uid://gee0nt5mhjku"]
 
 [ext_resource type="FontFile" uid="uid://df8rce7yfdeog" path="res://game/visuals/theme/fonts/body_candidates/barlow/Barlow-Black.otf" id="1_b647t"]
 [ext_resource type="FontFile" uid="uid://5cictvfk5bbm" path="res://game/visuals/theme/fonts/body_candidates/veramono/VeraMono.ttf" id="1_booqv"]
+[ext_resource type="Texture2D" uid="uid://b03ftnlcv35es" path="res://game/visuals/theme/ui/checked.png" id="2_d6fam"]
 [ext_resource type="FontFile" uid="uid://b131hg4ehie05" path="res://game/visuals/theme/fonts/body_candidates/veramono/VeraMono-Bold.ttf" id="2_er4n1"]
 [ext_resource type="Texture2D" uid="uid://b2467ulyfax17" path="res://game/visuals/theme/ui/h_grabber.png" id="2_oefcn"]
 [ext_resource type="FontFile" uid="uid://j23b1a8vc4c0" path="res://game/visuals/theme/fonts/body_candidates/barlow/Barlow-BlackItalic.otf" id="2_sdbci"]
 [ext_resource type="Texture2D" uid="uid://djb0wjvfuhg6y" path="res://game/visuals/theme/ui/h_grabber_disabled.png" id="3_58eoa"]
 [ext_resource type="FontFile" uid="uid://dbfrdgojyjp35" path="res://game/visuals/theme/fonts/body_candidates/barlow/Barlow-MediumItalic.otf" id="3_booqv"]
+[ext_resource type="Texture2D" uid="uid://dqdot6ug2u1jv" path="res://game/visuals/theme/ui/unchecked.png" id="3_eou7f"]
 [ext_resource type="Texture2D" uid="uid://6jmnpkrnm2xu" path="res://game/visuals/theme/ui/h_grabber_highlight.png" id="4_d6fam"]
 [ext_resource type="FontFile" uid="uid://ctenk40s27iw1" path="res://game/visuals/theme/fonts/body_candidates/barlow/Barlow-Medium.otf" id="4_er4n1"]
 
@@ -203,6 +205,8 @@ Button/styles/focus = SubResource("StyleBoxFlat_ggh8c")
 Button/styles/hover = SubResource("StyleBoxFlat_oefcn")
 Button/styles/normal = SubResource("StyleBoxFlat_58eoa")
 Button/styles/pressed = SubResource("StyleBoxFlat_8nnbg")
+CheckBox/icons/checked = ExtResource("2_d6fam")
+CheckBox/icons/unchecked = ExtResource("3_eou7f")
 DigitalText/fonts/normal_font = ExtResource("1_booqv")
 EmbodiedText/base_type = &"PanelContainer"
 EmbodiedText/styles/panel = SubResource("StyleBoxFlat_booqv")
