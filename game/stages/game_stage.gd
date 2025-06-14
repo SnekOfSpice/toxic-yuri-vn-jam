@@ -51,6 +51,7 @@ func get_default_targets() -> Dictionary:
 	return result
 
 func _ready():
+	set_background("black")
 	find_child("Portrait").visible = false
 	find_child("PsychedelicsLayer").visible = false
 	find_child("DevModeLabel").visible = devmode_enabled

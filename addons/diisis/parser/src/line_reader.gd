@@ -1638,7 +1638,11 @@ func _set_body_label_text(text: String):
 			past_line.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		
 		var past_text := ""
-		if not _last_raw_name in blank_names and not body_label.text.is_empty() and not chatlog_enabled and (name_style == NameStyle.Prepend or (name_style == NameStyle.NameLabel and preserve_name_in_past_lines)):
+		# TODO this is kinda a hack and only properly worth with prepend name style because
+		# if you switch target labels, it tracks the wrong last raw name
+		# lonerdogmoment
+		# but it works for now
+		if not _last_raw_name in blank_names and not body_label.text.is_empty() and not chatlog_enabled and (name_style == NameStyle.NameLabel and preserve_name_in_past_lines):
 			var actor_prefix := _wrap_in_color_tags_if_present(_last_raw_name)
 			past_text = str(actor_prefix, _get_prepend_separator_sequence())
 		
@@ -1646,8 +1650,8 @@ func _set_body_label_text(text: String):
 			push_warning("preserve_name_in_past_lines is false but name_style is set to Prepend. There will be a name in past lines.")
 		
 		var body_label_to_save = body_label.text
-		if name_style == NameStyle.Prepend and not current_raw_name in blank_names:
-			body_label_to_save = body_label_to_save.erase(0, body_label_to_save.find(_get_prepend_separator_sequence()) + _get_prepend_separator_sequence().length())
+		#if name_style == NameStyle.Prepend and not current_raw_name in blank_names:
+			#body_label_to_save = body_label_to_save.erase(0, body_label_to_save.find(_get_prepend_separator_sequence()) + _get_prepend_separator_sequence().length())
 		past_text += body_label_to_save
 		past_line.text = past_text
 		past_lines_container.add_child(past_line)

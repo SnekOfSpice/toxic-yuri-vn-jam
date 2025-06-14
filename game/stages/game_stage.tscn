@@ -102,7 +102,8 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_page = 7
+devmode_start_page = 15
+devmode_start_line = 8
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -119,6 +120,7 @@ unique_name_in_owner = true
 script = ExtResource("3_pms35")
 auto_pause_duration = 0.4
 show_text_during_text = false
+show_text_during_instructions = true
 blank_names = Array[String](["narrator"])
 name_map = Dictionary[String, String]({
 "argo": "Argo",
@@ -460,11 +462,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="BlackFade" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot" instance=ExtResource("8_50byo")]
-visible = false
-z_index = 10
-layout_mode = 1
-
 [node name="ChapterCover" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot" instance=ExtResource("12_vf2y4")]
 visible = false
 layout_mode = 1
@@ -536,8 +533,14 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
+[node name="BlackLayer" type="CanvasLayer" parent="LineReader/SubViewportContainer"]
+
+[node name="BlackFade" parent="LineReader/SubViewportContainer/BlackLayer" instance=ExtResource("8_50byo")]
+visible = false
+z_index = 10
+
 [connection signal="request_object_visible" from="LineReader" to="LineReader/Objects" method="set_object_visible"]
-[connection signal="start_black_fade" from="LineReader" to="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/BlackFade" method="_on_handler_start_black_fade"]
+[connection signal="start_black_fade" from="LineReader" to="LineReader/SubViewportContainer/BlackLayer/BlackFade" method="_on_handler_start_black_fade"]
 [connection signal="start_chapter_cover" from="LineReader" to="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/ChapterCover" method="set_chapter_cover"]
 [connection signal="start_hide_cg" from="LineReader" to="." method="hide_cg"]
 [connection signal="start_show_cg" from="LineReader" to="." method="_on_handler_start_show_cg"]
