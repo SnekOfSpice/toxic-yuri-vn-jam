@@ -94,8 +94,15 @@ func _on_past_container_child_entered_tree(node: Node) -> void:
 	if node in %PastContainer.get_children():
 		if node is RichTextLabel:
 			flatten_stylebox(node)
+			node.meta_clicked.connect(str_open)
 
 
 func _on_body_label_item_rect_changed() -> void:
 	size = Vector2(start_size.x, 1)
 	clamp_to_viewport()
+
+func str_open(meta:Variant):
+	OS.shell_open(str(meta))
+func _on_body_label_meta_clicked(meta: Variant) -> void:
+	# doesnt work yet but whatevs
+	OS.shell_open(str(meta))

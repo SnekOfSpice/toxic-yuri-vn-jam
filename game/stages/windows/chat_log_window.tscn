@@ -14,7 +14,7 @@ offset_bottom = 154.0
 grow_horizontal = 0
 size_flags_horizontal = 3
 size_flags_vertical = 0
-mouse_filter = 1
+mouse_filter = 2
 theme = ExtResource("1_pxmp7")
 script = ExtResource("1_023oh")
 title = "BARK"
@@ -22,16 +22,19 @@ header_vbox_parent = NodePath("VBoxContainer")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
+mouse_filter = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 0
+mouse_filter = 2
 
 [node name="Portrait" type="TextureRect" parent="VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_vertical = 0
+mouse_filter = 2
 texture = ExtResource("3_h2eej")
 expand_mode = 4
 stretch_mode = 5
@@ -45,6 +48,7 @@ mouse_filter = 2
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer/PanelContainer"]
 layout_mode = 2
 size_flags_vertical = 0
+mouse_filter = 2
 
 [node name="NameLabel" type="Label" parent="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer"]
 unique_name_in_owner = true
@@ -55,6 +59,7 @@ text = "owowo"
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
+mouse_filter = 2
 horizontal_scroll_mode = 0
 script = ExtResource("4_wrkq1")
 
@@ -62,6 +67,7 @@ script = ExtResource("4_wrkq1")
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
 mouse_filter = 2
 
 [node name="PastContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent"]
@@ -73,10 +79,11 @@ mouse_filter = 2
 unique_name_in_owner = true
 custom_minimum_size = Vector2(370, 0)
 layout_mode = 2
-size_flags_vertical = 3
+size_flags_vertical = 0
 mouse_filter = 1
 bbcode_enabled = true
 fit_content = true
 
 [connection signal="child_entered_tree" from="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent/PastContainer" to="." method="_on_past_container_child_entered_tree"]
 [connection signal="item_rect_changed" from="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent/BodyLabel" to="." method="_on_body_label_item_rect_changed"]
+[connection signal="meta_clicked" from="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent/BodyLabel" to="." method="_on_body_label_meta_clicked"]

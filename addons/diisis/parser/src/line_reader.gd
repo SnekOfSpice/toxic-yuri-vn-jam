@@ -1635,7 +1635,7 @@ func _set_body_label_text(text: String):
 			past_line.custom_minimum_size.x = body_label.custom_minimum_size.x
 			past_line.fit_content = true
 			past_line.bbcode_enabled = true
-			past_line.mouse_filter = Control.MOUSE_FILTER_IGNORE
+			past_line.mouse_filter = Control.MOUSE_FILTER_PASS
 		
 		var past_text := ""
 		# TODO this is kinda a hack and only properly worth with prepend name style because
