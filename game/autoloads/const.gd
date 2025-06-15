@@ -15,8 +15,6 @@ const SCREEN_SAVE := "save_screen.tscn"
 const CG_ROOT := "res://game/cg/"
 
 const BACKGROUND_ROOT := "res://game/backgrounds/"
-const BACKGROUND_ARGO_APARTMENT := "void.png"
-const BACKGROUND_RECOVERY_CENTER := "void.png"
 
 const MUSIC_ROOT := "res://game/sounds/music/"
 const MUSIC_ARGO_DEFAULT := "2025-06-09-tyj_the quite part out loud.mp3"

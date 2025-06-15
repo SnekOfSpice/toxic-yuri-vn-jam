@@ -495,8 +495,8 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 	#GoBackHandler.store_into_subaddress(target_label_id_by_actor.duplicate(),
 		#targets_by_subaddress, Parser.line_reader.get_subaddress())
 	target_label_id_by_actor[actor] = target_id
-	var is_texting := target_id in [3,5]
-	var is_digital := target_id in [3,4,5]
+	var is_texting := target_id in [3,5,7]
+	var is_digital := target_id in [3,4,5,7]
 	are_words_being_spoken = not is_texting
 	if target_id == 6:
 		hide_all_windows()
