@@ -322,3 +322,17 @@ func set_psychedelics(value:bool):
 
 func hide_default_text_container():
 	GameWorld.game_stage.hide_default_text_container()
+
+
+func suicide_visual():
+	var layer : CanvasLayer = find_child("Suicide")
+	layer.visible = true
+	var floaty : ColorRect = layer.find_child("Floaty")
+	floaty.color.a = 0
+	var t = create_tween()
+	t.tween_property(floaty, "color:a", 1, 10).set_ease(Tween.EASE_OUT_IN)
+	t.tween_property(floaty, "color:a", 0, 5).set_delay(5)
+	t.finished.connect(layer.set.bind("visible", false))
+	t.finished.connect(Parser.function_acceded)
+	
+	return true

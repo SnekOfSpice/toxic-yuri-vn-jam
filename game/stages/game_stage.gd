@@ -27,18 +27,15 @@ var is_name_container_visible := false
 var callable_upon_blocker_clear:Callable
 
 @onready var camera = %Camera2D
-@onready var overlay_static = find_child("Static").get_node("ColorRect")
 @onready var overlay_fade_out = find_child("FadeOut").get_node("ColorRect")
 @onready var overlay_orgasm = find_child("Orgasm").get_node("ColorRect")
 
 
 @onready var orgasm_mat = overlay_orgasm.get_material()
 @onready var fade_mat = overlay_fade_out.get_material()
-@onready var static_mat = overlay_static.get_material()
 
 var target_lod := 0.0
 var target_mix := 0.0
-var target_static := 0.0
 
 @onready var windows : Array = find_child("Windows").get_children()
 var last_body_label_target := 0
@@ -53,6 +50,7 @@ func get_default_targets() -> Dictionary:
 func _ready():
 	set_background("black")
 	find_child("Portrait").visible = false
+	find_child("Suicide").visible = false
 	find_child("PsychedelicsLayer").visible = false
 	find_child("DevModeLabel").visible = devmode_enabled
 	target_label_id_by_actor = get_default_targets()
@@ -143,8 +141,6 @@ func _process(_delta: float) -> void:
 	fade_mat.set_shader_parameter("lod", lerp(fade_mat.get_shader_parameter("lod"), target_lod, 0.02))
 	fade_mat.set_shader_parameter("mix_percentage", lerp(fade_mat.get_shader_parameter("mix_percentage"), target_mix, 0.02))
 	
-	static_mat.set_shader_parameter("intensity", lerp(static_mat.get_shader_parameter("intensity"), target_static, 0.02))
-	static_mat.set_shader_parameter("border_size", lerp(static_mat.get_shader_parameter("border_size"), 1 - target_static, 0.02))
 	
 	orgasm_mat.set_shader_parameter("lod", lerp(orgasm_mat.get_shader_parameter("lod"), 0.0, 0.000175))
 	
@@ -355,7 +351,6 @@ func serialize() -> Dictionary:
 	result["objects"] = %Objects.serialize()
 	
 	result["start_cover_visible"] = find_child("StartCover").visible
-	result["static"] = overlay_static.get_material().get_shader_parameter("intensity")
 	result["fade_out_lod"] = overlay_fade_out.get_material().get_shader_parameter("lod")
 	result["fade_out_mix_percentage"] = overlay_fade_out.get_material().get_shader_parameter("mix_percentage")
 	
@@ -418,9 +413,6 @@ func deserialize(data:Dictionary):
 	overlay_fade_out.get_material().set_shader_parameter("lod", target_lod)
 	overlay_fade_out.get_material().set_shader_parameter("mix_percentage", target_mix)
 	
-	target_static = data.get("static", 0.0)
-	overlay_static.get_material().set_shader_parameter("intensity", target_static)
-	overlay_static.get_material().set_shader_parameter("border_size", 1 - target_static)
 	
 	base_cg_offset = GameWorld.str_to_vec2(data.get("base_cg_offset", Vector2.ZERO))
 	target_label_id_by_actor = data.get("target_label_id_by_actor", {})
@@ -480,10 +472,6 @@ func _on_chapter_cover_chapter_intro_finished() -> void:
 	find_child("ChapterCover").visible = false
 
 
-
-func set_static(level:float):
-	target_static = level
-	
 
 func set_fade_out(lod:float, mix:float):
 	target_lod = lod

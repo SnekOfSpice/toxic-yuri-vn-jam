@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=32 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" uid="uid://j84s4qlkmfxw" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" uid="uid://bqw08o3b22fdc" path="res://game/stages/line_reader_custom.gd" id="3_pms35"]
@@ -21,6 +21,7 @@
 [ext_resource type="Shader" uid="uid://dh14tp6f61jea" path="res://game/stages/sps_dither.gdshader" id="15_j1uqk"]
 [ext_resource type="Shader" uid="uid://oj2v8kbp13pd" path="res://game/stages/static.gdshader" id="17_dc0ef"]
 [ext_resource type="PackedScene" uid="uid://ipa310726xyt" path="res://game/stages/rolling_credits.tscn" id="17_gnute"]
+[ext_resource type="Shader" uid="uid://ugvetmo7tey1" path="res://game/stages/desaturation.gdshader" id="17_pxthe"]
 [ext_resource type="PackedScene" uid="uid://buhh6ornccsky" path="res://game/stages/opening_splash.tscn" id="22_ij3no"]
 [ext_resource type="Shader" uid="uid://d3bqi4abjy5sl" path="res://game/stages/psychedelics.gdshader" id="23_7wbxo"]
 
@@ -37,8 +38,15 @@ shader_parameter/mix_percentage = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_d8rgb"]
 shader = ExtResource("17_dc0ef")
-shader_parameter/intensity = 0.0
-shader_parameter/border_size = 1.0
+shader_parameter/stretch = 0.9
+shader_parameter/thing1 = 18.9
+shader_parameter/thing2 = 10.7
+shader_parameter/thing3 = 22.0
+shader_parameter/scale = 6.505
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nhjyc"]
+shader = ExtResource("17_pxthe")
+shader_parameter/saturation = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_knhaa"]
 shader = ExtResource("15_j1uqk")
@@ -102,7 +110,8 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_page = 12
+devmode_start_page = 31
+devmode_start_line = 4
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -450,18 +459,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="Static" type="CanvasLayer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot"]
-visible = false
-
-[node name="ColorRect" type="ColorRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/Static"]
-material = SubResource("ShaderMaterial_d8rgb")
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-
 [node name="ChapterCover" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot" instance=ExtResource("12_vf2y4")]
 visible = false
 layout_mode = 1
@@ -508,6 +505,34 @@ text = "DEV MODE ENABLED"
 [node name="OpeningSplash" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer" instance=ExtResource("22_ij3no")]
 unique_name_in_owner = true
 visible = false
+
+[node name="Suicide" type="CanvasLayer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D"]
+
+[node name="ColorRect3" type="ColorRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/Suicide"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Floaty" type="ColorRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/Suicide"]
+material = SubResource("ShaderMaterial_d8rgb")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0.831373)
+
+[node name="ColorRect2" type="ColorRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/Suicide"]
+material = SubResource("ShaderMaterial_nhjyc")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="DitherLayer" type="CanvasLayer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D"]
 visible = false
