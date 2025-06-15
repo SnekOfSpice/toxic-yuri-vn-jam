@@ -256,6 +256,7 @@ const SPLASH_STRINGS := {
 	"keep_the_body" : "[ph]keep the body.",
 	"maya_huddles" : "Maya huddles.",
 	"scars" : "[ph]A livingbeing is just a colection of scars.",
+	"celestial_bodies" : "Like twin stars.",
 }
 func splash_text(key:String,
 	fade_in := 0.0,
