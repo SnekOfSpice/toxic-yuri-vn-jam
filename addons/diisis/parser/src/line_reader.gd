@@ -1524,7 +1524,7 @@ func _handle_tags_and_start_reading():
 		name_container.modulate.a = 0.0
 	elif name_style == NameStyle.Prepend:
 		name_container.modulate.a = 0.0
-		var display_name: String = name_map.get(current_raw_name, current_raw_name)
+		var display_name: String = _get_actor_name(current_raw_name)
 		var name_color :Color = _get_actor_color(current_raw_name)
 		if not current_raw_name in blank_names:
 			cleaned_text = str(
@@ -1707,6 +1707,11 @@ func enable_keep_past_lines(container: VBoxContainer, keep_text := false, new_la
 func _find_next_pause():
 	if _pause_types.size() > 0 and _next_pause_position_index < _pause_types.size():
 		_next_pause_type = _pause_types[_next_pause_position_index]
+
+func _get_full_prepend_name_prefix(actor:String) -> String:
+	if name_style != NameStyle.Prepend:
+		return ""
+	return _get_actor_name(actor) + _get_prepend_separator_sequence()
 
 func _get_actor_name(actor_key:String) -> String:
 	return name_map.get(actor_key, actor_key)
