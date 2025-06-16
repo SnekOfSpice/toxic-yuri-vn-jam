@@ -70,6 +70,7 @@ func refresh(serialize_before_load:=true, fragile:=false):
 
 func init(active_file_path:="") -> void:
 	$OpeningCover.visible = true
+	was_playing_scene = EditorInterface.is_playing_scene()
 	Pages.clear()
 	DiisisEditorActions.clear()
 	opening = true
