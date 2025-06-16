@@ -311,11 +311,6 @@ func start_opening_splash():
 	%OpeningSplash.start()
 	return true
 
-func _process(delta: float) -> void:
-	super(delta)
-	if psychedelics_enabled:
-		psychedelics_rect.get_material().set_shader_parameter("base_texture", get_viewport().get_texture())
-		#get_viewport().get_texture()
 @onready var psychedelics_rect : ColorRect = find_child("PsychedelicsLayer").get_child(0)
 var psychedelics_enabled := false
 func set_psychedelics(value:bool):
