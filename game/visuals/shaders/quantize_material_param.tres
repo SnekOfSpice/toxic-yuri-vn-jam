@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://3ubtbqs0wka4"]
+
+[ext_resource type="Shader" uid="uid://jwjtbcueva4r" path="res://game/visuals/shaders/quantizer.gdshader" id="1_iho5h"]
+[ext_resource type="Texture2D" uid="uid://dgwlhw05a346y" path="res://game/visuals/shaders/1px_lut.png" id="2_geiop"]
+
+[resource]
+shader = ExtResource("1_iho5h")
+shader_parameter/shader_enabled = false
+shader_parameter/palette = ExtResource("2_geiop")
+shader_parameter/dithering = true
+shader_parameter/dithering_size = 1
+shader_parameter/resolution_scale = 1
+shader_parameter/quantization_level = 7

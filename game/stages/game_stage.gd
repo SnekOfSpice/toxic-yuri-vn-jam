@@ -357,7 +357,7 @@ func serialize() -> Dictionary:
 	result["camera"] = %Camera2D.serialize()
 	result["target_label_id_by_actor"] = target_label_id_by_actor
 	result["last_body_label_target"] = last_body_label_target
-	result["psychedelics"] = find_child("PsychedelicsLayer").visible
+	result["psychedelics"] = line_reader.psychedelics_enabled
 	
 	#result["window_visibilities_by_subaddress"] = window_visibilities_by_subaddress
 	#result["target_label_history_by_subaddress"] = target_label_history_by_subaddress

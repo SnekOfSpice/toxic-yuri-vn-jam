@@ -23,8 +23,11 @@ func handle_scrollbar_changed():
 		scroll_vertical = max_scroll_length
 	
 	if code_edit:
-		scroll_vertical = scroll_before
 		var draw_y = int(code_edit.get_caret_draw_pos().y)
-		#printt("scroll ", code_edit.get_caret_draw_pos().y, size.y, scroll_vertical)
-		if (draw_y > size.y) and (draw_y < scroll_vertical):
+		
+		if (draw_y > size.y) and (draw_y < scroll_before):
 			scroll_vertical = draw_y
+		elif draw_y > size.y + scroll_before: # for newlines that extend the size at the end of the text box
+			scroll_vertical = draw_y
+		else:
+			scroll_vertical = scroll_before

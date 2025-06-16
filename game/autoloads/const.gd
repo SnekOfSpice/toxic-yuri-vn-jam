@@ -34,7 +34,7 @@ const MUSIC_RECOVERY := "Paradise_Found.mp3"
 const MUSIC_MAIN_MENU := "Paradise_Found.mp3"
 const MUSIC_MEETING_AGAIN := "Paradise_Found.mp3"
 const MUSIC_NIGHTCORE := "Paradise_Found.mp3"
-const MUSIC_SHELTER := "Paradise_Found.mp3"
+const MUSIC_SHELTER := "Princess Commodore 64 - XOXO - 02 XOXO.ogg"
 const MUSIC_VEIN_ACID := "Paradise_Found.mp3"
 
 const SFX_ROOT := "res://game/sounds/sfx/"

@@ -14,6 +14,7 @@ func _ready() -> void:
 	if not menu_music.is_empty():
 		Sound.play_bgm(menu_music)
 	find_child("QuitButton").visible = not OS.has_feature("web")
+	set_enable_dither(Options.enable_dither)
 	
 	update_load_button()
 	#if GameWorld.just_started:
@@ -80,3 +81,6 @@ func _on_save_slot_button_pressed() -> void:
 
 func _on_unlocked_epilogue_button_pressed() -> void:
 	find_child("UnlockedEpilogueOverlay").visible = false
+
+func set_enable_dither(value:bool):
+	find_child("DitherLayer").visible = value

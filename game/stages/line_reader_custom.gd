@@ -252,7 +252,7 @@ const SPLASH_STRINGS := {
 	"carnage" : "In carnage you will bloom.",
 	"quandary_of_thought" : "A quandary of thought.",
 	"wakey" : "Wakey wakey.",
-	"art" : "[ph]sth abt art.",
+	"art" : "The body is a canvas.",
 	"keep_the_body" : "[ph]keep the body.",
 	"maya_huddles" : "Maya huddles.",
 	"scars" : "[ph]A livingbeing is just a colection of scars.",
@@ -311,14 +311,26 @@ func start_opening_splash():
 	%OpeningSplash.start()
 	return true
 
+func _process(delta: float) -> void:
+	super(delta)
+	if psychedelics_enabled:
+		psychedelics_rect.get_material().set_shader_parameter("base_texture", GameWorld.game_stage.find_child("PsychCamera").get_viewport().get_texture())
+		#get_viewport().get_texture()
+@onready var psychedelics_rect : ColorRect = find_child("PsychedelicsLayer").get_child(0)
+var psychedelics_enabled := false
 func set_psychedelics(value:bool):
+	psychedelics_enabled = value
 	var layer : CanvasLayer = find_child("PsychedelicsLayer")
-	layer.visible = value
+	var color_rect : ColorRect = layer.get_child(0)
 	if value:
-		var color_rect : ColorRect = layer.get_child(0)
+		layer.visible = value
 		color_rect.color.a = 0
 		var t = create_tween()
 		t.tween_property(color_rect, "color:a", 1, 20)
+	else:
+		var t = create_tween()
+		t.tween_property(color_rect, "color:a", 0, 8)
+		t.finished.connect(layer.set.bind("visible", false))
 
 func hide_default_text_container():
 	GameWorld.game_stage.hide_default_text_container()
@@ -334,5 +346,8 @@ func suicide_visual():
 	t.tween_property(floaty, "color:a", 0, 5).set_delay(5)
 	t.finished.connect(layer.set.bind("visible", false))
 	t.finished.connect(Parser.function_acceded)
+	
+	var p : AudioStreamPlayer = Sound.play_sfx("ocean")
+	p.finished.connect(Sound.play_sfx.bind("ocean2"))
 	
 	return true

@@ -1,11 +1,17 @@
-[gd_scene load_steps=7 format=3 uid="uid://b3u3nrek114bl"]
+[gd_scene load_steps=9 format=3 uid="uid://b3u3nrek114bl"]
 
 [ext_resource type="Theme" uid="uid://gee0nt5mhjku" path="res://game/visuals/theme/toxic_yuri_vn_theme.tres" id="1_6wjhx"]
 [ext_resource type="Script" uid="uid://dnbopb4ksr64p" path="res://game/stages/main_menu_stage.gd" id="1_wqqgh"]
-[ext_resource type="Material" uid="uid://cjfy0guf7efb6" path="res://game/visuals/shaders/quantize_material.tres" id="3_6wjhx"]
 [ext_resource type="Theme" uid="uid://drk5fhsdjoewf" path="res://game/visuals/theme/diisis_theme.tres" id="3_fjoxk"]
+[ext_resource type="Material" uid="uid://3ubtbqs0wka4" path="res://game/visuals/shaders/quantize_material_param.tres" id="3_o4dm7"]
 [ext_resource type="Texture2D" uid="uid://bj52mo45ls5d6" path="res://game/visuals/logo_scrawl_1312.png" id="4_70r8q"]
 [ext_resource type="Texture2D" uid="uid://cragbc6muwrx1" path="res://game/backgrounds/main_menu.png" id="4_o4dm7"]
+[ext_resource type="Shader" uid="uid://dh14tp6f61jea" path="res://game/stages/sps_dither.gdshader" id="7_o4dm7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qg14a"]
+shader = ExtResource("7_o4dm7")
+shader_parameter/resolution_downsampling = 1.1
+shader_parameter/bit_depth = 10.0
 
 [node name="MainMenuStage" type="Control"]
 layout_mode = 3
@@ -19,10 +25,11 @@ script = ExtResource("1_wqqgh")
 menu_music = "main_menu"
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
-material = ExtResource("3_6wjhx")
+material = ExtResource("3_o4dm7")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+mouse_filter = 2
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
 handle_input_locally = false
@@ -234,6 +241,18 @@ fit_content = true
 [node name="UnlockedEpilogueButton" type="Button" parent="SubViewportContainer/SubViewport/CanvasLayer3/UnlockedEpilogueOverlay/CenterContainer/VBoxContainer"]
 layout_mode = 2
 text = "Got it"
+
+[node name="DitherLayer" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
+layer = 13
+
+[node name="ColorRect" type="ColorRect" parent="SubViewportContainer/SubViewport/DitherLayer"]
+material = SubResource("ShaderMaterial_qg14a")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 
 [connection signal="pressed" from="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer/VBoxContainer/SaveContainer/Vbox/SaveSlotButton" to="." method="_on_save_slot_button_pressed"]
 [connection signal="pressed" from="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer2/OptionsButton" to="." method="_on_options_button_pressed"]

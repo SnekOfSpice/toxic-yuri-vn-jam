@@ -216,5 +216,4 @@ func _on_reset_rtl_font_size_button_pressed() -> void:
 
 func _on_enable_dither_check_box_toggled(toggled_on: bool) -> void:
 	Options.set_enable_dither(toggled_on)
-	if GameWorld.game_stage:
-		GameWorld.game_stage.set_enable_dither(toggled_on)
+	GameWorld.set_enable_dither(toggled_on)

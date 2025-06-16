@@ -50,3 +50,6 @@ func deserialize(data:Dictionary):
 func hide_all_characters():
 	for character : Character in get_tree().get_nodes_in_group("character"):
 		character.set_invisible()
+
+func set_enable_dither(value:bool):
+	stage_root.get_stage_node().set_enable_dither(value)
