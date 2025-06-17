@@ -109,7 +109,7 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_page = 1
+devmode_start_page = 11
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -356,7 +356,7 @@ offset_top = 599.0
 offset_right = 999.0
 offset_bottom = 753.0
 id = 3
-title = "PAWZ - chat client"
+title = "PADS - chat client"
 icon = ExtResource("10_pms35")
 
 [node name="ChatLogWindow4" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
@@ -376,7 +376,7 @@ offset_top = 559.0
 offset_right = 478.0
 offset_bottom = 713.0
 id = 5
-title = "PAWZ - chat client"
+title = "PADS - chat client"
 icon = ExtResource("10_pms35")
 
 [node name="ChatLogWindow7" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
@@ -386,7 +386,7 @@ offset_top = 559.0
 offset_right = 478.0
 offset_bottom = 713.0
 id = 7
-title = "PAWZ - chat client"
+title = "PADS - chat client"
 icon = ExtResource("10_pms35")
 
 [node name="ImageViewerWindow" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_3xf2c")]
