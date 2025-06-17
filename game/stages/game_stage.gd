@@ -25,7 +25,7 @@ var is_name_container_visible := false
 @onready var cg_roots := [find_child("CGBottomContainer"), find_child("CGTopContainer")]
 
 var callable_upon_blocker_clear:Callable
-
+var meta_blocker := false
 @onready var camera = %Camera2D
 @onready var overlay_fade_out = find_child("FadeOut").get_node("ColorRect")
 @onready var overlay_orgasm = find_child("Orgasm").get_node("ColorRect")
@@ -185,6 +185,8 @@ func _unhandled_input(event: InputEvent) -> void:
 			GameWorld.stage_root.set_screen(CONST.SCREEN_OPTIONS)
 
 	if event.is_action_pressed("advance"):
+		if meta_blocker:
+			return
 		for root in cg_roots:
 			if root.visible and emit_insutrction_complete_on_cg_hide:
 				hide_cg()
