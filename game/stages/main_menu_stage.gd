@@ -11,6 +11,7 @@ signal load_game()
 signal start_epilogue()
 
 func _ready() -> void:
+	find_child("BlackLayer").visible = false
 	%AnimationPlayer.play("hover")
 	if not menu_music.is_empty():
 		Sound.play_bgm(menu_music)
@@ -24,8 +25,6 @@ func _ready() -> void:
 	
 	find_child("SaveContainer").visible = Options.has_savedata(0)
 	
-	find_child("StartButton").pressed.connect(emit_signal.bind("start_game"))
-	find_child("LoadButton").pressed.connect(emit_signal.bind("load_game"))
 	find_child("EpilogueButton").pressed.connect(emit_signal.bind("start_epilogue"))
 	#if Options.just_finished_game:
 		#Options.just_finished_game = false
@@ -80,8 +79,6 @@ func _on_cw_button_pressed() -> void:
 
 
 
-func _on_sound_check_button_pressed() -> void:
-	find_child("SoundCheckOverlay").visible = false
 
 
 func _on_save_slot_button_pressed() -> void:
@@ -93,3 +90,22 @@ func _on_unlocked_epilogue_button_pressed() -> void:
 
 func set_enable_dither(value:bool):
 	find_child("DitherLayer").visible = value
+
+
+func _on_start_button_pressed() -> void:
+	var black : ColorRect = find_child("Black")
+	find_child("BlackLayer").visible = true
+	var t = create_tween()
+	black.modulate.a = 0
+	t.tween_property(black, "modulate:a", 1, 4)
+	
+	t.finished.connect(emit_signal.bind("start_game"))
+
+
+func _on_load_button_pressed() -> void:
+	var black : ColorRect = find_child("Black")
+	find_child("BlackLayer").visible = true
+	var t = create_tween()
+	black.modulate.a = 0
+	t.tween_property(black, "modulate:a", 1, 4)
+	t.finished.connect(emit_signal.bind("load_game"))

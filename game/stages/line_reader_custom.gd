@@ -27,9 +27,10 @@ func _ready() -> void:
 	if Engine.is_editor_hint():
 		return
 	camera = %Camera2D
-	if not body_label:
-		await  get_tree().process_frame
-		set_body_label(GameWorld.game_stage.get_body_label(0))
+	
+	#if not body_label:
+		#await  get_tree().process_frame
+		#set_body_label(GameWorld.game_stage.get_body_label(0))
 
 func play_sfx(_name:String):
 	Sound.play_sfx(_name)

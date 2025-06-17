@@ -636,3 +636,11 @@ func hide_window(id:int):
 		if window.id == id:
 			window.hide()
 			return
+
+
+func clear_text_bodies():
+	%DefaultTextContainer.find_child("BodyLabel").text = ""
+	%FullCoverText.find_child("BodyLabel").text = ""
+	for window : CustomWindow in windows:
+		if window is ChatLogWindow:
+			window.get_body_label().text = ""

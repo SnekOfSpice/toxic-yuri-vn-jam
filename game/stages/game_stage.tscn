@@ -122,7 +122,7 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 0.858824)
 
-[node name="LineReader" type="Node" parent="." node_paths=PackedStringArray("name_label", "text_container", "name_container")]
+[node name="LineReader" type="Node" parent="." node_paths=PackedStringArray("name_label", "body_label", "text_container", "name_container")]
 unique_name_in_owner = true
 script = ExtResource("3_pms35")
 auto_pause_duration = 0.4
@@ -159,6 +159,7 @@ color_map = Dictionary[String, Color]({
 })
 name_style = 1
 name_label = NodePath("SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer/PanelContainer/VBoxContainer/NameContainer/NameLabel")
+body_label = NodePath("SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer/PanelContainer/VBoxContainer/BodyLabel")
 text_container = NodePath("SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer")
 name_container = NodePath("SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer/PanelContainer/VBoxContainer/NameContainer/NameLabel")
 chatlog_fuse_lines = false
