@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b3u3nrek114bl"]
+[gd_scene load_steps=10 format=3 uid="uid://b3u3nrek114bl"]
 
 [ext_resource type="Theme" uid="uid://gee0nt5mhjku" path="res://game/visuals/theme/toxic_yuri_vn_theme.tres" id="1_6wjhx"]
 [ext_resource type="Script" uid="uid://dnbopb4ksr64p" path="res://game/stages/main_menu_stage.gd" id="1_wqqgh"]
@@ -7,6 +7,11 @@
 [ext_resource type="Texture2D" uid="uid://bj52mo45ls5d6" path="res://game/visuals/logo_scrawl_1312.png" id="4_70r8q"]
 [ext_resource type="Texture2D" uid="uid://cragbc6muwrx1" path="res://game/backgrounds/main_menu.png" id="4_o4dm7"]
 [ext_resource type="Shader" uid="uid://dh14tp6f61jea" path="res://game/stages/sps_dither.gdshader" id="7_o4dm7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o4dm7"]
+shader = ExtResource("7_o4dm7")
+shader_parameter/resolution_downsampling = 5.9
+shader_parameter/bit_depth = 14.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qg14a"]
 shader = ExtResource("7_o4dm7")
@@ -38,10 +43,18 @@ render_target_update_mode = 4
 [node name="CanvasLayer" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
 layer = -2
 
-[node name="CenterContainer" type="TextureRect" parent="SubViewportContainer/SubViewport/CanvasLayer"]
-offset_right = 1000.0
-offset_bottom = 750.0
+[node name="Background" type="Sprite2D" parent="SubViewportContainer/SubViewport/CanvasLayer"]
+unique_name_in_owner = true
 texture = ExtResource("4_o4dm7")
+centered = false
+
+[node name="ColorRect" type="ColorRect" parent="SubViewportContainer/SubViewport/CanvasLayer"]
+material = SubResource("ShaderMaterial_o4dm7")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="SubViewportContainer/SubViewport/CanvasLayer"]
 anchors_preset = 6
