@@ -11,6 +11,7 @@ signal load_game()
 signal start_epilogue()
 
 func _ready() -> void:
+	%AnimationPlayer.play("hover")
 	if not menu_music.is_empty():
 		Sound.play_bgm(menu_music)
 	find_child("QuitButton").visible = not OS.has_feature("web")

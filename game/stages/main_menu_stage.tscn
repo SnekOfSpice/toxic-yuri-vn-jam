@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://b3u3nrek114bl"]
+[gd_scene load_steps=13 format=3 uid="uid://b3u3nrek114bl"]
 
 [ext_resource type="Theme" uid="uid://gee0nt5mhjku" path="res://game/visuals/theme/toxic_yuri_vn_theme.tres" id="1_6wjhx"]
 [ext_resource type="Script" uid="uid://dnbopb4ksr64p" path="res://game/stages/main_menu_stage.gd" id="1_wqqgh"]
@@ -12,6 +12,68 @@
 shader = ExtResource("7_o4dm7")
 shader_parameter/resolution_downsampling = 5.9
 shader_parameter/bit_depth = 14.0
+
+[sub_resource type="Animation" id="Animation_o4dm7"]
+resource_name = "hover"
+length = 24.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%Logo:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 6.03228, 12.0333, 18.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.148353, 0.0, -0.148353]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%Logo:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 8.0649, 15.9659),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-141, -300), Vector2(-141, -312), Vector2(-141, -278)]
+}
+
+[sub_resource type="Animation" id="Animation_qg14a"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%Logo:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%Logo:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-141, -300)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6e4ii"]
+_data = {
+&"RESET": SubResource("Animation_qg14a"),
+&"hover": SubResource("Animation_o4dm7")
+}
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qg14a"]
 shader = ExtResource("7_o4dm7")
@@ -48,6 +110,23 @@ unique_name_in_owner = true
 texture = ExtResource("4_o4dm7")
 centered = false
 
+[node name="Logo" type="TextureRect" parent="SubViewportContainer/SubViewport/CanvasLayer"]
+unique_name_in_owner = true
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -1141.0
+offset_top = -675.0
+offset_right = 171.0
+offset_bottom = 637.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(0.568055, 0.568055)
+pivot_offset = Vector2(656, 656)
+texture = ExtResource("4_70r8q")
+
 [node name="ColorRect" type="ColorRect" parent="SubViewportContainer/SubViewport/CanvasLayer"]
 material = SubResource("ShaderMaterial_o4dm7")
 anchors_preset = 15
@@ -56,20 +135,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="SubViewportContainer/SubViewport/CanvasLayer"]
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -870.0
-offset_top = -379.0
-offset_right = 442.0
-offset_bottom = 933.0
-grow_horizontal = 0
-grow_vertical = 2
-scale = Vector2(0.568055, 0.568055)
-texture = ExtResource("4_70r8q")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/CanvasLayer"]
+unique_name_in_owner = true
+libraries = {
+&"": SubResource("AnimationLibrary_6e4ii")
+}
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
 layer = 3
