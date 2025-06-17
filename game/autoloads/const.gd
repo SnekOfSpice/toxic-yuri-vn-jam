@@ -38,6 +38,7 @@ const MUSIC_MAIN_MENU := "Paradise_Found.mp3"
 const MUSIC_MEETING_AGAIN := "Paradise_Found.mp3"
 const MUSIC_NIGHTCORE := "Paradise_Found.mp3"
 const MUSIC_SHELTER := "Princess Commodore 64 - XOXO - 02 XOXO.ogg"
+const MUSIC_TATTOO := "Paradise_Found.mp3"
 const MUSIC_VEIN_ACID := "Various Artists - CULT TAPE 002 - SELECTED AMBIENT WORKS - 06 Lorenzi - Elphael.ogg"
 
 const SFX_ROOT := "res://game/sounds/sfx/"
