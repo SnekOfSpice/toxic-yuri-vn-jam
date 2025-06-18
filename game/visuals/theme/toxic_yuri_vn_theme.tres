@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=39 format=3 uid="uid://gee0nt5mhjku"]
+[gd_resource type="Theme" load_steps=40 format=3 uid="uid://gee0nt5mhjku"]
 
 [ext_resource type="FontFile" uid="uid://df8rce7yfdeog" path="res://game/visuals/theme/fonts/body_candidates/barlow/Barlow-Black.otf" id="1_b647t"]
 [ext_resource type="FontFile" uid="uid://5cictvfk5bbm" path="res://game/visuals/theme/fonts/body_candidates/veramono/VeraMono.ttf" id="1_booqv"]
@@ -154,6 +154,24 @@ content_margin_top = 1.0
 content_margin_right = 5.0
 content_margin_bottom = 1.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uapgc"]
+content_margin_left = 6.0
+content_margin_top = 2.0
+content_margin_right = 6.0
+content_margin_bottom = 3.0
+bg_color = Color(0.08, 0.08, 0.08, 1)
+border_width_left = 3
+border_width_top = 2
+border_width_right = 3
+border_width_bottom = 2
+border_color = Color(0.696211, 0.542842, 0.364609, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 1
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p5fhx"]
 bg_color = Color(0.109804, 0.109804, 0.109804, 1)
 border_width_left = 1
@@ -236,6 +254,8 @@ Label/colors/font_color = Color(0.9, 0.5706, 0.351, 1)
 Label/constants/outline_size = 6
 Label/fonts/font = ExtResource("2_er4n1")
 Label/styles/normal = SubResource("StyleBoxEmpty_d6fam")
+MenuPanel/base_type = &"PanelContainer"
+MenuPanel/styles/panel = SubResource("StyleBoxFlat_uapgc")
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_p5fhx")
 RichTextLabel/constants/outline_size = 14
 RichTextLabel/font_sizes/bold_font_size = 20

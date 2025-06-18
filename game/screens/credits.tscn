@@ -37,25 +37,31 @@ horizontal_alignment = 1
 [node name="PanelContainer" type="PanelContainer" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
+theme_type_variation = &"MenuPanel"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/VBoxContainer/PanelContainer"]
 custom_minimum_size = Vector2(600, 400)
 layout_mode = 2
 size_flags_horizontal = 4
 bbcode_enabled = true
-text = "[center][img=400]res://addons/diisis/logos/logo3.png[/img]
-~ Visual Novel Template ~
+text = "[center]
+[font_size=26]LONER DOG: SNUFF PUPPY CARNAGE SOCIETY[/font_size]
 
-programming writing ui design
+Snek Remilia Ketter
+Programming, Writing, UI Design
 
-character art and design
-blood machine
+Blood Machine
+Character Art & Design
 
 sounds
 music
+OST
+Licensed
 sfx
 
-fonts"
+fonts
+
+[img=50]uid://pup0v2lufx4r[/img]"
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1

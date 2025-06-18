@@ -41,6 +41,7 @@ auto_translate_mode = 1
 layout_mode = 2
 size_flags_horizontal = 4
 mouse_filter = 2
+theme_type_variation = &"MenuPanel"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/VBoxContainer/PanelContainer"]
 auto_translate_mode = 1
@@ -49,7 +50,15 @@ layout_mode = 2
 size_flags_horizontal = 4
 mouse_filter = 1
 bbcode_enabled = true
-text = "[center]CORPSES # DRUG ABUSE # SELF HARM # SEX # SUICIDE "
+text = "[center]CORPSES
+DRUG USE & ABUSE
+GUN VIOLENCE
+SELF HARM
+SEX
+SLURS
+SUICIDE
+(maybe vomit or piss depending on that scene lmao) 
+(also ig potentially necro)"
 
 [node name="Button" type="Button" parent="."]
 auto_translate_mode = 1
