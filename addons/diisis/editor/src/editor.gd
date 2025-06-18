@@ -835,6 +835,22 @@ func step_through_pages():
 
 
 func _on_funny_debug_button_pressed() -> void:
+	for id in Pages.text_data.keys():
+		var id_count := 0
+		#print(id)
+		for number in Pages.page_data.keys():
+			var page_data = Pages.page_data.get(number)
+			for line in page_data.get("lines"):
+				#if line.get("id") == id:
+					#id_count += 1
+				if line.get("line_type") == DIISIS.LineType.Text:
+					var tid = line.get("content").get("text_id")
+					#print(tid)
+					if tid == id:
+						id_count += 1
+		if id_count > 1:
+			printt(id_count, id)
+	return
 	emit_signal("request_reload")
 	return
 	step_through_pages()

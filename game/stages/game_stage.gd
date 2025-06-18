@@ -50,6 +50,7 @@ func get_default_targets() -> Dictionary:
 func _ready():
 	set_background("black")
 	find_child("Portrait").visible = false
+	find_child("BlackLayer").visible = true
 	find_child("Suicide").visible = false
 	find_child("PsychedelicsLayer").visible = false
 	find_child("DevModeLabel").visible = devmode_enabled
@@ -221,17 +222,19 @@ func set_cg(cg_name:String, fade_in_duration:float, cg_root:Control):
 	if cg_path.ends_with(".tscn"):
 		cg_node = load(cg_path).instantiate()
 	else:
-		cg_node = ColorRect.new()
-		cg_node.set_anchors_preset(Control.PRESET_FULL_RECT)
-		cg_node.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		cg_node.color = Color.BLACK
-		var tex = TextureRect.new()
-		cg_node.add_child(tex)
-		tex.position -=  Vector2(1000, 750) * 0.7 * 0.5
-		tex.set_anchors_preset(Control.PRESET_CENTER)
-		tex.texture = load(cg_path)
-		tex.expand_mode = TextureRect.EXPAND_FIT_WIDTH_PROPORTIONAL
-		tex.custom_minimum_size = Vector2(1000, 750) * 0.7
+		#if cg_root
+		#cg_node = ColorRect.new()
+		#cg_node.set_anchors_preset(Control.PRESET_FULL_RECT)
+		#cg_node.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		#cg_node.color = Color.BLACK
+		cg_node = TextureRect.new()
+		#cg_node.add_child(tex)
+		cg_node.position -=  Vector2(1000, 750) * 0.7 * 0.5
+		cg_node.position.y += 54#  Vector2(1000, 750) * 0.7 * 0.5
+		cg_node.set_anchors_preset(Control.PRESET_CENTER)
+		cg_node.texture = load(cg_path)
+		cg_node.expand_mode = TextureRect.EXPAND_FIT_WIDTH_PROPORTIONAL
+		cg_node.custom_minimum_size = Vector2(1000, 750) * 0.7
 	
 	cg_root.add_child(cg_node)
 	
@@ -501,7 +504,7 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 	var is_digital := target_id in [3,4,5,7]
 	are_words_being_spoken = not is_texting
 	if target_id == 6:
-		hide_all_windows()
+		hide_all_windows(false)
 		%DefaultTextContainer.visible = false
 		%FullCoverText.visible = true
 	else:

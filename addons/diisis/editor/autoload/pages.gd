@@ -1460,7 +1460,8 @@ func get_custom_method_typesd(instruction_name:String) -> Dictionary:
 		result[arg.get("name")] = arg.get("type")
 	
 	return result
-
+func get_custom_method_base_default(instruction_name:String, arg_name:String):
+	return get_custom_method_base_defaultsd(instruction_name).get(arg_name)
 func get_default_arg_value(instruction_name:String, arg_name:String):
 	return get_custom_method_defaults(instruction_name).get(arg_name)
 
@@ -1533,7 +1534,7 @@ func get_method_validity(instruction:String) -> String:
 		while arg_string.ends_with(" "):
 			arg_string = arg_string.trim_suffix(" ")
 		var arg_value : String = arg_string.split(":")[0]
-		if arg_value.is_empty():
+		if arg_value.is_empty() and get_custom_method_base_default(entered_name, template_arg_names[i]) == null:
 			return str("Argument ", i+1, " is empty")
 		if arg_value == "*" and get_default_arg_value(entered_name, template_arg_names[i]) == null:
 			return str("Argument ", i+1, " is declared as default but argument ", template_arg_names[i], " has no default value.")
@@ -1546,6 +1547,8 @@ func get_method_validity(instruction:String) -> String:
 	return "OK"
 
 func get_type_compliance(method:String, arg:String, value:String, type:int, arg_index:int) -> String:
+	if value.is_empty() and get_custom_method_base_defaultsd(method).get(arg) != null:
+		return ""
 	var default_notice := ""
 	if value == "*":
 		value = str(get_custom_method_defaults(method).get(arg))

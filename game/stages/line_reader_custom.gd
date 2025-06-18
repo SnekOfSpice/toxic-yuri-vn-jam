@@ -259,6 +259,7 @@ const SPLASH_STRINGS := {
 	"scars" : "[ph]A livingbeing is just a colection of scars.",
 	"celestial_bodies" : "Like twin stars.",
 	"devour_me" : "Devour me.",
+	"eventually" : "Eventually, this will all come crashing down.",
 }
 func splash_text(key:String,
 	fade_in := 0.0,
@@ -294,7 +295,7 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 
 
 
-func hide_all_windows():
+func hide_all_windows(reset_to_default:=true):
 	GameWorld.game_stage.hide_all_windows()
 func hide_window(id:int):
 	GameWorld.game_stage.hide_window(id)

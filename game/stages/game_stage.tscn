@@ -109,7 +109,7 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_page = 23
+devmode_start_page = 25
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -255,9 +255,8 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="CGBottomContainer" type="Control" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/Control"]
+[node name="CGBottomContainer" type="ColorRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/Control"]
 auto_translate_mode = 1
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -265,6 +264,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+color = Color(0, 0, 0, 1)
 
 [node name="VNUI" type="Control" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot"]
 auto_translate_mode = 1
@@ -516,6 +516,7 @@ visible = false
 layout_mode = 1
 
 [node name="Suicide" type="CanvasLayer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D"]
+visible = false
 
 [node name="ColorRect3" type="ColorRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/Suicide"]
 anchors_preset = 15
@@ -561,6 +562,7 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="PsychedelicsLayer" type="CanvasLayer" parent="LineReader"]
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="LineReader/PsychedelicsLayer"]
 material = SubResource("ShaderMaterial_isj81")

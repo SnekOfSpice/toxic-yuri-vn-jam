@@ -254,6 +254,17 @@ func copy(depth:int, single_address_override := "") -> Array:
 	var data_at_depth := {}
 	for address in selected_addresses:
 		data_at_depth[address] = Pages.get_data_from_address(address).duplicate(true)
+	if depth == DiisisEditorUtil.AddressDepth.Line:
+		data_at_depth["id"] = Pages.get_new_id()
+		if data_at_depth.get("line_type") == DIISIS.LineType.Text:
+			var content = data_at_depth.get("content")
+			var tid = content.get("text_id")
+			var text = Pages.get_text(tid)
+			var new_tid = Pages.get_new_id()
+			content["text_id"] = new_tid
+			Pages.save_text(new_tid, text)
+			data_at_depth["content"] = content
+	
 	clipboard[depth] = data_at_depth
 	Pages.editor.notify(str("Added ", data_at_depth.size(), " items to clipboard!"))
 	return selected_addresses
