@@ -67,6 +67,7 @@ func move_to_top():
 	get_parent().move_child(self, get_parent().get_child_count() - 1)
 
 func clamp_to_viewport():
+	await  get_tree().process_frame
 	global_position.x = clamp(global_position.x,
 		0,
 		ProjectSettings.get_setting("display/window/size/viewport_width") - size.x)
