@@ -24,6 +24,7 @@ func start():
 	%Content.visible = false
 	Sound.play_sfx("shutter")
 	await get_tree().create_timer(4).timeout
+	GameWorld.game_stage.show_start_cover()
 	Parser.function_acceded()
 	queue_free()
 	

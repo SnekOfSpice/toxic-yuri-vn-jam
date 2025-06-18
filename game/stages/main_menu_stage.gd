@@ -36,8 +36,8 @@ func _ready() -> void:
 	#find_child("EpilogueButton").visible = Options.unlocked_epilogue or OS.has_feature("editor")
 
 func _process(delta: float) -> void:
-	var ratio_x := clampf(get_global_mouse_position().x / 1000.0, 0, 1)
-	var ratio_y := clampf(get_global_mouse_position().y / 750.0, 0, 1)
+	var ratio_x := 1.0-clampf(get_global_mouse_position().x / 1000.0, 0, 1)
+	var ratio_y := 1.0-clampf(get_global_mouse_position().y / 750.0, 0, 1)
 	var target_offset_x := lerpf(-762, 0, ratio_x)
 	var target_offset_y := lerpf(-250, 0, ratio_y)
 	%Background.offset.x = lerp(%Background.offset.x, target_offset_x, 0.01)

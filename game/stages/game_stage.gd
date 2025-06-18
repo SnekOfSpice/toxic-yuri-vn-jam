@@ -124,8 +124,12 @@ func on_instruction_started(
 	instruction_text : String,
 	_delay : float,
 ):
+	find_child("StartCover").visible = false
 	if instruction_text.begins_with("black_fade"):
 		find_child("ControlsContainer").visible = false
+
+func show_start_cover():
+	find_child("StartCover").visible = true
 
 func on_instruction_completed(
 	instruction_text : String,

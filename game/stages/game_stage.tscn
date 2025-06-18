@@ -126,7 +126,6 @@ unique_name_in_owner = true
 script = ExtResource("3_pms35")
 auto_pause_duration = 0.4
 show_text_during_text = false
-show_text_during_instructions = true
 blank_names = Array[String](["narrator"])
 name_map = Dictionary[String, String]({
 "argo": "Argo",
@@ -477,18 +476,6 @@ layout_mode = 1
 visible = false
 layout_mode = 1
 
-[node name="StartCover" type="ColorRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot"]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(0, 0, 0, 1)
-script = ExtResource("13_qfsh6")
-
 [node name="ScreenContainer" type="Control" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot"]
 visible = false
 layout_mode = 1
@@ -514,6 +501,17 @@ text = "DEV MODE ENABLED"
 unique_name_in_owner = true
 visible = false
 layout_mode = 1
+
+[node name="StartCover" type="ColorRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+script = ExtResource("13_qfsh6")
 
 [node name="Suicide" type="CanvasLayer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D"]
 visible = false
@@ -547,6 +545,7 @@ grow_vertical = 2
 [node name="BlackLayer" type="CanvasLayer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D"]
 
 [node name="BlackFade" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/BlackLayer" instance=ExtResource("8_50byo")]
+visible = false
 z_index = 10
 
 [node name="DitherLayer" type="CanvasLayer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D"]
