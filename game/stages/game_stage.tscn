@@ -109,7 +109,8 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_page = 33
+devmode_start_page = 42
+devmode_start_line = 4
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -473,10 +474,6 @@ layout_mode = 1
 visible = false
 layout_mode = 1
 
-[node name="RollingCredits" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot" instance=ExtResource("17_gnute")]
-visible = false
-layout_mode = 1
-
 [node name="ScreenContainer" type="Control" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot"]
 visible = false
 layout_mode = 1
@@ -513,6 +510,10 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
 script = ExtResource("13_qfsh6")
+
+[node name="RollingCredits" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot" instance=ExtResource("17_gnute")]
+visible = false
+layout_mode = 1
 
 [node name="Suicide" type="CanvasLayer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D"]
 visible = false

@@ -1,0 +1,7 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://bs5jcemj00v38"]
+
+[ext_resource type="FontFile" uid="uid://bj5vrbichbc71" path="res://game/visuals/theme/fonts/ESTROG__.ttf" id="1_yq0ng"]
+
+[resource]
+base_font = ExtResource("1_yq0ng")
+spacing_bottom = 11

@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://ipa310726xyt"]
+[gd_scene load_steps=4 format=3 uid="uid://ipa310726xyt"]
 
 [ext_resource type="Script" uid="uid://i7kqgyovxhb7" path="res://game/stages/rolling_credits.gd" id="1_cgvis"]
+[ext_resource type="Texture2D" uid="uid://bj52mo45ls5d6" path="res://game/visuals/logo_scrawl_1312.png" id="2_ia0qv"]
+[ext_resource type="Texture2D" uid="uid://pup0v2lufx4r" path="res://game/visuals/opening_icon.png" id="3_ljvqb"]
 
 [node name="RollingCredits" type="Control"]
 layout_mode = 3
@@ -11,16 +13,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_cgvis")
-
-[node name="White" type="ColorRect" parent="."]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
 
 [node name="Black" type="ColorRect" parent="."]
 visible = false
@@ -33,23 +25,49 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
-[node name="Label" type="RichTextLabel" parent="."]
+[node name="Logo" type="Sprite2D" parent="."]
+position = Vector2(475, 380)
+scale = Vector2(0.695589, 0.695589)
+texture = ExtResource("2_ia0qv")
+
+[node name="TextContainer" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 514.0
+offset_bottom = 110.0
+rotation = 0.0523599
+
+[node name="TextureRect" type="TextureRect" parent="TextContainer"]
+layout_mode = 2
+texture = ExtResource("3_ljvqb")
+stretch_mode = 4
+
+[node name="LabelContainer" type="VBoxContainer" parent="TextContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="TextContainer/LabelContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="RichTextLabel" parent="TextContainer/LabelContainer"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(400, 0)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 2
+size_flags_vertical = 3
 mouse_filter = 2
-theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_y = 0
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_outline_size = 0
 fit_content = true
+
+[node name="MessageContainer" type="VBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 71.0
+offset_bottom = 71.0
+grow_horizontal = 2

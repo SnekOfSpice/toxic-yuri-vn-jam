@@ -1,11 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bcihqsqt4bt0"]
+[gd_scene load_steps=3 format=3 uid="uid://bcihqsqt4bt0"]
 
 [ext_resource type="Script" uid="uid://cdwm0shwklow8" path="res://game/stages/text_reading_cover.gd" id="1_cghn2"]
-[ext_resource type="FontFile" uid="uid://bj5vrbichbc71" path="res://game/visuals/theme/fonts/ESTROG__.ttf" id="2_va1t2"]
-
-[sub_resource type="FontVariation" id="FontVariation_va1t2"]
-base_font = ExtResource("2_va1t2")
-spacing_bottom = 11
+[ext_resource type="FontVariation" uid="uid://bs5jcemj00v38" path="res://game/visuals/estrogen_font.tres" id="2_va1t2"]
 
 [node name="TextReadingCover" type="ColorRect"]
 anchors_preset = 15
@@ -23,7 +19,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/normal_font = SubResource("FontVariation_va1t2")
+scale = Vector2(1, 0.992907)
+theme_override_fonts/normal_font = ExtResource("2_va1t2")
 theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
 text = "awawa▮
