@@ -260,6 +260,7 @@ const SPLASH_STRINGS := {
 	"celestial_bodies" : "Like twin stars.",
 	"devour_me" : "Devour me.",
 	"eventually" : "Eventually, this will all come crashing down.",
+	"funeral" : "Exiled from Light.",
 }
 func splash_text(key:String,
 	fade_in := 0.0,

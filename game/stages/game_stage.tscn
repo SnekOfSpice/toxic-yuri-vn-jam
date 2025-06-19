@@ -109,7 +109,7 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_page = 25
+devmode_start_page = 33
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -126,6 +126,7 @@ unique_name_in_owner = true
 script = ExtResource("3_pms35")
 auto_pause_duration = 0.4
 show_text_during_text = false
+show_text_during_instructions = true
 blank_names = Array[String](["narrator"])
 name_map = Dictionary[String, String]({
 "argo": "Argo",
