@@ -109,7 +109,7 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_page = 25
+devmode_start_page = 34
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -459,6 +459,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
+bbcode_enabled = true
 
 [node name="NameLabel" type="Label" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/FullCoverText/BodyLabel"]
 layout_mode = 0

@@ -304,11 +304,6 @@ func hide_window(id:int):
 
 func set_up_blank(display_name:String):
 	set_actor_name("blank", display_name)
-	var color : = Color.WHITE
-	color.r = randf_range(0.8, 1)
-	color.g = randf_range(0.8, 1)
-	color.b = randf_range(0.8, 1)
-	set_actor_color("blank", color)
 
 func start_opening_splash():
 	%OpeningSplash.start()
