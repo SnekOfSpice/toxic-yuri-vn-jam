@@ -297,7 +297,7 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 
 
 func hide_all_windows(reset_to_default:=true):
-	GameWorld.game_stage.hide_all_windows()
+	GameWorld.game_stage.hide_all_windows(reset_to_default)
 func hide_window(id:int):
 	GameWorld.game_stage.hide_window(id)
 

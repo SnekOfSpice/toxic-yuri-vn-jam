@@ -414,32 +414,6 @@ offset_top = 678.0
 offset_right = 960.0
 offset_bottom = 714.0
 
-[node name="ControlsContainer" type="HBoxContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI"]
-layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 14.0
-offset_top = -45.0
-offset_right = 146.0
-grow_vertical = 0
-
-[node name="HistoryButton" type="Button" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/ControlsContainer"]
-layout_mode = 2
-theme_type_variation = &"FreeButton"
-text = "History"
-
-[node name="VSeparator" type="VSeparator" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/ControlsContainer"]
-custom_minimum_size = Vector2(0, 18.77)
-layout_mode = 2
-size_flags_vertical = 4
-
-[node name="MenuButton" type="Button" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/ControlsContainer"]
-layout_mode = 2
-focus_mode = 0
-theme_type_variation = &"FreeButton"
-text = "Menu"
-
 [node name="FullCoverText" type="Control" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI"]
 unique_name_in_owner = true
 visible = false
@@ -465,6 +439,32 @@ bbcode_enabled = true
 layout_mode = 0
 offset_right = 11.0
 offset_bottom = 21.0
+
+[node name="ControlsContainer" type="HBoxContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = -45.0
+offset_right = 146.0
+grow_vertical = 0
+
+[node name="HistoryButton" type="Button" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/ControlsContainer"]
+layout_mode = 2
+theme_type_variation = &"FreeButton"
+text = "History"
+
+[node name="VSeparator" type="VSeparator" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/ControlsContainer"]
+custom_minimum_size = Vector2(0, 18.77)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="MenuButton" type="Button" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/ControlsContainer"]
+layout_mode = 2
+focus_mode = 0
+theme_type_variation = &"FreeButton"
+text = "Menu"
 
 [node name="CGTopContainer" type="Control" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot"]
 visible = false
