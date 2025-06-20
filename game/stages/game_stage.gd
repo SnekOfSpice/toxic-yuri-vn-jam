@@ -571,6 +571,13 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 			window.move_to_top()
 			window.open_if_closed()
 	
+	for window : CustomWindow in windows:
+		if window is ChatLogWindow:
+			if window.id == target_id:
+				window.saturate()
+			else:
+				window.desaturate()
+	
 
 	
 	
