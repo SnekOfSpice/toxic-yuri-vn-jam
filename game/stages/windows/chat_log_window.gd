@@ -96,17 +96,17 @@ func _on_past_container_child_entered_tree(node: Node) -> void:
 			flatten_stylebox(node)
 			node.meta_clicked.connect(str_open)
 			node.meta_hover_started.connect(block)
-			node.meta_hover_ended.connect(block)
+			node.meta_hover_ended.connect(unblock)
 
 func block(_m):
 	GameWorld.game_stage.meta_blocker = true
 func unblock(_m):
-	GameWorld.game_stage.meta_blocker = false
+	GameWorld.game_stage.set_deferred("meta_blocker", false)
 
 func _on_body_label_item_rect_changed() -> void:
 	size = Vector2(start_size.x, 1)
 	clamp_to_viewport()
 
 func str_open(meta:Variant):
-	GameWorld.game_stage.meta_blocker = false
+	unblock(meta)
 	OS.shell_open(str(meta))

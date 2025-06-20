@@ -12,8 +12,7 @@ func read(text:String,
 	reset_windows:=true):
 	Sound.play_sfx("shutter")
 	visible = true
-	if bgm != Sound.bgm_key:
-		Sound.fade_out_bgm(0)
+	Sound.play_bgm(bgm, 0.25 * text.length())
 	label.text = text
 	label.visible_characters = 0
 	await get_tree().create_timer(1).timeout
@@ -41,6 +40,5 @@ func read(text:String,
 	await get_tree().create_timer(1.5).timeout
 	visible = false
 	Sound.play_sfx("shutter")
-	Sound.play_bgm(bgm)
 	await get_tree().create_timer(2.5).timeout
 	Parser.function_acceded()

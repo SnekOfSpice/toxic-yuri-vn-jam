@@ -96,8 +96,15 @@ func _ready():
 	set_enable_dither(Options.enable_dither)
 
 func set_enable_dither(value:bool):
+	
 	find_child("DitherLayer").visible = value
 	find_child("DitherLayer2").visible = value
+	for node in %Background.get_children():
+		if node is Node2D:
+			if value:
+				node.material = load("res://game/visuals/dither_correction_material.tres")
+			else:
+				node.material = null
 
 
 #var targets_by_subaddress := {}
@@ -651,3 +658,10 @@ func clear_text_bodies():
 	for window : CustomWindow in windows:
 		if window is ChatLogWindow:
 			window.get_body_label().text = ""
+
+
+func _on_background_child_entered_tree(node: Node) -> void:
+	if node in %Background.get_children():
+		if node is Node2D:
+			if find_child("DitherLayer2").visible:
+				node.material = load("res://game/visuals/dither_correction_material.tres")

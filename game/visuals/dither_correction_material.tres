@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://daron3uhruccc"]
+
+[ext_resource type="Shader" uid="uid://c1qinhglcvyy3" path="res://game/stages/hsv_brightness.gdshader" id="1_toles"]
+
+[resource]
+shader = ExtResource("1_toles")
+shader_parameter/hue_shift = 0.0
+shader_parameter/saturation_mult = 1.0
+shader_parameter/value_mult = 1.0
+shader_parameter/brightness_add = 0.261
+shader_parameter/contrast_mult = 1.186

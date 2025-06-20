@@ -32,14 +32,15 @@ const MUSIC_HAYA_FALLOUT := "CØL - Crossbones - 03 It Repeats Over and Over.ogg
 const MUSIC_HAYA_TENSION := "Paradise_Found.mp3"
 const MUSIC_HOLE := "Paradise_Found.mp3"
 const MUSIC_INTRO := "Princess Commodore 64 - XOXO - 02 XOXO.ogg"
-const MUSIC_PANIC := "Paradise_Found.mp3"
+const MUSIC_PANIC := "Lonesummer - Satisfaction Feels Like a Tomb - 07 9-25.ogg"
 const MUSIC_PUPPY_RESCUE := "Various Artists - CULT TAPE 002 - SELECTED AMBIENT WORKS - 03 Leprosy - ANESTHESIA.ogg"
 const MUSIC_RECOVERY := "mobygratis in west inst mix ab oz.mp3"
 const MUSIC_MAIN_MENU := "Princess Commodore 64 - XOXO - 06 Flowers From The Midnight Garden.ogg"
-const MUSIC_MEETING_AGAIN := "Paradise_Found.mp3"
+const MUSIC_MEETING_AGAIN := "545882__spurioustransients__electric-mandocello-drone-in-gm.ogg"
 const MUSIC_NIGHTCORE := "Paradise_Found.mp3"
 const MUSIC_SHELTER := "Princess Commodore 64 - XOXO - 02 XOXO.ogg"
 const MUSIC_TATTOO := "Paradise_Found.mp3"
+const MUSIC_XELIA := "433801__oymaldonado__guitar-melody.ogg" #https://freesound.org/people/oymaldonado/sounds/433801/
 const MUSIC_VEIN_ACID := "Various Artists - CULT TAPE 002 - SELECTED AMBIENT WORKS - 06 Lorenzi - Elphael.ogg"
 
 const SFX_ROOT := "res://game/sounds/sfx/"

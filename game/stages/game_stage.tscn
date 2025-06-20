@@ -1,8 +1,9 @@
-[gd_scene load_steps=31 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=32 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" uid="uid://j84s4qlkmfxw" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" uid="uid://bqw08o3b22fdc" path="res://game/stages/line_reader_custom.gd" id="3_pms35"]
 [ext_resource type="Script" uid="uid://brouc1vl1o5us" path="res://game/stages/objects.gd" id="3_x2eff"]
+[ext_resource type="Material" uid="uid://daron3uhruccc" path="res://game/visuals/dither_correction_material.tres" id="5_pxthe"]
 [ext_resource type="Theme" uid="uid://gee0nt5mhjku" path="res://game/visuals/theme/toxic_yuri_vn_theme.tres" id="6_aqeli"]
 [ext_resource type="Texture2D" uid="uid://u033hc5by020" path="res://game/backgrounds/desert.png" id="6_rra51"]
 [ext_resource type="PackedScene" uid="uid://okxj0h4jwh18" path="res://game/stages/windows/image_viewer_window.tscn" id="7_3xf2c"]
@@ -109,7 +110,7 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_page = 34
+devmode_start_page = 27
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -193,7 +194,8 @@ script = ExtResource("9_lbjue")
 unique_name_in_owner = true
 position = Vector2(-500, -375)
 
-[node name="Sprite2D" type="Sprite2D" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/Background"]
+[node name="BackgroundSprite" type="Sprite2D" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/Background"]
+material = ExtResource("5_pxthe")
 position = Vector2(485, 420)
 texture = ExtResource("6_rra51")
 
@@ -257,6 +259,7 @@ mouse_filter = 2
 
 [node name="CGBottomContainer" type="ColorRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/Control"]
 auto_translate_mode = 1
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -432,7 +435,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 1
+mouse_filter = 2
 bbcode_enabled = true
 
 [node name="NameLabel" type="Label" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/FullCoverText/BodyLabel"]
@@ -511,6 +514,7 @@ visible = false
 layout_mode = 1
 
 [node name="StartCover" type="ColorRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -589,5 +593,6 @@ mouse_filter = 2
 [connection signal="start_chapter_cover" from="LineReader" to="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/ChapterCover" method="set_chapter_cover"]
 [connection signal="start_hide_cg" from="LineReader" to="." method="hide_cg"]
 [connection signal="start_show_cg" from="LineReader" to="." method="_on_handler_start_show_cg"]
+[connection signal="child_entered_tree" from="LineReader/SubViewportContainer/SubViewport/Camera2D/Background" to="." method="_on_background_child_entered_tree"]
 [connection signal="pressed" from="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/ControlsContainer/HistoryButton" to="." method="_on_history_button_pressed"]
 [connection signal="pressed" from="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/ControlsContainer/MenuButton" to="." method="_on_menu_button_pressed"]

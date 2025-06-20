@@ -144,14 +144,15 @@ func get_word_under_caret() -> String:
 		
 		i -= 1
 	i = start_position
-	character_at_position = line[i]
-	while not (character_at_position in WORD_SEPARATORS) and i < line.length():
+	if i < line.length() - 1:
 		character_at_position = line[i]
-		if character_at_position in WORD_SEPARATORS:
-			break
-		word += character_at_position
-		
-		i += 1
+		while not (character_at_position in WORD_SEPARATORS) and i < line.length():
+			character_at_position = line[i]
+			if character_at_position in WORD_SEPARATORS:
+				break
+			word += character_at_position
+			
+			i += 1
 	
 	return word
 
