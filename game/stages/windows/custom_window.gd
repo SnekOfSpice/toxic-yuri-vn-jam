@@ -62,8 +62,9 @@ func on_gui_input(event: InputEvent):
 			else:
 				dragging = false
 
-func move_to_top():
-	open_if_closed()
+func move_to_top(force_open:=true):
+	if force_open:
+		open_if_closed()
 	get_parent().move_child(self, get_parent().get_child_count() - 1)
 
 func clamp_to_viewport():
@@ -85,6 +86,7 @@ func serialize() -> Dictionary:
 	# serialize the get_index() of these and then also use that during deserialization to preserve order
 	var data := {}
 	data["z_index"] = z_index
+	data["index"] = get_index()
 	data["position.x"] = position.x
 	data["position.y"] = position.y
 	data["visible"] = visible

@@ -110,12 +110,3 @@ func _on_body_label_item_rect_changed() -> void:
 func str_open(meta:Variant):
 	unblock(meta)
 	OS.shell_open(str(meta))
-
-func saturate():
-	%Portrait.material.set_shader_parameter("saturation_mult", 1)
-	%Portrait.material.set_shader_parameter("value_mult", 1)
-	%Portrait.material.set_shader_parameter("brightness_add", 0)
-func desaturate():
-	%Portrait.material.set_shader_parameter("saturation_mult", 0.294)
-	%Portrait.material.set_shader_parameter("value_mult", 0.798)
-	%Portrait.material.set_shader_parameter("brightness_add", -0.092)

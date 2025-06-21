@@ -325,6 +325,7 @@ func on_actor_name_changed(
 		is_name_container_visible = name_container_visible
 		
 		var target_id : int = target_label_id_by_actor.get(actor, 0)
+		print("awa ", target_label_id_by_actor)
 		if target_id == 6:
 			find_child("Portrait").visible = false
 			return
@@ -374,6 +375,7 @@ func serialize() -> Dictionary:
 	result["target_label_id_by_actor"] = target_label_id_by_actor
 	result["last_body_label_target"] = last_body_label_target
 	result["psychedelics"] = line_reader.psychedelics_enabled
+	result["portrait_visible"] = find_child("Portrait").visible
 	
 	#result["window_visibilities_by_subaddress"] = window_visibilities_by_subaddress
 	#result["target_label_history_by_subaddress"] = target_label_history_by_subaddress
@@ -432,6 +434,7 @@ func deserialize(data:Dictionary):
 	
 	base_cg_offset = GameWorld.str_to_vec2(data.get("base_cg_offset", Vector2.ZERO))
 	target_label_id_by_actor = data.get("target_label_id_by_actor", {})
+	print("deserialiting ", target_label_id_by_actor)
 	for actor in target_label_id_by_actor.keys():
 		set_target_labels(actor, target_label_id_by_actor.get(actor), false)
 	
@@ -444,9 +447,18 @@ func deserialize(data:Dictionary):
 	
 	# windows
 	var window_data : Dictionary = data.get("windows", {})
+	var windows_by_index := {}
 	for window : CustomWindow in windows:
-		window.deserialize(window_data.get(str(window.uid), {}))
+		var local_window_data : Dictionary = window_data.get(str(window.uid), {})
+		window.deserialize(local_window_data)
+		windows_by_index[local_window_data.get("index", windows_by_index.size())] = window
 	%LineReader.body_label = get_body_label(data.get("last_body_label_target", 0))
+	
+	var sorted_indices := windows_by_index.keys().duplicate()
+	sorted_indices.sort()
+	for index in sorted_indices:
+		windows_by_index.get(index).move_to_top(false)
+	find_child("Portrait").visible = data.get("portrait_visible", false)
 	
 	deserialize_text_content(%DefaultTextContainer, data.get("text_content_default", {}))
 	deserialize_text_content(%FullCoverText, data.get("text_content_full", {}))
@@ -570,13 +582,7 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 		if force_show:
 			window.move_to_top()
 			window.open_if_closed()
-	
-	for window : CustomWindow in windows:
-		if window is ChatLogWindow:
-			if window.id == target_id:
-				window.saturate()
-			else:
-				window.desaturate()
+
 	
 
 	

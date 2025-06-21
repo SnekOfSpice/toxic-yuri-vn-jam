@@ -287,6 +287,7 @@ func get_saved_game_progress(file_path: String) -> float:
 	file.close()
 	
 	if not file:
+		push_warning("No file to get game progress from")
 		return 0.0
 	
 	# all keys are now strings instead of ints
