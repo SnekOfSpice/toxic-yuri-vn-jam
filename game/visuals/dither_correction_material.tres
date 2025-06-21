@@ -3,6 +3,7 @@
 [ext_resource type="Shader" uid="uid://c1qinhglcvyy3" path="res://game/stages/hsv_brightness.gdshader" id="1_toles"]
 
 [resource]
+resource_local_to_scene = true
 shader = ExtResource("1_toles")
 shader_parameter/hue_shift = 0.0
 shader_parameter/saturation_mult = 1.0

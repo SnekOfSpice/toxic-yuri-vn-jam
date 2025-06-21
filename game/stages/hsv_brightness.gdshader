@@ -1,4 +1,5 @@
 shader_type canvas_item;
+uniform sampler2D view: hint_screen_texture, filter_nearest, repeat_disable;
 
 // Hue is in normalized value [0.0, 1.0] where 0.0 means no change.
 // For example, 0.1 shifts hue by 36° (0.1 * 360°).
@@ -67,8 +68,10 @@ vec3 hsv2rgb(vec3 c) {
 
 void fragment() {
     // Get the original texture color.
-    vec4 tex_color = texture(TEXTURE, UV);
-    vec3 col = tex_color.rgb;
+	vec2 UV_new = SCREEN_UV -  mod(SCREEN_UV, SCREEN_PIXEL_SIZE);
+	vec3 col = texture(view, UV_new).rgb;
+    //vec4 tex_color = texture(TEXTURE, UV);
+    //vec3 col = tex_color.rgb;
     
     // Adjust brightness and contrast in RGB space.
     // The contrast formula shifts the color around mid-gray (0.5).
@@ -88,5 +91,7 @@ void fragment() {
     col = hsv2rgb(hsv);
     
     // Output the final color while preserving the original alpha.
-    COLOR = vec4(col, tex_color.a);
+    COLOR = vec4(col, 1);
 }
+
+

@@ -353,4 +353,5 @@ func set_up_meltdown_window_positions():
 	move_window(3, 405, 248)
 	move_window(9,  62, 313)
 	move_window(5,   2, 564)
+	move_window(7, 536, 179)
 	
