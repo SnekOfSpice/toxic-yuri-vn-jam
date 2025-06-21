@@ -41,6 +41,7 @@ const MUSIC_NIGHTCORE := "Paradise_Found.mp3"
 const MUSIC_SHELTER := "Princess Commodore 64 - XOXO - 02 XOXO.ogg"
 const MUSIC_TATTOO := "Paradise_Found.mp3"
 const MUSIC_XELIA := "433801__oymaldonado__guitar-melody.ogg" #https://freesound.org/people/oymaldonado/sounds/433801/
+const MUSIC_VARGO_LOVE := "Paradise_Found.mp3"
 const MUSIC_VEIN_ACID := "Various Artists - CULT TAPE 002 - SELECTED AMBIENT WORKS - 06 Lorenzi - Elphael.ogg"
 
 const SFX_ROOT := "res://game/sounds/sfx/"

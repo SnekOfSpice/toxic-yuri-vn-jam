@@ -325,7 +325,6 @@ func on_actor_name_changed(
 		is_name_container_visible = name_container_visible
 		
 		var target_id : int = target_label_id_by_actor.get(actor, 0)
-		print("awa ", target_label_id_by_actor)
 		if target_id == 6:
 			find_child("Portrait").visible = false
 			return
@@ -434,7 +433,6 @@ func deserialize(data:Dictionary):
 	
 	base_cg_offset = GameWorld.str_to_vec2(data.get("base_cg_offset", Vector2.ZERO))
 	target_label_id_by_actor = data.get("target_label_id_by_actor", {})
-	print("deserialiting ", target_label_id_by_actor)
 	for actor in target_label_id_by_actor.keys():
 		set_target_labels(actor, target_label_id_by_actor.get(actor), false)
 	
