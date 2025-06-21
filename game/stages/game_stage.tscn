@@ -111,7 +111,7 @@ mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
 devmode_start_page = 31
-devmode_start_line = 12
+devmode_start_line = 10
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1

@@ -346,3 +346,11 @@ func suicide_visual():
 	p.finished.connect(Sound.play_sfx.bind("ocean2"))
 	
 	return true
+
+func set_up_meltdown_window_positions():
+	# magic numbers based on visual
+	move_window(8,  44, 169)
+	move_window(3, 405, 248)
+	move_window(9,  62, 313)
+	move_window(5,   2, 564)
+	

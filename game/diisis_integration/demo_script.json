@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 11,
+		"current_page_number": 31,
 		"ingest_capitalize": false,
 		"ingest_whitespace": true,
 		"page_view": 0,
@@ -415,6 +415,9 @@
 			"set_up_blank": {
 
 			},
+			"set_up_meltdown_window_positions": {
+
+			},
 			"set_x_position": {
 
 			},
@@ -473,7 +476,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854701210,
+		"id_counter": -9223372036854700080,
 		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa\nx: xelia\nl: leah\nf: franco\nno: noni\nb: blank",
 		"locales_to_export": [
 			"de_DE",
@@ -13668,6 +13671,52 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"delay_after": 0.0,
+							"delay_before": 0.0,
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "set_up_meltdown_window_positions()",
+							"meta.validation_status": "OK",
+							"name": "set_up_meltdown_window_positions",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1750510415.311--9223372036854700723",
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 1,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "31.2",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
 							"meta.locked": false,
 							"meta.validation_status": "OK",
 							"text_id": "1749972202.293--9223372036854732933"
@@ -13685,14 +13734,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.2",
+						"address": "31.3",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13731,14 +13780,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.3",
+						"address": "31.4",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13772,14 +13821,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.4",
+						"address": "31.5",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13813,14 +13862,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.5",
+						"address": "31.6",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13854,14 +13903,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.6",
+						"address": "31.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13895,14 +13944,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.7",
+						"address": "31.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13941,14 +13990,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.8",
+						"address": "31.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -13982,14 +14031,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 8,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.9",
+						"address": "31.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14028,14 +14077,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 9,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.10",
+						"address": "31.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14074,14 +14123,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 10,
+						"meta.line_index": 11,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.11",
+						"address": "31.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14115,14 +14164,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 11,
+						"meta.line_index": 12,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.12",
+						"address": "31.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14159,14 +14208,58 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 12,
+						"meta.line_index": 13,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.13",
+						"address": "31.14",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.function_calls": [
+								"hide_window(3)"
+							],
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1750505892.997--9223372036854702634"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1750505892.997--9223372036854702635",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 14,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "31.15",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14185,7 +14278,7 @@
 						"content": {
 							"meta.locked": false,
 							"meta.validation_status": "OK",
-							"text_id": "1750505892.997--9223372036854702634"
+							"text_id": "1750510665.577--9223372036854700517"
 						},
 						"facts": {
 							"fact_data_by_name": {
@@ -14194,20 +14287,61 @@
 							"meta.visible": false
 						},
 						"header": [],
-						"id": "1750505892.997--9223372036854702635",
+						"id": "1750510665.577--9223372036854700518",
 						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 13,
+						"meta.line_index": 15,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.14",
+						"address": "31.16",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1750510664.944--9223372036854700519"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1750510664.944--9223372036854700520",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 16,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "31.17",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14241,14 +14375,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 14,
+						"meta.line_index": 17,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.15",
+						"address": "31.18",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14282,14 +14416,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 15,
+						"meta.line_index": 18,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.16",
+						"address": "31.19",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14323,14 +14457,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 16,
+						"meta.line_index": 19,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.17",
+						"address": "31.20",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14364,14 +14498,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 17,
+						"meta.line_index": 20,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.18",
+						"address": "31.21",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14405,14 +14539,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 18,
+						"meta.line_index": 21,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.19",
+						"address": "31.22",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14446,14 +14580,55 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 19,
+						"meta.line_index": 22,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.20",
+						"address": "31.23",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1750513345.284--9223372036854700080"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1750513345.284--9223372036854700081",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 23,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "31.24",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14487,14 +14662,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 20,
+						"meta.line_index": 24,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.21",
+						"address": "31.25",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14528,14 +14703,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 21,
+						"meta.line_index": 25,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.22",
+						"address": "31.26",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14569,14 +14744,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 22,
+						"meta.line_index": 26,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.23",
+						"address": "31.27",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14610,14 +14785,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 23,
+						"meta.line_index": 27,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.24",
+						"address": "31.28",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14651,14 +14826,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 24,
+						"meta.line_index": 28,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.25",
+						"address": "31.29",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14692,14 +14867,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 25,
+						"meta.line_index": 29,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.26",
+						"address": "31.30",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14733,14 +14908,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 26,
+						"meta.line_index": 30,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.27",
+						"address": "31.31",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14774,14 +14949,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 27,
+						"meta.line_index": 31,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.28",
+						"address": "31.32",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14815,14 +14990,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 28,
+						"meta.line_index": 32,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.29",
+						"address": "31.33",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14856,14 +15031,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 29,
+						"meta.line_index": 33,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.30",
+						"address": "31.34",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14897,14 +15072,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 30,
+						"meta.line_index": 34,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.31",
+						"address": "31.35",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14938,14 +15113,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 31,
+						"meta.line_index": 35,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.32",
+						"address": "31.36",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -14979,14 +15154,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 32,
+						"meta.line_index": 36,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.33",
+						"address": "31.37",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15025,14 +15200,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 33,
+						"meta.line_index": 37,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "31.34",
+						"address": "31.38",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -15066,7 +15241,7 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 34,
+						"meta.line_index": 38,
 						"meta.selector": {
 							"selected": false
 						},
@@ -15074,7 +15249,7 @@
 					}
 				],
 				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 3162,
+				"meta.scroll_vertical": 5916,
 				"meta.selected": false,
 				"next": 32.0,
 				"number": 31,
@@ -18401,17 +18576,20 @@
 			"1750496437.841--9223372036854706074": "[]>audrey{target|7}: i dont mean this to be mean\n[]>audrey: but thre s some really bad shit going on rn with her that you really dont wanna know about\n[]>audrey: so just shut your trap, please\n[]>audrey: im figuring this out as we go\n[]>audrey: ffs\n[]>noni: ;-;\n[]>noni: whyd you rescue noni then\n[]>audrey: to a hey text noni\n[]>argo: ?\n[]>argo: to no",
 			"1750496455.375--9223372036854706072": "[]>noni: noni says some things",
 			"1750496526.597--9223372036854706070": "[]>argo{target|1}: the fuck are you texting audrey about?\n[]>vanessa{target|1}: idk she seems really out of it\n[]>vanessa: I just told her about us\n[]>vanessa: and like\n[]>vanessa: difficulties\n[]>argo: yeah, me too\n[]>vanessa: seriously?\n[]>argo: I mean she's kinda the best informed mutual person knower for us both\n[]>narrator: more other text\n[]>vanessa: so what did you talk about?\n[]>argo: well actually it also went into some personal stuff with her?\n[]>argo: we chatted about crushes and stuff\n[]>argo: brought up the stuff wth noni\n[]>argo: sorry again\n[]>vanessa: mhm.\n[]>argo: and then she also shared some stuff that I think she should tell you if she wants to?\n[]>vanessa: want me to ask her about it?\n[]>argo: maybe another day?\n[]>vanessa: might be agood idea\n[]>audrey: to v i hope youre having the sloppiest toppy on fucking planet earth you fucks\n[]>narrator: other convo passes\n[]>vanessa: wow can you like calm the fuck down? who shat on your cookie for you to be like this?",
-			"1750496649.696--9223372036854706068": "[]>haley{target|8}: things are bad OPENING\n[]>audrey{target|8}: yo\n[]>audrey: haley\n[]>audrey: how bad?\n[]>audrey: what's up with you\n[]>haley: fucking nothing obv lol\n[]>audrey{target|3}: oh look who just texted me\n[]>maya: Haley?\n[]>audrey: yep\n[]>maya: What's she saying?\n[]>haley: its just the same old shit\n[]>haley: im barely functional\n[]>audrey: don't know yet\n[]>haley: im a failure\n[]>audrey: gonna fiture it out and let you know\n[]>haley: disappointment\n[]>haley: trash worthless etc\n[]>haley: think gonna die\n[]>haley: yea\n[]>audrey{target|8}: like... actively?\n[]>haley: tonight\n[]>haley: rly just checking in bc mayb u have some parting words ig\n[]>haley: shit fuck\n[]>audrey: parting words?? dont you fucking dare off yourself\n[]>audrey{target|3}: ok shes texting me\n[]>audrey: not doing too hot\n[]>haley: kinda too late for that girliepop\n[]>audrey{target|8}: what does that mean\n[]>haley: it means im gonna off myself but thought itd be a shitty thing to go out wo at least letting u know\n[]>audrey: where are you right now\n[]>haley: outside\n[]>maya{target|9}: haley please tell me what's wrong\n[]>haley: oh now the bitch actually cares sure\n[]>haley: tell her that she shouldnt feel responsible \n[]>audrey: do that yourself?\n[]>audrey: also wym outside?\n[]>haley: did that\n[]>haley: went sideways\n[]>haley: anyways\n[]>haley: outside\n[]>audrey: but where?\n[]>haley: omw\n[]>audrey: ON YOUR WAY WHERE HALEY PLEASE\n[]>maya: haley\n[]>audrey: im way out of the city tonight but please get someone to pick you up\n[]>haley: god u 2 rly dont shut up do u\n[]>haley: but uhm\n[]>haley: sry\n[]>haley: shouldve let me know if u wanna look at me off myself\n[]>haley: but im sure if you ask roaches you get to look at some pretty corpses\n[]>audrey{target|3}: she's so hung up on roaches holy shit\n[]>audrey: also might actually attempt tonight\n[]>audrey: please get a fucking handle on her\n[]>haley: audrey i fucking shot up for the first time today\n[]>haley: im an actual failure\n[]>haley: like wtf\n[]>haley: this life is over\n[]>haley: i dont wanna be in rehab for the rest of my life\n[]>haley: i dont even wannt be in rehab\n[]>haley: at all\n[]>audrey{target|8}: you dont have to go to rehab\n[]>audrey: you can suffer in life and be better in the end\n[]>audrey: you can fucking do drugs\n[]>audrey: but please just stay alive\n[]>haley: oh yea so i can make you feel like you actually gave a shit right\n[]>haley: fuck off\n[]>haley: god\n[]>haley: I dont owe any of you staying alive fuck you\n[]>audrey: what",
+			"1750496649.696--9223372036854706068": "[]>haley{target|8}: things are bad\n[]>audrey{target|8}: yo\n[]>audrey: haley\n[]>audrey: how bad?\n[]>audrey: what's up with you\n[]>haley: fucking nothing obv lol\n[]>audrey{target|3}: oh look who just texted me\n[]>maya: Haley?\n[]>audrey: yep\n[]>maya: What's she saying?\n[]>haley: its just the same old shit\n[]>haley: im barely functional\n[]>audrey: don't know yet\n[]>haley: im a failure\n[]>audrey: gonna fiture it out and let you know\n[]>haley: disappointment\n[]>haley: trash worthless etc\n[]>haley: think gonna die\n[]>haley: yea\n[]>audrey{target|8}: like... actively?\n[]>haley: tonight\n[]>haley: rly just checking in bc mayb u have some parting words ig\n[]>haley: shit fuck\n[]>audrey: parting words?? dont you fucking dare off yourself\n[]>audrey{target|3}: ok shes texting me\n[]>audrey: not doing too hot\n[]>haley: kinda too late for that girliepop\n[]>audrey{target|8}: what does that mean\n[]>haley: it means im gonna off myself but thought itd be a shitty thing to go out wo at least letting u know\n[]>audrey: where are you right now\n[]>haley: outside\n[]>maya{target|9}: haley please tell me what's wrong\n[]>haley: oh now the bitch actually cares sure\n[]>haley: tell her that she shouldnt feel responsible \n[]>audrey: do that yourself?\n[]>audrey: also wym outside?\n[]>haley: did that\n[]>haley: went sideways\n[]>haley: anyways\n[]>haley: outside\n[]>audrey: but where?\n[]>haley: omw\n[]>audrey: ON YOUR WAY WHERE HALEY PLEASE\n[]>maya: haley\n[]>audrey: im way out of the city tonight but please get someone to pick you up\n[]>haley: god u 2 rly dont shut up do u\n[]>haley: but uhm\n[]>haley: sry\n[]>haley: shouldve let me know if u wanna look at me off myself\n[]>haley: but im sure if you ask roaches you get to look at some pretty corpses\n[]>audrey{target|3}: she's so hung up on roaches holy shit\n[]>audrey: also might actually attempt tonight\n[]>audrey: please get a fucking handle on her\n[]>haley: audrey i fucking shot up for the first time today\n[]>haley: im an actual failure\n[]>haley: like wtf\n[]>haley: this life is over\n[]>haley: i dont wanna be in rehab for the rest of my life\n[]>haley: i dont even wannt be in rehab\n[]>haley: at all\n[]>audrey{target|8}: you dont have to go to rehab\n[]>audrey: you can suffer in life and be better in the end\n[]>audrey: you can fucking do drugs\n[]>audrey: but please just stay alive\n[]>haley: oh yea so i can make you feel like you actually gave a shit right\n[]>haley: fuck off\n[]>haley: god\n[]>haley: I dont owe any of you staying alive fuck you\n[]>audrey: what",
 			"1750496681.133--9223372036854706066": "[]>audrey{target|8}: im also going through shit today ok\n[]>audrey: everyones on my case about stuff\n[]>audrey: leah is\n[]>audrey: dfjhbgjdfhg\n[]>audrey: [insert leah rant]",
 			"1750496699.647--9223372036854706064": "[]>audrey: ok can i vent at you now\n[]>haley: whatever\n[]>audrey: like ive also been having a shit day thank yOUY foraasKing\n[]>audrey: FUCK\n[]>audrey: things have been tense between leah and me and thats FUCKED because sheS LIKE THE ONLY ONE IN MY FRIEND GROUP WHO ISNT SOME NEUROTIC FUCKED UP BITCH\n[]>audrey: she has her issues that piss me off sometimers but at least i dont have to worry about killing herself\n[]>audrey: jher killing herself\n[]>audrey: wahtever\n[]>audrey: but because i apparently have no spine shes judging the fuck out of me ahtgnfnsdf and hawtdrjgd\n[]>audrey: FUCK\n[]>haley: u done\n[]>audrey: FUCK IF I KNOW\n[]>haley: u r kinda thin skinned today\n[]>audrey: OH AM I NOW\n[]>audrey: me an overdramatic bitch?\n[]>audrey: i dont go around announcing my plans to kill myself every fucking fortnight do i\n[]>audrey: can u let me vent for 1 fucking DAY withing maigdfgig\n[]>audrey: without making it baout you\n[]>audrey: god fuck",
 			"1750496733.851--9223372036854706062": "[]>haley{target|8}: do i text maya\n[]>haley: she literally hasnt texted me in days\n[]>haley: except for yk\n[]>haley: the shit convo approx 20 mins ago\n[]>audrey{target|8}: idk bro\n[]>audrey: maybe give her some space?\n[]>audrey: she seems also pretty exhausted over the entire situation\n[]>haley: oh so shes been talking to u\n[]>audrey: im kinda the bitch to vent to at the moment, apparently\n[]>haley: well congrats on the position\n[]>haley: must feel great\n[]>audrey: oh yea totally!! i love soending my one outdoorsy day with friend drama in my hands\n[]>haley: that was genuine\n[]>haley: how can u be so dense\n[]>haley: jfc\n[]>haley: u actually get to be useful to someone\n[]>haley: congrats\n[]>haley: i envy ur position\n[]>audrey: sure",
 			"1750497507.966--9223372036854705550": "[]>maya: im fucking sobbing my eyes out over here\n[]>maya: could you fucking DO SOMEHTING\n[]>noni: to a why is audrey so\n[]>noni: mean\n[]>argo: shes just really hurt right now\n[]>argo: but that's not your fault\n[]>argo: not at all",
 			"1750497535.992--9223372036854705336": "[]>maya: and like i get it\n[]>maya: shes depressed as shit\n[]>maya: but i dont wanna be her pyschiatrist\n[]>audrey: but you still love her right\n[]>maya: idk...\n[]>maya: I thnk?\n[]>maya: on some level at least\n[]>maya: but i also told her that her meth use is not helping at all\n[]>maya: it genuinely feels like ive kinda lost the person that adopted me\n[]>maya: and now im just moving on in life\n[]>maya: i have roaches and noise \n[]>maya: which is still kinda scary because i dont know much about them besides where they live and how to get them off\n[]>maya: despite the tape\n[]>maya: but thats an issue for future maya\n[]>maya: but yeah\n[]>maya: id rather do something new than stagnate with soeone who frankly just doesnt make me feel like worth having around\n[]>maya: hence why im here now\n[]>maya: here being roaches porch\n[]>maya: wow that got off track\n[]>audrey: that's fine\n[]>audrey: im just kinda getting drunk lol\n[]>audrey: out in the desert\n[]>maya: aything going on with you?\n[]>audrey: not really\n[]>audrey: just wanna shut my brain off for a day\n[]>audrey: or that was the plan\n[]>audrey: now im worried about haley again\n[]>maya: yeah i know the feeling",
 			"1750498638.764--9223372036854704454": "",
-			"1750502595.641--9223372036854703037": "[]>audrey{target|5}: JHSDFGHJSDFGHS\n[]>noni{target|7}: hey Audrey\n[]>audrey{target|7}: what's up\n[]>noni: can we call?\n[]>audrey: can't rn\n[]>audrey: i mean\n[]>audrey: i mean yea sure then just fucking\n[]>audrey: idk\n[]>audrey: tell noni to fuck off idk\n[]>argo: that seems rude\n[]>argo: and like... i have done that\n[]>argo: even apologized to ness aabout it alreay\n[]>argo: we fucked about it\n[]>argo: things are rosy on that level\n[]>argo: im just afraid things can come back\n[]>argo: and what if shes harboring feelings that shes not communicating for one reason or another\n[]>noni: ;;\n[]>audrey: i mean didnt noni straight up tell you she wants to bang\n[]>argo: i mean nessa\n[]>audrey: oh then uhhh\n[]>audrey: lemme read the message again\n[]>narrator: more beer.\n[]>audrey: oh right fuck i forgot I DONt carE!\n[]>audrey: nessa aint the type to just hate you FOr not REasin\n[]>audrey: ugh.\n[]>audrey: if she says its fine its fine\n[]>audrey: if not not\n[]>audrey: notnotnot fuck me oh my god\n[]>argo: you seem\n[]>argo: stressed",
-			"1750502596.475--9223372036854703035": "[]>audrey{target|3}: Maya?\n[]>audrey: you there?\n[]>audrey: Also argo is texting me now too about some shit with noni\n[]>audrey: what is up tonight\n[]>maya{target|3}: I'm done\n[]>maya: I'm crying\n[]>maya: I'll text haley later\n[]>maya: maybe\n[]>argo: Audrey?\n[]>argo: Sorry I really don't know who else to hit up about this\n[]>maya: this is like the worst situation\n[]>maya: my heart hurts so much\n[]>maya: I dont want her to die\n[]>maya: im not sure if I just made it worse\n[]>maya: we're deffo not talking anymore now\n[]>audrey{target|8}: hey Haley\n[]>haley{target|8}: what\n[]>haley: did maya fucking send you to take care of me now\n[]>audrey: listen I have no fuFKCIng idea hwat happend between yo twoo but ou need to get \n[]>haley: are you drunk?\n[]>maya: are you texting her?\n[]>audrey{target|3}: yes but that's not the point\n[]>audrey: fuck that was meant for haley\n[]>audrey: but yes im texting her\n[]>audrey{target|8}: yes but that's not the point\n[]>haley: enjoy your buzz\n[]>audrey: haley im not on vacation\n[]>audrey: let me be there for you lmao\n[]>audrey: you can tell me about the shit thats going on in your head right now\n[]>haley: oh yea bc thatll help sm\n[]>audrey: it does you obstinate bitch\n[]>haley: now look who should drop her tone\n[]>audrey: ?\n[]>haley: ill text u when i get bored\n[]>audrey: ???\n[]>audrey: haley??\n[]>audrey{target|3}: well she's ignoring me now too\n[]>audrey: sooooo <call:hide_window(8)>\n[]>audrey: i guess ill text with argo about whatever shit has hit the fan on their end\n[]>maya:please let me know when you hear of haley\n[]>audrey: will do!!",
-			"1750505892.997--9223372036854702634": "[]>audrey{target|5}: hi argo\n[]>argo: hi\n[]>argo: u free now?\n[]>audrey: more or less\n[]>audrey: welcome to audreys therapy session how may i ruin your life today?\n[]>argo: uhm\n[]>argo: are you also going through shit right now\n[]>audrey: you could say that\n[]>audrey: but worry not\n[]>audrey: i am rapidly drinking the memories away\n[]>argo: oh\n[]>argo: do you still want me to share my stuff then?\n[]>audrey: yes you fucking idiot\n[]>audrey: ijust dgaf\n[]>audrey: ok thats not true\n[]>audrey: i care a great deal about you in fact\n[]>audrey: and the shit you get up to etc etc\n[]>audrey: but\n[]>audrey: uhm\n[]>audrey: i forgot where i'm going with this\n[]>audrey: so\n[]>audrey: smoething something noni",
-			"1750506888.336--9223372036854702106": "[]>argo: and we have... reconciled ig\n[]>argo: were still heavily into each other\n[]>audrey{target|5}: ok",
+			"1750502595.641--9223372036854703037": "[]>noni{target|7}: hey Audrey\n[]>audrey{target|7}: what's up\n[]>noni: can we call?\n[]>audrey: can't rn\n[]>audrey: i mean\n[]>audrey: shit\n[]>audrey: one sec\n[]>audrey: whats up\n[]>noni: ^^'\n[]>audrey{target|5}: i mean yea sure then just fucking\n[]>audrey: idk\n[]>audrey: tell noni to fuck off idk\n[]>argo: that seems rude\n[]>argo: and like... i have done that\n[]>argo: even apologized to nessa about it already\n[]>argo: we fucked about it ffs\n[]>argo: things are rosy on that level\n[]>argo: im just afraid things can come back\n[]>argo: and what if shes harboring feelings that shes not communicating for one reason or another\n[]>noni: ;;\n[]>audrey: didnt noni straight up tell you she wants to bang\n[]>audrey: i mean nessa\n[]>audrey: oh then uhhh\n[]>audrey: lemme read the message again\n[]>narrator{target|5}: more beer.\n[]>audrey: oh right fuck i forgot I DONt carE!\n[]>audrey: nessa aint the type to just hate you FOr not REasin\n[]>audrey: didnt know she was so possessive tbh\n[]>audrey:\n[]>audrey: ugh.\n[]>audrey: if she says its fine its fine\n[]>audrey: if not not\n[]>audrey: notnotnot fuck me oh my god\n[]>argo: you seem\n[]>argo: stressed",
+			"1750502596.475--9223372036854703035": "[]>audrey{target|3}: Maya?\n[]>audrey: you there?\n[]>audrey: Also argo is texting me now too about some shit with nessa and noni\n[]>audrey: what is up tonight\n[]>maya{target|3}: I'm done\n[]>maya: I'm crying\n[]>maya: I'll text Haley later\n[]>maya: maybe\n[]>argo: Audrey?\n[]>argo: Sorry I really don't know who else to hit up about this\n[]>maya: this is like the worst situation\n[]>maya: my heart hurts so much\n[]>maya: I dont want her to die\n[]>maya: im not sure if I just made it worse\n[]>maya: we're deffo not talking anymore now\n[]>audrey{target|8}: hey Haley\n[]>haley{target|8}: what\n[]>haley: did maya fucking send you to take care of me now\n[]>audrey: listen I have no fuFKCIng idea hwat happend between yo twoo but ou need to get a grip\n[]>haley: are you drunk?\n[]>maya: are you texting her?\n[]>audrey{target|3}: yes but that's not the point\n[]>audrey: fuck that was meant for haley\n[]>audrey: but yes im texting her\n[]>audrey{target|8}: yes but that's not the point\n[]>haley: enjoy your buzz\n[]>audrey: haley im not on vacation\n[]>audrey: let me be there for you lmao\n[]>audrey: you can tell me about the shit thats going on in your head right now\n[]>haley: oh yea bc thatll help sm\n[]>audrey: it does you obstinate bitch\n[]>haley: now look who should drop her tone\n[]>audrey: what\n[]>haley: ill text u when i get bored\n[]>audrey: how about you do that now\n[]>audrey: haley\n[]>audrey: haley??\n[]>audrey{target|3}: well she's ignoring me now too\n[]>audrey: sooooo <call:hide_window(8)>\n[]>audrey: i guess ill text with argo about whatever shit has hit the fan on their end\n[]>maya:please let me know when you hear of haley\n[]>audrey: will do!!",
+			"1750505892.997--9223372036854702634": "[]>audrey{target|5}: <call:hide_window(3)>hi argo\n[]>argo: hi\n[]>argo: u free now?\n[]>audrey: more or less\n[]>audrey: welcome to audreys therapy session how may i ruin your life today?\n[]>argo: uhm\n[]>argo: are you also going through shit right now\n[]>audrey: you could say that\n[]>audrey: but worry not\n[]>audrey: i am rapidly drinking the memories away\n[]>argo: oh\n[]>argo: do you still want me to share my stuff then?\n[]>audrey: yes you fucking idiot\n[]>audrey: ijust dgaf\n[]>audrey: ok thats not true\n[]>audrey: i care a great deal about you in fact\n[]>audrey: and the shit you get up to etc etc\n[]>audrey: but\n[]>audrey: uhm\n[]>audrey: i forgot where i'm going with this\n[]>audrey: so\n[]>audrey: smoething something noni",
+			"1750506888.336--9223372036854702106": "[]>argo{target|5}: and we have... reconciled ig\n[]>argo: were still heavily into each other\n[]>audrey{target|5}: ok",
+			"1750510664.944--9223372036854700519": "[]>argo: yeah uhm\n[]>argo: basically, noni kept being really gay towards me\n[]>argo: which i found endearing tbh\n[]>argo: i really like her\n[]>argo: idk if its a crush like for her but we get along well and i wanna coddle her\n[]>argo: anways\n[]>argo: i cant do any of that\n[]>argo: or shouldnt (and am not)\n[]>argo: (anymore)\n[]>audrey: ngl i still dont get any of what youre saying\n[]>argo: im afraid nessa and i will just have an altered relationship now\n[]>audrey: now?\n[]>argo: now that ive offered physical intimacy to noni\n[]>audrey: youve fucked noni\n[]>argo: i havent!!!\n[]>argo: we just met up to listen to music and then fell asleep and i spooned her during that\n[]>argo: with clothes\n[]>argo: but then i asked nessa about it afterwards and she was hurt\n[]>argo: which i get\n[]>argo: i apologized and things seem nice again\n[]>argo: but im just uneasy now\n[]>argo: what if things crack again\n[]>argo: what if theres a rift im not aware of\n[]>argo: can we\n[]>argo: uhm\n[]>argo: can we just fuck us back together indefinitely\n[]>argo: idk\n[]>audrey: so\n[]>audrey: what now\n[]>argo: idk\n[]>argo: im at nessas\n[]>argo: we havent really talked since waking up\n[]>argo: yeah\n[]>argo: what do",
+			"1750510665.577--9223372036854700517": "[]>audrey{target|5}: JHSDFGHJSDFGHS",
+			"1750513345.284--9223372036854700080": "[]>audrey:to leah would it help you to be ranted at\n[]>haley: help how\n[]>audrey: idk\n[]>audrey: were friends\n[]>audrey: im also suffering\n[]>haley: whatev",
 			"amber-is-happy": "[]>amber{amber-emotion|happy}: I'm really happy to hear that! <mp>I think you're cool too!"
 		},
 		"text_lead_time_other_actor": 0.0,
