@@ -661,6 +661,13 @@ func hide_window(id:int):
 		if window.id == id:
 			window.hide()
 			return
+		
+func move_window(id:int, x:int, y:int):
+	for window : CustomWindow in windows:
+		if window.id == id:
+			window.position = Vector2(x, y)
+			window.clamp_to_viewport()
+			return
 
 
 func clear_text_bodies():

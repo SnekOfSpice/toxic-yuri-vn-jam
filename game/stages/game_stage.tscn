@@ -111,6 +111,7 @@ mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
 devmode_start_page = 31
+devmode_start_line = 12
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -419,6 +420,7 @@ offset_left = 13.0
 offset_top = 183.0
 offset_right = 296.0
 offset_bottom = 283.0
+id = 100
 
 [node name="WaveFormWindow" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("9_knhaa")]
 layout_mode = 0
@@ -426,6 +428,7 @@ offset_left = 848.0
 offset_top = 678.0
 offset_right = 960.0
 offset_bottom = 714.0
+id = 200
 
 [node name="FullCoverText" type="Control" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI"]
 unique_name_in_owner = true

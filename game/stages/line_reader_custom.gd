@@ -218,7 +218,7 @@ func shake_windows(strength:float):
 func show_image(image:String, viewer:=0, x_min_size := 200, y_min_size := 200, ):
 	for child in find_child("Windows").get_children():
 		if child is ImageViewerWindow:
-			if child.id == viewer:
+			if child.id == 100 + viewer:
 				child.show_image(image, x_min_size, y_min_size)
 
 func hide_windows(window_type:String):
@@ -300,6 +300,8 @@ func hide_all_windows(reset_to_default:=true):
 	GameWorld.game_stage.hide_all_windows(reset_to_default)
 func hide_window(id:int):
 	GameWorld.game_stage.hide_window(id)
+func move_window(id:int, x:int, y:int):
+	GameWorld.game_stage.move_window(id, x, y)
 
 
 func set_up_blank(display_name:String):
