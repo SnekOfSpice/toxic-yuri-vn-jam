@@ -6,7 +6,7 @@
 resource_local_to_scene = true
 shader = ExtResource("1_toles")
 shader_parameter/hue_shift = 0.0
-shader_parameter/saturation_mult = 1.0
+shader_parameter/saturation_mult = 0.861
 shader_parameter/value_mult = 1.0
-shader_parameter/brightness_add = 0.261
-shader_parameter/contrast_mult = 1.186
+shader_parameter/brightness_add = 0.171
+shader_parameter/contrast_mult = 1.037
