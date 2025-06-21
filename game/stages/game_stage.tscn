@@ -110,7 +110,7 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_page = 27
+devmode_start_page = 31
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -400,6 +400,16 @@ offset_top = 76.0
 offset_right = 571.0
 offset_bottom = 230.0
 id = 8
+title = "PADS - chat client"
+icon = ExtResource("10_pms35")
+
+[node name="ChatLogWindow9" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/Windows" instance=ExtResource("7_j1uqk")]
+layout_mode = 1
+offset_left = 25.0
+offset_top = 282.0
+offset_right = 553.0
+offset_bottom = 436.0
+id = 9
 title = "PADS - chat client"
 icon = ExtResource("10_pms35")
 

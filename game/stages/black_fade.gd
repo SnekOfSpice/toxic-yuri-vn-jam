@@ -59,7 +59,7 @@ func on_clear_reached():
 
 
 func _on_handler_start_black_fade(fade_in_duration, hold_time, fade_out_duration, hide_characters, new_background, new_bgm):
-	if GameWorld.skip:
+	if GameWorld.skip or GameWorld.game_stage.devmode_enabled:
 		fade_out_duration = 0.1
 		hold_time = 0.1
 		fade_in_duration = 0.1

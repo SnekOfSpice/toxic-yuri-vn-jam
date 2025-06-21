@@ -6,14 +6,20 @@ var actor : String
 func _ready() -> void:
 	super()
 	close()
-	if not include_title_bar: # is for embodied voice
-		find_child("PanelContainer").theme_type_variation = "EmbodiedText"
-		%ScrollContainer.vertical_scroll_mode = ScrollContainer.ScrollMode.SCROLL_MODE_DISABLED
-	else: # is digital comm
+	%Highlight.modulate.a = 0
+	if _is_digital():
 		%TextContent.theme_type_variation = "DigitalText"
 		%ScrollContainer.vertical_scroll_mode = ScrollContainer.ScrollMode.SCROLL_MODE_RESERVE
 		flatten_stylebox(get_body_label())
+	else:
+		find_child("PanelContainer").theme_type_variation = "EmbodiedText"
+		%ScrollContainer.vertical_scroll_mode = ScrollContainer.ScrollMode.SCROLL_MODE_DISABLED
+		
 	start_size = size
+
+## helper function
+func _is_digital() -> bool:
+	return include_title_bar
 
 func on_visibility_changed():
 	super.on_visibility_changed()
@@ -61,7 +67,9 @@ func serialize() -> Dictionary:
 	data["actor"] = actor
 	return data
 
+var block_highlight := false
 func deserialize(data:Dictionary):
+	block_highlight = true
 	super.deserialize(data)
 	%BodyLabel.text = data.get("body_label_text", "")
 	%NameLabel.text = data.get("name_label_text", "")
@@ -110,3 +118,21 @@ func _on_body_label_item_rect_changed() -> void:
 func str_open(meta:Variant):
 	unblock(meta)
 	OS.shell_open(str(meta))
+
+var highlight_tween
+func _on_body_label_finished() -> void:
+	return
+	if not visible:
+		return
+	if not _is_digital():
+		return
+	if block_highlight:
+		block_highlight = false
+		return
+	if highlight_tween:
+		highlight_tween.kill()
+	%Highlight.modulate.a = 0.2
+	highlight_tween = create_tween()
+	highlight_tween.tween_property(%Highlight, "modulate:a", 0, 1).set_trans(Tween.TRANS_CIRC)
+	
+	

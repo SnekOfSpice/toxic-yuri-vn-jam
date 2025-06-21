@@ -95,7 +95,17 @@ mouse_filter = 1
 bbcode_enabled = true
 fit_content = true
 
+[node name="Highlight" type="ColorRect" parent="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent/BodyLabel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [connection signal="child_entered_tree" from="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent/PastContainer" to="." method="_on_past_container_child_entered_tree"]
+[connection signal="finished" from="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent/BodyLabel" to="." method="_on_body_label_finished"]
 [connection signal="item_rect_changed" from="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent/BodyLabel" to="." method="_on_body_label_item_rect_changed"]
 [connection signal="meta_clicked" from="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent/BodyLabel" to="." method="str_open"]
 [connection signal="meta_hover_ended" from="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent/BodyLabel" to="." method="unblock"]
