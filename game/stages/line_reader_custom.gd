@@ -268,6 +268,9 @@ func splash_text(key:String,
 	bgm:=Sound.bgm_key,
 	reset_windows := true):
 	var black_cover:Control
+	if key == "one_of_us":
+		
+		GameWorld.game_stage.show_ui()
 	if fade_in > 0:
 		black_cover = ColorRect.new()
 		black_cover.color = Color.BLACK
@@ -336,6 +339,8 @@ func suicide_visual():
 	layer.visible = true
 	var floaty : ColorRect = layer.find_child("Floaty")
 	floaty.color.a = 0
+	hide_all_windows(false)
+	GameWorld.game_stage.hide_ui()
 	var t = create_tween()
 	t.tween_property(floaty, "color:a", 1, 10).set_ease(Tween.EASE_OUT_IN)
 	t.tween_property(floaty, "color:a", 0, 5).set_delay(5)
