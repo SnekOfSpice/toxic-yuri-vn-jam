@@ -93,6 +93,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [connection signal="child_entered_tree" from="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent/PastContainer" to="." method="_on_past_container_child_entered_tree"]
 [connection signal="finished" from="VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/ScrollContainer/TextContent/BodyLabel" to="." method="_on_body_label_finished"]

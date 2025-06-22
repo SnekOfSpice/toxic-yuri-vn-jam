@@ -47,6 +47,8 @@ const MUSIC_VEIN_ACID := "Various Artists - CULT TAPE 002 - SELECTED AMBIENT WOR
 const SFX_ROOT := "res://game/sounds/sfx/"
 const SFX_CLICK := "637345__kyles__camera-toy-single-shot-nice-stereo.ogg"
 const SFX_SHUTTER := "579882__yfjesse__polaroid-one-step-camera-shutter.ogg"
+const SFX_HOVER := "720828__riley_garinger__metlfric-circular-saw-blade-scrape-on-concrete_01_single-fast_rg_2023_ntg4-2.ogg" # attr
+const SFX_CLICKER := "clicker.ogg"
 
 func fetch(type:String, key:String) -> String:
 	type = type.to_upper()

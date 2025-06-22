@@ -62,7 +62,7 @@ func set_screen(screen_path:String, payload := {}):
 		t.set_ease(Tween.EASE_OUT_IN)
 	screen_container.visible = true
 	screen = screen_path
-
+	hook_up_button_sfx(new_screen)
 
 func new_gamestate():
 	game_start_callable = Parser.reset_and_start
@@ -101,9 +101,16 @@ func change_stage(stage_path:String):
 			#new_stage.blockers_cleared.connect(game_start_callable)
 	
 	$StageContainer.add_child(new_stage)
-	
+	hook_up_button_sfx(new_stage)
 	stage = stage_path
 
 func get_stage_node() -> Node:
 	return $StageContainer.get_child(0)
 	
+
+func hook_up_button_sfx(start_node:Node):
+	if start_node is Button:
+		start_node.mouse_entered.connect(Sound.play_sfx.bind("hover"))
+		start_node.pressed.connect(Sound.play_sfx.bind("clicker"))
+	for child in start_node.get_children():
+		hook_up_button_sfx(child)
