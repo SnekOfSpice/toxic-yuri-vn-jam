@@ -66,7 +66,7 @@ vec4 colormap(float x) {
 }*/
 
 
-float rand(vec2 n) { 
+float rand(vec2 n) {
     return fract(sin(dot(n, vec2(12.9898, 4.1414))) * 43758.5453);
 }
 
@@ -109,5 +109,5 @@ void fragment()
     vec2 uv = FRAGCOORD.xy / (scale / SCREEN_PIXEL_SIZE).y;
 	float shade = pattern(uv);
     COLOR = vec4(colormap(shade).rgb, COLOR.a);
-	
+
 }

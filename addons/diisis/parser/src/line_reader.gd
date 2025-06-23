@@ -582,6 +582,8 @@ func apply_preferences(prefs:Dictionary):
 	auto_continue_delay = prefs.get("auto_continue_delay", auto_continue_delay)
 
 func is_advance_blocked(include_warnings:=false) -> bool:
+	if Engine.is_editor_hint():
+		return false
 	if Parser.paused:
 		if warn_advance_on_parser_paused and include_warnings:
 			push_warning("Cannot advance because Parser.paused is true.")
