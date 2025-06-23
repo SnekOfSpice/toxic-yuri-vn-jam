@@ -61,7 +61,7 @@ func _ready():
 	ParserEvents.actor_name_about_to_change.connect(on_actor_name_about_to_change)
 	ParserEvents.page_terminated.connect(go_to_main_menu)
 	ParserEvents.instruction_started.connect(on_instruction_started)
-	ParserEvents.instruction_completed.connect(on_instruction_completed)
+	#ParserEvents.instruction_completed.connect(on_instruction_completed)
 	ParserEvents.read_new_line.connect(on_read_new_line)
 	ParserEvents.dialog_line_args_passed.connect(on_dialog_line_args_passed)
 	#ParserEvents.go_back_accepted.connect(on_go_back_accepted)
@@ -127,18 +127,9 @@ func on_instruction_started(
 	_delay : float,
 ):
 	find_child("StartCover").visible = false
-	if instruction_text.begins_with("black_fade"):
-		find_child("ControlsContainer").visible = false
 
 func show_start_cover():
 	find_child("StartCover").visible = true
-
-func on_instruction_completed(
-	instruction_text : String,
-	_delay : float,
-):
-	if instruction_text.begins_with("black_fade"):
-		find_child("ControlsContainer").visible = true
 
 func go_to_main_menu(_unused):
 	GameWorld.stage_root.change_stage(CONST.STAGE_MAIN)
@@ -671,3 +662,20 @@ func clear_text_bodies():
 	for window : CustomWindow in windows:
 		if window is ChatLogWindow:
 			window.get_body_label().text = ""
+
+
+var control_tween
+func _on_line_reader_start_accepting_advance() -> void:
+	if control_tween:
+		control_tween.kill()
+	var controls : Control = find_child("ControlsContainer")
+	control_tween = create_tween()
+	control_tween.tween_property(controls, "modulate:a", 1, 1)
+
+
+func _on_line_reader_stop_accepting_advance() -> void:
+	if control_tween:
+		control_tween.kill()
+	var controls : Control = find_child("ControlsContainer")
+	control_tween = create_tween()
+	control_tween.tween_property(controls, "modulate:a", 0, 1)

@@ -318,6 +318,9 @@ var _remaining_prompt_delay := input_prompt_delay
 
 signal line_finished(line_index: int)
 signal jump_to_page(page_index: int, target_line: int)
+signal start_accepting_advance()
+signal stop_accepting_advance()
+@onready var _is_advance_blocked := is_advance_blocked()
 
 var _line_data := {}
 ## [enum DIISISGlobal.LineType] that's currently being read.
@@ -578,31 +581,36 @@ func apply_preferences(prefs:Dictionary):
 	auto_continue = prefs.get("auto_continue", auto_continue)
 	auto_continue_delay = prefs.get("auto_continue_delay", auto_continue_delay)
 
+func is_advance_blocked(include_warnings:=false) -> bool:
+	if Parser.paused:
+		if warn_advance_on_parser_paused and include_warnings:
+			push_warning("Cannot advance because Parser.paused is true.")
+		return true
+	if is_executing:
+		if warn_advance_on_executing and include_warnings:
+			push_warning("Cannot advance because is_executing is true.")
+		return true
+	if terminated:
+		if warn_advance_on_terminated and include_warnings:
+			push_warning("Cannot advance because terminated is true.")
+		return true
+	if auto_continue:
+		if warn_advance_on_auto_continue and include_warnings:
+			push_warning("Cannot advance because auto_continue is true.")
+		return true
+	if awaiting_inline_call:
+		if warn_advance_on_awaiting_inline_call and include_warnings:
+			push_warning("Cannot advance because awaiting_inline_call is true.")
+		return true
+	if _is_choice_presented() and block_advance_during_choices:
+		if warn_advance_on_choices_presented and include_warnings:
+			push_warning("Cannot advance because choices are presented and block_advance_during_choices is true.")
+		return true
+	return false
+
 ## Advances the interpreting of lines from the input file if possible. Will push an appropriate warning if not possible.
 func request_advance():
-	if Parser.paused:
-		if warn_advance_on_parser_paused:
-			push_warning("Cannot advance because Parser.paused is true.")
-		return
-	if is_executing:
-		if warn_advance_on_executing:
-			push_warning("Cannot advance because is_executing is true.")
-		return
-	if terminated:
-		if warn_advance_on_terminated:
-			push_warning("Cannot advance because terminated is true.")
-		return
-	if auto_continue:
-		if warn_advance_on_auto_continue:
-			push_warning("Cannot advance because auto_continue is true.")
-		return
-	if awaiting_inline_call:
-		if warn_advance_on_awaiting_inline_call:
-			push_warning("Cannot advance because awaiting_inline_call is true.")
-		return
-	if _is_choice_presented() and block_advance_during_choices:
-		if warn_advance_on_choices_presented:
-			push_warning("Cannot advance because choices are presented and block_advance_during_choices is true.")
+	if is_advance_blocked(true):
 		return
 	
 	advance()
@@ -1022,6 +1030,13 @@ func _process(delta: float) -> void:
 		return
 	
 	_update_input_prompt(delta)
+	var new_block := is_advance_blocked()
+	if _is_advance_blocked != new_block:
+		if new_block:
+			emit_signal("stop_accepting_advance")
+		else:
+			emit_signal("start_accepting_advance")
+	_is_advance_blocked = new_block
 	
 	if is_executing:
 		if delay_before > 0:

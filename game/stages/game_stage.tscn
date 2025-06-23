@@ -110,7 +110,6 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_page = 31
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -611,9 +610,11 @@ grow_vertical = 2
 mouse_filter = 2
 
 [connection signal="request_object_visible" from="LineReader" to="LineReader/Objects" method="set_object_visible"]
+[connection signal="start_accepting_advance" from="LineReader" to="." method="_on_line_reader_start_accepting_advance"]
 [connection signal="start_black_fade" from="LineReader" to="LineReader/SubViewportContainer/SubViewport/Camera2D/BlackLayer/BlackFade" method="_on_handler_start_black_fade"]
 [connection signal="start_chapter_cover" from="LineReader" to="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/ChapterCover" method="set_chapter_cover"]
 [connection signal="start_hide_cg" from="LineReader" to="." method="hide_cg"]
 [connection signal="start_show_cg" from="LineReader" to="." method="_on_handler_start_show_cg"]
+[connection signal="stop_accepting_advance" from="LineReader" to="." method="_on_line_reader_stop_accepting_advance"]
 [connection signal="pressed" from="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/ControlsContainer/HistoryButton" to="." method="_on_history_button_pressed"]
 [connection signal="pressed" from="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/ControlsContainer/MenuButton" to="." method="_on_menu_button_pressed"]
