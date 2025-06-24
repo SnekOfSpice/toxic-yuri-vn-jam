@@ -48,8 +48,12 @@ func get_default_targets() -> Dictionary:
 	return result
 
 func _ready():
-	set_background("black")
+	if not devmode_enabled:
+		set_background("black")
+	else:
+		Sound.play_bgm("argo_default")
 	find_child("Portrait").visible = false
+	find_child("CreditsLayer").visible = false
 	find_child("BlackLayer").visible = true
 	find_child("Suicide").visible = false
 	find_child("PsychedelicsLayer").visible = false

@@ -30,19 +30,17 @@ position = Vector2(475, 380)
 scale = Vector2(0.695589, 0.695589)
 texture = ExtResource("2_ia0qv")
 
-[node name="TextContainer" type="HBoxContainer" parent="."]
+[node name="TextContainer" type="VBoxContainer" parent="."]
 unique_name_in_owner = true
-layout_mode = 0
-offset_left = 10.0
-offset_top = 10.0
-offset_right = 514.0
-offset_bottom = 110.0
-rotation = 0.0523599
-
-[node name="TextureRect" type="TextureRect" parent="TextContainer"]
-layout_mode = 2
-texture = ExtResource("3_ljvqb")
-stretch_mode = 4
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = 135.0
+offset_bottom = 319.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="LabelContainer" type="VBoxContainer" parent="TextContainer"]
 unique_name_in_owner = true
@@ -51,23 +49,33 @@ layout_mode = 2
 [node name="NameLabel" type="Label" parent="TextContainer/LabelContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 27
+horizontal_alignment = 1
 
 [node name="Label" type="RichTextLabel" parent="TextContainer/LabelContainer"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(400, 0)
+custom_minimum_size = Vector2(400, 40)
 layout_mode = 2
 size_flags_vertical = 3
 mouse_filter = 2
 theme_override_constants/shadow_offset_y = 0
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/normal_font_size = 24
 fit_content = true
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="TextContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("3_ljvqb")
+stretch_mode = 4
 
 [node name="MessageContainer" type="VBoxContainer" parent="."]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_top = 71.0
-offset_bottom = 71.0
+offset_top = 87.0
+offset_bottom = 87.0
 grow_horizontal = 2

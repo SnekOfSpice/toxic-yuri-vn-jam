@@ -21,7 +21,7 @@ const MUSIC_ARGO_DEFAULT := "2025-06-09-tyj_the quite part out loud.mp3"
 const MUSIC_AMBIENT_DRONE := "Paradise_Found.mp3"
 const MUSIC_BODY_DISCOVERY := "Paradise_Found.mp3"
 const MUSIC_CONSENSUAL_HATE_FUCK := "mobygratis head sound inst 82 bpm.mp3"
-const MUSIC_CREDITS := "Paradise_Found.mp3"
+const MUSIC_CREDITS := "661009__seth_makes_sounds__e-minor-120bpm-dark-edm-song.ogg"
 const MUSIC_DEATH_INDUSTRIAL := "Paradise_Found.mp3"
 const MUSIC_DICKS := "mobygratis idiots inst mix ab oz.mp3"
 const MUSIC_DOLLHOUSE := "Paradise_Found.mp3"
@@ -43,7 +43,7 @@ const MUSIC_NIGHTCORE := "Paradise_Found.mp3"
 const MUSIC_SHELTER := "Princess Commodore 64 - XOXO - 02 XOXO.ogg"
 const MUSIC_SUICIDE_TENSIOM := "Paradise_Found.mp3"
 const MUSIC_TATTOO := "Paradise_Found.mp3"
-const MUSIC_XELIA := "433801__oymaldonado__guitar-melody.ogg" #https://freesound.org/people/oymaldonado/sounds/433801/
+const MUSIC_XELIA := "433801__oymaldonado__guitar-melody.ogg" #https://freesound.org/people/oymaldonado/sounds/433801/ attr
 const MUSIC_VARGO_LOVE := "Paradise_Found.mp3"
 const MUSIC_VEIN_ACID := "Various Artists - CULT TAPE 002 - SELECTED AMBIENT WORKS - 06 Lorenzi - Elphael.ogg"
 
@@ -52,6 +52,7 @@ const SFX_CLICK := "637345__kyles__camera-toy-single-shot-nice-stereo.ogg"
 const SFX_SHUTTER := "579882__yfjesse__polaroid-one-step-camera-shutter.ogg"
 const SFX_HOVER := "720828__riley_garinger__metlfric-circular-saw-blade-scrape-on-concrete_01_single-fast_rg_2023_ntg4-2.ogg" # attr
 const SFX_CLICKER := "clicker.ogg"
+const SFX_RISER := "376574__original_sound__riser-quick-1-longer.ogg" # https://freesound.org/people/original_sound/sounds/376574/ attr
 
 func fetch(type:String, key:String) -> String:
 	type = type.to_upper()

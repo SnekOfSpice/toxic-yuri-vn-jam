@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://r1ntcqdujfol"]
+[gd_scene load_steps=34 format=3 uid="uid://r1ntcqdujfol"]
 
 [ext_resource type="Script" uid="uid://j84s4qlkmfxw" path="res://game/stages/game_stage.gd" id="1_a36me"]
 [ext_resource type="Script" uid="uid://bqw08o3b22fdc" path="res://game/stages/line_reader_custom.gd" id="3_pms35"]
@@ -24,6 +24,7 @@
 [ext_resource type="Shader" uid="uid://ugvetmo7tey1" path="res://game/stages/desaturation.gdshader" id="17_pxthe"]
 [ext_resource type="PackedScene" uid="uid://buhh6ornccsky" path="res://game/stages/opening_splash.tscn" id="22_ij3no"]
 [ext_resource type="Shader" uid="uid://d3bqi4abjy5sl" path="res://game/stages/psychedelics.gdshader" id="23_7wbxo"]
+[ext_resource type="Shader" uid="uid://c1qinhglcvyy3" path="res://game/stages/hsv_brightness.gdshader" id="23_isj81"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ij3no"]
 shader = ExtResource("15_j1uqk")
@@ -48,7 +49,16 @@ shader_parameter/scale = 6.505
 shader = ExtResource("17_pxthe")
 shader_parameter/saturation = 0.0
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_awxun"]
+shader = ExtResource("23_isj81")
+shader_parameter/hue_shift = 0.0
+shader_parameter/saturation_mult = 1.0
+shader_parameter/value_mult = 1.0
+shader_parameter/brightness_add = 0.0
+shader_parameter/contrast_mult = 1.0
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_knhaa"]
+resource_local_to_scene = true
 shader = ExtResource("15_j1uqk")
 shader_parameter/resolution_downsampling = 1.1
 shader_parameter/bit_depth = 10.0
@@ -110,8 +120,8 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_page = 38
-devmode_start_line = 6
+devmode_start_page = 42
+devmode_start_line = 5
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -548,10 +558,6 @@ mouse_filter = 2
 color = Color(0, 0, 0, 1)
 script = ExtResource("13_qfsh6")
 
-[node name="RollingCredits" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot" instance=ExtResource("17_gnute")]
-visible = false
-layout_mode = 1
-
 [node name="Suicide" type="CanvasLayer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D"]
 visible = false
 
@@ -586,6 +592,19 @@ grow_vertical = 2
 [node name="BlackFade" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/BlackLayer" instance=ExtResource("8_50byo")]
 visible = false
 z_index = 10
+
+[node name="CreditsLayer" type="CanvasLayer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D"]
+
+[node name="ColorRect" type="ColorRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/CreditsLayer"]
+material = SubResource("ShaderMaterial_awxun")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RollingCredits" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/CreditsLayer" instance=ExtResource("17_gnute")]
+visible = false
 
 [node name="DitherLayer" type="CanvasLayer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D"]
 visible = false
