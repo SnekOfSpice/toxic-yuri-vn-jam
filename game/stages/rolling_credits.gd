@@ -5,7 +5,8 @@ const CREDITS := {
 	"Snek Remilia Ketter" : "Programming\t\t\t\tWriting\t\t\t\tUI Design\t\t\t\tBackground Art",
 	"Blood Machine" : "Character Art\t\t\t\tCG Art\t\t\t\tCharacter Design",
 	"Jane Gorelove" : "Proofreading",
-	"[musiceans]" : "OST Contributions",
+	"[musicean 1]" : "OST Contributions",
+	"[musicean 2]" : "OST Contributions",
 	"The creative commons community" : "Various Stuff (Check main menu credits)"
 	}
 	
