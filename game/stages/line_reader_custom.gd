@@ -352,6 +352,11 @@ func suicide_visual():
 	
 	return true
 
+func set_up_ending_window_positions():
+	print("TEST THESE NUMBERS")
+	move_window(1,  0, 169)
+	move_window(2, 405, 169)
+
 func set_up_meltdown_window_positions():
 	# magic numbers based on visual
 	move_window(8,  44, 169)
