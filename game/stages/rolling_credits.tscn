@@ -26,7 +26,7 @@ mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="Logo" type="Sprite2D" parent="."]
-position = Vector2(475, 380)
+position = Vector2(491, 380)
 scale = Vector2(0.695589, 0.695589)
 texture = ExtResource("2_ia0qv")
 
