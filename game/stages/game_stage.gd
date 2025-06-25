@@ -121,7 +121,8 @@ func get_window_visibilities() -> Dictionary:
 	return result
 
 func on_read_new_line(line_index:int):
-	Options.save_gamestate()
+	pass
+	#Options.save_gamestate()
 
 func on_tree_exit():
 	GameWorld.game_stage = null

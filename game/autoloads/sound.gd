@@ -98,3 +98,4 @@ func fade_out_bgm(fade_out_time:float):
 		return
 	var t = create_tween()
 	t.tween_property(main_audio_player, "volume_db", linear_to_db(0.0001), fade_out_time)
+	t.finished.connect(main_audio_player.queue_free)
