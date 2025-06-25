@@ -93,11 +93,14 @@ func start():
 		
 		var segments = %Label.text.split("\t\t\t\t", false)
 		print(segments)
+		var segment_size : int = segments.size()
+		if segment_size <= 1:
+			segment_size = 0
 		#var fade = create_tween()
 		#fade.tween_property(%LabelContainer, "modulate:a", 1.0, 0.0)
 		#await fade.finished
 		Sound.play_sfx("shutter")
-		await get_tree().create_timer(8.0 + segments.size()).timeout
+		await get_tree().create_timer(8.0 + segment_size).timeout
 		
 		#fade = create_tween()
 		#fade.tween_property(%LabelContainer, "modulate:a", 0.0, 0.0)
