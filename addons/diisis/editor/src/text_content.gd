@@ -65,6 +65,8 @@ func init() -> void:
 	text_actions.set_item_tooltip(ID_CAPITALIZE + submenu_offset + 1, Pages.TOOLTIP_CAPITALIZE)
 	text_actions.add_item("Neaten Whitespace", ID_WHITESPACE)
 	text_actions.set_item_tooltip(ID_WHITESPACE + submenu_offset + 1, Pages.TOOLTIP_NEATEN_WHITESPACE)
+	text_actions.add_item("Fix Punctuation", ID_PUNCTUATION)
+	text_actions.set_item_tooltip(ID_PUNCTUATION + submenu_offset + 1, Pages.TOOLTIP_NEATEN_WHITESPACE)
 	text_actions.add_separator("Meta")
 	text_actions.add_item("Set Text ID...", ID_TEXT_ID)
 	text_actions.add_item("Lock", ID_LOCK)
@@ -75,8 +77,9 @@ func init() -> void:
 	
 const ID_CAPITALIZE := 0
 const ID_WHITESPACE := 1
-const ID_TEXT_ID := 3
-const ID_LOCK := 5
+const ID_PUNCTUATION := 2
+const ID_TEXT_ID := 4
+const ID_LOCK := 6
 var submenu_offset := 0
 	
 func serialize() -> Dictionary:
@@ -464,6 +467,8 @@ func _on_text_actions_id_pressed(id: int) -> void:
 			text_box.text = Pages.capitalize_sentence_beginnings(text_box.text)
 		ID_WHITESPACE:
 			text_box.text = Pages.neaten_whitespace(text_box.text)
+		ID_PUNCTUATION:
+			text_box.text = Pages.fix_punctuation(text_box.text)
 		ID_TEXT_ID:
 			if not text_id:
 				text_id = Pages.get_new_id()

@@ -66,6 +66,7 @@ var default_address_mode_pages : AddressModeButton.Mode = AddressModeButton.Mode
 
 const TOOLTIP_CAPITALIZE := "Capitalizes words around sentence beginnings and punctuation."
 const TOOLTIP_NEATEN_WHITESPACE := "Cleans up spaces around punctuation marks, tags, brackets. Successive spaces get collapsed into one."
+const TOOLTIP_FIX_PUNCTUATION := "Add periods. (maybe do other stuff in the future)"
 
 #region toggle settings
 const TOGGLE_SETTINGS := {
@@ -1708,6 +1709,38 @@ func neaten_whitespace(text:String) -> String:
 	text = text.replace(":...", ": ...")
 	
 	return text
+
+func fix_punctuation(text:String) -> String:
+	var lines = text.split("\n")
+	var result := []
+	for line : String in lines:
+		var ends_with_space := line.ends_with(" ")
+		while ends_with_space:
+			line = line.erase(line.length() - 1)
+			ends_with_space = line.ends_with(" ")
+		var has_punctuation := false
+		var punctuation_marks := [
+			".", "?", "~", "!", ":", ";", "]", ">", "*"
+		]
+		
+		if line.ends_with("]"):
+			var opening_index = line.rfind("[")
+			if opening_index > 0:
+				if not line[opening_index - 1] in punctuation_marks:
+					line = line.insert(opening_index, ".")
+		
+		for mark in punctuation_marks:
+			if line.ends_with(mark):
+				has_punctuation = true
+		
+		if has_punctuation:
+			result.append(line)
+		else:
+			result.append(line + ".")
+		
+		
+	
+	return "\n".join(result)
 
 func save_text(id:String, text:String) -> void:
 	text_data[id] = text
