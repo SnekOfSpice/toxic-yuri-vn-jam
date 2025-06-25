@@ -275,6 +275,11 @@ var prompt_finished: Control:
 var _remaining_prompt_delay := input_prompt_delay
 
 @export_group("Internal Config")
+## [signal stop_accepting_advance] and [signal start_accepting_advance] will be fired synchronized with the
+## internal state if true, since that blocks [method request_advance()].
+## However, I needed it for UI once to emit this even when [param auto_continue] was true.
+## So this is the option for that.
+@export var include_auto_continue_in_accept_advance_signal := false
 @export_subgroup("Inline Name Separator Sequence", "inline_name_")
 ## [enum NameStyle.Prepend] and [param preserve_name_in_past_lines] use this.
 @export var inline_name_separator := "-"
@@ -581,7 +586,7 @@ func apply_preferences(prefs:Dictionary):
 	auto_continue = prefs.get("auto_continue", auto_continue)
 	auto_continue_delay = prefs.get("auto_continue_delay", auto_continue_delay)
 
-func is_advance_blocked(include_warnings:=false) -> bool:
+func is_advance_blocked(include_warnings:=false, include_auto_continue:=true) -> bool:
 	if Engine.is_editor_hint():
 		return false
 	if Parser.paused:
@@ -596,7 +601,7 @@ func is_advance_blocked(include_warnings:=false) -> bool:
 		if warn_advance_on_terminated and include_warnings:
 			push_warning("Cannot advance because terminated is true.")
 		return true
-	if auto_continue:
+	if auto_continue and include_auto_continue:
 		if warn_advance_on_auto_continue and include_warnings:
 			push_warning("Cannot advance because auto_continue is true.")
 		return true
@@ -1032,7 +1037,7 @@ func _process(delta: float) -> void:
 		return
 	
 	_update_input_prompt(delta)
-	var new_block := is_advance_blocked()
+	var new_block := is_advance_blocked(false, include_auto_continue_in_accept_advance_signal)
 	if _is_advance_blocked != new_block:
 		if new_block:
 			emit_signal("stop_accepting_advance")
