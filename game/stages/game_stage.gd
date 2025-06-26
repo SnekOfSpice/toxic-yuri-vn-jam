@@ -48,10 +48,10 @@ func get_default_targets() -> Dictionary:
 	return result
 
 func _ready():
-	if not devmode_enabled:
-		set_background("black")
-	else:
+	if devmode_enabled:
 		Sound.play_bgm("argo_default")
+	else:
+		set_background("black")
 	find_child("Portrait").visible = false
 	find_child("CreditsLayer").visible = false
 	find_child("BlackLayer").visible = true
@@ -122,7 +122,6 @@ func get_window_visibilities() -> Dictionary:
 
 func on_read_new_line(line_index:int):
 	pass
-	#Options.save_gamestate()
 
 func on_tree_exit():
 	GameWorld.game_stage = null
@@ -314,12 +313,13 @@ func on_actor_name_changed(
 	):
 		actor_name = actor
 		is_name_container_visible = name_container_visible
-		
+		if actor_name.is_empty():
+			actor_name = "narrator"
 		var target_id : int = target_label_id_by_actor.get(actor, 0)
 		if target_id == 6:
 			find_child("Portrait").visible = false
 			return
-		if actor in Parser.line_reader.blank_names:
+		if actor_name in Parser.line_reader.blank_names:
 			if target_id == 0:
 				find_child("Portrait").visible = false
 				find_child("Portrait").texture = load("res://game/characters/portraits/none.png")
@@ -509,7 +509,7 @@ func hide_default_text_container():
 	%DefaultTextContainer.visible = false
 var are_words_being_spoken := true
 func set_target_labels(actor:String, target_id:int, force_show:=true, as_voice_message:=false):
-	print("as voice ", as_voice_message)
+	#print("as voice ", as_voice_message)
 	#GoBackHandler.store_into_subaddress(target_label_id_by_actor.duplicate(),
 		#targets_by_subaddress, Parser.line_reader.get_subaddress())
 	target_label_id_by_actor[actor] = target_id
@@ -684,6 +684,8 @@ func _on_line_reader_start_accepting_advance() -> void:
 	var controls : Control = find_child("ControlsContainer")
 	control_tween = create_tween()
 	control_tween.tween_property(controls, "modulate:a", 1, 1)
+	
+	Options.save_gamestate()
 
 
 func _on_line_reader_stop_accepting_advance() -> void:

@@ -204,10 +204,10 @@ func set_all_target_labels(target_id:int, force_show := true):
 
 func reset_window_rotations(time:float):
 	for window : CustomWindow in find_child("Windows").get_children():
-		var t = create_tween()
-		t.tween_property(window, "rotation_degrees", 0, randf_range(0.9  * time, time * 1.08))
-	var t = create_tween()
-	t.tween_property(%DefaultTextContainer, "rotation_degrees", 0, randf_range(0.9  * time, time * 1.08))
+		var window_tween = create_tween()
+		window_tween.tween_property(window, "rotation_degrees", 0, randf_range(0.9  * time, time * 1.08))
+	var container_tween = create_tween()
+	container_tween.tween_property(%DefaultTextContainer, "rotation_degrees", 0, randf_range(0.9  * time, time * 1.08))
 
 func shake_windows(strength:float):
 	shake_camera(strength)

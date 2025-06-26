@@ -6,6 +6,7 @@ var actor : String
 func _ready() -> void:
 	super()
 	close()
+	hide_waveform()
 	%Highlight.modulate.a = 0
 	if _is_digital():
 		%TextContent.theme_type_variation = "DigitalText"

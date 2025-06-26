@@ -11,7 +11,7 @@ var screen := ""
 var screenshot_to_save:Image
 
 func _ready():
-	change_stage(CONST.STAGE_GAME)
+	change_stage(CONST.STAGE_MAIN)
 	set_screen("")
 	GameWorld.stage_root = self
 
