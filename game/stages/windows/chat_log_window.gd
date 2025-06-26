@@ -13,6 +13,7 @@ func _ready() -> void:
 		flatten_stylebox(get_body_label())
 	else:
 		find_child("PanelContainer").theme_type_variation = "EmbodiedText"
+		theme_type_variation = "EmbodiedTextBG"
 		%ScrollContainer.vertical_scroll_mode = ScrollContainer.ScrollMode.SCROLL_MODE_DISABLED
 		
 	start_size = size

@@ -187,7 +187,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		if event.is_pressed() and InputMap.action_has_event("ui_cancel", event):
 			GameWorld.stage_root.set_screen(CONST.SCREEN_OPTIONS)
 
-	if event.is_action_pressed("advance"):
+	if event.is_action_released("advance"):
 		if meta_blocker:
 			return
 		for root in cg_roots:
@@ -684,3 +684,23 @@ func _on_line_reader_stop_accepting_advance() -> void:
 	var controls : Control = find_child("ControlsContainer")
 	control_tween = create_tween()
 	control_tween.tween_property(controls, "modulate:a", 0, 1)
+
+
+func is_window_overlapping(window_to_check:CustomWindow):
+	var rect_a = Rect2(window_to_check.position, window_to_check.size)
+	for window : CustomWindow in windows:
+		if window == window_to_check:
+			continue
+		var rect_b = Rect2(window.position, window.size)
+		var rect_a_x1 = rect_a.position.x
+		var rect_a_x2 = rect_a.position.x + rect_a.size.x
+		var rect_b_x1 = rect_b.position.x
+		var rect_b_x2 = rect_b.position.x + rect_b.size.x
+		var rect_a_y1 = rect_a.position.y
+		var rect_a_y2 = rect_a.position.y + rect_a.size.y
+		var rect_b_y1 = rect_b.position.y
+		var rect_b_y2 = rect_b.position.y + rect_b.size.y
+		
+		if not (rect_a_x1 > rect_b_x2 or rect_a_x2 < rect_b_x1 or rect_a_y1 > rect_b_y2 or rect_a_y2 < rect_b_y1):
+			return true
+	return false

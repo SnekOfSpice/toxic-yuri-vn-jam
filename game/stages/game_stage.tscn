@@ -120,7 +120,7 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_page = 13
+devmode_start_line = 9
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -309,11 +309,13 @@ offset_left = -833.0
 offset_right = -157.0
 offset_bottom = 324.0
 grow_horizontal = 0
+mouse_filter = 2
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 15
 
 [node name="HBoxContainer" type="HBoxContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer"]
 layout_mode = 2
+mouse_filter = 2
 alignment = 2
 
 [node name="Portrait" type="TextureRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/DefaultTextContainer/HBoxContainer"]

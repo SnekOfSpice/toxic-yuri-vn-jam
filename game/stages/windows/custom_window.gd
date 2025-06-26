@@ -51,16 +51,33 @@ func on_visibility_changed():
 
 var dragging := false
 var drag_offset : Vector2
-
+var was_lmb_down := false
 func on_gui_input(event: InputEvent):
 	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_LEFT:
+			if event.is_released():
+				# god fucking spaghetti
+				if (position == drag_start_position and (drag_start_index == get_index() or not GameWorld.game_stage.is_window_overlapping(self))):
+					Parser.line_reader.request_advance()
+				if dragging:
+					get_viewport().set_input_as_handled()
+					dragging = false
+			if event.pressed and not event.is_echo():
+				start_dragging()
 		if event.button_index == MOUSE_BUTTON_RIGHT and not event.is_echo():
 			if event.pressed:
-				dragging = true
-				move_to_top()
-				drag_offset = get_local_mouse_position()
+				start_dragging()
 			else:
 				dragging = false
+
+var drag_start_position : Vector2
+var drag_start_index : int
+func start_dragging():
+	drag_start_position = position
+	drag_start_index = get_index()
+	dragging = true
+	move_to_top()
+	drag_offset = get_local_mouse_position()
 
 func move_to_top(force_open:=true):
 	if force_open:

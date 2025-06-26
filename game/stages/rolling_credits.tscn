@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://ipa310726xyt"]
 
 [ext_resource type="Script" uid="uid://i7kqgyovxhb7" path="res://game/stages/rolling_credits.gd" id="1_cgvis"]
-[ext_resource type="Texture2D" uid="uid://bj52mo45ls5d6" path="res://game/visuals/logo_scrawl_1312.png" id="2_ia0qv"]
+[ext_resource type="Texture2D" uid="uid://ekatfkkb0pi8" path="res://game/visuals/logo2-3.png" id="2_ljvqb"]
 [ext_resource type="Texture2D" uid="uid://pup0v2lufx4r" path="res://game/visuals/opening_icon.png" id="3_ljvqb"]
 
 [node name="RollingCredits" type="Control"]
@@ -26,9 +26,9 @@ mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="Logo" type="Sprite2D" parent="."]
-position = Vector2(491, 380)
-scale = Vector2(0.695589, 0.695589)
-texture = ExtResource("2_ia0qv")
+position = Vector2(515, 397)
+scale = Vector2(0.409678, 0.409678)
+texture = ExtResource("2_ljvqb")
 
 [node name="TextContainer" type="VBoxContainer" parent="."]
 unique_name_in_owner = true

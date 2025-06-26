@@ -4,8 +4,8 @@
 [ext_resource type="Script" uid="uid://dnbopb4ksr64p" path="res://game/stages/main_menu_stage.gd" id="1_wqqgh"]
 [ext_resource type="Theme" uid="uid://drk5fhsdjoewf" path="res://game/visuals/theme/diisis_theme.tres" id="3_fjoxk"]
 [ext_resource type="Material" uid="uid://3ubtbqs0wka4" path="res://game/visuals/shaders/quantize_material_param.tres" id="3_o4dm7"]
-[ext_resource type="Texture2D" uid="uid://bj52mo45ls5d6" path="res://game/visuals/logo_scrawl_1312.png" id="4_70r8q"]
 [ext_resource type="Texture2D" uid="uid://cragbc6muwrx1" path="res://game/backgrounds/main_menu.png" id="4_o4dm7"]
+[ext_resource type="Texture2D" uid="uid://ekatfkkb0pi8" path="res://game/visuals/logo2-3.png" id="5_o4dm7"]
 [ext_resource type="Shader" uid="uid://dh14tp6f61jea" path="res://game/stages/sps_dither.gdshader" id="7_o4dm7"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_o4dm7"]
@@ -111,8 +111,9 @@ texture = ExtResource("4_o4dm7")
 centered = false
 offset = Vector2(-375, 0)
 
-[node name="Logo" type="TextureRect" parent="SubViewportContainer/SubViewport/CanvasLayer"]
+[node name="Logo" type="Control" parent="SubViewportContainer/SubViewport/CanvasLayer"]
 unique_name_in_owner = true
+layout_mode = 3
 anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
@@ -120,13 +121,21 @@ anchor_right = 1.0
 anchor_bottom = 0.5
 offset_left = -1141.0
 offset_top = -675.0
-offset_right = 171.0
-offset_bottom = 637.0
+offset_right = 859.0
+offset_bottom = 1725.0
 grow_horizontal = 0
 grow_vertical = 2
 scale = Vector2(0.568055, 0.568055)
 pivot_offset = Vector2(656, 656)
-texture = ExtResource("4_70r8q")
+
+[node name="TextureRect" type="TextureRect" parent="SubViewportContainer/SubViewport/CanvasLayer/Logo"]
+layout_mode = 0
+offset_left = -11.1889
+offset_top = -74.5631
+offset_right = 1988.81
+offset_bottom = 2325.44
+scale = Vector2(0.742899, 0.742899)
+texture = ExtResource("5_o4dm7")
 
 [node name="ColorRect" type="ColorRect" parent="SubViewportContainer/SubViewport/CanvasLayer"]
 material = SubResource("ShaderMaterial_o4dm7")

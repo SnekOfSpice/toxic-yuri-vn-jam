@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=40 format=3 uid="uid://gee0nt5mhjku"]
+[gd_resource type="Theme" load_steps=41 format=3 uid="uid://gee0nt5mhjku"]
 
 [ext_resource type="FontFile" uid="uid://df8rce7yfdeog" path="res://game/visuals/theme/fonts/body_candidates/barlow/Barlow-Black.otf" id="1_b647t"]
 [ext_resource type="FontFile" uid="uid://5cictvfk5bbm" path="res://game/visuals/theme/fonts/body_candidates/veramono/VeraMono.ttf" id="1_booqv"]
@@ -85,11 +85,17 @@ corner_radius_bottom_left = 5
 corner_detail = 1
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_booqv"]
-content_margin_left = 26.0
-content_margin_top = 10.0
-content_margin_right = 26.0
-content_margin_bottom = 10.0
+content_margin_left = 16.0
+content_margin_right = 16.0
 bg_color = Color(0.11, 0.11, 0.11, 0.419608)
+border_blend = true
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+corner_detail = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e8cso"]
+bg_color = Color(0.109804, 0.109804, 0.109804, 1)
 border_width_left = 4
 border_width_top = 4
 border_width_right = 4
@@ -228,6 +234,8 @@ CheckBox/icons/unchecked = ExtResource("3_eou7f")
 DigitalText/fonts/normal_font = ExtResource("1_booqv")
 EmbodiedText/base_type = &"PanelContainer"
 EmbodiedText/styles/panel = SubResource("StyleBoxFlat_booqv")
+EmbodiedTextBG/base_type = &"PanelContainer"
+EmbodiedTextBG/styles/panel = SubResource("StyleBoxFlat_e8cso")
 FreeButton/base_type = &"Button"
 FreeButton/colors/font_color = Color(0, 0, 0, 1)
 FreeButton/colors/font_outline_color = Color(0.909804, 0.741176, 0.772549, 0.286275)
