@@ -508,7 +508,8 @@ func get_body_label(target_id:int):
 func hide_default_text_container():
 	%DefaultTextContainer.visible = false
 var are_words_being_spoken := true
-func set_target_labels(actor:String, target_id:int, force_show:=true):
+func set_target_labels(actor:String, target_id:int, force_show:=true, as_voice_message:=false):
+	print("as voice ", as_voice_message)
 	#GoBackHandler.store_into_subaddress(target_label_id_by_actor.duplicate(),
 		#targets_by_subaddress, Parser.line_reader.get_subaddress())
 	target_label_id_by_actor[actor] = target_id
@@ -522,6 +523,7 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 	else:
 		%FullCoverText.visible = false
 		
+	%LineReader.body_label_tint_lines = false
 	if target_id == 0:
 		%DefaultTextContainer.visible = true
 		%LineReader.custom_text_speed_override = -1
@@ -563,6 +565,16 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 			%LineReader.enable_keep_past_lines(
 				window.get_past_container()
 			)
+			if as_voice_message:
+				%LineReader.custom_text_speed_override = -1
+				#window.get_body_label().text = str("[color=#%s]" , window.get_body_label().text, "[/color]") % %LineReader._get_actor_color(actor_name).to_html()
+				%LineReader.body_label_tint_lines = true
+				await get_tree().process_frame
+				window.build_waveform()
+				
+				 # builds from its current text and displays it
+			else:
+				window.hide_waveform()
 		else:
 			%LineReader.custom_text_speed_override = -1
 			%LineReader.body_label_prefix = ""
@@ -572,10 +584,6 @@ func set_target_labels(actor:String, target_id:int, force_show:=true):
 			window.move_to_top()
 			window.open_if_closed()
 
-	
-
-	
-	
 	last_body_label_target = target_id
 
 var block_about_new_actor_handling := false
@@ -583,7 +591,7 @@ func on_dialog_line_args_passed(
 	actor: String,
 	dialog_line_args: Dictionary):
 		block_about_new_actor_handling = true
-		set_target_labels(actor, int(dialog_line_args.get("target", target_label_id_by_actor.get(actor))))
+		set_target_labels(actor, int(dialog_line_args.get("target", target_label_id_by_actor.get(actor))), true, dialog_line_args.has("is_voice"))
 
 func hide_all_windows(reset_to_default:=true):
 	for window : CustomWindow in windows:

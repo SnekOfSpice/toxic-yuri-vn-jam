@@ -120,7 +120,8 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_line = 9
+devmode_start_page = 31
+devmode_start_line = 38
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -157,6 +158,7 @@ name_map = Dictionary[String, String]({
 color_map = Dictionary[String, Color]({
 "argo": Color(0.50699, 0.652463, 0.90489, 1),
 "audrey": Color(0.944091, 0.615961, 0.649595, 1),
+"blank": Color(0.994863, 0.923846, 0.87723, 1),
 "franco": Color(0.595718, 0.19269, 0.259136, 1),
 "haley": Color(0.89004, 0.763656, 0.27152, 1),
 "harshnoise": Color(0.637843, 0.637843, 0.637843, 1),

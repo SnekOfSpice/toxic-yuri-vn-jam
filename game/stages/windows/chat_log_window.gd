@@ -137,3 +137,30 @@ func _on_body_label_finished() -> void:
 	highlight_tween.tween_property(%Highlight, "modulate:a", 0, 1).set_trans(Tween.TRANS_CIRC)
 	
 	
+func build_waveform():
+	print("TEXT ", get_body_label().get_parsed_text())
+	%VoiceMessageColorRect.show()
+	if not get_body_label().get_parsed_text().contains("~"):
+		return
+	for child in %VoiceMessageContainer.get_children():
+		child.queue_free()
+	var string_to_say : String = get_body_label().get_parsed_text().split("~")[1]
+	var width = %VoiceMessageContainer.size.x
+	var height = %VoiceMessageContainer.size.y
+	var segments = string_to_say.length()
+	var width_per_segment : float = float(width) / float(segments)
+	for i in segments:
+		var segment = ColorRect.new()
+		segment.color = Parser.line_reader._get_actor_color(actor)
+		segment.color *= 0.75
+		segment.custom_minimum_size = Vector2(width_per_segment, randi_range(2, height))
+		
+		if string_to_say[i] == string_to_say[i].to_upper():
+			segment.custom_minimum_size.y = min(height, segment.custom_minimum_size.y * 1.5)
+		
+		segment.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_LEFT)
+		segment.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+		%VoiceMessageContainer.add_child(segment)
+
+func hide_waveform():
+	%VoiceMessageColorRect.hide()

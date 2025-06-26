@@ -40,6 +40,31 @@ texture = ExtResource("3_h2eej")
 expand_mode = 4
 stretch_mode = 5
 
+[node name="VoiceMessageColorRect" type="ColorRect" parent="VBoxContainer/HBoxContainer/Portrait"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 28)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0, 0, 0, 0.705882)
+
+[node name="VoiceMessageContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/Portrait/VoiceMessageColorRect"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 28)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -28.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 0
+
 [node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
