@@ -4,9 +4,9 @@ const CREDITS := {
 	"LONER_DOG://Snuff Puppy Carnage Society" : "A visual novel by...",
 	"Snek Remilia Ketter" : "Programming\t\t\t\tWriting\t\t\t\tUI Design\t\t\t\tBackground Art",
 	"Blood Machine" : "Character Art\t\t\t\tCG Art\t\t\t\tCharacter Design",
-	"Jane Gorelove" : "Proofreading",
 	"[musicean 1]" : "OST Contributions",
 	"[musicean 2]" : "OST Contributions",
+	"Jane Gorelove" : "Proofreading",
 	"The creative commons community" : "Various Stuff (Check main menu credits)"
 	}
 	
@@ -33,15 +33,36 @@ func _ready() -> void:
 	%TextContainer.visible = false
 	if get_parent() == get_tree().root:
 		start()
+	
+	$GridContainer.visible = false
 
 func start():
-	await get_tree().create_timer(0.75).timeout
+	var credits : CanvasLayer = GameWorld.game_stage.find_child("CreditsLayer")
+	credits.visible = true
+	visible = true
+	$GridContainer.visible = true
+	var paws := []
+	for i in 300:
+		var tex = TextureRect.new()
+		tex.expand_mode = TextureRect.EXPAND_FIT_WIDTH
+		tex.custom_minimum_size = Vector2(50, 50)
+		tex.texture = load("res://game/visuals/opening_icon.png")
+		tex.modulate.a = 0
+		$GridContainer.add_child(tex)
+		paws.append(i)
+	paws.shuffle()
+	while not paws.is_empty():
+		var i = paws.pop_back()
+		$GridContainer.get_child(i).modulate.a = 1
+		await get_tree().create_timer(0.025).timeout
+	await get_tree().create_timer(3).timeout
+	$GridContainer.visible = false
+	$Logo.visible = true
 	var riser_player := Sound.play_sfx("riser", false)
 	var riser_length := riser_player.stream.get_length()
 	
 	var i := 0
-	var credits : CanvasLayer = GameWorld.game_stage.find_child("CreditsLayer")
-	credits.visible = true
+	
 	var params := [
 		{"contrast_mult" : 2,
 		"brightness_add" : -0.118},
@@ -56,14 +77,14 @@ func start():
 		await get_tree().create_timer(step_length).timeout
 		i += 1
 	#await get_tree().create_timer(riser_length).timeout
-	visible = true
+	
 	Sound.fade_out_bgm(0)
 	if GameWorld.game_stage:
 		#GameWorld.game_stage.hide_ui()
 		GameWorld.game_stage.find_child("ControlsContainer").visible = false
 	#await get_tree().create_timer(2.0).timeout
-	$Logo.visible = true
-	await get_tree().create_timer(4.0).timeout
+	
+	#await get_tree().create_timer(4.0).timeout
 	$Logo.visible = false
 	$Black.modulate.a = 1.0
 	Sound.play_bgm("credits")
