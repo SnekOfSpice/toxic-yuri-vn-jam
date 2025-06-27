@@ -255,7 +255,7 @@ const SPLASH_STRINGS := {
 	"wakey" : "Wakey wakey.",
 	"art" : "The body is a canvas.",
 	"keep_the_body" : "Nothing more than a body.",
-	"maya_huddles" : "Swallowed by the void.",
+	"maya_huddles" : "Swallowed by grief.",
 	"scars" : "[ph]A livingbeing is just a colection of scars.",
 	"celestial_bodies" : "Like twin stars.",
 	"devour_me" : "Devour me.",

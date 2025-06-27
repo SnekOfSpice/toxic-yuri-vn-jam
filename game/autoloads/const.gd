@@ -42,6 +42,7 @@ const MUSIC_PUPPY_RESCUE := "Various Artists - CULT TAPE 002 - SELECTED AMBIENT 
 const MUSIC_RECOVERY := "mobygratis in west inst mix ab oz.mp3"
 const MUSIC_MAIN_MENU := "Princess Commodore 64 - XOXO - 06 Flowers From The Midnight Garden.ogg"
 const MUSIC_MEETING_AGAIN := "545882__spurioustransients__electric-mandocello-drone-in-gm.ogg"
+const MUSIC_MELTDOWN_CHAOS := "Paradise_Found.mp3"
 const MUSIC_NECRO := "Paradise_Found.mp3"
 const MUSIC_NIGHTCORE := "Paradise_Found.mp3"
 const MUSIC_SHELTER := "Princess Commodore 64 - XOXO - 02 XOXO.ogg"
