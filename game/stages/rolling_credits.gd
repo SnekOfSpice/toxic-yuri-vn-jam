@@ -62,12 +62,14 @@ func start():
 		$GridContainer.add_child(tex)
 		paws.append(i)
 	paws.shuffle()
-	var time_buffer := 0.065
+	var time_buffer := 2.065
 	while not paws.is_empty():
 		Sound.play_sfx("hover")
 		var i = paws.pop_back()
 		$GridContainer.get_child(i).modulate.a = 1
 		await get_tree().create_timer(0.005 + time_buffer).timeout
+		if time_buffer >= 0.065:
+			time_buffer -= 0.4
 		time_buffer = max(0, time_buffer - 0.001)
 	await get_tree().create_timer(3).timeout
 	$GridContainer.visible = false

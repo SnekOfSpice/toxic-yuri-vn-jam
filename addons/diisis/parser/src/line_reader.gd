@@ -646,6 +646,9 @@ func advance():
 					if _next_pause_position_index < _pause_positions.size() - 1:
 						_next_pause_position_index += 1
 					_find_next_pause()
+				elif _auto_advance:
+					_auto_advance = false
+					advance()
 				_remaining_prompt_delay = input_prompt_delay
 	else:
 		emit_signal("line_finished", line_index)
