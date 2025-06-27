@@ -12,13 +12,14 @@ func read(text:String,
 	reset_windows:=true):
 	Sound.play_sfx("shutter")
 	visible = true
-	Sound.play_bgm(bgm, 0.25 * text.length())
+	
 	label.text = text
 	label.visible_characters = 0
 	await get_tree().create_timer(1).timeout
 	if reset_windows:
 		GameWorld.hidden_ui_reset()
 	GameWorld.game_stage.set_background(background)
+	var started_playing_music := false
 	for i in text.length() + 1:
 		var wait_time = randf_range(0.2, 0.3)
 		if label.get_parsed_text().substr(0, label.visible_characters-1).ends_with("\n"):
@@ -33,6 +34,10 @@ func read(text:String,
 			label.text = label.text.erase(i, cursor.length())
 		if i < text.length() - 1:
 			label.text = label.text.insert(i+1, cursor)
+		
+		if not started_playing_music and i >= text.length() * 0.75:
+			Sound.play_bgm(bgm, 0.25 * text.length())
+			started_playing_music = true
 	
 	await get_tree().create_timer(1.5).timeout
 	label.visible_characters = 0

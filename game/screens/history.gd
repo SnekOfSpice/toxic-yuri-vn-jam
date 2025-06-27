@@ -13,6 +13,8 @@ func _ready() -> void:
 
 func _input(event: InputEvent) -> void:
 	super(event)
+	if event.is_action_pressed("history"):
+		close()
 
 func _on_close_button_pressed() -> void:
 	close()

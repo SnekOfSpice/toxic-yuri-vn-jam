@@ -135,11 +135,12 @@ text = "Quit"
 [node name="RichTextLabel2" type="RichTextLabel" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer"]
 layout_mode = 2
 bbcode_enabled = true
-text = "Advance - [LClick] / [Space] / [Right]
+text = "Advance - [LClick] / [Space] / [Right] / [Enter]
 Move Window - [LClick] / [RClick] + drag
 Screenshot - [S]
 Toggle UI - [H]
-Toggle auto - [A]"
+Toggle auto - [A]
+History - [L]"
 fit_content = true
 
 [node name="TextMenu" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer"]

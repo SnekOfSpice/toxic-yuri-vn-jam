@@ -196,6 +196,12 @@ func _unhandled_input(event: InputEvent) -> void:
 		if not find_child("VNUI").visible:
 			return
 		line_reader.request_advance()
+	if event.is_action_pressed("history"):
+		if GameWorld.stage_root.screen == CONST.SCREEN_HISTORY:
+			GameWorld.stage_root.set_screen("")
+		else:
+			GameWorld.stage_root.set_screen(CONST.SCREEN_HISTORY)
+		
 	#elif event.is_action_pressed("go_back"):
 		#line_reader.request_go_back()
 
