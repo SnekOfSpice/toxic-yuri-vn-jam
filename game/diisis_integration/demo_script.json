@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 42,
+		"current_page_number": 19,
 		"ingest_capitalize": false,
 		"ingest_whitespace": true,
 		"page_view": 0,
@@ -489,7 +489,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854670140,
+		"id_counter": -9223372036854670184,
 		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa\nx: xelia\nl: leah\nf: franco\nno: noni\nb: blank",
 		"locales_to_export": [
 			"de_DE",
@@ -10167,7 +10167,7 @@
 					{
 						"address": "19.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10177,7 +10177,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10199,12 +10199,12 @@
 						},
 						"header": [],
 						"id": "1749994750.473--9223372036854731626",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -10213,7 +10213,7 @@
 					{
 						"address": "19.1",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10223,11 +10223,15 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
 						"content": {
+							"meta.function_calls": [
+								"request_advance()",
+								"request_advance()"
+							],
 							"meta.locked": false,
 							"meta.validation_status": "OK",
 							"text_id": "1748894921.276--9223372036854773591"
@@ -10240,12 +10244,12 @@
 						},
 						"header": [],
 						"id": "1748894921.275--9223372036854773592",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1.0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						},
@@ -10254,7 +10258,7 @@
 					{
 						"address": "19.2",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10264,7 +10268,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10286,12 +10290,12 @@
 						},
 						"header": [],
 						"id": "1748895438.878--9223372036854773751",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2.0,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
@@ -10300,7 +10304,7 @@
 					{
 						"address": "19.3",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10310,7 +10314,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10330,12 +10334,12 @@
 						},
 						"header": [],
 						"id": "1748895441.112--9223372036854773750",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3.0,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
@@ -10344,7 +10348,7 @@
 					{
 						"address": "19.4",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10354,7 +10358,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10376,12 +10380,12 @@
 						},
 						"header": [],
 						"id": "1750235900.706--9223372036854719915",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4.0,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						},
@@ -10390,7 +10394,7 @@
 					{
 						"address": "19.5",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10400,7 +10404,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10417,12 +10421,12 @@
 						},
 						"header": [],
 						"id": "1748894926.247--9223372036854773590",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5.0,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						},
@@ -10431,7 +10435,7 @@
 					{
 						"address": "19.6",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10441,7 +10445,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10463,12 +10467,12 @@
 						},
 						"header": [],
 						"id": "1750235583.276--9223372036854719916",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6.0,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						},
@@ -10477,7 +10481,7 @@
 					{
 						"address": "19.7",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10487,7 +10491,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10504,12 +10508,12 @@
 						},
 						"header": [],
 						"id": "1748894946.286--9223372036854773588",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7.0,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						},
@@ -10518,7 +10522,7 @@
 					{
 						"address": "19.8",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10528,7 +10532,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10545,12 +10549,12 @@
 						},
 						"header": [],
 						"id": "1749292833.119--9223372036854757765",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 8.0,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						},
@@ -10559,7 +10563,7 @@
 					{
 						"address": "19.9",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10569,7 +10573,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10586,23 +10590,23 @@
 						},
 						"header": [],
 						"id": "1749193212.673--9223372036854767553",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 9.0,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 2080.0,
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 2080,
 				"meta.selected": false,
 				"next": 20.0,
-				"number": 19.0,
+				"number": 19,
 				"page_key": "vanessa and argo sex scene + things break between haya",
 				"skip": false,
 				"terminate": false
@@ -21472,10 +21476,10 @@
 			"1748894560.579--9223372036854773697": "[]>vanessa:<call:set_actor_name(vanessa, Pain)> I love you\n[]>argo:<call:set_actor_name(argo, Veil)>I love you too",
 			"1748894620.756--9223372036854773695": "[]>vanessa:I feel like you get me like no one else does.\n[]>vanessa:So... wanna cut me?",
 			"1748894911.275--9223372036854773593": "[]>argo:cg of them sitting together",
-			"1748894921.276--9223372036854773591": "[]>narrator: its been an entire week since argo started crashng at nessa's. They've been kinda fucking each other's brains out every free minute that they get between both of theirjobs, Nessa occasionally going to work with cum inside her, and Argo with her juices sill coating thir face, and it's the most wonderful sensation and please let this never end, and their phones have been collecting dust on the floor accordingly. The thing with noni hasn't come up again because why should it, and god Nessa feels so good. <mp>Maya is hanging out in Roaches' bed.\n[]>narrator: With hands idly dancing across each other's bodies, and the scent of each other's fluids clinging to their forms, they're gazing into each other's eyes under this moonlit clear sky in Nessa's bed.\n[]>argo: The moon is really pretty.\n[]>vanessa: Mhm.\n[]>vanessa: Real pretty.\n[]>argo: It...\n[]>argo: Reminds me of something.\n[]>vanessa: Oh do tell? Because I could swear I also have to think of something when I see the moon.\n[]>argo: Oh wow.\n[]>argo: Wanna say those things the moon reminds us of together?\n[]>vanessa: Yeah.\n[]>argo: ...\n[]>vanessa: ...\n[]>vanessa{target|2}: you <advance>\n[]>argo{target|1}: the moon",
-			"1748894926.247--9223372036854773589": "[]>vanessa: me too.\n[]>narrator{target|6}: It had been forever since Argo felt raw emotion through someone else's lips. Kisses feel like lips pressed against lips, sure. The physical sensation, the motion around someone else's face. Sure. All too familiar dance routines but when you're just going through the motions, there is no passion there, so truly feeling like there was a spark - no - a flare erupting through someone's presence- that was a feeling long buried, and Nessa coaxes it out so so well.\n[]>narrator: Through the grindstone of past trauma, this emotion is dragged up, and before either knows it, Argo and Vanessa are feeling each other up, grabbing at one another, going so so hungrily at each other's forms for they might as well starve without each ther the way their absence from one another's day to day life hurts.\n[]>argo: I love you.\n[]>vanessa: I love you too.\n[]>narrator: Like a pair of feral hounds, theese two gay fuckers press each other's forms into one, a gnashing display of teeth sunk into flesh, claws stripping what little clothes happened to be covering on this here day, argo's famished mandibles pin nessa down and make her its prey and her oestrus lingers in the air or whatever this intense burning in her loins is, and getting bottom surgery is awesome because that means you get to be eaten in so so many ways fuck don't stop, nessa can barely breathe enough to sustain herself.\n[]>narrator: Argo continues feasting on its girlfriend, who bucks her hips up and up, her muscles dancing so beautifully underneats her cuts, never enough satisfaction reached ever hungry for more and argo gladly obliges and delights in the taste of Nessa's neoclit, and they've been going at this for fucking I can't remember like a week? Nessa is so so sensitive, it actually hurts a bit so she leglocks aargo's head and gently indicates for it to twist itself arund and then argo is on top of her and presses her tongue against argo's ass, who is so fucking mindblown by how good it feels to get rimmed by a girl who genuinely loves you and being allowed to taste her pussy during that is also just a beacon of pure joy. Fuck. There's love laced in their juices. Sweet sweet manic love.\n[]>narrator: Argo has taken to soothing Nessa's pain, placing gentle pecks on her inner thighs in between its cognition-blanking jolts of pleasure as Nessa takes to gently caressig its hole. Argo feels Nessa's saliva run down its opening, across its perineum, it feels so so loved and Nessa does too becaue of course she does, this fucker has carved its mark into her and she has done the same, this is literally so fucking perfect and you're so tasty and ghod just let me fucking grab your rear and devour you and mjgbjfghfg\n[]>narrator: Argo is all but collapsed on top of Nessa now, its full weight bering down on her body and she doesn't mind and just enjoys lapping up her oown spit in between argo's cheecks. <mp>This is wonderful\n[]>narrator: This is love.\n[]>narrator: This is perfection.\n[]>narrator: This is addiciton.\n[]>narrator: Simply- without want but for more.\n[]>argo: I... fucking... love you.\n[]>vanessa: ndbgfbnf\n[]>narrator: As the pair's pace slows to rest again, they exchange soso many kisses, each other's adoration lining the glistening marks around their maws and digits.\n[]>vanessa: shower?\n[]>argo: yeah..\n[]>argo: third time today...\n[]>argo: hehe.\n[]>vanessa: hehe.\n[]>vanessa: well get up then.\n[]>argo: nya.\n[]>argo: okies.",
-			"1748894946.286--9223372036854773587": "[]>argo: It's such a shame that we only have one order of shipping names that works out\n[]>vanessa: How do you mean?\n[]>argo: Like...\n[]>argo: Vargo goes hard.\n[]>vanessa: ...\n[]>vanessa: Nargo.\n[]>argo: Pffft.\n[]>argo: Nargo.\n[]>vanessa: Nargo.\n[]>argo: But the other direction not really?\n[]>argo: Argsa?\n[]>argo: Aressa?\n[]>argo: Kinda cool?\n[]>vanessa: But yeah not really.\n[]>argo: See\n[]>argo: Such a shame.\n[]>vanessa: Why?\n[]>argo: You know. \n[]>argo: First name is the top, second the bottom\n[]>vanessa: Huh?\n[]>argo: Oh uhh...\n[]>argo: old fandom culture\n[]>argo: shipping name ordering was a thing\n[]>vanessa: that's so traditionalist of you?\n[]>argo: I'm carabiner flagging, I'm allowed to\n[]>vanessa: Pffft\n[]>vanessa: Isnt that also incorrect then?\n[]>argo: Well im not about to wear two carabiners\n[]>vanessa: Aww\n[]>vanessa: Would make it easier to pull you close to me though\n[]>argo: You fucking faggot\n[]>vanessa: Hehe\n[]>argo: ...\n[]>vanessa: ...\n[]>argo: But yeah, the ship name thing was... almost completely stopped being anymore when I got into fandom\n[]>argo: But I always liked it\n[]>argo: Was kinda amusing to me.\n[]>vanessa: Cute.\n[]>argo: Just as you\n[]>vanessa: And you.\n[]>argo: Faggot.\n[]>vanessa: You.",
-			"1748895441.112--9223372036854773749": "[]>vanessa: dfjhgjfd\n[]>vanessa: did you just say the moon???\n[]>argo: hehe\n[]>argo: I did!\n[]>argo: did you just say some really gay shit?\n[]>vanessa: yeah\n[]>vanessa: ...\n[]>vanessa: ...\n[]>argo: ...\n[]>argo: <call:hide_windows(text)>Why are you looking at my eyes like that\n[]>vanessa: I like the moon\n[]>argo: Me too.\n[]>vanessa: ...\n[]>argo: ...\n[]>vanessa: Now you're staring just as much\n[]>argo: ...\n[]>argo: I just really like the way the light from outside catches on you\n[]>vanessa: ...\n[]>argo: ...\n[]>vanessa: Mhm.",
+			"1748894921.276--9223372036854773591": "[]>narrator: its been an entire week since argo started crashng at nessa's. They've been kinda fucking each other's brains out every free minute that they get between both of theirjobs, Nessa occasionally going to work with cum inside her, and Argo with her juices sill coating thir face, and it's the most wonderful sensation and please let this never end, and their phones have been collecting dust on the floor accordingly. The thing with noni hasn't come up again because why should it, and god Nessa feels so good. <mp>Maya is hanging out in Roaches' bed.\n[]>narrator: With hands idly dancing across each other's bodies, and the scent of each other's fluids clinging to their forms, they're gazing into each other's eyes under this moonlit clear sky in Nessa's bed.\n[]>argo: The moon is really pretty.\n[]>vanessa: Mhm.\n[]>vanessa: Real pretty.\n[]>argo: It...\n[]>argo: Reminds me of something.\n[]>vanessa: Oh do tell? Because I could swear I also have to think of something when I see the moon.\n[]>argo: Oh wow.\n[]>argo: Wanna say those things the moon reminds us of together?\n[]>vanessa: Yeah.\n[]>argo: ...\n[]>vanessa: ...\n[]>vanessa{target|2}: <call:request_advance()>You. <advance>\n[]>argo{target|1}: T<call:request_advance()>he moon.",
+			"1748894926.247--9223372036854773589": "[]>vanessa: Me too.\n[]>narrator{target|6}: It had been forever since Argo felt raw emotion through someone else's lips. Kisses feel like lips pressed against lips, sure. The physical sensation, the motion around someone else's face. Sure. All too familiar dance routines but when you're just going through the motions, there is no passion there, so truly feeling like there was a spark - no - a flare erupting through someone's presence- that was a feeling long buried, and Nessa coaxes it out so so well.\n[]>narrator: Through the grindstone of past trauma, this emotion is dragged up, and before either knows it, Argo and Vanessa are feeling each other up, grabbing at one another, going so so hungrily at each other's forms for they might as well starve without each ther the way their absence from one another's day to day life hurts.\n[]>argo: I love you.\n[]>vanessa: I love you too.\n[]>narrator: Like a pair of feral hounds, theese two gay fuckers press each other's forms into one, a gnashing display of teeth sunk into flesh, claws stripping what little clothes happened to be covering on this here day, argo's famished mandibles pin nessa down and make her its prey and her oestrus lingers in the air or whatever this intense burning in her loins is, and getting bottom surgery is awesome because that means you get to be eaten in so so many ways fuck don't stop, Nessa can barely breathe enough to sustain herself.\n[]>narrator: Argo continues feasting on its girlfriend, who bucks her hips up and up, her muscles dancing so beautifully underneats her cuts, never enough satisfaction reached ever hungry for more and Argo gladly obliges and delights in the taste of Nessa's neoclit, and they've been going at this for fucking I can't remember like a week? Nessa is so so sensitive, it actually hurts a bit so she leglocks Argo's head and gently indicates for it to twist itself arund and then Argo is on top of her and presses her tongue against Argo's ass, who is so fucking mindblown by how good it feels to get rimmed by a girl who genuinely loves you and being allowed to taste her pussy during that is also just a beacon of pure joy. Fuck. There's love laced in their juices. Sweet sweet manic love.\n[]>narrator: Argo has taken to soothing Nessa's pain, placing gentle pecks on her inner thighs in between its cognition-blanking jolts of pleasure as Nessa takes to gently caressig its hole. Argo feels Nessa's saliva run down its opening, across its perineum, it feels so so loved and Nessa does too becaue of course she does, this fucker has carved its mark into her and she has done the same, this is literally so fucking perfect and you're so tasty and ghod just let me fucking grab your rear and devour you and mjgbjfghfg.\n[]>narrator: Argo is all but collapsed on top of Nessa now, its full weight bering down on her body and she doesn't mind and just enjoys lapping up her oown spit in between Argo's cheecks. <mp>This is wonderful.\n[]>narrator: This is love.\n[]>narrator: This is perfection.\n[]>narrator: This is addiciton.\n[]>narrator: Simply- without want but for more.\n[]>argo: I... fucking... love you.\n[]>vanessa: Ndbgfbnf\n[]>narrator: As the pair's pace slows to rest again, they exchange soso many kisses, each other's adoration lining the glistening marks around their maws and digits.\n[]>vanessa: Shower?\n[]>argo: Yeah..\n[]>argo: Third time today...\n[]>argo: Hehe.\n[]>vanessa: Hehe.\n[]>vanessa: Well, get up then.\n[]>argo: Nya.\n[]>argo: Okies.",
+			"1748894946.286--9223372036854773587": "[]>argo: It's such a shame that we only have one order of shipping names that works out.\n[]>vanessa: How do you mean?\n[]>argo: Like...\n[]>argo: Vargo goes hard.\n[]>vanessa: ...\n[]>vanessa: Nargo.\n[]>argo: Pffft.\n[]>argo: Nargo.\n[]>vanessa: Nargo.\n[]>argo: But the other direction not really?\n[]>argo: Argsa?\n[]>argo: Aressa?\n[]>argo: Kinda cool?\n[]>vanessa: But yeah not really.\n[]>argo: See.\n[]>argo: Such a shame.\n[]>vanessa: Why?\n[]>argo: You know.\n[]>argo: First name is the top, second the bottom.\n[]>vanessa: Huh?\n[]>argo: Oh uhh...\n[]>argo: Old fandom culture.\n[]>argo: Shipping name ordering was a thing.\n[]>vanessa: That's so traditionalist of you?\n[]>argo: I'm carabiner flagging, I'm allowed to.\n[]>vanessa: Pffft.\n[]>vanessa: Isn't that also incorrect then?\n[]>argo: Well I'm not about to wear two carabiners.\n[]>vanessa: Aww.\n[]>vanessa: Would make it easier to pull you close to me though.\n[]>argo: You fucking faggot.\n[]>vanessa: Hehe.\n[]>argo: ...\n[]>vanessa: ...\n[]>argo: But yeah, the ship name thing was... almost completely stopped being anymore when I got into fandom.\n[]>argo: But I always liked it.\n[]>argo: Was kinda amusing to me.\n[]>vanessa: Cute.\n[]>argo: Just as you.\n[]>vanessa: And you.\n[]>argo: Faggot.\n[]>vanessa: You.",
+			"1748895441.112--9223372036854773749": "[]>vanessa: Dfjhgjfd\n[]>vanessa: Did you just say the moon???\n[]>argo: Hehe.\n[]>argo: I did!\n[]>argo: Did you just say some really gay shit?\n[]>vanessa: Yeah.\n[]>vanessa: ...\n[]>vanessa: ...\n[]>argo: ...\n[]>argo: <call:hide_windows(text)>Why are you looking at my eyes like that.\n[]>vanessa: I like the moon.\n[]>argo: Me too.\n[]>vanessa: ...\n[]>argo: ...\n[]>vanessa: Now you're staring just as much.\n[]>argo: ...\n[]>argo: I just really like the way the light from outside catches on you.\n[]>vanessa: ...\n[]>argo: ...\n[]>vanessa: Mhm.",
 			"1748933497.051--9223372036854773755": "[]>narrator: Absconding into oblivion, it inhales another line of ego death and...",
 			"1748933537.986--9223372036854773752": "[]>narrator: Over and over.\n[]>narrator: Concussion after concussion.\n[]>narrator: A broken jaw.\n[]>narrator: A dislodged eye.\n[]>narrator: Barely conscious and positively braindamaged.\n[]>narrator: The only way for these puppies to be.\n[]>narrator: A handler to arbitrate over their lives for it is their last and only possession and far too valuable to be left in their own paws.\n[]>narrator: Most of them cannibalize the other before being ground up in the machine.\n[]>narrator: With another impact on the industrial floor, metal grating shakes and resounds through fragments of broken skull.\n[]>narrator: This one, [color=red]snuffed[/color].",
 			"1748934497.298--9223372036854773714": "[]>narrator: fade in other music and road art",
@@ -21559,7 +21563,7 @@
 			"1749130738.579--9223372036854767033": "[]>argo{target|5}: i bet youre still asleep\n[]>argo{target|5}: ok so the hole fucked me up\n[]>argo: sorry if ill be a bit out of it a bit\n[]>argo: but\n[]>argo: im still looking forward to seeing you again sweety <3\n[]>argo: cant wait\n[]>argo: ok gonna try and sleep the hole off",
 			"1749130753.577--9223372036854767031": "[]>argo{target|3}:hiiii\n[]>vanessa{target|3}: hi :3\n[]>argo:im so fucking excited",
 			"1749193147.676--9223372036854767566": "[]>noni:argo doesnt even want me",
-			"1749193212.673--9223372036854767552": "[]>argo: by the way, it hasn't really come up anymiore\n[]>argo: but what do I tell Noni?\n[]>vanessa: In what way?\n[]>argo: BEcause you know\n[]>argo: she's been hitting me up\n[]>vanessa: I mean I dont wanna share you\n[]>vanessa: so.\n[]>argo: Yea true.\n[]>vanessa: you dont have feelings for her right?\n[]>argo: I wouldnt say so.\n[]>vanessa: Then just tell her off.\n[]>argo: ...\n[]>argo: I will.",
+			"1749193212.673--9223372036854767552": "[]>argo: By the way, it hasn't really come up anymore.\n[]>argo: But what do I tell Noni?\n[]>vanessa: In what way?\n[]>argo: Because you know.\n[]>argo: She's been hitting me up.\n[]>vanessa: I mean I don't wanna share you.\n[]>vanessa: So.\n[]>argo: Yeah, true.\n[]>vanessa: You don't have feelings for her right?\n[]>argo: I wouldn't say so.\n[]>vanessa: Then just tell her off.\n[]>argo: ...\n[]>argo: I will.",
 			"1749193258.444--9223372036854767513": "[]>noni: But I kinda have a crush on argo\n[]>noni: And they dont want me\n[]>noni: I just thought that finally my life was looking like it was going up again\n[]>noni: And now heartbreak again",
 			"1749193322.752--9223372036854767491": "[]>narrator: Argo just handed Xelia some cash for its newest refresh of plain old meth, and a side of DMT. It can get research chems itself, and Xelia doesn't care much for market price, so their friendship has skirted around the transactional implications for the most part.\n[]>xelia: Would you wanna play here again?\n[]>argo: I mean it was a nice time.\n[]>xelia: Oh especially the backstage show.\n[]>argo: Oh shut up.\n[]>xelia: Hehe :p\n[]>xelia: Just statin' facts!\n[]>argo: ...\n[]>argo: [i]*eye roll*[/i].\n[]>argo: It was.\n[]>argo: But I don't know... I haven't gotten around to music much recently.\n[]>argo: I'm meeting new people.\n[]>argo: Work is complete ass.\n[]>argo: Shit like that.\n[]>xelia: Little social butterfly.\n[]>argo: People keep telling me that.\n[]>argo: That I'm so special for being like that.\n[]>argo: Whatever.\n[]>xelia: Whatever!\n[]>narrator: The aftershow DJ is getting ready and the two enjoy a good standing-in-a-room-feeling-the-bass-in-your-bloodstream, so with a mutual understanding, they head back inside.",
 			"1749193397.759--9223372036854767442": "[]>noni{target|5}: can we hang out again!!\n[]>argo{target|5}: sure!\n[]>argo: was nice meeting you Noni :3\n[]>argo: im off to work now but you can come over one of these days\n[]>argo: pretty busy the next few days but next monday would work\n[]>noni: okies\n[]>noni: can we listen to your music?\n[]>argo: gladly\n[]>noni: yay",
