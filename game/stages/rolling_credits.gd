@@ -1,14 +1,25 @@
 extends Control
 
-const CREDITS := {
-	"LONER_DOG://Snuff Puppy Carnage Society" : "A visual novel by...",
-	"Snek Remilia Ketter" : "Programming\t\t\t\tWriting\t\t\t\tUI Design\t\t\t\tBackground Art",
-	"Blood Machine" : "Character Art\t\t\t\tCG Art\t\t\t\tCharacter Design",
-	"[musicean 1]" : "OST Contributions",
-	"[musicean 2]" : "OST Contributions",
-	"Jane Gorelove" : "Proofreading",
-	"The creative commons community" : "Various Stuff (Check main menu credits)"
-	}
+const CREDITORS := [
+	"LONER_DOG://Snuff Puppy Carnage Society",
+	"Snek Remilia Ketter",
+	"Blood Machine",
+	"[musicean 1]",
+	"[musicean 2]",
+	"Jane Gorelove",
+	"The creative commons community",
+	"LONER_DOG://Snuff Puppy Carnage Society",
+]
+const CREDIT_CONTENT := [
+	"A visual novel by...",
+	"Programming\t\t\t\tWriting\t\t\t\tUI Design\t\t\t\tBackground Art",
+	"Character Art\t\t\t\tCG Art\t\t\t\tCharacter Design",
+	"OST Contributions",
+	 "OST Contributions",
+	"Proofreading",
+	"Various Stuff (Check main menu credits)",
+	"Made for TOXIC YURI VN JAM",
+	]
 	
 const MESSAGES := [
 	"POLITICS OF VISIBILITY WILL GET YOU KILLED",
@@ -51,10 +62,13 @@ func start():
 		$GridContainer.add_child(tex)
 		paws.append(i)
 	paws.shuffle()
+	var time_buffer := 0.065
 	while not paws.is_empty():
+		Sound.play_sfx("hover")
 		var i = paws.pop_back()
 		$GridContainer.get_child(i).modulate.a = 1
-		await get_tree().create_timer(0.025).timeout
+		await get_tree().create_timer(0.005 + time_buffer).timeout
+		time_buffer = max(0, time_buffer - 0.001)
 	await get_tree().create_timer(3).timeout
 	$GridContainer.visible = false
 	$Logo.visible = true
@@ -106,14 +120,14 @@ func start():
 	await get_tree().create_timer(4.0).timeout
 	%TextContainer.visible = true
 	
-	for creditor : String in CREDITS.keys():
-		
-		%NameLabel.text = creditor
-		%Label.text = CREDITS.get(creditor)
+	var j := 0
+	while j < CREDITORS.size():
+		%NameLabel.text = CREDITORS[j]
+		%Label.text = CREDIT_CONTENT[j]
 		#%TextContainer.rotation_degrees = randf_range(-1.1, 2.3)
 		
 		var segments = %Label.text.split("\t\t\t\t", false)
-		print(segments)
+		
 		var segment_size : int = segments.size()
 		if segment_size <= 1:
 			segment_size = 0
@@ -128,9 +142,11 @@ func start():
 		#await fade.finished
 		
 		#await get_tree().create_timer(1.0).timeout
+		j += 1
 	
 	var black_tween = create_tween()
 	black_tween.tween_property(%TextContainer, "modulate:a", 0.0, 0.0)
+	Sound.play_sfx("shutter")
 	await black_tween.finished
 	
 	await get_tree().create_timer(2.0).timeout
@@ -140,6 +156,7 @@ func start():
 	
 	await get_tree().create_timer(8.0).timeout
 	%MessageContainer.visible = false
+	Sound.play_sfx("shutter")
 	await get_tree().create_timer(4.0).timeout
 	Sound.fade_out_bgm(4.5)
 	await get_tree().create_timer(6.0).timeout
