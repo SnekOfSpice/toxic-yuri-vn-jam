@@ -268,9 +268,8 @@ func splash_text(key:String,
 	bgm:=Sound.bgm_key,
 	reset_windows := true):
 	var black_cover:Control
-	if key == "one_of_us":
+	#if key == "one_of_us":
 		
-		GameWorld.game_stage.show_ui()
 	if fade_in > 0:
 		black_cover = ColorRect.new()
 		black_cover.color = Color.BLACK
@@ -292,6 +291,9 @@ func splash_text(key:String,
 	var cover = preload("res://game/stages/text_reading_cover.tscn").instantiate()
 	find_child("VNUICanvasLayer").add_child(cover)
 	cover.read(SPLASH_STRINGS.get(key), background, bgm, reset_windows)
+	
+	GameWorld.game_stage.show_ui()
+	
 	return true
 
 func set_target_labels(actor:String, target_id:int, force_show:=true):

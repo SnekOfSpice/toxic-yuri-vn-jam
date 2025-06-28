@@ -1,12 +1,13 @@
-[gd_scene load_steps=13 format=3 uid="uid://b3u3nrek114bl"]
+[gd_scene load_steps=15 format=3 uid="uid://b3u3nrek114bl"]
 
 [ext_resource type="Theme" uid="uid://gee0nt5mhjku" path="res://game/visuals/theme/toxic_yuri_vn_theme.tres" id="1_6wjhx"]
 [ext_resource type="Script" uid="uid://dnbopb4ksr64p" path="res://game/stages/main_menu_stage.gd" id="1_wqqgh"]
 [ext_resource type="Theme" uid="uid://drk5fhsdjoewf" path="res://game/visuals/theme/diisis_theme.tres" id="3_fjoxk"]
 [ext_resource type="Material" uid="uid://3ubtbqs0wka4" path="res://game/visuals/shaders/quantize_material_param.tres" id="3_o4dm7"]
 [ext_resource type="Texture2D" uid="uid://cragbc6muwrx1" path="res://game/backgrounds/main_menu.png" id="4_o4dm7"]
-[ext_resource type="Texture2D" uid="uid://ekatfkkb0pi8" path="res://game/visuals/logo2-3.png" id="5_o4dm7"]
+[ext_resource type="Texture2D" uid="uid://dqpgdhw6iar2i" path="res://game/visuals/logo2-4.png" id="6_o4dm7"]
 [ext_resource type="Shader" uid="uid://dh14tp6f61jea" path="res://game/stages/sps_dither.gdshader" id="7_o4dm7"]
+[ext_resource type="Material" uid="uid://daron3uhruccc" path="res://game/visuals/dither_correction_material.tres" id="7_qg14a"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_o4dm7"]
 shader = ExtResource("7_o4dm7")
@@ -18,7 +19,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("%Logo:rotation")
+tracks/0/path = NodePath("Logo:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -30,7 +31,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("%Logo:position")
+tracks/1/path = NodePath("Logo:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -47,7 +48,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("%Logo:rotation")
+tracks/0/path = NodePath("Logo:rotation")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -59,7 +60,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("%Logo:position")
+tracks/1/path = NodePath("Logo:position")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -74,6 +75,11 @@ _data = {
 &"RESET": SubResource("Animation_qg14a"),
 &"hover": SubResource("Animation_o4dm7")
 }
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6e4ii"]
+shader = ExtResource("7_o4dm7")
+shader_parameter/resolution_downsampling = 2.0
+shader_parameter/bit_depth = 10.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qg14a"]
 shader = ExtResource("7_o4dm7")
@@ -111,6 +117,20 @@ texture = ExtResource("4_o4dm7")
 centered = false
 offset = Vector2(-375, 0)
 
+[node name="ColorRect" type="ColorRect" parent="SubViewportContainer/SubViewport/CanvasLayer"]
+material = SubResource("ShaderMaterial_o4dm7")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/CanvasLayer"]
+unique_name_in_owner = true
+libraries = {
+&"": SubResource("AnimationLibrary_6e4ii")
+}
+
 [node name="Logo" type="Control" parent="SubViewportContainer/SubViewport/CanvasLayer"]
 unique_name_in_owner = true
 layout_mode = 3
@@ -135,21 +155,7 @@ offset_top = -74.5631
 offset_right = 1988.81
 offset_bottom = 2325.44
 scale = Vector2(0.742899, 0.742899)
-texture = ExtResource("5_o4dm7")
-
-[node name="ColorRect" type="ColorRect" parent="SubViewportContainer/SubViewport/CanvasLayer"]
-material = SubResource("ShaderMaterial_o4dm7")
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewportContainer/SubViewport/CanvasLayer"]
-unique_name_in_owner = true
-libraries = {
-&"": SubResource("AnimationLibrary_6e4ii")
-}
+texture = ExtResource("6_o4dm7")
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
 layer = 3
@@ -252,6 +258,41 @@ auto_translate_mode = 1
 layout_mode = 2
 focus_mode = 0
 text = "Quit"
+
+[node name="CorrectionLayer" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
+
+[node name="ColorRect" type="ColorRect" parent="SubViewportContainer/SubViewport/CorrectionLayer"]
+material = ExtResource("7_qg14a")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="DitherLayer2" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
+layer = 13
+
+[node name="ColorRect" type="ColorRect" parent="SubViewportContainer/SubViewport/DitherLayer2"]
+material = SubResource("ShaderMaterial_6e4ii")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ScreenLayer" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
+layer = 13
+
+[node name="ScreenContainer" type="Control" parent="SubViewportContainer/SubViewport/ScreenLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 
 [node name="CanvasLayer3" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
 layer = 20

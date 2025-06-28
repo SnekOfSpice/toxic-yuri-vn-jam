@@ -1,4 +1,4 @@
-extends Control
+extends Stage
 
 ## Music key (same as instructions in DIISIS) to be played on [method _ready] Doesn't play anything if empty.
 @export var menu_music := ""
@@ -90,6 +90,8 @@ func _on_unlocked_epilogue_button_pressed() -> void:
 
 func set_enable_dither(value:bool):
 	find_child("DitherLayer").visible = value
+	find_child("DitherLayer2").visible = value
+	find_child("CorrectionLayer").visible = value
 
 
 func _on_start_button_pressed() -> void:
@@ -109,3 +111,7 @@ func _on_load_button_pressed() -> void:
 	black.modulate.a = 0
 	t.tween_property(black, "modulate:a", 1, 4)
 	t.finished.connect(emit_signal.bind("load_game"))
+
+
+func get_screen_container() -> Control:
+	return find_child("ScreenContainer")

@@ -11,7 +11,7 @@ var screen := ""
 var screenshot_to_save:Image
 
 func _ready():
-	change_stage(CONST.STAGE_GAME)
+	change_stage(CONST.STAGE_MAIN)
 	set_screen("")
 	GameWorld.stage_root = self
 
@@ -26,9 +26,10 @@ func set_screen(screen_path:String, payload := {}):
 		screenshot_to_save.resize(s.x, s.y)
 	
 	var screen_container:Control
-	if (null if not is_instance_valid(GameWorld.camera) else GameWorld.camera) is GameCamera:
-		screen_container = GameWorld.camera.get_screen_container()
-	else:
+	if get_stage_node():
+		if get_stage_node().get_screen_container():
+			screen_container = get_stage_node().get_screen_container()
+	if not screen_container:
 		screen_container = find_child("ScreenContainer")
 	
 	if screen_path.is_empty():
@@ -104,7 +105,9 @@ func change_stage(stage_path:String):
 	hook_up_button_sfx(new_stage)
 	stage = stage_path
 
-func get_stage_node() -> Node:
+func get_stage_node() -> Stage:
+	if $StageContainer.get_child_count() == 0:
+		return null
 	return $StageContainer.get_child(0)
 	
 

@@ -1,4 +1,4 @@
-extends Control
+extends Stage
 class_name GameStage
 
 @onready var characters := {}
@@ -48,6 +48,8 @@ func get_default_targets() -> Dictionary:
 	return result
 
 func _ready():
+	if Parser.page_index == 0 and line_reader.line_index == 0:
+		hide_ui()
 	if devmode_enabled:
 		Sound.play_bgm("argo_default")
 	else:
@@ -162,7 +164,7 @@ func _unhandled_input(event: InputEvent) -> void:
 				GameWorld.stage_root.set_screen(CONST.SCREEN_OPTIONS)
 			if InputMap.action_has_event("screenshot", event):
 				var screenshot := get_viewport().get_texture().get_image()
-				var path := str("user://screenshot_", ProjectSettings.get_setting("application/config/name"), "_", Time.get_datetime_string_from_system().replace(":", "-"), ".png")
+				var path := str("user://screenshot_", ProjectSettings.get_setting("application/config/name").replace("://", " "), "_", Time.get_datetime_string_from_system().replace(":", "-"), ".png")
 				screenshot.save_png(path)
 				
 				var notification_popup = preload("res://game/systems/notification.tscn").instantiate()
@@ -457,6 +459,7 @@ func deserialize(data:Dictionary):
 	
 	deserialize_text_content(%DefaultTextContainer, data.get("text_content_default", {}))
 	deserialize_text_content(%FullCoverText, data.get("text_content_full", {}))
+	show_ui()
 
 var emit_insutrction_complete_on_cg_hide :bool
 
@@ -720,3 +723,6 @@ func is_window_overlapping(window_to_check:CustomWindow):
 		if not (rect_a_x1 > rect_b_x2 or rect_a_x2 < rect_b_x1 or rect_a_y1 > rect_b_y2 or rect_a_y2 < rect_b_y1):
 			return true
 	return false
+
+func get_screen_container() -> Control:
+	return find_child("ScreenContainer")
