@@ -2073,7 +2073,7 @@ func _on_name_label_updated(
 	is_name_container_visible: bool
 ):
 	_currently_speaking_name = actor_name
-	_currently_speaking_visible = is_name_container_visible
+	_currently_speaking_visible = is_name_container_visible and name_style == NameStyle.NameLabel
 
 func get_subaddress() -> String:
 	return str(Parser.page_index, ".", line_index, ".", _dialog_line_index)
@@ -2095,7 +2095,14 @@ func _on_body_label_text_changed(old_text: String,
 	if _subaddresses_in_history.has(sub_address):
 		return
 	_subaddresses_in_history.append(sub_address)
-	Parser.call_deferred("append_to_history", (str(str("[b]", _currently_speaking_name, "[/b]: ") if _currently_speaking_visible else "", new_text)))
+	var name_prefix : String
+	if _currently_speaking_name in blank_names:
+		name_prefix = "    "
+	elif _currently_speaking_visible:
+		name_prefix = str("[b]", _get_full_prepend_name_prefix(_currently_speaking_name), "[/b]: ")
+	else:
+		name_prefix == ""
+	Parser.call_deferred("append_to_history", (str(name_prefix, new_text)))
 
 func _on_comment(comment: String, pos : int):
 	prints(str(Parser.get_address(), ":", pos), comment)

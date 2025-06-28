@@ -109,7 +109,6 @@ size = Vector2i(1000, 750)
 render_target_update_mode = 4
 
 [node name="CanvasLayer" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
-layer = -2
 
 [node name="Background" type="Sprite2D" parent="SubViewportContainer/SubViewport/CanvasLayer"]
 unique_name_in_owner = true
@@ -157,8 +156,29 @@ offset_bottom = 2325.44
 scale = Vector2(0.742899, 0.742899)
 texture = ExtResource("6_o4dm7")
 
+[node name="DitherLayer2" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
+
+[node name="ColorRect" type="ColorRect" parent="SubViewportContainer/SubViewport/DitherLayer2"]
+material = SubResource("ShaderMaterial_6e4ii")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CorrectionLayer" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
+
+[node name="ColorRect" type="ColorRect" parent="SubViewportContainer/SubViewport/CorrectionLayer"]
+material = ExtResource("7_qg14a")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
 [node name="CanvasLayer2" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
-layer = 3
 
 [node name="MarginContainer" type="MarginContainer" parent="SubViewportContainer/SubViewport/CanvasLayer2"]
 anchors_preset = 7
@@ -259,31 +279,7 @@ layout_mode = 2
 focus_mode = 0
 text = "Quit"
 
-[node name="CorrectionLayer" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
-
-[node name="ColorRect" type="ColorRect" parent="SubViewportContainer/SubViewport/CorrectionLayer"]
-material = ExtResource("7_qg14a")
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-
-[node name="DitherLayer2" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
-layer = 13
-
-[node name="ColorRect" type="ColorRect" parent="SubViewportContainer/SubViewport/DitherLayer2"]
-material = SubResource("ShaderMaterial_6e4ii")
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-
 [node name="ScreenLayer" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
-layer = 13
 
 [node name="ScreenContainer" type="Control" parent="SubViewportContainer/SubViewport/ScreenLayer"]
 layout_mode = 3
@@ -295,7 +291,6 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="CanvasLayer3" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
-layer = 20
 
 [node name="UnlockedEpilogueOverlay" type="ColorRect" parent="SubViewportContainer/SubViewport/CanvasLayer3"]
 visible = false
