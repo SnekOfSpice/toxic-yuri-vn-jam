@@ -118,6 +118,7 @@ func _on_body_label_item_rect_changed() -> void:
 	clamp_to_viewport()
 
 func str_open(meta:Variant):
+	GameWorld.game_stage.screen_close_blocker = true
 	unblock(meta)
 	OS.shell_open(str(meta))
 

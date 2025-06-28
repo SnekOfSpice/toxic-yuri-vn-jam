@@ -5,6 +5,7 @@ class_name Screen
 func _ready() -> void:
 	if is_instance_valid(GameWorld.game_stage):
 		GameWorld.game_stage.hide_ui()
+		GameWorld.game_stage.screen_close_blocker = true
 	tree_exiting.connect(restore_ui)
 	
 	mouse_filter = Control.MOUSE_FILTER_STOP

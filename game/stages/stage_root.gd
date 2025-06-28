@@ -37,6 +37,8 @@ func set_screen(screen_path:String, payload := {}):
 			for c in screen_container.get_children():
 				c.queue_free()
 			screen_container.visible = false
+			if is_instance_valid(GameWorld.game_stage):
+				GameWorld.game_stage.screen_close_blocker = false
 		else:
 			var tween
 			for c in screen_container.get_children():
@@ -44,6 +46,8 @@ func set_screen(screen_path:String, payload := {}):
 				t.tween_property(c, "modulate:a", 0, screen_fade_out)
 				t.set_ease(Tween.EASE_OUT_IN)
 				t.finished.connect(c.queue_free)
+				if is_instance_valid(GameWorld.game_stage):
+					t.finished.connect(GameWorld.game_stage.set.bind("screen_close_blocker", false))
 				tween = t
 			tween.finished.connect(screen_container.set_visible.bind(false))
 		screen = screen_path
