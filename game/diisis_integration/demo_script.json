@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 19,
+		"current_page_number": 25,
 		"ingest_capitalize": false,
 		"ingest_whitespace": true,
 		"page_view": 0,
@@ -489,7 +489,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854670184,
+		"id_counter": -9223372036854669634,
 		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa\nx: xelia\nl: leah\nf: franco\nno: noni\nb: blank",
 		"locales_to_export": [
 			"de_DE",
@@ -9627,7 +9627,7 @@
 					{
 						"address": "18.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -9637,7 +9637,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -9659,12 +9659,12 @@
 						},
 						"header": [],
 						"id": "1749630775.388--9223372036854742261",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -9673,7 +9673,7 @@
 					{
 						"address": "18.1",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -9683,7 +9683,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -9704,12 +9704,12 @@
 						},
 						"header": [],
 						"id": "1749456364.296--9223372036854752129",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1.0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						},
@@ -9718,7 +9718,7 @@
 					{
 						"address": "18.2",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -9728,7 +9728,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -9750,12 +9750,12 @@
 						},
 						"header": [],
 						"id": "1749828810.139--9223372036854737808",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2.0,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
@@ -9764,7 +9764,7 @@
 					{
 						"address": "18.3",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -9774,7 +9774,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -9791,12 +9791,12 @@
 						},
 						"header": [],
 						"id": "1749828822.462--9223372036854737807",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3.0,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
@@ -9805,7 +9805,7 @@
 					{
 						"address": "18.4",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -9815,7 +9815,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -9837,12 +9837,12 @@
 						},
 						"header": [],
 						"id": "1749829888.786--9223372036854737355",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4.0,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						},
@@ -9851,7 +9851,7 @@
 					{
 						"address": "18.5",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -9861,7 +9861,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -9881,12 +9881,12 @@
 						},
 						"header": [],
 						"id": "1749459266.582--9223372036854751531",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5.0,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						},
@@ -9895,7 +9895,7 @@
 					{
 						"address": "18.6",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -9905,7 +9905,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -9922,12 +9922,12 @@
 						},
 						"header": [],
 						"id": "1750171686.230--9223372036854723218",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6.0,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						},
@@ -9936,7 +9936,7 @@
 					{
 						"address": "18.7",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -9946,7 +9946,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -9966,12 +9966,12 @@
 						},
 						"header": [],
 						"id": "1749828879.802--9223372036854737803",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7.0,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						},
@@ -9980,7 +9980,7 @@
 					{
 						"address": "18.8",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -9990,7 +9990,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10007,12 +10007,12 @@
 						},
 						"header": [],
 						"id": "1750171636.129--9223372036854723220",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 8.0,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						},
@@ -10021,7 +10021,7 @@
 					{
 						"address": "18.9",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10031,7 +10031,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10048,12 +10048,12 @@
 						},
 						"header": [],
 						"id": "1749828889.814--9223372036854737801",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 9.0,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						},
@@ -10062,7 +10062,7 @@
 					{
 						"address": "18.10",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10072,7 +10072,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10094,12 +10094,12 @@
 						},
 						"header": [],
 						"id": "1750408931.770--9223372036854710475",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 10.0,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						},
@@ -10108,7 +10108,7 @@
 					{
 						"address": "18.11",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10118,7 +10118,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10135,23 +10135,23 @@
 						},
 						"header": [],
 						"id": "1750065794.683--9223372036854729805",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 11.0,
+						"meta.line_index": 11,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 816.0,
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 1530,
 				"meta.selected": false,
 				"next": 19.0,
-				"number": 18.0,
+				"number": 18,
 				"page_key": "noni and argo listen to argos music + maya gets a new tat from hn",
 				"skip": false,
 				"terminate": false
@@ -10731,7 +10731,7 @@
 					{
 						"address": "21.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10741,7 +10741,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10763,12 +10763,12 @@
 						},
 						"header": [],
 						"id": "1749810279.718--9223372036854737971",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -10777,7 +10777,7 @@
 					{
 						"address": "21.1",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10787,7 +10787,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10804,12 +10804,12 @@
 						},
 						"header": [],
 						"id": "1749279526.732--9223372036854760506",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1.0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						},
@@ -10818,7 +10818,7 @@
 					{
 						"address": "21.2",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10828,7 +10828,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10850,12 +10850,12 @@
 						},
 						"header": [],
 						"id": "1750237186.153--9223372036854719811",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2.0,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
@@ -10864,7 +10864,7 @@
 					{
 						"address": "21.3",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10874,7 +10874,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10891,12 +10891,12 @@
 						},
 						"header": [],
 						"id": "1749095991.713--9223372036854768945",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3.0,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
@@ -10905,7 +10905,7 @@
 					{
 						"address": "21.4",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10915,7 +10915,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10932,23 +10932,23 @@
 						},
 						"header": [],
 						"id": "1751037997.210--9223372036854671199",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4.0,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 667.0,
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 973,
 				"meta.selected": false,
 				"next": 22.0,
-				"number": 21.0,
+				"number": 21,
 				"page_key": "checkin on noni + first xelia cuts",
 				"skip": false,
 				"terminate": false
@@ -10964,7 +10964,7 @@
 					{
 						"address": "22.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -10974,7 +10974,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -10996,12 +10996,12 @@
 						},
 						"header": [],
 						"id": "1749889774.777--9223372036854735888",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -11010,7 +11010,7 @@
 					{
 						"address": "22.1",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -11020,7 +11020,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -11037,12 +11037,12 @@
 						},
 						"header": [],
 						"id": "1749885046.749--9223372036854737577",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1.0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						},
@@ -11051,7 +11051,7 @@
 					{
 						"address": "22.2",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -11061,7 +11061,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -11078,12 +11078,12 @@
 						},
 						"header": [],
 						"id": "1749885063.100--9223372036854737575",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2.0,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
@@ -11092,7 +11092,7 @@
 					{
 						"address": "22.3",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -11102,7 +11102,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -11124,12 +11124,12 @@
 						},
 						"header": [],
 						"id": "1749998149.762--9223372036854731201",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3.0,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
@@ -11138,7 +11138,7 @@
 					{
 						"address": "22.4",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -11148,7 +11148,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -11165,12 +11165,12 @@
 						},
 						"header": [],
 						"id": "1749969110.812--9223372036854733156",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4.0,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						},
@@ -11179,7 +11179,7 @@
 					{
 						"address": "22.5",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -11189,7 +11189,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -11206,12 +11206,12 @@
 						},
 						"header": [],
 						"id": "1750604158.061--9223372036854683347",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5.0,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						},
@@ -11220,7 +11220,7 @@
 					{
 						"address": "22.6",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -11230,7 +11230,48 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1751091623.817--9223372036854670104"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1751091623.817--9223372036854670105",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 6,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "22.7",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -11252,21 +11293,21 @@
 						},
 						"header": [],
 						"id": "1750237640.181--9223372036854719762",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6.0,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "22.7",
+						"address": "22.8",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -11276,7 +11317,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -11296,21 +11337,21 @@
 						},
 						"header": [],
 						"id": "1749889631.086--9223372036854735890",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7.0,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "22.8",
+						"address": "22.9",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -11320,7 +11361,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -11342,21 +11383,21 @@
 						},
 						"header": [],
 						"id": "1749998292.737--9223372036854731200",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 8.0,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "22.9",
+						"address": "22.10",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -11366,7 +11407,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -11383,21 +11424,21 @@
 						},
 						"header": [],
 						"id": "1749998294.639--9223372036854731199",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 9.0,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "22.10",
+						"address": "22.11",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -11407,7 +11448,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -11424,21 +11465,21 @@
 						},
 						"header": [],
 						"id": "1749974277.854--9223372036854732824",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 10.0,
+						"meta.line_index": 11,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "22.11",
+						"address": "22.12",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -11448,7 +11489,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -11465,21 +11506,21 @@
 						},
 						"header": [],
 						"id": "1749293304.567--9223372036854757666",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 11.0,
+						"meta.line_index": 12,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "22.12",
+						"address": "22.13",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -11489,7 +11530,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -11506,23 +11547,23 @@
 						},
 						"header": [],
 						"id": "1750239021.676--9223372036854719314",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 12.0,
+						"meta.line_index": 13,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 0.0,
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 2958,
 				"meta.selected": false,
 				"next": 23.0,
-				"number": 22.0,
+				"number": 22,
 				"page_key": "axhnr hangout + haley being needy",
 				"skip": false,
 				"terminate": false
@@ -12082,7 +12123,7 @@
 					{
 						"address": "25.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12092,7 +12133,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12114,12 +12155,12 @@
 						},
 						"header": [],
 						"id": "1750238376.581--9223372036854719652",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -12128,7 +12169,7 @@
 					{
 						"address": "25.1",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12138,7 +12179,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12155,12 +12196,12 @@
 						},
 						"header": [],
 						"id": "1750238546.677--9223372036854719629",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1.0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						},
@@ -12169,7 +12210,7 @@
 					{
 						"address": "25.2",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12179,7 +12220,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12201,12 +12242,12 @@
 						},
 						"header": [],
 						"id": "1750331697.208--9223372036854712151",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2.0,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
@@ -12215,7 +12256,7 @@
 					{
 						"address": "25.3",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12225,7 +12266,135 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1751093117.446--9223372036854669679"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1751093117.446--9223372036854669680",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 3,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "25.4",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1751093107.152--9223372036854669720"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1751093107.152--9223372036854669721",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "25.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0.0,
+							"delay_before": 0.0,
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "hide_window(1)",
+							"meta.validation_status": "OK",
+							"name": "hide_window",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1751093181.961--9223372036854669678",
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 5,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "25.6",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12242,21 +12411,21 @@
 						},
 						"header": [],
 						"id": "1749810635.155--9223372036854737900",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3.0,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "25.4",
+						"address": "25.7",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12266,7 +12435,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12283,21 +12452,21 @@
 						},
 						"header": [],
 						"id": "1751014557.029--9223372036854673206",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4.0,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "25.5",
+						"address": "25.8",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12307,7 +12476,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12324,21 +12493,21 @@
 						},
 						"header": [],
 						"id": "1749829107.191--9223372036854737705",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5.0,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "25.6",
+						"address": "25.9",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12348,7 +12517,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12365,21 +12534,21 @@
 						},
 						"header": [],
 						"id": "1751014641.081--9223372036854673202",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6.0,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "25.7",
+						"address": "25.10",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12389,7 +12558,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12406,21 +12575,21 @@
 						},
 						"header": [],
 						"id": "1751014640.547--9223372036854673204",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7.0,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "25.8",
+						"address": "25.11",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12430,7 +12599,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12450,21 +12619,21 @@
 						},
 						"header": [],
 						"id": "1750331741.694--9223372036854712150",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 8.0,
+						"meta.line_index": 11,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "25.9",
+						"address": "25.12",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12474,7 +12643,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12491,21 +12660,21 @@
 						},
 						"header": [],
 						"id": "1749829172.336--9223372036854737695",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 9.0,
+						"meta.line_index": 12,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "25.10",
+						"address": "25.13",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12515,7 +12684,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12537,21 +12706,21 @@
 						},
 						"header": [],
 						"id": "1749885331.317--9223372036854737320",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 10.0,
+						"meta.line_index": 13,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "25.11",
+						"address": "25.14",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12561,7 +12730,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12578,21 +12747,21 @@
 						},
 						"header": [],
 						"id": "1749885309.151--9223372036854737322",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 11.0,
+						"meta.line_index": 14,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "25.12",
+						"address": "25.15",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12602,7 +12771,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12619,23 +12788,23 @@
 						},
 						"header": [],
 						"id": "1749968124.779--9223372036854733420",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 12.0,
+						"meta.line_index": 15,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 0.0,
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 2754,
 				"meta.selected": false,
 				"next": 26.0,
-				"number": 25.0,
+				"number": 25,
 				"page_key": "argo and noni cuddle + nessa gets jealous + audrey/leah hangout",
 				"skip": false,
 				"terminate": false
@@ -12651,7 +12820,7 @@
 					{
 						"address": "26.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12661,7 +12830,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12683,12 +12852,12 @@
 						},
 						"header": [],
 						"id": "1749306895.447--9223372036854757133",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -12697,7 +12866,7 @@
 					{
 						"address": "26.1",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12707,7 +12876,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12724,12 +12893,12 @@
 						},
 						"header": [],
 						"id": "1750319921.953--9223372036854713478",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1.0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						},
@@ -12738,7 +12907,7 @@
 					{
 						"address": "26.2",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12748,7 +12917,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12770,12 +12939,12 @@
 						},
 						"header": [],
 						"id": "1750320405.932--9223372036854713369",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2.0,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
@@ -12784,7 +12953,7 @@
 					{
 						"address": "26.3",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12794,7 +12963,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12816,12 +12985,12 @@
 						},
 						"header": [],
 						"id": "1750411316.597--9223372036854709958",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3.0,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
@@ -12830,7 +12999,7 @@
 					{
 						"address": "26.4",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12840,7 +13009,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12857,12 +13026,12 @@
 						},
 						"header": [],
 						"id": "1749449742.880--9223372036854753663",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4.0,
+						"meta.line_index": 4,
 						"meta.selector": {
 							"selected": false
 						},
@@ -12871,7 +13040,7 @@
 					{
 						"address": "26.5",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12881,7 +13050,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12898,12 +13067,12 @@
 						},
 						"header": [],
 						"id": "1749306850.469--9223372036854757143",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5.0,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						},
@@ -12912,7 +13081,7 @@
 					{
 						"address": "26.6",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -12922,48 +13091,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
-							"operand_args": [],
-							"operand_key": "AND"
-						},
-						"content": {
-							"meta.locked": false,
-							"meta.validation_status": "OK",
-							"text_id": "1749885642.542--9223372036854737026"
-						},
-						"facts": {
-							"fact_data_by_name": {
-
-							},
-							"meta.visible": false
-						},
-						"header": [],
-						"id": "1749885642.542--9223372036854737027",
-						"line_type": 0.0,
-						"meta.conditionals_visible": false,
-						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
-						"meta.is_head_editable": true,
-						"meta.line_index": 6.0,
-						"meta.selector": {
-							"selected": false
-						},
-						"skip": false
-					},
-					{
-						"address": "26.7",
-						"conditionals": {
-							"behavior": 0.0,
-							"behavior_key": "Show",
-							"facts": {
-								"fact_data_by_name": {
-
-								},
-								"meta.visible": false
-							},
-							"meta.controls_collapsed": true,
-							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -12980,23 +13108,23 @@
 						},
 						"header": [],
 						"id": "1750320411.960--9223372036854713367",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7.0,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 510.0,
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 587,
 				"meta.selected": false,
 				"next": 27.0,
-				"number": 26.0,
+				"number": 26,
 				"page_key": "haley panic attack + argo puts down boundaries",
 				"skip": false,
 				"terminate": false
@@ -18296,7 +18424,7 @@
 					{
 						"address": "37.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -18306,7 +18434,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -18328,12 +18456,12 @@
 						},
 						"header": [],
 						"id": "1750314747.057--9223372036854715048",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -18342,7 +18470,7 @@
 					{
 						"address": "37.1",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -18352,7 +18480,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -18369,12 +18497,12 @@
 						},
 						"header": [],
 						"id": "1750314755.275--9223372036854715047",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1.0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						},
@@ -18383,7 +18511,7 @@
 					{
 						"address": "37.2",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -18393,7 +18521,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -18410,12 +18538,12 @@
 						},
 						"header": [],
 						"id": "1750663515.393--9223372036854680640",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2.0,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
@@ -18424,7 +18552,7 @@
 					{
 						"address": "37.3",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -18434,7 +18562,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -18454,12 +18582,12 @@
 						},
 						"header": [],
 						"id": "1750667021.000--9223372036854679780",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3.0,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
@@ -18468,7 +18596,7 @@
 					{
 						"address": "37.4",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -18478,7 +18606,89 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1751092008.331--9223372036854670014"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1751092008.331--9223372036854670015",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "37.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1751092007.714--9223372036854670016"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1751092007.714--9223372036854670017",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 5,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "37.6",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -18495,21 +18705,21 @@
 						},
 						"header": [],
 						"id": "1750672705.543--9223372036854679051",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4.0,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "37.5",
+						"address": "37.7",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -18519,7 +18729,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -18541,21 +18751,21 @@
 						},
 						"header": [],
 						"id": "1750667202.878--9223372036854679547",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5.0,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "37.6",
+						"address": "37.8",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -18565,7 +18775,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -18582,21 +18792,21 @@
 						},
 						"header": [],
 						"id": "1750314563.615--9223372036854715243",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6.0,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "37.7",
+						"address": "37.9",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -18606,7 +18816,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -18626,21 +18836,21 @@
 						},
 						"header": [],
 						"id": "1750314469.189--9223372036854715363",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7.0,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "37.8",
+						"address": "37.10",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -18650,7 +18860,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -18671,23 +18881,23 @@
 						},
 						"header": [],
 						"id": "1750238695.230--9223372036854719485",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 8.0,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 334.0,
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 1039,
 				"meta.selected": false,
 				"next": 38.0,
-				"number": 37.0,
+				"number": 37,
 				"page_key": "audrey and maya fight",
 				"skip": false,
 				"terminate": false
@@ -20485,7 +20695,7 @@
 					{
 						"address": "42.0",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -20495,7 +20705,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -20517,12 +20727,12 @@
 						},
 						"header": [],
 						"id": "1749094068.139--9223372036854769377",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0,
+						"meta.line_index": 0.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -20531,7 +20741,7 @@
 					{
 						"address": "42.1",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -20541,7 +20751,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -20563,12 +20773,12 @@
 						},
 						"header": [],
 						"id": "1750765660.849--9223372036854678225",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1,
+						"meta.line_index": 1.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -20577,7 +20787,7 @@
 					{
 						"address": "42.2",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -20587,7 +20797,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -20604,12 +20814,12 @@
 						},
 						"header": [],
 						"id": "1750831351.880--9223372036854677351",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2,
+						"meta.line_index": 2.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -20618,7 +20828,7 @@
 					{
 						"address": "42.3",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -20628,7 +20838,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -20650,12 +20860,12 @@
 						},
 						"header": [],
 						"id": "1750765480.203--9223372036854678229",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3,
+						"meta.line_index": 3.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -20664,7 +20874,7 @@
 					{
 						"address": "42.4",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -20674,7 +20884,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -20691,12 +20901,12 @@
 						},
 						"header": [],
 						"id": "1750831360.132--9223372036854677349",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4,
+						"meta.line_index": 4.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -20705,7 +20915,7 @@
 					{
 						"address": "42.5",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -20715,7 +20925,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -20735,12 +20945,12 @@
 						},
 						"header": [],
 						"id": "1750831398.315--9223372036854677347",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5,
+						"meta.line_index": 5.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -20749,7 +20959,7 @@
 					{
 						"address": "42.6",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -20759,7 +20969,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -20776,12 +20986,12 @@
 						},
 						"header": [],
 						"id": "1750831422.287--9223372036854677345",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6,
+						"meta.line_index": 6.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -20790,7 +21000,7 @@
 					{
 						"address": "42.7",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -20800,7 +21010,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -20817,12 +21027,12 @@
 						},
 						"header": [],
 						"id": "1750831431.415--9223372036854677343",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7,
+						"meta.line_index": 7.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -20831,7 +21041,7 @@
 					{
 						"address": "42.8",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -20841,7 +21051,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -20861,12 +21071,12 @@
 						},
 						"header": [],
 						"id": "1750831454.153--9223372036854677341",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 8,
+						"meta.line_index": 8.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -20875,7 +21085,7 @@
 					{
 						"address": "42.9",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -20885,7 +21095,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -20902,12 +21112,12 @@
 						},
 						"header": [],
 						"id": "1750831558.605--9223372036854677339",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 9,
+						"meta.line_index": 9.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -20916,7 +21126,7 @@
 					{
 						"address": "42.10",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -20926,7 +21136,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -20943,12 +21153,12 @@
 						},
 						"header": [],
 						"id": "1751014947.179--9223372036854672766",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 10,
+						"meta.line_index": 10.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -20957,7 +21167,7 @@
 					{
 						"address": "42.11",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -20967,7 +21177,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -20989,12 +21199,12 @@
 						},
 						"header": [],
 						"id": "1751014949.014--9223372036854672764",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 11,
+						"meta.line_index": 11.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -21003,7 +21213,7 @@
 					{
 						"address": "42.12",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -21013,7 +21223,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -21030,12 +21240,12 @@
 						},
 						"header": [],
 						"id": "1750831571.205--9223372036854677337",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 12,
+						"meta.line_index": 12.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -21044,7 +21254,7 @@
 					{
 						"address": "42.13",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -21054,7 +21264,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -21076,12 +21286,12 @@
 						},
 						"header": [],
 						"id": "1751014986.440--9223372036854672763",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 13,
+						"meta.line_index": 13.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -21090,7 +21300,7 @@
 					{
 						"address": "42.14",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -21100,7 +21310,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -21117,12 +21327,12 @@
 						},
 						"header": [],
 						"id": "1750832728.499--9223372036854677213",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 14,
+						"meta.line_index": 14.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -21131,7 +21341,7 @@
 					{
 						"address": "42.15",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -21141,7 +21351,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -21158,12 +21368,12 @@
 						},
 						"header": [],
 						"id": "1750832297.981--9223372036854677215",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 15,
+						"meta.line_index": 15.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -21172,7 +21382,7 @@
 					{
 						"address": "42.16",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -21182,7 +21392,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -21204,12 +21414,12 @@
 						},
 						"header": [],
 						"id": "1750831621.432--9223372036854677327",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 16,
+						"meta.line_index": 16.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -21218,7 +21428,7 @@
 					{
 						"address": "42.17",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -21228,7 +21438,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -21250,12 +21460,12 @@
 						},
 						"header": [],
 						"id": "1750839452.103--9223372036854675878",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 17,
+						"meta.line_index": 17.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -21264,7 +21474,7 @@
 					{
 						"address": "42.18",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -21274,7 +21484,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -21291,12 +21501,12 @@
 						},
 						"header": [],
 						"id": "1750831593.454--9223372036854677335",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 18,
+						"meta.line_index": 18.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -21305,7 +21515,7 @@
 					{
 						"address": "42.19",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -21315,7 +21525,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -21336,12 +21546,12 @@
 						},
 						"header": [],
 						"id": "1750831598.099--9223372036854677333",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 19,
+						"meta.line_index": 19.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -21350,7 +21560,7 @@
 					{
 						"address": "42.20",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -21360,7 +21570,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -21377,12 +21587,12 @@
 						},
 						"header": [],
 						"id": "1750312292.467--9223372036854716784",
-						"line_type": 0,
+						"line_type": 0.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 20,
+						"meta.line_index": 20.0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -21391,7 +21601,7 @@
 					{
 						"address": "42.21",
 						"conditionals": {
-							"behavior": 0,
+							"behavior": 0.0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -21401,7 +21611,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0,
+							"operand": 0.0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -21423,23 +21633,23 @@
 						},
 						"header": [],
 						"id": "1749094249.489--9223372036854769376",
-						"line_type": 2,
+						"line_type": 2.0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0,
+						"meta.indent_level": 0.0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 21,
+						"meta.line_index": 21.0,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 4250,
+				"meta.address_mode_next": 0.0,
+				"meta.scroll_vertical": 4250.0,
 				"meta.selected": false,
 				"next": 42.0,
-				"number": 42,
+				"number": 42.0,
 				"page_key": "the end",
 				"skip": false,
 				"terminate": true
@@ -21701,18 +21911,18 @@
 			"1749829172.336--9223372036854737694": "[]>argo{target|5}:sorry noni keeps being physical\n[]>vanessa{target|5}:just tell her no ffs\n[]>vanessa: physical in what sense\n[]>argo:i already told eher sex and making out is off the table\n[]>argo:but she really wants to cuddle a lot\n[]>argo: was really affectionate when we hung out just now\n[]>vanessa: work?\n[]>argo: she came by during my break\n[]>argo: audrey has done the same thats fine\n[]>argo: but yeah didnt expect her to be that forward\n[]>vanessa: well do you want to\n[]>argo:idk i just dont wanna do something that upsets you\n[]>vanessa:well you know that ill be happier if i have yo all to myself\n[]>argo:i know\n[]>vanessa:i mean its whatever now because oyuve already cuddled and shit right\n[]>argo:im sorry\n[]>vanessa:its fine\n[]>vanessa:just\n[]>vanessa:whatever\n[]>argo: im sorry\n[]>argo:still really looking forward to seeing you again tho\n[]>vanessa:mhm\n[]>argo:kiss :3\n[]>vanessa:kiss",
 			"1749884804.064--9223372036854737683": "[]>maya:as if you'd ever cared about anyone other than yourself!",
 			"1749884805.017--9223372036854737681": "[]>maya: that has nothing to do with it\n[]>audrey: uh huh\n[]>audrey: not reducing any inhibitions with that, surely\n[]>maya: we just had an arrangement should she die before me\n[]>audrey: \"oh yea I might die but I'm all taken care of by my cecrophile partner\"\n[]>audrey: super healthy\n[]>maya: are you out of your mind? the same could be said for setting up a fucking will\n[]>maya: or making sure your deadname isn't on your headstone\n[]>maya: do you think you actually give a shit when you're standing on the edge\n[]>maya: the only thing shit like this changes is with how kuch worry you go out\n[]>maya: why amni even arguing about this!\n[]>maya: Audrey you can fuck right off with prescribing what Haley and I agreed upon",
-			"1749885046.749--9223372036854737576": "[]>narrator: Haley is at Audrey's place once again. Xelia is waiting at the train station. Argo is on its way. Harsh Noise and Roaches are too. Nessa is at home after making people selling theirs soul to callcenter phone wires all week. Maya isn't feeling like going out, so she's just rotting in Roaches' bed. \n[]>narrator: The train takes Argo to the other side of the riverbed, headed for a hangout with Roaches and Harsh Noise and Xelia, who is generally content living on a shore in an empty bit of forest, where it goes after leasure activities such as fishing, slinging controlled substances, and generally not owing anyone anything. Roaches and Harsh Noise are on their way on a different line, stenching up their carriage with the smell of latent drug abuse and rot, Roaches especially. \n[]>narrator: The horizon is painted with the shelter-orange glow of sunset, and the air is heavy with distant closeness. Argo busy with work and girlfriend. Roaches and Noise always doing their own shit. There's an erie amount of shit not-happening, Xelia thinks. Fuck. <mp>After yesterday's day of grieving / breakdown over their dead girlfriend, Xelia knows that today will be better because it can just be around her friends again and that'll be nice probably. How much do you care, Xelia? Not really that much? Ok, good to know.\n[]>narrator: Audrey and Haley have resorted to talking about life, of which there is fairly little. Audrey sometimes thinks about going out to the shelter, but mostly just spends her days figuring out how to jack off with her amputated dick, when her alcoholism isn't in the way, And Haley is largely content being a useless fuckup that crashes on random park benches for half the days of any given week. Haley seasons the buzz with stray bits of meth and speed that she found in her pocket, and the two are getting lonely as shit so they think about what to do and then they remember that they actually have friends that supposedly give a shit about them and then they resolve themselves to do something with this stale old fucking bit of information.",
-			"1749885063.100--9223372036854737574": "[]>haley{target|3}: hey can you like\n[]>haley: come over\n[]>vanessa{target|3}: right now?\n[]>haley: Audrey and I just wanna hang ojt with u agaim\n[]>haley: all u do us get eaten out by argo recently lol\n[]>vanessa: omfg \n[]>vanessa: im sorry??\n[]>vanessa: we just started dating and i love it a whole lot\n[]>vanessa: but that's not even the thing!! argo is out hanging with its friends\n[]>haley: bc uve been gettin railed\n[]>vanessa: ???\n[]>vanessa: god",
+			"1749885046.749--9223372036854737576": "[]>narrator: Haley is at Audrey's place once again. Xelia is waiting at the train station. Argo is on its way. Harsh Noise and Roaches are too. Nessa is at home after making people selling theirs soul to callcenter phone wires all week. Maya isn't feeling like going out, so she's just rotting in Roaches' bed. \n[]>narrator: The train takes Argo to the other side of the riverbed, headed for a hangout with Roaches and Harsh Noise and Xelia, who is generally content living on a shore in an empty bit of forest, where it goes after leasure activities such as fishing, slinging controlled substances, and generally not owing anyone anything. Roaches and Harsh Noise are on their way on a different line, stenching up their carriage with the smell of latent drug abuse and rot, Roaches especially. \n[]>narrator: The horizon is painted with the shelter-orange glow of sunset, and the air is heavy with distant closeness. Argo busy with work and girlfriend. Roaches and Noise always doing their own shit. There's an erie amount of shit not-happening, Xelia thinks. Fuck. <mp>After yesterday's day of grieving / breakdown over their dead girlfriend, Xelia knows that today will be better because it can just be around her friends again and that'll be nice probably. How much do you care, Xelia? Not really that much? Okay, good to know.\n[]>narrator: Audrey and Haley have resorted to talking about life, of which there is fairly little. Audrey sometimes thinks about going out to the shelter, but mostly just spends her days figuring out how to jack off with her amputated dick, when her alcoholism isn't in the way, And Haley is largely content being a useless fuckup that crashes on random park benches for half the days of any given week if it werent for Maya abandoning her, she thinks. Audrey doesn't know. Haley seasons the buzz with stray bits of meth and speed that she found in her pocket, and the two are getting lonely as shit so they think about what to do and then they remember that they actually have friends that supposedly give a shit about them and then they resolve themselves to do something with this stale old fucking bit of information.",
+			"1749885063.100--9223372036854737574": "[]>haley{target|3}: hey can you like\n[]>haley: come over\n[]>vanessa{target|3}: right now:?\n[]>haley: Audrey and I just wanna hang ojt with u agaim\n[]>haley: all u do us get eaten out by argo recently lol\n[]>vanessa: omfg \n[]>vanessa: im sorry??\n[]>vanessa: we just started dating and i love it a whole lot\n[]>vanessa: but that's not even the thing!! argo is out hanging with its friends\n[]>haley: bc uve been gettin railed\n[]>vanessa: ???\n[]>vanessa: god\n[]>vanessa: you're incoherent again\n[]>haley: oh pardon me\n[]>haley: bitch\n[]>vanessa: ?????",
 			"1749885212.667--9223372036854737466": "[]>xelia{target|5}: got a new body\nwanna see\n[]>argo{target|5}: I think I'll pass (don't tell it that's its Haley bc xelaindoesnt know their connection)\n[]>xelia: shes really jirai key about it tho\n[]>xelia: slit wrists and everything\n[]>argo: ...\n[]>argo: that how she died?\n[]>xelia: came from the river so probably not\n[]>xelia: but yk",
 			"1749885309.151--9223372036854737321": "[]>narrator: As Argo walks back home after work, the gnawing of guilt does not abate from its heart, a writihing mass of noneuclidean jaws doing their best to sink their mandibles into its frail ane ephemeral soul, and the looming threat of a rampant cutting binge on the horizon, rising as certain as the morning sun and it just fucking wishes the sun would explode because walking home as the temps rise is always kinda a pain in the ass and god you're such a fuckup just die and be aline, your girlfriend doesn't deserve you- <mp>Its heart really fucking hurts.\n[]>argo{target|3}: hey xelia\n[]>xelia{target|3}: was about to head to bed\n[]>argo: do you have a minute\n[]>xelia: sure\n[]>argo: its about vanessa\n[]>argo: i hurt her and now what\n[]>argo: why can't I just be like you\n[]>xelia{target|3}: because...\n[]>xelia: well.\n[]>xelia: firstly, what did you hurt her with?\n[]>argo: there's this other shelter girlie i met recently (noni) and she keeps wanting to cuddle me\n[]>argo: i already told her to lay it off and she seems fine just cuddling\n[]>argo: but even that is giving me a guilty concious\n[]>xelia: have you and nessa established any boundaries in that sense\n[]>argo: not really\n[]>xelia: there you go you doofus\n[]>xelia: ofc you're gonna feel terrible\n[]>xelia: because suddenly you have to intuit what the other person wants or wanted\n[]>xelia: and when that ineditably goes sideways\n[]>xelia: things start suckiiinngg\n[]>argo: so what now\n[]>argo: dont you get by not having shit like this in your life\n[]>argo: it hurts so much\n[]>xelia: as your personal armchair psychologist \n[]>xelia: because you have no sense of a personal core so you can't imagine others actually having principles or non-negotiable needs\n[]>xelia: also! I actually don't give a shit\n[]>xelia: and generally show proficiency in dancing with my and others' boundaries >:3\n[]>xelia: you just have no sense of self and project that onto others\n[]>argo: wow\n[]>argo: owch\n[]>xelia: armchair psychologist\n[]>argo: armchair psychologist\n[]>argo: yea ik\n[]>argo: thank you for the honesty\n[]>xelia: ofc <3\n[]>argo: so what do i do\n[]>xelia: just accept that you fucked up and move on\n[]>xelia: either you give a shit and change your ways or don't\n[]>xelia: you can't be giving a shit and not changing your ways\n[]>xelia: that's plain stupid\n[]>argo: so...",
 			"1749885529.995--9223372036854737063": "[]>narrator:argo is currently still staying at nessas place. cuddling up to someone in bed and they dont say anything",
 			"1749885642.542--9223372036854737026": "[]>haley{target|1}:Please let me be there for you one more time.\n[]>haley: I know I've failed ar it and have been not enough in the last.\n[]>haley: But I'd rather try and fail over and over again than know someone else to fill that role for you.",
 			"1749889203.999--9223372036854736078": "[]>narrator{target|6}:Haley is chewing up the insides of her mouth, thinking back to the gentleness of Maya's body. Her gracefully formed frame. The way her panties lined her contours. The inviting texture of her pubic hair, the softness of her lips, the warmth of her body and rigidity of her back, how when they spooned her shoulder blades would pronounce themselves ever so gently and her chest would move Haley's clasped hand with every rising and falling breath.\n[]>narrator{target|6}:Every minute every second haleys heart beats for her girlfriend now ex girlfriend are they really broken please don't let this be the end you can still salvage this please I've learned and know how to be empathetic and I'm so fucking sorry for not giving you the space you needed and being so cold and hateful and I just want to be loved oh please god it hurts so much why is there only death and heartbreak and the ending of all things in my life fuck<mp>\n\nMy heart still beats for the one girl that showed me the world.\nEven if thay same world now separates us. <mp>\n\nI love you.<mp>\n\nI hope you'll be happy. <mp>\n\nEverything hurts so much and I can't pretend I don't hate it.<mp>\n\nBut such is life.<mp>\n\nSuch is life.<mp>\\n\nSuch will always be.<mp>\n\nLife.",
-			"1749889631.086--9223372036854735889": "[]>narrator: Argo and Xelia are the first to exchange pleasantries and hugs. The other two are slated to arrive in a few minutes.\n[]>argo: How are you, after yesterday?\n[]>xelia: Eh, fine.\n[]>xelia: I'll have all of today to distract me hehe\n[]>argo: Mhm.\n[]>narrator: Her bandages run all up Xelia's arm. Argo is happy that she's fine, seemingly.\n[]>argo: You didn't have anything planned right?\n[]>argo: Just normal hangout?\n[]>xelia: Pretty much, yeah. Roaches suggested it becuase apparently you three havent been to my place at the same time yet\n[]>argo: oh shit\n[]>argo: that could actually be true lol\n[]>xelia: hehe.\n[]>xelia: so hows life on your end?\n[]>argo: pretty nice, actually\n[]>argo: keep meeting new people.\n[]>argo: ...\n[]>argo: and...\n[]>argo: one girl especially\n[]>xelia: oh?\n[]>argo: ill tell you more when the others are here\n[]>xelia: li'l argo is getting a girlfriend\n[]>xelia: my heart\n[]>argo: oh shut up\n[]>xelia: hehe\n[]>narrator: And after a few more minutes: a loud fucking train screech.\n[]>narrator: With a few vaguely annoyed and inconvenienced glares in tow, Roaches and Noise emerge from the train, and Xelia and Argo get to give and receive even more hugs. The group gets going, on a quest to find food for later, scrounging through the one local <call:show_image(supermarket, 0, 450, 300)> supermarket that  Xelia's rural-middle-of-the-woods area has to offer.\n[]>roaches: i wanna get bread.\n[]>argo: want me to come with?\n[]>roaches: sure.\n[]>xelia: great\n[]>roaches{target|1}: where actually is the bread here\n[]>argo{target|1}: i have no fucking idea\n[]>roaches: welp\n[]>roaches: time to search\n[]>harshnoise: sorry i couldnt make it yesterday, had to put some ink into someone again\n[]>xelia: its fine\n[]>xelia: argo was there\n[]>xelia: not like i wanted much attention anways\n[]>harshnoise: fair.\n[]>xelia: wanna get rose?\n[]>harshnoise: i usually prefer white\n[]>xelia: me too but i dont know if the others vibe with that\n[]>harshnoise: i dont even know if they drink wine\n[]>argo: so what's going on with you? anything new happening?\n[]>roaches: not really\n[]>roaches: did you hear that noise trashed our toilet\n[]>argo: what\n[]>roaches: its sledgehammer pet\n[]>roaches: uhm\n[]>roaches: fell in\n[]>argo: roaches, not gonna lie\n[]>argo: that's kinda hilarious\n[]>roaches: agreed\n[]>roaches: just kinda sucks for quality of life\n[]>roaches: here hold this\n[]>argo: pickles?\n[]>roaches: been craving pickles so bad recently\n[]>argo: awesome\n[]>roaches: what do you want?\n[]>argo: uhm\n[]>argo: the vegan cheese they have here is pretty good\n[]>roaches: then lets get that.\n[]>xelia: why are we getting brandy again\n[]>harshnoise: roaches\n[]>xelia: right\n[]>xelia: idk noise I can't find shit here\n[]>xelia: you have some of the most fucked up alcohol preferences out of anyone I know\n[]>harshnoise: maybe they dont have it here\n[]>xelia: found it\n[]>harshnoise: awesome.\n[]>roaches: lets get some juice too.\n[]>argo: oh and detergent\n[]>roaches: what\n[]>argo: I just forgot that i needed some until now and then I can take it back with me later\n[]>roaches: god you fucking weirdo\n[]>argo: heavens forbid people are weird\n[]>roaches: yeah\n[]>roaches: fucking freaks deserve to be gutted and hanged\n[]>argo: you just wanna fuck the entrails\n[]>roaches: i elect to not address these allegations\n[]>harshnoise: by the way, here.\n[]>xelia: so we got brandy, white wine, and root beer.",
+			"1749889631.086--9223372036854735889": "[]>narrator: Argo and Xelia are the first to exchange pleasantries and hugs. The other two are slated to arrive in a few minutes.\n[]>argo: How are you, after yesterday?\n[]>xelia: Eh, fine.\n[]>xelia: I'll have all of today to distract me hehe.\n[]>argo: Mhm.\n[]>narrator: Her bandages run all up Xelia's arm. Argo is happy that she's fine, seemingly.\n[]>argo: You didn't have anything planned right?\n[]>argo: Just normal hangout?\n[]>xelia: Pretty much, yeah. Roaches suggested it becuase apparently you three havent been to my place at the same time yet.\n[]>argo: Oh shit.\n[]>argo: That could actually be true lol.\n[]>xelia: Hehe.\n[]>xelia: So hows life on your end?\n[]>argo: Pretty nice, actually.\n[]>argo: Keep meeting new people.\n[]>argo: ...\n[]>argo: And...\n[]>argo: One girl especially.\n[]>xelia: Oh?\n[]>argo: Ill tell you more when the others are here.\n[]>xelia: Li'l argo is getting a girlfriend.\n[]>xelia: My heart.\n[]>argo: Oh shut up.\n[]>xelia: Hehe.\n[]>narrator: And after a few more minutes: A loud fucking train screech.\n[]>narrator: With a few vaguely annoyed and inconvenienced glares in tow, Roaches and Noise emerge from the train, and Xelia and Argo get to give and receive even more hugs. The group gets going, on a quest to find food for later, scrounging through the one local <call:show_image(supermarket, 0, 450, 300)> supermarket that  Xelia's rural-middle-of-the-woods area has to offer.\n[]>roaches: I wanna get bread.\n[]>argo: Want me to come with?\n[]>roaches: Sure.\n[]>xelia: Great.\n[]>roaches{target|1}: Where actually is the bread here.\n[]>argo{target|1}: I have no fucking idea.\n[]>roaches: Welp.\n[]>roaches: Time to search.\n[]>harshnoise: Sorry I couldnt make it yesterday, had to put some ink into someone again.\n[]>xelia: Its fine.\n[]>xelia: Argo was there.\n[]>xelia: Not like I wanted much attention anways.\n[]>harshnoise: Fair.\n[]>xelia: Wanna get rose?\n[]>harshnoise: I usually prefer white.\n[]>xelia: Me too but I dont know if the others vibe with that.\n[]>harshnoise: I dont even know if they drink wine.\n[]>argo: So what's going on with you? Anything new happening?\n[]>roaches: Not really.\n[]>roaches: Did you hear that noise trashed our toilet.\n[]>argo: What.\n[]>roaches: Its sledgehammer pet.\n[]>roaches: Uhm.\n[]>roaches: Fell in.\n[]>argo: Roaches, not gonna lie.\n[]>argo: ...\n[]>roaches: ...\n[]>argo: That's kinda hilarious.\n[]>roaches: Agreed.\n[]>roaches: Just kinda sucks for quality of life.\n[]>roaches: Here, hold this.\n[]>argo: Pickles?\n[]>roaches: Been craving pickles so bad recently.\n[]>argo: Awesome.\n[]>roaches: What do you want?\n[]>argo: Uhm.\n[]>argo: The vegan cheese they have here is pretty good.\n[]>roaches: Then let's get that.\n[]>xelia: Why are we getting brandy again.\n[]>harshnoise: Roaches.\n[]>xelia: Right.\n[]>xelia: I don't know noise I can't find shit here.\n[]>xelia: You have some of the most fucked up alcohol preferences out of anyone I know.\n[]>harshnoise: Maybe they dont have it here.\n[]>xelia: Found it.\n[]>harshnoise: Awesome.\n[]>roaches: Lets get some juice too.\n[]>argo: Oh and detergent.\n[]>roaches: What.\n[]>argo: I just forgot that I needed some until now and then I can take it back with me later.\n[]>roaches: God you fucking weirdo.\n[]>argo: Heavens forbid people are weird.\n[]>roaches: Yeah.\n[]>roaches: Fucking freaks deserve to be gutted and hanged.\n[]>argo: You just wanna fuck the entrails.\n[]>roaches: I elect to not address these allegations.\n[]>harshnoise: By the way, here.\n[]>xelia: So we got brandy, white wine, and root beer.",
 			"1749965502.351--9223372036854733711": "[]>",
 			"1749968124.779--9223372036854733419": "[]>xelia: argo\n[]>xelia: do you love her\n[]>argo: i do\n[]>argo: so so much\n[]>xelia: then write a goddamn apology ffs\n[]>xelia: cut the shit with that other girlie\n[]>xelia: and communicate *some* *any* boundaries with nessa once the dust has settled\n[]>xelia: jfc\n[]>argo: will do\n[]>argo: thank you",
 			"1749968245.499--9223372036854733273": "[]>xelia: intetested?\n[]>argo: idk...\n[]>xelia: want pictures?\n[]>xelia: i cqn take some pictures for you\n[]>argo: iek dont 2anna see Them rn\n[]>argo: do it Hut dont sendnthem\n[]>argo: ill decidebifnibwanna see Them later",
-			"1749969110.812--9223372036854733155": "[]>haley{target|1}: Nah.\n[]>audrey{target|1}: What do you mean, nah?\n[]>haley: She's too gay.\n[]>audrey: You gotta stop speaking in fucking riddles.\n[]>haley: I dunno! Some shit about Argo and whatever.\n[]>audrey: Just pick up the phone... whatever.\n[]>haley: Exactly.\n[]>haley: Whatever.",
+			"1749969110.812--9223372036854733155": "[]>haley{target|1}: Nah.\n[]>audrey{target|1}: What do you mean, nah?\n[]>haley: Bitch is too gay.\n[]>audrey: ...\n[]>audrey: What?\n[]>audrey: You gotta stop speaking in fucking riddles.\n[]>haley: I dunno! Some shit about Argo and whatever.\n[]>audrey: Just pick up the phone... whatever.\n[]>haley: Exactly.\n[]>haley: Whatever.",
 			"1749970831.560--9223372036854733116": "[]>narrator: Argo tries not to acknowledge the weight of its conscious, and this'll haunt it eventually in the aftermath. For now, literally do anything more to stave off the existential grindstone of grief and bring more puppies home.\n[]>narrator: The sun is just coming up, and where the blood of girls couldn't reach, the cracks in the concrete are filled by the colors of dusk.\n[]>narrator: With half an hour to go, Argo [enumation]pulls up to the shelter.",
 			"1749972202.293--9223372036854732933": "[]>narrator: Noni is sobbing her eyes out again at the recovery center, buried under blankets. Maya is pacing anxiously around Roaches' and Noises' living room. Roaches is asleep and Noise is putting new ink in some faggot. The buzzing is pissing Maya off. Maya leaves to pace around outside. Haley is depressed as fuck. Argo and Nessa are in pain over each other and not talking about it but still in bed together, their anxieties having become cardiac manifest just a latent elevated heartbeat that abates when they fuck. Xelia and Leah are not thinking about each other. It would never occur to them to consider each other's stances in life currently.\n[]>narrator: Audrey went out to the canyon today. a beautiful local rock formation, with a camping chair on top because audrey just placed it there andthen herself in it. She cracks open the first beer from the solo crate. Brain off, stare otu into nature, listen to good music, do. not. give. a fuck. about anything else happening in the world. Surely its not to push aside the frustation of haley and nessa disappareing for days on end nowadays, or the general tension with leah. This is the life, audrey thinks meaning wishes. She inhales the dry desert air as distant car traffic and occasionally gun shots travel through it, and luckily for her this doesn't concern her one bit.",
 			"1749974277.854--9223372036854732823": "[]>xelia: so now that were all here, wanna make your announcement?\n[]>harshnoise: announcement\n[]>argo: dont frame it like that\n[]>harshnoise: well?\n[]>harshnoise: is it not an announcement?\n[]>argo: ugh.\n[]>argo: it is.\n[]>xelia: hehe\n[]>argo: i mean its nothing major, iev just started dating someone\n[]>harshnoise: oh, nice.\n[]>roaches: that's adorable.\n[]>xelia: wanna tell us anything more?\n[]>argo: I mean...\n[]>argo: her name is nessa\n[]>argo: we're both into psychedelics\n[]>argo: and\n[]>argo: god\n[]>argo: I mean you're all col I know that\n[]>argo: but\n[]>argo: man we fucking cut each other on our second date\n[]>argo: ...\n[]>roaches: but like... horny, right?\n[]>argo: so fucking horny, you wuldn't believe\n[]>argo: I love her so fucking much\n[]>argo: our music taste is also vaguely compatible, which is nice\n[]>argo: overall, it's just nice talking to her\n[]>argo: we have good convos\n[]>argo: like one of the first convos we had literally was about our self harm habits\n[]>roaches: that's lovely\n[]>harshnoise: totally\n[]>harshnoise: im happy for you\n[]>xelia: exactly\n[]>xelia: how much of a freak is she?\n[]>argo: i mean\n[]>argo: pretty freaky?\n[]>argo: evidently\n[]>xelia: yeah but\n[]>xelia: how about the really difficult stuff\n[]>argo: I'm not sure yet\n[]>argo: hasn't come up\n[]>xelia: hope that wont cause any issues\n[]>argo: i doubt it\n[]>argo: even if she's not into it, i doubt slash hope she wouldn't have any issues with it\n[]>argo: and...\n[]>argo: i mean...\n[]>argo: I've also just not been in many headspaces like that recently\n[]>argo: that's the power of being raelly fucking gay\n[]>roaches: and also bpd\n[]>argo: and also bpd but we dont talk about that for now\n[]>argo: oh yeah, she also has it\n[]>argo: we're so normal about each other\n[]>harshnoise: then blessed be us that we could get you out here before you get lost in her\n[]>argo: come on\n[]>harshnoise: just teasing\n[]>roaches: hehe\n[]>xelia: I'm genuinely happy for you though\n[]>xelia: I hope it works out\n[]>argo: thanks\n[]>narrator: The gang continues shooting the shit and talking about what they're getting up to, music they're listening to, the new and deprecated sources of highly problematic online pornography, shit of that nature. Eventually, they arrive at Xelia's house by the shore, and on the outside of this haven, the world has gotten a few hours older again.",
@@ -21736,7 +21946,7 @@
 			"1750144005.110--9223372036854725336": "[]>haley: but... fuck.\n[]>haley: I'm sorry but you texting and hanging out with roaches so much just feels like cheating",
 			"1750157238.939--9223372036854724307": "[]>leah: you came to me begginffor help\n[]>leah: which i gladly lent\n[]>leah: and now i want the compensation for what i did for you\n[]>leah: surgical supplies aint cheap you know that. especially not during night shift\n[]>audrey: oh dome on leah I really have no fucking cash at hand at the moment\n[]>leah: maybe you would if i didn't smell the moonshine on your breath from here",
 			"1750171636.130--9223372036854723219": "[]>narrator: The hours drag on, and eventually Argo finds itself at the doorstep to Nessa's apartment again. There is an uneasy tension between the two, following Nessa's perceived betrayal, but then again, they also immediately cuddle and grind against each other and fuck maybe it doesn't matter much if that happened because spending time in the same room together is the most powerful feeling in the universe and god please taste me let me taste you i love you you're so fucking delicious and [shake rate=20.0 level=5 connected=1]fuck this fucking phone![/shake]",
-			"1750171686.230--9223372036854723217": "[]>argo{target|3}:but can i still come over after my shift\n[]>vanessa{target|3}:sure\n[]>argo: hug\n[]>vanessa: hug\n[]>argo: ily",
+			"1750171686.230--9223372036854723217": "[]>argo{target|3}:but can i still come over after my shift\n[]>argo: nya?\n[]>vanessa{target|3}:sure\n[]>argo: yay\n[]>argo: hug\n[]>vanessa: you're also still gonna show me your music right\n[]>argo: ofc!\n[]>argo: just gotta find the time for it\n[]>vanessa: mhm\n[]>argo: well get to it im sorry\n[]>argo: hug\n[]>argo: hug back?\n[]>vanessa: hug\n[]>argo: yippie\n[]>argo: ily",
 			"1750226994.459--9223372036854722162": "[]>narrator: About a quarter day later, Audrey falls from the couch with a flurry of expletives, before mumbling whatever. Her process of convincing Leah to give her Argo's number consists of nothing but vaguely expressing her want to get to know it, a few pleases and come ons and what's it to you, and ultimately Leah scribbles out a number on one of her business cards she has on the kitchen counter before letting Audrey know how pathetic she is for this. Audrey flicks and bends it as she talks.",
 			"1750227402.100--9223372036854722060": "[]>argo: It's mostly... just mental illness. I mean obviously.\n[]>argo: BPD shit where you love someone so much you hurt yourself over not having them in your life anymore type shit.\n[]>vanessa: Shit...\n[]>vanessa: I mean, same kinda. At least the BPD part.\n[]>argo: Heh. Awesome.\n[]>vanessa: Still sorry though.\n[]>argo: It's fine.\n[]>argo: At least that gives it a fairly neat framing.\n[]>argo: I know my triggers.\n[]>argo: Which helps fuck all.\n[]>vanessa: Yeah, lmao.\n[]>argo: But at least I know why!\n[]>vanessa: Ayyy!\n[]>argo: Hehe.\n[]>vanessa: ...\n[]>argo: What about you?",
 			"1750231567.677--9223372036854720981": "[]>",
@@ -21864,7 +22074,7 @@
 			"1750594984.387--9223372036854684464": "[]>audrey: Want me to stay here?\n[]>maya: ...\n[]>maya: I think I wanna be alone for a bit\n[]>audrey: Gotcha\n[]>audrey: ...\n[]>audrey: Be back tomorrow?\n[]>maya: ...\n[]>maya: We'll see\n[]>maya: ...\n[]>maya: Text about it\n[]>maya: ...\n[]>maya: Gonna let Nessa know tomorrow?\n[]>audrey: Nah\n[]>audrey: Gonna do that tonight once I'm home.\n[]>audrey: Have it at least broached, you know?\n[]>maya: Mhm.\n[]>maya: ...\n[]>audrey: ...\n[]>audrey: Talk to you later\n[]>maya: ...",
 			"1750595154.888--9223372036854684355": "[]>narrator:Vanessa is on her way to Maya, making ure she doesn't unecessarily harm herself.",
 			"1750595272.839--9223372036854684273": "[]>narrator:argo and nessa are looking at ea cho thers reflections in the car windows. audrey is vaguely focused on the road but akso feels like drowning in a cloud of soot fuck heart rates.\n[]>narrator: Nessa is in bed. She misses Argo.",
-			"1750604158.061--9223372036854683346": "[]>audrey:...\n[]>audrey: So... How're things between Maya and you now?\n[]>haley: Bro I don't know.\n[]>audrey: What do you mean?\n[]>haley: Things are just fucked.\n[]>haley: Thinking about it pisses me off\n[]>haley: And stings\n[]>haley: Doesn't help roaches is just an upgrade against me for maya\n[]>audrey: What?\n[]>haley: Keep thinking how reaches is just... better\n[]>audrey: Nah come on why do you say that\n[]>haley: Come on I know how these bitches function\n[]>haley: I wanna kill roaches\n[]>haley: They're such a pain in the ass\n[]>audrey: Haley?\n[]>haley: I don't know anymore\n[]>haley: I'm just pissed at the world\n[]>haley: I dont actually wanna kill Roaches.",
+			"1750604158.061--9223372036854683346": "[]>audrey:...\n[]>audrey: So... How're things between Maya and you now?\n[]>haley: Bro I don't know.\n[]>audrey: What do you mean?\n[]>haley: Things are just fucked.\n[]>haley: Thinking about it pisses me off\n[]>haley: And stings\n[]>haley: Doesn't help Roaches is just an upgrade against me for maya\n[]>audrey: What?",
 			"1750604330.181--9223372036854683270": "[]>narrator: ",
 			"1750604463.912--9223372036854683061": "[]>narrator: there used to be a time where haley knew what she was staysing alive for, but it's awfully straining to remember. best not to think on it. or maybe... ah fuck it. i dont see why i should hold onto hope anymore. i think this body is just expired, haley vaguely thinks through the haze of her corroding veins.\n[]>narrator: she's already out here.\n[]>narrator: what's a few more steps?",
 			"1750604513.225--9223372036854683059": "[]>",
@@ -21882,7 +22092,7 @@
 			"1750663266.974--9223372036854680869": "[]>narrator: The rest of the gathering is unremarkable from the outside, nothing but a group of friends hanging out. They all know that things will just move on now. That life moves on. And that they will be ground up in history if they do not move with it in due time. Tears are shed, feelings aired in the silence between breaths, no one has anything to say.\n[]>narrator: Audrey is sorry for having snapped at Haley. Maya is trying to be at peace with already moving on before Haley died. She leans against Roaches. Nessa is cring into Argo. Argo has nothing. Haley has become a concept.",
 			"1750663515.393--9223372036854680639": "[]>argo{target|3}: hey do you know what happened with nessa\n[]>audrey{target|3}: nessa?\n[]>argo: we were hanging out and she just started crying and asked me to leave an i have no idea why\n[]>audrey: fuck me\n[]>audrey: haley died\n[]>argo: -\n[]>audrey: yeah\n[]>argo: fuck im so sorry\n[]>argo: can i do anything for you\n[]>audrey: not atm\n[]>audrey: news is still fresh\n[]>audrey: thats it\n[]>argo: my condolences\n[]>argo: let me know if i can do anything for you\n[]>audrey: ttyl argo",
 			"1750664317.701--9223372036854680287": "[]>haley: i started shooting up recently\n[]>audrey{target|8}: what\n[]>audrey: h?\n[]>haley: meth obv\n[]>haley: my life is fn over\n[]>haley: fucking over\n[]>audrey: it literally is not\n[]>audrey: all of us are struggling or clean from all kinds of shit\n[]>audrey: and were still around\n[]>audrey: things get better\n[]>audrey: or are manageable ffs\n[]>haley: and look at nessa relapsing on cutting now\n[]>audrey: thats not the sme\n[]>haley: damn didnt know you were up to defending that shit now\n[]>haley: i dont wanna hear it\n[]>haley: i just wanna escape this fucking body\n[]>haley: and be high as a kite as im doing it\n[]>haley: im an actual failure\n[]>haley: like wtf\n[]>haley: this life is over\n[]>haley: i dont wanna be in rehab for the rest of my life\n[]>haley: i dont even wannt be in rehab\n[]>haley: at all\n[]>audrey{target|8}: you dont have to go to rehab\n[]>audrey: you can suffer in life and be better in the end\n[]>audrey: you can fucking do drugs\n[]>audrey: but please just stay alive\n[]>haley: oh yea so i can make you feel like you actually gave a shit right\n[]>haley: fuck off\n[]>haley: god\n[]>haley: I dont owe any of you staying alive fuck you\n[]>audrey: what",
-			"1750667021.000--9223372036854679779": "[]>narrator: When Audrey heads up the apartment, not much has changed. The takeout pizza boxes are still in the kitchen, Maya is still in bed but clinging onto much more disturbed thoughts now. Audrey wouldn't approve. Her opinion doesn't matter.\n[]>audrey{target|0}: <call:hide_window(3)>Hey. \n[]>maya: ...\n[]>maya: Hi.\n[]>audrey: What's up?\n[]>maya: Fucking suffering.\n[]>audrey: I know.\n[]>audrey: Tell me what's on your mind.\n[]>maya: ...\n[]>maya: [shake rate=20.0 level=2 connected=1]mnmfvmnfgnmf[/shake]\n[]>maya: I...\n[]>maya: I left her alone when I shouldn't have\n[]>maya: I knew I shouldn't have left\n[]>maya: I...\n[]>maya: I...\n[]>maya: I fucking killed her\n[]>maya: Because I'm such a self-centered piece of shit\n[]>audrey: Maya jesus fucking christ\n[]>audrey: You're many things but definitely not self-centered\n[]>audrey: You are such a great friend\n[]>audrey: Fuck, even reached out to Noni when I was too much of a fuckup to treat her right\n[]>audrey: You did that without a second thought\n[]>audrey: ...\n[]>maya: ...\n[]>audrey: ...\n[]>audrey: Been having the same thoughts though.\n[]>maya: How do you mean?\n[]>audrey: Like we fought just as much that evening\n[]>maya: Yeah\n[]>maya: You did\n[]>audrey: Fuck...\n[]>audrey: I'm...\n[]>audrey: I'm sorry I fucked up okay?\n[]>maya: ...\n[]>audrey: ...\n[]>maya: Tissue\n[]>audrey: ...\n[]>audrey: Like I know I shouldn't have lost my temper but fuck\n[]>audrey: ...\n[]>maya: Looking... <ap>Looking for someone to blame won't bring her back\n[]>audrey: ...\n[]>maya: She said... <ap>She said in her last messages that she wasn't enough \n[]>maya: Did I treat her with that little gratitude?\n[]>audrey: You didn't \n[]>maya: You say that\n[]>maya: But evidently it wasn't enough\n[]>maya: I straight up told her im moving on from us for fucks sake\n[]>maya: ...\n[]>audrey: Oh my god maya that wasn't your fault damn it\n[]>audrey: There were loads of factors at play here\n[]>audrey: Haley is depressed as fuck\n[]>audrey: ...\n[]>audrey: Fuck dog\n[]>audrey: Things are fucked, okay?\n[]>audrey: And you just said yourself that blame won't do anything\n[]>maya: ...\n[]>audrey: Theres a difference between blame and responsibility\n[]>audrey: But responsibility also won't bring her back\n[]>audrey: ...\n[]>audrey: Fuck\n[]>maya: ...\n[]>maya: Mhm.\n[]>maya: ...\n[]>maya: I think I'm just a monster\n[]>audrey: Fuck, Maya.\n[]>audrey: No.\n[]>maya: I'm sorry...\n[]>maya: I'm such a monster\n[]>audrey: What makes you say this bullshit?\n[]>maya: We... had a fight and I said some nasty things \n[]>maya: Et cetera et cetera\n[]>maya: I could've given her more grace like she always did to me\n[]>maya: But no\n[]>maya: Instead I hold her to standards not even I could hold up\n[]>maya: ...\n[]>maya: I hate myself\n[]>audrey: Maya...\n[]>maya: SHE DIDN'T FUCKING DESERVE THIS!\n[]>maya: This could've been prevented!\n[]>maya: This...\n[]>maya: This is hell\n[]>audrey: ...\n[]>audrey: I know it is.\n[]>maya: FUCK!\n[]>maya: ...\n[]>audrey: ...\n[]>audrey: Also still don't wanna talk about the admin shit?\n[]>maya: It's nothing...\n[]>maya: Just...\n[]>maya: Funeral arrangements I guess.\n[]>maya: Or procession with the others.\n[]>maya: Whatever.\n[]>maya: ...\n[]>audrey: ...\n[]>audrey: Like...\n[]>audrey: ...\n[]>audrey: Have you started thinking about funeral arrangements yet?\n[]>audrey: ...\n[]>audrey: Too forward?\n[]>maya: ...\n[]>maya: Whatever.\n[]>maya: Not like she'd get anything from the state\n[]>maya: Just gotta do it on our own again\n[]>audrey: Mhm...\n[]>maya: ...\n[]>maya: Might...\n[]>maya: Might bring her to the hole again\n[]>maya: Like where else are we gonna go, right?\n[]>maya: But also...\n[]>maya: Fuck...\n[]>audrey: ...\n[]>audrey: Tissue?\n[]>maya: ...\n[]>maya: Thanks.\n[]>maya: ...\n[]>maya: Her body is really roughed up\n[]>maya: ...\n[]>maya: Might not wanna have the others see her\n[]>maya: ...\n[]>audrey: You've seen her?\n[]>maya: She's so...\n[]>maya: ...\n[]>maya: I'm so sorry.\n[]>maya: ...\n[]>audrey: You're not responsible for what she did to herself\n[]>maya: ...\n[]>maya: Whatever\n[]>maya: ...\n[]>maya: We were together\n[]>maya: I have a baseline responsibility\n[]>maya: ...\n[]>maya: And...\n[]>maya: I...\n[]>maya: ..\n[]>maya: [color=#a8b6ef][shake rate=10.0 level=3 connected=1]mfnghmfghf[/shake][/color]\n[]>audrey: Fuck, Maya\n[]>audrey: I'm so sorry\n[]>maya: It's whatever\n[]>maya: ...\n[]>audrey: ...\n[]>audrey: Would you wanna have me there\n[]>maya: Where?\n[]>audrey: At the hole\n[]>maya: ...\n[]>maya: Can't say yet\n[]>audrey: Fair\n[]>maya: ...\n[]>audrey: ...\n[]>audrey: Wait...\n[]>audrey: Youre not thinking of shooting another tape, are you?\n[]>maya: ...\n[]>maya: Not...\n[]>maya: [i]*sigh*[/i] \n[]>audrey: I'm gonna fucking kill roaches\n[]>maya: AUDREY!\n[]>maya: I didn't even say anything!\n[]>maya: ...\n[]>maya: I just... wanna find her a nice spot under the trees.\n[]>audrey: Mhm.\n[]>audrey: Like you did with Laura.\n[]>maya: If you bring that up against me one more time...\n[]>audrey: What then?\n[]>maya: Just get off my case about it ok?\n[]>maya: Please just let me grieve at least.\n[]>maya: Audrey, fuck.\n[]>audrey: Did Haley agree to this?\n[]>maya: Really?\n[]>maya: Starting this again?\n[]>maya: NOW?\n[]>audrey: YES NOW!\n[]>maya: FUCK!\n[]>maya: OKAY FINE!\n[]>maya: ...\n[]>maya: She agreed to it once.\n[]>maya: For me to use her body.\n[]>audrey: You gotta be shitting me.\n[]>audrey: When was that??\n[]>maya: I don't know! Like a few months ago!\n[]>audrey: But don't you think things have chagned since then\n[]>maya: We never talked about it again\n[]>audrey: Are you sure you didn't coerce her into it?\n[]>maya: If you're insinuating what I think you are... drop it.\n[]>audrey: Im just saying, you doing your puppy shit and getting fucked by disgusting freaks is not the most pious of positions.\n[]>maya: As if you're in a position to talk!\n[]>audrey: At least I have some fucking morals!\n[]>maya: As if I don't! Audrey what the fuck are you saying?!\n[]>audrey: I. don't. give. a. shit. <ap>about. your. messed. up. morals.\n[]>audrey: Wasn't the tape enough once?\n[]>maya: That has nothing to do with it\n[]>audrey: Laura's dead. And now haley is too.\n[]>audrey: How many more. <ap>Of our girls. <ap>Are you gonna shove into this goddamn meatgrinder.\n[]>maya: This... has nothing to do with anything\n[]>maya: ...\n[]>maya: [shake rate=10.0 level=3 connected=1]That has nothing to do with it![/shake]\n[]>audrey: Uh huh.\n[]>audrey: Not reducing any inhibitions with that, surely.\n[]>audrey: \"Oh yeah I might die but I'm all taken care of by my necrophile partner!\"\n[]>audrey: Super healthy\n[]>maya: Are you out of your mind?\n[]>audrey: Excuse me???\n[]>maya: Urgh!!!\n[]>maya: Audrey!\n[]>maya: The same could be said for... <ap>setting up a fucking will\n[]>maya: Or... I don't know... <ap>Making sure your deadname isn't on your headstone!\n[]>maya: Do you think you actually give a shit when you're standing on the edge?\n[]>maya: The only thing shit like this changes is with how much worry you go out\n[]>maya: Why am I even arguing about this!\n[]>maya: Audrey. Care about anyone other than yourself. Just fucking once.\n[]>maya: You can fuck right off with prescribing what Haley and I agreed upon\n[]>maya: ...\n[]>maya: Dont you think I have my reservations?\n[]>maya: Its not even like I was actively considering it\n[]>maya: The hole is literally the place where she goes\n[]>maya: No debate on that , right?\n[]>audrey: ...\n[]>maya: Then stop insinuating I'm gonna fuck her again\n[]>maya: I just wanna grieve in peace\n[]>maya: And not have my way of grieving or past actions held against me for [shake rate=20.0 level=5 connected=1]ONE FUCKING DAY[/shake]\n[]>audrey: ...\n[]>audrey: I'm sorry.\n[]>audrey: I also just...\n[]>audrey: ...\n[]>audrey: Sorry.\n[]>maya: ...\n[]>maya: Leave.\n[]>maya: Please.\n[]>maya: She's your friend too\n[]>maya: You get to be at the funeral\n[]>maya: But don't you dare attack me or us until then.",
+			"1750667021.000--9223372036854679779": "[]>narrator: When Audrey heads up the apartment, not much has changed. The takeout pizza boxes are still in the kitchen, Maya is still in bed but clinging onto much more disturbed thoughts now. Audrey wouldn't approve. Her opinion doesn't matter.\n[]>audrey{target|0}: <call:hide_window(3)>Hey. \n[]>maya: ...\n[]>maya: Hi.\n[]>audrey: What's up?\n[]>maya: Fucking suffering.\n[]>audrey: I know.\n[]>audrey: Tell me what's on your mind.\n[]>maya: ...\n[]>maya: [shake rate=20.0 level=2 connected=1]mnmfvmnfgnmf[/shake]\n[]>maya: I...\n[]>maya: I left her alone when I shouldn't have\n[]>maya: I knew I shouldn't have left\n[]>maya: I...\n[]>maya: I...\n[]>maya: I fucking killed her\n[]>maya: Because I'm such a self-centered piece of shit\n[]>audrey: Maya jesus fucking christ\n[]>audrey: You're many things but definitely not self-centered\n[]>audrey: You are such a great friend\n[]>audrey: Fuck, even reached out to Noni when I was too much of a fuckup to treat her right\n[]>audrey: You did that without a second thought\n[]>audrey: ...\n[]>maya: ...\n[]>audrey: ...\n[]>audrey: Been having the same thoughts though.\n[]>maya: How do you mean?\n[]>audrey: Like we fought just as much that evening\n[]>maya: Yeah\n[]>maya: You did\n[]>audrey: Fuck...\n[]>audrey: I'm...\n[]>audrey: I'm sorry I fucked up okay?\n[]>maya: ...\n[]>audrey: ...\n[]>maya: Tissue\n[]>audrey: ...\n[]>audrey: Like I know I shouldn't have lost my temper but fuck\n[]>audrey: ...\n[]>maya: Looking... <ap>Looking for someone to blame won't bring her back\n[]>audrey: ...\n[]>maya: She said... <ap>She said in her last messages that she wasn't enough \n[]>maya: Did I treat her with that little gratitude?\n[]>audrey: You didn't \n[]>maya: You say that\n[]>maya: But evidently it wasn't enough\n[]>maya: I straight up told her im moving on from us for fucks sake\n[]>maya: ...\n[]>audrey: Oh my god maya that wasn't your fault damn it\n[]>audrey: There were loads of factors at play here\n[]>audrey: Haley is depressed as fuck\n[]>audrey: ...\n[]>audrey: Fuck dog\n[]>audrey: Things are fucked, okay?\n[]>audrey: And you just said yourself that blame won't do anything\n[]>maya: ...\n[]>audrey: Theres a difference between blame and responsibility\n[]>audrey: But responsibility also won't bring her back\n[]>audrey: ...\n[]>audrey: Fuck\n[]>maya: ...\n[]>maya: Mhm.\n[]>maya: ...\n[]>maya: I think I'm just a monster\n[]>audrey: Fuck, Maya.\n[]>audrey: No.\n[]>maya: I'm sorry...\n[]>maya: I'm such a monster\n[]>audrey: What makes you say this bullshit?\n[]>maya: We... had a fight and I said some nasty things \n[]>maya: Et cetera et cetera\n[]>maya: I could've given her more grace like she always did to me\n[]>maya: But no\n[]>maya: Instead I hold her to standards not even I could hold up\n[]>maya: ...\n[]>maya: I hate myself\n[]>audrey: Maya...\n[]>maya: SHE DIDN'T FUCKING DESERVE THIS!\n[]>maya: This could've been prevented!\n[]>maya: This...\n[]>maya: This is hell\n[]>audrey: ...\n[]>audrey: I know it is.\n[]>maya: FUCK!\n[]>maya: ...\n[]>audrey: ...\n[]>audrey: Also still don't wanna talk about the admin shit?\n[]>maya: It's nothing...\n[]>maya: Just...\n[]>maya: Funeral arrangements I guess.\n[]>maya: Or procession with the others.\n[]>maya: Whatever.\n[]>maya: ...\n[]>audrey: ...\n[]>audrey: Like...\n[]>audrey: ...\n[]>audrey: Have you started thinking about funeral arrangements yet?\n[]>audrey: ...\n[]>audrey: Too forward?\n[]>maya: ...\n[]>maya: Whatever.\n[]>maya: Not like she'd get anything from the state\n[]>maya: Just gotta do it on our own again\n[]>audrey: Mhm...\n[]>maya: ...\n[]>maya: Might...\n[]>maya: Might bring her to the hole again\n[]>maya: Like where else are we gonna go, right?\n[]>maya: But also...\n[]>maya: Fuck...\n[]>audrey: ...\n[]>audrey: Tissue?\n[]>maya: ...\n[]>maya: Thanks.\n[]>maya: ...\n[]>maya: Her body is really roughed up\n[]>maya: ...\n[]>maya: Might not wanna have the others see her\n[]>maya: ...\n[]>audrey: You've seen her?\n[]>maya: She's so...\n[]>maya: ...\n[]>maya: I'm so sorry.\n[]>maya: ...\n[]>audrey: You're not responsible for what she did to herself\n[]>maya: ...\n[]>maya: Whatever\n[]>maya: ...\n[]>maya: We were together\n[]>maya: I have a baseline responsibility\n[]>maya: ...\n[]>maya: And...\n[]>maya: I...\n[]>maya: ..\n[]>maya: [color=#a8b6ef][shake rate=10.0 level=3 connected=1]mfnghmfghf[/shake][/color]\n[]>audrey: Fuck, Maya\n[]>audrey: I'm so sorry\n[]>maya: It's whatever\n[]>maya: ...\n[]>audrey: ...\n[]>audrey: Would you wanna have me there\n[]>maya: Where?\n[]>audrey: At the hole\n[]>maya: ...\n[]>maya: Can't say yet\n[]>audrey: Fair\n[]>maya: ...\n[]>audrey: ...\n[]>audrey: Wait...\n[]>audrey: Youre not thinking of shooting another tape, are you?\n[]>maya: ...\n[]>maya: Not...\n[]>maya: [i]*sigh*[/i] \n[]>audrey: I'm gonna fucking kill roaches\n[]>maya: AUDREY!\n[]>maya: I didn't even say anything!\n[]>maya: ...\n[]>maya: I just... wanna find her a nice spot under the trees.\n[]>audrey: Mhm.\n[]>audrey: Like you did with Laura.\n[]>maya: If you bring that up against me one more time...\n[]>audrey: What then?\n[]>maya: Just get off my case about it ok?\n[]>maya: Please just let me grieve at least.\n[]>maya: Audrey, fuck.\n[]>audrey: Did Haley agree to this?\n[]>maya: Really?\n[]>maya: Starting this again?\n[]>maya: NOW?\n[]>audrey: YES NOW!\n[]>maya: FUCK!\n[]>maya: OKAY FINE!\n[]>maya: ...\n[]>maya: She agreed to it once.\n[]>maya: For me to use her body.\n[]>audrey: You gotta be shitting me.\n[]>audrey: When was that??\n[]>maya: I don't know! Like a few months ago!\n[]>audrey: But don't you think things have chagned since then\n[]>maya: We never talked about it again\n[]>audrey: Are you sure you didn't coerce her into it?\n[]>maya: If you're insinuating what I think you are... drop it.\n[]>audrey: Im just saying, you doing your puppy shit and getting fucked by disgusting freaks is not the most pious of positions.\n[]>maya: As if you're in a position to talk!\n[]>audrey: At least I have some fucking morals!\n[]>maya: As if I don't! Audrey what the fuck are you saying?!\n[]>audrey: I. don't. give. a. shit. <ap>about. your. messed. up. morals.\n[]>audrey: Wasn't the tape enough once?\n[]>maya: That has nothing to do with it\n[]>audrey: Laura's dead. And now haley is too.\n[]>audrey: How many more. <ap>Of our girls. <ap>Are you gonna shove into this goddamn meatgrinder.\n[]>maya: This... has nothing to do with anything\n[]>maya: ...\n[]>maya: [shake rate=10.0 level=3 connected=1]That has nothing to do with it![/shake]",
 			"1750668520.443--9223372036854679490": "[]>narrator:Vanessa is on her way to Maya, making ure she doesn't unecessarily harm herself.",
 			"1750670034.354--9223372036854679441": "[]>narrator: bolstered by their shared i-can't-believe-we're-both-mentally-ill-in-the-same-way solidarity, the two head out in the evening, and get some fried rice with veggies and tofu. nice, warm comfort food. yay. Then Nessa says good night, and heads home. Argo sent Noni back to reco before they fall asleep and let Nessa know about that too. She feels a little better now. Audrey didn't text Leah again. Maya didn't cry herself to sleep tonight. Tomorrow, she'll express her grief.",
 			"1750670830.746--9223372036854679437": "[]>maya{target|3}: hey\n[]>roaches{target|3}: hey\n[]>maya: tell your friend I wanna record something\n[]>roaches: EHEHEHEHEHE\n[]>roaches: gotchu!!\n[]>maya: disclaimer\n[]>maya: i probably dont wanna fuck her\n[]>maya: but\n[]>maya: i want a record of our lives\n[]>maya: of our existence\n[]>maya: our rites\n[]>maya: somethnig of that nature\n[]>roaches: ooooo??\n[]>maya: footage of the burial at the hole\n[]>maya: I'd welcome you to be in it\n[]>maya: we can talk specifics in the group\n[]>maya: at forgot her name's house\n[]>roaches: xelia\n[]>maya: xelia, right\n[]>roaches: I'll give her your contact?? :3c\n[]>maya: sure\n[]>roaches: AWESOME\n[]>roaches: god im so excited\n[]>roaches: also still sorry for your loss\n[]>roaches: FUCK it hurts\n[]>roaches: yeah im also positively sad about it :(\n[]>maya: yeah\n[]>maya: been going through it the last few days\n[]>maya: even had a fallout with afriend bc of it\n[]>maya: I'll tell you some other time\n[]>roaches: UGH FUCK THAT\n[]>roaches: but yeah dfjkbgdf see ya whenever we arrange the shit\n[]>roaches: at xelias\n[]>roaches: yk.\n[]>maya: yeah\n[]>roaches: swagalicious\n[]>maya: you're way too hyper for this\n[]>roaches: oops sorry\n[]>roaches: ill tone it down\n[]>maya: no actually its a welcome change of pace by now\n[]>maya: just don't expect much energy from me\n[]>roaches: as if you being unresponsive ever was an issue for me :3\n[]>maya: ...\n[]>maya: ttyl roachies\n[]>roaches: <3 mwah",
@@ -21933,7 +22143,12 @@
 			"1751036110.970--9223372036854671301": "[]>maya: Like... what am I even doing this for?\n[]>maya: Some sense of closure?\n[]>maya: So I can blame it on some ritualistic shit for myself?\n[]>harshnoise:...\n[]>xelia:...\n[]>xelia: If you want my thoughts...",
 			"1751036459.864--9223372036854671238": "[]>maya: But regardless... they're not the reasons I'm doing this.\n[]>maya: I'm doing this for myself.\n[]>maya: I want Haley to have a flare brighter than she could've ever imagined.\n[]>maya: ...",
 			"1751036460.503--9223372036854671236": "[]>maya: ...\n[]>maya: Fuck it.\n[]>maya: All of the things you said are true... I think.\n[]>maya: You have some choice of words that I couldn't really follow right now.\n[]>xelia: It happens, apologies.\n[]>maya: Mhm.\n[]>maya: ...\n[]>maya: I guess if you wanted to rationalize this shit, those would be good reasons.",
-			"1751037997.210--9223372036854671198": "[]>noni:TODO talk more about audreys and nonis feelings at the reco checkup\nnoni can ask how they met!",
+			"1751037997.210--9223372036854671198": "[]>noni: ...\n[]>noni: How... did you and argo meet?\n[]>audrey: Oh god not that story.\n[]>noni: ...Sorry.\n[]>audrey: Well, originally I just stumbled into it drunk at the gas station it works at.\n[]>audrey: Kinda developed a crush instantly.\n[]>audrey: Or at least thought it was cute.\n[]>audrey: Wanted to get to know it better.\n[]>audrey: And stuff.\n[]>noni: ...\n[]>audrey: Then we...\n[]>audrey: I shot myself in the dick.\n[]>noni: ...\n[]>noni: Ow?\n[]>audrey: Kinda, yeah.\n[]>noni: Mhm.\n[]>noni: Sorry?\n[]>audrey: No no, all good.\n[]>noni: Oki ^_^\n[]>audrey: ...\n[]>audrey: So... we ran into it randomly, we being me and a few friends.\n[]>audrey: And through another friend I got its contact and the rest is history.\n[]>noni: Also... girlfriend?\n[]>audrey: Yeah, nessa also comes from that.\n[]>noni: Mhm.\n[]>noni: ...\n[]>noni: ;-;\n[]>audrey: Aw, come here.\n[]>noni: ...\n[]>audrey: Okay, or not.\n[]>audrey: All good.\n[]>audrey: ...\n[]>noni: ...\n[]>audrey: I know how painful it is.\n[]>noni: Weh.",
+			"1751091623.817--9223372036854670104": "[]>haley: Roaches is like...\n[]>haley: Me.\n[]>haley: In a sense.\n[]>haley: But more extreme about... things.\n[]>audrey: ...\n[]>haley: No, I will not elaborate.\n[]>haley: But maya gets off on that.\n[]>audrey: On...?\n[]>haley: It being a freak you fucking retard.\n[]>audrey: More of a freak than you.\n[]>haley: Have you finally discovered your hearing aid god.\n[]>audrey: Oh damn, didnt know that was possible.\n[]>haley: Oh... shut the fuck up.\n[]>audrey: Hehe.\n[]>haley: Not funny.\n[]>audrey: ...\n[]>haley: ...\n[]>audrey: Just means that maya has atype right.\n[]>haley: ...\n[]>audrey: ...\n[]>audrey: I've never even met them.\n[]>haley: You're not missing a whole it.\n[]>haley: That cunt is like...\n[]>haley: Fuck man.\n[]>haley: Just kinda disgusting?\n[]>haley: Unwashed.\n[]>haley: All the drugs.\n[]>haley: That kinda shit.\n[]>audrey: And you're... fucked up about that?\n[]>haley: From maya's point of view, yeah.\n[]>haley: I keep fucking thinking how Roaches is just... better.\n[]>audrey: Nah... come on, why do you say that?\n[]>haley: Because I fucking know how these bitches function.\n[]>haley: I wanna kill Roaches.\n[]>haley: They're such a pain in the ass.\n[]>audrey: Haley?\n[]>haley: I don't know anymore.\n[]>haley: ...\n[]>haley: I dont actually wanna kill Roaches.\n[]>haley: I...\n[]>audrey: ...\n[]>haley: ...\n[]>haley: Fuck man...\n[]>haley: ...\n[]>audrey: Are you still on that shit?\n[]>haley: ...\n[]>haley: Yeah.\n[]>haley: ...\n[]>haley: You're not gonna get me to stop.\n[]>haley: ...\n[]>haley: If that's what you're asking.\n[]>haley: [i]*inhale*[/i]\n[]>haley: ...\n[]>haley: Ugh fuck.\n[]>audrey: ...\n[]>audrey: Sure you don't even wanna give rehab a try?\n[]>haley: ...\n[]>haley: Bitch...?\n[]>haley: Fuck you.",
+			"1751092007.714--9223372036854670016": "[]>audrey: \"Oh yeah I might die but I'm all taken care of by my necrophile partner!\"\n[]>audrey: Not reducing any inhibitions with that, surely.\n[]>audrey: Super healthy\n[]>maya: Are you out of your mind?\n[]>audrey: Excuse me???\n[]>maya: Urgh!!!\n[]>maya: Audrey!\n[]>maya: The same could be said for... <ap>setting up a fucking will\n[]>maya: Or... I don't know... <ap>Making sure your deadname isn't on your headstone!\n[]>maya: Do you think you actually give a shit when you're standing on the edge?\n[]>maya: The only thing shit like this changes is with how much worry you go out\n[]>maya: Why am I even arguing about this!\n[]>maya: Audrey. Care about anyone other than yourself. Just fucking once.\n[]>maya: You can fuck right off with prescribing what Haley and I agreed upon\n[]>maya: ...\n[]>maya: Don't you think I have my reservations?\n[]>maya: It's not even like I was actively considering it\n[]>maya: The hole is literally the place where she goes\n[]>maya: No debate on that, right?\n[]>audrey: ...\n[]>maya: Then stop insinuating I'm gonna fuck her again\n[]>maya: I just wanna grieve in peace\n[]>maya: And not have my way of grieving or past actions held against me for [shake rate=20.0 level=5 connected=1]ONE FUCKING DAY[/shake]\n[]>audrey: ...\n[]>audrey: I'm sorry.\n[]>audrey: I also just...\n[]>audrey: ...\n[]>audrey: Sorry.\n[]>maya: ...\n[]>maya: Leave.\n[]>maya: Please.\n[]>maya: She's your friend too\n[]>maya: You get to be at the funeral\n[]>maya: But don't you dare attack me or us until then.",
+			"1751092008.331--9223372036854670014": "[]>audrey: Oh so she just died on her own?\n[]>maya: ...\n[]>maya: What are you saying right now?\n[]>audrey: No underlying motivations...\n[]>maya: You don't get to make me fucking solely responsible for her death\n[]>audrey: Likewise\n[]>audrey: Because at least I can say that I didn't fucking...\n[]>audrey: Let her live on a fucking snuff tape\n[]>maya: DON'T YOU FUCKING DARE\n[]>maya: I DIDN'T KILL HER\n[]>audrey: Oh excuse me for conflating some of your necrofuck terminology\n[]>maya: You know what snuff is\n[]>maya: This is not that\n[]>maya: Audrey\n[]>audrey: ...\n[]>audrey: But you don't get to pretend like the other mindset is much better\n[]>maya: ...",
+			"1751093107.152--9223372036854669720": "[]>haley{target|1}:Please let me be there for you one more time.\n[]>haley: I know I've failed ar it and have been not enough in the last.\n[]>haley: But I'd rather try and fail over and over again than know someone else to fill that role for you.",
+			"1751093117.446--9223372036854669679": "[]>narrator: Haley is currently high on a cocktail of speed and meth and her chest hurts so so fucking bad and she keeps talking to herself and ruminating her pain and wallowing in despair and bathing in heartbreak and it is all so horrible.",
 			"amber-is-happy": "[]>amber{amber-emotion|happy}: I'm really happy to hear that! <mp>I think you're cool too!"
 		},
 		"text_lead_time_other_actor": 0.0,
