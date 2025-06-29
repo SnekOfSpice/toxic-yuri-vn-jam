@@ -219,6 +219,19 @@ theme_override_font_sizes/font_size = 30
 text = "Load"
 alignment = 2
 
+[node name="LoadLabel" type="Label" parent="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer/LoadButton"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 89.5
+offset_top = -10.5
+offset_right = 753.5
+offset_bottom = 10.5
+grow_vertical = 2
+text = "Leered: 20%"
+
 [node name="EpilogueButton" type="Button" parent="SubViewportContainer/SubViewport/CanvasLayer2/MarginContainer/VBoxContainer/HBoxContainer"]
 auto_translate_mode = 1
 visible = false
