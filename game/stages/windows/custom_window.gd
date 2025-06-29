@@ -12,6 +12,8 @@ var uid := 0
 @export var hide_on_ready := true
 @export var icon : Texture2D
 
+@onready var top_index : int = get_parent().get_child_count() - 1
+
 func  _ready() -> void:
 	#GoBackHandler.store_into_subaddress(false, visibilities_by_subaddress, "0.0.0")
 	uid = get_index()
@@ -76,13 +78,12 @@ func start_dragging():
 	drag_start_position = position
 	drag_start_index = get_index()
 	dragging = true
-	move_to_top()
-	drag_offset = get_local_mouse_position()
+	drag_offset = get_local_mouse_position().rotated(rotation)
 
 func move_to_top(force_open:=true):
 	if force_open:
 		open_if_closed()
-	get_parent().move_child(self, get_parent().get_child_count() - 1)
+	get_parent().move_child(self, top_index)
 
 func clamp_to_viewport():
 	await  get_tree().process_frame
@@ -93,10 +94,14 @@ func clamp_to_viewport():
 		0,
 		ProjectSettings.get_setting("display/window/size/viewport_height") - size.y)
 
+var last_pos:Vector2
 func _process(delta: float) -> void:
 	if dragging:
 		global_position = get_global_mouse_position() - drag_offset
 		clamp_to_viewport()
+		if global_position != last_pos and get_index() != top_index:
+			move_to_top()
+		last_pos = global_position
 		
 
 func serialize() -> Dictionary:

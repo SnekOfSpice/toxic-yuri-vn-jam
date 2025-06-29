@@ -712,6 +712,8 @@ func _on_line_reader_stop_accepting_advance() -> void:
 func is_window_overlapping(window_to_check:CustomWindow):
 	var rect_a = Rect2(window_to_check.position, window_to_check.size)
 	for window : CustomWindow in windows:
+		if not window.visible:
+			continue
 		if window == window_to_check:
 			continue
 		var rect_b = Rect2(window.position, window.size)

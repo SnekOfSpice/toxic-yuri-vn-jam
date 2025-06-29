@@ -1720,7 +1720,7 @@ func fix_punctuation(text:String) -> String:
 			ends_with_space = line.ends_with(" ")
 		var has_punctuation := false
 		var punctuation_marks := [
-			".", "?", "~", "!", ":", ";", "]", ">", "*", "<", "\"", "-"
+			".", "?", "~", "!", ":", ";", "]", ">", "*", "<", "\"", "-", "^"
 		]
 		for i in 10:
 			punctuation_marks.append(str(i))

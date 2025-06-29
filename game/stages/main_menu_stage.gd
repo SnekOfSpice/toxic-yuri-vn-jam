@@ -45,7 +45,7 @@ func _process(delta: float) -> void:
 
 func update_load_button():
 	find_child("LoadButton").visible = Options.has_savedata()
-	find_child("LoadLabel").text = "Leered: %s%" % int(Parser.get_game_progress_from_file(Options.get_savedata_path()) * 100)
+	find_child("LoadLabel").text = str("Leered: ", int(Parser.get_game_progress_from_file(Options.get_savedata_path()) * 100), "%")
 	
 
 func _gui_input(event: InputEvent) -> void:
