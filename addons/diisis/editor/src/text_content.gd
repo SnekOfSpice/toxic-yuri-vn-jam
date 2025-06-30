@@ -14,6 +14,7 @@ var used_arguments := []
 var tags := []
 var text_id : String
 var last_character_after_caret : String
+var caret_movement_to_do := 0
 
 var text_box : CodeEdit
 
@@ -126,9 +127,12 @@ func set_page_view(view:DiisisEditor.PageView):
 			text_box.size_flags_vertical = Control.SIZE_SHRINK_BEGIN
 			text_box.scroll_fit_content_height = false
 
+func set_caret_movement_to_do(value:int):
+	caret_movement_to_do = value
+	call_thread_safe("process_caret_movement")
 
-var caret_movement_to_do := 0
-func _process(delta: float) -> void:
+func process_caret_movement():
+	await get_tree().process_frame
 	if caret_movement_to_do != 0:
 		move_caret(caret_movement_to_do)
 		caret_movement_to_do = 0
@@ -409,9 +413,9 @@ func _on_text_box_text_changed() -> void:
 				text_box.insert_text_at_caret("()")
 				await get_tree().process_frame
 				text_box.set_caret_column(prev_col)
-				caret_movement_to_do = 1
+				set_caret_movement_to_do(1)
 			elif is_text_before_caret(str("<", Pages.auto_complete_context, ":", instr, "()")):
-				caret_movement_to_do = -1
+				set_caret_movement_to_do(-1)
 
 	var line_index = text_box.get_caret_line()
 	var col_index = text_box.get_caret_column()
@@ -434,24 +438,24 @@ func _on_text_box_code_completion_requested() -> void:
 	for arg_name in Pages.dropdown_dialog_arguments:
 		if is_text_before_caret(str(arg_name, "|}")):
 			Pages.auto_complete_context = arg_name
-			caret_movement_to_do = -1
+			set_caret_movement_to_do(-1)
 		elif is_text_before_caret(str(arg_name, "|")):
 			Pages.auto_complete_context = arg_name
 		elif is_text_after_caret("|"):
-			caret_movement_to_do = 1
+			set_caret_movement_to_do(1)
 
 	for control in ["func", "name", "clname", "var", "fact", "call", "ts_rel", "ts_abs", "comment"]:
 		if is_text_before_caret(str("<", control, ":>")):
-			caret_movement_to_do = -1
+			set_caret_movement_to_do(-1)
 			Pages.auto_complete_context = control
 			break
 	
 	for tag in BBCODE_TAGS:
 		if is_text_before_caret(str("=][/", tag, "]")):
-			caret_movement_to_do = -str("][/", tag, "]").length()
+			set_caret_movement_to_do(-str("][/", tag, "]").length())
 			break
 		elif is_text_before_caret(str("[/", tag, "]")):
-			caret_movement_to_do = -str("[/", tag, "]").length()
+			set_caret_movement_to_do(-str("[/", tag, "]").length())
 			break
 	
 	update_tag_hint()
