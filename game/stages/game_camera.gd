@@ -2,6 +2,7 @@ extends Camera2D
 class_name GameCamera
 
 @export var fade = 5.0
+@onready var vnui : Control = find_child("VNUI")
 
 var rng = RandomNumberGenerator.new()
 
@@ -67,6 +68,7 @@ func _process(delta: float) -> void:
 			x * sway_intensity,
 			y * sway_intensity),
 		sway_intensity_lerp_strength) + flat_offset
+	vnui.position = offset
 	sway_intensity_lerp_strength = lerp(sway_intensity_lerp_strength, 0.02, 0.03)
 	
 	if GameWorld.game_stage:
