@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 32,
+		"current_page_number": 33,
 		"ingest_capitalize": false,
 		"ingest_whitespace": true,
 		"page_view": 0,
@@ -486,7 +486,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854658317,
+		"id_counter": -9223372036854658241,
 		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa\nx: xelia\nl: leah\nf: franco\nno: noni\nb: blank",
 		"locales_to_export": [
 			"de_DE",
@@ -17255,7 +17255,7 @@
 					{
 						"address": "33.0",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -17265,7 +17265,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -17287,12 +17287,12 @@
 						},
 						"header": [],
 						"id": "1751261974.737--9223372036854659827",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 0.0,
+						"meta.line_index": 0,
 						"meta.selector": {
 							"selected": false
 						},
@@ -17301,7 +17301,7 @@
 					{
 						"address": "33.1",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -17311,7 +17311,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -17333,12 +17333,12 @@
 						},
 						"header": [],
 						"id": "1749997067.724--9223372036854731360",
-						"line_type": 2.0,
+						"line_type": 2,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 1.0,
+						"meta.line_index": 1,
 						"meta.selector": {
 							"selected": false
 						},
@@ -17347,7 +17347,7 @@
 					{
 						"address": "33.2",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -17357,7 +17357,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -17374,12 +17374,12 @@
 						},
 						"header": [],
 						"id": "1749627232.718--9223372036854743125",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 2.0,
+						"meta.line_index": 2,
 						"meta.selector": {
 							"selected": false
 						},
@@ -17388,7 +17388,7 @@
 					{
 						"address": "33.3",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -17398,7 +17398,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -17415,12 +17415,12 @@
 						},
 						"header": [],
 						"id": "1749625111.895--9223372036854743702",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 3.0,
+						"meta.line_index": 3,
 						"meta.selector": {
 							"selected": false
 						},
@@ -17429,7 +17429,7 @@
 					{
 						"address": "33.4",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -17439,7 +17439,48 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
+							"text_id": "1751275324.682--9223372036854658241"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1751275324.682--9223372036854658242",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "33.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -17456,21 +17497,21 @@
 						},
 						"header": [],
 						"id": "1750323492.556--9223372036854712839",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4.0,
+						"meta.line_index": 5,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "33.5",
+						"address": "33.6",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -17480,7 +17521,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -17497,21 +17538,21 @@
 						},
 						"header": [],
 						"id": "1749625196.913--9223372036854743698",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5.0,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": true
 					},
 					{
-						"address": "33.6",
+						"address": "33.7",
 						"conditionals": {
-							"behavior": 0.0,
+							"behavior": 0,
 							"behavior_key": "Show",
 							"facts": {
 								"fact_data_by_name": {
@@ -17521,7 +17562,7 @@
 							},
 							"meta.controls_collapsed": true,
 							"meta.visible": false,
-							"operand": 0.0,
+							"operand": 0,
 							"operand_args": [],
 							"operand_key": "AND"
 						},
@@ -17541,23 +17582,23 @@
 						},
 						"header": [],
 						"id": "1749627248.314--9223372036854743123",
-						"line_type": 0.0,
+						"line_type": 0,
 						"meta.conditionals_visible": false,
 						"meta.facts_visible": false,
-						"meta.indent_level": 0.0,
+						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6.0,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					}
 				],
-				"meta.address_mode_next": 0.0,
-				"meta.scroll_vertical": 0.0,
+				"meta.address_mode_next": 0,
+				"meta.scroll_vertical": 1122,
 				"meta.selected": false,
 				"next": 34.0,
-				"number": 33.0,
+				"number": 33,
 				"page_key": "xelia and hn find the body",
 				"skip": false,
 				"terminate": false
@@ -22781,7 +22822,7 @@
 			"1750321237.640--9223372036854713124": "[]>narrator: Argo still feels its chest radiate from the okay-gotta-go-again makeout session it had with Nessa before it left. Now Xelia greets Argo with a hearty hug, and immediately gets so fucking inquisitive because Argo seems really gas and out of it, and now she wants to know all the things. <mp>So Argo gets Xelia up to speed, big time holistically: About how Noni entered Argo's life, how that fucked shit with Nessa, how they had blowout makeup sex, how... well, that's mostly it, honestly. Argo hasn't seen the others of Nessa's friend group nearly as much, but things are chill between them, it thinks. Xelia is glad about that. <mp>Oh yeah, the hole visit was really fucked up. <mp>Also Leah is involved. <mp>Yeah, fuck that line of thought.\n[]>xelia: So.. How's the sex?\n[]>xelia: I wanna know details.\n[]>argo: Of course you would.\n[]>xelia: Hehe...\n[]>xelia: Well...?\n[]>argo: ...\n[]>argo: Ah fuck it.",
 			"1750321658.914--9223372036854713078": "[]>argo: I mean...\n[]>argo: Ugh.\n[]>argo: Fucking emotional uhaul lesbian bullshit\n[]>argo: I really don't know the extent of her open-mindedness.\n[]>argo: Because like...\n[]>argo: I don't know...",
 			"1750321948.950--9223372036854713076": "[]>xelia: It's so fucking hilarious how you of all people keep getting into shit like this.\n[]>argo: The BPD HPD combo is one hell of a shitfest.\n[]>argo: But fuck it makes me feel alive.\n[]>xelia: You're so true, bestie.\n[]>argo: One of the sentences of all time, bestie.\n[]>xelia: Hehe.",
-			"1750323492.556--9223372036854712838": "[]>maya{target|5}: hey have you heard from Haley?\n[]>audrey{target|5}: not since yesterday evening\n[]>maya: fuck\n[]>audrey: why?\n[]>maya: because her last messages were really fucking cryptic and she's not at home and now I'm worried she actually\n[]>maya: FUCK\n[]>maya: fuck audrey\n[]>audrey: yeah I have nothing sorry\n[]>maya: shit\n[]>maya: text me if you catch wind of anything ok?\n[]>audrey: i will.",
+			"1750323492.556--9223372036854712838": "[]>maya{target|5}: hey have you heard from Haley?\n[]>audrey{target|5}: not since yesterday evening\n[]>maya: fuck\n[]>audrey: why?\n[]>noni: paws u baibai now >.<\n[]>audrey{target|7}: take care Noni\n[]>maya: because her last messages were really fucking cryptic and she's not at home and now I'm worried she actually\n[]>maya: FUCK\n[]>maya: fuck audrey\n[]>audrey{target|5}: yeah I have nothing sorry\n[]>maya: shit\n[]>maya: text me if you catch wind of anything ok?\n[]>audrey: i will.",
 			"1750323586.818--9223372036854712800": "[]>haley{target|3}: im sry i couldnt grow w u\n[]>maya{target|3}: haley\n[]>maya: what does that mean\n[]>maya: haley?\n[]>maya: what's up\n[]>maya: are you ok?\n[]>haley: im sorry.\n[]>maya: ?\n[]>haley: and\n[]>haley: farewell.\n[]>maya: talk to me haley\n[]>maya: please\n[]>maya: haley!!!\n[]>maya: god please tell me what's up\n[]>maya: what's going on?\n[]>maya: what are you sorry for\n[]>maya: please tell me\n[]>maya: please don't hurt yourself\n[]>maya: please\n[]>maya: haley\n[]>maya: please\n[]>maya: please be fine fuck\n[]>maya: fuck please",
 			"1750323736.809--9223372036854712796": "[]>haley: i love you",
 			"1750323839.948--9223372036854712794": "[]>audrey: holy shit you live together cant you talk to each other in the same fucking room? (audrey has started getting pestered by maya)\n[]>vanessa: i just want an outside opinion\n[]>vanessa: and i think you know argo the best out of all of us?",
@@ -22946,6 +22987,7 @@
 			"1751187504.088--9223372036854664344": "[]>maya: Just be...\n[]>maya: A li'l less possessive, okay?\n[]>haley: ...",
 			"1751221816.271--9223372036854662419": "[]>maya{target|3}: what do you mean you fucked up\n[]>maya: audrey please\n[]>maya: what did you do\n[]>audrey: nothing i just exploded kinda because she kept pissing me off\n[]>maya: can you not do that for today\n[]>maya: thank you\n[]>maya: bye\n[]>maya{target|9}: hey haley\n[]>maya: please answer me <call:hide_window(3)>\n[]>maya: haley please you dont have to do this",
 			"1751266524.317--9223372036854658178": "[]>narrator: Xelia and Argo prepare some coffee in the kitchen. Roaches and Harsh Noise arrive some time later. Roaches has a smug grin plastered on her face. Harsh Noise looks ready to kill meaing no different than any other day.",
+			"1751275324.682--9223372036854658241": "[]>noni{target|7}: awawa\n[]>noni: :3\n[]>audrey{target|7}: hi\n[]>noni: puppy prommy tiem >:3\n[]>noni: hewwo\n[]>audrey: you good?\n[]>noni: mhm!\n[]>noni: is fine\n[]>noni: no need 2 apologize\n[]>audrey: ...\n[]>audrey: clever girl\n[]>noni: heh heh\n[]>audrey: still going through it today, but i still really wanna say sorry for Yesterday\n[]>audrey: I know you said not to\n[]>audrey: but sorry\n[]>audrey: I'm glad to have you around, Noni\n[]>audrey: I shouldn't have lashed out at you like that\n[]>noni: :3\n[]>noni: appreciates it\n[]>noni: heh\n[]>noni: going out with reco frens todaay\n[]>noni: an\n[]>noni: that's it\n[]>noni: puppy park time\n[]>audrey: aw\n[]>audrey: sweet",
 			"amber-is-happy": "[]>amber{amber-emotion|happy}: I'm really happy to hear that! <mp>I think you're cool too!"
 		},
 		"text_lead_time_other_actor": 0.0,
