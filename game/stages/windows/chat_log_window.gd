@@ -140,7 +140,6 @@ func _on_body_label_finished() -> void:
 	
 	
 func build_waveform():
-	print("TEXT ", get_body_label().get_parsed_text())
 	%VoiceMessageColorRect.show()
 	if not get_body_label().get_parsed_text().contains("~"):
 		return

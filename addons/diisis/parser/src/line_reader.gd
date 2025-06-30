@@ -182,6 +182,10 @@ var choice_list:Control:
 @export var body_label_prefix_by_actor : Dictionary[String, String]
 ## Gets suffixed to text lines, before [member body_label_suffix]. Keys are actor names.
 @export var body_label_suffix_by_actor : Dictionary[String, String]
+## this is broken as shit but whatever. fix this after the jam.
+## apperently dictionary access is 1 frame behind direct string access?
+@export var name_prefix : String
+@export var name_suffix : String
 @export var name_prefix_by_actor : Dictionary[String, String]
 @export var name_suffix_by_actor : Dictionary[String, String]
 ## List of functions that get called with [method callv_custom] with the text of the [member body_label] as argument whenever that text gets set. (So referencing autoloads is also valid)
@@ -417,8 +421,8 @@ func serialize() -> Dictionary:
 	result["line_type"] = line_type 
 	result["max_past_lines"] = max_past_lines
 	result["name_map"] = name_map
-	result["name_prefix_by_actor"] = name_prefix_by_actor
-	result["name_suffix_by_actor"] = name_suffix_by_actor
+	result["name_prefix"] = name_prefix
+	result["name_suffix"] = name_suffix
 	result["next_pause_position_index"] = _next_pause_position_index 
 	result["next_pause_type"] = _next_pause_type 
 	result["pause_positions"] = _pause_positions 
@@ -464,8 +468,8 @@ func deserialize(data: Dictionary):
 	max_past_lines = data.get("max_past_lines", -1)
 	_next_pause_position_index = int(data.get("next_pause_position_index"))
 	_next_pause_type = int(data.get("next_pause_type"))
-	name_prefix_by_actor = data.get("name_prefix_by_actor")
-	name_suffix_by_actor = data.get("name_suffix_by_actor")
+	name_prefix = data.get("name_prefix")
+	name_suffix = data.get("name_suffix")
 	_pause_positions = data.get("pause_positions")
 	_pause_types = data.get("pause_types")
 	preserve_name_in_past_lines = data.get("preserve_name_in_past_lines", preserve_name_in_past_lines)
@@ -1557,9 +1561,14 @@ func _handle_tags_and_start_reading():
 		var display_name: String = _get_actor_name(current_raw_name)
 		var name_color :Color = _get_actor_color(current_raw_name)
 		if not current_raw_name in blank_names:
+			## TODO tighten the screws here and use _get_full_prepend_name_prefix instead
 			cleaned_text = str(
+				name_prefix,
 				"[color=", name_color.to_html(), "]",
-				display_name, "[/color]", _get_prepend_separator_sequence(),
+				display_name,
+				"[/color]",
+				name_suffix,
+				_get_prepend_separator_sequence(),
 				cleaned_text
 				)
 		

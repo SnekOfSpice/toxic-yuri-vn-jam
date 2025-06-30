@@ -136,7 +136,6 @@ func conditional_hide():
 
 func on_read_new_line(line_index:int):
 	if Parser.line_reader.line_type != DIISIS.LineType.Instruction:
-		print("hiii ", Parser.line_reader.line_index)
 		show_ui()
 	else:
 		var transitionable_function_names := [
@@ -553,7 +552,8 @@ func set_target_labels(actor:String, target_id:int, force_show:=true, as_voice_m
 		%FullCoverText.visible = true
 	else:
 		%FullCoverText.visible = false
-		
+	%LineReader.name_prefix = "" # this is broken as shit but whatever. fix this after the jam
+	%LineReader.name_suffix = "" # this is broken as shit but whatever. fix this after the jam
 	%LineReader.body_label_tint_lines = false
 	if target_id == 0:
 		%DefaultTextContainer.visible = true
@@ -566,6 +566,8 @@ func set_target_labels(actor:String, target_id:int, force_show:=true, as_voice_m
 		%LineReader.custom_text_speed_override = -1
 		%LineReader.body_label_prefix = ""
 		%LineReader.body_label_suffix = ""
+		%LineReader.name_prefix_by_actor[actor_name] = ""
+		%LineReader.name_suffix_by_actor[actor_name] = ""
 		%LineReader.keep_past_lines = false
 	elif target_id == 6:
 		%LineReader.text_container = %FullCoverText
@@ -577,6 +579,8 @@ func set_target_labels(actor:String, target_id:int, force_show:=true, as_voice_m
 		%LineReader.custom_text_speed_override = -1
 		%LineReader.body_label_prefix = ""
 		%LineReader.body_label_suffix = ""
+		%LineReader.name_prefix_by_actor[actor_name] = ""
+		%LineReader.name_suffix_by_actor[actor_name] = ""
 		%LineReader.keep_past_lines = false
 	else:
 		var vnui : Control = find_child("VNUI")
@@ -591,6 +595,8 @@ func set_target_labels(actor:String, target_id:int, force_show:=true, as_voice_m
 			%LineReader.custom_text_speed_override = 201
 			%LineReader.body_label_prefix = "[code]"
 			%LineReader.body_label_suffix = "[/code]"
+			%LineReader.name_prefix = "[code]"
+			%LineReader.name_suffix = "[/code]"
 			%LineReader.name_prefix_by_actor[actor_name] = "[code]"
 			%LineReader.name_suffix_by_actor[actor_name] = "[/code]"
 			if last_body_label_target != target_id and not window.visible:
