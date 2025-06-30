@@ -68,7 +68,6 @@ func _ready():
 	ParserEvents.actor_name_about_to_change.connect(on_actor_name_about_to_change)
 	ParserEvents.page_terminated.connect(go_to_main_menu)
 	ParserEvents.instruction_started.connect(on_instruction_started)
-	#ParserEvents.instruction_completed.connect(on_instruction_completed)
 	ParserEvents.read_new_line.connect(on_read_new_line)
 	ParserEvents.dialog_line_args_passed.connect(on_dialog_line_args_passed)
 	#ParserEvents.go_back_accepted.connect(on_go_back_accepted)
@@ -123,8 +122,33 @@ func get_window_visibilities() -> Dictionary:
 		result[window.uid] = window.visible
 	return result
 
+func conditional_hide():
+	var transitionable_function_names := [
+			"black_fade", "splash_text", "suicide_visual", "start_opening_splash"
+		]
+	for n in transitionable_function_names:
+		if n in line_reader.execution_text:
+			var next_data : Dictionary = Parser.get_next_line_data()
+			if next_data.get("line_type") == DIISIS.LineType.Instruction:
+				if next_data.get("content").get("name") in transitionable_function_names:
+					hide_ui()
+					break
+
 func on_read_new_line(line_index:int):
-	pass
+	if Parser.line_reader.line_type != DIISIS.LineType.Instruction:
+		print("hiii ", Parser.line_reader.line_index)
+		show_ui()
+	else:
+		var transitionable_function_names := [
+			"black_fade", "splash_text", "suicide_visual", "start_opening_splash"
+		]
+		for n in transitionable_function_names:
+			if n in line_reader.execution_text:
+				var next_data : Dictionary = Parser.get_next_line_data()
+				if next_data.get("line_type") == DIISIS.LineType.Instruction:
+					if next_data.get("content").get("name") in transitionable_function_names:
+						hide_ui()
+						break
 
 func on_tree_exit():
 	GameWorld.game_stage = null
@@ -476,12 +500,6 @@ func get_character(character_name:String) -> Character:
 func _on_history_button_pressed() -> void:
 	GameWorld.stage_root.set_screen(CONST.SCREEN_HISTORY)
 
-func show_letter():
-	hide_ui()
-	var letter = preload("res://game/objects/letter.tscn").instantiate()
-	add_child(letter)
-	letter.position = Vector2(258, 8)
-
 func _on_handler_start_show_cg(cg_name: String, fade_in: float, on_top: bool) -> void:
 	if on_top:
 		emit_insutrction_complete_on_cg_hide = true
@@ -573,6 +591,8 @@ func set_target_labels(actor:String, target_id:int, force_show:=true, as_voice_m
 			%LineReader.custom_text_speed_override = 201
 			%LineReader.body_label_prefix = "[code]"
 			%LineReader.body_label_suffix = "[/code]"
+			%LineReader.name_prefix_by_actor[actor_name] = "[code]"
+			%LineReader.name_suffix_by_actor[actor_name] = "[/code]"
 			if last_body_label_target != target_id and not window.visible:
 				window.clear_past_container()
 			%LineReader.enable_keep_past_lines(
@@ -592,6 +612,8 @@ func set_target_labels(actor:String, target_id:int, force_show:=true, as_voice_m
 			%LineReader.custom_text_speed_override = -1
 			%LineReader.body_label_prefix = ""
 			%LineReader.body_label_suffix = ""
+			%LineReader.name_prefix_by_actor[actor_name] = ""
+			%LineReader.name_suffix_by_actor[actor_name] = ""
 			%LineReader.keep_past_lines = false
 		if force_show:
 			window.move_to_top()

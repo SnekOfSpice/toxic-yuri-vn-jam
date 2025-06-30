@@ -43,6 +43,7 @@ func read(text:String,
 	label.visible_characters = 0
 	Sound.play_sfx("keyboard")
 	await get_tree().create_timer(1.5).timeout
+	GameWorld.game_stage.conditional_hide()
 	visible = false
 	Sound.play_sfx("shutter")
 	await get_tree().create_timer(2.5).timeout

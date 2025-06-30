@@ -134,12 +134,6 @@ func set_x_position(character_name: String, index:int, time:float, wait_for_repo
 		character.set_x_position(int(index), time, wait_for_reposition)
 	return wait_for_reposition
 
-func show_letter() -> bool:
-	if GameWorld.game_stage:
-		GameWorld.game_stage.show_letter()
-		return true
-	return false
-
 
 func sway_camera(intensity : float) -> bool:
 	camera.set_sway_intensity(intensity)
@@ -348,6 +342,7 @@ func suicide_visual():
 	t.tween_property(floaty, "color:a", 0, 5).set_delay(5)
 	t.finished.connect(layer.set.bind("visible", false))
 	t.finished.connect(Parser.function_acceded)
+	t.finished.connect(GameWorld.game_stage.show_start_cover)
 	
 	var p : AudioStreamPlayer = Sound.play_sfx("ocean")
 	p.finished.connect(Sound.play_sfx.bind("ocean2"))

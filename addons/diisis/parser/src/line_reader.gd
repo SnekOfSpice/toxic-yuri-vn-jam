@@ -91,7 +91,6 @@ var _last_raw_name := ""
 ## A String:Color Dictionary. The keys are the actor names set in the options of the Speaker Dropdown in DIISIS.
 ## The respective value is the color modulation applied to [member name_label] or bbcode color tag inserted around the name in [member body_label], depending on [member name_style].
 @export var color_map : Dictionary[String, Color] = {}
-@export var color_config : Dictionary[String, LineReaderActorColors] = {}
 ## Style in which names get displayed. See [enum LineReader.NameStyle].
 @export var name_style : NameStyle = NameStyle.NameLabel
 ## Use [const Color.TRANSPARENT] to use the theme color of [member name_label] instead if [member color_map] doesn't have an actor name set.
@@ -183,6 +182,8 @@ var choice_list:Control:
 @export var body_label_prefix_by_actor : Dictionary[String, String]
 ## Gets suffixed to text lines, before [member body_label_suffix]. Keys are actor names.
 @export var body_label_suffix_by_actor : Dictionary[String, String]
+@export var name_prefix_by_actor : Dictionary[String, String]
+@export var name_suffix_by_actor : Dictionary[String, String]
 ## List of functions that get called with [method callv_custom] with the text of the [member body_label] as argument whenever that text gets set. (So referencing autoloads is also valid)
 ## Each call will replace the text as it gets passed along the array.
 ## This can be used to mangle the text in arbitrary ways before adding it to [member body_label], such as adding or replacing contents with your own custom text.
@@ -416,6 +417,8 @@ func serialize() -> Dictionary:
 	result["line_type"] = line_type 
 	result["max_past_lines"] = max_past_lines
 	result["name_map"] = name_map
+	result["name_prefix_by_actor"] = name_prefix_by_actor
+	result["name_suffix_by_actor"] = name_suffix_by_actor
 	result["next_pause_position_index"] = _next_pause_position_index 
 	result["next_pause_type"] = _next_pause_type 
 	result["pause_positions"] = _pause_positions 
@@ -461,6 +464,8 @@ func deserialize(data: Dictionary):
 	max_past_lines = data.get("max_past_lines", -1)
 	_next_pause_position_index = int(data.get("next_pause_position_index"))
 	_next_pause_type = int(data.get("next_pause_type"))
+	name_prefix_by_actor = data.get("name_prefix_by_actor")
+	name_suffix_by_actor = data.get("name_suffix_by_actor")
 	_pause_positions = data.get("pause_positions")
 	_pause_types = data.get("pause_types")
 	preserve_name_in_past_lines = data.get("preserve_name_in_past_lines", preserve_name_in_past_lines)
@@ -1736,7 +1741,7 @@ func _find_next_pause():
 func _get_full_prepend_name_prefix(actor:String) -> String:
 	if name_style != NameStyle.Prepend:
 		return ""
-	return _get_actor_name(actor) + _get_prepend_separator_sequence()
+	return name_prefix_by_actor.get(actor, "") + _get_actor_name(actor) + _get_prepend_separator_sequence() + name_suffix_by_actor.get(actor, "")
 
 func _get_actor_name(actor_key:String) -> String:
 	return name_map.get(actor_key, actor_key)

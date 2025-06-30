@@ -670,3 +670,47 @@ func function_acceded():
 		line_reader.awaiting_inline_call = ""
 		return
 	line_reader.finish_waiting_for_instruction()
+
+
+func get_next_line_data() -> Dictionary:
+	return _get_next_line_data_custom(line_index, page_data.get(page_index, {}))
+
+func _get_next_line_data_custom(from_line:int, local_page_data:Dictionary) -> Dictionary:
+	var page_lines : Array = local_page_data.get("lines", [])
+	if local_page_data.is_empty():
+		return {}
+	if from_line >= page_lines.size() - 1 and local_page_data.get("terminate"):
+		return {}
+	
+	if from_line < page_lines.size() - 1:
+		var next_line_index := from_line + 1
+		var skip_line : bool = page_lines[next_line_index].get("skip")
+		if not skip_line:
+			return page_lines[next_line_index].duplicate(true)
+		while skip_line:
+			next_line_index += 1
+			if next_line_index >= page_lines.size():
+				break
+			skip_line = page_lines[next_line_index].get("skip")
+			if not skip_line:
+				return page_lines[next_line_index].duplicate(true)
+	var next_page_index : int = local_page_data.get("next", page_index + 1)
+	var skip_page : bool = local_page_data.get("skip")
+	var visited_pages := []
+	var page_data_to_visit_next : Dictionary
+	if not skip_page:
+		page_data_to_visit_next = page_data.get(next_page_index)
+	while skip_page:
+		next_page_index = local_page_data.get("next", next_page_index + 1)
+		if visited_pages.has(next_page_index):
+			break
+		visited_pages.append(next_page_index)
+		if next_page_index >= page_data.size():
+			break
+		skip_page = page_data.get(next_page_index).get("skip")
+		if not skip_page:
+			break
+	if page_lines.is_empty():
+		page_data_to_visit_next = page_data.get(next_page_index)
+	
+	return _get_next_line_data_custom(0, page_data_to_visit_next)
