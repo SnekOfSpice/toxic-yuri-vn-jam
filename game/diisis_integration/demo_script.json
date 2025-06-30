@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 7,
+		"current_page_number": 33,
 		"ingest_capitalize": false,
 		"ingest_whitespace": true,
 		"page_view": 0,
@@ -486,7 +486,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854658794,
+		"id_counter": -9223372036854658632,
 		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa\nx: xelia\nl: leah\nf: franco\nno: noni\nb: blank",
 		"locales_to_export": [
 			"de_DE",
@@ -17485,6 +17485,9 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"meta.function_calls": [
+								"hide_window(7)"
+							],
 							"meta.locked": false,
 							"meta.validation_status": "OK",
 							"text_id": "1750323492.556--9223372036854712838"
@@ -17595,7 +17598,7 @@
 					}
 				],
 				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 1122,
+				"meta.scroll_vertical": 1632,
 				"meta.selected": false,
 				"next": 34.0,
 				"number": 33,
@@ -22822,7 +22825,7 @@
 			"1750321237.640--9223372036854713124": "[]>narrator: Argo still feels its chest radiate from the okay-gotta-go-again makeout session it had with Nessa before it left. Now Xelia greets Argo with a hearty hug, and immediately gets so fucking inquisitive because Argo seems really gas and out of it, and now she wants to know all the things. <mp>So Argo gets Xelia up to speed, big time holistically: About how Noni entered Argo's life, how that fucked shit with Nessa, how they had blowout makeup sex, how... well, that's mostly it, honestly. Argo hasn't seen the others of Nessa's friend group nearly as much, but things are chill between them, it thinks. Xelia is glad about that. <mp>Oh yeah, the hole visit was really fucked up. <mp>Also Leah is involved. <mp>Yeah, fuck that line of thought.\n[]>xelia: So.. How's the sex?\n[]>xelia: I wanna know details.\n[]>argo: Of course you would.\n[]>xelia: Hehe...\n[]>xelia: Well...?\n[]>argo: ...\n[]>argo: Ah fuck it.",
 			"1750321658.914--9223372036854713078": "[]>argo: I mean...\n[]>argo: Ugh.\n[]>argo: Fucking emotional uhaul lesbian bullshit\n[]>argo: I really don't know the extent of her open-mindedness.\n[]>argo: Because like...\n[]>argo: I don't know...",
 			"1750321948.950--9223372036854713076": "[]>xelia: It's so fucking hilarious how you of all people keep getting into shit like this.\n[]>argo: The BPD HPD combo is one hell of a shitfest.\n[]>argo: But fuck it makes me feel alive.\n[]>xelia: You're so true, bestie.\n[]>argo: One of the sentences of all time, bestie.\n[]>xelia: Hehe.",
-			"1750323492.556--9223372036854712838": "[]>maya{target|5}: hey have you heard from Haley?\n[]>audrey{target|5}: not since yesterday evening\n[]>maya: fuck\n[]>audrey: why?\n[]>noni: paws u baibai now >.<\n[]>audrey{target|7}: take care Noni\n[]>maya: because her last messages were really fucking cryptic and she's not at home and now I'm worried she actually\n[]>maya: FUCK\n[]>maya: fuck audrey\n[]>audrey{target|5}: yeah I have nothing sorry\n[]>maya: shit\n[]>maya: text me if you catch wind of anything ok?\n[]>audrey: i will.",
+			"1750323492.556--9223372036854712838": "[]>maya{target|5}: hey have you heard from Haley?\n[]>audrey{target|5}: not since yesterday evening\n[]>maya: fuck\n[]>audrey: why?\n[]>noni: paws u baibai now >.<\n[]>audrey{target|7}: take care Noni\n[]>maya: because her last messages were really fucking cryptic and she's not at home and now I'm worried she actually\n[]>maya: FUCK\n[]>maya: fuck audrey\n[]>audrey{target|5}: yeah I have nothing sorry<call:hide_window(7)>\n[]>maya: shit\n[]>maya: text me if you catch wind of anything ok?\n[]>audrey: i will.",
 			"1750323586.818--9223372036854712800": "[]>haley{target|3}: im sry i couldnt grow w u\n[]>maya{target|3}: haley\n[]>maya: what does that mean\n[]>maya: haley?\n[]>maya: what's up\n[]>maya: are you ok?\n[]>haley: im sorry.\n[]>maya: ?\n[]>haley: and\n[]>haley: farewell.\n[]>maya: talk to me haley\n[]>maya: please\n[]>maya: haley!!!\n[]>maya: god please tell me what's up\n[]>maya: what's going on?\n[]>maya: what are you sorry for\n[]>maya: please tell me\n[]>maya: please don't hurt yourself\n[]>maya: please\n[]>maya: haley\n[]>maya: please\n[]>maya: please be fine fuck\n[]>maya: fuck please",
 			"1750323736.809--9223372036854712796": "[]>haley: i love you",
 			"1750323839.948--9223372036854712794": "[]>audrey: holy shit you live together cant you talk to each other in the same fucking room? (audrey has started getting pestered by maya)\n[]>vanessa: i just want an outside opinion\n[]>vanessa: and i think you know argo the best out of all of us?",
