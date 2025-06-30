@@ -263,9 +263,9 @@ func set_cg(cg_name:String, fade_in_duration:float, cg_root:Control):
 		#cg_node.set_anchors_preset(Control.PRESET_FULL_RECT)
 		#cg_node.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		#cg_node.color = Color.BLACK
-		cg_node = TextureRect.new()
+		cg_node = preload("res://game/cg/cg_texture.tscn").instantiate()
 		#cg_node.add_child(tex)
-		cg_node.position -=  Vector2(1000, 750) * 0.7 * 0.5
+		#cg_node.position -=  Vector2(1000, 750) * 0.7 * 0.5
 		cg_node.position.y += 54#  Vector2(1000, 750) * 0.7 * 0.5
 		cg_node.set_anchors_preset(Control.PRESET_CENTER)
 		cg_node.texture = load(cg_path)
@@ -282,6 +282,10 @@ func set_cg(cg_name:String, fade_in_duration:float, cg_root:Control):
 	else:
 		t.tween_property(cg_root, "modulate:a", 1.0, fade_in_duration)
 	
+	for child in cg_root.get_children():
+		if child == cg_node:
+			continue
+		t.finished.connect(child.queue_free)
 	
 	var background_size : Vector2
 	if cg_node is TextureRect:
@@ -299,6 +303,8 @@ func set_cg(cg_name:String, fade_in_duration:float, cg_root:Control):
 	if overshoot.y > 0:
 		container.position.y = - overshoot.y * 0.5
 	base_cg_offset = container.position
+	
+	
 	
 	cg = cg_name
 

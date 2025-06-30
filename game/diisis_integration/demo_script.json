@@ -1,6 +1,6 @@
 {
 	"editor": {
-		"current_page_number": 42,
+		"current_page_number": 41,
 		"ingest_capitalize": false,
 		"ingest_whitespace": true,
 		"page_view": 0,
@@ -486,7 +486,7 @@
 			}
 		},
 		"head_defaults": [],
-		"id_counter": -9223372036854658791,
+		"id_counter": -9223372036854658107,
 		"ingestion_actor_declaration": "a: argo\nau: audrey\nh: haley\nhn: harshnoise\nm: maya\nn: narrator\nr: roaches\nv: vanessa\nx: xelia\nl: leah\nf: franco\nno: noni\nb: blank",
 		"locales_to_export": [
 			"de_DE",
@@ -20571,6 +20571,93 @@
 						"content": {
 							"meta.locked": false,
 							"meta.validation_status": "OK",
+							"text_id": "1751266524.317--9223372036854658178"
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1751266524.317--9223372036854658179",
+						"line_type": 0,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 4,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "40.5",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"delay_after": 0.0,
+							"delay_before": 0.0,
+							"meta.has_reverse": false,
+							"meta.reverse_text": "",
+							"meta.text": "black_fade(2,2,2,true,false,false)",
+							"meta.validation_status": "OK",
+							"name": "black_fade",
+							"reverse_name": ""
+						},
+						"facts": {
+							"fact_data_by_name": {
+
+							},
+							"meta.visible": false
+						},
+						"header": [],
+						"id": "1751266532.239--9223372036854658177",
+						"line_type": 2,
+						"meta.conditionals_visible": false,
+						"meta.facts_visible": false,
+						"meta.indent_level": 0,
+						"meta.is_head_editable": true,
+						"meta.line_index": 5,
+						"meta.selector": {
+							"selected": false
+						},
+						"skip": false
+					},
+					{
+						"address": "40.6",
+						"conditionals": {
+							"behavior": 0,
+							"behavior_key": "Show",
+							"facts": {
+								"fact_data_by_name": {
+
+								},
+								"meta.visible": false
+							},
+							"meta.controls_collapsed": true,
+							"meta.visible": false,
+							"operand": 0,
+							"operand_args": [],
+							"operand_key": "AND"
+						},
+						"content": {
+							"meta.locked": false,
+							"meta.validation_status": "OK",
 							"text_id": "1751093374.671--9223372036854669497"
 						},
 						"facts": {
@@ -20586,14 +20673,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 4,
+						"meta.line_index": 6,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "40.5",
+						"address": "40.7",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -20632,14 +20719,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 5,
+						"meta.line_index": 7,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "40.6",
+						"address": "40.8",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -20658,6 +20745,7 @@
 						"content": {
 							"meta.function_calls": [
 								"Sound.fade_out_bgm(0)",
+								"hide_all_windows()",
 								"Sound.play_bgm(necro, 10)",
 								"hide_all_windows()"
 							],
@@ -20678,14 +20766,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 6,
+						"meta.line_index": 8,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "40.7",
+						"address": "40.9",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -20719,14 +20807,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 7,
+						"meta.line_index": 9,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "40.8",
+						"address": "40.10",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -20760,14 +20848,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 8,
+						"meta.line_index": 10,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "40.9",
+						"address": "40.11",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -20806,14 +20894,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 9,
+						"meta.line_index": 11,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "40.10",
+						"address": "40.12",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -20847,14 +20935,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 10,
+						"meta.line_index": 12,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "40.11",
+						"address": "40.13",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -20888,14 +20976,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 11,
+						"meta.line_index": 13,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "40.12",
+						"address": "40.14",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -20929,14 +21017,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 12,
+						"meta.line_index": 14,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "40.13",
+						"address": "40.15",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -20970,14 +21058,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 13,
+						"meta.line_index": 15,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "40.14",
+						"address": "40.16",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -21011,14 +21099,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 14,
+						"meta.line_index": 16,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "40.15",
+						"address": "40.17",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -21052,14 +21140,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 15,
+						"meta.line_index": 17,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "40.16",
+						"address": "40.18",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -21093,14 +21181,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 16,
+						"meta.line_index": 18,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "40.17",
+						"address": "40.19",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -21134,14 +21222,14 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 17,
+						"meta.line_index": 19,
 						"meta.selector": {
 							"selected": false
 						},
 						"skip": false
 					},
 					{
-						"address": "40.18",
+						"address": "40.20",
 						"conditionals": {
 							"behavior": 0,
 							"behavior_key": "Show",
@@ -21175,7 +21263,7 @@
 						"meta.facts_visible": false,
 						"meta.indent_level": 0,
 						"meta.is_head_editable": true,
-						"meta.line_index": 18,
+						"meta.line_index": 20,
 						"meta.selector": {
 							"selected": false
 						},
@@ -21183,7 +21271,7 @@
 					}
 				],
 				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 4501,
+				"meta.scroll_vertical": 1530,
 				"meta.selected": false,
 				"next": 41.0,
 				"number": 40,
@@ -21625,7 +21713,7 @@
 						},
 						"content": {
 							"meta.function_calls": [
-								"shake_camera(10)"
+								"shake_camera(7)"
 							],
 							"meta.locked": false,
 							"meta.validation_status": "OK",
@@ -21835,6 +21923,9 @@
 							"operand_key": "AND"
 						},
 						"content": {
+							"meta.function_calls": [
+								"shake_camera(4)"
+							],
 							"meta.locked": false,
 							"meta.validation_status": "OK",
 							"text_id": "1751014947.179--9223372036854672765"
@@ -22340,7 +22431,7 @@
 					}
 				],
 				"meta.address_mode_next": 0,
-				"meta.scroll_vertical": 3774,
+				"meta.scroll_vertical": 2346,
 				"meta.selected": false,
 				"next": 42.0,
 				"number": 42,
@@ -22783,7 +22874,7 @@
 			"1750663107.770--9223372036854680929": "[]>xelia: Noise let me know you've done something of this nature before.\n[]>maya: Mhm.\n[]>xelia: Would you care for another performance, in general?\n[]>maya: ...\n[]>maya: I don't know.\n[]>maya: Under different circumstances, maybe.\n[]>maya: But this...\n[]>maya: Her death was so much different.\n[]>xelia: ...\n[]>xelia: Say, how do you conceptualize death?\n[]>maya: Huh?\n[]>xelia: Is it the loss of personhood? The loss of consciousness? The being forgotten?\n[]>xelia: Death is a process, and we just kicked the fucking lawnmower on it.\n[]>maya: I just don't know if she'd want that, I guess.\n[]>xelia: Excuse my brazen nature... but... she doesn't exist anymore, not in that sense.\n[]>xelia: The version of her that you think of, is the final snapshot you have.\n[]>xelia: You can keep her in your thoughts, but is that really the final state you want her to be in?\n[]>xelia: Do you want to idealize her forever? Let her take over your ever fiber like the mountain of past regrets we all have?\n[]>maya: ...\n[]>xelia: Her will is not a thing that can be violated anymore, but similarly, any positive act you do to her will also be above and beyond what anyone would demand if you here.\n[]>xelia: And what she wanted as she parted, I think us for you to qualify, from how I understand your relationship.\n[]>maya: I...\n[]>maya: ...\n[]>maya: We talked about it months ago.\n[]>maya: ...\n[]>maya: ... I don't know.\n[]>maya: Gimme some time.\n[]>xelia: ...\n[]>xelia: I'm putting it down as plain opportunism.\n[]>xelia: How often do you get a fresh, pretty, young, undocumented, girliecorpse at your hands, for free.\n[]>xelia: With zero blood on your hands.\n[]>maya: ...\n[]>xelia: The fact that you knew her is kind of a prerequisite to us inquiring into all of this, if you ask me.\n[]>xelia: Oh, the videos you could make with her... fuck, it's so tantalizing to me.\n[]>maya: ...\n[]>narrator: They only ever had a single digit amounts of proper dates... Each one savored as if it could've been their last, and committed to as auch.\n[]>narrator: There are no repeats.\n[]>narrator: There are only wants and opportunities and when they align you can take them or regret your apprehension.",
 			"1750663134.106--9223372036854680917": "[]>narrator: Maya couldn't sleep but Xelia seems serious business, meaning she now catatonizes at home until her departure time to punctually arrive comes.There's also new cuts that appeared there some time recently. Maya can't remember when. <mp>Meeting someone new while you have fresh bandages on your arm always kinda sucks, Maya thinks. Makes for a bad first impression. The summer heat isn't helping either, so her cuts itch and fester and seep in their sodden-with-sweat gauze prison. Sucks for her.\n[]>narrator:Argo stumbled out of its night shift, and the time management today is super fucked so it just insufflates a bit of speed, and then walks itself to the train station. It'll be a bit early but that just means the two can hang out for a few hours then before meeting whoever it is that as higher stakes in the body, whatever that means. Maybe Xelia started monetizing her necro operations? Though it never pegged Xelia as someone who would go down that route. Oh well, we'll see, Argo thinks.\n[]>narrator: It eventually gets off the train, and heads down to Xelia's abode. As expected, it's the first individual to converge here, with Roaches and Noise presumably drifting somewhere between sleep, drug use, and air pollution.",
 			"1750663176.705--9223372036854680904": "[]>xelia: the bereaved has asked me to meet you before seeing the footage\n[]>xelia: my place, tomorrow",
-			"1750663266.974--9223372036854680869": "[]>narrator: The rest of the gathering is unremarkable from the outside, nothing but a group of friends hanging out. They all know that things will just move on now. That life moves on. And that they will be ground up in history if they do not move with it in due time. Tears are shed, feelings aired in the silence between breaths, no one has anything to say.\n[]>narrator: Audrey is sorry for having snapped at Haley. Maya is trying to be at peace with already moving on before Haley died. She leans against Roaches. Nessa is cring into Argo. Argo has nothing. Haley has become a concept.",
+			"1750663266.974--9223372036854680869": "[]>narrator: The rest of the gathering is unremarkable from the outside, nothing but a group of friends hanging out. They all know that things will just move on now. That life moves on. And that they will be ground up in history if they do not move with it in due time. Tears are shed, feelings aired in the silence between breaths, no one has anything to say.\n[]>narrator: Audrey is sorry for having snapped at Haley. Maya is trying to be at peace with already starting to move on before Haley died. She leans against Roaches. Nessa is crying into Argo. Roaches feels everything and nothing. Nessa sees Argo's scars and hates herself. Argo doesn't matter. <mp>Haley has become a concept.",
 			"1750663515.393--9223372036854680639": "[]>argo{target|3}: hey do you know what happened with nessa\n[]>audrey{target|3}: nessa?\n[]>argo: we were hanging out and she just started crying and asked me to leave and i have no idea why\n[]>audrey: fuck me\n[]>audrey: haley died\n[]>argo: -\n[]>audrey: yeah\n[]>argo: fuck im so sorry\n[]>argo: can i do anything for you\n[]>audrey: not atm\n[]>audrey: news is still fresh\n[]>audrey: thats it\n[]>argo: my condolences\n[]>argo: let me know if i can do anything for you\n[]>audrey: ttyl argo",
 			"1750664317.701--9223372036854680287": "[]>haley: i started shooting up recently\n[]>maya: Haley please talk to me\n[]>audrey{target|8}: what\n[]>audrey: h?\n[]>haley: meth obv\n[]>haley: my life is fn over\n[]>haley: fucking over\n[]>audrey: it literally is not\n[]>audrey: all of us are struggling or clean from all kinds of shit\n[]>audrey: and were still around\n[]>audrey: things get better\n[]>audrey: or are manageable ffs\n[]>haley: and look at nessa relapsing on cutting now\n[]>audrey: thats not the sme\n[]>haley: damn didnt know you were up to defending that shit now\n[]>haley: i dont wanna hear it\n[]>haley: i just wanna escape this fucking body\n[]>haley: and be high as a kite as im doing it\n[]>haley: im an actual failure\n[]>haley: like wtf\n[]>haley: this life is over\n[]>haley: i dont wanna be in rehab for the rest of my life\n[]>haley: i dont even wannt be in rehab\n[]>haley: at all\n[]>audrey{target|8}: you dont have to go to rehab\n[]>audrey: you can suffer in life and be better in the end\n[]>audrey: you can fucking do drugs\n[]>audrey: but please just stay alive\n[]>haley: oh yea so i can make you feel like you actually gave a shit right\n[]>haley: fuck off\n[]>haley: god\n[]>haley: I dont owe any of you staying alive fuck you\n[]>audrey: what",
 			"1750667021.000--9223372036854679779": "[]>narrator: When Audrey heads up the apartment, not much has changed. The takeout pizza boxes are still in the kitchen, Maya is still in bed but clinging onto much more disturbed thoughts now. Audrey wouldn't approve. Her opinion doesn't matter.\n[]>audrey{target|0}: <call:hide_window(3)>Hey.\n[]>maya: ...\n[]>maya: Hi.\n[]>audrey: What's up?\n[]>maya: Fucking suffering.\n[]>audrey: I know.\n[]>audrey: Tell me what's on your mind.\n[]>maya: ...\n[]>maya: [shake rate=20.0 level=2 connected=1]mnmfvmnfgnmf.[/shake]\n[]>maya: I...\n[]>maya: I left her alone when I shouldn't have.\n[]>maya: I knew I shouldn't have left.\n[]>maya: I...\n[]>maya: I...\n[]>maya: I fucking killed her...\n[]>maya: Because I'm such a self-centered piece of shit.\n[]>audrey: Maya jesus fucking christ.\n[]>audrey: You're many things but definitely not self-centered.\n[]>audrey: You are such a great friend.\n[]>audrey: Fuck, you even reached out to Noni when I was too much of a fuckup to treat her right.\n[]>audrey: You did that without a second thought.\n[]>audrey: ...\n[]>maya: ...\n[]>audrey: ...\n[]>audrey: Been having the same thoughts though.\n[]>maya: How do you mean?\n[]>audrey: Like we fought just as much that evening.\n[]>maya: Yeah.\n[]>maya: You did.\n[]>audrey: Fuck...\n[]>audrey: I'm...\n[]>audrey: I'm sorry I fucked up okay?\n[]>maya: ...\n[]>audrey: ...\n[]>maya: Tissue.\n[]>audrey: ...\n[]>audrey: Like I know I shouldn't have lost my temper but fuck.\n[]>audrey: ...\n[]>maya: Looking... <ap>Looking for someone to blame won't bring her back.\n[]>audrey: ...\n[]>maya: She said... <ap>She said in her last messages that she wasn't enough.\n[]>maya: Did I treat her with that little gratitude?\n[]>audrey: You didn't.\n[]>maya: You say that.\n[]>maya: But evidently it wasn't enough.\n[]>maya: I straight up told her im moving on from us, for fucks' sake.\n[]>maya: ...\n[]>audrey: Oh my god, Maya, that wasn't your fault damn it.\n[]>audrey: There were loads of factors at play here.\n[]>audrey: Haley is depressed as fuck.\n[]>audrey: ...\n[]>audrey: Fuck, dog.\n[]>audrey: Things are fucked, okay?\n[]>audrey: And you just said yourself that blame won't do anything.\n[]>maya: ...\n[]>audrey: Theres a difference between blame and responsibility.\n[]>audrey: But responsibility also won't bring her back.\n[]>audrey: ...\n[]>audrey: Fuck.\n[]>maya: ...\n[]>maya: Mhm.\n[]>maya: ...\n[]>maya: I think I'm just a monster.\n[]>audrey: Fuck, Maya.\n[]>audrey: No.\n[]>maya: I'm sorry...\n[]>maya: I'm such a monster.\n[]>audrey: What makes you say this bullshit?\n[]>maya: We... had a fight and I said some nasty things.\n[]>maya: Et cetera et cetera.\n[]>maya: I could've given her more grace like she always did to me.\n[]>maya: But no.\n[]>maya: Instead I hold her to standards not even I could hold up.\n[]>maya: ...\n[]>maya: I hate myself.\n[]>audrey: Maya...\n[]>maya: [shake rate=20.0 level=5 connected=1]<call:shake_camera(10)>SHE DIDN'T FUCKING DESERVE THIS![/shake]\n[]>maya: [shake rate=14.0 level=3 connected=1]This could've been prevented![/shake]\n[]>maya: This...\n[]>maya: This is hell.\n[]>audrey: ...\n[]>audrey: I know it is.\n[]>maya: FUCK!\n[]>maya: ...\n[]>audrey: ...\n[]>audrey: Also still don't wanna talk about the admin shit?\n[]>maya: It's nothing...\n[]>maya: Just...\n[]>maya: Funeral arrangements I guess.\n[]>maya: Or service with the others.\n[]>maya: Whatever.\n[]>maya: ...\n[]>audrey: ...\n[]>audrey: Like...\n[]>audrey: ...\n[]>audrey: Have you started thinking about funeral arrangements yet?\n[]>audrey: ...\n[]>audrey: Too forward?\n[]>maya: ...\n[]>maya: Whatever.\n[]>maya: Not like she'd get anything from the state.\n[]>maya: Just gotta do it on our own again.\n[]>audrey: Mhm...\n[]>maya: ...\n[]>maya: Might...\n[]>maya: Might bring her to the hole again.\n[]>maya: Like where else are we gonna go, right?\n[]>maya: But also...\n[]>maya: Fuck...\n[]>audrey: ...\n[]>audrey: Tissue?\n[]>maya: ...\n[]>maya: Thanks.\n[]>maya: ...\n[]>maya: Her body is really roughed up.\n[]>maya: ...\n[]>maya: Might not wanna have the others see her.\n[]>maya: ...\n[]>audrey: You've seen her?\n[]>maya: She's so...\n[]>maya: ...\n[]>maya: [color=#a8b6ef][shake rate=10.0 level=3 connected=1]I'm so sorry.[/shake][/color]\n[]>maya: ...\n[]>audrey: You're not responsible for what she did to herself.\n[]>maya: ...\n[]>maya: Whatever.\n[]>maya: ...\n[]>maya: We were together.\n[]>maya: I have a baseline responsibility.\n[]>maya: ...\n[]>maya: And...\n[]>maya: I...\n[]>maya: ...\n[]>maya: [color=#a8b6ef][shake rate=10.0 level=3 connected=1]mfnghmfghf[/shake][/color]\n[]>audrey: Fuck, Maya.\n[]>audrey: I'm so sorry.\n[]>maya: It's whatever.\n[]>maya: ...\n[]>audrey: ...\n[]>audrey: Would you wanna have me there?\n[]>maya: Where?\n[]>audrey: At the hole.\n[]>maya: ...\n[]>maya: Can't say yet.\n[]>audrey: Fair.\n[]>maya: ...\n[]>audrey: ...\n[]>audrey: Wait...\n[]>audrey: You're not thinking of shooting another tape, are you?\n[]>maya: ...\n[]>maya: Not...\n[]>maya: [i]*sigh*[/i]\n[]>audrey: I'm gonna fucking kill Roaches.\n[]>maya: AUDREY!\n[]>maya: I didn't even say anything!\n[]>maya: ...\n[]>maya: I just... wanna find her a nice spot under the trees.\n[]>audrey: Mhm.\n[]>audrey: Like you did with Laura.\n[]>maya: If you bring that up against me one more time...\n[]>audrey: What then?\n[]>maya: Just get off my case about it, okay?!\n[]>maya: Please just let me grieve at least.\n[]>maya: Audrey, fuck.\n[]>audrey: Did Haley agree to this?\n[]>maya: Really?\n[]>maya: Starting this again?\n[]>maya: NOW?\n[]>audrey: YES NOW!\n[]>maya: FUCK!\n[]>maya: OKAY FINE!\n[]>maya: ...\n[]>maya: She agreed to it once.\n[]>maya: For me to use her body.\n[]>audrey: You gotta be shitting me.\n[]>audrey: When was that??\n[]>maya: I don't know! Like a few months ago!\n[]>audrey: But don't you think things have chagned since then?\n[]>maya: We never talked about it again.\n[]>audrey: Are you sure you didn't coerce her into it?\n[]>maya: If you're insinuating what I think you are... drop it.\n[]>audrey: I'm just saying, you doing your puppy shit and getting fucked by disgusting freaks is not the most pious of positions.\n[]>maya: As if you're in a position to talk!\n[]>audrey: At least I have some fucking morals!\n[]>maya: As if I don't! Audrey what the fuck are you saying?!\n[]>audrey: I. <ap>Don't. <ap>Give. <ap>A. <ap>Shit. <ap>About. <ap>Your. <ap>Messed. <ap>Up. <ap>Morals.\n[]>audrey: Wasn't the tape enough once?\n[]>maya: That has nothing to do with it.\n[]>audrey: Laura's dead. And now Haley is too.\n[]>audrey: How many more. <ap>Of our girls. <ap>Are you gonna shove into this goddamn meatgrinder?\n[]>maya: This... has nothing to do with anything.\n[]>maya: ...\n[]>maya: [shake rate=10.0 level=3 connected=1]That has nothing to do with it![/shake]",
@@ -22804,7 +22895,7 @@
 			"1750759947.496--9223372036854679174": "[]>maya: My friends... and lovers, we've... <ap>Fuck... <ap>Gathered here today to grieve, commiserate, honor, and remember the life and the loss of our dear friend and partner, Haley.\n[]>maya: Haley had a strong personality fortified by a wall of sarcasm and a nililistically thick skull. I believe that her anger, fury, and passion were her way of showing how much she cares about the world- <mp>and about us.\n[]>maya: You may have noticed that her body is absent from this gathering. This was a decision not made easily, but in light of her cause of death, we thought it would be disrespectful to her legacy and memory to put her on display in such a manner; Injured and broken beyond a level representative of her life before her passing. <mp>Roaches and I will take care of putting her to rest at the hole, where she will lay besides the far too many bodies of other former friends, lovers, owners, sisters, dogs.\n[]>maya: Today, we all breathe the air many others can't anymore. I wish with all my power that no more of us have to meet an early grave. For Haley, those wishes come too little too late, and so we say goodbye to you. May your soul ignite the world wherever you are.\n[]>maya: Haley, you were a great friend and owner. Rest in power.",
 			"1750760005.288--9223372036854679148": "[]>narrator: Walking over to haleys body is like walking on shards of glass. Harsh Noise is on the lookout on top a pile of gravel. xelia is scrubbing dried blood and corpsejuice from her porch. Vanessa is currently crying waiting for argo to come home. Argo is out on puppy run. Noni is getting consoled by Riley again.\n[]>narrator:myya shovels dirt until the sky adopts the colors of haleys skin, and is then swallowed by the cosmic array of stars growing into the nightly firmament overhead",
 			"1750760028.927--9223372036854679146": "[]>narrator:nal text boxes: 2 of them\n[]>final cg: 2 parallel shots\nleft side: maya burying haley\nright side: argo rescuing a puppy (keeled over the sidewalk, bloodied and wounded)\nfinal words:\nm: rest now,... owner. (maybe reword) (\"please rest now\"?)\na: hey, pup.\n\nalso some threshold or hsv contrast layer above everything below the ending splash for intensity as the logo pops up?\nhttps://godotshaders.com/shader/grey-threshold/",
-			"1750760127.725--9223372036854679064": "[]>xelia: Was really funny when you asked if the other client is queer.\n[]>xelia: It's a walking cognitohazard, keeps getting people on hormones.\n[]>maya: ...\n[]>maya: Intersting.\n[]>maya: ...\n[]>maya: Lets see if... <ap>it... <ap>passes the vibe check.\n[]>argo: ...\n[]>xelia: Just the next door left...\n[]>xelia: And here we are.\n[]>xelia: Hey guys!\n[]>maya: <call:Sound.fade_out_bgm(0)> ...\n[]>argo: ...\n[]>roaches: ...\n[]>xelia: ...?\n[]>harshnoise: ...\n[]>maya: ...\n[]>argo: ...\n[]>maya: ...\n[]>argo: What...\n[]>maya: No don't tell me...\n[]>maya: ...\n[]>maya: Fuuucck...\n[]>argo: Well...\n[]>argo: ...\n[]>argo: We both know why we're here I think.\n[]>maya: Fuck me.\n[]>roaches: ...\n[]>roaches: You two fucking know each other?? <call:Sound.play_bgm(necro, 10)>\n[]>argo: Yeaaah...\n[]>argo: Fuck me...\n[]>maya: Oh my god, you can't be serious.\n[]>xelia: What's the issue now?\n[]>argo: We know each other.\n[]>argo: Nessa is... your friend? I guess?\n[]>maya: I mean, yeah.\n[]>maya: Its girlfriend is one of the closest friends Haley had.\n[]>maya: And a friend of mine.\n[]>maya: We hang out.\n[]>maya: ...\n[]>maya: What the shit, Argo. What are you doing here?\n[]>argo: ...\n[]>maya: I mean, I can guess, but...\n[]>argo: I've just been in a mood.\n[]>argo: And then Xelia randomly asked me if I wanna see.\n[]>argo: And I said yes.\n[]>argo: Ugh, why didn't I think of this?!\n[]>argo: I'm so sorry.\n[]>maya: No, don't be, like I'm just as fucked up for being here.\n[]>roaches: So... does this change any of our plans?\n[]>maya: I don't know!\n[]>maya: Does Nessa know about this?\n[]>argo: ...\n[]>argo: She doesn't.\n[]>maya: What?!\n[]>argo: It hadn't come up yet, okay?\n[]>maya: I mean yeah, it makes sense.\n[]>maya: Fuck.\n[]>xelia: Do you wanna sit down? I'll make you a coffee and we can talk this over then?\n[]>maya: Fucking hell.\n[]>maya: Sure.\n[]>maya: Let's discuss the necropornographic presentation of my dead ex girlfriend over some coffee.\n[]>maya: ...\n[]>maya: Fuck...\n[]>argo: ...\n[]>maya: Sorry.\n[]>argo: No it's...\n[]>roaches: This is super fucking fucked up.\n[]>roaches: And funny.\n[]>roaches: Can I say that?\n[]>argo: Sure, Roaches.\n[]>maya: Wait, you two know each other then too?\n[]>argo: I know all of them here.\n[]>argo: Xelia is like my oldest friend in this entire city.\n[]>maya: How did this never come up?\n[]>maya: Okay, I also didn't know Xelia.\n[]>argo: That... And I mean, our connection is freak internet shit.\n[]>argo: You now know the extent of it...\n[]>argo: But largely, there's good reasons to not display it that openly, I think.\n[]>maya: Yeah, you're right.\n[]>maya: Like I don't know, it has only been like two or three months that we've known each other.\n[]>argo: Close to three, maybe four, I think.\n[]>maya: Whatever.\n[]>argo: What's your connection then?\n[]>maya: Can we discuss this some other fucking time please?\n[]>harshnoise: ...\n[]>roaches: ...\n[]>maya: ...\n[]>harshnoise: Grindr.\n[]>roaches: Heh.\n[]>maya: Fuck me.\n[]>argo: What.\n[]>narrator: Maya is glaring at Noise as if it were Audrey.\n[]>maya: ...\n[]>harshnoise: ...\n[]>harshnoise: Sorry.\n[]>maya: Whatever.\n[]>maya: Genuinely, fuck you.\n[]>maya: ...\n[]>argo: ...\n[]>maya: But okay, yes...\n[]>maya: Noise and I went on a date and that was fine.\n[]>maya: And then I met Roaches.\n[]>maya: Became friends.\n[]>maya: Eventually started hooking up.\n[]>roaches: I wouldn't say you can call it dating but it's more like emotionally invested regular hookups.\n[]>argo: You're in a fucking situationship.\n[]>roaches: Think less catastrophic.\n[]>roaches: More...\n[]>maya: Yeah it's something that's not actively on fire all the time.\n[]>maya: But you know...\n[]>argo: ...\n[]>argo: Great.\n[]>xelia: Here's your coffee.\n[]>maya: Thanks.\n[]>xelia: Exchanging stories I hear?\n[]>argo: Kinda.\n[]>argo: Fuck...\n[]>maya: Yeah...\n[]>harshnoise: Well, nothing to do about it!\n[]>xelia: Anything new about our arrangements?\n[]>argo: Huh?\n[]>xelia: Regarding...\n[]>xelia: The basement.\n[]>maya: ...\n[]>maya: Let me think about it for a bit.\n[]>maya: I'm gonna go for a walk.\n[]>roaches: Wanna go together?\n[]>maya: It's fine Roachies.\n[]>roaches: Got it.\n[]>argo{target|1}: At least they got cute nicknames.\n[]>xelia{target|1}: I know, right?\n[]>maya: Just gonna walk along the beach I think.\n[]>xelia{target|0}: <call:hide_all_windows()>Do be back before long though, please.\n[]>harshnoise: Xelia.\n[]>xelia: Okay, sorry.\n[]>xelia: Take the time you need.\n[]>xelia: But today is the only day to plan things.\n[]>xelia: So make of that what you will.\n[]>maya: Got it.\n[]>maya: See ya.",
+			"1750760127.725--9223372036854679064": "[]>xelia: Was really funny when you asked if the other client is queer.\n[]>argo{target|1}: I dunno...\n[]>xelia: It's a walking cognitohazard, keeps getting people on hormones.\n[]>maya: ...\n[]>argo: Haven't touched a DAW in ages.\n[]>maya: Intersting.\n[]>maya: ...\n[]>maya: Lets see if... <ap>it... <ap>passes the vibe check.\n[]>argo: ...\n[]>argo: Just been busy with other shit.\n[]>maya: ...\n[]>xelia: Just the next door left...\n[]>xelia: And here we are.\n[]>xelia: Hey guys!\n[]>maya: <call:Sound.fade_out_bgm(0)><call:hide_all_windows()>...\n[]>argo: ...\n[]>roaches: ...\n[]>xelia: ...?\n[]>harshnoise: ...\n[]>maya: ...\n[]>argo: ...\n[]>maya: ...\n[]>argo: What...\n[]>maya: No don't tell me...\n[]>maya: ...\n[]>maya: Fuuucck...\n[]>argo: Well...\n[]>argo: ...\n[]>argo: We both know why we're here I think.\n[]>maya: Fuck me.\n[]>roaches: ...\n[]>roaches: You two fucking know each other?? <call:Sound.play_bgm(necro, 10)>\n[]>argo: Yeaaah...\n[]>argo: Fuck me...\n[]>maya: Oh my god, you can't be serious.\n[]>xelia: What's the issue now?\n[]>argo: We know each other.\n[]>argo: Nessa is... your friend? I guess?\n[]>maya: I mean, yeah.\n[]>maya: Its girlfriend is one of the closest friends Haley had.\n[]>maya: And a friend of mine.\n[]>maya: We hang out.\n[]>maya: ...\n[]>maya: What the shit, Argo. What are you doing here?\n[]>argo: ...\n[]>maya: I mean, I can guess, but...\n[]>argo: I've just been in a mood.\n[]>argo: And then Xelia randomly asked me if I wanna see.\n[]>argo: And I said yes.\n[]>argo: Ugh, why didn't I think of this?!\n[]>argo: I'm so sorry.\n[]>maya: No, don't be, like I'm just as fucked up for being here.\n[]>roaches: So... does this change any of our plans?\n[]>maya: I don't know!\n[]>maya: Does Nessa know about this?\n[]>argo: ...\n[]>argo: She doesn't.\n[]>maya: What?!\n[]>argo: It hadn't come up yet, okay?\n[]>maya: I mean yeah, it makes sense.\n[]>maya: Fuck.\n[]>xelia: Do you wanna sit down? I'll make you a coffee and we can talk this over then?\n[]>maya: Fucking hell.\n[]>maya: Sure.\n[]>maya: Let's discuss the necropornographic presentation of my dead ex girlfriend over some coffee.\n[]>maya: ...\n[]>maya: Fuck...\n[]>argo: ...\n[]>maya: Sorry.\n[]>argo: No it's...\n[]>roaches: This is super fucking fucked up.\n[]>roaches: And funny.\n[]>roaches: Can I say that?\n[]>argo: Sure, Roaches.\n[]>maya: Wait, you two know each other then too?\n[]>argo: I know all of them here.\n[]>argo: Xelia is like my oldest friend in this entire city.\n[]>maya: How did this never come up?\n[]>maya: Okay, I also didn't know Xelia.\n[]>argo: That... And I mean, our connection is freak internet shit.\n[]>argo: You now know the extent of it...\n[]>argo: But largely, there's good reasons to not display it that openly, I think.\n[]>maya: Yeah, you're right.\n[]>maya: Like I don't know, it has only been like two or three months that we've known each other.\n[]>argo: Close to three, maybe four, I think.\n[]>maya: Whatever.\n[]>argo: What's your connection then?\n[]>maya: Can we discuss this some other fucking time please?\n[]>harshnoise: ...\n[]>roaches: ...\n[]>maya: ...\n[]>harshnoise: Grindr.\n[]>roaches: Heh.\n[]>maya: Fuck me.\n[]>argo: What.\n[]>narrator: Maya is glaring at Noise as if it were Audrey.\n[]>maya: ...\n[]>harshnoise: ...\n[]>harshnoise: Sorry.\n[]>maya: Whatever.\n[]>maya: Genuinely, fuck you.\n[]>maya: ...\n[]>argo: ...\n[]>maya: But okay, yes...\n[]>maya: Noise and I went on a date and that was fine.\n[]>maya: And then I met Roaches.\n[]>maya: Became friends.\n[]>maya: Eventually started hooking up.\n[]>roaches: I wouldn't say you can call it dating but it's more like emotionally invested regular hookups.\n[]>argo: You're in a fucking situationship.\n[]>roaches: Think less catastrophic.\n[]>roaches: More...\n[]>maya: Yeah it's something that's not actively on fire all the time.\n[]>maya: But you know...\n[]>argo: ...\n[]>argo: Great.\n[]>xelia: Here's your coffee.\n[]>maya: Thanks.\n[]>xelia: Exchanging stories I hear?\n[]>argo: Kinda.\n[]>argo: Fuck...\n[]>maya: Yeah...\n[]>harshnoise: Well, nothing to do about it!\n[]>xelia: Anything new about our arrangements?\n[]>argo: Huh?\n[]>xelia: Regarding...\n[]>xelia: The basement.\n[]>maya: ...\n[]>maya: Let me think about it for a bit.\n[]>maya: I'm gonna go for a walk.\n[]>roaches: Wanna go together?\n[]>maya: It's fine Roachies.\n[]>roaches: Got it.\n[]>argo{target|1}: At least they got cute nicknames.\n[]>xelia{target|1}: I know, right?\n[]>maya: Just gonna walk along the beach I think.\n[]>xelia{target|0}: <call:hide_all_windows()>Do be back before long though, please.\n[]>harshnoise: Xelia.\n[]>xelia: Okay, sorry.\n[]>xelia: Take the time you need.\n[]>xelia: But today is the only day to plan things.\n[]>xelia: So make of that what you will.\n[]>maya: Got it.\n[]>maya: See ya.",
 			"1750760148.208--9223372036854679062": "[]>roaches: I'm putting a fucking tent peg in my skull.\n[]>harshnoise: Not without the camera rolling.\n[]>roaches: I know.\n[]>argo: ...\n[]>harshnoise: ...\n[]>xelia: What's up?\n[]>argo: Processing shit.\n[]>xelia: Like what?\n[]>argo: [i]*sigh*[/i]\n[]>argo: The question is entirely superfluous...\n[]>argo: But...\n[]>argo: The body...\n[]>xelia: Yeah?\n[]>argo: Tgirl with gold hair and tall statue?\n[]>xelia: Yeah.\n[]>argo: ...\n[]>roaches: Don't wanna see her anymore?\n[]>argo: Xelia's descriptions were... lovely.\n[]>argo: And I kinda need some violent catharsis.\n[]>argo: But... fuck.\n[]>argo: ...\n[]>argo: I'll see what Maya has to say.",
 			"1750760152.096--9223372036854679060": "[]>argo: ...\n[]>argo: Ugh, fuck me...\n[]>harshnoise: ...\n[]>roaches: ...\n[]>argo: Why didn't you ever say anything?\n[]>roaches: Come ooonn, I also don't know all the faggots you got your dick in!\n[]>argo: Urgh, I guess...\n[]>roaches: Sorryyy!\n[]>argo: It's fine.\n[]>harshnoise: We'll discover how funny this is when Maya gets back.\n[]>argo: I just hope I don't die of existential dread until then.\n[]>xelia: Oh Argo.\n[]>xelia: Poor you.\n[]>argo: [i]*sigh*[/i] \n[]>xelia: ...\n[]>xelia: I should've asked earlier, but... more coffee for all of you?\n[]>argo: Please.",
 			"1750760160.375--9223372036854679058": "[]>xelia: Doorbell.\n[]>argo: I'm going.\n[]>argo: ...\n[]>argo: Hi Maya.\n[]>maya: ...\n[]>maya: Hi Argo.\n[]>maya: [i]*sigh*[/i]\n[]>xelia: Welcome back.",
@@ -22814,7 +22905,7 @@
 			"1750765550.663--9223372036854678226": "[]>maya{target|1}:Please rest now.<advance>\n[]>argo{target|2}:Hey, pup.",
 			"1750831351.880--9223372036854677350": "[]>roaches: You can start now.\n[]>maya: Ready.\n[]>roaches: State your name, age and what we're doing today please.\n[]>maya: ...\n[]>maya: I'm Maya.\n[]>maya: My girlfriend died recently.\n[]>maya: ...\n[]>maya: I'm burying her.\n[]>maya: This is the hole.\n[]>maya: And my previous girlfriend lies here too.\n[]>maya: ...\n[]>maya: Fuck...\n[]>roaches: ...\n[]>roaches: You're doing great.\n[]>roaches: Your age?\n[]>maya: ...\n[]>maya: Twenty-four.\n[]>roaches: ...\n[]>maya: ...\n[]>roaches: ...\n[]>roaches: How did she die?\n[]>maya: ...\n[]>roaches: ...\n[]>maya: ...\n[]>roaches: How did she die, Maya?\n[]>roaches: ...\n[]>maya: ...\n[]>roaches: ...\n[]>maya: Suicide.\n[]>maya: ...\n[]>roaches: Do you wanna spill any more info about it?\n[]>maya: No.\n[]>roaches: ...\n[]>roaches: But one last question.\n[]>maya: ...",
 			"1750831360.132--9223372036854677348": "[]>roaches: Why are you naked?\n[]>maya: ...\n[]>maya: It's hot.\n[]>roaches: Hehe.",
-			"1750831398.315--9223372036854677346": "[]>narrator{target|6}: Audrey just brought Nessa home. She didn't wait for Argo to get out to say goodbye and subsequently hates herself for it now, stupid fucking girl just don't be a mess for one fucking day, she thinks. Argo cries for the first time in recent days. Audrey shifts away from neutral. The world feels like it's trying to tear Argo apart with its goddamn apathy and continued existence god get a grip you gotta clock in in twenty minutes please please don't be a horrible person give Nessa space and bring hone some dough and if youre lucky a puppy tonight have you ever considered her fucking feelings no you haven't you inconsiderate FUCK.\n[]>audrey: Want a tissue?\n[]>argo: ...\n[]>argo: Pffrrtt.\n[]>argo: ...\n[]>argo: Ow<call:shake_camera(10)>\n[]>argo: ...\n[]>argo: What was that for?\n[]>audrey: Also heard pain can snap you out of that shit.\n[]>argo: ...\n[]>argo: Or traumatize you even more.\n[]>audrey: Well it didn't in this case.\n[]>argo: ...\n[]>audrey: No I don't wanna talk about it.\n[]>argo: ...\n[]>narrator: She looks tired.",
+			"1750831398.315--9223372036854677346": "[]>narrator{target|6}: Audrey just brought Nessa home. She didn't wait for Argo to get out to say goodbye and subsequently hates herself for it now, stupid fucking girl just don't be a mess for one fucking day, she thinks. Argo cries for the first time in recent days. Audrey shifts away from neutral. The world feels like it's trying to tear Argo apart with its goddamn apathy and continued existence god get a grip you gotta clock in in twenty minutes please please don't be a horrible person give Nessa space and bring hone some dough and if youre lucky a puppy tonight have you ever considered her fucking feelings no you haven't you inconsiderate FUCK.\n[]>audrey: Want a tissue?\n[]>argo: ...\n[]>argo: Pffrrtt.\n[]>argo: ...\n[]>argo: Ow!<call:shake_camera(7)>\n[]>argo: ...\n[]>argo: What was that for?\n[]>audrey: Also heard pain can snap you out of that shit.\n[]>argo: ...\n[]>argo: Or traumatize you even more.\n[]>audrey: Well it didn't in this case.\n[]>argo: ...\n[]>audrey: No I don't wanna talk about it.\n[]>argo: ...\n[]>narrator: She looks tired.",
 			"1750831422.287--9223372036854677344": "[]>narrator: Maya has continued exhuming dirt at the hole, and will continue for the foreseeable future. Her sweat is running down her naked form, percolating and glistening in the sunlight and absorbing all the terrible corpsestench the hole apathetically exudes. Roaches is so fucking turned on by the smell. Harsh Noise just vomited down the gravel pile it's keeping watch on. Roaches got it on tape while dualwielding the camera and its dick. The footage is a bit grainy and shaky but whatever.",
 			"1750831431.415--9223372036854677342": "[]>argo{target|3}: im back at work now\n[]>argo: i know you want your peace and quiet right now\n[]>argo: but still\n[]>argo: if i can do anything for you, let me know hun\n[]>argo: please\n[]>vanessa{target|3}: ily\n[]>argo: ily too\n[]>vanessa: ty\n[]>argo: ofc\n[]>argo: anything up?\n[]>vanessa: im sorry for being such a distant mess\n[]>argo: hun its fine\n[]>argo: youre going through so much shit right now\n[]>vanessa: sob\n[]>argo: want me to come over later?\n[]>vanessa: maybe\n[]>argo: i can do it after the puppyrun?\n[]>vanessa: maybe\n[]>argo: yes maybe or actually maybe?\n[]>vanessa: yes maybe ;-;\n[]>argo: ill be there\n[]>vanessa: please be careful tonight\n[]>argo: i will\n[]>argo: <3\n[]>argo: and... nini?\n[]>vanessa: nini\n[]>argo: sweet dreams\n[]>argo: sleep well\n[]>vanessa: hug\n[]>argo: hug",
 			"1750831454.153--9223372036854677340": "[]>narrator: <call:hide_window(3)>Maya shovels dirt until the sky adopts the colors of Haley's skin, and is then swallowed by the cosmic array of stars growing into the nightly firmament overhead, which means fuck all because this work is a lot.\n[]>narrator: The sky has turned pitch black by now. Harsh Noise gave Roaches a flashlight to illuminate the scene and it's horrible for everyone involved and so so tiring but what else are they gonna do.\n[]>narrator: Haley continues to rot half a pace away from them.",
@@ -22833,7 +22924,7 @@
 			"1751014557.029--9223372036854673205": "[]>haley{target|3}: i miss u\n[]>haley: maya\n[]>haley: i want you\n[]>haley: pls just let me be a fuckup with you\n[]>haley: it can be so nice\n[]>maya{target|3}: haley\n[]>maya: seriously?\n[]>haley: you've been so invaluable to me\n[]>haley: youve shown me such a great world\n[]>haley: youre like the only person to ever make me feel like i matter\n[]>haley: and we did it while both being super fucking useless\n[]>haley: maya?\n[]>maya: I'm sorry\n[]>maya: I just don't want that, being a fuckup I mean\n[]>maya: I simply do not want to be the same type of loser for months or even years on end\n[]>maya: even with you\n[]>haley: but what am i supposed to do then?\n[]>haley: who am i supposed to live my life with?\n[]>maya: I'm sorry\n[]>maya: You're so frail\n[]>maya: and I'm sorry the world is doing this to you\n[]>maya: but if you can't find anyone else who will accept you as you are, then maybe work on becoming a better person?\n[]>haley: A BETTER FUCKING PERSON?\n[]>haley: BITCH WHAT",
 			"1751014640.547--9223372036854673203": "[]>maya: omg dont put it like this\n[]>maya: ffs\n[]>maya: we can still be friends\n[]>haley: yea right\n[]>maya: haley\n[]>maya: youre also hurting my feelings with this shit\n[]>haley: im sorry idek what i am anymore\n[]>haley: i just\n[]>haley: fuck\n[]>haley: im sry maya i never meant to hurt u pls dont hurt urself\n[]>maya: I know.",
 			"1751014641.081--9223372036854673201": "[]>haley: so just because I have anger issues I deserve to be left alone\n[]>maya: not if you show effort to work through them\n[]>haley: as if im not already\n[]>haley: do you have any idea how tiring this is you cunt\n[]>haley: no you dont\n[]>haley: you dont even want me in your life anymore",
-			"1751014947.179--9223372036854672765": "[]>narrator: Maya puts the shovel down. It'll be a shallow grave but it's more symbolic than anything else anyways.\n[]>maya: ...\n[]>maya: Fuck.\n[]>roaches: ...\n[]>maya: Can you help with the body?\n[]>roaches: ...\n[]>roaches: Hehe.\n[]>roaches: Catch.\n[]>harshnoise: ...\n[]>maya: Is it still recording?\n[]>harshnoise: Positive.\n[]>roaches: Hi.\n[]>maya: Hey.\n[]>narrator: Roaches leans in for a quick kiss over Haley's body. Maya's heart flutters.\n[]>maya: Let's get her down here.\n[]>maya: ...\n[]>roaches: ...\n[]>maya: Lift her ass more.\n[]>roaches: Ugh fuck.\n[]>maya: ...\n[]>maya: Watch it, I'm gonna take a step down.\n[]>roaches: ...\n[]>roaches: Woah woah woah!\n[]>maya: Do not drop her.\n[]>roaches: Sorry.\n[]>maya: ...\n[]>maya: Alright come here.\n[]>maya: I got you.\n[]>roaches: ...\n[]>maya: Now lower.\n[]>roaches: ...\n[]>roaches: Fuck.\n[]>maya: ...\n[]>maya: Okay.\n[]>maya: ...\n[]>roaches: ...\n[]>roaches: And put the dirt back?\n[]>maya: ...\n[]>maya: Fuck.\n[]>maya: Gimme a sec.\n[]>maya: Nmbmfghbfg",
+			"1751014947.179--9223372036854672765": "[]>narrator: Maya puts the shovel down. It'll be a shallow grave but it's more symbolic than anything else anyways.\n[]>maya: ...\n[]>maya: Fuck.\n[]>roaches: ...\n[]>maya: Can you help with the body?\n[]>roaches: ...\n[]>roaches: Hehe.\n[]>roaches: Catch.\n[]>harshnoise: <call:shake_camera(4)>...\n[]>maya: Is it still recording?\n[]>harshnoise: Positive.\n[]>roaches: Hi.\n[]>maya: Hey.\n[]>narrator: Roaches leans in for a quick kiss over Haley's body. Maya's heart flutters.\n[]>maya: Let's get her down here.\n[]>maya: ...\n[]>roaches: ...\n[]>maya: Lift her ass more.\n[]>roaches: Ugh fuck.\n[]>maya: ...\n[]>maya: Watch it, I'm gonna take a step down.\n[]>roaches: ...\n[]>roaches: Woah woah woah!\n[]>maya: Do not drop her.\n[]>roaches: Sorry.\n[]>maya: ...\n[]>maya: Alright come here.\n[]>maya: I got you.\n[]>roaches: ...\n[]>maya: Now lower.\n[]>roaches: ...\n[]>roaches: Fuck.\n[]>maya: ...\n[]>maya: Okay.\n[]>maya: ...\n[]>roaches: ...\n[]>roaches: And put the dirt back?\n[]>maya: ...\n[]>maya: Fuck.\n[]>maya: Gimme a sec.\n[]>maya: Nmbmfghbfg",
 			"1751036110.970--9223372036854671301": "[]>maya: Like... what am I even doing this for?\n[]>maya: Some sense of closure?\n[]>maya: So I can blame it on some ritualistic shit for myself?\n[]>harshnoise:...\n[]>xelia:...\n[]>xelia: If you want my thoughts...",
 			"1751036459.864--9223372036854671238": "[]>maya: But regardless... they're not the reasons I'm doing this.\n[]>maya: I'm doing this for myself.\n[]>maya: I want Haley to have a flare brighter than she could've ever imagined.\n[]>maya: ...",
 			"1751036460.503--9223372036854671236": "[]>maya: ...\n[]>maya: Fuck it.\n[]>maya: All of the things you said are true... I think.\n[]>maya: You have some choice of words that I couldn't really follow right now.\n[]>xelia: It happens, apologies.\n[]>maya: Mhm.\n[]>maya: ...\n[]>maya: I guess if you wanted to rationalize this shit, those would be good reasons.",
@@ -22843,7 +22934,7 @@
 			"1751092008.331--9223372036854670014": "[]>audrey: Oh so she just died on her own?\n[]>maya: ...\n[]>maya: What are you saying right now?\n[]>audrey: No underlying motivations...\n[]>maya: You don't get to make me fucking solely responsible for her death.\n[]>audrey: Likewise.\n[]>audrey: Because at least I can say that I didn't fucking...\n[]>audrey: Let her live on a fucking snuff tape.\n[]>maya: DON'T YOU FUCKING DARE!\n[]>maya: I DIDN'T KILL HER.\n[]>audrey: Oh excuse me for conflating some of your necrofuck terminology.\n[]>maya: You know what snuff is.\n[]>maya: This is not that.\n[]>maya: Audrey.\n[]>audrey: ...\n[]>audrey: But you don't get to pretend like the other mindset is much better.\n[]>maya: ...",
 			"1751093107.152--9223372036854669720": "[]>haley{target|1}:Please let me be there for you one more time.\n[]>haley: I know I've failed at it and have been not enough in the last.\n[]>haley: But I'd rather try and fail over and over again than know someone else to fill that role for you.",
 			"1751093117.446--9223372036854669679": "[]>narrator{target|1}: Haley is currently high on a cocktail of speed and meth and her chest hurts so so fucking bad and she keeps talking to herself and ruminating her pain and wallowing in despair and bathing in heartbreak and it is all so horrible.",
-			"1751093374.671--9223372036854669497": "[]>narrator: Xelia and Argo prepare some coffee in the kitchen. Roaches and Harsh Noise arrive some time later, and shortly after Xelia excuses herself to the train station.\n[]>argo: See ya.\n[]>xelia: Toodles.",
+			"1751093374.671--9223372036854669497": "[]>harshnoise: How're you feeling?\n[]>argo: Pretty shit.\n[]>argo: ...\n[]>argo: The... partner of a friend... recently died.\n[]>argo: And that's fucking things up with nessa because she needs space and I cannot be fucking normal about it and I hate it.\n[]>argo: So I'll just look at a pretty girl instead and feel better about myself, apparently.\n[]>harshnoise: Violent catharsis.\n[]>argo: Literally what I said to myself.\n[]>argo: And overall, Xelia has been helping me with navigating shit with nessa...\n[]>xelia: Hehe.\n[]>argo: ...And that's nice.\n[]>harshnoise: I'm glad.\n[]>argo: Anything new with you?\n[]>roaches: My dearest Harsh Noise fucking spraypainted all over the apartment.\n[]>harshnoise: Magic.\n[]>argo: Getting into witchcraft?\n[]>narrator: The gang continues chatting about whatever because what else are they gonna do. There is a deliberate and conventional absence of the obvious topic at hand to their conversations.\n[]>xelia: Well, I have to excuse myself to the station for a bit, gonna pick up our last guest.\n[]>roaches: Oh... now it's getting real hehehehehe.\n[]>roaches: I'm so fucking excited.\n[]>argo: You would be.\n[]>roaches: And you aren't?\n[]>argo: ...\n[]>xelia: Irredeemable, all of you <3\n[]>argo: See ya.\n[]>xelia: Toodles.\n[]>harshnoise: Do you know anything about the other girl?\n[]>argo: ...\n[]>argo: Nothing.\n[]>roaches: Interesting...\n[]>roaches: Curious, even.\n[]>roaches: Fuck.\n[]>argo: Do you?\n[]>roaches: Yeah...\n[]>roaches: We're fucking.\n[]>roaches: Hehe.\n[]>argo: Now it makes more sense you're here.\n[]>harshnoise: I've walked in on them fucking on the kitchen floor before.\n[]>argo: Hilarious.\n[]>argo: But you don't wanna give me a name?\n[]>roaches: Maybe when we figure out more. For now we're just fucking sometimes and the things she lets me do to her are really really fucking filthy... ehehehe...\n[]>argo: Well... do let me know if that goes anywhere.\n[]>roaches: Will do.\n[]>roaches: It's my first time to have a puppy around that long.\n[]>roaches: I wonder if they all are degens like that.\n[]>roaches: Hehehehe.\n[]>harshnoise: Would be intriguing.\n[]>harshnoise: I don't think they are on account of them being their own beings with agency and such.\n[]>harshnoise: But I get where you're coming from.\n[]>roaches: Mnfrbtgh.\n[]>argo: Sounds like a cool puppy.\n[]>roaches: Hehe.\n[]>argo: Nya.",
 			"1751093375.239--9223372036854669495": "[]>xelia: Also don't want me to ask about your cuts?\n[]>argo: ...\n[]>xelia: Like I know you're into it.\n[]>xelia: But they give me a different energy.\n[]>argo: ...\n[]>xelia: And the aftercare seems... different.\n[]>argo: ...\n[]>xelia: Did Nessa and you fight?\n[]>argo: ...\n[]>argo: God, fuck you.\n[]>xelia: Hey! I can also be there for you when shit hits the fan on your end, you know?\n[]>argo: [i]*sigh*[/i]\n[]>argo: I know.\n[]>argo: ...\n[]>xelia: ...\n[]>argo: We didn't fight.\n[]>argo: She's just dealing with grief.\n[]>argo: And that makes her isolate herself.\n[]>argo: And I get that and understand.\n[]>argo: ...\n[]>xelia: But the loneliness still hurts.\n[]>argo: But the loneliness still hurts.\n[]>argo: So yeah... congrats... we are not beating the Got Better Allegations.\n[]>argo: In the... actual unironic sense.\n[]>argo: Turns out getting better was a scam.\n[]>argo: Oopsie.\n[]>argo: How silly of me.\n[]>xelia: ...\n[]>argo: Sometimes you just get worse and there's nothing you can do about it.\n[]>xelia: Oh Argo.\n[]>xelia: You silly goose.\n[]>xelia: I firmly disagree on the getting worse part of your assertions.\n[]>xelia: I mean... yeah, sure, things might suck and hurt but you're still a different person from how you were when we met.\n[]>xelia: And I'm proud of you for that :3\n[]>argo: Different is not better though.\n[]>xelia: You now got one ex you're still talking to.\n[]>xelia: You couldn't say that back then.\n[]>xelia: You are getting better and more resilient and bracing the tides and the world and all those lovely things I've been told.\n[]>xelia: I'm glad to see you're bourgeoning into even more of queer freakage.\n[]>argo: ...\n[]>xelia: Things are good, Argo.\n[]>xelia: I will concede that we all have a bunch of mental illness and maladaptive patterns that sometimes get more intense at arbitrary or less arbitrary points in time.\n[]>xelia: ...But that's why we have each other.\n[]>xelia: ...For when things are really really bad.\n[]>xelia: And I know it can feel like \"cashing in\" on \"friendship points\" for you or whatever.\n[]>xelia: But you don't get to tell me where I place my care over you, or how much, or any of that.\n[]>xelia: If I wanna be there for you, you better let me.\n[]>argo: ...\n[]>xelia: And if you think you're a burden, just remember I'm also severely fucked in the head.\n[]>xelia: I would be lying if my god complex didn't get some satisfaction out of being the therapist and drug dealer of the girlthing that's everyone else's therapist and hormone dealer.\n[]>argo: ...\n[]>xelia: ...\n[]>xelia: But you're also one of the few people I actually care about, so... you know.\n[]>argo: ...\n[]>xelia: ...\n[]>argo: Thank you, Xelia.\n[]>xelia: Hehe ^^",
 			"1751107452.061--9223372036854665729": "[]>audrey: Fuck.\n[]>audrey: They got dumped.\n[]>argo: Dumped?\n[]>audrey: Usually you got girls just lying here.\n[]>audrey: Them not being here means we have to go dumpster diving.\n[]>argo: ...Dumpster?\n[]>audrey: Hope you're ready for gore, pretty girl.",
 			"1751108677.275--9223372036854665339": "[]>narrator: Haley is taking a shower. Maya is in Haley's bed.\n[]>maya{target|3}: what I asked earlier\n[]>maya: sorry\n[]>maya: the movie is from before I knew you\n[]>maya: <3\n[]>haley{target|3}: i know\n[]>haley: x\n[]>haley: still kinda disturbing to see u with some1 else then tho\n[]>maya: huh\n[]>haley: just\n[]>haley: i see them dead them\n[]>haley: and i dont want that\n[]>maya: noni will be safe\n[]>maya: roaches too\n[]>haley: right\n[]>haley: roaches\n[]>maya: still an issue?\n[]>haley: its nothing\n[]>maya: its not nothing\n[]>haley: i dont wanna talk about it\n[]>maya: :(\n[]>haley: can we still cuddle tho\n[]>maya: sure",
@@ -22854,6 +22945,7 @@
 			"1751187151.161--9223372036854664348": "[]>haley: Because Noise is the ony tattoo artist here.\n[]>haley: Can't you go to another fucking city?\n[]>maya: With what fucking money?\n[]>haley: ...\n[]>haley: Have you been whoring yourself out to it?\n[]>maya: Fuck, Haley... no.\n[]>maya: Noise is fucked up... but it knows what it's doing. It actually is a competent artist.\n[]>maya: It just gives me good prices because it likes me.\n[]>maya: ...God.\n[]>haley: \"likes you\"\n[]>haley: Sure.\n[]>maya: God, Haley can we please not start this shit again.\n[]>haley: Start what shit?\n[]>maya: Like I don't know...\n[]>maya: You accusing me of whatever it is youre implying.\n[]>maya: Moving in or whatever you have in your head.\n[]>haley: As if you haven't basically moved there by now.\n[]>maya: I literally...\n[]>maya: I spend half my time at your place!\n[]>haley: And the other half?\n[]>maya: Argh.",
 			"1751187504.088--9223372036854664344": "[]>maya: Just be...\n[]>maya: A li'l less possessive, okay?\n[]>haley: ...",
 			"1751221816.271--9223372036854662419": "[]>maya{target|3}: what do you mean you fucked up\n[]>maya: audrey please\n[]>maya: what did you do\n[]>audrey: nothing i just exploded kinda because she kept pissing me off\n[]>maya: can you not do that for today\n[]>maya: thank you\n[]>maya: bye\n[]>maya{target|9}: hey haley\n[]>maya: please answer me <call:hide_window(3)>\n[]>maya: haley please you dont have to do this",
+			"1751266524.317--9223372036854658178": "[]>narrator: Xelia and Argo prepare some coffee in the kitchen. Roaches and Harsh Noise arrive some time later. Roaches has a smug grin plastered on her face. Harsh Noise looks ready to kill meaing no different than any other day.",
 			"amber-is-happy": "[]>amber{amber-emotion|happy}: I'm really happy to hear that! <mp>I think you're cool too!"
 		},
 		"text_lead_time_other_actor": 0.0,

@@ -232,7 +232,7 @@ const SPLASH_STRINGS := {
 	"killer_hangover" : "Killer hangover.",
 	"filthy" : "Filthy.",
 	"audrey_lives" : "Audrey lives.",
-	"ending" : "REFUSE REFUSE REFUSE REFUSE FOREVER AND EVER AND EVER MORE!",
+	"ending" : "An elegy until it's an anthem: REFUSE REFUSE REFUSE REFUSE FOREVER AND EVER AND EVER MORE!",
 	"noni_rescue" : "Trauma dump.",
 	"pale" : "Pale as a corpse grey morning sky.",
 	"vibrant" : "Vibrant as bruises.",

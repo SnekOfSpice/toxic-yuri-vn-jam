@@ -3,6 +3,7 @@ class_name GameCamera
 
 @export var fade = 5.0
 @onready var vnui : Control = find_child("VNUI")
+@onready var cg_bottom_container : Control = find_child("CGBottomContainer")
 
 var rng = RandomNumberGenerator.new()
 
@@ -69,6 +70,8 @@ func _process(delta: float) -> void:
 			y * sway_intensity),
 		sway_intensity_lerp_strength) + flat_offset
 	vnui.position = offset
+	for child : CGTexture in cg_bottom_container.get_children():
+		child.set_texture_offset(offset)
 	sway_intensity_lerp_strength = lerp(sway_intensity_lerp_strength, 0.02, 0.03)
 	
 	if GameWorld.game_stage:
