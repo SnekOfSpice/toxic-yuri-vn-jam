@@ -17,9 +17,9 @@ func hidden_ui_reset():
 		return
 	game_stage.set_fade_out(0, 0)
 	game_stage.hide_cg()
-	game_stage.hide_default_text_container()
 	game_stage.clear_text_bodies()
-	game_stage.hide_all_windows(false)
+	game_stage.hide_all_windows()
+	game_stage.hide_default_text_container()
 	GameWorld.camera.zoom_to(1, 0)
 	Parser.line_reader.shake_windows(0)
 

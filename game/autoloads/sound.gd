@@ -96,8 +96,4 @@ func play_bgm(bgm:String, fade_in:=0.0, from:=0.0):
 func fade_out_bgm(fade_out_time:float):
 	if not main_audio_player:
 		return
-	var t = create_tween()
-	t.tween_property(main_audio_player, "volume_db", linear_to_db(0.0001), fade_out_time)
-	t.finished.connect(main_audio_player.set_stream.bind(null))
-	t.finished.connect(main_audio_player.queue_free)
-	t.finished.connect(print.bind("hi"))
+	play_bgm("silence", fade_out_time)

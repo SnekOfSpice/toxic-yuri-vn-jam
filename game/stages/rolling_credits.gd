@@ -25,10 +25,9 @@ const MESSAGES := [
 	"POLITICS OF VISIBILITY WILL GET YOU KILLED",
 	"RADICAL TRANS RIGHTS OR DEATH",
 	"INJECT EXOGENOUS HORMONES",
-	"EVERY FASCIST MUST DIE",
+	"DEATH TO FASCISM",
 	"LOVE YOURSELF",
 	"BE QUEER",
-	"BE GAY",
 	"<3"
 ]
 
@@ -48,6 +47,7 @@ func _ready() -> void:
 	$GridContainer.visible = false
 
 func start():
+	Sound.fade_out_bgm(4)
 	var credits : CanvasLayer = GameWorld.game_stage.find_child("CreditsLayer")
 	credits.visible = true
 	visible = true
