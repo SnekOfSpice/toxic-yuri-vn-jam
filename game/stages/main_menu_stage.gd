@@ -11,6 +11,7 @@ signal load_game()
 signal start_epilogue()
 
 func _ready() -> void:
+	set_save_slot(Options.save_slot)
 	find_child("BlackLayer").visible = false
 	%AnimationPlayer.play("hover")
 	if not menu_music.is_empty():

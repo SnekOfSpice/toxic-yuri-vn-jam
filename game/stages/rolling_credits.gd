@@ -65,8 +65,8 @@ func start():
 	var time_buffer := 2.065
 	while not paws.is_empty():
 		Sound.play_sfx("hover")
-		var i = paws.pop_back()
-		$GridContainer.get_child(i).modulate.a = 1
+		var paw_index = paws.pop_back()
+		$GridContainer.get_child(paw_index).modulate.a = 1
 		await get_tree().create_timer(0.005 + time_buffer).timeout
 		if time_buffer >= 0.065:
 			time_buffer -= 0.4

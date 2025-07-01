@@ -20,6 +20,7 @@ var just_finished_game := false
 var unlocked_epilogue := false
 
 var enable_dither := true
+var save_on_quit := true
 
 func _ready() -> void:
 	var config = ConfigFile.new()
@@ -37,6 +38,7 @@ func _ready() -> void:
 	auto_continue_delay = config.get_value("preferences", "auto_continue_delay", auto_continue_delay)
 	auto_continue = config.get_value("preferences", "auto_continue", auto_continue)
 	enable_dither = config.get_value("preferences", "enable_dither", enable_dither)
+	save_on_quit = config.get_value("preferences", "save_on_quit", save_on_quit)
 	set_fullscreen(config.get_value("preferences", "fullscreen", fullscreen))
 	save_slot = config.get_value("preferences", "save_slot", 0)
 	apply_font_prefs(config.get_value("preferences", "font_prefs", {}))
@@ -98,6 +100,7 @@ func save_prefs():
 	config.set_value("preferences", "save_slot", save_slot)
 	config.set_value("preferences", "font_prefs", font_prefs)
 	config.set_value("preferences", "enable_dither", enable_dither)
+	config.set_value("preferences", "save_on_quit", save_on_quit)
 	
 	config.set_value("state", "just_finished_game", just_finished_game)
 	config.set_value("state", "unlocked_epilogue", unlocked_epilogue)
@@ -109,6 +112,9 @@ func does_savegame_exist():
 	if not ResourceLoader.exists(get_savedata_path()):
 		return false
 	return true
+
+func get_save_time_path(slot := save_slot) -> String:
+	return str("user://time", slot, ".txt")
 
 func get_save_thumbnail_path(slot := save_slot) -> String:
 	return str("user://thumbnail", slot, ".png")
@@ -129,15 +135,23 @@ func set_save_slot(slot : int):
 	if GameWorld.stage_root.stage == CONST.STAGE_MAIN:
 		GameWorld.stage_root.get_stage_node().set_save_slot(slot)
 
-func save_gamestate():
+func save_gamestate(grab_screenshot:=false):
 	var data_to_save := {}
 	data_to_save["Sound"] = Sound.serialize()
 	data_to_save["GameWorld"] = GameWorld.serialize()
 	data_to_save["GoBackHandler"] = GoBackHandler.serialize()
 	
+	if not GameWorld.stage_root.screenshot_to_save and grab_screenshot:
+		GameWorld.game_stage.grab_thumbnail_screenshot()
+	
 	if GameWorld.stage_root.screenshot_to_save:
-		var path := get_save_thumbnail_path()
-		GameWorld.stage_root.screenshot_to_save.save_png(path)
+		var path_thumb := get_save_thumbnail_path()
+		GameWorld.stage_root.screenshot_to_save.save_png(path_thumb)
+		
+		var path_time := get_save_time_path()
+		var file = FileAccess.open(path_time, FileAccess.WRITE)
+		file.store_string(Time.get_datetime_string_from_system(false, true))
+		file.close()
 	
 	Parser.save_parser_state_to_file(get_savedata_path(), data_to_save)
 

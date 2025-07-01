@@ -358,7 +358,7 @@ func on_actor_name_changed(
 			actor_name = "narrator"
 		var target_id : int = target_label_id_by_actor.get(actor, 0)
 		if target_id == 6:
-			find_child("Portrait").visible = false
+			#find_child("Portrait").visible = false
 			return
 		if actor_name in Parser.line_reader.blank_names:
 			if target_id == 0:

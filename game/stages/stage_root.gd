@@ -56,11 +56,7 @@ func set_screen(screen_path:String, payload := {}):
 			c.queue_free()
 	
 	if stage == CONST.STAGE_GAME:
-		await  RenderingServer.frame_post_draw
-		screenshot_to_save = get_stage_node().get_viewport().get_texture().get_image()
-		var s = Options.get_save_thumbnail_size()
-		screenshot_to_save.resize(s.x, s.y)
-		await  RenderingServer.frame_post_draw
+		grab_thumbnail_screenshot()
 	
 	var new_screen = load(str(CONST.SCREEN_ROOT, screen_path)).instantiate()
 	
@@ -81,6 +77,10 @@ func set_screen(screen_path:String, payload := {}):
 	screen_container.visible = true
 	screen = screen_path
 	hook_up_button_sfx(new_screen)
+func grab_thumbnail_screenshot():
+	screenshot_to_save = get_viewport().get_texture().get_image()
+	var s = Options.get_save_thumbnail_size()
+	screenshot_to_save.resize(s.x, s.y)
 
 func new_gamestate():
 	game_start_callable = Parser.reset_and_start

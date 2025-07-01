@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://clvr2siqvathu"]
+[gd_scene load_steps=9 format=3 uid="uid://clvr2siqvathu"]
 
 [ext_resource type="Script" uid="uid://uupjdu0y5l24" path="res://game/screens/options_screen.gd" id="1_1als3"]
 [ext_resource type="Theme" uid="uid://gee0nt5mhjku" path="res://game/visuals/theme/toxic_yuri_vn_theme.tres" id="1_51xcd"]
@@ -11,6 +11,8 @@
 [sub_resource type="ButtonGroup" id="ButtonGroup_bdfrv"]
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_7g5us"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_51xcd"]
 
 [node name="OptionsScreen" type="Control"]
 layout_mode = 3
@@ -108,15 +110,36 @@ layout_mode = 2
 [node name="SaveContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer"]
 layout_mode = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer"]
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer"]
 layout_mode = 2
+text = "Save"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer"]
+layout_mode = 2
+
+[node name="SaveButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quick Save"
+
+[node name="SaveToSlotButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer2"]
+layout_mode = 2
+text = "Save To Slot..."
+
+[node name="Label3" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer"]
+layout_mode = 2
+text = "Get Out"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer"]
+visible = false
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_51xcd")
 bbcode_enabled = true
-text = "[center]Progress is saved when you leave via the buttons below."
+text = "Progress is saved when you leave via the buttons below."
 fit_content = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer"]
 layout_mode = 2
-alignment = 1
 
 [node name="MainMenuButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer"]
 auto_translate_mode = 1
@@ -128,17 +151,14 @@ auto_translate_mode = 1
 layout_mode = 2
 text = "Quit"
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer"]
+[node name="SaveOnQuitCheckBox" type="CheckBox" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
-alignment = 1
+text = "Save On Quit"
 
-[node name="SaveButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer2"]
+[node name="Label2" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer"]
 layout_mode = 2
-text = "Quick Save"
-
-[node name="SaveToSlotButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer2"]
-layout_mode = 2
-text = "Save To Slot"
+text = "Controls"
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer"]
 layout_mode = 2
@@ -400,10 +420,11 @@ text = "Close"
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/OptionMenusButtonContainer/TextButton" to="." method="set_menu" binds= [1]]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/OptionMenusButtonContainer/DisplayButton" to="." method="set_menu" binds= [2]]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/OptionMenusButtonContainer/SoundButton" to="." method="set_menu" binds= [3]]
-[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer2/SaveButton" to="." method="_on_save_button_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer2/SaveToSlotButton" to="." method="_on_save_to_slot_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="toggled" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/SaveOnQuitCheckBox" to="." method="_on_save_on_quit_check_box_toggled"]
 [connection signal="value_changed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/TextMenu/HBoxContainer/VBoxContainer2/VBoxContainer/TextSpeedSlider" to="." method="_on_text_speed_slider_value_changed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/TextMenu/HBoxContainer/VBoxContainer2/VBoxContainer/AutoContinueCheckBox" to="." method="_on_auto_continue_check_box_pressed"]
 [connection signal="value_changed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/TextMenu/HBoxContainer/VBoxContainer2/VBoxContainer/AutoDelaySlider" to="." method="_on_auto_delay_slider_value_changed"]
