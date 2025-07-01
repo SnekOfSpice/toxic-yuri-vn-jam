@@ -2,12 +2,10 @@ extends Screen
 
 @onready var rtl : RichTextLabel = find_child("RTLFontLabel")
 
-var pause_state_before_open:bool
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	super()
 	
-	pause_state_before_open = Parser.paused
 	Parser.set_paused(true)
 	
 	find_child("QuitButton").visible = not OS.has_feature("web")
@@ -47,7 +45,6 @@ func _ready() -> void:
 
 func close():
 	Options.save_prefs()
-	Parser.set_paused(pause_state_before_open)
 	super.close()
 
 func _input(event: InputEvent) -> void:
@@ -217,3 +214,7 @@ func _on_reset_rtl_font_size_button_pressed() -> void:
 func _on_enable_dither_check_box_toggled(toggled_on: bool) -> void:
 	Options.set_enable_dither(toggled_on)
 	GameWorld.set_enable_dither(toggled_on)
+
+
+func _on_save_to_slot_button_pressed() -> void:
+	GameWorld.stage_root.set_screen(CONST.SCREEN_SAVE, {"save" : true})

@@ -537,7 +537,9 @@ func get_chatlog_window(id:int) -> ChatLogWindow:
 
 func get_body_label(target_id:int):
 	if target_id == 0:
-		return%DefaultTextContainer.find_child("BodyLabel")
+		return %DefaultTextContainer.find_child("BodyLabel")
+	elif target_id == 6:
+		return %FullCoverText.find_child("BodyLabel")
 	else:
 		return get_chatlog_window(target_id).get_body_label()
 

@@ -3,6 +3,7 @@ class_name StageRoot
 
 var stage := ""
 var screen := ""
+var pause_state_before_open:bool
 
 @export_group("Screen Fade", "screen_fade_")
 @export_exp_easing("positive_only") var screen_fade_in := 1.0
@@ -20,11 +21,8 @@ func set_screen(screen_path:String, payload := {}):
 		if Parser.line_reader.is_executing:
 			return
 	
-	if stage == CONST.STAGE_GAME:
-		screenshot_to_save = get_viewport().get_texture().get_image()
-		var s = Options.get_save_thumbnail_size()
-		screenshot_to_save.resize(s.x, s.y)
-	
+	if screen.is_empty():
+		pause_state_before_open = Parser.paused
 	var screen_container:Control
 	if get_stage_node():
 		if get_stage_node().get_screen_container():
@@ -33,6 +31,7 @@ func set_screen(screen_path:String, payload := {}):
 		screen_container = find_child("ScreenContainer")
 	
 	if screen_path.is_empty():
+		Parser.set_paused(pause_state_before_open)
 		if screen_fade_out == 0 or screen_container.get_child_count() == 0:
 			for c in screen_container.get_children():
 				c.queue_free()
@@ -52,9 +51,23 @@ func set_screen(screen_path:String, payload := {}):
 			tween.finished.connect(screen_container.set_visible.bind(false))
 		screen = screen_path
 		return
+	else:
+		for c : Screen in screen_container.get_children():
+			c.queue_free()
+	
+	if stage == CONST.STAGE_GAME:
+		await  RenderingServer.frame_post_draw
+		screenshot_to_save = get_stage_node().get_viewport().get_texture().get_image()
+		var s = Options.get_save_thumbnail_size()
+		screenshot_to_save.resize(s.x, s.y)
+		await  RenderingServer.frame_post_draw
+	
 	var new_screen = load(str(CONST.SCREEN_ROOT, screen_path)).instantiate()
 	
 	match screen_path:
+		CONST.SCREEN_SAVE:
+			if payload.get("save", false):
+				new_screen.button_mode = SaveScreen.ButtonMode.Save
 		CONST.SCREEN_NOTICE:
 			new_screen.handle_payload(payload)
 	

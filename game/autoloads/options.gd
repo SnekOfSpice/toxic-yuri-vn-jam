@@ -13,7 +13,7 @@ var sfx_volume := 1.0
 @export var auto_continue := false
 
 var save_slot := 0
-const MAX_SAVE_SLOTS := 4
+const MAX_SAVE_SLOTS := 6
 
 
 var just_finished_game := false
