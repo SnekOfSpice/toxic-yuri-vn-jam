@@ -25,7 +25,7 @@ func _ready() -> void:
 	find_child("MusicVolumeSlider").value = db_to_linear(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Music")))
 	find_child("SFXVolumeSlider").value = db_to_linear(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("SFX")))
 	
-	%SaveButton.text = "Save (Slot %s)" % (Options.save_slot + 1)
+	%CurrentSlotLabel.text = "Using Slot %s" % (Options.save_slot + 1)
 	%SaveOnQuitCheckBox.button_pressed = Options.save_on_quit
 	#for font in Style.LABEL_FONTS:
 		#var loaded : Font = load(font)

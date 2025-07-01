@@ -55,7 +55,7 @@ func set_screen(screen_path:String, payload := {}):
 		for c : Screen in screen_container.get_children():
 			c.queue_free()
 	
-	if stage == CONST.STAGE_GAME:
+	if stage == CONST.STAGE_GAME and screen.is_empty():
 		grab_thumbnail_screenshot()
 	
 	var new_screen = load(str(CONST.SCREEN_ROOT, screen_path)).instantiate()
