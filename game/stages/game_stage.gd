@@ -134,7 +134,7 @@ func conditional_hide():
 					hide_ui()
 					break
 
-func on_read_new_line(line_index:int):
+func on_read_new_line(_line_index:int):
 	if Parser.line_reader.line_type != DIISIS.LineType.Instruction:
 		show_ui()
 	else:
@@ -153,7 +153,7 @@ func on_tree_exit():
 	GameWorld.game_stage = null
 
 func on_instruction_started(
-	instruction_text : String,
+	_instruction_text : String,
 	_delay : float,
 ):
 	find_child("StartCover").visible = false
@@ -183,7 +183,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	if not GameWorld.stage_root.screen.is_empty():
 		return
 	if event is InputEventKey:
-		if event.pressed:
+		if event.is_released():
 			if InputMap.action_has_event("ui_cancel", event):
 				GameWorld.stage_root.set_screen(CONST.SCREEN_OPTIONS)
 			if InputMap.action_has_event("screenshot", event):
@@ -209,10 +209,12 @@ func _unhandled_input(event: InputEvent) -> void:
 				find_child("Cheats").visible = not find_child("Cheats").visible
 				
 	if event is InputEventMouse:
-		if event.is_pressed() and InputMap.action_has_event("ui_cancel", event):
+		if event.is_released() and InputMap.action_has_event("ui_cancel", event):
 			GameWorld.stage_root.set_screen(CONST.SCREEN_OPTIONS)
 
 	if event.is_action_released("advance"):
+		if event.is_shift_pressed():
+			return
 		if screen_close_blocker:
 			screen_close_blocker = false
 			return
@@ -377,7 +379,7 @@ func on_actor_name_changed(
 				get_chatlog_window(target_id).set_portrait(actor_name)
 
 func set_game_stage_portrait(target_id:int, actor:String):
-	if actor_name in Parser.line_reader.blank_names:
+	if actor in Parser.line_reader.blank_names:
 		if target_id == 0:
 			%DefaultTextContainer.find_child("Portrait").visible = false
 		elif target_id == 10:
@@ -588,7 +590,7 @@ func set_target_labels(actor:String, target_id:int, force_show:=true, as_voice_m
 		#targets_by_subaddress, Parser.line_reader.get_subaddress())
 	target_label_id_by_actor[actor] = target_id
 	var is_texting := target_id in [3,5,7,8,9]
-	var is_digital := target_id in [3,4,5,7,8,9]
+	#var is_digital := target_id in [3,4,5,7,8,9]
 	are_words_being_spoken = not is_texting
 	## all of this is super hacky for the ending and not reusable at all lmfao
 	if target_id in [6, 10, 11]:

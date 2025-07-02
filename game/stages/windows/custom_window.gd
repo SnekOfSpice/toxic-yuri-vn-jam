@@ -95,7 +95,7 @@ func clamp_to_viewport():
 		ProjectSettings.get_setting("display/window/size/viewport_height") - size.y)
 
 var last_pos:Vector2
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if dragging:
 		global_position = get_global_mouse_position() - drag_offset
 		clamp_to_viewport()

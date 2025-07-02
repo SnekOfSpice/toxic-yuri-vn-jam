@@ -122,22 +122,6 @@ func str_open(meta:Variant):
 	unblock(meta)
 	OS.shell_open(str(meta))
 
-var highlight_tween
-func _on_body_label_finished() -> void:
-	return
-	if not visible:
-		return
-	if not _is_digital():
-		return
-	if block_highlight:
-		block_highlight = false
-		return
-	if highlight_tween:
-		highlight_tween.kill()
-	%Highlight.modulate.a = 0.2
-	highlight_tween = create_tween()
-	highlight_tween.tween_property(%Highlight, "modulate:a", 0, 1).set_trans(Tween.TRANS_CIRC)
-	
 	
 func build_waveform():
 	%VoiceMessageColorRect.show()
