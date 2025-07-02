@@ -232,7 +232,7 @@ const SPLASH_STRINGS := {
 	"killer_hangover" : "Killer hangover.",
 	"filthy" : "Filthy.",
 	"audrey_lives" : "Audrey lives.",
-	"ending" : "An elegy until it's an anthem: REFUSE REFUSE REFUSE REFUSE FOREVER AND EVER AND EVER MORE!",
+	"ending" : "An elegy until it's an anthem.",
 	"noni_rescue" : "Trauma dump.",
 	"pale" : "Pale as a corpse grey morning sky.",
 	"vibrant" : "Vibrant as bruises.",
@@ -350,9 +350,8 @@ func suicide_visual():
 	return true
 
 func set_up_ending_window_positions():
-	print("TEST THESE NUMBERS")
-	move_window(1,  0, 169)
-	move_window(2, 405, 169)
+	move_window(1, 436, 587)
+	move_window(2,  31,  84)
 
 func set_up_meltdown_window_positions():
 	# magic numbers based on visual

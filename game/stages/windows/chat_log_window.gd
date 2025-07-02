@@ -165,3 +165,15 @@ func build_waveform():
 
 func hide_waveform():
 	%VoiceMessageColorRect.hide()
+
+func play_open_sfx():
+	if id == 4:
+		Sound.play_sfx("start_call")
+	else:
+		super()
+
+func play_close_sfx():
+	if id == 4:
+		Sound.play_sfx("end_call")
+	else:
+		super()

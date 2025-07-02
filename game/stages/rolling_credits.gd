@@ -63,17 +63,19 @@ func start():
 		paws.append(i)
 	paws.shuffle()
 	var time_buffer := 2.065
+	var time_buffer_max := time_buffer
 	while not paws.is_empty():
 		Sound.play_sfx("hover")
 		var paw_index = paws.pop_back()
 		$GridContainer.get_child(paw_index).modulate.a = 1
 		await get_tree().create_timer(0.005 + time_buffer).timeout
 		if time_buffer >= 0.065:
-			time_buffer -= 0.4
+			time_buffer *= time_buffer / ceilf(time_buffer_max)
 		time_buffer = max(0, time_buffer - 0.001)
 	await get_tree().create_timer(3).timeout
 	$GridContainer.visible = false
 	$Logo.visible = true
+	Sound.play_sfx("outro_bass")
 	var riser_player := Sound.play_sfx("riser", false)
 	var riser_length := riser_player.stream.get_length()
 	

@@ -58,6 +58,7 @@ const SFX_SHUTTER := "579882__yfjesse__polaroid-one-step-camera-shutter.ogg"
 const SFX_HOVER := "720828__riley_garinger__metlfric-circular-saw-blade-scrape-on-concrete_01_single-fast_rg_2023_ntg4-2.ogg" # attr
 const SFX_CLICKER := "clicker.ogg"
 const SFX_RISER := "376574__original_sound__riser-quick-1-longer.ogg" # https://freesound.org/people/original_sound/sounds/376574/ attr
+const SFX_OUTRO_BASS := "outro_bass.wav"
 
 func fetch(type:String, key:String) -> String:
 	type = type.to_upper()

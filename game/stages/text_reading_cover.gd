@@ -17,7 +17,7 @@ func read(text:String,
 	label.visible_characters = 0
 	await get_tree().create_timer(1).timeout
 	if bgm != Sound.bgm_key:
-		Sound.fade_out_bgm(0.5 * text.length())
+		Sound.fade_out_bgm(0.5 * text.length() * 0.25)
 	if reset_windows:
 		GameWorld.hidden_ui_reset()
 	GameWorld.game_stage.set_background(background)

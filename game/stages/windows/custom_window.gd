@@ -127,7 +127,9 @@ func deserialize(data:Dictionary):
 func open():
 	show()
 	move_to_top()
-	Sound.play_sfx("keyboard")
+	play_open_sfx()
+
+
 func open_if_closed():
 	if visible:return
 	open()
@@ -136,4 +138,10 @@ func close():
 	if not allow_close:
 		return
 	hide()
+	play_close_sfx()
+
+func play_open_sfx():
+	Sound.play_sfx("keyboard")
+
+func play_close_sfx():
 	Sound.play_sfx("keyboard")
