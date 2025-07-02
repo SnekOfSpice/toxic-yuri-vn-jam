@@ -16,7 +16,7 @@ func on_read_new_line(line:int):
 	for character : Character in get_tree().get_nodes_in_group("character"):
 		characters[character.character_name] = character.serialize()
 	#state["characters"] = characters
-	state["background"] = GameWorld.background
+	state["background"] = GameWorld.game_stage.background
 	state["bgm"] = Sound.bgm_key
 	if is_instance_valid(GameWorld.game_stage):
 		state["game_stage"] = GameWorld.game_stage.serialize()

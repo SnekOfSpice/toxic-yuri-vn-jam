@@ -44,7 +44,7 @@ func set_bgm(_name:String, fade_in:float):
 func black_fade(fade_in:float, hold_time:float, fade_out:float, hide_characters:bool, new_background:String, new_bgm:String):
 	var bg = new_background
 	if new_background == "none":
-		bg = GameWorld.background
+		bg = GameWorld.game_stage.background
 	
 	var bgm = new_bgm
 	if not bg:

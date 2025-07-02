@@ -120,7 +120,7 @@ layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 2
+size_flags_horizontal = 3
 
 [node name="Label3" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -139,10 +139,13 @@ auto_translate_mode = 1
 layout_mode = 2
 text = "Quit"
 
-[node name="SaveOnQuitCheckBox" type="CheckBox" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+[node name="SaveHintLabel" type="RichTextLabel" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Save On Quit"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_51xcd")
+bbcode_enabled = true
+text = "Progress will be saved."
+fit_content = true
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer"]
 layout_mode = 2
@@ -166,14 +169,6 @@ text = "Quick Save"
 [node name="SaveToSlotButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/VBoxContainer2/HBoxContainer2"]
 layout_mode = 2
 text = "Save To Slot..."
-
-[node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer"]
-visible = false
-layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxEmpty_51xcd")
-bbcode_enabled = true
-text = "Progress is saved when you leave via the buttons below."
-fit_content = true
 
 [node name="HSeparator" type="HSeparator" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer"]
 layout_mode = 2
@@ -442,9 +437,12 @@ text = "Close"
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/OptionMenusButtonContainer/TextButton" to="." method="set_menu" binds= [1]]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/OptionMenusButtonContainer/DisplayButton" to="." method="set_menu" binds= [2]]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/OptionMenusButtonContainer/SoundButton" to="." method="set_menu" binds= [3]]
+[connection signal="mouse_entered" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/VBoxContainer/HBoxContainer/MainMenuButton" to="." method="show_save_hint"]
+[connection signal="mouse_exited" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/VBoxContainer/HBoxContainer/MainMenuButton" to="." method="hide_save_hint"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/VBoxContainer/HBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="mouse_entered" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/VBoxContainer/HBoxContainer/QuitButton" to="." method="show_save_hint"]
+[connection signal="mouse_exited" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/VBoxContainer/HBoxContainer/QuitButton" to="." method="hide_save_hint"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/VBoxContainer/HBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
-[connection signal="toggled" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/VBoxContainer/HBoxContainer/SaveOnQuitCheckBox" to="." method="_on_save_on_quit_check_box_toggled"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/VBoxContainer2/HBoxContainer2/SaveButton" to="." method="_on_save_button_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/GameMenu/VBoxContainer/SaveContainer/HBoxContainer/VBoxContainer2/HBoxContainer2/SaveToSlotButton" to="." method="_on_save_to_slot_button_pressed"]
 [connection signal="value_changed" from="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer/TextMenu/HBoxContainer/VBoxContainer2/VBoxContainer/TextSpeedSlider" to="." method="_on_text_speed_slider_value_changed"]

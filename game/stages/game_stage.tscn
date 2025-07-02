@@ -119,7 +119,6 @@ grow_vertical = 2
 focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
-devmode_enabled = true
 devmode_start_page = 42
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -490,6 +489,7 @@ mouse_filter = 2
 
 [node name="Portrait" type="TextureRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/EndingCoverText"]
 custom_minimum_size = Vector2(150, 0)
+layout_mode = 0
 offset_left = 512.0
 offset_top = 47.0
 offset_right = 662.0
@@ -537,6 +537,7 @@ mouse_filter = 2
 
 [node name="Portrait" type="TextureRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/EndingCoverText2"]
 custom_minimum_size = Vector2(150, 0)
+layout_mode = 0
 offset_left = 15.0
 offset_top = 46.0
 offset_right = 165.0

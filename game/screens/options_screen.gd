@@ -26,7 +26,7 @@ func _ready() -> void:
 	find_child("SFXVolumeSlider").value = db_to_linear(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("SFX")))
 	
 	%CurrentSlotLabel.text = "Using Slot %s" % (Options.save_slot + 1)
-	%SaveOnQuitCheckBox.button_pressed = Options.save_on_quit
+	%SaveHintLabel.modulate.a = 0
 	#for font in Style.LABEL_FONTS:
 		#var loaded : Font = load(font)
 		#find_child("LabelFontOptionButton").add_item(loaded.get_font_name())
@@ -114,7 +114,7 @@ func _on_save_button_pressed() -> void:
 
 
 func _on_main_menu_button_pressed() -> void:
-	if GameWorld.stage_root.stage == CONST.STAGE_GAME and Options.save_on_quit:
+	if GameWorld.stage_root.stage == CONST.STAGE_GAME:
 		Options.save_gamestate()
 	GameWorld.stage_root.change_stage(CONST.STAGE_MAIN)
 
@@ -166,7 +166,7 @@ func _on_fullscreen_check_box_pressed() -> void:
 
 
 func _on_quit_button_pressed() -> void:
-	if GameWorld.stage_root.stage == CONST.STAGE_GAME and Options.save_on_quit:
+	if GameWorld.stage_root.stage == CONST.STAGE_GAME:
 		Options.save_gamestate()
 	Options.save_prefs()
 	get_tree().quit()
@@ -212,5 +212,8 @@ func _on_save_to_slot_button_pressed() -> void:
 	GameWorld.stage_root.set_screen(CONST.SCREEN_SAVE, {"save" : true})
 
 
-func _on_save_on_quit_check_box_toggled(toggled_on: bool) -> void:
-	Options.save_on_quit = toggled_on
+func show_save_hint():
+	%SaveHintLabel.modulate.a = 1
+
+func hide_save_hint():
+	%SaveHintLabel.modulate.a = 0

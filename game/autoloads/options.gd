@@ -20,7 +20,6 @@ var just_finished_game := false
 var unlocked_epilogue := false
 
 var enable_dither := true
-var save_on_quit := true
 
 func _ready() -> void:
 	var config = ConfigFile.new()
@@ -38,7 +37,6 @@ func _ready() -> void:
 	auto_continue_delay = config.get_value("preferences", "auto_continue_delay", auto_continue_delay)
 	auto_continue = config.get_value("preferences", "auto_continue", auto_continue)
 	enable_dither = config.get_value("preferences", "enable_dither", enable_dither)
-	save_on_quit = config.get_value("preferences", "save_on_quit", save_on_quit)
 	set_fullscreen(config.get_value("preferences", "fullscreen", fullscreen))
 	save_slot = config.get_value("preferences", "save_slot", 0)
 	apply_font_prefs(config.get_value("preferences", "font_prefs", {}))
@@ -100,7 +98,6 @@ func save_prefs():
 	config.set_value("preferences", "save_slot", save_slot)
 	config.set_value("preferences", "font_prefs", font_prefs)
 	config.set_value("preferences", "enable_dither", enable_dither)
-	config.set_value("preferences", "save_on_quit", save_on_quit)
 	
 	config.set_value("state", "just_finished_game", just_finished_game)
 	config.set_value("state", "unlocked_epilogue", unlocked_epilogue)

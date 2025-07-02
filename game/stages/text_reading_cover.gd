@@ -10,7 +10,8 @@ func read(text:String,
 	background:String=GameWorld.game_stage.background,
 	bgm:=Sound.bgm_key,
 	reset_windows:=true):
-	Sound.play_sfx("shutter")
+	if not GameWorld.game_stage.background in ["", "black"]:
+		Sound.play_sfx("shutter")
 	visible = true
 	
 	label.text = text
