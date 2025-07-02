@@ -4,10 +4,11 @@ const CREDITORS := [
 	"LONER_DOG://Snuff Puppy Carnage Society",
 	"Snek Remilia Ketter",
 	"Blood Machine",
-	"[musicean 1]",
+	"Henni Wiesner",
 	"[musicean 2]",
 	"Jane Gorelove",
-	"The creative commons community",
+	"the creative commons community",
+	"special thanks to",
 	"LONER_DOG://Snuff Puppy Carnage Society",
 ]
 const CREDIT_CONTENT := [
@@ -15,9 +16,10 @@ const CREDIT_CONTENT := [
 	"Programming\t\t\t\tWriting\t\t\t\tUI Design\t\t\t\tBackground Art",
 	"Character Art\t\t\t\tCG Art\t\t\t\tCharacter Design",
 	"OST Contributions",
-	 "OST Contributions",
+	"OST Contributions",
 	"Proofreading",
 	"Various Stuff (Check main menu credits)",
+	"CØL\t\t\t\tDennis Cooper\t\t\t\tAgriculture",
 	"Made for TOXIC YURI VN JAM",
 	]
 	
@@ -133,7 +135,7 @@ func start():
 		var segments = %Label.text.split("\t\t\t\t", false)
 		
 		var segment_size : int = segments.size()
-		if segment_size <= 1:
+		if segment_size <= 1 or CREDITORS[j].to_lower().begins_with("special"):
 			segment_size = 0
 		#var fade = create_tween()
 		#fade.tween_property(%LabelContainer, "modulate:a", 1.0, 0.0)
