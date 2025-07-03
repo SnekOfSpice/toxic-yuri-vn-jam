@@ -454,7 +454,6 @@ id = 200
 
 [node name="FullCoverText" type="Control" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI"]
 unique_name_in_owner = true
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -463,17 +462,26 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="BodyLabel" type="RichTextLabel" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/FullCoverText"]
+[node name="MarginContainer" type="MarginContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/FullCoverText"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 40
+
+[node name="BodyLabel" type="RichTextLabel" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/FullCoverText/MarginContainer"]
+layout_mode = 2
 mouse_filter = 2
 bbcode_enabled = true
+text = "sdfsdf
+sdfsd
+fsdf"
 
-[node name="NameLabel" type="Label" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/FullCoverText/BodyLabel"]
+[node name="NameLabel" type="Label" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/FullCoverText/MarginContainer/BodyLabel"]
 layout_mode = 0
 offset_right = 11.0
 offset_bottom = 21.0
@@ -558,14 +566,14 @@ offset_right = 495.0
 grow_vertical = 2
 theme_override_constants/margin_left = 50
 theme_override_constants/margin_top = 40
-theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 40
 
 [node name="BodyLabel" type="RichTextLabel" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/EndingCoverText2/MarginContainer"]
+custom_minimum_size = Vector2(400, 0)
 layout_mode = 2
 mouse_filter = 2
 bbcode_enabled = true
-text = "hfhdfgh dgfgh fghfgh fgh fgh fghhg 
+text = "hfhdfgh dgfgh fghfgh fgh fgh fghhg  fgdfg dfg
 fghghj"
 
 [node name="NameLabel" type="Label" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/EndingCoverText2/MarginContainer/BodyLabel"]
@@ -609,9 +617,9 @@ anchor_right = 1.0
 offset_top = 443.0
 offset_bottom = 679.0
 grow_horizontal = 2
-theme_override_constants/margin_left = 50
+theme_override_constants/margin_left = 80
 theme_override_constants/margin_top = 40
-theme_override_constants/margin_right = 10
+theme_override_constants/margin_right = 60
 theme_override_constants/margin_bottom = 40
 
 [node name="BodyLabel" type="RichTextLabel" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/EndingCoverText3/MarginContainer"]

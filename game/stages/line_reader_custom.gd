@@ -232,7 +232,7 @@ const SPLASH_STRINGS := {
 	"killer_hangover" : "Killer hangover.",
 	"filthy" : "Filthy.",
 	"audrey_lives" : "Audrey lives.",
-	"ending" : "An elegy until it's an anthem.",
+	"ending" : "You deserve a tomorrow worth knowing.",
 	"noni_rescue" : "Trauma dump.",
 	"pale" : "Pale as a corpse grey morning sky.",
 	"vibrant" : "Vibrant as bruises.",
@@ -254,7 +254,7 @@ const SPLASH_STRINGS := {
 	"celestial_bodies" : "Like twin stars.",
 	"devour_me" : "Devour me.",
 	"eventually" : "Eventually, this will all come crashing down.",
-	"funeral" : "Exiled from light.",
+	"funeral" : "An elegy until it's an anthem.",
 }
 func splash_text(key:String,
 	fade_in := 0.0,
