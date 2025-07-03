@@ -11,6 +11,8 @@ var background := ""
 var skip := false
 var just_started := true
 
+var hidden_ui_reset_target_override := -1
+
 # function called by splash text and black fade etc. clean up the ui back to its default state
 func hidden_ui_reset():
 	if not game_stage:
@@ -19,6 +21,10 @@ func hidden_ui_reset():
 	game_stage.hide_cg()
 	game_stage.clear_text_bodies()
 	game_stage.hide_all_windows()
+	if hidden_ui_reset_target_override != -1:
+		game_stage.set_all_target_labels(hidden_ui_reset_target_override, false)
+		game_stage.set_target_labels("narrator", hidden_ui_reset_target_override, false)
+		hidden_ui_reset_target_override = -1
 	game_stage.hide_default_text_container()
 	GameWorld.camera.zoom_to(1, 0)
 	Parser.line_reader.shake_windows(0)

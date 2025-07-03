@@ -273,9 +273,9 @@ func set_cg(cg_name:String, fade_in_duration:float, cg_root:Control):
 		cg_node.texture = load(cg_path)
 		cg_node.expand_mode = TextureRect.EXPAND_FIT_WIDTH_PROPORTIONAL
 		cg_node.custom_minimum_size = Vector2(1000, 750)
-		if not "ending" in cg_name:
-			cg_node.position.y += 54
-			cg_node.custom_minimum_size *= 0.7
+		#if not "ending" in cg_name:
+			#cg_node.position.y += 54
+			#cg_node.custom_minimum_size *= 0.7
 	
 	cg_root.add_child(cg_node)
 	
@@ -362,18 +362,18 @@ func on_actor_name_changed(
 		if actor_name.is_empty():
 			actor_name = "narrator"
 		var target_id : int = target_label_id_by_actor.get(actor, 0)
-		if target_id in [6]:
+		if target_id in [6, 12]:
 			#find_child("Portrait").visible = false
 			return
-		if target_id in [0, 10, 11]:
+		if target_id in [0, 10, 11, 12]:
 			actor_by_portrait_index[target_id] = actor_name
 		if actor_name in Parser.line_reader.blank_names:
-			if target_id in [0, 10, 11]:
+			if target_id in [0, 10, 11, 12]:
 				set_game_stage_portrait(target_id, actor_name)
 			else:
 				get_chatlog_window(target_id).set_portrait("")
 		else:
-			if target_id in [0, 10, 11]:
+			if target_id in [0, 10, 11, 12]:
 				set_game_stage_portrait(target_id, actor_name)
 			else:
 				get_chatlog_window(target_id).set_portrait(actor_name)
@@ -386,6 +386,8 @@ func set_game_stage_portrait(target_id:int, actor:String):
 			%EndingCoverText.find_child("Portrait").visible = false
 		elif target_id == 11:
 			%EndingCoverText2.find_child("Portrait").visible = false
+		elif target_id == 12:
+			%EndingCoverText3.find_child("Portrait").visible = false
 	else:
 		var portrait : TextureRect
 		if target_id == 0:
@@ -394,6 +396,8 @@ func set_game_stage_portrait(target_id:int, actor:String):
 			portrait = %EndingCoverText.find_child("Portrait")
 		elif target_id == 11:
 			portrait = %EndingCoverText2.find_child("Portrait")
+		elif target_id == 12:
+			portrait = %EndingCoverText3.find_child("Portrait")
 		portrait.visible = true
 		portrait.texture = load("res://game/characters/portraits/%s.png" % actor)
 		
@@ -447,6 +451,7 @@ func serialize() -> Dictionary:
 	result["text_content_full"] = serialize_text_content(%FullCoverText)
 	result["text_content_ending"] = serialize_text_content(%EndingCoverText)
 	result["text_content_ending2"] = serialize_text_content(%EndingCoverText2)
+	result["text_content_ending3"] = serialize_text_content(%EndingCoverText3)
 	
 	return result
 
@@ -525,6 +530,7 @@ func deserialize(data:Dictionary):
 	deserialize_text_content(%FullCoverText, data.get("text_content_full", {}))
 	deserialize_text_content(%EndingCoverText, data.get("text_content_ending", {}))
 	deserialize_text_content(%EndingCoverText2, data.get("text_content_ending2", {}))
+	deserialize_text_content(%EndingCoverText3, data.get("text_content_ending3", {}))
 	show_ui()
 
 var actor_by_portrait_index := {}
@@ -578,6 +584,8 @@ func get_body_label(target_id:int):
 		return %EndingCoverText.find_child("BodyLabel")
 	elif target_id == 11:
 		return %EndingCoverText2.find_child("BodyLabel")
+	elif target_id == 12:
+		return %EndingCoverText3.find_child("BodyLabel")
 	else:
 		return get_chatlog_window(target_id).get_body_label()
 
@@ -593,8 +601,9 @@ func set_target_labels(actor:String, target_id:int, force_show:=true, as_voice_m
 	#var is_digital := target_id in [3,4,5,7,8,9]
 	are_words_being_spoken = not is_texting
 	## all of this is super hacky for the ending and not reusable at all lmfao
-	if target_id in [6, 10, 11]:
-		hide_all_windows(false)
+	if target_id in [6, 10, 11, 12]:
+		if target_id in [6]:
+			hide_all_windows(false)
 		%DefaultTextContainer.visible = false
 		if target_id == 6:
 			%FullCoverText.visible = true
@@ -602,10 +611,13 @@ func set_target_labels(actor:String, target_id:int, force_show:=true, as_voice_m
 			%EndingCoverText.visible = true
 		elif target_id == 11:
 			%EndingCoverText2.visible = true
+		elif target_id == 12:
+			%EndingCoverText3.visible = true
 	else:
 		%FullCoverText.visible = false
 		%EndingCoverText.visible = false
 		%EndingCoverText2.visible = false
+		%EndingCoverText3.visible = false
 	%LineReader.name_prefix = "" # this is broken as shit but whatever. fix this after the jam
 	%LineReader.name_suffix = "" # this is broken as shit but whatever. fix this after the jam
 	%LineReader.body_label_tint_lines = false
@@ -623,7 +635,7 @@ func set_target_labels(actor:String, target_id:int, force_show:=true, as_voice_m
 		%LineReader.name_prefix_by_actor[actor_name] = ""
 		%LineReader.name_suffix_by_actor[actor_name] = ""
 		%LineReader.keep_past_lines = false
-	elif target_id in [6, 10, 11]:
+	elif target_id in [6, 10, 11, 12]:
 		%LineReader.custom_text_speed_override = -1
 		if target_id == 6:
 			%LineReader.text_container = %FullCoverText
@@ -642,6 +654,12 @@ func set_target_labels(actor:String, target_id:int, force_show:=true, as_voice_m
 			%LineReader.set_body_label(%EndingCoverText2.find_child("BodyLabel"), false)
 			var name_label = %EndingCoverText2.find_child("NameLabel")
 			var name_container = %EndingCoverText2.find_child("NameLabel")
+			%LineReader.set_name_controls(name_label, name_container)
+		elif target_id == 12:
+			%LineReader.text_container = %EndingCoverText3
+			%LineReader.set_body_label(%EndingCoverText3.find_child("BodyLabel"), false)
+			var name_label = %EndingCoverText3.find_child("NameLabel")
+			var name_container = %EndingCoverText3.find_child("NameLabel")
 			%LineReader.set_name_controls(name_label, name_container)
 		%LineReader.custom_text_speed_override = -1
 		%LineReader.body_label_prefix = ""
@@ -782,6 +800,7 @@ func clear_text_bodies():
 	%FullCoverText.find_child("BodyLabel").text = ""
 	%EndingCoverText.find_child("BodyLabel").text = ""
 	%EndingCoverText2.find_child("BodyLabel").text = ""
+	%EndingCoverText3.find_child("BodyLabel").text = ""
 	for window : CustomWindow in windows:
 		if window is ChatLogWindow:
 			window.get_body_label().text = ""

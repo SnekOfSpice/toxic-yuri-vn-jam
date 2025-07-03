@@ -120,7 +120,8 @@ focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
 devmode_enabled = true
-devmode_start_page = 17
+devmode_start_page = 18
+devmode_start_line = 6
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -158,13 +159,12 @@ color_map = Dictionary[String, Color]({
 "argo": Color(0.50699, 0.652463, 0.90489, 1),
 "audrey": Color(0.944091, 0.615961, 0.649595, 1),
 "blank": Color(0.994863, 0.923846, 0.87723, 1),
-"franco": Color(0.595718, 0.19269, 0.259136, 1),
 "haley": Color(0.89004, 0.763656, 0.27152, 1),
 "harshnoise": Color(0.637843, 0.637843, 0.637843, 1),
 "leah": Color(0.766701, 0.855714, 0.421582, 1),
 "maya": Color(0.753419, 0.53245, 0.46177, 1),
-"noni": Color(0.78, 0.75075, 0.663, 1),
-"roaches": Color(0.865978, 0.713557, 0.86409, 1),
+"noni": Color(0.877151, 0.595946, 0.807935, 1),
+"roaches": Color(0.87, 0.7395, 0.841725, 1),
 "vanessa": Color(0.87152, 0.840437, 0.875095, 1),
 "xelia": Color(0.612394, 0.862658, 0.477221, 1)
 })
@@ -569,6 +569,68 @@ text = "hfhdfgh dgfgh fghfgh fgh fgh fghhg
 fghghj"
 
 [node name="NameLabel" type="Label" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/EndingCoverText2/MarginContainer/BodyLabel"]
+layout_mode = 0
+offset_right = 11.0
+offset_bottom = 21.0
+
+[node name="EndingCoverText3" type="Control" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Control" type="Control" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/EndingCoverText3"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Portrait" type="TextureRect" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/EndingCoverText3/Control"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 0
+offset_left = 15.0
+offset_top = 46.0
+offset_right = 165.0
+offset_bottom = 196.0
+size_flags_vertical = 0
+texture = ExtResource("8_7jfvv")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/EndingCoverText3"]
+custom_minimum_size = Vector2(375, 0)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 443.0
+offset_bottom = 679.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 40
+
+[node name="BodyLabel" type="RichTextLabel" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/EndingCoverText3/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+mouse_filter = 2
+bbcode_enabled = true
+text = "hfhdfgh dgfgh fghfgh fgh fgh fghhg 
+fghghj
+sdf
+sdf
+sdf
+sdf
+asd
+asd
+"
+fit_content = true
+
+[node name="NameLabel" type="Label" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/EndingCoverText3/MarginContainer/BodyLabel"]
 layout_mode = 0
 offset_right = 11.0
 offset_bottom = 21.0

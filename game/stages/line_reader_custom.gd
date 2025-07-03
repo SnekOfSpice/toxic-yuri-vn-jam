@@ -293,7 +293,8 @@ func splash_text(key:String,
 func set_target_labels(actor:String, target_id:int, force_show:=true):
 	GameWorld.game_stage.set_target_labels(actor, target_id, force_show)
 
-
+func set_next_hidden_reset_target_label_override(id:int):
+	GameWorld.hidden_ui_reset_target_override = id
 
 func hide_all_windows(reset_to_default:=true):
 	GameWorld.game_stage.hide_all_windows(reset_to_default)
