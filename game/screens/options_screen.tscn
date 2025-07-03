@@ -1,8 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://clvr2siqvathu"]
+[gd_scene load_steps=13 format=3 uid="uid://clvr2siqvathu"]
 
 [ext_resource type="Script" uid="uid://uupjdu0y5l24" path="res://game/screens/options_screen.gd" id="1_1als3"]
 [ext_resource type="Theme" uid="uid://gee0nt5mhjku" path="res://game/visuals/theme/toxic_yuri_vn_theme.tres" id="1_51xcd"]
 [ext_resource type="StyleBox" uid="uid://dadnwlbrdktog" path="res://game/visuals/theme/background_panel.tres" id="3_d5t3h"]
+[ext_resource type="Texture2D" uid="uid://bux2giarwnrhp" path="res://game/visuals/ui/icon_game.png" id="4_t8ohx"]
+[ext_resource type="Texture2D" uid="uid://cn60lfet73el5" path="res://game/visuals/ui/icon_text.png" id="5_j50ih"]
+[ext_resource type="Texture2D" uid="uid://dhk7lmud6ogny" path="res://game/visuals/ui/icon_display.png" id="6_njvmj"]
+[ext_resource type="Texture2D" uid="uid://bf1e1fsq022dl" path="res://game/visuals/ui/icon_sound.png" id="7_0bnqr"]
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_kpjpj"]
 
@@ -63,6 +67,7 @@ layout_mode = 2
 toggle_mode = true
 button_group = SubResource("ButtonGroup_kpjpj")
 text = "Game"
+icon = ExtResource("4_t8ohx")
 
 [node name="TextButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/OptionMenusButtonContainer"]
 auto_translate_mode = 1
@@ -70,12 +75,14 @@ layout_mode = 2
 toggle_mode = true
 button_group = SubResource("ButtonGroup_4bl4s")
 text = "Text"
+icon = ExtResource("5_j50ih")
 
 [node name="DisplayButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/OptionMenusButtonContainer"]
 layout_mode = 2
 toggle_mode = true
 button_group = SubResource("ButtonGroup_bdfrv")
 text = "Display"
+icon = ExtResource("6_njvmj")
 
 [node name="SoundButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/OptionMenusButtonContainer"]
 auto_translate_mode = 1
@@ -83,6 +90,7 @@ layout_mode = 2
 toggle_mode = true
 button_group = SubResource("ButtonGroup_7g5us")
 text = "Sound"
+icon = ExtResource("7_0bnqr")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -190,7 +198,7 @@ fit_content = true
 
 [node name="TextMenu" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/OptionMenusContainer"]
 auto_translate_mode = 1
-custom_minimum_size = Vector2(509, 0)
+custom_minimum_size = Vector2(509, 187)
 layout_mode = 2
 theme_type_variation = &"MenuPanel"
 
