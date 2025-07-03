@@ -1442,7 +1442,7 @@ func update_compliances(instruction_name:String):
 					line["content"]["meta.validation_status"] = "OK"
 			elif line.get("line_type") == DIISIS.LineType.Text:
 				var functions : Array = content.get("meta.function_calls", [])
-				var compliance := "OK"
+				var compliance : String = "OK"
 				for function in functions:
 					var validity = get_method_validity(function)
 					if validity != "OK":
