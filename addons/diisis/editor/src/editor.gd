@@ -770,6 +770,8 @@ func _on_utility_id_pressed(id: int) -> void:
 			open_window_by_string("IngestionActorSetupWindow")
 		3:
 			step_through_pages()
+		4:
+			open_window_by_string("ActorSearchWindow")
 
 
 func _on_setup_id_pressed(id: int) -> void:

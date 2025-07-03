@@ -502,7 +502,7 @@ func delete_page_data(at: int):
 	
 	change_page_references_dir(at, -1)
 
-func get_data_from_address(address:String):
+func get_data_from_address(address:String) -> Dictionary:
 	var cpn = editor.get_current_page_number()
 	var address_page = DiisisEditorUtil.get_split_address(address)[0]
 	# if current page is address
@@ -522,6 +522,8 @@ func get_data_from_address(address:String):
 		var lines : Array = page_data.get(address_page).get("lines")
 		var line : Dictionary = lines[parts[1]]
 		return line.get("content", {}).get("choices", [])[parts[2]]
+	push_warning("This shouldn't happen.")
+	return {}
 
 func delete_data_from_address(address:String):
 	var cpn = editor.get_current_page_number()
@@ -1780,6 +1782,34 @@ func get_text_id_address_and_type(id:String) -> Array:
 
 func get_speakers() -> Array:
 	return dropdowns.get(dropdown_title_for_dialog_syntax, []).duplicate()
+
+## exact means only the passed speakers can be entered
+func get_text_line_adrs_with_speakers(speakers:Array, exact:=false) -> Array:
+	if speakers.is_empty():
+		push_warning("Speakers is empty. Returning empty results.")
+		return []
+	var results := []
+	for i in page_data.size():
+		var pdata = get_page_data(i)
+		for line : Dictionary in pdata.get("lines", []):
+			if line.get("line_type") != DIISIS.LineType.Text:
+				continue
+			var text = get_text(line.get("content").get("text_id"))
+			var contains_all := true
+			for speaker : String in speakers:
+				if not text.contains("[]>%s" % speaker):
+					contains_all = false
+					break
+			if exact:
+				for global_speaker in get_speakers():
+					if global_speaker in speakers:
+						continue
+					if text.contains("[]>%s" % global_speaker):
+						contains_all = false
+						break
+			if contains_all:
+				results.append(line.get("address"))
+	return results
 
 func change_text_id(old_id:String, new_id:String) -> void:
 	for page in page_data.values():
