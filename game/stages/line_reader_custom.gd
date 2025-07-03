@@ -236,7 +236,7 @@ const SPLASH_STRINGS := {
 	"noni_rescue" : "Trauma dump.",
 	"pale" : "Pale as a corpse grey morning sky.",
 	"vibrant" : "Vibrant as bruises.",
-	"one_of_us" : "When you're one of us, making it out of your 20s will be your first and greatest life achievement.",
+	"one_of_us" : "When you're one of us, making it out of your twenties will be your first and greatest life achievement.",
 	"rape_intro" : "[ph]Sometimes, existence hurts.",
 	"the_hole" : "The hole.",
 	"not_gentle" : "The world is not a gentle place.",
