@@ -119,8 +119,7 @@ grow_vertical = 2
 focus_mode = 2
 mouse_filter = 2
 script = ExtResource("1_a36me")
-devmode_start_page = 18
-devmode_start_line = 6
+devmode_start_page = 15
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -618,7 +617,7 @@ offset_bottom = 679.0
 grow_horizontal = 2
 theme_override_constants/margin_left = 80
 theme_override_constants/margin_top = 40
-theme_override_constants/margin_right = 60
+theme_override_constants/margin_right = 325
 theme_override_constants/margin_bottom = 40
 
 [node name="BodyLabel" type="RichTextLabel" parent="LineReader/SubViewportContainer/SubViewport/Camera2D/VNUICanvasLayer/VNUIRoot/VNUI/EndingCoverText3/MarginContainer"]

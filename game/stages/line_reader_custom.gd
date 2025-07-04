@@ -47,7 +47,7 @@ func black_fade(fade_in:float, hold_time:float, fade_out:float, hide_characters:
 		bg = GameWorld.game_stage.background
 	
 	var bgm = new_bgm
-	if not bg:
+	if not bgm:
 		push_warning(str("COULDN'T FIND MUSIC ", new_bgm, "!"))
 		bgm = "main_menu"
 	if new_bgm == "none" or new_bgm == "null":
