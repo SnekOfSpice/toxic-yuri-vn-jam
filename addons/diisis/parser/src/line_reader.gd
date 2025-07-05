@@ -2303,3 +2303,6 @@ func set_body_label_suffix(actor:String, suffix:String):
 
 func set_chatlog_enabled(value:bool):
 	chatlog_enabled = value
+
+func set_custom_text_speed_override(value:int):
+	custom_text_speed_override = value
